@@ -418,12 +418,12 @@ logging.basicConfig(level=logging.INFO)
 
 # io
 
-# with open('Test.py','r') as f:
+# with open('config.py','r') as f:
 #     # print(f.read())
 #     print(f.readline())
 #
 # # w模式会将文件中已有的内容进行覆盖 a模式会是一个追加的模式，append模式
-# with open('Test.py','a') as f:
+# with open('config.py','a') as f:
 #     f.write('\ntest write')
 #
 # print(os.name)

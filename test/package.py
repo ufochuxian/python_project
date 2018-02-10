@@ -7,6 +7,21 @@ import codecs
 import os
 import shutil
 
+import time
+
+import configparser
+
+from aip import AipSpeech
+
+import pygame
+
+PACKAGESUCCESS_MP3 = 'packagesuccess.mp3'
+
+BAIDU = 'baidu'
+
+cf = configparser.ConfigParser()
+cf.read('ver.conf')
+
 HDPI_SPLASH_PNG_PATH = '/res/drawable-hdpi/splash.png'
 
 XHDPI_SPLASH_PNG_PATH = '/res/drawable-xhdpi/splash.png'
@@ -112,6 +127,14 @@ packageApkCommond = 'apktool b ' + reApkPath
 
 print(reApkPath)
 
+pygame.init()
+
+
+def resolveEnv(con):
+    if con.startswith('ENV_'):
+        return os.environ.get(con)
+    return con
+
 
 def unpackageApk():
     os.system(unPackageApkCommond)
@@ -127,7 +150,6 @@ def signApk(channel):
     sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
     logging.info('sign_apk_commond = %s' % sign_apk_commond)
     os.system(sign_apk_commond)
-    pass
 
 
 def replaceSplash(channel):
@@ -192,6 +214,26 @@ def replaceNameApp(channel):
             print('app_name_value:%s' % app_name_value)
 
 
+def notifyPackageSuccess():
+    logging.info('package sucess...')
+    APP_ID = resolveEnv(cf.get('baidu', 'AppID'))
+    API_KEY = resolveEnv(cf.get('baidu', 'API_Key'))
+    SECRET_KEY = resolveEnv(cf.get('baidu', 'SECRET_KEY'))
+    client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
+
+    result = client.synthesis('全渠道打包成功了', 'zh', 1, {
+        'vol': 5, 'spd': 3
+    })
+    # 识别正确返回语音二进制 错误则返回dict 参照下面错误码
+    if not isinstance(result, dict):
+        with open(PACKAGESUCCESS_MP3, 'wb') as f:
+            f.write(result)
+    track1 = pygame.mixer.music.load(PACKAGESUCCESS_MP3)
+    pygame.mixer.music.play(2, 0)
+    # 这句延时一定要加，不然听不到声音
+    time.sleep(10)
+
+
 starttime = datetime.datetime.now()
 
 if (os.path.exists(reApkPath)):
@@ -207,5 +249,7 @@ for channel in channels_release:
     signApk(channel)
 
 endTime = datetime.datetime.now()
+
+notifyPackageSuccess()
 
 print('use time:%s' % (endTime - starttime))
