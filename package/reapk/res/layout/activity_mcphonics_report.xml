@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/root_mcphonics_report" n1:background="@color/default_back_ground_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/back_icon" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/nav_icon_back" />
+    </RelativeLayout>
+    <include n1:id="@id/user_info_report" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/top_bar" layout="@layout/layout_user_info_report" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/user_info_report">
+        <RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="@dimen/side_gap" n1:paddingRight="@dimen/side_gap" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.jiliguala.niuwa.common.widget.RatioRelativeLayout n1:id="@id/mc_report_container" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="15.0dip" n2:ratio="0.5" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <com.makeramen.roundedimageview.RoundedImageView n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/mc_report_bg" n1:scaleType="centerCrop" n1:layout_centerInParent="true" n2:riv_corner_radius_bottom_left="@dimen/default_card_radius_large" n2:riv_corner_radius_bottom_right="@dimen/default_card_radius_large" n2:riv_corner_radius_top_left="@dimen/default_card_radius_large" n2:riv_corner_radius_top_right="@dimen/default_card_radius_large" n2:riv_oval="false" />
+                <RelativeLayout n1:id="@id/mc_container_lv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="15.0dip">
+                    <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/large_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mc_course" />
+                    <TextView n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/large_lv" n1:background="@drawable/btn_round_transparent_white" n1:paddingLeft="15.0dip" n1:paddingTop="5.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="Level 1" n1:layout_below="@id/large_title" />
+                </RelativeLayout>
+                <ImageView n1:id="@id/mc_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/main_right_arrow_white" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <RelativeLayout n1:gravity="center_horizontal" n1:id="@id/sentence_progress_container" n1:layout_width="80.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_toLeftOf="@id/mc_right_arrow">
+                    <View n1:id="@id/sentence_progress" n1:background="@drawable/shape_half_rounded_bg_blue" n1:layout_width="50.0dip" n1:layout_height="0.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:layout_above="@id/sentence_progress" n1:layout_centerHorizontal="true">
+                        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/sentence_progress_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_centerHorizontal="true" />
+                        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:id="@id/sentence_progress_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="句型" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    </LinearLayout>
+                    <ImageView n1:id="@id/sentence_star" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:src="@drawable/nicon_star_white" n1:layout_alignTop="@id/sentence_progress" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:gravity="center_horizontal" n1:id="@id/word_progress_container" n1:layout_width="80.0dip" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/sentence_progress_container" n1:layout_alignParentBottom="true">
+                    <View n1:id="@id/word_progress" n1:background="@drawable/shape_half_rounded_bg_yellow" n1:layout_width="50.0dip" n1:layout_height="0.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:layout_above="@id/word_progress" n1:layout_centerHorizontal="true">
+                        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/word_progress_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_centerHorizontal="true" />
+                        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:id="@id/word_progress_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="单词" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    </LinearLayout>
+                    <ImageView n1:id="@id/word_star" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:src="@drawable/nicon_star_white" n1:layout_alignTop="@id/word_progress" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </com.jiliguala.niuwa.common.widget.RatioRelativeLayout>
+            <com.jiliguala.niuwa.common.widget.RatioRelativeLayout n1:id="@id/phonics_report_container" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:layout_marginBottom="15.0dip" n1:layout_below="@id/mc_report_container" n3:ratio="0.5" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/ph_report_bg" n1:scaleType="centerCrop" n3:riv_corner_radius_bottom_left="@dimen/default_card_radius_large" n3:riv_corner_radius_bottom_right="@dimen/default_card_radius_large" n3:riv_corner_radius_top_left="@dimen/default_card_radius_large" n3:riv_corner_radius_top_right="@dimen/default_card_radius_large" n3:riv_oval="false" />
+                <RelativeLayout n1:id="@id/ph_container_lv" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="15.0dip">
+                    <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/phonics_report_title_pre" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/phonics" />
+                    <TextView n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/ph_lv" n1:background="@drawable/btn_round_transparent_white" n1:paddingLeft="15.0dip" n1:paddingTop="5.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="Level 1" n1:layout_below="@id/phonics_report_title_pre" />
+                </RelativeLayout>
+                <ImageView n1:id="@id/ph_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/main_right_arrow_white" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <RelativeLayout n1:gravity="center_horizontal" n1:id="@id/phonics_progress_container" n1:layout_width="80.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_toLeftOf="@id/ph_right_arrow" n1:layout_alignParentBottom="true">
+                    <View n1:id="@id/phonics_progress" n1:background="@drawable/shape_half_rounded_bg_red" n1:layout_width="50.0dip" n1:layout_height="0.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:layout_above="@id/phonics_progress" n1:layout_centerHorizontal="true">
+                        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/phonics_progress_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_centerHorizontal="true" />
+                        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:id="@id/ph_progress_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="拼读" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+                    </LinearLayout>
+                    <ImageView n1:id="@id/phonics_star" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:src="@drawable/nicon_star_white" n1:layout_alignTop="@id/phonics_progress" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </com.jiliguala.niuwa.common.widget.RatioRelativeLayout>
+            <com.jiliguala.niuwa.common.widget.RatioRelativeLayout n1:id="@id/old_status_container" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:layout_marginBottom="15.0dip" n1:layout_below="@id/phonics_report_container" n4:ratio="0.5" xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/old_report_bg" n1:scaleType="centerCrop" n4:riv_corner_radius_bottom_left="@dimen/default_card_radius_large" n4:riv_corner_radius_bottom_right="@dimen/default_card_radius_large" n4:riv_corner_radius_top_left="@dimen/default_card_radius_large" n4:riv_corner_radius_top_right="@dimen/default_card_radius_large" n4:riv_oval="false" />
+                <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:id="@id/tools_title_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="15.0dip" n1:text="其他资源" />
+                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/tools_title_txt">
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/listen_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="3.0dip" />
+                            <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="听(分钟)" n1:drawableBottom="@drawable/entrance_listen" n1:drawablePadding="10.0dip" />
+                        </LinearLayout>
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/watch_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="3.0dip" />
+                            <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="看(分钟)" n1:drawableBottom="@drawable/entrance_watch" n1:drawablePadding="10.0dip" />
+                        </LinearLayout>
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/play_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="3.0dip" />
+                            <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="玩(次)" n1:drawableBottom="@drawable/entrance_flashcard" n1:drawablePadding="10.0dip" />
+                        </LinearLayout>
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/read_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="3.0dip" />
+                            <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="读(本)" n1:drawableBottom="@drawable/entrance_reading" n1:drawablePadding="10.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.jiliguala.niuwa.common.widget.RatioRelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/resource_record_container" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginBottom="15.0dip" n1:layout_below="@id/old_status_container">
+                <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_green" n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:id="@id/study_record" n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="32.0dip" n1:text="海量资源记录" n1:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

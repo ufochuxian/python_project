@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <color n1:color="@color/color_green"
+          xmlns:n1="http://schemas.android.com/apk/res/android" />
+    </item>
+    <item n2:drawable="@android:color/white" n2:bottom="4.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</layer-list>

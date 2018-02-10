@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="85.0dip" n1:layout_height="250.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <View n1:id="@id/left_first_dot" n1:background="@drawable/shape_bg_white" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginLeft="10.0dip" n1:layout_centerVertical="true" />
+        <com.jiliguala.niuwa.common.widget.CircleImageView n1:id="@id/baby_icon" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:src="@drawable/default_baby" n1:layout_centerInParent="true" />
+        <View n1:id="@id/right_first_dot" n1:background="@drawable/shape_oval_undone" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/baby_icon" n1:layout_centerVertical="true" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/dot_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/baby_icon" n1:layout_centerHorizontal="true">
+            <View n1:background="@drawable/shape_oval_undone" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginBottom="3.0dip" />
+            <View n1:background="@drawable/shape_oval_undone" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="3.0dip" />
+            <View n1:background="@drawable/shape_oval_undone" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="3.0dip" />
+            <View n1:background="@drawable/shape_oval_undone" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="3.0dip" />
+        </LinearLayout>
+        <com.jiliguala.niuwa.common.widget.CircleImageView n1:id="@id/class_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:src="@drawable/unit_icon_placeholder" n1:layout_below="@id/dot_container" n1:layout_centerHorizontal="true" />
+        <ImageView n1:id="@id/teacher_icon" n1:visibility="gone" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="-25.0dip" n1:src="@drawable/default_baby" n1:layout_toRightOf="@id/class_icon" n1:layout_alignBottom="@id/class_icon" />
+        <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:ellipsize="end" n1:gravity="center" n1:id="@id/foreign_class_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="1对1文案文案" n1:maxLines="1" n1:layout_below="@id/class_icon" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

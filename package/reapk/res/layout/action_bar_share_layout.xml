@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <TextView n1:textColor="@color/color_default_dark_gray" n1:id="@id/share_to_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/action_bar_title_my_forum" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
+    <TextView n1:textSize="@dimen/nave_top_bar_text_size" n1:textColor="@color/color_detail_title" n1:id="@id/action_post" n1:padding="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/action_share_now" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.NoPreloadViewPager n1:id="@id/viewpager" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/tabStrip_container" />
+    <RelativeLayout n1:id="@id/tabStrip_container" n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
+        <ImageView n1:id="@id/back_icon" n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="@dimen/top_bar_height" n1:src="@drawable/nav_icon_back" />
+        <com.jiliguala.niuwa.module.babyintiation.PagerSlidingTabStrip n1:id="@id/tabStrip" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_marginLeft="40.0dip" n1:layout_marginRight="10.0dip" n2:pstsDividerColor="@color/transparent" n2:pstsIndicatorColor="@color/color_green" n2:pstsIndicatorHeight="2.0dip" n2:pstsShouldExpand="true" n2:pstsTabPaddingLeftRight="2.0dip" n2:pstsUnderlineColor="@color/transparent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</RelativeLayout>

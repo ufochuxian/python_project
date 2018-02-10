@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/loadmore_view" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/pullup_icon" n1:background="@drawable/default_ptr_flip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginLeft="60.0dip" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/loading_icon" n1:background="@drawable/loading" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="60.0dip" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/white" n1:id="@id/loadstate_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/pullup_to_load" n1:layout_centerInParent="true" />
+            <ImageView n1:id="@id/loadstate_iv" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip" n1:layout_toLeftOf="@id/loadstate_tv" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

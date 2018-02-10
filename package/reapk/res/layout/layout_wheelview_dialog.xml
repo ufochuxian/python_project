@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:paddingTop="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/title" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="每日视频时间控制" />
+    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_gray" n1:gravity="center" n1:id="@id/subtitle" n1:background="@android:color/white" n1:paddingBottom="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" />
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/container" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="160.0dip" />
+    <ImageView n1:background="@drawable/line_lightgrey" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/btn_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <Button n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/cancel" n1:background="@drawable/round_corner_white_bg" n1:layout_width="wrap_content" n1:layout_height="50.0dip" n1:text="@string/cancel" n1:layout_weight="1.0" />
+        <Button n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_green" n1:id="@id/confirm" n1:background="@drawable/round_corner_white_bg" n1:layout_width="wrap_content" n1:layout_height="50.0dip" n1:text="@string/confirm" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

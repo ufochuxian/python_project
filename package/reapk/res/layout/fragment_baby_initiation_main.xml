@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/home_scrollview" n1:background="@color/default_back_ground_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/main_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_container" n1:paddingLeft="@dimen/side_gap" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="0.0dip">
+                <RelativeLayout n1:layout_gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginRight="5.0dip" n1:layout_toLeftOf="@id/top_right_container">
+                    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/baby_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" />
+                    <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_x_large_size" n1:id="@id/top_title_name" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="北美课程" n1:layout_below="@id/baby_name" />
+                </RelativeLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/top_right_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true">
+                    <RelativeLayout n1:id="@id/main_report_container" n1:layout_width="50.0dip" n1:layout_height="50.0dip">
+                        <ImageView n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/nicon_report" n1:scaleType="centerCrop" n1:layout_centerInParent="true" />
+                        <TextView n1:gravity="center" n1:id="@id/check_in_red_dot" n1:background="@drawable/nicon_uncheck" n1:visibility="invisible" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:layout_alignParentRight="true" n1:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/one_v_one_container" n1:visibility="gone" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginLeft="30.0dip">
+                        <com.makeramen.roundedimageview.RoundedImageView n1:id="@id/action_1v1" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:layout_centerInParent="true" />
+                        <ImageView n1:id="@id/class_red_dot" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="-4.0dip" n1:src="@drawable/icon_unread_dot" n1:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.jiliguala.niuwa.common.widget.RatioRelativeLayout n1:id="@id/main_large_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:ratio="0.56" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <include layout="@layout/item_baby_initiation_large" />
+            </com.jiliguala.niuwa.common.widget.RatioRelativeLayout>
+            <com.jiliguala.niuwa.common.widget.RatioHorizontalScrollView n1:id="@id/baby_initiation_others_container" n1:paddingBottom="1.0px" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n3:ratio="0.56" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <include layout="@layout/item_baby_initiation_others" />
+            </com.jiliguala.niuwa.common.widget.RatioHorizontalScrollView>
+            <include layout="@layout/main_5_minutes" />
+            <include layout="@layout/layout_main_recommend" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView n1:id="@id/treasure" n1:visibility="invisible" n1:layout_width="55.0dip" n1:layout_height="80.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/icon_treasure" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

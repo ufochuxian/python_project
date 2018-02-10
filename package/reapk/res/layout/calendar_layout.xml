@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/button_small_height">
+        <ImageView n1:id="@id/prevMonth" n1:layout_width="@dimen/button_small_width" n1:layout_height="@dimen/button_small_height" n1:src="@drawable/s_btn_leftarrow" />
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/currentMonth" n1:layout_width="0.0dip" n1:layout_height="35.0dip" n1:layout_weight="3.0" />
+        <ImageView n1:id="@id/nextMonth" n1:layout_width="@dimen/button_small_width" n1:layout_height="@dimen/button_small_height" n1:src="@drawable/s_btn_rightarrow" />
+    </LinearLayout>
+    <LinearLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="30.0dip">
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="日" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="一" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="二" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="三" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="四" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="五" style="@style/weekName" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:text="六" style="@style/weekName" />
+    </LinearLayout>
+    <ViewFlipper n1:id="@id/flipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

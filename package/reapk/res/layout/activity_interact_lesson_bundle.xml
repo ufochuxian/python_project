@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiliguala.niuwa.common.widget.customview.SuperView n1:id="@id/superview" n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:errorView="@layout/layout_errorview" n2:loadingView="@layout/layout_loadingview"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout n1:id="@id/top_bar" n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/back_icon" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/nav_icon_back" />
+        <TextView n1:gravity="center" n1:id="@id/top_bar_title" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
+    </RelativeLayout>
+    <ListView n1:id="@id/list_view" n1:background="@color/pull_to_refresh_bg" n1:scrollbars="none" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="50.0dip" n1:cacheColorHint="#00000000" n1:divider="@null" n1:dividerHeight="0.0dip" n1:layout_below="@id/top_bar" n1:fastScrollEnabled="false" n1:headerDividersEnabled="false" n1:footerDividersEnabled="false" />
+    <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/buyRightNow" n1:background="@color/color_price" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:text="立即抢购" n1:layout_alignParentBottom="true" />
+</com.jiliguala.niuwa.common.widget.customview.SuperView>

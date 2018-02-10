@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/section_header_height">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginLeft="10.0dip" n1:text="@string/discovery_daily_store_title" n1:drawableLeft="@drawable/indicator_icon_shopping_2" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:gravity="center_vertical" n1:id="@id/action_more" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" n1:text="@string/more" n1:drawableRight="@drawable/s_icon_right_arrow_type3" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/daily_store_item_layout" />
+    <ImageView n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/feed_bottom_gap" />
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/section_header_height">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:id="@id/discovery_daily__title" n1:layout_width="fill_parent" n1:layout_height="30.0dip" n1:layout_marginLeft="10.0dip" n1:text="@string/discovery_daily_forum_best_title" n1:drawableLeft="@drawable/indicator_icon_forum_2" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

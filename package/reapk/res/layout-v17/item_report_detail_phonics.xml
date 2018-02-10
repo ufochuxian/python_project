@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="15.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/item_report_detail_head" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/alphabet_pron_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_below="@id/report_detail_head">
+        <RelativeLayout n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:gravity="center_vertical" n1:id="@id/alphabet_title" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:text="字母" n1:drawableLeft="@drawable/sicon_status_letter" />
+            <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/alphabet" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/alphabet_title" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:gravity="center_vertical" n1:id="@id/pronunciation_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="读音" n1:drawableLeft="@drawable/sicon_status_sound" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true" />
+            <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/pronunciation" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="/ei/" n1:layout_below="@id/pronunciation_title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:id="@id/expand_word_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_below="@id/alphabet_pron_container" />
+    <TextView n1:id="@id/expand_word" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/expand_word_title" />
+    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:id="@id/common_word_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:text="常见单词" n1:layout_below="@id/expand_word" />
+    <TextView n1:id="@id/common_word" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/common_word_title" />
+    <ImageView n1:id="@id/icon_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/s_icon_right_arrow_type3" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <RelativeLayout n1:id="@id/more_expand_word_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_weight="1.0" n1:layout_below="@id/common_word">
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:id="@id/more_expand_word_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:id="@id/more_expand_word" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/more_expand_word_title" />
+    </RelativeLayout>
+</RelativeLayout>

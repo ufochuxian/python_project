@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:paddingTop="30.0dip" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="140.0dip" n1:layout_marginRight="100.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+        <ImageView n1:id="@id/level_change" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:src="@drawable/roadsign" />
+        <TextView n1:textSize="@dimen/content_large_size" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/level_txt" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="42.0dip" n1:text="Level" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

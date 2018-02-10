@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/pull_to_refresh_bg" n1:paddingLeft="@dimen/content_margin" n1:paddingTop="10.0dip" n1:paddingRight="@dimen/content_margin" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.spinner.NiceSpinner n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_green" n1:gravity="center" n1:id="@id/course_select_spinner" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/button_small_height" n1:layout_marginTop="4.0dip" n1:minEms="3" n1:drawableRight="@drawable/arrow_down_green_small" n1:layout_alignParentRight="true" n2:arrowTint="@color/white" n2:hideArrow="true" n2:spinnerbackground="@drawable/course_age_bg" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:gravity="center|left" n1:id="@id/course_desc_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="2" n1:minLines="2" n1:layout_toLeftOf="@id/course_select_spinner" n1:layout_alignParentLeft="true" />
+</RelativeLayout>

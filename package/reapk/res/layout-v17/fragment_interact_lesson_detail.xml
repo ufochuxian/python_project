@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiliguala.niuwa.common.widget.customview.SuperView n1:id="@id/landScapeVideoContainer" n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/scroll_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="50.0dip" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
+        <RelativeLayout n1:id="@id/top_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:id="@id/header_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <FrameLayout n1:id="@id/video_parent_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <SurfaceView n1:layout_gravity="center" n1:id="@id/video_surface" n1:layout_width="fill_parent" n1:layout_height="@dimen/video_height" />
+                    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar n1:layout_gravity="center" n1:id="@id/loading_progress" n1:padding="5.0dip" n1:layout_width="@dimen/loader_width" n1:layout_height="@dimen/loader_width" n2:mlpb_arrow_height="0.0dip" n2:mlpb_arrow_width="0.0dip" n2:mlpb_enable_circle_background="false" n2:mlpb_progress_colors="@array/gplus_colors" n2:mlpb_progress_stoke_width="4.0dip" n2:mlpb_show_arrow="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n1:layout_gravity="center" n1:id="@id/video_play_pause_btn" n1:background="@color/mask_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/video_height" n1:src="@drawable/btn_play_type2" n1:scaleType="center" />
+                </FrameLayout>
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/video_desc_container" n1:background="@color/white" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/header_container">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/right_desc_container" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="10.0dip">
+                    <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="left" n1:id="@id/title" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_dark_gray" n1:gravity="left" n1:id="@id/detail_desc" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" />
+                </LinearLayout>
+                <LinearLayout n1:id="@id/price_container" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="10.0dip" n1:layout_below="@id/right_desc_container">
+                    <TextView n1:textSize="@dimen/content_x_large_size" n1:textStyle="bold" n1:textColor="@color/color_price" n1:id="@id/price" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:id="@id/originPrice" n1:background="@color/transparent" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_second_gray" n1:layout_gravity="right" n1:id="@id/done" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignBottom="@id/price_container" n1:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/bottom_container" n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/video_desc_container" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/buyRightNow" n1:background="@color/color_price" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:text="立即抢购" n1:layout_alignParentBottom="true" />
+</com.jiliguala.niuwa.common.widget.customview.SuperView>

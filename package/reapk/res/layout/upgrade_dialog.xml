@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="@dimen/popup_width" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip">
+        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/alert_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/upgrade_version_found" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/close" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/nav_round_icon_close1" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/img_new_release" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:text="@string/secondary_title_place_holder" n1:drawableLeft="@drawable/s_icon_find" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/divider" n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/content" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="100.0dip" n1:text="@string/secondary_title_place_holder" n1:maxLines="7" n1:layout_below="@id/divider" />
+    <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/confirm" n1:background="@drawable/btn_round_green_20" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/upgrade_right_now" n1:layout_weight="1.0" />
+</LinearLayout>

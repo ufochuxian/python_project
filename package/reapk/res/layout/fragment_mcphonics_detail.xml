@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/recycler" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/back_icon" n1:layout_width="@dimen/default_icon_size" n1:layout_height="@dimen/default_icon_size" n1:src="@drawable/icon_back_white" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/lesson_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:scaleType="centerCrop" />
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip">
+                <TextView n1:textSize="@dimen/content_x_large_size" n1:textStyle="bold" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/progress_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:gravity="top" n1:id="@id/bottom_container" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="55.0dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="0.0dip" n1:layout_alignParentBottom="true">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/finish_count" n1:layout_width="wrap_content" n1:layout_height="40.0dip" />
+    </RelativeLayout>
+    <ImageView n1:id="@id/report" n1:background="@color/transparent" n1:visibility="gone" n1:layout_width="180.0dip" n1:layout_height="108.0dip" n1:src="@drawable/cite_bear_report" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:id="@id/buy_road_map" n1:background="@drawable/btn_round_white_20" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:text="购买" n1:drawableLeft="@drawable/s_icon_mycourse_type2" n1:layout_alignParentRight="true" />
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:id="@id/buy_one_v_one" n1:background="@drawable/btn_round_white_20" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:text="北美外教" n1:drawableLeft="@drawable/s_icon_teacher" n1:layout_alignParentRight="true" />
+</RelativeLayout>

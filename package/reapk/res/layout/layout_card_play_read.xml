@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/card_play_read" n1:layout_width="60.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="10.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/action_play" n1:background="@drawable/card_play_bg" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="玩" />
+        <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="10.0dip" n1:src="@drawable/card_icon_flashcard" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+        <View n1:background="@drawable/main_card_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/action_reading" n1:background="@drawable/card_read_bg" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginTop="5.0dip" n1:layout_weight="1.0">
+        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="读" />
+        <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="10.0dip" n1:src="@drawable/card_icon_reading" n1:layout_weight="1.0" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+        <View n1:background="@drawable/main_card_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

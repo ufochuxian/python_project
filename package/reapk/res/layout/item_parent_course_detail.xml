@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/sub_course_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" />
+    <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/sub_course_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/sub_course_icon" n1:layout_centerVertical="true" />
+    <CheckedTextView n1:id="@id/sub_course_finish" n1:background="@drawable/bg_course_finish" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:gravity="center" n1:id="@id/status_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="未完成" n1:drawableLeft="@drawable/nicon_done_red" n1:layout_toLeftOf="@id/sub_course_finish" n1:layout_centerVertical="true" />
+    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginTop="10.0dip" n1:layout_below="@id/sub_course_icon" />
+</RelativeLayout>

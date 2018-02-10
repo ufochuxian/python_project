@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/head_view" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/pull_icon" n1:background="@drawable/default_ptr_flip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginLeft="60.0dip" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/refreshing_icon" n1:background="@drawable/refreshing" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="60.0dip" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/white" n1:id="@id/state_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/header_hint_normal" n1:layout_centerInParent="true" />
+            <ImageView n1:id="@id/state_iv" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip" n1:layout_toLeftOf="@id/state_tv" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

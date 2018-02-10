@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <GridLayout n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:columnCount="2" n1:useDefaultMargins="true">
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="App installed" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_app_installed" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="2014-01-01 00:00" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="User created" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_user_created" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="2014-01-01 00:00" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Session started" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_started" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 minutes ago" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Sessions" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_sessions" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Books opened" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_books_opened" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Midpoints passed" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_midpoints" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Onces triggered" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/session_onces" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0" />
+    </GridLayout>
+    <View n1:background="#ffdddddd" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false">
+        <Button n1:id="@id/button_session_reset_sessions_and_onces" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Reset sessions\nand onces" n1:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button.Borderless.Small" />
+        <View n1:background="#ffdddddd" n1:layout_width="1.0dip" n1:layout_height="fill_parent" />
+        <Button n1:id="@id/button_session_reset_reads" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Reset reads" n1:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button.Borderless.Small" />
+    </LinearLayout>
+    <View n1:background="#ffdddddd" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <Button n1:id="@id/button_session_reset_and_kill" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Reset all user data\n(App will be 'as new' on next start)" style="@android:style/Widget.Holo.Light.Button.Borderless.Small" />
+</LinearLayout>

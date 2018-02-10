@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/splash_container" n1:background="@color/white" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/bottom_view" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_alignParentBottom="true">
+        <ImageView n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_setting_logo" />
+    </FrameLayout>
+    <ImageView n1:id="@id/splash_img_extra" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" n1:layout_above="@id/bottom_view" />
+    <RelativeLayout n1:id="@id/progress_container" n1:background="@drawable/btn_round_white_20" n1:layout_width="60.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true">
+        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/skip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="跳过 5s" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/container" n1:background="@color/default_back_ground_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_bar" n1:background="@color/default_back_ground_white" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height_taller" n1:layout_alignParentTop="true">
+        <ImageButton n1:id="@id/top_back_btn" n1:background="@drawable/nav_icon_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        <android.support.v7.widget.RecyclerView n1:id="@id/course_cat_list" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:layout_toRightOf="@id/top_back_btn" n1:layout_centerInParent="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/divider" n1:background="@color/nav_line_grey" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/top_bar">
+        <ListView n1:gravity="center" n1:id="@id/listview" n1:background="@color/color_desktop_bg" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:cacheColorHint="#00000000" />
+    </RelativeLayout>
+    <View n1:id="@id/mask" n1:background="@color/mask_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

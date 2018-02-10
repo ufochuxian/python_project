@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <GridLayout n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:columnCount="2" n1:useDefaultMargins="true">
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="App Env" />
+        <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/debug_mode_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="-" />
+    </GridLayout>
+    <Button n1:id="@id/switch_app_env" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Switch Env" n1:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button.Borderless.Small" />
+</LinearLayout>
