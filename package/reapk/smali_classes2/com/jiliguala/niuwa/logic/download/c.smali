@@ -699,7 +699,6 @@
     .line 345
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
-    .line 346
     throw v8
 
     .line 326
@@ -938,7 +937,6 @@
 
     invoke-virtual {v4}, Landroid/net/http/AndroidHttpClient;->close()V
 
-    .line 154
     :cond_2
     throw v1
 .end method

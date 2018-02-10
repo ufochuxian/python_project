@@ -125,7 +125,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v3, "python"
 
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->g()I
 

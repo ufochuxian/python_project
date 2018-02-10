@@ -273,7 +273,6 @@
     .line 527
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 529
     :cond_2
     throw v8
 
@@ -511,10 +510,8 @@
     :goto_2
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 588
     throw v6
 
-    .line 587
     .end local v2    # "fileInputStream":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v3    # "fileInputStream":Ljava/io/FileInputStream;
@@ -636,10 +633,8 @@
     :goto_2
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 609
     throw v5
 
-    .line 608
     .end local v2    # "fileInputStream":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v3    # "fileInputStream":Ljava/io/FileInputStream;
@@ -882,7 +877,6 @@
     .line 463
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 465
     :cond_2
     throw v7
 

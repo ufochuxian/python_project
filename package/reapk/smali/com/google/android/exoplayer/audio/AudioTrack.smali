@@ -358,7 +358,6 @@
 
     iput-object v2, p0, Lcom/google/android/exoplayer/audio/AudioTrack;->audioTrack:Landroid/media/AudioTrack;
 
-    .line 834
     throw v1
 .end method
 

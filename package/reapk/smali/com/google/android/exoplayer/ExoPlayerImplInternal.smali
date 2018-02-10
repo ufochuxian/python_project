@@ -1649,7 +1649,6 @@
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
-    .line 503
     throw v2
 .end method
 
@@ -1768,10 +1767,8 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 580
     throw v2
 
-    .line 579
     :catchall_2
     move-exception v2
 
@@ -1864,7 +1861,6 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 377
     throw v0
 
     .line 371

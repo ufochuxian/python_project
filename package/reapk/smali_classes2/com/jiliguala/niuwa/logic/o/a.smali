@@ -243,7 +243,6 @@
     .line 173
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 174
     throw v8
 
     .line 171
@@ -432,7 +431,6 @@
     .line 146
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 147
     throw v4
 
     .line 145

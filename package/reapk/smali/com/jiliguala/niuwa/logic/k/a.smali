@@ -325,7 +325,6 @@
     .line 160
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 162
     :cond_4
     throw v0
 .end method
@@ -669,7 +668,6 @@
     .line 291
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 292
     throw v6
 
     .line 290
@@ -1040,7 +1038,6 @@
     .line 84
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 86
     :cond_3
     throw v0
     :try_end_3

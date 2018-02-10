@@ -144,7 +144,6 @@
 
     invoke-direct {p0}, Lcom/google/android/exoplayer/util/ManifestFetcher$SingleFetchHelper;->releaseLoader()V
 
-    .line 392
     throw v1
 .end method
 
@@ -190,7 +189,6 @@
 
     invoke-direct {p0}, Lcom/google/android/exoplayer/util/ManifestFetcher$SingleFetchHelper;->releaseLoader()V
 
-    .line 381
     throw v1
 .end method
 
@@ -221,7 +219,6 @@
 
     invoke-direct {p0}, Lcom/google/android/exoplayer/util/ManifestFetcher$SingleFetchHelper;->releaseLoader()V
 
-    .line 401
     throw v0
 .end method
 

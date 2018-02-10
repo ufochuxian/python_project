@@ -318,7 +318,6 @@
 
     iput-object v1, p0, Lcom/google/android/exoplayer/text/SubtitleParserHelper;->runtimeError:Ljava/lang/RuntimeException;
 
-    .line 140
     throw v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1

@@ -79,6 +79,5 @@
 
     invoke-virtual {v1}, Landroid/os/ConditionVariable;->open()V
 
-    .line 694
     throw v0
 .end method

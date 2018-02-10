@@ -474,10 +474,8 @@
     :goto_4
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/xutils/util/e;->a(Ljava/io/Closeable;)V
 
-    .line 96
     throw v20
 
-    .line 95
     .end local v4    # "bis":Ljava/io/BufferedInputStream;
     .restart local v5    # "bis":Ljava/io/BufferedInputStream;
     :catchall_1

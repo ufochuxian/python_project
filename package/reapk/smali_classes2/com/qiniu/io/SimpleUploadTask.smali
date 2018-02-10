@@ -311,7 +311,6 @@
 
     iput-object v5, p0, Lcom/qiniu/io/SimpleUploadTask;->post:Lorg/apache/http/client/methods/HttpPost;
 
-    .line 50
     throw v3
 .end method
 

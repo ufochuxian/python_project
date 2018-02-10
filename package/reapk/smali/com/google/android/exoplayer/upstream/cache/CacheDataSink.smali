@@ -158,7 +158,6 @@
     .line 125
     iput-object v4, p0, Lcom/google/android/exoplayer/upstream/cache/CacheDataSink;->file:Ljava/io/File;
 
-    .line 126
     throw v1
 
     .line 122

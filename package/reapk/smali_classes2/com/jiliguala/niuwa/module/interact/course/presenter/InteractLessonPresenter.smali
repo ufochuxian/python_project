@@ -3088,10 +3088,8 @@
     :goto_4
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 382
     throw v4
 
-    .line 381
     .end local v2    # "fis":Ljava/io/FileInputStream;
     .restart local v3    # "fis":Ljava/io/FileInputStream;
     :catchall_1

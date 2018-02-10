@@ -2778,7 +2778,7 @@
 
     const-string v1, "apk channel"
 
-    sget-object v2, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v2, "python"
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 

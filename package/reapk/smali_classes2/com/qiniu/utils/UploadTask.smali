@@ -207,7 +207,6 @@
 
     invoke-virtual {p0}, Lcom/qiniu/utils/UploadTask;->clean()V
 
-    .line 47
     throw v0
 .end method
 

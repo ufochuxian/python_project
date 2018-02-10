@@ -1290,7 +1290,6 @@
 
     invoke-virtual {v3}, Ljava/util/LinkedList;->clear()V
 
-    .line 432
     :cond_2
     throw v2
 .end method

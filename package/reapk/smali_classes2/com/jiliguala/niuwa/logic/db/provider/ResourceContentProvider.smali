@@ -296,7 +296,6 @@
 
     invoke-virtual {v4}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 465
     throw v6
 
     .line 430

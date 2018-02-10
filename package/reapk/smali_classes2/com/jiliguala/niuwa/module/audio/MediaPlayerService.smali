@@ -752,10 +752,8 @@
     :goto_6
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 522
     throw v5
 
-    .line 521
     .end local v3    # "fis":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v2    # "fileDescriptor":Ljava/io/FileDescriptor;

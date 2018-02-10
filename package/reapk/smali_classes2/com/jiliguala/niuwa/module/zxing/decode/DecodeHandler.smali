@@ -306,7 +306,6 @@
 
     invoke-virtual {v11}, Lcom/google/zxing/MultiFormatReader;->reset()V
 
-    .line 114
     throw v10
 
     .line 128

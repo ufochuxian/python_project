@@ -892,7 +892,6 @@
     .line 239
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 240
     throw v8
 
     .line 248
@@ -1659,7 +1658,7 @@
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_8
 
-    .line 345
+    .line 343
     :cond_8
     :goto_8
     throw v8

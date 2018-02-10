@@ -278,7 +278,6 @@
     .line 189
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 190
     throw v8
 
     .line 188

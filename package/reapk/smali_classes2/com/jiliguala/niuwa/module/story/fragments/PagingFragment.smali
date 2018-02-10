@@ -394,7 +394,7 @@
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
 
-    .line 528
+    .line 527
     :cond_3
     :goto_3
     throw v0
@@ -1213,7 +1213,6 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/story/fragments/PagingFragment;->mMediaPlayer:Landroid/media/MediaPlayer;
 
-    .line 554
     throw v0
 .end method
 

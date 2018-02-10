@@ -465,7 +465,6 @@
     .line 93
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 95
     :cond_5
     throw v3
 

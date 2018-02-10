@@ -130,21 +130,21 @@ print(reApkPath)
 pygame.init()
 
 
-def resolveEnv(con):
+def resolve_env(con):
     if con.startswith('ENV_'):
         return os.environ.get(con)
     return con
 
 
-def unpackageApk():
+def unpackage_apk():
     os.system(unPackageApkCommond)
 
 
-def packageApk():
+def package_apk():
     os.system(packageApkCommond)
 
 
-def signApk(channel):
+def sign_apk(channel):
     new_apk_name = apkNamePrefix + '_' + channel + '.apk'
     save_sign_apk_path = '/Users/chen/PycharmProjects/untitled1/package/reapk/dist/' + new_apk_name
     sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
@@ -152,7 +152,7 @@ def signApk(channel):
     os.system(sign_apk_commond)
 
 
-def replaceSplash(channel):
+def replace_splash(channel):
     if channel == 'HUAWEIM':
         shutil.copy(splash_res_h_huawei, src_h_splash)
         shutil.copy(splash_res_xh_huawei, src_xh_splash)
@@ -176,7 +176,7 @@ def replaceSplash(channel):
         shutil.copy(splash_res_xxh_standard, src_xxh_splash)
 
 
-def replaceChannel(channel):
+def replace_apk_channel(channel):
     doc = minidom.parse(mainfestxmlPath)
     metadatas = doc.getElementsByTagName('meta-data')
 
@@ -192,7 +192,7 @@ def replaceChannel(channel):
             print('change value:%s' % value)
 
 
-def replaceNameApp(channel):
+def replace_app_name(channel):
     if channel == 'MIM' or channel == '360M':
         app_name_value = channels_app_name_extra
     elif channel == 'YYBM' or channel == 'ANZHIM' or channel == 'WDJM' or channel == 'GDTM' or channel == 'BDM':
@@ -214,11 +214,11 @@ def replaceNameApp(channel):
             print('app_name_value:%s' % app_name_value)
 
 
-def notifyPackageSuccess():
+def notify_package_success():
     logging.info('package sucess...')
-    APP_ID = resolveEnv(cf.get('baidu', 'AppID'))
-    API_KEY = resolveEnv(cf.get('baidu', 'API_Key'))
-    SECRET_KEY = resolveEnv(cf.get('baidu', 'SECRET_KEY'))
+    APP_ID = resolve_env(cf.get('baidu', 'AppID'))
+    API_KEY = resolve_env(cf.get('baidu', 'API_Key'))
+    SECRET_KEY = resolve_env(cf.get('baidu', 'SECRET_KEY'))
     client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
     result = client.synthesis('全渠道打包成功了', 'zh', 1, {
@@ -239,17 +239,17 @@ starttime = datetime.datetime.now()
 if (os.path.exists(reApkPath)):
     shutil.rmtree(reApkPath)
 
-unpackageApk()
+unpackage_apk()
 #
 for channel in channels_release:
-    replaceSplash(channel)
-    replaceNameApp(channel)
-    replaceChannel(channel)
-    packageApk()
-    signApk(channel)
+    replace_splash(channel)
+    replace_app_name(channel)
+    replace_apk_channel(channel)
+    package_apk()
+    sign_apk(channel)
 
 endTime = datetime.datetime.now()
 
-notifyPackageSuccess()
+notify_package_success()
 
 print('use time:%s' % (endTime - starttime))

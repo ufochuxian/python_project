@@ -353,7 +353,6 @@
 
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 214
     throw v1
 .end method
 

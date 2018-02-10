@@ -241,7 +241,6 @@
     .line 219
     iput-object v3, p0, Lcom/google/android/exoplayer/upstream/cache/CacheDataSource;->lockedSpan:Lcom/google/android/exoplayer/upstream/cache/CacheSpan;
 
-    .line 221
     :cond_2
     throw v0
 .end method

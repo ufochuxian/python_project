@@ -106,7 +106,6 @@
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/common/util/xutils/task/PriorityObjectBlockingQueue;->fullyUnlock()V
 
-    .line 543
     throw v0
 .end method
 
@@ -224,7 +223,6 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/util/xutils/task/PriorityObjectBlockingQueue;->fullyUnlock()V
 
-    .line 573
     throw v1
 
     .line 566
@@ -367,6 +365,5 @@
 
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/common/util/xutils/task/PriorityObjectBlockingQueue;->fullyUnlock()V
 
-    .line 591
     throw v3
 .end method

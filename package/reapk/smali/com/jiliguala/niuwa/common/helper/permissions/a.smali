@@ -102,6 +102,5 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/helper/permissions/a;->a(Landroid/hardware/Camera;)V
 
-    .line 21
     throw v2
 .end method

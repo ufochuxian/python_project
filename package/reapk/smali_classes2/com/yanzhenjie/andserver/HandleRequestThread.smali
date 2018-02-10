@@ -167,7 +167,7 @@
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 60
+    .line 59
     :goto_2
     throw v1
 

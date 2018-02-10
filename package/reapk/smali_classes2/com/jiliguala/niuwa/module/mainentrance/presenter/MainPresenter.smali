@@ -192,7 +192,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v2, "python"
 
     .line 243
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->g()I
@@ -760,7 +760,7 @@
     .local v3, "localVer":I
     if-le v4, v3, :cond_4
 
-    sget-object v6, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v6, "python"
 
     const-string v7, "GPM"
 

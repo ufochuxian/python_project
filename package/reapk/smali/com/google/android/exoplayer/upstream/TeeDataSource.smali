@@ -79,7 +79,6 @@
 
     invoke-interface {v1}, Lcom/google/android/exoplayer/upstream/DataSink;->close()V
 
-    .line 69
     throw v0
 .end method
 

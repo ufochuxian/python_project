@@ -1084,7 +1084,6 @@
     .line 522
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
-    .line 523
     throw v8
 
     .line 492
@@ -1847,7 +1846,6 @@
 
     invoke-virtual {v5}, Lorg/apache/http/client/methods/HttpGet;->abort()V
 
-    .line 244
     :cond_10
     throw v4
 .end method

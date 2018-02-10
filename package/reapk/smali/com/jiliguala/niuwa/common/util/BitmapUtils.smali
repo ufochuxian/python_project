@@ -255,10 +255,8 @@
     :goto_4
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 79
     throw v7
 
-    .line 78
     .end local v4    # "out":Ljava/io/FileOutputStream;
     .restart local v0    # "byteCount":I
     .restart local v3    # "file":Ljava/io/File;

@@ -641,7 +641,6 @@
     :catchall_0
     move-exception v5
 
-    .line 334
     throw v5
 
     .line 337
@@ -972,7 +971,7 @@
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
     .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
-    .line 266
+    .line 265
     :cond_4
     :goto_3
     :try_start_9

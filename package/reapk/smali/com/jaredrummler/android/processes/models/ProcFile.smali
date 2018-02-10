@@ -182,7 +182,6 @@
     .line 49
     invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
 
-    .line 51
     :cond_2
     throw v5
 

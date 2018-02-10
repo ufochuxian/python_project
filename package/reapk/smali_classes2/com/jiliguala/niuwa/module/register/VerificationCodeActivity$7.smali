@@ -298,7 +298,6 @@
     .line 215
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 217
     :cond_5
     throw v0
 .end method

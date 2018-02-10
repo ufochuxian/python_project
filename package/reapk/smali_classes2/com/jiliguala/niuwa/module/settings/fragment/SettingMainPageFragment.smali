@@ -597,7 +597,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v3, "python"
 
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->g()I
 
@@ -1208,7 +1208,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment;->mCheckNewContainer:Landroid/view/View;
 
     .line 555
-    sget-object v1, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+    const-string v1, "python"
 
     const-string v3, "GPM"
 

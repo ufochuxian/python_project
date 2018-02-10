@@ -321,7 +321,6 @@
 
     invoke-interface {v3}, Lcom/jiliguala/niuwa/recorder/audio/d;->c()V
 
-    .line 210
     :cond_5
     throw v2
     :try_end_3

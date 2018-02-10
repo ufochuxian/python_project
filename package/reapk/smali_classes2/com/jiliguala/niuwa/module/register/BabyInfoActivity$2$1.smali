@@ -211,7 +211,6 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/register/BabyInfoActivity;->onBackPressed()V
 
-    .line 690
     throw v0
 .end method
 

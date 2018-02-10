@@ -193,7 +193,6 @@
     .line 111
     invoke-interface {v1}, Landroid/content/res/XmlResourceParser;->close()V
 
-    .line 112
     :cond_1
     throw v3
 

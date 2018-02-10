@@ -2811,7 +2811,6 @@
 
     invoke-super {p0}, Lcom/google/android/exoplayer/SampleSourceTrackRenderer;->onDisabled()V
 
-    .line 436
     throw v0
 
     .line 429
@@ -2840,16 +2839,13 @@
     :cond_1
     invoke-super {p0}, Lcom/google/android/exoplayer/SampleSourceTrackRenderer;->onDisabled()V
 
-    .line 437
     throw v0
 
-    .line 435
     :catchall_2
     move-exception v0
 
     invoke-super {p0}, Lcom/google/android/exoplayer/SampleSourceTrackRenderer;->onDisabled()V
 
-    .line 436
     throw v0
 .end method
 
@@ -3136,7 +3132,6 @@
 
     iput-object v3, p0, Lcom/google/android/exoplayer/MediaCodecTrackRenderer;->codec:Landroid/media/MediaCodec;
 
-    .line 468
     throw v0
 
     .line 464
@@ -3154,16 +3149,13 @@
     .line 467
     iput-object v3, p0, Lcom/google/android/exoplayer/MediaCodecTrackRenderer;->codec:Landroid/media/MediaCodec;
 
-    .line 469
     throw v0
 
-    .line 467
     :catchall_2
     move-exception v0
 
     iput-object v3, p0, Lcom/google/android/exoplayer/MediaCodecTrackRenderer;->codec:Landroid/media/MediaCodec;
 
-    .line 468
     throw v0
 .end method
 

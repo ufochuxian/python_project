@@ -577,7 +577,7 @@
 
     goto :goto_2
 
-    .line 265
+    .line 264
     .end local v0    # "listener":Lcom/jiliguala/niuwa/module/story/data/StoryAudioManager$StoryAudioPlaybackListener;
     :cond_1
     throw v1
@@ -973,7 +973,7 @@
 
     goto :goto_3
 
-    .line 302
+    .line 301
     .end local v0    # "listener":Lcom/jiliguala/niuwa/module/story/data/StoryAudioManager$StoryAudioPlaybackListener;
     :cond_1
     throw v1

@@ -308,7 +308,6 @@
     .line 296
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    .line 298
     :cond_1
     throw v2
 
@@ -404,7 +403,6 @@
     .line 284
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    .line 286
     :cond_1
     throw v2
 
@@ -518,7 +516,6 @@
     .line 155
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/image/a$c;->close()V
 
-    .line 157
     :cond_2
     throw v2
 .end method
@@ -626,7 +623,6 @@
     .line 212
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/image/a$c;->close()V
 
-    .line 214
     :cond_4
     throw v3
 .end method
@@ -785,7 +781,6 @@
     .line 189
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/image/a$c;->close()V
 
-    .line 191
     :cond_4
     throw v6
 .end method
@@ -956,7 +951,6 @@
     .line 252
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/image/a$c;->close()V
 
-    .line 254
     :cond_5
     throw v6
 

@@ -152,7 +152,6 @@
 
     invoke-interface {v2}, Lcom/google/android/exoplayer/upstream/TransferListener;->onTransferEnd()V
 
-    .line 117
     :cond_1
     throw v1
 .end method

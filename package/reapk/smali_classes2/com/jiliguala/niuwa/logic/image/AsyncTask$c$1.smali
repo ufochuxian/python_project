@@ -69,6 +69,5 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/image/AsyncTask$c;->a()V
 
-    .line 577
     throw v0
 .end method

@@ -111,7 +111,6 @@
     .line 72
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 73
     throw v4
 
     .line 71
@@ -243,10 +242,8 @@
     :goto_2
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 109
     throw v4
 
-    .line 108
     .end local v2    # "is":Ljava/io/InputStream;
     .restart local v3    # "is":Ljava/io/InputStream;
     :catchall_1
@@ -351,7 +348,6 @@
     .line 51
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 52
     throw v4
 
     .line 50

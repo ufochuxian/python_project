@@ -1,10 +1,10 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: PQ6R8JYdkiO/vHyaQ57LwLf8rbo=
+SHA1-Digest-Manifest: tQ4FytNHEZ1DAjAjkBgs+DtKNvI=
 X-Android-APK-Signed: 2
 
 Name: AndroidManifest.xml
-SHA1-Digest: 2FCjopVhup1snhy89VHfQPjrxWk=
+SHA1-Digest: 4sXSHYDadiVcS4qyvDj3vzEp4K4=
 
 Name: META-INF/rxjava.properties
 SHA1-Digest: ATdlTG6Z2dm6XMRG6V52FJHHUgs=
@@ -31,7 +31,7 @@ Name: assets/bird_error.png
 SHA1-Digest: Wq0O5jvKsd3u5/YiWYJI5Fg4A8c=
 
 Name: assets/crashlytics-build.properties
-SHA1-Digest: zGrT55ar52CNcaoWHyzf4YSfRJk=
+SHA1-Digest: oDKELP2uD+xjkKX/7TMKRtDgJbQ=
 
 Name: assets/drawable-hdpi/ic_com_sina_weibo_sdk_close.png
 SHA1-Digest: F3qMe9fJmrz8BD8tYfYDQoOD7mQ=
@@ -61,10 +61,10 @@ Name: assets/xwalk-command-line
 SHA1-Digest: DYqDIX8ezW0jscjlkfrJ+E7kN+Y=
 
 Name: classes.dex
-SHA1-Digest: yBYBKbG6dc46jnchjAuZ2m2fWtI=
+SHA1-Digest: 2eGeTzgXVLJ4tgzUu9lV4tpqkdo=
 
 Name: classes2.dex
-SHA1-Digest: utj2ZGjwsD8Syly1/bC+otjKe5w=
+SHA1-Digest: Nn0xsZNG/YKUEHeH24Yk/HFHEgM=
 
 Name: classes3.dex
 SHA1-Digest: K/FInPEdIkvsNP4DHH7khubm5vY=
@@ -91,34 +91,34 @@ Name: fabric/io.fabric.sdk.android.fabric.properties
 SHA1-Digest: qF17FylerYmPQX0gBXmvJb9VE44=
 
 Name: lib/armeabi/libaiengine.so
-SHA1-Digest: ywtIIJ7vS4UXjefe9H4FrIsDHTA=
+SHA1-Digest: 7Z7v7jGqL25WnbP64jqdNQV3MOo=
 
 Name: lib/armeabi/libentryexpro.so
-SHA1-Digest: h412RzE+PDNL76XXp4qPrd4GcUM=
+SHA1-Digest: G+BHvkn5Pgvt+Ayvdc7LmJ6jtWI=
 
 Name: lib/armeabi/libjcore118.so
-SHA1-Digest: m9S2VlFRvswLRSfr5PM5kHDyDQQ=
+SHA1-Digest: dxfcv5MbgaREWVd+2i2YaN2j25s=
 
 Name: lib/armeabi/libmp3lame.so
-SHA1-Digest: mg7ElCCUmtIjJwV9rAsM7uH/L+c=
+SHA1-Digest: Vw3QtMgFC00j0Xfy5kO7ENuuBS8=
 
 Name: lib/armeabi/libpingpp.so
-SHA1-Digest: V7lvTXqWi+lsr4PQWqdcGUFPk9s=
+SHA1-Digest: VwJv94a5bVZMgTtovcBKuUUnkNE=
 
 Name: lib/armeabi/libsgmain.so
 SHA1-Digest: QNwfWHvyPBQ1Jxe4qAPGwnjEqoY=
 
 Name: lib/armeabi/libuptsmaddon.so
-SHA1-Digest: 0hbi3/Z/6nIQjykJ54cnFBABnCU=
+SHA1-Digest: ajSWHpd+nuZGotW9eZ2J3oBZIRM=
 
 Name: lib/armeabi/libweibosdkcore.so
 SHA1-Digest: I01uNB+sRqzNtjL4jBGR3yLCrv8=
 
 Name: lib/armeabi/libxwalkcore.so
-SHA1-Digest: HJz4Vpp7acOytWlSg238kvS4SDA=
+SHA1-Digest: pCkL6dEaRsExto+no/E1d32xvrI=
 
 Name: lib/armeabi/libxwalkdummy.so
-SHA1-Digest: 1UxDrGSI9VIZzKhkWtKkosy4UHw=
+SHA1-Digest: 4k/QlCLAyVqcw2GUWh7RBTEJXfg=
 
 Name: lib/mips/libaiengine.so
 SHA1-Digest: FodHF5wbOHeNlKJGWiiJjuFztr0=
@@ -148,49 +148,49 @@ Name: lib/x86/libaiengine.so
 SHA1-Digest: ZovBUwDDE3AaxxMUVxIuR6EqxJA=
 
 Name: lib/x86/libentryexpro.so
-SHA1-Digest: E2Kmai/oQCN5Z2k6cGirNf3r0VQ=
+SHA1-Digest: 5EX6JRXvKyXgZM4ZnW/usMKpnR8=
 
 Name: lib/x86/libjcore118.so
-SHA1-Digest: OGnirYqWmE0JId9SuHsIIbfax/A=
+SHA1-Digest: f/FAh8NuPOan8vHfWdHYDvPUa4I=
 
 Name: lib/x86/libmp3lame.so
-SHA1-Digest: paXKcoRNl2yimIZJgiSa/zPWiLs=
+SHA1-Digest: TnEF/ZDUk2rTTeqPIM/A9i8KiI4=
 
 Name: lib/x86/libpingpp.so
-SHA1-Digest: 28zi9BRvb0q9o6/SeRptlmWof+E=
+SHA1-Digest: JAhzJ7/CI1b75hgMq1V4pcu9e7s=
 
 Name: lib/x86/libsgmain.so
 SHA1-Digest: b2NQ56K0ffFsnus7qCfA7h1azN4=
 
 Name: lib/x86/libuptsmaddon.so
-SHA1-Digest: 3BlDLtNjITbAeMJeSIjOOdwgSl4=
+SHA1-Digest: hz2nz0dCI6hWITx7ZRPflK1b7c4=
 
 Name: lib/x86/libweibosdkcore.so
-SHA1-Digest: kTO2WYWGDwNI2zdZLp+uQKHcx0g=
+SHA1-Digest: cRXwTpaIpNpQITE+om1a/5jB4kM=
 
 Name: lib/x86_64/libaiengine.so
-SHA1-Digest: q4stoVFVbrl1yOknV8w2TQj8RTg=
+SHA1-Digest: awCEEDzZJfEajBOMOwP/Vpp/On0=
 
 Name: lib/x86_64/libentryexpro.so
-SHA1-Digest: ub8IFnviZgjiDGUQ+EJmbA5Dsk8=
+SHA1-Digest: oXteO+rMfFO9Qsqhcg1fZKxecL4=
 
 Name: lib/x86_64/libjcore118.so
-SHA1-Digest: LgvLBqNnSQalqoQUSf6n18/COJ0=
+SHA1-Digest: oOXa5LM8wvhraZWaDkUhdfQywsg=
 
 Name: lib/x86_64/libjpush217.so
-SHA1-Digest: lVBX0Y4rdNrVy/jz/q+HSnwbGdQ=
+SHA1-Digest: KYJiHJuRX3Lhd6pxKvuFHSi6UMk=
 
 Name: lib/x86_64/libpingpp.so
-SHA1-Digest: EMGtC/efxD+iSb+q7neJq7Rs20E=
+SHA1-Digest: bEXGgITxPMIqCr/kDFUsWvHkwFc=
 
 Name: lib/x86_64/libsgmain.so
 SHA1-Digest: ivMZbTIeViH3rzlzCrqTNQVE3oE=
 
 Name: lib/x86_64/libuptsmaddon.so
-SHA1-Digest: D1AU9eevfzuEn15YSwtLXuq+mXE=
+SHA1-Digest: IdYqWT8yBYyH1CSWdLtoDzU/YEM=
 
 Name: lib/x86_64/libweibosdkcore.so
-SHA1-Digest: xmUzKWi/IbKkMejmJkx7gGjXo3I=
+SHA1-Digest: vsJj+t6CzWdUq3l3fE2HhbKJtqA=
 
 Name: miui_push_version
 SHA1-Digest: V9tZwWZmuT5ICmaXEn2w52D0lgg=
@@ -10641,5 +10641,5 @@ Name: res/xml/provider_paths.xml
 SHA1-Digest: Ukuvy5xVJ/llnc+4Z3vhljBIEnA=
 
 Name: resources.arsc
-SHA1-Digest: elowc0FvvodQI7Ty98+6CXIEkm0=
+SHA1-Digest: o/lRTtpHzZi/81glSMd9q560tPs=
 
