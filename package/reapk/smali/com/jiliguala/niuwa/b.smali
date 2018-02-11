@@ -12,9 +12,9 @@
 
 .field public static final d:Ljava/lang/String; = ""
 
-.field public static final e:I = 0x53
+.field public static final e:I = 0x54
 
-.field public static final f:Ljava/lang/String; = "7.2"
+.field public static final f:Ljava/lang/String; = "7.3_beta"
 
 
 # direct methods

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1061
+    .line 1063
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$2;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,11 +41,11 @@
     .locals 1
 
     .prologue
-    .line 1064
+    .line 1066
     const-string v0, "\u6570\u636e\u8fc1\u79fb\u540e\u5c06\u91cd\u542f"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1065
+    .line 1067
     return-void
 .end method

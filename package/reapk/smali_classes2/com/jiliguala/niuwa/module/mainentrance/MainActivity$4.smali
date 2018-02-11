@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1190
+    .line 1192
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Ljava/lang/String;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 1193
+    .line 1195
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$1100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/d;
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1194
+    .line 1196
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$1100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/d;
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/d;->dismissAllowingStateLoss()V
 
-    .line 1196
+    .line 1198
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -71,6 +71,6 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/d;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 1197
+    .line 1199
     return-void
 .end method

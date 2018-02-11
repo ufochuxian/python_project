@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1385
+    .line 1387
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1386
+    .line 1388
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1387
+    .line 1389
     return-void
 .end method
 
@@ -64,7 +64,7 @@
 
     const/4 v3, 0x1
 
-    .line 1391
+    .line 1393
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -73,21 +73,21 @@
 
     if-eqz v2, :cond_0
 
-    .line 1392
+    .line 1394
     iget v2, p1, Landroid/os/Message;->what:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 1484
+    .line 1486
     :pswitch_0
     invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    .line 1488
+    .line 1490
     :cond_0
     :goto_0
     return-void
 
-    .line 1394
+    .line 1396
     :pswitch_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -103,7 +103,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1396
+    .line 1398
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -120,7 +120,7 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1397
+    .line 1399
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -139,17 +139,17 @@
 
     move-result-object v1
 
-    .line 1398
+    .line 1400
     .local v1, "msg_new":Landroid/os/Message;
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1399
+    .line 1401
     .local v0, "bundle":Landroid/os/Bundle;
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    .line 1400
+    .line 1402
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -168,7 +168,7 @@
 
     goto :goto_0
 
-    .line 1403
+    .line 1405
     .end local v0    # "bundle":Landroid/os/Bundle;
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_1
@@ -212,7 +212,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1404
+    .line 1406
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -230,7 +230,7 @@
 
     goto/16 :goto_0
 
-    .line 1408
+    .line 1410
     :pswitch_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -244,7 +244,7 @@
 
     if-nez v2, :cond_3
 
-    .line 1410
+    .line 1412
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -259,7 +259,7 @@
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1411
+    .line 1413
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -276,7 +276,7 @@
 
     move-result-object v1
 
-    .line 1412
+    .line 1414
     .restart local v1    # "msg_new":Landroid/os/Message;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -294,7 +294,7 @@
 
     goto/16 :goto_0
 
-    .line 1415
+    .line 1417
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_3
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -311,7 +311,7 @@
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1416
+    .line 1418
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -334,7 +334,7 @@
 
     goto :goto_1
 
-    .line 1419
+    .line 1421
     :pswitch_3
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -348,7 +348,7 @@
 
     if-nez v2, :cond_5
 
-    .line 1421
+    .line 1423
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -365,7 +365,7 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1422
+    .line 1424
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -384,7 +384,7 @@
 
     move-result-object v1
 
-    .line 1423
+    .line 1425
     .restart local v1    # "msg_new":Landroid/os/Message;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -402,7 +402,7 @@
 
     goto/16 :goto_0
 
-    .line 1426
+    .line 1428
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_5
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -421,7 +421,7 @@
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1427
+    .line 1429
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -444,7 +444,7 @@
 
     goto :goto_2
 
-    .line 1430
+    .line 1432
     :pswitch_4
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -458,7 +458,7 @@
 
     if-nez v2, :cond_7
 
-    .line 1432
+    .line 1434
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -473,7 +473,7 @@
 
     invoke-virtual {v2, v8}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1433
+    .line 1435
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -490,7 +490,7 @@
 
     move-result-object v1
 
-    .line 1434
+    .line 1436
     .restart local v1    # "msg_new":Landroid/os/Message;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -508,7 +508,7 @@
 
     goto/16 :goto_0
 
-    .line 1437
+    .line 1439
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_7
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -525,7 +525,7 @@
 
     invoke-virtual {v2, v8}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1438
+    .line 1440
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -548,7 +548,7 @@
 
     goto :goto_3
 
-    .line 1442
+    .line 1444
     :pswitch_5
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -562,7 +562,7 @@
 
     if-nez v2, :cond_9
 
-    .line 1444
+    .line 1446
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -579,7 +579,7 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1445
+    .line 1447
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -598,7 +598,7 @@
 
     move-result-object v1
 
-    .line 1446
+    .line 1448
     .restart local v1    # "msg_new":Landroid/os/Message;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -616,7 +616,7 @@
 
     goto/16 :goto_0
 
-    .line 1449
+    .line 1451
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_9
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -635,7 +635,7 @@
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1450
+    .line 1452
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -658,7 +658,7 @@
 
     goto :goto_4
 
-    .line 1454
+    .line 1456
     :pswitch_6
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -672,7 +672,7 @@
 
     goto/16 :goto_0
 
-    .line 1457
+    .line 1459
     :pswitch_7
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -688,7 +688,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1458
+    .line 1460
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -705,7 +705,7 @@
 
     goto/16 :goto_0
 
-    .line 1462
+    .line 1464
     :pswitch_8
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -721,7 +721,7 @@
 
     if-eqz v2, :cond_b
 
-    .line 1464
+    .line 1466
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -737,31 +737,6 @@
     const/16 v3, 0x1006
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
-
-    .line 1465
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$400(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
-
-    move-result-object v2
-
-    const/16 v3, 0x1006
-
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v1
-
-    .line 1466
-    .restart local v1    # "msg_new":Landroid/os/Message;
-    iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    iput-object v2, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 1467
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -776,13 +751,38 @@
 
     move-result-object v2
 
+    const/16 v3, 0x1006
+
+    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v1
+
+    .line 1468
+    .restart local v1    # "msg_new":Landroid/os/Message;
+    iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    iput-object v2, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 1469
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$400(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
+
+    move-result-object v2
+
     const-wide/16 v4, 0x3e8
 
     invoke-virtual {v2, v1, v4, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto/16 :goto_0
 
-    .line 1470
+    .line 1472
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_b
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -797,7 +797,7 @@
 
     goto/16 :goto_0
 
-    .line 1473
+    .line 1475
     :pswitch_9
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -811,7 +811,7 @@
 
     if-nez v2, :cond_c
 
-    .line 1475
+    .line 1477
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -828,7 +828,7 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeMessages(I)V
 
-    .line 1476
+    .line 1478
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -847,13 +847,13 @@
 
     move-result-object v1
 
-    .line 1477
+    .line 1479
     .restart local v1    # "msg_new":Landroid/os/Message;
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     iput-object v2, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1478
+    .line 1480
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -872,7 +872,7 @@
 
     goto/16 :goto_0
 
-    .line 1481
+    .line 1483
     .end local v1    # "msg_new":Landroid/os/Message;
     :cond_c
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -891,7 +891,7 @@
 
     goto/16 :goto_0
 
-    .line 1392
+    .line 1394
     :pswitch_data_0
     .packed-switch 0x1000
         :pswitch_1

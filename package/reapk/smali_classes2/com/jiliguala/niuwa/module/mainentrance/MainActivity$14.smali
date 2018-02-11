@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 774
+    .line 776
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$14;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 2
 
     .prologue
-    .line 777
+    .line 779
     const-string v0, "SHOW_MASK_VIEW"
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
 
-    .line 778
+    .line 780
     return-void
 .end method

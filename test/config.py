@@ -5,7 +5,7 @@
 # print("hello",name)
 
 # print('1024 + 768 = ',1024 + 768)
-
+import logging
 import threading
 
 import time
@@ -26,7 +26,6 @@ def resolveEnv(con):
         return os.environ.get(con)
     return con
 
-
 print(resolveEnv(cf.get('ver', 'versionname')))
 print(resolveEnv(cf.get('ver', 'versioncode')))
 
@@ -38,7 +37,12 @@ SECRET_KEY = resolveEnv(cf.get('baidu', 'SECRET_KEY'))
 print(SECRET_KEY)
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
-result = client.synthesis('我还是个单身狗,哇哇哇', 'zh', 1, {
+logging.info("test logging color")
+
+# result = client.synthesis('我还是个单身狗,哇哇哇', 'zh', 1, {
+#     'vol': 5,'spd':5,'per':0
+# }
+result = client.synthesis('尴尬的一比', 'zh', 1, {
     'vol': 5,'spd':5,'per':0
 })
 

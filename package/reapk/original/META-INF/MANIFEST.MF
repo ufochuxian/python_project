@@ -3,7 +3,7 @@ Built-By: Generated-by-ADT
 Created-By: Android Gradle 3.0.1
 
 Name: AndroidManifest.xml
-SHA1-Digest: V7fM+N9XnUTLlbjWo3voBYu439s=
+SHA1-Digest: FNia7PPFDz3xAt9FNoAJCiqQiis=
 
 Name: META-INF/rxjava.properties
 SHA1-Digest: zk/wczT39ZLTdznMVSemTWALl+8=
@@ -30,7 +30,7 @@ Name: assets/bird_error.png
 SHA1-Digest: /oJj0Wx/8ISjZT6HlAAXVOYkD+s=
 
 Name: assets/crashlytics-build.properties
-SHA1-Digest: RIFP0oMaOObu1tebZQU0OYoi6as=
+SHA1-Digest: rH/XbN9/4FnVeTuUdW+R35Hs0PE=
 
 Name: assets/drawable-hdpi/ic_com_sina_weibo_sdk_close.png
 SHA1-Digest: 7v+7iEkPEQGf3r3HtAH6uZ76aRQ=
@@ -60,10 +60,10 @@ Name: assets/xwalk-command-line
 SHA1-Digest: +CHDfnXri0vXjgxfdHuB84XAam8=
 
 Name: classes.dex
-SHA1-Digest: TGWNCJyvhp9FmOOLGGPTrMFXMrM=
+SHA1-Digest: 9S+qR971IKCUOKOA/Q5j1FS88gI=
 
 Name: classes2.dex
-SHA1-Digest: 1Uz5AAXw3E5QtkgDioeXDyzJmkc=
+SHA1-Digest: fEwxlBuB5Wrb6FROZr/lwQMFol4=
 
 Name: classes3.dex
 SHA1-Digest: kb2H8Ea6fSI5suXd/XwWVDaW3Sk=
@@ -10640,5 +10640,5 @@ Name: res/xml/provider_paths.xml
 SHA1-Digest: b1NwhegDbAcgJWljqElBeYam2HI=
 
 Name: resources.arsc
-SHA1-Digest: X4tjqJL+eXpw6atoYbk3BYgJu90=
+SHA1-Digest: INT9W2DeHv9MuBCARGZylJtWZN0=
 

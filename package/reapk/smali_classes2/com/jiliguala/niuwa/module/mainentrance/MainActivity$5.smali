@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1282
+    .line 1284
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$5;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,16 +52,16 @@
     .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 1286
+    .line 1288
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 1294
+    .line 1296
     :goto_0
     return-void
 
-    .line 1288
+    .line 1290
     :sswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$5;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -69,7 +69,7 @@
 
     goto :goto_0
 
-    .line 1291
+    .line 1293
     :sswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$5;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -81,7 +81,7 @@
 
     goto :goto_0
 
-    .line 1286
+    .line 1288
     :sswitch_data_0
     .sparse-switch
         0x999 -> :sswitch_1
@@ -93,7 +93,7 @@
     .locals 0
 
     .prologue
-    .line 1282
+    .line 1284
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$5;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V

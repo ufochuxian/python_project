@@ -120,7 +120,7 @@ for f in onlyfiles:
 print(apkName)
 print('apkNamePrefix:%s' % apkNamePrefix)
 
-unSignApkPath = '/Users/chen/PycharmProjects/untitled1/package/reapk/dist/' + apkName
+unSignApkPath = reApkPath + '/dist/' + apkName
 
 unPackageApkCommond = 'apktool -f d ' + sourcePackagePath + apkName + ' -o ' + reApkPath
 packageApkCommond = 'apktool b ' + reApkPath
@@ -146,7 +146,7 @@ def package_apk():
 
 def sign_apk(channel):
     new_apk_name = apkNamePrefix + '_' + channel + '.apk'
-    save_sign_apk_path = '/Users/chen/PycharmProjects/untitled1/package/reapk/dist/' + new_apk_name
+    save_sign_apk_path = reApkPath + '/dist/' + new_apk_name
     sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
     logging.info('sign_apk_commond = %s' % sign_apk_commond)
     os.system(sign_apk_commond)
