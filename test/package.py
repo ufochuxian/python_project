@@ -36,7 +36,8 @@ channels_app_name_extra2 = "叽里呱啦-儿童英语"  # MXM #VIVOM
 app_name = channels_app_name
 
 channels_release = (
-                    "SAMSUNGM",
+"OPPOM",
+                    # "SAMSUNGM",
                     # "YYBA",
                     #                 "MIM",
                     #                 "YYBM"
@@ -200,7 +201,7 @@ def replace_apk_channel(channel):
 def replace_app_name(channel):
     if channel == 'MIM' or channel == '360M':
         app_name_value = channels_app_name_extra
-    elif channel == 'YYBM' or channel == 'ANZHIM' or channel == 'WDJM' or channel == 'GDTM' or channel == 'BDM':
+    elif channel == 'YYBM' or channel == 'ANZHIM' or channel == 'WDJM' or channel == 'GDTM' or channel == 'BDM' or channel == 'OPPOM' or channel == 'SAMSUNGM':
         app_name_value = channels_app_name_extra1
     elif channel == 'MXM' or channel == 'VIVOM' or channel == 'SGPM':
         app_name_value = channels_app_name_extra2
