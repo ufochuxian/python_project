@@ -238,9 +238,11 @@ def notify_package_success():
     # 这句延时一定要加，不然听不到声音
     time.sleep(10)
 
+
 def delete_source_file():
     src_file = reApkPath + '/dist/' + apkName
-    os.remove(src_file)
+    if os.path.exists(src_file):
+        os.remove(src_file)
 
 starttime = datetime.datetime.now()
 
