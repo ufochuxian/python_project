@@ -135,7 +135,7 @@
     .locals 1
 
     .prologue
-    .line 112
+    .line 111
     const-class v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -144,7 +144,7 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->TAG:Ljava/lang/String;
 
-    .line 126
+    .line 125
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -153,14 +153,14 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->TAB_ICONS:[I
 
-    .line 129
+    .line 128
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->S_IS_SUB_COURSE_VISIBLE:Z
 
     return-void
 
-    .line 126
+    .line 125
     :array_0
     .array-data 4
         0x7f08008c
@@ -175,10 +175,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;-><init>()V
 
-    .line 130
+    .line 129
     new-instance v0, Landroid/content/IntentFilter;
 
     const-string v1, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
@@ -187,28 +187,28 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyFilter:Landroid/content/IntentFilter;
 
-    .line 135
+    .line 134
     iput v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mUnreadCount:I
 
-    .line 138
+    .line 137
     iput v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
-    .line 141
+    .line 140
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->firstStart:Z
 
-    .line 143
+    .line 142
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->isAddBabyDlgShowing:Z
 
-    .line 150
+    .line 149
     new-instance v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$1;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$1;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mConnReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 170
+    .line 169
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->clickAddBaby:Z
 
     return-void
@@ -219,7 +219,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     return-object v0
@@ -230,7 +230,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     return-object v0
@@ -242,7 +242,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->reportToAmplitude(I)V
 
     return-void
@@ -253,7 +253,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     return-object v0
@@ -264,7 +264,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->isAddBabyDlgShowing:Z
 
     return v0
@@ -276,7 +276,7 @@
     .param p1, "x1"    # Landroid/os/Bundle;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showUpdateDialog(Landroid/os/Bundle;)V
 
     return-void
@@ -287,7 +287,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     return-object v0
@@ -298,7 +298,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showRateDialog()V
 
     return-void
@@ -310,7 +310,7 @@
     .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showRealTreasure(Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;)V
 
     return-void
@@ -322,7 +322,7 @@
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->checkNetwork(Ljava/lang/String;)V
 
     return-void
@@ -333,7 +333,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->networkDlg:Lcom/jiliguala/niuwa/common/a/a;
 
     return-object v0
@@ -344,7 +344,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     return-object v0
@@ -355,7 +355,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingMessageRedDot()V
 
     return-void
@@ -366,7 +366,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingTabRedDot()V
 
     return-void
@@ -377,7 +377,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingFeedBackRedDot()V
 
     return-void
@@ -388,7 +388,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 103
+    .line 102
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->hideSettingFeedBackRedDot()V
 
     return-void
@@ -400,7 +400,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 103
+    .line 102
     iput p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
     return p1
@@ -410,7 +410,7 @@
     .locals 4
 
     .prologue
-    .line 1282
+    .line 1279
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -421,7 +421,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    .line 1283
+    .line 1280
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -434,15 +434,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 1284
+    .line 1281
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 1282
+    .line 1279
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1303
+    .line 1300
     return-void
 .end method
 
@@ -452,15 +452,15 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1030
+    .line 1027
     iput v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
-    .line 1031
+    .line 1028
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->setCurrentTab(I)V
 
-    .line 1032
+    .line 1029
     return-void
 .end method
 
@@ -468,14 +468,14 @@
     .locals 1
 
     .prologue
-    .line 596
+    .line 594
     new-instance v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
     invoke-static {v0}, Lcom/alibaba/sdk/android/feedback/impl/FeedbackAPI;->getFeedbackUnreadCount(Lcom/alibaba/sdk/android/feedback/util/IUnreadCountCallback;)V
 
-    .line 614
+    .line 612
     return-void
 .end method
 
@@ -483,7 +483,7 @@
     .locals 0
 
     .prologue
-    .line 358
+    .line 356
     return-void
 .end method
 
@@ -492,23 +492,23 @@
     .param p1, "downloadLink"    # Ljava/lang/String;
 
     .prologue
-    .line 420
+    .line 418
     sget-boolean v1, Lcom/jiliguala/niuwa/MyApplication;->ApkResNoneWifiDownloadEnable:Z
 
     if-nez v1, :cond_1
 
-    .line 421
+    .line 419
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/s;->a(Landroid/content/Context;)I
 
     move-result v0
 
-    .line 422
+    .line 420
     .local v0, "type":I
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
-    .line 423
+    .line 421
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
@@ -519,7 +519,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->networkDlg:Lcom/jiliguala/niuwa/common/a/a;
 
-    .line 424
+    .line 422
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->networkDlg:Lcom/jiliguala/niuwa/common/a/a;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -528,7 +528,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/common/a/a;->a(Landroid/support/v4/app/ag;)V
 
-    .line 425
+    .line 423
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->networkDlg:Lcom/jiliguala/niuwa/common/a/a;
 
     new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;
@@ -537,12 +537,12 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/common/a/a;->a(Landroid/view/View$OnClickListener;)V
 
-    .line 451
+    .line 449
     .end local v0    # "type":I
     :goto_0
     return-void
 
-    .line 446
+    .line 444
     .restart local v0    # "type":I
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
@@ -551,7 +551,7 @@
 
     goto :goto_0
 
-    .line 449
+    .line 447
     .end local v0    # "type":I
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
@@ -567,12 +567,12 @@
     .prologue
     const/16 v3, 0x2101
 
-    .line 971
+    .line 968
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
-    .line 972
+    .line 969
     .local v0, "ac":Lcom/jiliguala/niuwa/logic/login/a;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->m()Z
 
@@ -580,29 +580,29 @@
 
     if-eqz v2, :cond_2
 
-    .line 976
+    .line 973
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 977
+    .line 974
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 978
+    .line 975
     .local v1, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 997
+    .line 994
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 981
+    .line 978
     :cond_1
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->n()Z
 
@@ -616,12 +616,12 @@
 
     if-nez v2, :cond_0
 
-    .line 988
+    .line 985
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->makeIntentForWxRegistration(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 991
+    .line 988
     .restart local v1    # "intent":Landroid/content/Intent;
     const/16 v2, 0x2103
 
@@ -629,14 +629,14 @@
 
     goto :goto_0
 
-    .line 994
+    .line 991
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_2
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 995
+    .line 992
     .restart local v1    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -649,19 +649,19 @@
     .prologue
     const/4 v4, 0x2
 
-    .line 944
+    .line 941
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
     if-nez v2, :cond_1
 
-    .line 964
+    .line 961
     :cond_0
     :goto_0
     return-void
 
-    .line 945
+    .line 942
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
@@ -675,7 +675,7 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mShowAcquireCourse:Ljava/lang/String;
 
-    .line 946
+    .line 943
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mShowAcquireCourse:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -684,7 +684,7 @@
 
     if-nez v2, :cond_0
 
-    .line 947
+    .line 944
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mShowAcquireCourse:Ljava/lang/String;
 
     const-string v3, "confirm"
@@ -695,7 +695,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 948
+    .line 945
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
@@ -706,7 +706,7 @@
 
     move-result-object v0
 
-    .line 949
+    .line 946
     .local v0, "openid":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
@@ -718,31 +718,31 @@
 
     move-result-object v1
 
-    .line 950
+    .line 947
     .local v1, "sceneid":Ljava/lang/String;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     if-eqz v2, :cond_2
 
-    .line 951
+    .line 948
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v2, v4}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->setCurrentTab(I)V
 
-    .line 955
+    .line 952
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     if-eqz v2, :cond_0
 
-    .line 956
+    .line 953
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v2, v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->postDataToServer(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 958
+    .line 955
     .end local v0    # "openid":Ljava/lang/String;
     .end local v1    # "sceneid":Ljava/lang/String;
     :cond_3
@@ -756,12 +756,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 959
+    .line 956
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     if-eqz v2, :cond_0
 
-    .line 960
+    .line 957
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v2, v4}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->setCurrentTab(I)V
@@ -781,7 +781,7 @@
 
     const v7, 0x7f0900b9
 
-    .line 656
+    .line 654
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
@@ -792,86 +792,86 @@
 
     move-result v4
 
-    .line 658
+    .line 656
     .local v4, "size":I
     new-instance v1, Landroid/widget/RelativeLayout;
 
     invoke-direct {v1, p0}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
-    .line 659
+    .line 657
     .local v1, "parent":Landroid/widget/RelativeLayout;
     invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setMinimumHeight(I)V
 
-    .line 661
+    .line 659
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v5, -0x1
 
     invoke-direct {v3, v5, v4}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 664
+    .line 662
     .local v3, "rl":Landroid/widget/RelativeLayout$LayoutParams;
     new-instance v0, Landroid/widget/ImageView;
 
     invoke-direct {v0, p0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 665
+    .line 663
     .local v0, "icon":Landroid/widget/ImageView;
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setId(I)V
 
-    .line 666
+    .line 664
     sget-object v5, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 667
+    .line 665
     const/16 v5, 0xd
 
     invoke-virtual {v3, v5}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
-    .line 668
+    .line 666
     iput v4, v3, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 669
+    .line 667
     iput v4, v3, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 670
+    .line 668
     invoke-virtual {v1, v0, v3}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 672
+    .line 670
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     .end local v3    # "rl":Landroid/widget/RelativeLayout$LayoutParams;
     invoke-direct {v3, v9, v9}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 674
+    .line 672
     .restart local v3    # "rl":Landroid/widget/RelativeLayout$LayoutParams;
     new-instance v2, Landroid/widget/ImageView;
 
     invoke-direct {v2, p0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 675
+    .line 673
     .local v2, "redDot":Landroid/widget/ImageView;
     const v5, 0x7f0900ba
 
     invoke-virtual {v2, v5}, Landroid/widget/ImageView;->setId(I)V
 
-    .line 676
+    .line 674
     const v5, 0x7f0802c5
 
     invoke-virtual {v2, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 677
+    .line 675
     const/4 v5, 0x7
 
     invoke-virtual {v3, v5, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 678
+    .line 676
     const/4 v5, 0x6
 
     invoke-virtual {v3, v5, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 679
+    .line 677
     invoke-static {v8}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
 
     move-result v5
@@ -882,10 +882,10 @@
 
     invoke-virtual {v3, v10, v5, v6, v10}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 680
+    .line 678
     invoke-virtual {v1, v2, v3}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 682
+    .line 680
     return-object v1
 .end method
 
@@ -895,12 +895,12 @@
     .param p2, "iconResId"    # I
 
     .prologue
-    .line 686
+    .line 684
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->generateBottomBarItem()Landroid/view/View;
 
     move-result-object v2
 
-    .line 687
+    .line 685
     .local v2, "view":Landroid/view/View;
     const v3, 0x7f0900b9
 
@@ -910,7 +910,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 688
+    .line 686
     .local v0, "icon":Landroid/widget/ImageView;
     const v3, 0x7f0900ba
 
@@ -920,23 +920,23 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 689
+    .line 687
     .local v1, "red_dot":Landroid/widget/ImageView;
     const/16 v3, 0x8
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 690
+    .line 688
     invoke-virtual {v0, p2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 691
+    .line 689
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 692
+    .line 690
     return-object v2
 .end method
 
@@ -944,7 +944,7 @@
     .locals 3
 
     .prologue
-    .line 1137
+    .line 1134
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x1009
@@ -953,16 +953,16 @@
 
     move-result-object v0
 
-    .line 1138
+    .line 1135
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x0
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1139
+    .line 1136
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1140
+    .line 1137
     return-void
 .end method
 
@@ -972,14 +972,14 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 696
+    .line 694
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
-    .line 698
+    .line 696
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/a/d;->a(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/common/a/d;
@@ -988,7 +988,7 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
-    .line 699
+    .line 697
     const v3, 0x1020012
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->findViewById(I)Landroid/view/View;
@@ -999,7 +999,7 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
-    .line 700
+    .line 698
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -1010,7 +1010,7 @@
 
     invoke-virtual {v3, p0, v4, v5}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->a(Landroid/content/Context;Landroid/support/v4/app/ag;I)V
 
-    .line 701
+    .line 699
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->getTabWidget()Landroid/widget/TabWidget;
@@ -1019,7 +1019,7 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TabWidget;->setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 703
+    .line 701
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->getChildCount()I
@@ -1028,22 +1028,22 @@
 
     if-lez v3, :cond_0
 
-    .line 704
+    .line 702
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->clearAllTabs()V
 
-    .line 707
+    .line 705
     :cond_0
     sget-object v3, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->TAB_ICONS:[I
 
     array-length v1, v3
 
-    .line 708
+    .line 706
     .local v1, "length":I
     const/4 v2, 0x0
 
-    .line 709
+    .line 707
     .local v2, "tabSpec":Landroid/widget/TabHost$TabSpec;
     const/4 v0, 0x0
 
@@ -1051,7 +1051,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 711
+    .line 709
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1088,10 +1088,10 @@
 
     move-result-object v2
 
-    .line 712
+    .line 710
     packed-switch v0, :pswitch_data_0
 
-    .line 728
+    .line 726
     :goto_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
@@ -1107,12 +1107,12 @@
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 709
+    .line 707
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 715
+    .line 713
     :pswitch_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
@@ -1122,7 +1122,7 @@
 
     goto :goto_1
 
-    .line 719
+    .line 717
     :pswitch_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
@@ -1132,7 +1132,7 @@
 
     goto :goto_1
 
-    .line 723
+    .line 721
     :pswitch_2
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
@@ -1142,7 +1142,7 @@
 
     goto :goto_1
 
-    .line 730
+    .line 728
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
@@ -1152,7 +1152,7 @@
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->setOnTabChangedListener(Landroid/widget/TabHost$OnTabChangeListener;)V
 
-    .line 749
+    .line 747
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v3
@@ -1177,31 +1177,21 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/util/n;->f()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
-
-    move-result-object v3
-
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/util/n;->d()Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
-    .line 750
+    .line 748
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->checkOppoPermission()V
 
-    .line 752
+    .line 750
     :cond_3
     return-void
 
-    .line 712
+    .line 710
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1214,12 +1204,12 @@
     .locals 6
 
     .prologue
-    .line 861
+    .line 859
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 862
+    .line 860
     .local v0, "currentTime":J
     iget-wide v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->lastTime:J
 
@@ -1231,25 +1221,25 @@
 
     if-ltz v2, :cond_0
 
-    .line 863
+    .line 861
     const-string v2, "\u518d\u6309\u4e00\u6b21\u9000\u51fa\u53fd\u91cc\u5471\u5566"
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 864
+    .line 862
     iput-wide v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->lastTime:J
 
-    .line 878
+    .line 876
     :goto_0
     return-void
 
-    .line 866
+    .line 864
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
 
     if-eqz v2, :cond_1
 
-    .line 868
+    .line 866
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
 
@@ -1257,7 +1247,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 872
+    .line 870
     :cond_1
     :goto_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
@@ -1272,12 +1262,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 873
+    .line 871
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
 
-    .line 875
+    .line 873
     :cond_2
     invoke-static {}, Lcom/jiliguala/niuwa/module/babyintiation/helper/PreloadHelper;->getInstance()Lcom/jiliguala/niuwa/module/babyintiation/helper/PreloadHelper;
 
@@ -1285,12 +1275,12 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/babyintiation/helper/PreloadHelper;->shutDown()V
 
-    .line 876
+    .line 874
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->finish()V
 
     goto :goto_0
 
-    .line 869
+    .line 867
     :catch_0
     move-exception v2
 
@@ -1302,16 +1292,16 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 790
+    .line 788
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
 
-    .line 791
+    .line 789
     .local v1, "fragmentManager":Landroid/support/v4/app/ag;
     const/4 v0, 0x0
 
-    .line 793
+    .line 791
     .local v0, "fragment":Landroid/support/v4/app/Fragment;
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -1321,30 +1311,30 @@
 
     move-result-object v0
 
-    .line 795
+    .line 793
     instance-of v3, v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     if-eqz v3, :cond_1
 
-    .line 797
+    .line 795
     check-cast v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .end local v0    # "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->reportToAmplitde()V
 
-    .line 811
+    .line 809
     :cond_0
     :goto_0
     return-void
 
-    .line 798
+    .line 796
     .restart local v0    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_1
     instance-of v3, v0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryFragment;
 
     if-eqz v3, :cond_2
 
-    .line 800
+    .line 798
     check-cast v0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryFragment;
 
     .end local v0    # "fragment":Landroid/support/v4/app/Fragment;
@@ -1352,19 +1342,19 @@
 
     goto :goto_0
 
-    .line 801
+    .line 799
     .restart local v0    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_2
     instance-of v3, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     if-eqz v3, :cond_3
 
-    .line 803
+    .line 801
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 804
+    .line 802
     .local v2, "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v3, "View"
 
@@ -1372,7 +1362,7 @@
 
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 805
+    .line 803
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v3
@@ -1383,7 +1373,7 @@
 
     goto :goto_0
 
-    .line 807
+    .line 805
     .end local v2    # "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_3
     if-eqz v0, :cond_0
@@ -1397,7 +1387,7 @@
     .prologue
     const/16 v2, 0x1006
 
-    .line 891
+    .line 889
     const v0, 0x7f090269
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->findViewById(I)Landroid/view/View;
@@ -1408,39 +1398,28 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeViewStub:Landroid/view/ViewStub;
 
-    .line 892
+    .line 890
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeViewStub:Landroid/view/ViewStub;
 
     if-eqz v0, :cond_0
 
-    .line 893
+    .line 891
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeViewStub:Landroid/view/ViewStub;
 
     const v1, 0x7f0b00d0
 
     invoke-virtual {v0, v1}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
-    .line 894
+    .line 892
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeViewStub:Landroid/view/ViewStub;
 
     invoke-virtual {v0}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
-    .line 895
+    .line 893
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->initHomeUI()V
 
-    .line 911
+    .line 910
     :cond_0
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->e()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 912
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
@@ -1451,7 +1430,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 913
+    .line 911
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v0
@@ -1462,12 +1441,12 @@
 
     if-nez v0, :cond_1
 
-    .line 914
+    .line 912
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
 
-    .line 932
+    .line 929
     :cond_1
     :goto_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -1484,27 +1463,27 @@
 
     const/4 v1, 0x1
 
-    .line 933
+    .line 930
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 934
+    .line 931
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingTabRedDot()V
 
-    .line 938
+    .line 935
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->addEventObserver()V
 
-    .line 940
+    .line 937
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->doAfterWechatPushSuccess()V
 
-    .line 941
+    .line 938
     return-void
 
-    .line 916
+    .line 914
     :cond_3
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1516,25 +1495,25 @@
 
     if-eqz v0, :cond_4
 
-    .line 917
+    .line 915
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->h()Z
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 918
+    .line 916
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
 
     goto :goto_0
 
-    .line 921
+    .line 919
     :cond_4
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
@@ -1546,7 +1525,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 922
+    .line 920
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
@@ -1560,14 +1539,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 274
+    .line 273
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getCurrentPos()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 275
+    .line 274
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/j/a;->a(Landroid/content/Context;)Lcom/jiliguala/niuwa/logic/j/a;
 
     move-result-object v0
@@ -1578,18 +1557,18 @@
 
     move-result-object v0
 
-    .line 276
+    .line 275
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/logic/j/a;->c(Z)Lcom/jiliguala/niuwa/logic/j/a;
 
     move-result-object v0
 
-    .line 277
+    .line 276
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/logic/j/a;->b(Z)Lcom/jiliguala/niuwa/logic/j/a;
 
-    .line 280
+    .line 279
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/j/a;->a(Landroid/app/Activity;)Z
 
-    .line 282
+    .line 281
     :cond_0
     return-void
 .end method
@@ -1599,7 +1578,7 @@
     .param p1, "treasure"    # Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;
 
     .prologue
-    .line 1047
+    .line 1044
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -1612,7 +1591,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 1048
+    .line 1045
     return-void
 .end method
 
@@ -1620,7 +1599,7 @@
     .locals 3
 
     .prologue
-    .line 1131
+    .line 1128
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x1009
@@ -1629,16 +1608,16 @@
 
     move-result-object v0
 
-    .line 1132
+    .line 1129
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x1
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1133
+    .line 1130
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1134
+    .line 1131
     return-void
 .end method
 
@@ -1646,7 +1625,7 @@
     .locals 3
 
     .prologue
-    .line 1144
+    .line 1141
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x1007
@@ -1655,16 +1634,16 @@
 
     move-result-object v0
 
-    .line 1145
+    .line 1142
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x1
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1146
+    .line 1143
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1147
+    .line 1144
     return-void
 .end method
 
@@ -1672,7 +1651,7 @@
     .locals 3
 
     .prologue
-    .line 1150
+    .line 1147
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x1001
@@ -1681,16 +1660,16 @@
 
     move-result-object v0
 
-    .line 1151
+    .line 1148
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x1
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1152
+    .line 1149
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1153
+    .line 1150
     return-void
 .end method
 
@@ -1701,27 +1680,27 @@
     .prologue
     const/4 v11, 0x1
 
-    .line 361
+    .line 359
     iget-boolean v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->hasShowThisSession:Z
 
     if-eqz v9, :cond_0
 
-    .line 417
+    .line 415
     :goto_0
     return-void
 
-    .line 364
+    .line 362
     :cond_0
     iput-boolean v11, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->hasShowThisSession:Z
 
-    .line 365
+    .line 363
     const-string v9, "UPGRADE_LINK"
 
     invoke-virtual {p1, v9}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 366
+    .line 364
     .local v2, "downloadLink":Ljava/lang/String;
     const-string v9, "UPGRADE_WHATSNEW"
 
@@ -1729,7 +1708,7 @@
 
     move-result-object v7
 
-    .line 367
+    .line 365
     .local v7, "whatsNews":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     new-instance v9, Landroid/app/Dialog;
 
@@ -1739,7 +1718,7 @@
 
     iput-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
-    .line 368
+    .line 366
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     invoke-virtual {v9}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
@@ -1748,14 +1727,14 @@
 
     invoke-virtual {v9}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
-    .line 369
+    .line 367
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     const v10, 0x7f0b0193
 
     invoke-virtual {v9, v10}, Landroid/app/Dialog;->setContentView(I)V
 
-    .line 371
+    .line 369
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
@@ -1768,11 +1747,11 @@
 
     float-to-int v8, v9
 
-    .line 372
+    .line 370
     .local v8, "width":I
     const/4 v3, -0x2
 
-    .line 373
+    .line 371
     .local v3, "height":I
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
@@ -1782,20 +1761,20 @@
 
     invoke-virtual {v9, v8, v3}, Landroid/view/Window;->setLayout(II)V
 
-    .line 374
+    .line 372
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     invoke-virtual {v9, v11}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 375
+    .line 373
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     invoke-virtual {v9, v11}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 377
+    .line 375
     if-eqz v7, :cond_2
 
-    .line 378
+    .line 376
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     const v10, 0x7f09057a
@@ -1806,7 +1785,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    .line 379
+    .line 377
     .local v5, "title":Landroid/widget/TextView;
     const/4 v9, 0x0
 
@@ -1818,7 +1797,7 @@
 
     invoke-virtual {v5, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 380
+    .line 378
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     const v10, 0x7f090160
@@ -1829,7 +1808,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 381
+    .line 379
     .local v1, "content":Landroid/widget/TextView;
     invoke-static {}, Landroid/text/method/ScrollingMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -1837,12 +1816,12 @@
 
     invoke-virtual {v1, v9}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 382
+    .line 380
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 383
+    .line 381
     .local v0, "builder":Ljava/lang/StringBuilder;
     const/4 v4, 0x1
 
@@ -1854,14 +1833,14 @@
 
     if-ge v4, v9, :cond_1
 
-    .line 384
+    .line 382
     invoke-virtual {v7, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/lang/String;
 
-    .line 385
+    .line 383
     .local v6, "whatsNew":Ljava/lang/String;
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1881,12 +1860,12 @@
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 383
+    .line 381
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 387
+    .line 385
     .end local v6    # "whatsNew":Ljava/lang/String;
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -1895,7 +1874,7 @@
 
     invoke-virtual {v1, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 390
+    .line 388
     .end local v0    # "builder":Ljava/lang/StringBuilder;
     .end local v1    # "content":Landroid/widget/TextView;
     .end local v4    # "i":I
@@ -1915,7 +1894,7 @@
 
     invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 396
+    .line 394
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     const v10, 0x7f090156
@@ -1930,7 +1909,7 @@
 
     invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 405
+    .line 403
     :try_start_0
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
@@ -1940,7 +1919,7 @@
 
     invoke-virtual {v9, v10}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 413
+    .line 411
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateDialog:Landroid/app/Dialog;
 
     const-string v10, "UPDATE_DIALOG"
@@ -1951,7 +1930,7 @@
 
     goto/16 :goto_0
 
-    .line 414
+    .line 412
     :catch_0
     move-exception v9
 
@@ -1964,7 +1943,7 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 285
+    .line 284
     const v3, 0x1020002
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->findViewById(I)Landroid/view/View;
@@ -1973,7 +1952,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 286
+    .line 285
     .local v1, "rootView":Landroid/view/ViewGroup;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1989,7 +1968,7 @@
 
     move-result v0
 
-    .line 287
+    .line 286
     .local v0, "resourceId":I
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1999,11 +1978,11 @@
 
     move-result v2
 
-    .line 288
+    .line 287
     .local v2, "statusBarHeight":I
     invoke-virtual {v1, v7, v2, v7, v7}, Landroid/view/ViewGroup;->setPadding(IIII)V
 
-    .line 289
+    .line 288
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v3
@@ -2012,7 +1991,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->addFlags(I)V
 
-    .line 290
+    .line 289
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v3
@@ -2021,7 +2000,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->addFlags(I)V
 
-    .line 291
+    .line 290
     return-void
 .end method
 
@@ -2029,17 +2008,17 @@
     .locals 1
 
     .prologue
-    .line 211
+    .line 210
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mReceiver:Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 212
+    .line 211
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mReceiver:Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;->unRegister()V
 
-    .line 214
+    .line 213
     :cond_0
     return-void
 .end method
@@ -2051,7 +2030,7 @@
     .param p1, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 1192
+    .line 1189
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mRootContainer:Landroid/view/View;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;
@@ -2062,7 +2041,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1201
+    .line 1198
     return-void
 .end method
 
@@ -2070,17 +2049,17 @@
     .locals 1
 
     .prologue
-    .line 1205
+    .line 1202
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/d;->dismissAllowingStateLoss()V
 
-    .line 1206
+    .line 1203
     const-string v0, "\u7f51\u7edc\u4e0d\u7ed9\u529b\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1207
+    .line 1204
     return-void
 .end method
 
@@ -2088,25 +2067,25 @@
     .locals 8
 
     .prologue
-    .line 755
+    .line 753
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->H()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 769
+    .line 767
     :cond_0
     :goto_0
     return-void
 
-    .line 758
+    .line 756
     :cond_1
     invoke-static {p0}, Landroid/support/v4/app/bj;->a(Landroid/content/Context;)Landroid/support/v4/app/bj;
 
     move-result-object v1
 
-    .line 759
+    .line 757
     .local v1, "nmc":Landroid/support/v4/app/bj;
     invoke-virtual {v1}, Landroid/support/v4/app/bj;->b()Z
 
@@ -2114,7 +2093,7 @@
 
     if-nez v4, :cond_0
 
-    .line 762
+    .line 760
     const-string v4, "SHOW_OPPO_PERMISSION_DIALOG_TIME"
 
     const-wide/16 v6, 0x0
@@ -2123,7 +2102,7 @@
 
     move-result-wide v2
 
-    .line 764
+    .line 762
     .local v2, "time":J
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2137,7 +2116,7 @@
 
     if-lez v4, :cond_0
 
-    .line 765
+    .line 763
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v4
@@ -2146,7 +2125,7 @@
 
     move-result-object v0
 
-    .line 766
+    .line 764
     .local v0, "dialog":Lcom/jiliguala/niuwa/common/a/h;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -2154,7 +2133,7 @@
 
     invoke-virtual {v0, v4}, Lcom/jiliguala/niuwa/common/a/h;->b(Landroid/support/v4/app/ag;)V
 
-    .line 767
+    .line 765
     const-string v4, "SHOW_OPPO_PERMISSION_DIALOG_TIME"
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -2170,7 +2149,7 @@
     .locals 0
 
     .prologue
-    .line 1333
+    .line 1330
     return-void
 .end method
 
@@ -2178,7 +2157,7 @@
     .locals 0
 
     .prologue
-    .line 1328
+    .line 1325
     return-void
 .end method
 
@@ -2186,7 +2165,7 @@
     .locals 0
 
     .prologue
-    .line 235
+    .line 234
     return-object p0
 .end method
 
@@ -2194,7 +2173,7 @@
     .locals 1
 
     .prologue
-    .line 881
+    .line 879
     iget v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
     return v0
@@ -2215,27 +2194,27 @@
     .end annotation
 
     .prologue
-    .line 1167
+    .line 1164
     .local p2, "whatsNews":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     invoke-static {p1}, Lcom/jiliguala/niuwa/c;->a(Ljava/lang/String;)V
 
-    .line 1168
+    .line 1165
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 1169
+    .line 1166
     .local v0, "bundle":Landroid/os/Bundle;
     const-string v2, "UPGRADE_LINK"
 
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1170
+    .line 1167
     const-string v2, "UPGRADE_WHATSNEW"
 
     invoke-virtual {v0, v2, p2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 1171
+    .line 1168
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v3, 0x1000
@@ -2244,14 +2223,14 @@
 
     move-result-object v1
 
-    .line 1172
+    .line 1169
     .local v1, "msg":Landroid/os/Message;
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    .line 1173
+    .line 1170
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1174
+    .line 1171
     return-void
 .end method
 
@@ -2259,7 +2238,7 @@
     .locals 1
 
     .prologue
-    .line 1337
+    .line 1334
     const/4 v0, 0x1
 
     return v0
@@ -2269,7 +2248,7 @@
     .locals 1
 
     .prologue
-    .line 1342
+    .line 1339
     const/4 v0, 0x0
 
     return v0
@@ -2279,12 +2258,12 @@
     .locals 1
 
     .prologue
-    .line 1159
+    .line 1156
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldRecvNotifShowRedDot:Z
 
-    .line 1163
+    .line 1160
     return-void
 .end method
 
@@ -2292,7 +2271,7 @@
     .locals 2
 
     .prologue
-    .line 885
+    .line 883
     iget v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
     const/4 v1, 0x2
@@ -2314,7 +2293,7 @@
     .locals 1
 
     .prologue
-    .line 1322
+    .line 1319
     const/4 v0, 0x1
 
     return v0
@@ -2324,10 +2303,10 @@
     .locals 0
 
     .prologue
-    .line 1211
+    .line 1208
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->checkOnBoarding()V
 
-    .line 1212
+    .line 1209
     return-void
 .end method
 
@@ -2337,12 +2316,12 @@
     .prologue
     const/16 v4, 0x2101
 
-    .line 1256
+    .line 1253
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
-    .line 1257
+    .line 1254
     .local v0, "ac":Lcom/jiliguala/niuwa/logic/login/a;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->m()Z
 
@@ -2350,35 +2329,35 @@
 
     if-eqz v3, :cond_2
 
-    .line 1258
+    .line 1255
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->G()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 1259
+    .line 1256
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 1260
+    .line 1257
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 1261
+    .line 1258
     .local v2, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v2, v4}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 1279
+    .line 1276
     .end local v2    # "intent":Landroid/content/Intent;
     :goto_0
     return-void
 
-    .line 1265
+    .line 1262
     :cond_0
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
 
@@ -2386,31 +2365,31 @@
 
     if-nez v3, :cond_1
 
-    .line 1266
+    .line 1263
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v2
 
-    .line 1267
+    .line 1264
     .restart local v2    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v2, v4}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
-    .line 1271
+    .line 1268
     .end local v2    # "intent":Landroid/content/Intent;
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showHomeView()V
 
     goto :goto_0
 
-    .line 1276
+    .line 1273
     :cond_2
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1277
+    .line 1274
     .local v1, "i":Landroid/content/Intent;
     invoke-virtual {p0, v1, v4}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -2424,18 +2403,18 @@
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 1001
+    .line 998
     invoke-super {p0, p1, p2, p3}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 1002
+    .line 999
     packed-switch p1, :pswitch_data_0
 
-    .line 1027
+    .line 1024
     :cond_0
     :goto_0
     return-void
 
-    .line 1004
+    .line 1001
     :pswitch_0
     const/4 v0, -0x1
 
@@ -2443,39 +2422,39 @@
 
     if-nez p2, :cond_2
 
-    .line 1008
+    .line 1005
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showHomeView()V
 
-    .line 1012
+    .line 1009
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->changeTabToHome()V
 
     goto :goto_0
 
-    .line 1013
+    .line 1010
     :cond_2
     const v0, 0x8888
 
     if-ne p2, v0, :cond_0
 
-    .line 1017
+    .line 1014
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onBackPressed()V
 
     goto :goto_0
 
-    .line 1021
+    .line 1018
     :pswitch_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->updateStart()V
 
     goto :goto_0
 
-    .line 1024
+    .line 1021
     :pswitch_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showHomeView()V
 
     goto :goto_0
 
-    .line 1002
+    .line 999
     :pswitch_data_0
     .packed-switch 0x2101
         :pswitch_0
@@ -2488,17 +2467,17 @@
     .locals 3
 
     .prologue
-    .line 1347
+    .line 1344
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     if-eqz v1, :cond_0
 
-    .line 1348
+    .line 1345
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/a/b/h;->b()V
 
-    .line 1350
+    .line 1347
     :cond_0
     sget-object v1, Lcom/jiliguala/niuwa/wxapi/WXEntryActivity;->WEI_XIN_LOGIN_APP_ID:Ljava/lang/String;
 
@@ -2506,7 +2485,7 @@
 
     move-result-object v0
 
-    .line 1351
+    .line 1348
     .local v0, "api":Lcom/tencent/mm/opensdk/openapi/IWXAPI;
     invoke-interface {v0}, Lcom/tencent/mm/opensdk/openapi/IWXAPI;->isWXAppInstalled()Z
 
@@ -2514,14 +2493,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 1352
+    .line 1349
     invoke-interface {v0}, Lcom/tencent/mm/opensdk/openapi/IWXAPI;->openWXApp()Z
 
-    .line 1356
+    .line 1353
     :goto_0
     return-void
 
-    .line 1354
+    .line 1351
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getResources()Landroid/content/res/Resources;
 
@@ -2539,290 +2518,286 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
+    .locals 4
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const/4 v4, 0x1
-
-    .line 295
+    .line 294
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 296
-    div-int/lit8 v1, v4, 0x0
-
-    .line 299
-    .local v1, "x":I
+    .line 297
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->isTaskRoot()Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_1
+    if-nez v1, :cond_1
 
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/y;->a()Lcom/jiliguala/niuwa/common/util/y;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/util/y;->b()Z
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/y;->b()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    const-string v2, "android.intent.action.VIEW"
+    const-string v1, "android.intent.action.VIEW"
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
+
+    .line 298
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onCreateFinish:Z
 
     .line 300
-    iput-boolean v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onCreateFinish:Z
-
-    .line 302
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v2}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 303
+    .line 301
     .local v0, "url":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_0
+    if-nez v1, :cond_0
 
-    .line 304
+    .line 302
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/d/a;->a(Ljava/lang/String;)V
 
-    .line 306
+    .line 304
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v2
+    move-result-object v1
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-static {v2, p0, v3}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;Landroid/content/Context;Landroid/support/v4/app/ag;)V
+    invoke-static {v1, p0, v2}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;Landroid/content/Context;Landroid/support/v4/app/ag;)V
 
-    .line 307
+    .line 305
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->finish()V
 
-    .line 350
+    .line 348
     .end local v0    # "url":Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 310
+    .line 308
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/y;->a()Lcom/jiliguala/niuwa/common/util/y;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2, p0}, Lcom/jiliguala/niuwa/common/util/y;->a(Landroid/app/Activity;)V
+    invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/common/util/y;->a(Landroid/app/Activity;)V
 
-    .line 318
+    .line 316
     invoke-static {}, Lcom/jiliguala/niuwa/module/videofav/VideoFavClient;->getInstance()Lcom/jiliguala/niuwa/module/videofav/VideoFavClient;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/videofav/VideoFavClient;->checkReportVideoFavToServer()V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/videofav/VideoFavClient;->checkReportVideoFavToServer()V
+
+    .line 318
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "App Open"
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+
+    .line 319
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "apk channel"
+
+    sget-object v3, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v3}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 320
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
-    move-result-object v2
+    move-result-object v1
 
-    const-string v3, "App Open"
+    const-string v2, "Money Sign"
 
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+    const-string v3, "none"
+
+    invoke-virtual {v1, v2, v3}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 321
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
-
-    move-result-object v2
-
-    const-string v3, "apk channel"
-
-    const-string v4, "python"
-
-    invoke-virtual {v2, v3, v4}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 322
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
-
-    move-result-object v2
-
-    const-string v3, "Money Sign"
-
-    const-string v4, "none"
-
-    invoke-virtual {v2, v3, v4}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 323
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->isTaskRoot()Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_2
-
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v2
-
-    const-string v3, "android.intent.category.LAUNCHER"
-
-    invoke-virtual {v2, v3}, Landroid/content/Intent;->hasCategory(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
+    if-nez v1, :cond_2
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    const-string v2, "android.intent.category.LAUNCHER"
 
-    move-result-object v2
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->hasCategory(Ljava/lang/String;)Z
 
-    if-eqz v2, :cond_2
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    .line 322
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "android.intent.action.MAIN"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
 
     .line 324
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "android.intent.action.MAIN"
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 326
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->finish()V
 
     goto :goto_0
 
-    .line 329
+    .line 327
     :cond_2
     invoke-static {}, Lcom/jiliguala/niuwa/module/mainentrance/utils/DialogChain;->init()V
 
-    .line 330
-    sget-boolean v2, Lcom/jiliguala/niuwa/common/util/b/a;->b:Z
+    .line 328
+    sget-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->b:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
+
+    .line 329
+    new-instance v1, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
+
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
 
     .line 331
-    new-instance v2, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
-
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
-
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
-
-    .line 333
     :cond_3
     invoke-static {}, Lcom/jiliguala/niuwa/logic/p/a;->a()Lcom/jiliguala/niuwa/logic/p/a;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/p/a;->b()V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/p/a;->b()V
+
+    .line 332
+    new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+
+    .line 333
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyFilter:Landroid/content/IntentFilter;
+
+    invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 334
-    new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+    new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     .line 335
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
+    new-instance v1, Landroid/content/IntentFilter;
 
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyFilter:Landroid/content/IntentFilter;
+    const-string v2, "android.net.conn.CONNECTIVITY_CHANGE"
 
-    invoke-virtual {p0, v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mNetworkFilter:Landroid/content/IntentFilter;
 
     .line 336
-    new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mConnReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mNetworkFilter:Landroid/content/IntentFilter;
 
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
-
-    .line 337
-    new-instance v2, Landroid/content/IntentFilter;
-
-    const-string v3, "android.net.conn.CONNECTIVITY_CHANGE"
-
-    invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
-
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mNetworkFilter:Landroid/content/IntentFilter;
+    invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 338
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mConnReceiver:Landroid/content/BroadcastReceiver;
+    new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mNetworkFilter:Landroid/content/IntentFilter;
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainView;)V
 
-    invoke-virtual {p0, v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
+
+    .line 339
+    const-string v1, "Start View"
+
+    invoke-static {p0, v1}, Lcom/umeng/analytics/MobclickAgent;->c(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 340
-    new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
-
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainView;)V
-
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
-
-    .line 341
-    const-string v2, "Start View"
-
-    invoke-static {p0, v2}, Lcom/umeng/analytics/MobclickAgent;->c(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 342
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->smoothSwitchScreen()V
 
-    .line 343
-    const v2, 0x7f0b0034
+    .line 341
+    const v1, 0x7f0b0034
 
-    invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->setContentView(I)V
+
+    .line 342
+    const v1, 0x7f090478
+
+    invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mRootContainer:Landroid/view/View;
 
     .line 344
-    const v2, 0x7f090478
-
-    invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mRootContainer:Landroid/view/View;
-
-    .line 346
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onNewIntent(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 348
+    .line 346
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->resiterLocalServer()V
 
     goto/16 :goto_0
@@ -2832,14 +2807,14 @@
     .locals 2
 
     .prologue
-    .line 1052
+    .line 1049
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v1, 0x1002
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
 
-    .line 1053
+    .line 1050
     return-void
 .end method
 
@@ -2847,19 +2822,19 @@
     .locals 2
 
     .prologue
-    .line 541
+    .line 539
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onCreateFinish:Z
 
     if-eqz v0, :cond_0
 
-    .line 542
+    .line 540
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onDestroy()V
 
-    .line 568
+    .line 566
     :goto_0
     return-void
 
-    .line 545
+    .line 543
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
@@ -2869,36 +2844,36 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
 
-    .line 546
+    .line 544
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/y;->a()Lcom/jiliguala/niuwa/common/util/y;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/y;->d()V
 
-    .line 547
+    .line 545
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onDestroy()V
 
-    .line 548
+    .line 546
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/a;->e()V
 
-    .line 549
+    .line 547
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/e;->e()V
 
-    .line 550
+    .line 548
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
 
     if-eqz v0, :cond_1
 
-    .line 552
+    .line 550
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHomeKeyEventReceiver:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;
 
@@ -2906,39 +2881,39 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 556
+    .line 554
     :cond_1
     :goto_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->unRegisterAll()V
 
-    .line 557
+    .line 555
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mConnReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 560
+    .line 558
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->unRegisterReceiver()V
 
-    .line 561
+    .line 559
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 563
+    .line 561
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     if-eqz v0, :cond_2
 
-    .line 564
+    .line 562
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->releaseRef()V
 
-    .line 566
+    .line 564
     :cond_2
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/j/a;->a(Landroid/content/Context;)Lcom/jiliguala/niuwa/logic/j/a;
 
@@ -2948,7 +2923,7 @@
 
     goto :goto_0
 
-    .line 553
+    .line 551
     :catch_0
     move-exception v0
 
@@ -2959,14 +2934,14 @@
     .locals 2
 
     .prologue
-    .line 1057
+    .line 1054
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v1, 0x1003
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
 
-    .line 1058
+    .line 1055
     return-void
 .end method
 
@@ -2974,14 +2949,14 @@
     .locals 4
 
     .prologue
-    .line 1062
+    .line 1059
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v1, 0x1003
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->sendEmptyMessage(I)Z
 
-    .line 1063
+    .line 1060
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$2;
@@ -2990,7 +2965,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->post(Ljava/lang/Runnable;)Z
 
-    .line 1069
+    .line 1066
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$3;
@@ -3001,7 +2976,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1082
+    .line 1079
     return-void
 .end method
 
@@ -3011,27 +2986,27 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 837
+    .line 835
     const/4 v4, 0x4
 
     if-ne p1, v4, :cond_2
 
-    .line 838
+    .line 836
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v3
 
-    .line 839
+    .line 837
     .local v3, "fm":Landroid/support/v4/app/ag;
     invoke-virtual {v3}, Landroid/support/v4/app/ag;->f()I
 
     move-result v0
 
-    .line 840
+    .line 838
     .local v0, "backEntryCount":I
     if-lez v0, :cond_1
 
-    .line 842
+    .line 840
     add-int/lit8 v4, v0, -0x1
 
     :try_start_0
@@ -3039,7 +3014,7 @@
 
     move-result-object v2
 
-    .line 843
+    .line 841
     .local v2, "entry":Landroid/support/v4/app/ag$a;
     if-eqz v2, :cond_0
 
@@ -3055,48 +3030,48 @@
 
     if-eqz v4, :cond_0
 
-    .line 844
+    .line 842
     const/4 v4, 0x0
 
     sput-boolean v4, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->S_IS_SUB_COURSE_VISIBLE:Z
 
-    .line 847
+    .line 845
     :cond_0
     invoke-virtual {v3}, Landroid/support/v4/app/ag;->e()Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 855
+    .line 853
     .end local v2    # "entry":Landroid/support/v4/app/ag$a;
     :goto_0
     const/4 v4, 0x1
 
-    .line 857
+    .line 855
     .end local v0    # "backEntryCount":I
     .end local v3    # "fm":Landroid/support/v4/app/ag;
     :goto_1
     return v4
 
-    .line 848
+    .line 846
     .restart local v0    # "backEntryCount":I
     .restart local v3    # "fm":Landroid/support/v4/app/ag;
     :catch_0
     move-exception v1
 
-    .line 850
+    .line 848
     .local v1, "e":Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
-    .line 853
+    .line 851
     .end local v1    # "e":Ljava/lang/Exception;
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->oneMoreClickExit()V
 
     goto :goto_0
 
-    .line 857
+    .line 855
     .end local v0    # "backEntryCount":I
     .end local v3    # "fm":Landroid/support/v4/app/ag;
     :cond_2
@@ -3111,7 +3086,7 @@
     .locals 1
 
     .prologue
-    .line 1307
+    .line 1304
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->clickAddBaby:Z
 
     if-eqz v0, :cond_0
@@ -3126,15 +3101,15 @@
 
     if-nez v0, :cond_0
 
-    .line 1308
+    .line 1305
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showAddBabyPage()V
 
-    .line 1309
+    .line 1306
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->clickAddBaby:Z
 
-    .line 1311
+    .line 1308
     :cond_0
     return-void
 .end method
@@ -3144,28 +3119,28 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 631
+    .line 629
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->setIntent(Landroid/content/Intent;)V
 
-    .line 633
+    .line 631
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->checkVersion()V
 
-    .line 634
+    .line 632
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->registerAll()V
 
-    .line 636
+    .line 634
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->checkGuaCoinShowRedDot()V
 
-    .line 638
+    .line 636
     invoke-static {p1}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 639
+    .line 637
     .local v0, "url":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3173,10 +3148,10 @@
 
     if-nez v1, :cond_0
 
-    .line 640
+    .line 638
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/d/a;->a(Ljava/lang/String;)V
 
-    .line 642
+    .line 640
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -3184,7 +3159,7 @@
 
     invoke-static {p1, p0, v1}, Lcom/jiliguala/niuwa/logic/d/a;->a(Landroid/content/Intent;Landroid/content/Context;Landroid/support/v4/app/ag;)V
 
-    .line 643
+    .line 641
     return-void
 .end method
 
@@ -3192,7 +3167,7 @@
     .locals 1
 
     .prologue
-    .line 827
+    .line 825
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
@@ -3203,11 +3178,11 @@
 
     if-nez v0, :cond_0
 
-    .line 833
+    .line 831
     :goto_0
     return-void
 
-    .line 832
+    .line 830
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showRedDot()V
 
@@ -3218,26 +3193,26 @@
     .locals 1
 
     .prologue
-    .line 529
+    .line 527
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onPause()V
 
-    .line 532
+    .line 530
     invoke-static {p0}, Lcom/jiliguala/niuwa/receivers/JPushReceiver;->b(Lcom/jiliguala/niuwa/receivers/JPushReceiver$a;)V
 
-    .line 533
+    .line 531
     invoke-static {p0}, Lcom/umeng/analytics/MobclickAgent;->a(Landroid/content/Context;)V
 
-    .line 534
+    .line 532
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
 
     if-eqz v0, :cond_0
 
-    .line 535
+    .line 533
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;->stopMonitoring()V
 
-    .line 537
+    .line 535
     :cond_0
     return-void
 .end method
@@ -3247,7 +3222,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 269
+    .line 268
     const-string v0, "killed"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
@@ -3256,10 +3231,10 @@
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->killed:Z
 
-    .line 270
+    .line 269
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 271
+    .line 270
     return-void
 .end method
 
@@ -3267,31 +3242,31 @@
     .locals 1
 
     .prologue
-    .line 572
+    .line 570
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onResume()V
 
-    .line 576
+    .line 574
     invoke-static {p0}, Lcom/jiliguala/niuwa/receivers/JPushReceiver;->a(Lcom/jiliguala/niuwa/receivers/JPushReceiver$a;)V
 
-    .line 577
+    .line 575
     invoke-static {p0}, Lcom/umeng/analytics/MobclickAgent;->b(Landroid/content/Context;)V
 
-    .line 581
+    .line 579
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mPresenter:Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->requestGlobe()V
 
-    .line 588
+    .line 586
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
 
     if-eqz v0, :cond_0
 
-    .line 589
+    .line 587
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mAngryModeHelper:Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/story/helpers/AngryModeHelper;->startMonitoring()V
 
-    .line 593
+    .line 591
     :cond_0
     return-void
 .end method
@@ -3301,17 +3276,17 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 263
+    .line 262
     const-string v0, "killed"
 
     const/4 v1, 0x1
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 264
+    .line 263
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 265
+    .line 264
     return-void
 .end method
 
@@ -3319,10 +3294,10 @@
     .locals 0
 
     .prologue
-    .line 647
+    .line 645
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onStart()V
 
-    .line 648
+    .line 646
     return-void
 .end method
 
@@ -3330,10 +3305,10 @@
     .locals 0
 
     .prologue
-    .line 652
+    .line 650
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onStop()V
 
-    .line 653
+    .line 651
     return-void
 .end method
 
@@ -3342,18 +3317,18 @@
     .param p1, "hasFocus"    # Z
 
     .prologue
-    .line 815
+    .line 813
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onWindowFocusChanged(Z)V
 
-    .line 816
+    .line 814
     if-eqz p1, :cond_0
 
-    .line 820
+    .line 818
     iget v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mCurrentPos:I
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->reportToAmplitude(I)V
 
-    .line 822
+    .line 820
     :cond_0
     return-void
 .end method
@@ -3362,10 +3337,10 @@
     .locals 0
 
     .prologue
-    .line 240
+    .line 239
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSubscribeSuccessDialog()V
 
-    .line 241
+    .line 240
     return-void
 .end method
 
@@ -3373,19 +3348,19 @@
     .locals 2
 
     .prologue
-    .line 194
+    .line 193
     new-instance v0, Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mReceiver:Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;
 
-    .line 195
+    .line 194
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mReceiver:Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/LocalServer/ServerStatusReceiver;->register()V
 
-    .line 196
+    .line 195
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/jiliguala/niuwa/module/LocalServer/CoreService;
@@ -3394,12 +3369,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mService:Landroid/content/Intent;
 
-    .line 197
+    .line 196
     const-string v0, "[MainActivity],mainactivity"
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startServer(Ljava/lang/String;)V
 
-    .line 198
+    .line 197
     return-void
 .end method
 
@@ -3416,7 +3391,7 @@
     .end annotation
 
     .prologue
-    .line 217
+    .line 216
     .local p1, "sharePrefix":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -3426,15 +3401,15 @@
 
     move-result-object v1
 
-    .line 218
+    .line 217
     .local v1, "fragments":Ljava/util/List;, "Ljava/util/List<Landroid/support/v4/app/Fragment;>;"
     const/4 v2, 0x0
 
-    .line 219
+    .line 218
     .local v2, "youzanFragment":Landroid/support/v4/app/Fragment;
     if-eqz v1, :cond_1
 
-    .line 220
+    .line 219
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -3453,36 +3428,36 @@
 
     check-cast v0, Landroid/support/v4/app/Fragment;
 
-    .line 221
+    .line 220
     .local v0, "fragment":Landroid/support/v4/app/Fragment;
     instance-of v4, v0, Lcom/jiliguala/niuwa/module/youzan/fragment/YzH5Fragment;
 
     if-eqz v4, :cond_0
 
-    .line 222
+    .line 221
     move-object v2, v0
 
     goto :goto_0
 
-    .line 226
+    .line 225
     .end local v0    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 227
+    .line 226
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 228
+    .line 227
     check-cast v2, Lcom/jiliguala/niuwa/module/youzan/fragment/YzH5Fragment;
 
     .end local v2    # "youzanFragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {v2, p1}, Lcom/jiliguala/niuwa/module/youzan/fragment/YzH5Fragment;->setShareprefix(Ljava/util/ArrayList;)V
 
-    .line 231
+    .line 230
     :cond_2
     return-void
 .end method
@@ -3491,23 +3466,23 @@
     .locals 3
 
     .prologue
-    .line 1315
+    .line 1312
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 1316
+    .line 1313
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 1317
+    .line 1314
     const v1, 0x7f01001d
 
     const v2, 0x7f010013
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->overridePendingTransition(II)V
 
-    .line 1318
+    .line 1315
     return-void
 .end method
 
@@ -3515,7 +3490,7 @@
     .locals 2
 
     .prologue
-    .line 1185
+    .line 1182
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     if-eqz v0, :cond_0
@@ -3528,14 +3503,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1186
+    .line 1183
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/a/d;->b(Landroid/support/v4/app/ag;)V
 
-    .line 1188
+    .line 1185
     :cond_0
     return-void
 .end method
@@ -3545,12 +3520,12 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 519
+    .line 517
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     if-eqz v1, :cond_0
 
-    .line 520
+    .line 518
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     const-string v2, "2"
@@ -3559,19 +3534,19 @@
 
     move-result-object v0
 
-    .line 521
+    .line 519
     .local v0, "fragment":Landroid/support/v4/app/Fragment;
     instance-of v1, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     if-eqz v1, :cond_0
 
-    .line 522
+    .line 520
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .end local v0    # "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showFeedBackRedDot(Z)V
 
-    .line 525
+    .line 523
     :cond_0
     return-void
 .end method
@@ -3581,12 +3556,12 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 500
+    .line 498
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     if-eqz v1, :cond_0
 
-    .line 501
+    .line 499
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mFragmentManager:Landroid/support/v4/app/ag;
 
     const-string v2, "2"
@@ -3595,24 +3570,24 @@
 
     move-result-object v0
 
-    .line 502
+    .line 500
     .local v0, "fragment":Landroid/support/v4/app/Fragment;
     instance-of v1, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     if-eqz v1, :cond_1
 
-    .line 503
+    .line 501
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .end local v0    # "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showRedDot(Z)V
 
-    .line 516
+    .line 514
     :cond_0
     :goto_0
     return-void
 
-    .line 505
+    .line 503
     .restart local v0    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
@@ -3633,7 +3608,7 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 497
+    .line 495
     return-void
 .end method
 
@@ -3642,19 +3617,19 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 464
+    .line 462
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     if-eqz v3, :cond_0
 
-    .line 465
+    .line 463
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->getTabWidget()Landroid/widget/TabWidget;
 
     move-result-object v1
 
-    .line 466
+    .line 464
     .local v1, "tabWidget":Landroid/widget/TabWidget;
     const/4 v3, 0x2
 
@@ -3662,7 +3637,7 @@
 
     move-result-object v2
 
-    .line 467
+    .line 465
     .local v2, "view":Landroid/view/View;
     const v3, 0x7f0900ba
 
@@ -3672,11 +3647,11 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 468
+    .line 466
     .local v0, "redDot":Landroid/widget/ImageView;
     if-eqz v0, :cond_0
 
-    .line 469
+    .line 467
     if-eqz p1, :cond_1
 
     const/4 v3, 0x0
@@ -3684,14 +3659,14 @@
     :goto_0
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 472
+    .line 470
     .end local v0    # "redDot":Landroid/widget/ImageView;
     .end local v1    # "tabWidget":Landroid/widget/TabWidget;
     .end local v2    # "view":Landroid/view/View;
     :cond_0
     return-void
 
-    .line 469
+    .line 467
     .restart local v0    # "redDot":Landroid/widget/ImageView;
     .restart local v1    # "tabWidget":Landroid/widget/TabWidget;
     .restart local v2    # "view":Landroid/view/View;
@@ -3708,7 +3683,7 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 773
+    .line 771
     const-string v2, "SHOW_MASK_VIEW"
 
     const/4 v3, 0x0
@@ -3717,11 +3692,11 @@
 
     move-result v1
 
-    .line 774
+    .line 772
     .local v1, "show":Z
     if-nez v1, :cond_0
 
-    .line 775
+    .line 773
     new-instance v0, Lcom/jiliguala/niuwa/common/widget/MainMaskView;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getContext()Landroid/content/Context;
@@ -3730,7 +3705,7 @@
 
     invoke-direct {v0, v2, p1}, Lcom/jiliguala/niuwa/common/widget/MainMaskView;-><init>(Landroid/content/Context;Z)V
 
-    .line 776
+    .line 774
     .local v0, "maskView":Lcom/jiliguala/niuwa/common/widget/MainMaskView;
     new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$14;
 
@@ -3738,12 +3713,12 @@
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/common/widget/MainMaskView;->setOnDismissListener(Lcom/jiliguala/niuwa/common/widget/MainMaskView$a;)V
 
-    .line 782
+    .line 780
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     if-eqz v2, :cond_0
 
-    .line 783
+    .line 781
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
 
     new-instance v3, Landroid/widget/FrameLayout$LayoutParams;
@@ -3752,7 +3727,7 @@
 
     invoke-virtual {v2, v0, v3}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 787
+    .line 785
     .end local v0    # "maskView":Lcom/jiliguala/niuwa/common/widget/MainMaskView;
     :cond_0
     return-void
@@ -3764,7 +3739,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1085
+    .line 1082
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
@@ -3777,12 +3752,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1086
+    .line 1083
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1087
+    .line 1084
     :cond_0
     new-instance v0, Landroid/app/Dialog;
 
@@ -3792,24 +3767,24 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
-    .line 1088
+    .line 1085
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     const v1, 0x7f0b0089
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setContentView(I)V
 
-    .line 1090
+    .line 1087
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 1091
+    .line 1088
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
     invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 1107
+    .line 1104
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->migrationDlg:Landroid/app/Dialog;
 
@@ -3817,11 +3792,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1111
+    .line 1108
     :goto_0
     return-void
 
-    .line 1108
+    .line 1105
     :catch_0
     move-exception v0
 
@@ -3833,10 +3808,10 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 1123
+    .line 1120
     if-eqz p1, :cond_0
 
-    .line 1124
+    .line 1121
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x1008
@@ -3845,16 +3820,16 @@
 
     move-result-object v0
 
-    .line 1125
+    .line 1122
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x1
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1126
+    .line 1123
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1128
+    .line 1125
     .end local v0    # "msg":Landroid/os/Message;
     :cond_0
     return-void
@@ -3864,18 +3839,18 @@
     .locals 1
 
     .prologue
-    .line 1115
+    .line 1112
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldRecvNotifShowRedDot:Z
 
-    .line 1116
+    .line 1113
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingTabRedDot()V
 
-    .line 1118
+    .line 1115
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showSettingMessageRedDot()V
 
-    .line 1119
+    .line 1116
     return-void
 .end method
 
@@ -3883,58 +3858,58 @@
     .locals 2
 
     .prologue
-    .line 244
+    .line 243
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     if-nez v0, :cond_0
 
-    .line 245
+    .line 244
     new-instance v0, Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/a/b/h;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
-    .line 246
+    .line 245
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const v1, 0x7f08030b
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->c(I)V
 
-    .line 247
+    .line 246
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const-string v1, "\u8bf7\u6ce8\u610f\u67e5\u770b\u5fae\u4fe1\u670d\u52a1\u901a\u77e5\uff0c\u8010\u5fc3\u7b49\u5019\uff01"
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->b(Ljava/lang/String;)V
 
-    .line 248
+    .line 247
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const-string v1, "\u8df3\u8f6c\u81f3\u5fae\u4fe1"
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->e(Ljava/lang/String;)V
 
-    .line 249
+    .line 248
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->b(Z)V
 
-    .line 250
+    .line 249
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/h;->a(Lcom/jiliguala/niuwa/a/b/h$a;)V
 
-    .line 252
+    .line 251
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/a/b/h;->a()V
 
-    .line 253
+    .line 252
     return-void
 .end method
 
@@ -3943,7 +3918,7 @@
     .param p1, "treasure"    # Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;
 
     .prologue
-    .line 1036
+    .line 1033
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mHandler:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
     const/16 v2, 0x100a
@@ -3952,14 +3927,14 @@
 
     move-result-object v0
 
-    .line 1037
+    .line 1034
     .local v0, "msg":Landroid/os/Message;
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1038
+    .line 1035
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1039
+    .line 1036
     return-void
 .end method
 
@@ -3968,7 +3943,7 @@
     .param p1, "str"    # Ljava/lang/String;
 
     .prologue
-    .line 203
+    .line 202
     :try_start_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mService:Landroid/content/Intent;
 
@@ -3976,15 +3951,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 208
+    .line 207
     :goto_0
     return-void
 
-    .line 204
+    .line 203
     :catch_0
     move-exception v0
 
-    .line 205
+    .line 204
     .local v0, "e":Ljava/lang/Exception;
     const/4 v1, 0x0
 
@@ -3997,12 +3972,12 @@
     .locals 1
 
     .prologue
-    .line 189
+    .line 188
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mService:Landroid/content/Intent;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->stopService(Landroid/content/Intent;)Z
 
-    .line 190
+    .line 189
     return-void
 .end method
 
@@ -4011,17 +3986,17 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 1178
+    .line 1175
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     if-eqz v0, :cond_0
 
-    .line 1179
+    .line 1176
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->dpdlgFragment:Lcom/jiliguala/niuwa/common/a/d;
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/common/a/d;->a(I)V
 
-    .line 1181
+    .line 1178
     :cond_0
     return-void
 .end method
@@ -4034,12 +4009,12 @@
 
     const/16 v3, 0x2101
 
-    .line 1216
+    .line 1213
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
-    .line 1217
+    .line 1214
     .local v0, "ac":Lcom/jiliguala/niuwa/logic/login/a;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->m()Z
 
@@ -4047,55 +4022,55 @@
 
     if-eqz v2, :cond_5
 
-    .line 1218
+    .line 1215
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->G()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 1220
+    .line 1217
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 1221
+    .line 1218
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->n()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 1222
+    .line 1219
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->makeIntentForWxRegistration(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1225
+    .line 1222
     .local v1, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v4}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 1251
+    .line 1248
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 1228
+    .line 1225
     :cond_1
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1229
+    .line 1226
     .restart local v1    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
-    .line 1233
+    .line 1230
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_2
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
@@ -4104,18 +4079,18 @@
 
     if-nez v2, :cond_3
 
-    .line 1234
+    .line 1231
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1235
+    .line 1232
     .restart local v1    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
-    .line 1237
+    .line 1234
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_3
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->n()Z
@@ -4130,31 +4105,31 @@
 
     if-nez v2, :cond_4
 
-    .line 1239
+    .line 1236
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->makeIntentForWxRegistration(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1241
+    .line 1238
     .restart local v1    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v4}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
-    .line 1243
+    .line 1240
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_4
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showHomeView()V
 
     goto :goto_0
 
-    .line 1248
+    .line 1245
     :cond_5
     invoke-static {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingIntentHelper;->newBabyOnBoardIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 1249
+    .line 1246
     .restart local v1    # "intent":Landroid/content/Intent;
     invoke-virtual {p0, v1, v3}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startActivityForResult(Landroid/content/Intent;I)V
 

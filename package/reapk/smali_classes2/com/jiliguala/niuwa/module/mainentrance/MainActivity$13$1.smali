@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;
 
     .prologue
-    .line 736
+    .line 734
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;
 
     iput p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;->a:I
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 739
+    .line 737
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 740
+    .line 738
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
@@ -63,6 +63,6 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$1000(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;I)V
 
-    .line 741
+    .line 739
     return-void
 .end method

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 596
+    .line 594
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "s"    # Ljava/lang/String;
 
     .prologue
-    .line 612
+    .line 610
     return-void
 .end method
 
@@ -52,31 +52,31 @@
     .param p1, "i"    # I
 
     .prologue
-    .line 599
+    .line 597
     if-lez p1, :cond_0
 
-    .line 600
+    .line 598
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldFeedBackShowRedDot:Z
 
-    .line 601
+    .line 599
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$600(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 602
+    .line 600
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$700(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 607
+    .line 605
     :goto_0
     return-void
 
-    .line 604
+    .line 602
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -84,7 +84,7 @@
 
     iput-boolean v1, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldFeedBackShowRedDot:Z
 
-    .line 605
+    .line 603
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$12;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$800(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V

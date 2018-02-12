@@ -17,7 +17,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String; = "python"
+.field public static a:Ljava/lang/String;
 
 .field public static b:Z
 
@@ -37,24 +37,29 @@
     .locals 3
 
     .prologue
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
+    .line 10
+    const-string v0, "python"
+
+    sput-object v0, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
+
     .line 16
-    sput-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->b:Z
+    sput-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->b:Z
 
     .line 17
-    sput-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
+    sput-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     .line 18
-    sput-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->d:Z
+    sput-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->d:Z
 
     .line 19
     sput-boolean v2, Lcom/jiliguala/niuwa/common/util/b/a;->e:Z
 
     .line 20
-    sput-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->f:Z
+    sput-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->f:Z
 
     .line 21
     sput-boolean v2, Lcom/jiliguala/niuwa/common/util/b/a;->g:Z

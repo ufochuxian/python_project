@@ -33,7 +33,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;
 
     .prologue
-    .line 519
+    .line 521
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "userInfoTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;
 
     .prologue
-    .line 534
+    .line 536
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -59,20 +59,20 @@
 
     invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a/a;-><init>(I)V
 
-    .line 535
+    .line 537
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 537
+    .line 539
     if-eqz p1, :cond_0
 
-    .line 538
+    .line 540
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/login/a;->b(Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;)V
 
-    .line 539
+    .line 541
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
@@ -83,7 +83,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 540
+    .line 542
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
@@ -94,7 +94,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->access$400(Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;Ljava/lang/String;)V
 
-    .line 543
+    .line 545
     :cond_0
     return-void
 .end method
@@ -103,7 +103,7 @@
     .locals 0
 
     .prologue
-    .line 523
+    .line 525
     return-void
 .end method
 
@@ -112,7 +112,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 527
+    .line 529
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
@@ -123,12 +123,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 528
+    .line 530
     const-string v0, "\u56fe\u7247\u4e0a\u4f20\u5931\u8d25"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 530
+    .line 532
     :cond_0
     return-void
 .end method
@@ -137,7 +137,7 @@
     .locals 0
 
     .prologue
-    .line 519
+    .line 521
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7$1;->a(Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;)V

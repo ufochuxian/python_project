@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
 
     .prologue
-    .line 456
+    .line 458
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$6;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "view"    # Landroid/view/View;
 
     .prologue
-    .line 475
+    .line 477
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p3, "loadedImage"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 469
+    .line 471
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$6;->a:Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->access$300(Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;)Landroid/widget/FrameLayout;
@@ -65,7 +65,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 470
+    .line 472
     return-void
 .end method
 
@@ -76,7 +76,7 @@
     .param p3, "failReason"    # Lcom/nostra13/universalimageloader/core/assist/FailReason;
 
     .prologue
-    .line 465
+    .line 467
     return-void
 .end method
 
@@ -86,6 +86,6 @@
     .param p2, "view"    # Landroid/view/View;
 
     .prologue
-    .line 460
+    .line 462
     return-void
 .end method

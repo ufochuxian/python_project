@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->i()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->g()V
 
     .line 657
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;

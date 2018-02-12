@@ -546,7 +546,7 @@
 
     move-result-object v20
 
-    invoke-virtual/range {v20 .. v20}, Lcom/jiliguala/niuwa/common/util/n;->h()Z
+    invoke-virtual/range {v20 .. v20}, Lcom/jiliguala/niuwa/common/util/n;->f()Z
 
     move-result v20
 

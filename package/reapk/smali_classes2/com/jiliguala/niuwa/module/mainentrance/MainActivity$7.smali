@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 390
+    .line 388
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$7;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 393
+    .line 391
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$7;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Landroid/app/Dialog;
@@ -51,6 +51,6 @@
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 394
+    .line 392
     return-void
 .end method

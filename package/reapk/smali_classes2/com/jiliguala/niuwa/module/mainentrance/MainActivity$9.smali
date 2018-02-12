@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 405
+    .line 403
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 408
+    .line 406
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getCurrentPos()I
@@ -51,12 +51,12 @@
 
     if-nez v0, :cond_0
 
-    .line 409
+    .line 407
     const-string v0, "UPDATE_DIALOG"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/utils/DialogChain;->notifyDialogDismiss(Ljava/lang/String;)V
 
-    .line 411
+    .line 409
     :cond_0
     return-void
 .end method

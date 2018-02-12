@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 730
+    .line 728
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "s"    # Ljava/lang/String;
 
     .prologue
-    .line 734
+    .line 732
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
@@ -52,13 +52,13 @@
 
     move-result v0
 
-    .line 735
+    .line 733
     .local v0, "pos":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$902(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;I)I
 
-    .line 736
+    .line 734
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
@@ -73,12 +73,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 747
+    .line 745
     .end local v0    # "pos":I
     :goto_0
     return-void
 
-    .line 744
+    .line 742
     :catch_0
     move-exception v1
 

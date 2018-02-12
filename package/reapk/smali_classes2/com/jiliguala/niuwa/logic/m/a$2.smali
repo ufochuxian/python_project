@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/logic/m/a;
 
     .prologue
-    .line 252
+    .line 265
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/m/a$2;->a:Lcom/jiliguala/niuwa/logic/m/a;
 
     invoke-direct {p0}, Lcom/google/gson/reflect/TypeToken;-><init>()V

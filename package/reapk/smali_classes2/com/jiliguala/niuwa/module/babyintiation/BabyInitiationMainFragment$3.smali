@@ -1,11 +1,14 @@
 .class Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;
-.super Lcom/bumptech/glide/g/b/j;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
+    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showData(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,81 +16,66 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/bumptech/glide/g/b/j",
-        "<",
-        "Landroid/graphics/Bitmap;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic b:Landroid/widget/TextView;
+.field final synthetic a:I
+
+.field final synthetic b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
 
 .field final synthetic c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Landroid/widget/TextView;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;ILcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .prologue
-    .line 582
+    .line 850
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Landroid/widget/TextView;
+    iput p2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:I
 
-    invoke-direct {p0}, Lcom/bumptech/glide/g/b/j;-><init>()V
+    iput-object p3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/g/a/c;)V
-    .locals 4
-    .param p1, "resource"    # Landroid/graphics/Bitmap;
-    .param p2, "glideAnimation"    # Lcom/bumptech/glide/g/a/c;
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    const/4 v3, 0x0
+    .line 853
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    .line 585
-    if-eqz p1, :cond_0
+    iget v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:I
 
-    .line 586
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Landroid/widget/TextView;
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;I)V
 
-    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+    .line 854
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;->tgt:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    .line 587
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;Landroid/support/v4/app/ag;)V
 
-    .line 586
-    invoke-virtual {v0, v3, v1, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    .line 591
-    :cond_0
-    return-void
-.end method
-
-.method public bridge synthetic a(Ljava/lang/Object;Lcom/bumptech/glide/g/a/c;)V
-    .locals 0
-
-    .prologue
-    .line 582
-    check-cast p1, Landroid/graphics/Bitmap;
-
-    invoke-virtual {p0, p1, p2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/g/a/c;)V
-
+    .line 855
     return-void
 .end method

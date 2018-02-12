@@ -64,7 +64,7 @@
     .line 21
     const-string v0, "CHANNEL"
 
-    const-string v1, "python"
+    sget-object v1, Lcom/jiliguala/niuwa/common/util/b/a;->a:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/crashlytics/android/Crashlytics;->setString(Ljava/lang/String;Ljava/lang/String;)V
 

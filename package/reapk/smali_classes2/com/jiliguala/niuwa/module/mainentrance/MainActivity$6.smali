@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1297
+    .line 1294
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
     .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1301
+    .line 1298
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 0
 
     .prologue
-    .line 1297
+    .line 1294
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a(Ljava/lang/Throwable;)V

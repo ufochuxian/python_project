@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: JLGL_V84_7.3_beta_20180211101816_python.apk
+apkFileName: JLGL_V84_7.2.1_20180211150212_python.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -574,4 +574,4 @@ usesFramework:
 version: 2.3.1
 versionInfo:
   versionCode: '84'
-  versionName: 7.3_beta
+  versionName: 7.2.1

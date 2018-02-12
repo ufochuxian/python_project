@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 425
+    .line 423
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->a:Ljava/lang/String;
@@ -46,25 +46,25 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 428
+    .line 426
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 443
+    .line 441
     :cond_0
     :goto_0
     return-void
 
-    .line 430
+    .line 428
     :sswitch_0
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->ApkResNoneWifiDownloadEnable:Z
 
-    .line 431
+    .line 429
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$000(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->doAppUpGrade(Ljava/lang/String;)V
 
-    .line 432
+    .line 430
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 433
+    .line 431
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
@@ -107,13 +107,13 @@
 
     goto :goto_0
 
-    .line 437
+    .line 435
     :sswitch_1
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->ApkResNoneWifiDownloadEnable:Z
 
-    .line 438
+    .line 436
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
@@ -134,7 +134,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 439
+    .line 437
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
@@ -145,7 +145,7 @@
 
     goto :goto_0
 
-    .line 428
+    .line 426
     nop
 
     :sswitch_data_0

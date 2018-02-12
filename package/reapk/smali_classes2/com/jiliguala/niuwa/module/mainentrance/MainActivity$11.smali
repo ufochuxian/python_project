@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 505
+    .line 503
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$11;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 508
+    .line 506
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$11;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$400(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
@@ -50,11 +50,11 @@
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 510
+    .line 508
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$11;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$500(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 511
+    .line 509
     return-void
 .end method

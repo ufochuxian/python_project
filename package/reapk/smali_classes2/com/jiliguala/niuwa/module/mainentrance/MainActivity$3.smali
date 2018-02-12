@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1069
+    .line 1066
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$3;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 10
 
     .prologue
-    .line 1072
+    .line 1069
     new-instance v2, Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$3;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
@@ -50,11 +50,11 @@
 
     invoke-direct {v2, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 1073
+    .line 1070
     .local v2, "mStartActivity":Landroid/content/Intent;
     const v1, 0x1e240
 
-    .line 1074
+    .line 1071
     .local v1, "mPendingIntentId":I
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$3;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    .line 1076
+    .line 1073
     .local v0, "mPendingIntent":Landroid/app/PendingIntent;
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$3;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -76,7 +76,7 @@
 
     check-cast v3, Landroid/app/AlarmManager;
 
-    .line 1077
+    .line 1074
     .local v3, "mgr":Landroid/app/AlarmManager;
     const/4 v4, 0x1
 
@@ -90,13 +90,13 @@
 
     invoke-virtual {v3, v4, v6, v7, v0}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
-    .line 1079
+    .line 1076
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v4
 
     invoke-static {v4}, Landroid/os/Process;->killProcess(I)V
 
-    .line 1080
+    .line 1077
     return-void
 .end method

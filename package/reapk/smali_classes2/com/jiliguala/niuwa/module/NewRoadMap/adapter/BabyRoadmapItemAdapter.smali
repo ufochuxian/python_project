@@ -187,7 +187,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/n;->g()Z
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/n;->e()Z
 
     move-result v1
 

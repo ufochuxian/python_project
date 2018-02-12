@@ -132,43 +132,6 @@
     .locals 2
 
     .prologue
-    .line 36
-    const-string v0, "PREFS_SONG_GUDIE_MASK"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->c(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public e()Z
-    .locals 2
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 40
-    const-string v1, "PREFS_SONG_GUDIE_MASK"
-
-    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/common/util/t;->c(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x1
-
-    :cond_0
-    return v0
-.end method
-
-.method public f()Z
-    .locals 2
-
-    .prologue
     .line 44
     const-string v0, "PREFS_PARENT_HOME_GUIDE_MASK"
 
@@ -181,7 +144,7 @@
     return v0
 .end method
 
-.method public g()Z
+.method public e()Z
     .locals 2
 
     .prologue
@@ -197,7 +160,7 @@
     return v0
 .end method
 
-.method public h()Z
+.method public f()Z
     .locals 2
 
     .prologue
@@ -213,7 +176,7 @@
     return v0
 .end method
 
-.method public i()V
+.method public g()V
     .locals 1
 
     .prologue

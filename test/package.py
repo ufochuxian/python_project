@@ -35,18 +35,23 @@ channels_app_name_extra2 = "叽里呱啦-儿童英语"  # MXM #VIVOM
 
 app_name = channels_app_name
 
-channels_release = (  # "YYBA",
-    "MIM",
-    "YYBM"
-    , "HUAWEIM"
-    # , "JLGLWBM"
-    # , "YYBM", "MIM", "BDM", "360M", "WDJM", "UCAPPM", "MXM", "ANZHUOM", "91M"
-    # , "ANZHIM", "LENOVOM", "OPPOM"
-    # , "SGPM", "YYHM", "YOUYIM", "YIYONGHUI", "LIQUM"
-    # , "YOUYUEM", "VIVOM"
-    # , "LEM"
-    # , "CHUIZIM"
-)
+channels_release = (
+                    "SAMSUNGM",
+                    # "YYBA",
+                    #                 "MIM",
+                    #                 "YYBM"
+                    #                 , "HUAWEIM"
+                    #                 , "JLGLWBM"
+                    #                 , "YYBM", "MIM", "BDM", "360M", "WDJM", "UCAPPM", "MXM", "ANZHUOM", "91M"
+                    #                 , "ANZHIM", "LENOVOM", "OPPOM"
+                    #                 , "SGPM", "YYHM", "YOUYIM", "YIYONGHUI", "LIQUM"
+                    #                 , "YOUYUEM", "VIVOM"
+                    #                 , "LEM"
+                    #                 , "CHUIZIM"
+                    #                 ,"SAMSUNGM",
+                    # "weibo1","weibo2","weibo3","weibo4","weibo5","weibo6","weibo7","weibo8","weibo9","weibo10","weibo11","weibo12"
+                    # ,"ZHIHUZ1","UCX","YYBA"
+                    )
 
 
 # onlyfiles = [f for f in listdir(".") if isfile(join(".",f))]
@@ -233,6 +238,9 @@ def notify_package_success():
     # 这句延时一定要加，不然听不到声音
     time.sleep(10)
 
+def delete_source_file():
+    src_file = reApkPath + '/dist/' + apkName
+    os.remove(src_file)
 
 starttime = datetime.datetime.now()
 
@@ -240,9 +248,12 @@ if (os.path.exists(reApkPath)):
     shutil.rmtree(reApkPath)
 
 unpackage_apk()
+
+need_r_splash = resolve_env(cf.get('config', 'needRSplash'))
 #
 for channel in channels_release:
-    replace_splash(channel)
+    if need_r_splash == 'True':
+        replace_splash(channel)
     replace_app_name(channel)
     replace_apk_channel(channel)
     package_apk()
@@ -251,5 +262,7 @@ for channel in channels_release:
 endTime = datetime.datetime.now()
 
 notify_package_success()
+
+delete_source_file()
 
 print('use time:%s' % (endTime - starttime))

@@ -1,10 +1,10 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: emhaS1oerVui+HwcnG1EOyC4vr4=
+SHA1-Digest-Manifest: XPDU/fyh5ZPZ8dCRUAmM4mLXDjY=
 X-Android-APK-Signed: 2
 
 Name: AndroidManifest.xml
-SHA1-Digest: 6t3f5Y3PNVQcFBJv5aSWaEyrIuk=
+SHA1-Digest: Jjo5Eaa4yDtAvSiPpPv7mEW4ee8=
 
 Name: META-INF/rxjava.properties
 SHA1-Digest: ATdlTG6Z2dm6XMRG6V52FJHHUgs=
@@ -31,7 +31,7 @@ Name: assets/bird_error.png
 SHA1-Digest: Wq0O5jvKsd3u5/YiWYJI5Fg4A8c=
 
 Name: assets/crashlytics-build.properties
-SHA1-Digest: kiUMjRXP15TFLWC2wvnc/aXIEY0=
+SHA1-Digest: GME6I6X+iU/LDPsWg4r2Sl4HyJc=
 
 Name: assets/drawable-hdpi/ic_com_sina_weibo_sdk_close.png
 SHA1-Digest: F3qMe9fJmrz8BD8tYfYDQoOD7mQ=
@@ -61,10 +61,10 @@ Name: assets/xwalk-command-line
 SHA1-Digest: DYqDIX8ezW0jscjlkfrJ+E7kN+Y=
 
 Name: classes.dex
-SHA1-Digest: OUQ3h65yf6X16SenlkvXNxlXgvs=
+SHA1-Digest: 845C7VyQSq5yx/Mpjx6BuUDUG+M=
 
 Name: classes2.dex
-SHA1-Digest: 8i4nekJiCQ+SRbYkmGdSQSVcoZ0=
+SHA1-Digest: NcP25Br4sqiasKpY+Ron5GZIW+c=
 
 Name: classes3.dex
 SHA1-Digest: K/FInPEdIkvsNP4DHH7khubm5vY=
@@ -10641,5 +10641,5 @@ Name: res/xml/provider_paths.xml
 SHA1-Digest: Ukuvy5xVJ/llnc+4Z3vhljBIEnA=
 
 Name: resources.arsc
-SHA1-Digest: Z7ChSGs1SAeteIpF2NHCNq9UGmU=
+SHA1-Digest: b9e4U4nEO3mPmA1cFFMrpWIovow=
 

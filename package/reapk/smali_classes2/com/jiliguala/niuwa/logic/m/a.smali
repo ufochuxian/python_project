@@ -120,31 +120,31 @@
     .param p1, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 276
+    .line 289
     const/4 v4, 0x0
 
-    .line 277
+    .line 290
     .local v4, "fis":Ljava/io/FileInputStream;
     const/4 v5, 0x0
 
-    .line 278
+    .line 291
     .local v5, "isr":Ljava/io/InputStreamReader;
     const/4 v0, 0x0
 
-    .line 279
+    .line 292
     .local v0, "br":Ljava/io/BufferedReader;
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 281
+    .line 294
     .local v2, "content":Ljava/lang/StringBuilder;
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/content/Context;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
 
     move-result-object v4
 
-    .line 282
+    .line 295
     new-instance v6, Ljava/io/InputStreamReader;
 
     invoke-direct {v6, v4}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
@@ -152,7 +152,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 283
+    .line 296
     .end local v5    # "isr":Ljava/io/InputStreamReader;
     .local v6, "isr":Ljava/io/InputStreamReader;
     :try_start_1
@@ -163,7 +163,7 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 285
+    .line 298
     .end local v0    # "br":Ljava/io/BufferedReader;
     .local v1, "br":Ljava/io/BufferedReader;
     :try_start_2
@@ -171,22 +171,22 @@
 
     move-result-object v7
 
-    .line 286
+    .line 299
     .local v7, "readString":Ljava/lang/String;
     :goto_0
     if-eqz v7, :cond_0
 
-    .line 287
+    .line 300
     invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 288
+    .line 301
     invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v7
 
     goto :goto_0
 
-    .line 290
+    .line 303
     :cond_0
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
     :try_end_2
@@ -195,13 +195,13 @@
 
     move-result-object v8
 
-    .line 295
+    .line 308
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 296
+    .line 309
     invoke-static {v6}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 297
+    .line 310
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
     move-object v0, v1
@@ -210,18 +210,18 @@
     .restart local v0    # "br":Ljava/io/BufferedReader;
     move-object v5, v6
 
-    .line 299
+    .line 312
     .end local v6    # "isr":Ljava/io/InputStreamReader;
     .end local v7    # "readString":Ljava/lang/String;
     .restart local v5    # "isr":Ljava/io/InputStreamReader;
     :goto_1
     return-object v8
 
-    .line 292
+    .line 305
     :catch_0
     move-exception v3
 
-    .line 293
+    .line 306
     .local v3, "e":Ljava/io/IOException;
     :goto_2
     :try_start_3
@@ -229,21 +229,21 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 295
+    .line 308
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 296
+    .line 309
     invoke-static {v5}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 297
+    .line 310
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 299
+    .line 312
     const/4 v8, 0x0
 
     goto :goto_1
 
-    .line 295
+    .line 308
     .end local v3    # "e":Ljava/io/IOException;
     :catchall_0
     move-exception v8
@@ -251,15 +251,15 @@
     :goto_3
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 296
+    .line 309
     invoke-static {v5}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
-    .line 297
+    .line 310
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
     throw v8
 
-    .line 295
+    .line 308
     .end local v5    # "isr":Ljava/io/InputStreamReader;
     .restart local v6    # "isr":Ljava/io/InputStreamReader;
     :catchall_1
@@ -288,7 +288,7 @@
     .restart local v5    # "isr":Ljava/io/InputStreamReader;
     goto :goto_3
 
-    .line 292
+    .line 305
     .end local v5    # "isr":Ljava/io/InputStreamReader;
     .restart local v6    # "isr":Ljava/io/InputStreamReader;
     :catch_1
@@ -450,24 +450,43 @@
     .param p1, "taskId"    # Ljava/lang/String;
 
     .prologue
-    .line 203
-    const/4 v5, 0x0
+    .line 213
+    iget-object v6, p0, Lcom/jiliguala/niuwa/logic/m/a;->f:Ljava/util/List;
 
-    .line 204
-    .local v5, "successCount":I
-    const/4 v1, 0x0
+    if-eqz v6, :cond_0
 
-    .local v1, "i":I
-    :goto_0
     iget-object v6, p0, Lcom/jiliguala/niuwa/logic/m/a;->f:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v6
 
-    if-ge v1, v6, :cond_a
+    if-nez v6, :cond_1
 
-    .line 205
+    .line 252
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 216
+    :cond_1
+    const/4 v5, 0x0
+
+    .line 217
+    .local v5, "successCount":I
+    const/4 v1, 0x0
+
+    .local v1, "i":I
+    :goto_1
+    iget-object v6, p0, Lcom/jiliguala/niuwa/logic/m/a;->f:Ljava/util/List;
+
+    invoke-interface {v6}, Ljava/util/List;->size()I
+
+    move-result v6
+
+    if-ge v1, v6, :cond_c
+
+    .line 218
     iget-object v6, p0, Lcom/jiliguala/niuwa/logic/m/a;->f:Ljava/util/List;
 
     invoke-interface {v6, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -476,7 +495,7 @@
 
     check-cast v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
 
-    .line 206
+    .line 219
     .local v4, "skin":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
     iget-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->_id:Ljava/lang/String;
 
@@ -484,9 +503,9 @@
 
     move-result v6
 
-    if-eqz v6, :cond_8
+    if-eqz v6, :cond_a
 
-    .line 207
+    .line 220
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -525,34 +544,34 @@
 
     iput-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
-    .line 208
+    .line 221
     new-instance v0, Ljava/io/File;
 
     iget-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     invoke-direct {v0, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 209
+    .line 222
     .local v0, "file":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 210
+    .line 223
     .local v2, "list":[Ljava/lang/String;
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_a
 
-    .line 211
+    .line 224
     array-length v7, v2
 
     const/4 v6, 0x0
 
-    :goto_1
-    if-ge v6, v7, :cond_8
+    :goto_2
+    if-ge v6, v7, :cond_a
 
     aget-object v3, v2, v6
 
-    .line 212
+    .line 225
     .local v3, "name":Ljava/lang/String;
     const-string v8, "mc_bg_placeholder"
 
@@ -560,51 +579,21 @@
 
     move-result v8
 
-    if-eqz v8, :cond_1
-
-    .line 213
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->mcBg:Ljava/lang/String;
-
-    .line 211
-    :cond_0
-    :goto_2
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    .line 214
-    :cond_1
-    const-string v8, "phonics_bg_placeholder"
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    .line 215
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->phBg:Ljava/lang/String;
-
-    goto :goto_2
-
-    .line 216
-    :cond_2
-    const-string v8, "oldmap_bg_placeholder"
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v8
-
     if-eqz v8, :cond_3
 
-    .line 217
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->oldmapBg:Ljava/lang/String;
+    .line 226
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->mcBg:Ljava/lang/String;
+
+    .line 224
+    :cond_2
+    :goto_3
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_2
 
-    .line 218
+    .line 227
     :cond_3
-    const-string v8, "entrance_listen"
+    const-string v8, "phonics_bg_placeholder"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -612,14 +601,14 @@
 
     if-eqz v8, :cond_4
 
-    .line 219
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->listenIcon:Ljava/lang/String;
+    .line 228
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->phBg:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 220
+    .line 229
     :cond_4
-    const-string v8, "entrance_watch"
+    const-string v8, "oldmap_bg_placeholder"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -627,14 +616,14 @@
 
     if-eqz v8, :cond_5
 
-    .line 221
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->watchIcon:Ljava/lang/String;
+    .line 230
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->oldmapBg:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 222
+    .line 231
     :cond_5
-    const-string v8, "entrance_reading"
+    const-string v8, "entrance_listen"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -642,14 +631,14 @@
 
     if-eqz v8, :cond_6
 
-    .line 223
-    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->readingIcon:Ljava/lang/String;
+    .line 232
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->listenIcon:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 224
+    .line 233
     :cond_6
-    const-string v8, "entrance_flashcard"
+    const-string v8, "entrance_watch"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -657,60 +646,90 @@
 
     if-eqz v8, :cond_7
 
-    .line 225
+    .line 234
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->watchIcon:Ljava/lang/String;
+
+    goto :goto_3
+
+    .line 235
+    :cond_7
+    const-string v8, "entrance_reading"
+
+    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_8
+
+    .line 236
+    iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->readingIcon:Ljava/lang/String;
+
+    goto :goto_3
+
+    .line 237
+    :cond_8
+    const-string v8, "entrance_flashcard"
+
+    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_9
+
+    .line 238
     iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->flashIcon:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 226
-    :cond_7
+    .line 239
+    :cond_9
     const-string v8, "img_sdoufu"
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_0
+    if-eqz v8, :cond_2
 
-    .line 227
+    .line 240
     iput-object v3, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->squareBg:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 232
+    .line 245
     .end local v0    # "file":Ljava/io/File;
     .end local v2    # "list":[Ljava/lang/String;
     .end local v3    # "name":Ljava/lang/String;
-    :cond_8
+    :cond_a
     iget-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
 
-    if-nez v6, :cond_9
+    if-nez v6, :cond_b
 
-    .line 233
+    .line 246
     add-int/lit8 v5, v5, 0x1
 
-    .line 204
-    :cond_9
+    .line 217
+    :cond_b
     add-int/lit8 v1, v1, 0x1
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 236
+    .line 249
     .end local v4    # "skin":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
-    :cond_a
+    :cond_c
     iget-object v6, p0, Lcom/jiliguala/niuwa/logic/m/a;->f:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v6
 
-    if-ne v5, v6, :cond_b
+    if-ne v5, v6, :cond_0
 
-    .line 237
+    .line 250
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v6
@@ -727,9 +746,7 @@
 
     invoke-direct {p0, v6, v7, v8}, Lcom/jiliguala/niuwa/logic/m/a;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 239
-    :cond_b
-    return-void
+    goto/16 :goto_0
 .end method
 
 .method private b(Ljava/util/List;)V
@@ -1002,14 +1019,14 @@
     .prologue
     const/4 v9, 0x0
 
-    .line 247
+    .line 260
     const-string v8, "skin"
 
     invoke-static {p1, v8}, Lcom/jiliguala/niuwa/logic/m/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 248
+    .line 261
     .local v7, "splashStr":Ljava/lang/String;
     invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1019,11 +1036,11 @@
 
     move-object v8, v9
 
-    .line 271
+    .line 284
     :goto_0
     return-object v8
 
-    .line 252
+    .line 265
     :cond_0
     :try_start_0
     new-instance v8, Lcom/google/gson/Gson;
@@ -1034,19 +1051,19 @@
 
     invoke-direct {v10, p0}, Lcom/jiliguala/niuwa/logic/m/a$2;-><init>(Lcom/jiliguala/niuwa/logic/m/a;)V
 
-    .line 253
+    .line 266
     invoke-virtual {v10}, Lcom/jiliguala/niuwa/logic/m/a$2;->getType()Ljava/lang/reflect/Type;
 
     move-result-object v10
 
-    .line 252
+    .line 265
     invoke-virtual {v8, v7, v10}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/util/List;
 
-    .line 254
+    .line 267
     .local v6, "splashList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     if-eqz v6, :cond_4
 
@@ -1056,12 +1073,12 @@
 
     if-lez v8, :cond_4
 
-    .line 255
+    .line 268
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 256
+    .line 269
     .local v4, "removeList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     const/4 v1, 0x0
 
@@ -1073,20 +1090,20 @@
 
     if-ge v1, v8, :cond_3
 
-    .line 257
+    .line 270
     invoke-interface {v6, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
 
-    .line 258
+    .line 271
     .local v5, "splash":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 259
+    .line 272
     .local v2, "l":J
     iget-wide v10, v5, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->startts:J
 
@@ -1100,30 +1117,30 @@
 
     if-lez v8, :cond_2
 
-    .line 260
+    .line 273
     :cond_1
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 256
+    .line 269
     :cond_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 263
+    .line 276
     .end local v2    # "l":J
     .end local v5    # "splash":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
     :cond_3
     invoke-interface {v6, v4}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
 
-    .line 264
+    .line 277
     invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v8
 
     if-lez v8, :cond_4
 
-    .line 265
+    .line 278
     const/4 v8, 0x0
 
     invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1136,14 +1153,14 @@
 
     goto :goto_0
 
-    .line 268
+    .line 281
     .end local v1    # "i":I
     .end local v4    # "removeList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     .end local v6    # "splashList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     :catch_0
     move-exception v0
 
-    .line 269
+    .line 282
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -1151,7 +1168,7 @@
     :cond_4
     move-object v8, v9
 
-    .line 271
+    .line 284
     goto :goto_0
 .end method
 
@@ -1227,7 +1244,7 @@
     .locals 3
 
     .prologue
-    .line 303
+    .line 316
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/m/a;->e:Landroid/content/Context;
 
     const-string v1, "skin"
@@ -1236,7 +1253,7 @@
 
     invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/logic/m/a;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 304
+    .line 317
     return-void
 .end method
 
@@ -1402,7 +1419,7 @@
     .locals 0
 
     .prologue
-    .line 244
+    .line 257
     return-void
 .end method
 
@@ -1447,14 +1464,14 @@
     invoke-direct {v2, p0, p1}, Lcom/jiliguala/niuwa/logic/m/a$1;-><init>(Lcom/jiliguala/niuwa/logic/m/a;Ljava/lang/String;)V
 
     .line 194
-    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/c/c;)Lrx/m;
+    invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
     .line 191
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 200
+    .line 210
     return-void
 .end method
 

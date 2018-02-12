@@ -1,9 +1,6 @@
 .class Lcom/jiliguala/niuwa/logic/m/a$1;
-.super Ljava/lang/Object;
+.super Lrx/l;
 .source "SourceFile"
-
-# interfaces
-.implements Lrx/c/c;
 
 
 # annotations
@@ -18,8 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lrx/c/c",
+        "Lrx/l",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -44,7 +40,7 @@
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/logic/m/a$1;->a:Ljava/lang/String;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lrx/l;-><init>()V
 
     return-void
 .end method
@@ -52,8 +48,16 @@
 
 # virtual methods
 .method public a(Ljava/lang/Boolean;)V
-    .locals 2
+    .locals 0
     .param p1, "aBoolean"    # Ljava/lang/Boolean;
+
+    .prologue
+    .line 208
+    return-void
+.end method
+
+.method public onCompleted()V
+    .locals 2
 
     .prologue
     .line 197
@@ -67,7 +71,16 @@
     return-void
 .end method
 
-.method public synthetic call(Ljava/lang/Object;)V
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 0
+    .param p1, "e"    # Ljava/lang/Throwable;
+
+    .prologue
+    .line 203
+    return-void
+.end method
+
+.method public synthetic onNext(Ljava/lang/Object;)V
     .locals 0
 
     .prologue

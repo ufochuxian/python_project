@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 150
+    .line 149
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$1;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,14 +42,14 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 152
+    .line 151
     const-string v5, "noConnectivity"
 
     invoke-virtual {p2, v5, v6}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v2
 
-    .line 153
+    .line 152
     .local v2, "noConnectivity":Z
     const-string v5, "reason"
 
@@ -57,7 +57,7 @@
 
     move-result-object v4
 
-    .line 154
+    .line 153
     .local v4, "reason":Ljava/lang/String;
     const-string v5, "isFailover"
 
@@ -65,7 +65,7 @@
 
     move-result v1
 
-    .line 156
+    .line 155
     .local v1, "isFailover":Z
     const-string v5, "networkInfo"
 
@@ -75,7 +75,7 @@
 
     check-cast v0, Landroid/net/NetworkInfo;
 
-    .line 157
+    .line 156
     .local v0, "currentNetworkInfo":Landroid/net/NetworkInfo;
     const-string v5, "otherNetwork"
 
@@ -85,7 +85,7 @@
 
     check-cast v3, Landroid/net/NetworkInfo;
 
-    .line 159
+    .line 158
     .local v3, "otherNetworkInfo":Landroid/net/NetworkInfo;
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -93,7 +93,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 160
+    .line 159
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$1;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$000(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
@@ -102,7 +102,7 @@
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->reportBulkTrack()V
 
-    .line 165
+    .line 164
     :cond_0
     return-void
 .end method

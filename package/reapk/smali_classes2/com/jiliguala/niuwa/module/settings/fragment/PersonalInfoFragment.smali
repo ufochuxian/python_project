@@ -251,7 +251,7 @@
     .locals 4
 
     .prologue
-    .line 438
+    .line 440
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -260,11 +260,11 @@
 
     move-result-object v0
 
-    .line 439
+    .line 441
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 440
+    .line 442
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -275,7 +275,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 441
+    .line 443
     return-void
 .end method
 
@@ -649,7 +649,16 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 332
+    .line 331
+    const v1, 0x7f0900a6
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 334
     return-void
 
     .end local v0    # "currentUserId":Ljava/lang/String;
@@ -698,14 +707,14 @@
     .param p1, "userAva"    # Ljava/lang/String;
 
     .prologue
-    .line 444
+    .line 446
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 445
+    .line 447
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -724,7 +733,7 @@
 
     move-result-object v0
 
-    .line 447
+    .line 449
     .local v0, "url":Ljava/lang/String;
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
@@ -742,7 +751,7 @@
 
     invoke-virtual {v1, v0, v2, v3}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;)V
 
-    .line 449
+    .line 451
     .end local v0    # "url":Ljava/lang/String;
     :cond_0
     return-void
@@ -753,14 +762,14 @@
     .param p1, "bg"    # Ljava/lang/String;
 
     .prologue
-    .line 452
+    .line 454
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 453
+    .line 455
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -779,14 +788,14 @@
 
     move-result-object p1
 
-    .line 454
+    .line 456
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
-    .line 455
+    .line 457
     invoke-static {}, Lcom/jiliguala/niuwa/logic/e/a;->a()Lcom/jiliguala/niuwa/logic/e/a;
 
     move-result-object v2
@@ -799,14 +808,14 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$6;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;)V
 
-    .line 454
+    .line 456
     invoke-virtual {v0, p1, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;Lcom/nostra13/universalimageloader/core/d/a;)V
 
-    .line 482
+    .line 484
     :goto_0
     return-void
 
-    .line 478
+    .line 480
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
@@ -814,7 +823,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 479
+    .line 481
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mProfileBgMask:Landroid/widget/FrameLayout;
 
     const/16 v1, 0x8
@@ -841,7 +850,7 @@
     .end annotation
 
     .prologue
-    .line 348
+    .line 350
     .local p1, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;>;"
     .local p2, "oldList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;>;"
     if-eqz p1, :cond_0
@@ -852,7 +861,7 @@
 
     if-nez v14, :cond_2
 
-    .line 349
+    .line 351
     :cond_0
     move-object/from16 v0, p0
 
@@ -862,7 +871,7 @@
 
     invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
-    .line 350
+    .line 352
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mBabyTv:Landroid/view/View;
@@ -871,7 +880,7 @@
 
     invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
-    .line 351
+    .line 353
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -880,11 +889,11 @@
 
     invoke-virtual {v14, v15}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 417
+    .line 419
     :cond_1
     return-void
 
-    .line 353
+    .line 355
     :cond_2
     move-object/from16 v0, p0
 
@@ -894,7 +903,7 @@
 
     invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
-    .line 354
+    .line 356
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mBabyTv:Landroid/view/View;
@@ -903,7 +912,7 @@
 
     invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
-    .line 355
+    .line 357
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -912,14 +921,14 @@
 
     invoke-virtual {v14, v15}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 362
+    .line 364
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->childListContainer:Landroid/widget/LinearLayout;
 
     invoke-virtual {v14}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 363
+    .line 365
     new-instance v8, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v14, -0x2
@@ -928,7 +937,7 @@
 
     invoke-direct {v8, v14, v15}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 364
+    .line 366
     .local v8, "llp":Landroid/widget/LinearLayout$LayoutParams;
     const/4 v14, 0x0
 
@@ -948,10 +957,10 @@
 
     invoke-virtual {v8, v14, v15, v0, v1}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 366
+    .line 368
     if-eqz p1, :cond_1
 
-    .line 367
+    .line 369
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v14
@@ -969,7 +978,7 @@
 
     check-cast v6, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
 
-    .line 368
+    .line 370
     .local v6, "item":Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
     move-object/from16 v0, p0
 
@@ -985,7 +994,7 @@
 
     move-result-object v13
 
-    .line 369
+    .line 371
     .local v13, "view":Landroid/view/View;
     const v15, 0x7f090086
 
@@ -995,7 +1004,7 @@
 
     check-cast v7, Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 370
+    .line 372
     .local v7, "iv":Lcom/makeramen/roundedimageview/RoundedImageView;
     iget-object v15, v6, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->ava:Ljava/lang/String;
 
@@ -1005,7 +1014,7 @@
 
     if-nez v15, :cond_3
 
-    .line 371
+    .line 373
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
@@ -1028,7 +1037,7 @@
 
     move-result-object v12
 
-    .line 372
+    .line 374
     .local v12, "url":Ljava/lang/String;
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
@@ -1038,7 +1047,7 @@
 
     move-result-object v16
 
-    .line 373
+    .line 375
     invoke-virtual/range {v16 .. v16}, Lcom/jiliguala/niuwa/logic/e/a;->f()Lcom/nostra13/universalimageloader/core/c;
 
     move-result-object v16
@@ -1051,14 +1060,14 @@
 
     invoke-direct {v0, v1, v7}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$5;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)V
 
-    .line 372
+    .line 374
     move-object/from16 v0, v16
 
     move-object/from16 v1, v17
 
     invoke-virtual {v15, v12, v7, v0, v1}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;Lcom/nostra13/universalimageloader/core/d/a;)V
 
-    .line 401
+    .line 403
     .end local v12    # "url":Ljava/lang/String;
     :cond_3
     const v15, 0x7f090569
@@ -1067,13 +1076,13 @@
 
     move-result-object v4
 
-    .line 402
+    .line 404
     .local v4, "container":Landroid/view/View;
     const/4 v15, 0x0
 
     invoke-virtual {v4, v15}, Landroid/view/View;->setVisibility(I)V
 
-    .line 403
+    .line 405
     const v15, 0x7f090378
 
     invoke-virtual {v13, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1082,7 +1091,7 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    .line 404
+    .line 406
     .local v9, "nameTv":Landroid/widget/TextView;
     const v15, 0x7f090046
 
@@ -1092,7 +1101,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 405
+    .line 407
     .local v3, "ageTv":Landroid/widget/TextView;
     iget-object v15, v6, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->bd:Ljava/lang/String;
 
@@ -1100,35 +1109,35 @@
 
     move-result-wide v10
 
-    .line 406
+    .line 408
     .local v10, "time":J
     new-instance v5, Ljava/util/Date;
 
     invoke-direct {v5, v10, v11}, Ljava/util/Date;-><init>(J)V
 
-    .line 407
+    .line 409
     .local v5, "date":Ljava/util/Date;
     const/4 v2, 0x0
 
-    .line 408
+    .line 410
     .local v2, "age":Ljava/lang/String;
     if-eqz v5, :cond_4
 
-    .line 409
+    .line 411
     invoke-static {v5}, Lcom/jiliguala/niuwa/common/util/d;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 411
+    .line 413
     :cond_4
     iget-object v15, v6, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->nick:Ljava/lang/String;
 
     invoke-virtual {v9, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 412
+    .line 414
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 413
+    .line 415
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -1379,17 +1388,17 @@
     .param p1, "resId"    # I
 
     .prologue
-    .line 424
+    .line 426
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 425
+    .line 427
     invoke-static {p1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 426
+    .line 428
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -1398,11 +1407,11 @@
 
     move-result-object v0
 
-    .line 427
+    .line 429
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 429
+    .line 431
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
@@ -1414,47 +1423,47 @@
     .param p2, "indexToShow"    # I
 
     .prologue
-    .line 485
+    .line 487
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 486
+    .line 488
     .local v0, "intent":Landroid/content/Intent;
     const-class v1, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 487
+    .line 489
     const-string v1, "KEY_UID"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->uid:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 488
+    .line 490
     const-string v1, "KEY_ME_MYSELF"
 
     iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->isMeMySelf:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 489
+    .line 491
     const-string v1, "KEY_INDEX_TO_SHOW"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 490
+    .line 492
     invoke-virtual {p1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 491
+    .line 493
     const v1, 0x7f01001d
 
     const v2, 0x7f010013
 
     invoke-virtual {p1, v1, v2}, Landroid/app/Activity;->overridePendingTransition(II)V
 
-    .line 492
+    .line 494
     return-void
 .end method
 
@@ -1471,7 +1480,7 @@
     .end annotation
 
     .prologue
-    .line 336
+    .line 338
     .local p1, "newBabyList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;>;"
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mAddBabyIv:Landroid/widget/ImageView;
 
@@ -1479,16 +1488,16 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 337
+    .line 339
     const/4 v0, 0x0
 
-    .line 338
+    .line 340
     .local v0, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;>;"
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->isMeMySelf:Z
 
     if-eqz v1, :cond_0
 
-    .line 339
+    .line 341
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -1497,14 +1506,14 @@
 
     move-result-object v0
 
-    .line 340
+    .line 342
     invoke-direct {p0, p1, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->refreshChildList(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    .line 344
+    .line 346
     :goto_0
     return-void
 
-    .line 342
+    .line 344
     :cond_0
     const/4 v1, 0x0
 
@@ -1526,7 +1535,7 @@
     .end annotation
 
     .prologue
-    .line 495
+    .line 497
     .local p1, "tags":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->isAdded()Z
 
@@ -1534,7 +1543,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 496
+    .line 498
     invoke-static {}, Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;->getInstance()Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;
 
     move-result-object v0
@@ -1549,7 +1558,7 @@
 
     invoke-virtual {v0, p1, v1, v2, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;->updateUserTags(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;Landroid/view/ViewGroup;)V
 
-    .line 498
+    .line 500
     :cond_0
     return-void
 .end method
@@ -1834,10 +1843,10 @@
     .locals 0
 
     .prologue
-    .line 433
+    .line 435
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/b;->onDestroy()V
 
-    .line 435
+    .line 437
     return-void
 .end method
 
@@ -1847,12 +1856,12 @@
     .param p2, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 501
+    .line 503
     const/4 v0, 0x4
 
     if-ne p1, v0, :cond_0
 
-    .line 502
+    .line 504
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/f;-><init>()V
@@ -1861,10 +1870,10 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment$7;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;)V
 
-    .line 503
+    .line 505
     invoke-virtual {v0, p1, p2, v1}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;Lcom/jiliguala/niuwa/logic/network/f$b;)V
 
-    .line 563
+    .line 565
     :cond_0
     return-void
 .end method

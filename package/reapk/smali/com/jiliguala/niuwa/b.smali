@@ -14,7 +14,7 @@
 
 .field public static final e:I = 0x54
 
-.field public static final f:Ljava/lang/String; = "7.3_beta"
+.field public static final f:Ljava/lang/String; = "7.2.1"
 
 
 # direct methods
