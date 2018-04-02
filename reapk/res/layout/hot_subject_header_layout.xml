@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="60.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/hot_subject_bg" n1:background="#ffededed" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" />
+    <ImageView n1:id="@id/hot_subject_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/subjectDesc" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:lines="2" n1:layout_toRightOf="@id/hot_subject_icon" n1:layout_centerVertical="true" />
+</RelativeLayout>

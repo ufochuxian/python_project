@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b01b0
+    const v1, 0x7f0b01b6
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -86,7 +86,7 @@
     .line 41
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902c1
+    const v1, 0x7f0902c7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -99,7 +99,7 @@
     .line 42
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902ba
+    const v1, 0x7f0902c0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -112,7 +112,7 @@
     .line 43
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902b8
+    const v1, 0x7f0902be
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -125,7 +125,7 @@
     .line 45
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09046e
+    const v1, 0x7f090477
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -138,7 +138,7 @@
     .line 46
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090463
+    const v1, 0x7f09046c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -151,7 +151,7 @@
     .line 47
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/WordView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090460
+    const v1, 0x7f090469
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

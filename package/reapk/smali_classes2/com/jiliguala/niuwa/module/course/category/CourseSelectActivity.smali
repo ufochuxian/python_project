@@ -660,7 +660,7 @@
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->setContentView(I)V
 
     .line 231
-    const v3, 0x7f090590
+    const v3, 0x7f09059a
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -735,7 +735,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->descTv:Landroid/widget/TextView;
 
     .line 242
-    const v3, 0x7f0902da
+    const v3, 0x7f0902e1
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -767,7 +767,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->mNiceSpinner:Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;
 
     .line 259
-    const v3, 0x7f09030f
+    const v3, 0x7f090316
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->findViewById(I)Landroid/view/View;
 
@@ -1064,9 +1064,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->finish()V
 
     .line 437
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity;->overridePendingTransition(II)V
     :try_end_0
@@ -1123,7 +1123,7 @@
 
     .line 400
     :pswitch_data_0
-    .packed-switch 0x7f090590
+    .packed-switch 0x7f09059a
         :pswitch_0
     .end packed-switch
 .end method
@@ -1205,7 +1205,7 @@
     .param p1, "fragment"    # Landroid/support/v4/app/Fragment;
 
     .prologue
-    const v3, 0x7f010025
+    const v3, 0x7f010027
 
     .line 445
     if-eqz p1, :cond_0
@@ -1221,7 +1221,7 @@
 
     .line 447
     .local v0, "transaction":Landroid/support/v4/app/an;
-    const v1, 0x7f010022
+    const v1, 0x7f010024
 
     const/4 v2, 0x0
 

@@ -33,17 +33,17 @@
     .param p1, "mParentSpeakActivityRef"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 1640
+    .line 1668
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1641
+    .line 1669
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1642
+    .line 1670
     return-void
 .end method
 
@@ -62,7 +62,7 @@
 
     const/4 v4, 0x0
 
-    .line 1646
+    .line 1674
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v3, :cond_0
@@ -75,21 +75,21 @@
 
     if-eqz v3, :cond_0
 
-    .line 1647
+    .line 1675
     iget v3, p1, Landroid/os/Message;->what:I
 
     packed-switch v3, :pswitch_data_0
 
-    .line 1754
+    .line 1782
     :pswitch_0
     invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    .line 1758
+    .line 1786
     :cond_0
     :goto_0
     return-void
 
-    .line 1649
+    .line 1677
     :pswitch_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -107,7 +107,7 @@
 
     if-nez v3, :cond_0
 
-    .line 1650
+    .line 1678
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -134,7 +134,7 @@
 
     goto :goto_0
 
-    .line 1654
+    .line 1682
     :pswitch_2
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -152,7 +152,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1655
+    .line 1683
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -179,7 +179,7 @@
 
     goto :goto_0
 
-    .line 1659
+    .line 1687
     :pswitch_3
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -195,7 +195,7 @@
 
     move-result v1
 
-    .line 1662
+    .line 1690
     .local v1, "progress":I
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -211,7 +211,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 1663
+    .line 1691
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -226,7 +226,7 @@
 
     invoke-virtual {v3, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setProgress(I)V
 
-    .line 1665
+    .line 1693
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -246,7 +246,7 @@
 
     goto/16 :goto_0
 
-    .line 1668
+    .line 1696
     .end local v1    # "progress":I
     :pswitch_4
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
@@ -263,7 +263,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 1669
+    .line 1697
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -278,7 +278,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 1671
+    .line 1699
     :cond_2
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -294,7 +294,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 1672
+    .line 1700
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -309,7 +309,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1674
+    .line 1702
     :cond_3
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -325,7 +325,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 1675
+    .line 1703
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -340,7 +340,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 1676
+    .line 1704
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -355,7 +355,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1679
+    .line 1707
     :cond_4
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -369,7 +369,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 1680
+    .line 1708
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -382,7 +382,7 @@
 
     goto/16 :goto_0
 
-    .line 1682
+    .line 1710
     :cond_5
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -400,7 +400,7 @@
 
     goto/16 :goto_0
 
-    .line 1686
+    .line 1714
     :pswitch_5
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -414,7 +414,7 @@
 
     goto/16 :goto_0
 
-    .line 1689
+    .line 1717
     :pswitch_6
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -430,12 +430,12 @@
 
     if-nez v3, :cond_6
 
-    .line 1690
+    .line 1718
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
 
-    .line 1691
+    .line 1719
     .local v0, "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -449,7 +449,7 @@
 
     goto/16 :goto_0
 
-    .line 1693
+    .line 1721
     .end local v0    # "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     :cond_6
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
@@ -466,12 +466,12 @@
 
     if-nez v3, :cond_7
 
-    .line 1694
+    .line 1722
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
 
-    .line 1695
+    .line 1723
     .restart local v0    # "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -485,20 +485,20 @@
 
     goto/16 :goto_0
 
-    .line 1697
+    .line 1725
     .end local v0    # "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     :cond_7
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
 
-    .line 1698
+    .line 1726
     .restart local v0    # "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     iget-boolean v3, v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->c:Z
 
     if-eqz v3, :cond_8
 
-    .line 1699
+    .line 1727
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -511,11 +511,11 @@
 
     move-result-object v2
 
-    .line 1700
+    .line 1728
     .local v2, "scoreView":Landroid/view/View;
     if-eqz v2, :cond_8
 
-    .line 1701
+    .line 1729
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -530,7 +530,7 @@
 
     invoke-virtual {v3, v2}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
 
-    .line 1704
+    .line 1732
     .end local v2    # "scoreView":Landroid/view/View;
     :cond_8
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
@@ -547,7 +547,7 @@
 
     if-eqz v3, :cond_9
 
-    .line 1705
+    .line 1733
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -558,7 +558,7 @@
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideNextBtn()V
 
-    .line 1707
+    .line 1735
     :cond_9
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -572,7 +572,7 @@
 
     goto/16 :goto_0
 
-    .line 1712
+    .line 1740
     .end local v0    # "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     :pswitch_7
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
@@ -585,7 +585,7 @@
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->removeScoreView()V
 
-    .line 1713
+    .line 1741
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -598,7 +598,7 @@
 
     goto/16 :goto_0
 
-    .line 1716
+    .line 1744
     :pswitch_8
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -610,7 +610,7 @@
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$1800(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1718
+    .line 1746
     :pswitch_9
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -624,7 +624,7 @@
 
     goto/16 :goto_0
 
-    .line 1721
+    .line 1749
     :pswitch_a
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -640,7 +640,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1722
+    .line 1750
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -657,7 +657,7 @@
 
     goto/16 :goto_0
 
-    .line 1727
+    .line 1755
     :pswitch_b
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -673,12 +673,12 @@
 
     if-eqz v3, :cond_a
 
-    .line 1728
+    .line 1756
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
 
     goto/16 :goto_0
 
-    .line 1731
+    .line 1759
     :cond_a
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -694,7 +694,7 @@
 
     if-gtz v3, :cond_b
 
-    .line 1733
+    .line 1761
     :try_start_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -712,13 +712,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1737
+    .line 1765
     :goto_1
     invoke-virtual {p0, v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 
-    .line 1739
+    .line 1767
     :cond_b
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -730,7 +730,7 @@
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2200(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1740
+    .line 1768
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -775,7 +775,7 @@
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1741
+    .line 1769
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -798,19 +798,19 @@
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showFadeAnimation(Landroid/view/View;)V
 
-    .line 1743
+    .line 1771
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object p1
 
-    .line 1744
+    .line 1772
     const-wide/16 v4, 0x3e8
 
     invoke-virtual {p0, p1, v4, v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto/16 :goto_0
 
-    .line 1748
+    .line 1776
     :pswitch_c
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -824,7 +824,7 @@
 
     goto/16 :goto_0
 
-    .line 1751
+    .line 1779
     :pswitch_d
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -838,13 +838,13 @@
 
     goto/16 :goto_0
 
-    .line 1734
+    .line 1762
     :catch_0
     move-exception v3
 
     goto :goto_1
 
-    .line 1647
+    .line 1675
     :pswitch_data_0
     .packed-switch 0x1002
         :pswitch_1

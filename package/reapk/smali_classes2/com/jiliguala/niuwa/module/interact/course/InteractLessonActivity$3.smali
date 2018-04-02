@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog$DismissListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showReplayDialog()V
+    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showMcPhReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 750
+    .line 1082
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,22 +37,15 @@
 
 
 # virtual methods
-.method public onCancel(Landroid/content/DialogInterface;)V
+.method public onDismiss()V
     .locals 1
-    .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 753
+    .line 1085
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1100(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->actionPlayFromStart()V
-
-    .line 754
+    .line 1086
     return-void
 .end method

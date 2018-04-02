@@ -47,7 +47,7 @@
     .locals 0
 
     .prologue
-    .line 392
+    .line 395
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +59,7 @@
     .locals 2
 
     .prologue
-    .line 401
+    .line 404
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$WeiKe;->status:Ljava/lang/String;
 
     const-string v1, "unavailable"

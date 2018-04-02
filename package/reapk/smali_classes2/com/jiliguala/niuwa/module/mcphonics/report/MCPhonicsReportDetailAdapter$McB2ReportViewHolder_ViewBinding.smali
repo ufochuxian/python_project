@@ -23,7 +23,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;
 
     .line 23
-    const v0, 0x7f090621
+    const v0, 0x7f09062b
 
     const-string v1, "field \'wordsContainer\'"
 
@@ -38,7 +38,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;->wordsContainer:Landroid/widget/LinearLayout;
 
     .line 24
-    const v0, 0x7f0904b2
+    const v0, 0x7f0904bc
 
     const-string v1, "field \'sentenceContainer\'"
 
@@ -53,7 +53,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;->sentenceContainer:Landroid/widget/LinearLayout;
 
     .line 25
-    const v0, 0x7f090500
+    const v0, 0x7f09050a
 
     const-string v1, "field \'songContainer\'"
 
@@ -68,7 +68,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;->songContainer:Landroid/widget/LinearLayout;
 
     .line 26
-    const v0, 0x7f090503
+    const v0, 0x7f09050d
 
     const-string v1, "field \'songTitle\'"
 

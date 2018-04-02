@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     .prologue
-    .line 211
+    .line 216
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$4;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 0
 
     .prologue
-    .line 220
+    .line 225
     return-void
 .end method
 
@@ -49,11 +49,11 @@
     .locals 1
 
     .prologue
-    .line 214
+    .line 219
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$4;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->autoRefresh()V
 
-    .line 215
+    .line 220
     return-void
 .end method

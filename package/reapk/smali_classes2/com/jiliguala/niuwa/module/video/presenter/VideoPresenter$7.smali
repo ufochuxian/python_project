@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 1295
+    .line 1303
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 0
 
     .prologue
-    .line 1314
+    .line 1322
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .param p1, "shareObj"    # Ljava/lang/Object;
 
     .prologue
-    .line 1298
+    .line 1306
     if-eqz p1, :cond_0
 
     instance-of v1, p1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
@@ -59,7 +59,7 @@
 
     move-object v1, p1
 
-    .line 1299
+    .line 1307
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate$DataPart;
@@ -70,7 +70,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1300
+    .line 1308
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
 
     .end local p1    # "shareObj":Ljava/lang/Object;
@@ -80,7 +80,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
-    .line 1301
+    .line 1309
     .local v0, "item":Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
     new-instance v1, Landroid/os/Handler;
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1309
+    .line 1317
     .end local v0    # "item":Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
     :cond_0
     return-void

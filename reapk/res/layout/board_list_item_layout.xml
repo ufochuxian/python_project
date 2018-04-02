@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/item_root" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="70.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.CircleImageView n1:id="@id/thumb" n1:background="@drawable/board_icon_placeholder" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <ImageView n1:id="@id/right_arrow" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/main_right_arrow_grey" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toLeftOf="@id/right_arrow" n1:layout_toRightOf="@id/thumb" n1:layout_centerInParent="true">
+        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/title" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:maxLines="1" />
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:id="@id/desc" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_below="@id/title" />
+    </LinearLayout>
+    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

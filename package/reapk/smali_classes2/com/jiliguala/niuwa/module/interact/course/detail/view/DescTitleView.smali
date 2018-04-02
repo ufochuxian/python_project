@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b01ae
+    const v1, 0x7f0b01b4
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -78,7 +78,7 @@
     .line 41
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/DescTitleView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090273
+    const v1, 0x7f090278
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
     .line 42
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/DescTitleView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09056a
+    const v1, 0x7f090574
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

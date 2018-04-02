@@ -57,9 +57,9 @@
     .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity$3;->a:Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;
 
-    const v1, 0x7f010012
+    const v1, 0x7f010013
 
-    const v2, 0x7f01001e
+    const v2, 0x7f010020
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->overridePendingTransition(II)V
 

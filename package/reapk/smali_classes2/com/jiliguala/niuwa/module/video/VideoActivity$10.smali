@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->onRenderPlayDisConntected()V
+    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->onRenderPlayConntected()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 2466
+    .line 2495
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,41 +38,34 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 4
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v3, 0x4
 
-    .line 2469
+    const/4 v2, 0x1
+
+    .line 2498
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->isFinishing()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2470
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2200(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2300(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    const/4 v1, 0x4
+    const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 2471
+    .line 2499
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2400(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/SurfaceView;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setSelected(Z)V
+    invoke-virtual {v0, v3}, Landroid/view/SurfaceView;->setVisibility(I)V
 
-    .line 2472
+    .line 2500
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
@@ -81,22 +74,16 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setSelected(Z)V
 
-    .line 2477
+    .line 2501
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2400(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setSelected(Z)V
 
-    move-result-object v0
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 2478
+    .line 2506
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2500(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
@@ -109,55 +96,28 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 2479
+    .line 2507
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2600(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
-
-    .line 2481
-    :try_start_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2300(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/SurfaceView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2600(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setVisibility(I)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2485
-    :goto_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    check-cast v0, Landroid/view/ViewGroup;
 
-    .line 2486
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+
+    .line 2508
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$10;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->setControllerEnable(Z)V
 
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onPlayFromRender()V
-
-    .line 2489
-    :cond_0
+    .line 2509
     return-void
-
-    .line 2482
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
 .end method

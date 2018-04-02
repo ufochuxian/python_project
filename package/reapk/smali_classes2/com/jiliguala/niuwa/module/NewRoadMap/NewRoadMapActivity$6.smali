@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 765
+    .line 782
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$6;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 768
+    .line 785
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$6;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
@@ -58,6 +58,6 @@
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->a(I)V
 
-    .line 769
+    .line 786
     return-void
 .end method

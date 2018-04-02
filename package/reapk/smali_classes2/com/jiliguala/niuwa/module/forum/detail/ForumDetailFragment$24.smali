@@ -166,6 +166,7 @@
 
     invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
 
+    .line 1759
     throw v0
 .end method
 

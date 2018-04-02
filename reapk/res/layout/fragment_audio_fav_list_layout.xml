@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/listen_color_darker" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height">
+        <RelativeLayout n1:id="@id/title_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <TextView n1:textColor="@android:color/white" n1:gravity="center_vertical" n1:id="@id/channel_title" n1:layout_width="wrap_content" n1:layout_height="@dimen/top_bar_height" n1:text="红心收藏列表" style="@style/TopbarTitle" />
+        </RelativeLayout>
+        <ImageButton n1:id="@id/btn_close" n1:background="@color/transparent" n1:scrollbars="none" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/nav_icon_back_white" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/top_bar">
+        <ListView n1:id="@id/list_container" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:cacheColorHint="@color/transparent" n1:childDivider="@android:color/transparent" n1:divider="@null" n1:dividerHeight="1.0dip" n1:smoothScrollbar="false" />
+        <RelativeLayout n1:id="@id/empty" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/empty_icon" n1:background="@drawable/icon_fav_empty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-20.0dip" n1:layout_centerInParent="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@android:color/white" n1:layout_gravity="center_horizontal" n1:id="@id/empty_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/audio_channel_empty" n1:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

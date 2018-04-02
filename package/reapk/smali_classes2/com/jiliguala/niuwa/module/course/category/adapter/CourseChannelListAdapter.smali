@@ -168,7 +168,7 @@
     invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/course/category/adapter/CourseChannelListAdapter$a;->a(Lcom/jiliguala/niuwa/module/course/category/adapter/CourseChannelListAdapter$a;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     .line 95
-    const v2, 0x7f0904b1
+    const v2, 0x7f0904bb
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -308,7 +308,7 @@
     .line 77
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090597
+    const v2, 0x7f0905a1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -326,7 +326,7 @@
     .line 81
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090322
+    const v2, 0x7f090329
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
     .line 85
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0905ec
+    const v2, 0x7f0905f6
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -389,7 +389,7 @@
 
     move-result v1
 
-    const v2, 0x7f0905ec
+    const v2, 0x7f0905f6
 
     if-ne v1, v2, :cond_0
 

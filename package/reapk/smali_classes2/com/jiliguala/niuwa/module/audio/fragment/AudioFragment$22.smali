@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2497
+    .line 2515
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$22;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 2500
+    .line 2518
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$22;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2400(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;
@@ -57,6 +57,6 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 2501
+    .line 2519
     return-void
 .end method

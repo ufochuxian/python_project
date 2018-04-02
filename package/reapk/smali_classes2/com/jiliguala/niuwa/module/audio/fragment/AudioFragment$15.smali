@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2086
+    .line 2099
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->a:Ljava/util/List;
@@ -53,7 +53,7 @@
 
     const/4 v6, 0x2
 
-    .line 2089
+    .line 2102
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -62,7 +62,7 @@
 
     invoke-virtual {v3, p0}, Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 2090
+    .line 2103
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;->setLrcRows(Ljava/util/List;)V
 
-    .line 2091
+    .line 2104
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v3, v8}, Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;->setAlphaEnable(Z)V
 
-    .line 2092
+    .line 2105
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v3, v7}, Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;->setVisibility(I)V
 
-    .line 2095
+    .line 2108
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/widget/FrameLayout;
@@ -108,11 +108,11 @@
 
     move-result-object v2
 
-    .line 2096
+    .line 2109
     .local v2, "topAlphaAnimator":Lcom/nineoldandroids/a/q;
     invoke-virtual {v2, v10, v11}, Lcom/nineoldandroids/a/q;->d(J)Lcom/nineoldandroids/a/q;
 
-    .line 2097
+    .line 2110
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2900(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/widget/FrameLayout;
@@ -129,16 +129,16 @@
 
     move-result-object v0
 
-    .line 2098
+    .line 2111
     .local v0, "bottomAlphaAnimator":Lcom/nineoldandroids/a/q;
     invoke-virtual {v0, v10, v11}, Lcom/nineoldandroids/a/q;->d(J)Lcom/nineoldandroids/a/q;
 
-    .line 2099
+    .line 2112
     new-instance v1, Lcom/nineoldandroids/a/d;
 
     invoke-direct {v1}, Lcom/nineoldandroids/a/d;-><init>()V
 
-    .line 2100
+    .line 2113
     .local v1, "sets":Lcom/nineoldandroids/a/d;
     new-array v3, v6, [Lcom/nineoldandroids/a/a;
 
@@ -148,20 +148,20 @@
 
     invoke-virtual {v1, v3}, Lcom/nineoldandroids/a/d;->a([Lcom/nineoldandroids/a/a;)V
 
-    .line 2101
+    .line 2114
     new-instance v3, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;
 
     invoke-direct {v3, p0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;Lcom/nineoldandroids/a/d;)V
 
     invoke-virtual {v1, v3}, Lcom/nineoldandroids/a/d;->a(Lcom/nineoldandroids/a/a$a;)V
 
-    .line 2125
+    .line 2138
     invoke-virtual {v1}, Lcom/nineoldandroids/a/d;->a()V
 
-    .line 2126
+    .line 2139
     return-void
 
-    .line 2095
+    .line 2108
     nop
 
     :array_0
@@ -170,7 +170,7 @@
         0x3f800000    # 1.0f
     .end array-data
 
-    .line 2097
+    .line 2110
     :array_1
     .array-data 4
         0x0

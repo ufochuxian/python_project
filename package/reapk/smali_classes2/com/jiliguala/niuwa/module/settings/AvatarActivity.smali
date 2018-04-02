@@ -176,9 +176,9 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/AvatarActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 92
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/settings/AvatarActivity;->overridePendingTransition(II)V
 

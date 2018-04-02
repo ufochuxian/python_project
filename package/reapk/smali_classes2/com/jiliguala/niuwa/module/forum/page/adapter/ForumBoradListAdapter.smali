@@ -109,9 +109,9 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    const v7, 0x7f01001e
+    const v7, 0x7f010020
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
     .line 167
     const v5, 0x7f090222
@@ -201,7 +201,7 @@
     if-nez v5, :cond_0
 
     .line 177
-    const v5, 0x7f090478
+    const v5, 0x7f090481
 
     sget-object v6, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -264,9 +264,9 @@
 
     check-cast v1, Landroid/app/Activity;
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/app/Activity;->overridePendingTransition(II)V
 

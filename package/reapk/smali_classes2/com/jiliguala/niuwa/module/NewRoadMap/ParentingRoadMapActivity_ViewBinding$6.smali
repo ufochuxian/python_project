@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity_ViewBinding;
 
     .prologue
-    .line 120
+    .line 123
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity_ViewBinding$6;->c:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity_ViewBinding;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity_ViewBinding$6;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -43,11 +43,11 @@
     .param p1, "p0"    # Landroid/view/View;
 
     .prologue
-    .line 123
+    .line 126
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity_ViewBinding$6;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->onBackIconClick()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->gotoAudioPlay()V
 
-    .line 124
+    .line 127
     return-void
 .end method

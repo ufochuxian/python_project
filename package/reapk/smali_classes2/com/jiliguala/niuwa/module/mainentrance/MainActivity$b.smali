@@ -40,17 +40,17 @@
     .locals 1
 
     .prologue
-    .line 1358
+    .line 1405
     const-string v0, "reason"
 
     sput-object v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;->a:Ljava/lang/String;
 
-    .line 1359
+    .line 1406
     const-string v0, "homekey"
 
     sput-object v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;->b:Ljava/lang/String;
 
-    .line 1360
+    .line 1407
     const-string v0, "recentapps"
 
     sput-object v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;->c:Ljava/lang/String;
@@ -63,17 +63,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1363
+    .line 1410
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 1364
+    .line 1411
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$b;->d:Ljava/lang/ref/WeakReference;
 
-    .line 1365
+    .line 1412
     return-void
 .end method
 
@@ -85,6 +85,6 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1370
+    .line 1417
     return-void
 .end method

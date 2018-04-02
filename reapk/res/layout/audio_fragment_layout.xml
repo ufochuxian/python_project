@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/audio_mutable_background_container" n1:background="@color/listen_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageButton n1:id="@id/audio_top_back_btn" n1:background="@drawable/nav_icon_back_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        <TextView n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/channel_name" n1:layout_width="wrap_content" n1:layout_height="@dimen/tab_button_height" n1:text="泛听电台" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
+        <TextView n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/nav_menu" n1:layout_width="wrap_content" n1:layout_height="@dimen/default_icon_height" n1:layout_marginRight="5.0dip" n1:text="@string/audio_channel_text" n1:drawableLeft="@drawable/nav_icon_channelwithsearch" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/TopbarSideTitle" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/bottom_container" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="@dimen/bottom_bar_height" n1:layout_marginBottom="@dimen/controlbar_bottom_margin" n1:layout_alignParentBottom="true">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/love_this_song" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/control_btn_unbookmark" n1:layout_weight="1.0" />
+        <ImageButton n1:layout_gravity="center_vertical" n1:id="@id/audio_pre_btn" n1:background="@color/transparent" n1:layout_width="@dimen/default_icon_width_large" n1:layout_height="@dimen/default_icon_height_large" n1:src="@drawable/control_btn_previous" n1:layout_weight="1.0" />
+        <ImageButton n1:layout_gravity="center_vertical" n1:id="@id/audio_play_btn" n1:background="@color/transparent" n1:layout_width="@dimen/default_icon_width_large" n1:layout_height="@dimen/default_icon_height_large" n1:src="@drawable/control_btn_play" n1:layout_weight="1.0" n1:layout_centerInParent="true" n1:layout_centerVertical="true" />
+        <ImageButton n1:layout_gravity="center_vertical" n1:id="@id/audio_next_btn" n1:background="@color/transparent" n1:layout_width="@dimen/default_icon_width_large" n1:layout_height="@dimen/default_icon_height_large" n1:src="@drawable/control_btn_next" n1:layout_weight="1.0" />
+        <RelativeLayout n1:layout_gravity="center_vertical" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/bottom_bar_height" n1:layout_weight="1.0">
+            <ImageView n1:layout_gravity="center_vertical" n1:id="@id/more_tools" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/control_btn_more" n1:layout_centerInParent="true" />
+            <FrameLayout n1:id="@id/more_tools_bottom_right_container" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="-10.0dip" n1:layout_toRightOf="@id/more_tools" n1:layout_alignBottom="@id/more_tools">
+                <ImageView n1:id="@id/more_tools_bottom_right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                <TextView n1:textSize="@dimen/content_xx_small_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/more_tools_bottom_right_text" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/more_tools_bottom_center_container" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true">
+                <ImageView n1:id="@id/more_tools_bottom_center" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                <TextView n1:textSize="@dimen/content_xx_small_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/more_tools_bottom_center_text" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/more_tools_bottom_left_container" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="-10.0dip" n1:layout_toLeftOf="@id/more_tools" n1:layout_alignBottom="@id/more_tools">
+                <ImageView n1:id="@id/more_tools_bottom_left" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                <TextView n1:textSize="@dimen/content_xx_small_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/more_tools_bottom_left_text" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout n1:id="@id/progress_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:layout_above="@id/bottom_container">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="12.0sp" n1:textColor="@android:color/white" n1:layout_gravity="left" n1:id="@id/current_time_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="00:00" />
+                <TextView n1:textSize="12.0sp" n1:textColor="@android:color/white" n1:layout_gravity="right" n1:id="@id/total_time_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="01:00" />
+            </FrameLayout>
+            <SeekBar n1:id="@id/media_controller_seek_bar" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="-10.0dip" n1:max="1000" style="@style/MediaController_SeekBar" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/content_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/progress_container" n1:layout_below="@id/top_bar">
+        <RelativeLayout n1:id="@id/audio_cover_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n1:layout_centerHorizontal="true">
+            <ImageView n1:layout_width="@dimen/cd_bg_size" n1:layout_height="@dimen/cd_bg_size" n1:src="@drawable/cd_bg" n1:scaleType="centerCrop" n1:layout_centerInParent="true" />
+            <FrameLayout n1:id="@id/cover_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_gravity="center" n1:id="@id/audio_cover_image" n1:layout_width="@dimen/cd_cover_size" n1:layout_height="@dimen/cd_cover_size" n1:src="@drawable/cd_placeholder_large" n1:scaleType="centerCrop" n1:adjustViewBounds="true" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" n2:riv_border_color="@android:color/white" n2:riv_border_width="2.0dip" n2:riv_corner_radius_bottom_left="100.0dip" n2:riv_corner_radius_bottom_right="100.0dip" n2:riv_corner_radius_top_left="100.0dip" n2:riv_corner_radius_top_right="100.0dip" n2:riv_oval="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_gravity="center" n1:id="@id/audio_cover_image_center" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:src="@color/listen_color" n1:scaleType="centerCrop" n1:adjustViewBounds="true" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" n3:riv_border_color="@android:color/white" n3:riv_border_width="2.0dip" n3:riv_corner_radius_bottom_left="25.0dip" n3:riv_corner_radius_bottom_right="25.0dip" n3:riv_corner_radius_top_left="25.0dip" n3:riv_corner_radius_top_right="25.0dip" n3:riv_oval="true" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/cover_next_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_gravity="center" n1:id="@id/audio_cover_image_next" n1:layout_width="@dimen/cd_cover_size" n1:layout_height="@dimen/cd_cover_size" n1:src="@drawable/cd_placeholder_large" n1:scaleType="centerCrop" n1:adjustViewBounds="true" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" n4:riv_border_color="@android:color/white" n4:riv_border_width="2.0dip" n4:riv_corner_radius_bottom_left="100.0dip" n4:riv_corner_radius_bottom_right="100.0dip" n4:riv_corner_radius_top_left="100.0dip" n4:riv_corner_radius_top_right="100.0dip" n4:riv_oval="true" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <com.makeramen.roundedimageview.RoundedImageView n1:layout_gravity="center" n1:id="@id/audio_cover_image_next_center" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:src="@color/listen_color" n1:scaleType="centerCrop" n1:adjustViewBounds="true" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" n5:riv_border_color="@android:color/white" n5:riv_border_width="2.0dip" n5:riv_corner_radius_bottom_left="25.0dip" n5:riv_corner_radius_bottom_right="25.0dip" n5:riv_corner_radius_top_left="25.0dip" n5:riv_corner_radius_top_right="25.0dip" n5:riv_oval="true" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/audio_cover_container" n1:layout_alignParentTop="true">
+            <RelativeLayout n1:id="@id/title_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+                <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@android:color/white" n1:ellipsize="end" n1:gravity="center_horizontal" n1:id="@id/song_title" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="2" />
+                <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@android:color/white" n1:ellipsize="end" n1:gravity="center_horizontal" n1:id="@id/song_title_next" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="2" />
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_singer_text" n1:gravity="center_horizontal" n1:id="@id/singer_name" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_below="@id/song_title" />
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_singer_text" n1:gravity="center_horizontal" n1:id="@id/singer_name_next" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_below="@id/song_title_next" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/secondary_control_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/audio_cover_container" n1:layout_alignParentBottom="true">
+            <com.jiliguala.niuwa.common.widget.lyric.LrcView n1:id="@id/lyric_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" />
+            <FrameLayout n1:id="@id/lyric_mask_top" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:layout_alignTop="@id/lyric_view" />
+            <FrameLayout n1:id="@id/lyric_mask_bottom" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:layout_alignBottom="@id/lyric_view" />
+            <ImageView n1:id="@id/click_to_show_more_lyrics" n1:visibility="visible" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:layout_marginRight="5.0dip" n1:src="@drawable/control_btn_lyric" n1:layout_weight="1.0" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignTop="@id/audio_cover_container" n1:layout_alignBottom="@id/audio_cover_container">
+            <include layout="@layout/progress_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:id="@id/children_unlock" n1:background="@drawable/round_corner_white_btn_bg_large" n1:paddingRight="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="15.0dip" n1:text="@string/locking_tips" n1:drawableLeft="@drawable/control_btn_lock" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    <TextSwitcher n1:id="@id/unlock_count_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <include layout="@layout/view_show_list_tip" />
+</RelativeLayout>

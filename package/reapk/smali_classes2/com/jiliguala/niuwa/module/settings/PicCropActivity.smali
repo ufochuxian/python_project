@@ -242,6 +242,7 @@
     .line 129
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 131
     :cond_3
     throw v8
 
@@ -306,14 +307,14 @@
 
     invoke-direct {v4}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v5, 0x7f0801ba
+    const v5, 0x7f0801c0
 
     .line 149
     invoke-virtual {v4, v5}, Lcom/nostra13/universalimageloader/core/c$a;->d(I)Lcom/nostra13/universalimageloader/core/c$a;
 
     move-result-object v4
 
-    const v5, 0x7f0801ba
+    const v5, 0x7f0801c0
 
     invoke-virtual {v4, v5}, Lcom/nostra13/universalimageloader/core/c$a;->c(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -443,9 +444,9 @@
     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 208
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/PicCropActivity;->overridePendingTransition(II)V
 

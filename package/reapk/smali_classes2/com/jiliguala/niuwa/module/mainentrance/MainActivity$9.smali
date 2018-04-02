@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -18,17 +18,21 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+.field final synthetic a:Ljava/lang/String;
+
+.field final synthetic b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 403
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 414
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,26 +41,27 @@
 
 
 # virtual methods
-.method public onDismiss(Landroid/content/DialogInterface;)V
-    .locals 1
-    .param p1, "dialog"    # Landroid/content/DialogInterface;
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 406
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 417
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getCurrentPos()I
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->a:Ljava/lang/String;
 
-    move-result v0
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$200(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;Ljava/lang/String;)V
 
-    if-nez v0, :cond_0
+    .line 418
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$9;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    .line 407
-    const-string v0, "UPDATE_DIALOG"
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Landroid/app/Dialog;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/utils/DialogChain;->notifyDialogDismiss(Ljava/lang/String;)V
+    move-result-object v0
 
-    .line 409
-    :cond_0
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+
+    .line 419
     return-void
 .end method

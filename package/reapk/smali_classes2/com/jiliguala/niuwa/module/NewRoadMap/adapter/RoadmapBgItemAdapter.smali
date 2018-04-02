@@ -55,12 +55,12 @@
     .line 36
     const/4 v0, 0x0
 
-    const v1, 0x7f0b00fb
+    const v1, 0x7f0b00fc
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadmapBgItemAdapter;->addItemType(II)V
 
     .line 37
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->N()I
 
     move-result v0
 
@@ -103,7 +103,7 @@
 
     .prologue
     .line 45
-    const v1, 0x7f090273
+    const v1, 0x7f090278
 
     invoke-virtual {p1, v1}, Lcom/c/a/a/a/e;->e(I)Landroid/view/View;
 

@@ -299,9 +299,9 @@
 
     move-result-object v5
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
-    const v7, 0x7f010013
+    const v7, 0x7f010014
 
     invoke-virtual {v5, v6, v7}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
     :try_end_0
@@ -333,7 +333,7 @@
     .line 191
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09026d
+    const v1, 0x7f090272
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -353,7 +353,7 @@
     .line 193
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

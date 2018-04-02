@@ -38,7 +38,7 @@
     if-le p0, v2, :cond_1
 
     .line 17
-    const v0, 0x7f08020b
+    const v0, 0x7f080215
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -51,7 +51,7 @@
     if-gt p0, v2, :cond_2
 
     .line 19
-    const v0, 0x7f08020a
+    const v0, 0x7f080214
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -64,7 +64,7 @@
     if-ge p0, v1, :cond_3
 
     .line 21
-    const v0, 0x7f080207
+    const v0, 0x7f080211
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -77,7 +77,7 @@
     if-ge p0, v0, :cond_4
 
     .line 23
-    const v0, 0x7f080208
+    const v0, 0x7f080212
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -85,7 +85,7 @@
 
     .line 25
     :cond_4
-    const v0, 0x7f08020c
+    const v0, 0x7f080216
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 

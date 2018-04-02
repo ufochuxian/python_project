@@ -136,11 +136,11 @@
     if-eqz v5, :cond_3
 
     .line 272
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/a;->a()Lcom/jiliguala/niuwa/logic/r/a;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/q/a;->d()V
+    invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/r/a;->d()V
 
     .line 277
     :cond_2
@@ -157,11 +157,11 @@
 
     .line 274
     :cond_3
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/a;->a()Lcom/jiliguala/niuwa/logic/r/a;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/q/a;->c()V
+    invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/r/a;->c()V
 
     goto :goto_1
 
@@ -312,7 +312,7 @@
 
     if-eqz v5, :cond_7
 
-    const v5, 0x7f080111
+    const v5, 0x7f080113
 
     :goto_3
     invoke-virtual {v6, v5}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -356,7 +356,7 @@
 
     .line 318
     :cond_7
-    const v5, 0x7f080117
+    const v5, 0x7f080119
 
     goto :goto_3
 
@@ -463,15 +463,15 @@
 
     .line 348
     .local v4, "timeCtlFragment":Lcom/jiliguala/niuwa/common/a/k;
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/a;->a()Lcom/jiliguala/niuwa/logic/r/a;
 
     move-result-object v1
 
     .line 349
-    .local v1, "controller":Lcom/jiliguala/niuwa/logic/q/a;
-    sget-object v6, Lcom/jiliguala/niuwa/logic/q/a;->b:[I
+    .local v1, "controller":Lcom/jiliguala/niuwa/logic/r/a;
+    sget-object v6, Lcom/jiliguala/niuwa/logic/r/a;->b:[I
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/q/a;->e()I
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/r/a;->e()I
 
     move-result v7
 
@@ -488,7 +488,7 @@
 
     invoke-direct {v6}, Lcom/jiliguala/niuwa/common/a/k$b;-><init>()V
 
-    sget-object v7, Lcom/jiliguala/niuwa/logic/q/a;->a:[Ljava/lang/String;
+    sget-object v7, Lcom/jiliguala/niuwa/logic/r/a;->a:[Ljava/lang/String;
 
     .line 352
     invoke-static {v7}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -551,7 +551,7 @@
     :cond_8
     new-instance v5, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;
 
-    invoke-direct {v5, p0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;Lcom/jiliguala/niuwa/logic/q/a;)V
+    invoke-direct {v5, p0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;Lcom/jiliguala/niuwa/logic/r/a;)V
 
     invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/common/a/k;->a(Lcom/jiliguala/niuwa/common/a/k$a;)V
 
@@ -600,13 +600,13 @@
         0x7f09012f -> :sswitch_a
         0x7f090148 -> :sswitch_9
         0x7f0901c8 -> :sswitch_7
-        0x7f0902fa -> :sswitch_8
-        0x7f0902fb -> :sswitch_8
-        0x7f0902ff -> :sswitch_6
-        0x7f09035d -> :sswitch_0
-        0x7f09037c -> :sswitch_b
-        0x7f09039d -> :sswitch_7
-        0x7f0904cf -> :sswitch_1
-        0x7f0904d8 -> :sswitch_1
+        0x7f090301 -> :sswitch_8
+        0x7f090302 -> :sswitch_8
+        0x7f090306 -> :sswitch_6
+        0x7f090364 -> :sswitch_0
+        0x7f090383 -> :sswitch_b
+        0x7f0903a4 -> :sswitch_7
+        0x7f0904d9 -> :sswitch_1
+        0x7f0904e2 -> :sswitch_1
     .end sparse-switch
 .end method

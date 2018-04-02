@@ -71,9 +71,9 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v8, 0x7f01001e
+    const v8, 0x7f010020
 
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
     .line 37
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
@@ -216,7 +216,7 @@
     if-nez v4, :cond_1
 
     .line 58
-    const v4, 0x7f090478
+    const v4, 0x7f090481
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/course/main/CoursePeekerActivity;->mUnitFragment:Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;
 

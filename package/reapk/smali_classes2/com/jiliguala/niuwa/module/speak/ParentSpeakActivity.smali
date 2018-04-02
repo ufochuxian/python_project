@@ -164,7 +164,7 @@
 
 .field private mShowScore:Z
 
-.field private mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private mSpeakCardModelTemplete:Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
@@ -690,7 +690,7 @@
     .locals 4
 
     .prologue
-    .line 841
+    .line 844
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTemplate:Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate;
 
@@ -706,7 +706,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
 
-    .line 842
+    .line 845
     .local v1, "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCaptionView()Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
@@ -714,40 +714,40 @@
 
     if-nez v2, :cond_0
 
-    .line 843
+    .line 846
     new-instance v2, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;-><init>(Landroid/content/Context;)V
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
-    .line 844
+    .line 847
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     const v3, 0x7f090150
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setId(I)V
 
-    .line 845
+    .line 848
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->updateWithColorStyle()V
 
-    .line 846
+    .line 849
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->et:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setEngTxt(Ljava/lang/String;)V
 
-    .line 847
+    .line 850
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->ct:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setChineseTxt(Ljava/lang/String;)V
 
-    .line 848
+    .line 851
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v2, -0x2
@@ -756,7 +756,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 850
+    .line 853
     .local v0, "params":Landroid/widget/RelativeLayout$LayoutParams;
     const/high16 v2, 0x41200000    # 10.0f
 
@@ -766,34 +766,34 @@
 
     iput v2, v0, Landroid/widget/RelativeLayout$LayoutParams;->bottomMargin:I
 
-    .line 851
+    .line 854
     const/16 v2, 0xc
 
     const/4 v3, -0x1
 
     invoke-virtual {v0, v2, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 852
+    .line 855
     const/16 v2, 0xe
 
     const/4 v3, -0x1
 
     invoke-virtual {v0, v2, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 853
+    .line 856
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v2, v3, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 862
+    .line 865
     .end local v0    # "params":Landroid/widget/RelativeLayout$LayoutParams;
     .end local v1    # "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     :goto_0
     return-void
 
-    .line 855
+    .line 858
     .restart local v1    # "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCaptionView()Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
@@ -804,7 +804,7 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setEngTxt(Ljava/lang/String;)V
 
-    .line 856
+    .line 859
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCaptionView()Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     move-result-object v2
@@ -817,7 +817,7 @@
 
     goto :goto_0
 
-    .line 859
+    .line 862
     .end local v1    # "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     :catch_0
     move-exception v2
@@ -829,7 +829,7 @@
     .locals 3
 
     .prologue
-    .line 1147
+    .line 1170
     :try_start_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScore()Ljava/lang/String;
 
@@ -841,7 +841,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1148
+    .line 1171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScore()Ljava/lang/String;
@@ -858,12 +858,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1153
+    .line 1176
     :cond_0
     :goto_0
     return-void
 
-    .line 1150
+    .line 1173
     :catch_0
     move-exception v0
 
@@ -874,17 +874,17 @@
     .locals 1
 
     .prologue
-    .line 1495
+    .line 1523
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v0, :cond_0
 
-    .line 1496
+    .line 1524
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->toggleRecord()V
 
-    .line 1498
+    .line 1526
     :cond_0
     return-void
 .end method
@@ -893,15 +893,15 @@
     .locals 1
 
     .prologue
-    .line 804
+    .line 807
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHasAddedSpeakView:Z
 
     if-nez v0, :cond_0
 
-    .line 805
+    .line 808
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
 
-    .line 807
+    .line 810
     :cond_0
     return-void
 .end method
@@ -910,21 +910,21 @@
     .locals 1
 
     .prologue
-    .line 1314
+    .line 1342
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCurrentFlashCardFragment()Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1315
+    .line 1343
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCurrentFlashCardFragment()Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->enablePlayFlashCard()V
 
-    .line 1317
+    .line 1345
     :cond_0
     return-void
 .end method
@@ -972,7 +972,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1919
+    .line 1947
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     if-eqz v1, :cond_0
@@ -985,18 +985,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 1920
+    .line 1948
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1922
+    .line 1950
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     if-nez v1, :cond_1
 
-    .line 1923
+    .line 1951
     new-instance v1, Landroid/app/Dialog;
 
     const v2, 0x7f1000b4
@@ -1005,8 +1005,8 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
-    .line 1924
-    const v1, 0x7f0b010f
+    .line 1952
+    const v1, 0x7f0b0110
 
     const/4 v2, 0x0
 
@@ -1014,7 +1014,7 @@
 
     move-result-object v0
 
-    .line 1925
+    .line 1953
     .local v0, "contentView":Landroid/view/View;
     const v1, 0x7f090169
 
@@ -1026,22 +1026,22 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownTv:Landroid/widget/TextView;
 
-    .line 1926
+    .line 1954
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     invoke-virtual {v1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
-    .line 1927
+    .line 1955
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     invoke-virtual {v1, v3}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 1928
+    .line 1956
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     invoke-virtual {v1, v3}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 1930
+    .line 1958
     .end local v0    # "contentView":Landroid/view/View;
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
@@ -1056,37 +1056,37 @@
     .prologue
     const-wide/16 v0, 0x3e8
 
-    .line 1300
+    .line 1328
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTryAgainSoundId:I
 
     if-ne p1, v2, :cond_1
 
-    .line 1301
+    .line 1329
     const-wide/16 v0, 0xbb8
 
-    .line 1309
+    .line 1337
     :cond_0
     :goto_0
     return-wide v0
 
-    .line 1302
+    .line 1330
     :cond_1
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGoodJobSoundId:I
 
     if-ne p1, v2, :cond_2
 
-    .line 1303
+    .line 1331
     const-wide/16 v0, 0x7d0
 
     goto :goto_0
 
-    .line 1304
+    .line 1332
     :cond_2
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGreatSoundId:I
 
     if-eq p1, v2, :cond_0
 
-    .line 1306
+    .line 1334
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mExcellentSoundId:I
 
     if-ne p1, v2, :cond_0
@@ -1098,7 +1098,7 @@
     .locals 7
 
     .prologue
-    .line 869
+    .line 872
     :try_start_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
@@ -1110,33 +1110,33 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
 
-    .line 870
+    .line 873
     .local v3, "flashCardModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     iget-object v2, v3, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->word:Ljava/lang/String;
 
-    .line 871
+    .line 874
     .local v2, "englishTxt":Ljava/lang/String;
     iget-object v0, v3, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->cword:Ljava/lang/String;
 
-    .line 872
+    .line 875
     .local v0, "chineseTxt":Ljava/lang/String;
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     if-nez v5, :cond_0
 
-    .line 873
+    .line 876
     new-instance v5, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-direct {v5, p0}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;-><init>(Landroid/content/Context;)V
 
     iput-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
-    .line 874
+    .line 877
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->updateNormalColorStyle()V
 
-    .line 875
+    .line 878
     new-instance v4, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v5, -0x1
@@ -1145,7 +1145,7 @@
 
     invoke-direct {v4, v5, v6}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 876
+    .line 879
     .local v4, "params":Landroid/widget/RelativeLayout$LayoutParams;
     const/high16 v5, 0x43160000    # 150.0f
 
@@ -1155,49 +1155,49 @@
 
     iput v5, v4, Landroid/widget/RelativeLayout$LayoutParams;->bottomMargin:I
 
-    .line 877
+    .line 880
     const/16 v5, 0xc
 
     const/4 v6, -0x1
 
     invoke-virtual {v4, v5, v6}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 878
+    .line 881
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v5, v6, v4}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 880
+    .line 883
     .end local v4    # "params":Landroid/widget/RelativeLayout$LayoutParams;
     :cond_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v5, v2}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setEngTxt(Ljava/lang/String;)V
 
-    .line 881
+    .line 884
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
 
     invoke-virtual {v5, v0}, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->setChineseTxt(Ljava/lang/String;)V
 
-    .line 882
+    .line 885
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mNormalCaptionsView:Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 885
+    .line 888
     .end local v0    # "chineseTxt":Ljava/lang/String;
     .end local v2    # "englishTxt":Ljava/lang/String;
     .end local v3    # "flashCardModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :goto_0
     return-object v5
 
-    .line 883
+    .line 886
     :catch_0
     move-exception v1
 
-    .line 885
+    .line 888
     .local v1, "e":Ljava/lang/Exception;
     const/4 v5, 0x0
 
@@ -1208,7 +1208,7 @@
     .locals 4
 
     .prologue
-    .line 891
+    .line 894
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakCardModelTemplete:Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
@@ -1224,22 +1224,22 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
 
-    .line 892
+    .line 895
     .local v1, "speakSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;->score:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 894
+    .line 897
     .end local v1    # "speakSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
     :goto_0
     return-object v2
 
-    .line 893
+    .line 896
     :catch_0
     move-exception v0
 
-    .line 894
+    .line 897
     .local v0, "e":Ljava/lang/Exception;
     const/4 v2, 0x0
 
@@ -1250,7 +1250,7 @@
     .locals 4
 
     .prologue
-    .line 1389
+    .line 1417
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -1263,36 +1263,36 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1390
+    .line 1418
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 1391
+    .line 1419
     .local v0, "child":Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getId()I
 
     move-result v2
 
-    const v3, 0x7f090486
+    const v3, 0x7f09048f
 
     if-ne v2, v3, :cond_0
 
-    .line 1395
+    .line 1423
     .end local v0    # "child":Landroid/view/View;
     :goto_1
     return-object v0
 
-    .line 1389
+    .line 1417
     .restart local v0    # "child":Landroid/view/View;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1395
+    .line 1423
     .end local v0    # "child":Landroid/view/View;
     :cond_1
     const/4 v0, 0x0
@@ -1311,39 +1311,39 @@
 
     const/16 v0, 0x3c
 
-    .line 1326
+    .line 1354
     if-ge p1, v0, :cond_0
 
-    .line 1327
+    .line 1355
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTryAgainSoundId:I
 
-    .line 1335
+    .line 1363
     :goto_0
     return v0
 
-    .line 1328
+    .line 1356
     :cond_0
     if-lt p1, v0, :cond_1
 
     if-ge p1, v1, :cond_1
 
-    .line 1329
+    .line 1357
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGoodJobSoundId:I
 
     goto :goto_0
 
-    .line 1330
+    .line 1358
     :cond_1
     if-lt p1, v1, :cond_2
 
     if-ge p1, v2, :cond_2
 
-    .line 1331
+    .line 1359
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGreatSoundId:I
 
     goto :goto_0
 
-    .line 1332
+    .line 1360
     :cond_2
     if-lt p1, v2, :cond_3
 
@@ -1351,12 +1351,12 @@
 
     if-ge p1, v0, :cond_3
 
-    .line 1333
+    .line 1361
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mExcellentSoundId:I
 
     goto :goto_0
 
-    .line 1335
+    .line 1363
     :cond_3
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mPerfectSoundId:I
 
@@ -1367,7 +1367,7 @@
     .locals 3
 
     .prologue
-    .line 1409
+    .line 1437
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -1380,35 +1380,35 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1410
+    .line 1438
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 1411
+    .line 1439
     .local v0, "child":Landroid/view/View;
     instance-of v2, v0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;
 
     if-eqz v2, :cond_0
 
-    .line 1412
+    .line 1440
     check-cast v0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;
 
-    .line 1415
+    .line 1443
     .end local v0    # "child":Landroid/view/View;
     :goto_1
     return-object v0
 
-    .line 1409
+    .line 1437
     .restart local v0    # "child":Landroid/view/View;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1415
+    .line 1443
     .end local v0    # "child":Landroid/view/View;
     :cond_1
     const/4 v0, 0x0
@@ -1420,7 +1420,7 @@
     .locals 4
 
     .prologue
-    .line 1419
+    .line 1447
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -1433,39 +1433,39 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1420
+    .line 1448
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 1421
+    .line 1449
     .local v0, "child":Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getId()I
 
     move-result v2
 
-    const v3, 0x7f090486
+    const v3, 0x7f09048f
 
     if-ne v2, v3, :cond_0
 
-    .line 1422
+    .line 1450
     const/4 v2, 0x1
 
-    .line 1425
+    .line 1453
     .end local v0    # "child":Landroid/view/View;
     :goto_1
     return v2
 
-    .line 1419
+    .line 1447
     .restart local v0    # "child":Landroid/view/View;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1425
+    .line 1453
     .end local v0    # "child":Landroid/view/View;
     :cond_1
     const/4 v2, 0x0
@@ -1477,7 +1477,7 @@
     .locals 3
 
     .prologue
-    .line 1399
+    .line 1427
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -1490,35 +1490,35 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1400
+    .line 1428
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 1401
+    .line 1429
     .local v0, "child":Landroid/view/View;
     instance-of v2, v0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;
 
     if-eqz v2, :cond_0
 
-    .line 1402
+    .line 1430
     const/4 v2, 0x1
 
-    .line 1405
+    .line 1433
     .end local v0    # "child":Landroid/view/View;
     :goto_1
     return v2
 
-    .line 1399
+    .line 1427
     .restart local v0    # "child":Landroid/view/View;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1405
+    .line 1433
     .end local v0    # "child":Landroid/view/View;
     :cond_1
     const/4 v2, 0x0
@@ -1530,7 +1530,7 @@
     .locals 1
 
     .prologue
-    .line 914
+    .line 917
     const/4 v0, 0x0
 
     return v0
@@ -1542,7 +1542,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 905
+    .line 908
     :try_start_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTemplate:Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate;
 
@@ -1558,7 +1558,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
 
-    .line 906
+    .line 909
     .local v1, "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->audiourl:Ljava/lang/String;
 
@@ -1572,17 +1572,17 @@
 
     const/4 v2, 0x1
 
-    .line 909
+    .line 912
     .end local v1    # "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     :cond_0
     :goto_0
     return v2
 
-    .line 907
+    .line 910
     :catch_0
     move-exception v0
 
-    .line 909
+    .line 912
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -1591,19 +1591,19 @@
     .locals 2
 
     .prologue
-    .line 1489
+    .line 1517
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardMaskView:Landroid/widget/FrameLayout;
 
     if-eqz v0, :cond_0
 
-    .line 1490
+    .line 1518
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardMaskView:Landroid/widget/FrameLayout;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1492
+    .line 1520
     :cond_0
     return-void
 .end method
@@ -1612,7 +1612,7 @@
     .locals 1
 
     .prologue
-    .line 1070
+    .line 1073
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -1625,12 +1625,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1071
+    .line 1074
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 1073
+    .line 1076
     :cond_0
     return-void
 .end method
@@ -1640,84 +1640,84 @@
 
     .prologue
     .line 179
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 180
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000c
+    const v1, 0x7f0e000d
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->countingSoundId:I
 
     .line 181
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000f
+    const v1, 0x7f0e0010
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTryAgainSoundId:I
 
     .line 182
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0005
+    const v1, 0x7f0e0006
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mExcellentSoundId:I
 
     .line 183
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0006
+    const v1, 0x7f0e0007
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGoodJobSoundId:I
 
     .line 184
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0007
+    const v1, 0x7f0e0008
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mGreatSoundId:I
 
     .line 185
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000a
+    const v1, 0x7f0e000b
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mPerfectSoundId:I
 
     .line 186
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000b
+    const v1, 0x7f0e000c
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
@@ -1741,7 +1741,7 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->setContentView(I)V
 
     .line 329
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -1785,7 +1785,7 @@
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->setOnErrorClickListener(Lcom/jiliguala/niuwa/common/widget/customview/b;)V
 
     .line 336
-    const v0, 0x7f0903b8
+    const v0, 0x7f0903bf
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -1801,7 +1801,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 338
-    const v0, 0x7f09039f
+    const v0, 0x7f0903a6
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -1817,7 +1817,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 340
-    const v0, 0x7f090590
+    const v0, 0x7f09059a
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -1932,7 +1932,7 @@
     .line 356
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
 
-    const v1, 0x7f0600e7
+    const v1, 0x7f0600e9
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;->setBgColorId(I)V
 
@@ -2002,7 +2002,7 @@
     .locals 3
 
     .prologue
-    .line 900
+    .line 903
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/b;->a()Lcom/jiliguala/niuwa/logic/k/b;
 
     move-result-object v1
@@ -2017,7 +2017,7 @@
 
     move-result-object v0
 
-    .line 901
+    .line 904
     .local v0, "filePath":Ljava/lang/String;
     return-void
 .end method
@@ -2028,47 +2028,47 @@
     .prologue
     const/16 v2, 0x8
 
-    .line 1257
+    .line 1285
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showFlashCardMask()V
 
-    .line 1258
+    .line 1286
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCurrentFlashCardFragment()Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
 
     move-result-object v0
 
-    .line 1259
+    .line 1287
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     if-eqz v0, :cond_0
 
-    .line 1260
+    .line 1288
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->disablePlayFlashCard()V
 
-    .line 1261
+    .line 1289
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->hideWordContainer()V
 
-    .line 1263
+    .line 1291
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mEvaluateScoreTips:Landroid/widget/TextView;
 
     if-eqz v1, :cond_1
 
-    .line 1264
+    .line 1292
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mEvaluateScoreTips:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1266
+    .line 1294
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
     if-eqz v1, :cond_2
 
-    .line 1267
+    .line 1295
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1269
+    .line 1297
     :cond_2
     return-void
 .end method
@@ -2077,12 +2077,12 @@
     .locals 4
 
     .prologue
-    .line 816
+    .line 819
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_1
 
-    .line 817
+    .line 820
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->isAudioRecording()Z
@@ -2091,7 +2091,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 819
+    .line 822
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x1003
@@ -2100,13 +2100,13 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 821
+    .line 824
     :cond_0
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopVideoAudioPlay(Z)V
 
-    .line 823
+    .line 826
     :cond_1
     return-void
 .end method
@@ -2149,9 +2149,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->finish()V
 
     .line 294
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->overridePendingTransition(II)V
 
@@ -2169,19 +2169,19 @@
     .locals 2
 
     .prologue
-    .line 1502
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    .line 1530
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
-    .line 1503
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    .line 1531
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->countingSoundId:I
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
-    .line 1505
+    .line 1533
     :cond_0
     return-void
 .end method
@@ -2231,14 +2231,14 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 191
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 193
     :cond_0
@@ -2344,14 +2344,14 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 199
     :cond_0
@@ -2362,16 +2362,16 @@
     .locals 0
 
     .prologue
-    .line 761
+    .line 764
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->removeSpeakView()V
 
-    .line 762
+    .line 765
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->removeScoreView()V
 
-    .line 763
+    .line 766
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideNextBtn()V
 
-    .line 764
+    .line 767
     return-void
 .end method
 
@@ -2379,7 +2379,7 @@
     .locals 2
 
     .prologue
-    .line 767
+    .line 770
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     if-eqz v0, :cond_0
@@ -2390,7 +2390,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 768
+    .line 771
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSpeakView()Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;
@@ -2399,8 +2399,43 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
 
-    .line 770
+    .line 773
     :cond_0
+    return-void
+.end method
+
+.method private reportSublessonClick(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 3
+    .param p1, "id"    # Ljava/lang/String;
+    .param p2, "button"    # Ljava/lang/String;
+
+    .prologue
+    .line 1161
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 1162
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "ID"
+
+    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1163
+    const-string v1, "BUTTON"
+
+    invoke-interface {v0, v1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1164
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Sublesson Click"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 1165
     return-void
 .end method
 
@@ -2409,16 +2444,16 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1031
+    .line 1034
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
 
     if-nez v5, :cond_1
 
-    .line 1045
+    .line 1048
     :cond_0
     return-void
 
-    .line 1032
+    .line 1035
     :cond_1
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
 
@@ -2426,22 +2461,22 @@
 
     move-result-object v3
 
-    .line 1033
+    .line 1036
     .local v3, "model":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     if-eqz v3, :cond_0
 
-    .line 1034
+    .line 1037
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
 
-    .line 1035
+    .line 1038
     .local v0, "fm":Landroid/support/v4/app/ag;
     invoke-virtual {v0}, Landroid/support/v4/app/ag;->g()Ljava/util/List;
 
     move-result-object v2
 
-    .line 1036
+    .line 1039
     .local v2, "lists":Ljava/util/List;, "Ljava/util/List<Landroid/support/v4/app/Fragment;>;"
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -2461,7 +2496,7 @@
 
     check-cast v1, Landroid/support/v4/app/Fragment;
 
-    .line 1037
+    .line 1040
     .local v1, "fragment":Landroid/support/v4/app/Fragment;
     if-eqz v1, :cond_2
 
@@ -2471,14 +2506,14 @@
 
     move-object v5, v1
 
-    .line 1038
+    .line 1041
     check-cast v5, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;->getPicUrl()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1039
+    .line 1042
     .local v4, "picUrl":Ljava/lang/String;
     if-eqz v4, :cond_2
 
@@ -2490,7 +2525,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 1040
+    .line 1043
     check-cast v1, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;
 
     .end local v1    # "fragment":Landroid/support/v4/app/Fragment;
@@ -2506,7 +2541,7 @@
     .prologue
     const/16 v1, 0x100c
 
-    .line 1293
+    .line 1321
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->hasMessages(I)Z
@@ -2515,12 +2550,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1294
+    .line 1322
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
 
-    .line 1296
+    .line 1324
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
@@ -2530,7 +2565,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1297
+    .line 1325
     return-void
 .end method
 
@@ -2541,7 +2576,7 @@
     .prologue
     const/16 v1, 0x100b
 
-    .line 1286
+    .line 1314
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->hasMessages(I)Z
@@ -2550,12 +2585,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1287
+    .line 1315
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
 
-    .line 1289
+    .line 1317
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
@@ -2565,7 +2600,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1290
+    .line 1318
     return-void
 .end method
 
@@ -2573,10 +2608,10 @@
     .locals 4
 
     .prologue
-    .line 1801
+    .line 1829
     const/4 v1, 0x0
 
-    .line 1802
+    .line 1830
     .local v1, "hasBg":Z
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
@@ -2588,7 +2623,7 @@
 
     if-le v2, v3, :cond_0
 
-    .line 1803
+    .line 1831
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -2599,7 +2634,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
 
-    .line 1804
+    .line 1832
     .local v0, "fc":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->clr:Ljava/lang/String;
 
@@ -2611,7 +2646,7 @@
 
     const/4 v1, 0x1
 
-    .line 1806
+    .line 1834
     .end local v0    # "fc":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :cond_0
     :goto_0
@@ -2619,25 +2654,25 @@
 
     if-eqz v1, :cond_2
 
-    const v2, 0x7f080193
+    const v2, 0x7f080196
 
     :goto_1
     invoke-virtual {v3, v2}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
-    .line 1807
+    .line 1835
     return-void
 
-    .line 1804
+    .line 1832
     .restart local v0    # "fc":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :cond_1
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1806
+    .line 1834
     .end local v0    # "fc":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :cond_2
-    const v2, 0x7f0802c7
+    const v2, 0x7f0802d1
 
     goto :goto_1
 .end method
@@ -2646,40 +2681,40 @@
     .locals 2
 
     .prologue
-    .line 1934
+    .line 1962
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCancelCd:Z
 
     if-nez v0, :cond_0
 
-    .line 1935
+    .line 1963
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCountDownDlg()Landroid/app/Dialog;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
-    .line 1936
+    .line 1964
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
-    .line 1937
+    .line 1965
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCounter:I
 
-    .line 1938
+    .line 1966
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x100d
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessage(I)Z
 
-    .line 1942
+    .line 1970
     :goto_0
     return-void
 
-    .line 1940
+    .line 1968
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
@@ -2694,19 +2729,19 @@
     .locals 2
 
     .prologue
-    .line 1483
+    .line 1511
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardMaskView:Landroid/widget/FrameLayout;
 
     if-eqz v0, :cond_0
 
-    .line 1484
+    .line 1512
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardMaskView:Landroid/widget/FrameLayout;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1486
+    .line 1514
     :cond_0
     return-void
 .end method
@@ -2715,7 +2750,7 @@
     .locals 2
 
     .prologue
-    .line 1064
+    .line 1067
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_1
@@ -2736,7 +2771,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1065
+    .line 1068
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
@@ -2746,7 +2781,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/a/g;->b(Landroid/support/v4/app/ag;)V
 
-    .line 1067
+    .line 1070
     :cond_1
     return-void
 .end method
@@ -2755,26 +2790,26 @@
     .locals 5
 
     .prologue
-    .line 1784
+    .line 1812
     iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mShowScore:Z
 
     if-eqz v2, :cond_0
 
-    .line 1785
+    .line 1813
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1786
+    .line 1814
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->getScores()Landroid/util/SparseArray;
 
     move-result-object v1
 
-    .line 1787
+    .line 1815
     .local v1, "scores":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Ljava/lang/String;>;"
     if-eqz v1, :cond_2
 
@@ -2786,7 +2821,7 @@
 
     if-le v2, v3, :cond_2
 
-    .line 1788
+    .line 1816
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
     invoke-virtual {v1, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -2795,7 +2830,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 1789
+    .line 1817
     .local v0, "score":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2803,7 +2838,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1790
+    .line 1818
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2834,14 +2869,14 @@
 
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1798
+    .line 1826
     .end local v0    # "score":Ljava/lang/String;
     .end local v1    # "scores":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Ljava/lang/String;>;"
     :cond_0
     :goto_0
     return-void
 
-    .line 1792
+    .line 1820
     .restart local v0    # "score":Ljava/lang/String;
     .restart local v1    # "scores":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Ljava/lang/String;>;"
     :cond_1
@@ -2853,7 +2888,7 @@
 
     goto :goto_0
 
-    .line 1795
+    .line 1823
     .end local v0    # "score":Ljava/lang/String;
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
@@ -2869,20 +2904,20 @@
     .locals 1
 
     .prologue
-    .line 1593
+    .line 1621
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->onShowScore()V
 
-    .line 1594
+    .line 1622
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v0, :cond_0
 
-    .line 1595
+    .line 1623
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->onError()V
 
-    .line 1597
+    .line 1625
     :cond_0
     return-void
 .end method
@@ -2891,7 +2926,7 @@
     .locals 6
 
     .prologue
-    .line 1077
+    .line 1080
     :try_start_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->isFinishing()Z
 
@@ -2899,19 +2934,19 @@
 
     if-nez v1, :cond_0
 
-    .line 1078
+    .line 1081
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 1079
+    .line 1082
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     if-eqz v1, :cond_0
 
-    .line 1080
+    .line 1083
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -2922,7 +2957,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1086
+    .line 1089
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
@@ -2933,14 +2968,14 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1087
+    .line 1090
     return-void
 
-    .line 1083
+    .line 1086
     :catch_0
     move-exception v0
 
-    .line 1084
+    .line 1087
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -2953,7 +2988,7 @@
     .prologue
     const/16 v1, 0x1004
 
-    .line 1054
+    .line 1057
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->hasMessages(I)Z
@@ -2962,12 +2997,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1055
+    .line 1058
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
 
-    .line 1057
+    .line 1060
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
@@ -2975,19 +3010,19 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->onStopPlayRecord(I)V
 
-    .line 1058
+    .line 1061
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v0, :cond_1
 
-    .line 1059
+    .line 1062
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setProgress(I)V
 
-    .line 1061
+    .line 1064
     :cond_1
     return-void
 .end method
@@ -2997,7 +3032,7 @@
     .param p1, "isNeedShowReplayBtn"    # Z
 
     .prologue
-    .line 1048
+    .line 1051
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->isRecordPlaying()Z
@@ -3006,10 +3041,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1049
+    .line 1052
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopPlayAudioRecordAndResetProgress()V
 
-    .line 1051
+    .line 1054
     :cond_0
     return-void
 .end method
@@ -3018,7 +3053,7 @@
     .locals 4
 
     .prologue
-    .line 828
+    .line 831
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTemplate:Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate;
@@ -3029,7 +3064,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->initContainer(Ljava/util/ArrayList;)V
 
-    .line 830
+    .line 833
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTemplate:Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$DataPart;
@@ -3038,7 +3073,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSentence:Ljava/util/ArrayList;
 
-    .line 831
+    .line 834
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mPageNum:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3067,7 +3102,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 832
+    .line 835
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSentence:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -3076,7 +3111,7 @@
 
     if-lez v0, :cond_0
 
-    .line 833
+    .line 836
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3111,11 +3146,11 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 837
+    .line 840
     :goto_0
     return-void
 
-    .line 835
+    .line 838
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mOldScore:Landroid/widget/TextView;
 
@@ -3132,24 +3167,24 @@
     .locals 1
 
     .prologue
-    .line 1945
+    .line 1973
     new-instance v0, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
-    .line 1946
+    .line 1974
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->a(Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher$a;)V
 
-    .line 1947
+    .line 1975
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->c()V
 
-    .line 1948
+    .line 1976
     return-void
 .end method
 
@@ -3160,12 +3195,12 @@
     .param p3, "removeScoreView"    # Z
 
     .prologue
-    .line 1092
+    .line 1095
     new-instance v1, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
 
     invoke-direct {v1, p1, p2, p3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;-><init>(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;Z)V
 
-    .line 1093
+    .line 1096
     .local v1, "obj":Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
@@ -3175,18 +3210,18 @@
 
     move-result-object v0
 
-    .line 1094
+    .line 1097
     .local v0, "msg":Landroid/os/Message;
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1095
+    .line 1098
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const-wide/16 v4, 0x12c
 
     invoke-virtual {v2, v0, v4, v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 1096
+    .line 1099
     return-void
 .end method
 
@@ -3194,19 +3229,19 @@
     .locals 1
 
     .prologue
-    .line 773
+    .line 776
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHasAddedSpeakView:Z
 
-    .line 774
+    .line 777
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 796
+    .line 799
     return-void
 .end method
 
@@ -3215,7 +3250,7 @@
     .param p1, "obj"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;
 
     .prologue
-    .line 1381
+    .line 1409
     iget-object v1, p1, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->a:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -3224,7 +3259,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1382
+    .line 1410
     iget-object v1, p1, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->a:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -3233,13 +3268,13 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 1383
+    .line 1411
     .local v0, "viewGroup":Landroid/view/ViewGroup;
     iget-object v1, p1, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->a:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 1385
+    .line 1413
     .end local v0    # "viewGroup":Landroid/view/ViewGroup;
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
@@ -3250,7 +3285,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1386
+    .line 1414
     return-void
 .end method
 
@@ -3258,7 +3293,7 @@
     .locals 0
 
     .prologue
-    .line 723
+    .line 726
     return-void
 .end method
 
@@ -3266,7 +3301,7 @@
     .locals 0
 
     .prologue
-    .line 977
+    .line 980
     return-void
 .end method
 
@@ -3282,7 +3317,7 @@
     .locals 0
 
     .prologue
-    .line 1200
+    .line 1223
     return-void
 .end method
 
@@ -3292,7 +3327,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 991
+    .line 994
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -3301,12 +3336,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 1005
+    .line 1008
     :cond_0
     :goto_0
     return-void
 
-    .line 995
+    .line 998
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
@@ -3330,36 +3365,36 @@
 
     move v0, v1
 
-    .line 996
+    .line 999
     .local v0, "isTranslateUp":Z
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 997
+    .line 1000
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopPlayAudioRecordAndResetProgress()V
 
-    .line 998
+    .line 1001
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     if-eqz v2, :cond_2
 
-    .line 999
+    .line 1002
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
     invoke-virtual {v2, v3, v1}, Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;->play(IZ)V
 
-    .line 1001
+    .line 1004
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideSpeaViewAndScoreView()V
 
-    .line 1002
+    .line 1005
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showOldScoreText()V
 
     goto :goto_0
 
-    .line 995
+    .line 998
     .end local v0    # "isTranslateUp":Z
     :cond_3
     const/4 v0, 0x0
@@ -3371,13 +3406,13 @@
     .locals 0
 
     .prologue
-    .line 958
+    .line 961
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->sendCourseTaskExitReport()V
 
-    .line 959
+    .line 962
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->performExit()V
 
-    .line 960
+    .line 963
     return-void
 .end method
 
@@ -3385,7 +3420,7 @@
     .locals 1
 
     .prologue
-    .line 799
+    .line 802
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;-><init>(Landroid/content/Context;)V
@@ -3397,12 +3432,12 @@
     .locals 4
 
     .prologue
-    .line 1156
+    .line 1179
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_1
 
-    .line 1157
+    .line 1180
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->isRecordPlaying()Z
@@ -3411,10 +3446,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1159
+    .line 1182
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopPlayAudioRecordAndResetProgress()V
 
-    .line 1161
+    .line 1184
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
@@ -3424,7 +3459,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1163
+    .line 1186
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x1003
@@ -3433,12 +3468,12 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1168
+    .line 1191
     :cond_1
     :goto_0
     return-void
 
-    .line 1165
+    .line 1188
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->executeUpload()V
 
@@ -3506,7 +3541,7 @@
     .locals 1
 
     .prologue
-    .line 1321
+    .line 1349
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     return-object v0
@@ -3518,7 +3553,7 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 1448
+    .line 1476
     :try_start_0
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
 
@@ -3528,11 +3563,11 @@
 
     move-result-object v1
 
-    .line 1449
+    .line 1477
     .local v1, "dataModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     if-eqz v1, :cond_1
 
-    .line 1450
+    .line 1478
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v8
@@ -3541,7 +3576,7 @@
 
     move-result-object v5
 
-    .line 1451
+    .line 1479
     .local v5, "fragments":Ljava/util/List;, "Ljava/util/List<Landroid/support/v4/app/Fragment;>;"
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3560,7 +3595,7 @@
 
     check-cast v4, Landroid/support/v4/app/Fragment;
 
-    .line 1452
+    .line 1480
     .local v4, "fragment":Landroid/support/v4/app/Fragment;
     if-eqz v4, :cond_0
 
@@ -3568,20 +3603,20 @@
 
     if-eqz v9, :cond_0
 
-    .line 1453
+    .line 1481
     move-object v0, v4
 
     check-cast v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
 
     move-object v3, v0
 
-    .line 1454
+    .line 1482
     .local v3, "flashCardFragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->getSentenceId()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 1455
+    .line 1483
     .local v6, "id":Ljava/lang/String;
     if-eqz v6, :cond_0
 
@@ -3595,7 +3630,7 @@
 
     if-eqz v9, :cond_0
 
-    .line 1464
+    .line 1492
     .end local v1    # "dataModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     .end local v3    # "flashCardFragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     .end local v4    # "fragment":Landroid/support/v4/app/Fragment;
@@ -3608,10 +3643,10 @@
     :cond_1
     move-object v3, v7
 
-    .line 1461
+    .line 1489
     goto :goto_0
 
-    .line 1462
+    .line 1490
     .end local v1    # "dataModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :catch_0
     move-exception v2
@@ -3619,7 +3654,7 @@
     .local v2, "e":Ljava/lang/Exception;
     move-object v3, v7
 
-    .line 1464
+    .line 1492
     goto :goto_0
 .end method
 
@@ -3627,7 +3662,7 @@
     .locals 4
 
     .prologue
-    .line 1343
+    .line 1371
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
 
@@ -3637,7 +3672,7 @@
 
     move-result-object v1
 
-    .line 1344
+    .line 1372
     .local v1, "model":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3673,7 +3708,7 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mAudioSavePath:Ljava/lang/String;
 
-    .line 1345
+    .line 1373
     if-eqz v1, :cond_0
 
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->word:Ljava/lang/String;
@@ -3684,16 +3719,16 @@
 
     if-eqz v2, :cond_1
 
-    .line 1346
+    .line 1374
     :cond_0
     const/4 v2, 0x0
 
-    .line 1351
+    .line 1379
     .end local v1    # "model":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :goto_0
     return-object v2
 
-    .line 1348
+    .line 1376
     .restart local v1    # "model":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :cond_1
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->word:Ljava/lang/String;
@@ -3702,12 +3737,12 @@
 
     goto :goto_0
 
-    .line 1349
+    .line 1377
     .end local v1    # "model":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :catch_0
     move-exception v0
 
-    .line 1351
+    .line 1379
     .local v0, "e":Ljava/lang/Exception;
     const-string v2, ""
 
@@ -3730,7 +3765,7 @@
     .locals 4
 
     .prologue
-    .line 1358
+    .line 1386
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
@@ -3742,22 +3777,22 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
 
-    .line 1359
+    .line 1387
     .local v1, "flashCardModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->_id:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1362
+    .line 1390
     .end local v1    # "flashCardModel":Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
     :goto_0
     return-object v2
 
-    .line 1360
+    .line 1388
     :catch_0
     move-exception v0
 
-    .line 1362
+    .line 1390
     .local v0, "e":Ljava/lang/Exception;
     const-string v2, ""
 
@@ -3799,30 +3834,30 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1009
+    .line 1012
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v1, :cond_0
 
-    .line 1010
+    .line 1013
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setVisibility(I)V
 
-    .line 1012
+    .line 1015
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 1013
+    .line 1016
     .local v0, "scoreView":Landroid/view/View;
     if-eqz v0, :cond_1
 
-    .line 1014
+    .line 1017
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1016
+    .line 1019
     :cond_1
     return-void
 .end method
@@ -3832,22 +3867,22 @@
     .param p1, "speakCardModelTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
     .prologue
-    .line 728
+    .line 731
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSuperView:Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->d()V
 
-    .line 729
+    .line 732
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->isFinishing()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 730
+    .line 733
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showCountDownPage()V
 
-    .line 734
+    .line 737
     :goto_0
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;->hasSentences()Z
 
@@ -3855,11 +3890,11 @@
 
     if-nez v3, :cond_1
 
-    .line 748
+    .line 751
     :goto_1
     return-void
 
-    .line 732
+    .line 735
     :cond_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
@@ -3869,23 +3904,23 @@
 
     goto :goto_0
 
-    .line 737
+    .line 740
     :cond_1
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakCardModelTemplete:Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
-    .line 738
+    .line 741
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$DataPart;
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$DataPart;->sentences:Ljava/util/ArrayList;
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakSentences:Ljava/util/ArrayList;
 
-    .line 739
+    .line 742
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 740
+    .line 743
     .local v1, "sentencess":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;>;"
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakSentences:Ljava/util/ArrayList;
 
@@ -3906,34 +3941,34 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
 
-    .line 741
+    .line 744
     .local v0, "s":Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
     new-instance v2, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
 
     invoke-direct {v2}, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;-><init>()V
 
-    .line 742
+    .line 745
     .local v2, "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     iget-object v4, v0, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;->_id:Ljava/lang/String;
 
     iput-object v4, v2, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->_id:Ljava/lang/String;
 
-    .line 743
+    .line 746
     iget-object v4, v0, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;->audiourl:Ljava/lang/String;
 
     iput-object v4, v2, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->audiourl:Ljava/lang/String;
 
-    .line 744
+    .line 747
     iget-object v4, v0, Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;->score:Ljava/lang/String;
 
     iput-object v4, v2, Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;->score:Ljava/lang/String;
 
-    .line 745
+    .line 748
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 747
+    .line 750
     .end local v0    # "s":Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete$SpeakSentence;
     .end local v2    # "videoSentence":Lcom/jiliguala/niuwa/logic/network/json/SpeakModelTemplate$VideoSentence;
     :cond_2
@@ -3950,7 +3985,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1173
+    .line 1196
     :try_start_0
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
@@ -3968,16 +4003,16 @@
 
     const/4 v1, 0x1
 
-    .line 1176
+    .line 1199
     :cond_0
     :goto_0
     return v1
 
-    .line 1174
+    .line 1197
     :catch_0
     move-exception v0
 
-    .line 1176
+    .line 1199
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -4056,14 +4091,14 @@
     .locals 2
 
     .prologue
-    .line 1245
+    .line 1273
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x1009
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessage(I)Z
 
-    .line 1246
+    .line 1274
     return-void
 .end method
 
@@ -4093,172 +4128,204 @@
 
     .line 393
     :pswitch_data_0
-    .packed-switch 0x7f090590
+    .packed-switch 0x7f09059a
         :pswitch_0
     .end packed-switch
 .end method
 
 .method public onClickNextBtn()V
-    .locals 3
+    .locals 4
 
     .prologue
-    .line 1112
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
-
-    if-eqz v0, :cond_0
-
-    .line 1113
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
-
-    iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->onStopPlayRecord(I)V
-
-    .line 1116
-    :cond_0
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->isLastPage()Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    .line 1117
-    iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
-
-    .line 1119
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideFlashCardMask()V
-
-    .line 1121
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
-
-    if-eqz v0, :cond_1
-
     .line 1122
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardViewPager:Lcom/jiliguala/niuwa/common/widget/NoScrollViewPager;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
-    iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/NoScrollViewPager;->setCurrentItem(I)V
+    if-eqz v1, :cond_0
 
     .line 1123
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFlashCardRecorded()Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    .line 1124
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
-
-    iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;->play(IZ)V
-
-    .line 1129
-    :cond_1
-    :goto_0
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFlashCardRecorded()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    .line 1130
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
-
-    .line 1134
-    :goto_1
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    .line 1135
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mPageNum:Landroid/widget/TextView;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
-    add-int/lit8 v2, v2, 0x1
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->onStopPlayRecord(I)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 1126
+    :cond_0
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->isLastPage()Z
 
-    move-result-object v1
+    move-result v1
 
-    const-string v2, "/"
+    if-nez v1, :cond_5
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1128
+    :try_start_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
-    move-result-object v1
+    iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
 
-    move-result-object v1
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->_id:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const-string v2, "next"
+
+    invoke-direct {p0, v1, v2}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->reportSublessonClick(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1132
+    :goto_0
+    iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    add-int/lit8 v1, v1, 0x1
+
+    iput v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    .line 1134
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideFlashCardMask()V
+
+    .line 1136
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
+
+    if-eqz v1, :cond_1
 
     .line 1137
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardViewPager:Lcom/jiliguala/niuwa/common/widget/NoScrollViewPager;
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/common/widget/NoScrollViewPager;->setCurrentItem(I)V
+
+    .line 1138
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFlashCardRecorded()Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    .line 1139
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v1, v2, v3}, Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;->play(IZ)V
+
+    .line 1144
+    :cond_1
+    :goto_1
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFlashCardRecorded()Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    .line 1145
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
+
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
+
+    .line 1149
+    :goto_2
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    .line 1150
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mPageNum:Landroid/widget/TextView;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    add-int/lit8 v3, v3, 0x1
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "/"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1152
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showOldScoreText()V
 
-    .line 1138
+    .line 1153
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->setUiHasBg()V
 
-    .line 1142
-    :goto_2
+    .line 1158
+    :goto_3
     return-void
 
-    .line 1126
-    :cond_3
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
+    .line 1129
+    :catch_0
+    move-exception v0
+
+    .line 1130
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1132
-    :cond_4
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addScoreView()V
+    .line 1141
+    .end local v0    # "e":Ljava/lang/Exception;
+    :cond_3
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
 
     goto :goto_1
 
-    .line 1140
+    .line 1147
+    :cond_4
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addScoreView()V
+
+    goto :goto_2
+
+    .line 1155
     :cond_5
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->doAfterCourseDone()V
 
-    goto :goto_2
+    goto :goto_3
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
@@ -4508,7 +4575,7 @@
     .param p2, "size"    # I
 
     .prologue
-    .line 1528
+    .line 1556
     return-void
 .end method
 
@@ -4600,7 +4667,7 @@
     .locals 4
 
     .prologue
-    .line 690
+    .line 693
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v0, :cond_1
@@ -4613,15 +4680,15 @@
 
     if-nez v0, :cond_1
 
-    .line 691
+    .line 694
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->executeUpload()V
 
-    .line 709
+    .line 712
     :cond_0
     :goto_0
     return-void
 
-    .line 693
+    .line 696
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
@@ -4635,18 +4702,18 @@
 
     if-eqz v0, :cond_2
 
-    .line 694
+    .line 697
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 696
+    .line 699
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 697
+    .line 700
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->isAudioRecording()Z
@@ -4655,7 +4722,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 699
+    .line 702
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x1003
@@ -4664,7 +4731,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 701
+    .line 704
     :cond_3
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
@@ -4674,12 +4741,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 703
+    .line 706
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopPlayAudioRecordAndResetProgress()V
 
     goto :goto_0
 
-    .line 705
+    .line 708
     :cond_4
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
@@ -4694,7 +4761,7 @@
     .locals 1
 
     .prologue
-    .line 713
+    .line 716
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -4707,18 +4774,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 714
+    .line 717
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 716
+    .line 719
     :cond_0
     const v0, 0x7f0f018e
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 717
+    .line 720
     return-void
 .end method
 
@@ -4726,7 +4793,7 @@
     .locals 2
 
     .prologue
-    .line 683
+    .line 686
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_1
@@ -4747,7 +4814,7 @@
 
     if-nez v0, :cond_1
 
-    .line 684
+    .line 687
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mProgressDialogFragment:Lcom/jiliguala/niuwa/common/a/g;
 
@@ -4757,7 +4824,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/a/g;->b(Landroid/support/v4/app/ag;)V
 
-    .line 686
+    .line 689
     :cond_1
     return-void
 .end method
@@ -4766,7 +4833,7 @@
     .locals 0
 
     .prologue
-    .line 1205
+    .line 1228
     return-void
 .end method
 
@@ -4775,41 +4842,41 @@
     .param p1, "scoreNum"    # I
 
     .prologue
-    .line 1274
+    .line 1302
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mBackBtn:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_0
 
-    .line 1275
+    .line 1303
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mBackBtn:Landroid/widget/ImageButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 1277
+    .line 1305
     :cond_0
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSoundByScore(I)I
 
     move-result v0
 
-    .line 1278
+    .line 1306
     .local v0, "soundId":I
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFocus:Z
 
     if-eqz v1, :cond_1
 
-    .line 1279
+    .line 1307
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->playSound(I)V
 
-    .line 1281
+    .line 1309
     :cond_1
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->sendMessageEnablePlay(I)V
 
-    .line 1282
+    .line 1310
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->sendMessDoAfterPalyScoreSound(I)V
 
-    .line 1283
+    .line 1311
     return-void
 .end method
 
@@ -4817,7 +4884,7 @@
     .locals 0
 
     .prologue
-    .line 1215
+    .line 1238
     return-void
 .end method
 
@@ -4825,7 +4892,7 @@
     .locals 3
 
     .prologue
-    .line 1368
+    .line 1396
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -4834,7 +4901,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->addToAudioList(ILjava/lang/String;)V
 
-    .line 1369
+    .line 1397
     return-void
 .end method
 
@@ -4842,7 +4909,7 @@
     .locals 0
 
     .prologue
-    .line 1210
+    .line 1233
     return-void
 .end method
 
@@ -4850,7 +4917,7 @@
     .locals 2
 
     .prologue
-    .line 1532
+    .line 1560
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -4863,14 +4930,14 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1533
+    .line 1561
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$11;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$11;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1538
+    .line 1566
     return-void
 .end method
 
@@ -4878,10 +4945,10 @@
     .locals 0
 
     .prologue
-    .line 1443
+    .line 1471
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->onBackPressed()V
 
-    .line 1444
+    .line 1472
     return-void
 .end method
 
@@ -4889,15 +4956,15 @@
     .locals 1
 
     .prologue
-    .line 676
+    .line 679
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mIsCourseFinished:Z
 
-    .line 677
+    .line 680
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->onBackPressed()V
 
-    .line 678
+    .line 681
     return-void
 .end method
 
@@ -4905,7 +4972,7 @@
     .locals 0
 
     .prologue
-    .line 1621
+    .line 1649
     return-void
 .end method
 
@@ -4913,7 +4980,7 @@
     .locals 1
 
     .prologue
-    .line 1613
+    .line 1641
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_0
@@ -4926,10 +4993,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1614
+    .line 1642
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopPlayAudioRecordAndResetProgress()V
 
-    .line 1616
+    .line 1644
     :cond_0
     return-void
 .end method
@@ -4938,14 +5005,14 @@
     .locals 1
 
     .prologue
-    .line 1601
+    .line 1629
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$3;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$3;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1608
+    .line 1636
     return-void
 .end method
 
@@ -5022,20 +5089,20 @@
     .locals 1
 
     .prologue
-    .line 950
+    .line 953
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onPause()V
 
-    .line 951
+    .line 954
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 952
+    .line 955
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->onPause()V
 
-    .line 954
+    .line 957
     :cond_0
     return-void
 .end method
@@ -5114,7 +5181,7 @@
     .line 507
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
-    const v1, 0x7f0802eb
+    const v1, 0x7f0802f5
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->updatePlayStatusIv(I)V
 
@@ -5211,17 +5278,17 @@
     .locals 1
 
     .prologue
-    .line 1430
+    .line 1458
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 1431
+    .line 1459
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPresenter:Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/flashcard/presenter/FlashCardPresenter;->doServerRequest()V
 
-    .line 1433
+    .line 1461
     :cond_0
     return-void
 .end method
@@ -5245,12 +5312,12 @@
     .param p2, "result"    # Lcom/jiliguala/niuwa/module/speak/model/Result;
 
     .prologue
-    .line 1188
+    .line 1211
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 1189
+    .line 1212
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
@@ -5263,24 +5330,24 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->changeRecordIconByRecordStatus(Z)V
 
-    .line 1191
+    .line 1214
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v0, :cond_1
 
-    .line 1192
+    .line 1215
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->disableRecordButton()V
 
-    .line 1194
+    .line 1217
     :cond_1
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
     invoke-direct {p0, v0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->putScore(II)V
 
-    .line 1195
+    .line 1218
     return-void
 .end method
 
@@ -5288,39 +5355,70 @@
     .locals 1
 
     .prologue
-    .line 935
+    .line 938
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onResume()V
 
-    .line 937
+    .line 940
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->e(Landroid/app/Activity;)V
 
-    .line 939
+    .line 942
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 940
+    .line 943
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->onResume()V
 
-    .line 942
+    .line 945
     :cond_0
     return-void
 .end method
 
 .method public onRetryClick()V
-    .locals 0
+    .locals 3
 
     .prologue
-    .line 1239
+    .line 1263
+    :try_start_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
+
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->_id:Ljava/lang/String;
+
+    const-string v2, "redo"
+
+    invoke-direct {p0, v1, v2}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->reportSublessonClick(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1267
+    :goto_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideFlashCardMask()V
 
-    .line 1240
+    .line 1268
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->clickFlashCardItemToPlay()V
 
-    .line 1241
+    .line 1269
     return-void
+
+    .line 1264
+    :catch_0
+    move-exception v0
+
+    .line 1265
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
 .end method
 
 .method public onRun(Ljava/lang/String;)V
@@ -5328,14 +5426,14 @@
     .param p1, "result"    # Ljava/lang/String;
 
     .prologue
-    .line 1543
+    .line 1571
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;
 
     invoke-direct {v0, p0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1590
+    .line 1618
     return-void
 .end method
 
@@ -5362,10 +5460,10 @@
     .locals 0
 
     .prologue
-    .line 921
+    .line 924
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onStart()V
 
-    .line 922
+    .line 925
     return-void
 .end method
 
@@ -5403,22 +5501,22 @@
     .locals 2
 
     .prologue
-    .line 1250
+    .line 1278
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->onShowScore()V
 
-    .line 1251
+    .line 1279
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mBackBtn:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_0
 
-    .line 1252
+    .line 1280
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mBackBtn:Landroid/widget/ImageButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 1254
+    .line 1282
     :cond_0
     return-void
 .end method
@@ -5427,17 +5525,17 @@
     .locals 1
 
     .prologue
-    .line 1233
+    .line 1256
     iget v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mRecordSoundId:I
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->playSound(I)V
 
-    .line 1234
+    .line 1257
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->stopVideoAudioPlay(Z)V
 
-    .line 1235
+    .line 1258
     return-void
 .end method
 
@@ -5445,10 +5543,10 @@
     .locals 4
 
     .prologue
-    .line 752
+    .line 755
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
 
-    .line 753
+    .line 756
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -5459,12 +5557,12 @@
 
     if-nez v0, :cond_0
 
-    .line 754
+    .line 757
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     if-eqz v0, :cond_0
 
-    .line 755
+    .line 758
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
     const/16 v1, 0x100e
@@ -5473,7 +5571,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 758
+    .line 761
     :cond_0
     return-void
 .end method
@@ -5482,14 +5580,14 @@
     .locals 1
 
     .prologue
-    .line 1509
+    .line 1537
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$9;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$9;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1514
+    .line 1542
     return-void
 .end method
 
@@ -5497,7 +5595,7 @@
     .locals 3
 
     .prologue
-    .line 1182
+    .line 1205
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -5506,7 +5604,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->addToAudioList(ILjava/lang/String;)V
 
-    .line 1183
+    .line 1206
     return-void
 .end method
 
@@ -5514,14 +5612,14 @@
     .locals 1
 
     .prologue
-    .line 1518
+    .line 1546
     new-instance v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$10;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$10;-><init>(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1523
+    .line 1551
     return-void
 .end method
 
@@ -5538,6 +5636,17 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideLoadingProgress()V
 
     .line 659
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
+
+    if-eqz v0, :cond_0
+
+    .line 660
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->showNextButton()V
+
+    .line 662
+    :cond_0
     return-void
 .end method
 
@@ -5565,15 +5674,15 @@
     .locals 4
 
     .prologue
-    .line 667
+    .line 670
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hideLoadingProgress()V
 
-    .line 668
+    .line 671
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     if-eqz v0, :cond_0
 
-    .line 669
+    .line 672
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
@@ -5584,7 +5693,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->setSectionScoreMap(Ljava/util/Map;)V
 
-    .line 671
+    .line 674
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
@@ -5600,7 +5709,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 672
+    .line 675
     return-void
 .end method
 
@@ -5697,19 +5806,19 @@
     .param p1, "hasFocus"    # Z
 
     .prologue
-    .line 981
+    .line 984
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onWindowFocusChanged(Z)V
 
-    .line 983
+    .line 986
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFocus:Z
 
-    .line 984
+    .line 987
     if-eqz p1, :cond_0
 
-    .line 985
+    .line 988
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->e(Landroid/app/Activity;)V
 
-    .line 987
+    .line 990
     :cond_0
     return-void
 .end method
@@ -5720,49 +5829,80 @@
     .param p2, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 812
+    .line 815
     invoke-virtual {p1, p2}, Lcom/jiliguala/niuwa/module/mediaplayer/SimpleMediaPlayer;->start(Ljava/lang/String;)V
 
-    .line 813
+    .line 816
     return-void
 .end method
 
 .method public playRecordFile(Ljava/lang/String;)V
-    .locals 2
+    .locals 4
     .param p1, "currentSaveAudioFilePath"    # Ljava/lang/String;
 
     .prologue
-    const/16 v1, 0x1007
+    const/16 v3, 0x1007
 
-    .line 1103
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
+    .line 1108
+    :try_start_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mFlashCardPlayList:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->hasMessages(I)Z
+    iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
 
-    move-result v0
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-eqz v0, :cond_0
+    move-result-object v1
 
-    .line 1104
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
+    check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;->_id:Ljava/lang/String;
 
-    .line 1106
+    const-string v2, "play"
+
+    invoke-direct {p0, v1, v2}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->reportSublessonClick(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1113
+    :goto_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
+
+    invoke-virtual {v1, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->hasMessages(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 1114
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
+
+    invoke-virtual {v1, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->removeMessages(I)V
+
+    .line 1116
     :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessage(I)Z
+    invoke-virtual {v1, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessage(I)Z
 
-    .line 1107
+    .line 1117
     return-void
+
+    .line 1109
+    :catch_0
+    move-exception v0
+
+    .line 1110
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
 .end method
 
 .method public prepareFlashCardLogic()V
     .locals 2
 
     .prologue
-    .line 1470
+    .line 1498
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasFlashCardRecorded()Z
 
     move-result v0
@@ -5779,18 +5919,18 @@
 
     if-nez v0, :cond_0
 
-    .line 1480
+    .line 1508
     :goto_0
     return-void
 
-    .line 1476
+    .line 1504
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->showFlashCardMask()V
 
-    .line 1477
+    .line 1505
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
 
-    .line 1478
+    .line 1506
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addScoreView()V
 
     goto :goto_0
@@ -5825,19 +5965,19 @@
     .locals 2
 
     .prologue
-    .line 1372
+    .line 1400
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->hasAddScoreView()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1373
+    .line 1401
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 1374
+    .line 1402
     .local v0, "scoreView":Landroid/view/View;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
@@ -5845,12 +5985,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1375
+    .line 1403
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
 
-    .line 1378
+    .line 1406
     .end local v0    # "scoreView":Landroid/view/View;
     :cond_0
     return-void
@@ -5860,17 +6000,17 @@
     .locals 3
 
     .prologue
-    .line 963
+    .line 966
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTaskTicket:Lcom/jiliguala/niuwa/module/course/model/SubCourseTicket;
 
     if-eqz v1, :cond_0
 
-    .line 964
+    .line 967
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 965
+    .line 968
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "ID"
 
@@ -5882,7 +6022,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 966
+    .line 969
     const-string v1, "Position"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTaskTicket:Lcom/jiliguala/niuwa/module/course/model/SubCourseTicket;
@@ -5897,7 +6037,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 967
+    .line 970
     const-string v1, "Type"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mTaskTicket:Lcom/jiliguala/niuwa/module/course/model/SubCourseTicket;
@@ -5908,7 +6048,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 968
+    .line 971
     const-string v1, "Step"
 
     iget v2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->currentPageIndex:I
@@ -5919,14 +6059,14 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 969
+    .line 972
     const-string v1, "Time"
 
     const-string v2, "Null"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 970
+    .line 973
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -5935,7 +6075,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 972
+    .line 975
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_0
     return-void
@@ -5946,7 +6086,7 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 1437
+    .line 1465
     const-string v0, "alpha"
 
     const/4 v1, 0x3
@@ -5967,10 +6107,10 @@
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->a()V
 
-    .line 1438
+    .line 1466
     return-void
 
-    .line 1437
+    .line 1465
     :array_0
     .array-data 4
         0x3f800000    # 1.0f
@@ -5985,30 +6125,30 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1020
+    .line 1023
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     if-eqz v1, :cond_0
 
-    .line 1021
+    .line 1024
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakViewWidget:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setVisibility(I)V
 
-    .line 1023
+    .line 1026
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getScoreView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 1024
+    .line 1027
     .local v0, "scoreView":Landroid/view/View;
     if-eqz v0, :cond_1
 
-    .line 1025
+    .line 1028
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1027
+    .line 1030
     :cond_1
     return-void
 .end method
@@ -6017,12 +6157,12 @@
     .locals 3
 
     .prologue
-    .line 1219
+    .line 1242
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     if-eqz v0, :cond_0
 
-    .line 1220
+    .line 1243
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getEvluateStr()Ljava/lang/String;
@@ -6035,7 +6175,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->startRecordByChiShen(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1222
+    .line 1245
     :cond_0
     return-void
 .end method
@@ -6044,17 +6184,17 @@
     .locals 1
 
     .prologue
-    .line 1951
+    .line 1979
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     if-eqz v0, :cond_0
 
-    .line 1952
+    .line 1980
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->d()V
 
-    .line 1954
+    .line 1982
     :cond_0
     return-void
 .end method
@@ -6063,17 +6203,17 @@
     .locals 1
 
     .prologue
-    .line 1226
+    .line 1249
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     if-eqz v0, :cond_0
 
-    .line 1227
+    .line 1250
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->stopRecordByChiShen()V
 
-    .line 1229
+    .line 1252
     :cond_0
     return-void
 .end method

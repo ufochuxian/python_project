@@ -39,7 +39,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 100
+    .line 98
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 103
+    .line 101
     .local p1, "skinList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     if-eqz p1, :cond_0
 
@@ -72,28 +72,28 @@
 
     if-lez v0, :cond_0
 
-    .line 104
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/m/a;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/n/a;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/m/a;->a(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/n/a;->a(Ljava/util/List;)V
 
-    .line 108
+    .line 106
     :goto_0
     return-void
 
-    .line 106
+    .line 104
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/m/a;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/n/a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/m/a;->c()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->d()V
 
     goto :goto_0
 .end method
@@ -102,7 +102,7 @@
     .locals 0
 
     .prologue
-    .line 100
+    .line 98
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$3;->a(Ljava/util/List;)V

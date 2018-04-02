@@ -297,7 +297,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090096 -> :sswitch_0
-        0x7f09047d -> :sswitch_1
+        0x7f090486 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -329,7 +329,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/weixinunlock/WeiXinUnlockActivity;->mBackIcon:Landroid/widget/ImageView;
 
     .line 54
-    const v0, 0x7f09047d
+    const v0, 0x7f090486
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/weixinunlock/WeiXinUnlockActivity;->findViewById(I)Landroid/view/View;
 

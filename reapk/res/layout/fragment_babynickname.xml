@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/top_bar_container" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/back" n1:background="@drawable/nav_icon_back" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:layout_marginLeft="5.0dip" n1:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <ScrollView n1:id="@id/scroll_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/top_bar_container">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/header_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/title_x_large" n1:textColor="@color/color_default_dark_gray" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="宝贝的昵称?" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_gray" n1:id="@id/sub_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="让老师认识他" n1:layout_below="@id/title" n1:layout_centerHorizontal="true" />
+            <ImageView n1:id="@id/birthday_nickname_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/l_icon_baby" n1:layout_centerHorizontal="true" />
+            <RelativeLayout n1:id="@id/edit_wrapper" n1:background="@drawable/edittext_bg_style" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/onboarding_side_margin" n1:layout_marginTop="40.0dip" n1:layout_marginRight="@dimen/onboarding_side_margin" n1:layout_below="@id/header_container" n1:layout_centerVertical="true">
+                <ImageView n1:id="@id/clear" n1:background="@drawable/input_delete_icon" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <EditText n1:textColorHint="@color/color_default_gray" n1:gravity="center_vertical" n1:id="@id/edit" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:hint="请输入宝贝昵称" n1:singleLine="true" n1:maxLength="20" n1:layout_toLeftOf="@id/clear" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View n1:layout_width="wrap_content" n1:layout_height="@dimen/large_button_height" />
+        </LinearLayout>
+    </ScrollView>
+    <com.jiliguala.niuwa.common.widget.boldfont.BoldButton n1:textSize="@dimen/content_large_size" n1:textColor="@android:color/white" n1:id="@id/action_next" n1:background="@color/color_green" n1:layout_width="fill_parent" n1:layout_height="@dimen/large_button_height" n1:text="下一步" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

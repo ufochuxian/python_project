@@ -116,7 +116,7 @@
     .line 94
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/unit/fragment/WxUnlockDlg;->mView:Landroid/view/View;
 
-    const v10, 0x7f090273
+    const v10, 0x7f090278
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
     .line 106
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/unit/fragment/WxUnlockDlg;->mView:Landroid/view/View;
 
-    const v10, 0x7f0905cd
+    const v10, 0x7f0905d7
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -221,7 +221,7 @@
     if-eqz v9, :cond_1
 
     .line 108
-    const v9, 0x7f080409
+    const v9, 0x7f080416
 
     invoke-virtual {v5, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -359,7 +359,7 @@
 
     .prologue
     .line 84
-    const v0, 0x7f0b0139
+    const v0, 0x7f0b013e
 
     invoke-virtual {p1, v0, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

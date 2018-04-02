@@ -41,12 +41,12 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 676
+    .line 681
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->d:Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;
 
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$g;-><init>()V
 
-    .line 677
+    .line 682
     const/high16 v0, 0x41f00000    # 30.0f
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -55,7 +55,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->a:I
 
-    .line 678
+    .line 683
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -64,7 +64,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->b:I
 
-    .line 679
+    .line 684
     const/high16 v0, 0x42a00000    # 80.0f
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -73,26 +73,26 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->c:I
 
-    .line 680
+    .line 685
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->i:I
 
-    .line 681
+    .line 686
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->e:Landroid/graphics/Paint;
 
-    .line 682
+    .line 687
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->e:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 683
+    .line 688
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->e:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getResources()Landroid/content/res/Resources;
@@ -107,26 +107,26 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 685
+    .line 690
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->f:Landroid/graphics/Paint;
 
-    .line 686
+    .line 691
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 687
+    .line 692
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f06009c
+    const v2, 0x7f06009e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -134,7 +134,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 688
+    .line 693
     const/high16 v0, 0x438c0000    # 280.0f
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -143,7 +143,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->g:I
 
-    .line 689
+    .line 694
     const/high16 v0, 0x43870000    # 270.0f
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -152,7 +152,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->h:I
 
-    .line 690
+    .line 695
     return-void
 .end method
 
@@ -165,10 +165,10 @@
     .param p3, "state"    # Landroid/support/v7/widget/RecyclerView$t;
 
     .prologue
-    .line 711
+    .line 716
     invoke-super {p0, p1, p2, p3}, Landroid/support/v7/widget/RecyclerView$g;->a(Landroid/graphics/Canvas;Landroid/support/v7/widget/RecyclerView;Landroid/support/v7/widget/RecyclerView$t;)V
 
-    .line 716
+    .line 721
     return-void
 .end method
 
@@ -180,7 +180,7 @@
     .param p4, "state"    # Landroid/support/v7/widget/RecyclerView$t;
 
     .prologue
-    .line 694
+    .line 699
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->d:Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->access$500(Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;)Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;
@@ -191,57 +191,57 @@
 
     move-result v0
 
-    .line 695
+    .line 700
     .local v0, "itemCount":I
     invoke-virtual {p3, p2}, Landroid/support/v7/widget/RecyclerView;->g(Landroid/view/View;)I
 
     move-result v1
 
-    .line 697
+    .line 702
     .local v1, "pos":I
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
-    .line 698
+    .line 703
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->a:I
 
     iput v2, p1, Landroid/graphics/Rect;->left:I
 
-    .line 699
+    .line 704
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->c:I
 
     iput v2, p1, Landroid/graphics/Rect;->right:I
 
-    .line 707
+    .line 712
     :goto_0
     return-void
 
-    .line 700
+    .line 705
     :cond_0
     add-int/lit8 v2, v0, -0x2
 
     if-ne v1, v2, :cond_1
 
-    .line 701
+    .line 706
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->b:I
 
     iput v2, p1, Landroid/graphics/Rect;->left:I
 
-    .line 702
+    .line 707
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->a:I
 
     iput v2, p1, Landroid/graphics/Rect;->right:I
 
     goto :goto_0
 
-    .line 704
+    .line 709
     :cond_1
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->b:I
 
     iput v2, p1, Landroid/graphics/Rect;->left:I
 
-    .line 705
+    .line 710
     iget v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$a;->b:I
 
     iput v2, p1, Landroid/graphics/Rect;->right:I

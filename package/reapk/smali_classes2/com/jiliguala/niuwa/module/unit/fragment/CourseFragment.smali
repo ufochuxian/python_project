@@ -709,7 +709,7 @@
 
     .line 396
     :pswitch_data_0
-    .packed-switch 0x7f0904d0
+    .packed-switch 0x7f0904da
         :pswitch_0
     .end packed-switch
 .end method
@@ -770,7 +770,7 @@
 
     .line 147
     :cond_0
-    const v0, 0x7f0b0190
+    const v0, 0x7f0b0195
 
     const/4 v1, 0x0
 
@@ -783,7 +783,7 @@
     .line 148
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090262
+    const v1, 0x7f090267
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -796,7 +796,7 @@
     .line 153
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0904d0
+    const v1, 0x7f0904da
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

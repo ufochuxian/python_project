@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
 
     .prologue
-    .line 303
+    .line 314
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
 
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$l;-><init>()V
@@ -40,10 +40,10 @@
     .param p2, "newState"    # I
 
     .prologue
-    .line 306
+    .line 317
     invoke-super {p0, p1, p2}, Landroid/support/v7/widget/RecyclerView$l;->a(Landroid/support/v7/widget/RecyclerView;I)V
 
-    .line 307
+    .line 318
     return-void
 .end method
 
@@ -54,20 +54,20 @@
     .param p3, "dy"    # I
 
     .prologue
-    .line 311
+    .line 322
     invoke-super/range {p0 .. p3}, Landroid/support/v7/widget/RecyclerView$l;->a(Landroid/support/v7/widget/RecyclerView;II)V
 
-    .line 313
+    .line 324
     if-nez p2, :cond_1
 
     if-nez p3, :cond_1
 
-    .line 537
+    .line 548
     :cond_0
     :goto_0
     return-void
 
-    .line 316
+    .line 327
     :cond_1
     move-object/from16 v0, p0
 
@@ -109,7 +109,7 @@
 
     if-lez v18, :cond_0
 
-    .line 320
+    .line 331
     :try_start_0
     move-object/from16 v0, p0
 
@@ -119,7 +119,7 @@
 
     invoke-virtual/range {v18 .. v18}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->scrollBg()V
 
-    .line 322
+    .line 333
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -134,7 +134,7 @@
 
     invoke-static/range {v18 .. v19}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->access$000(Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;F)V
 
-    .line 324
+    .line 335
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -143,7 +143,7 @@
 
     invoke-static/range {v18 .. v18}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->access$100(Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;)V
 
-    .line 326
+    .line 337
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -152,10 +152,10 @@
 
     invoke-static/range {v18 .. v18}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->access$200(Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;)V
 
-    .line 328
+    .line 339
     if-lez p2, :cond_a
 
-    .line 329
+    .line 340
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -180,7 +180,7 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 331
+    .line 342
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -211,7 +211,7 @@
 
     move-result-object v10
 
-    .line 333
+    .line 344
     .local v10, "mHeaderView":Landroid/view/View;
     invoke-virtual {v10}, Landroid/view/View;->getLeft()I
 
@@ -219,10 +219,10 @@
 
     if-gez v18, :cond_4
 
-    .line 335
+    .line 346
     if-eqz v10, :cond_2
 
-    .line 336
+    .line 347
     const v18, 0x7f090213
 
     move/from16 v0, v18
@@ -231,7 +231,7 @@
 
     move-result-object v7
 
-    .line 337
+    .line 348
     .local v7, "itemFloatingView":Landroid/view/View;
     invoke-virtual {v7}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -239,7 +239,7 @@
 
     check-cast v17, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
 
-    .line 338
+    .line 349
     .local v17, "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
     move-object/from16 v0, p0
 
@@ -265,7 +265,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->access$600(Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;Landroid/widget/RelativeLayout;)V
 
-    .line 339
+    .line 350
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -280,24 +280,24 @@
 
     invoke-virtual/range {v18 .. v19}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 340
+    .line 351
     if-eqz v7, :cond_2
 
-    .line 341
+    .line 352
     const/high16 v18, 0x3f800000    # 1.0f
 
     move/from16 v0, v18
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 342
+    .line 353
     const/16 v18, 0x8
 
     move/from16 v0, v18
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 386
+    .line 397
     .end local v7    # "itemFloatingView":Landroid/view/View;
     .end local v10    # "mHeaderView":Landroid/view/View;
     .end local v17    # "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
@@ -327,7 +327,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 387
+    .line 398
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -358,11 +358,11 @@
 
     move-result-object v9
 
-    .line 388
+    .line 399
     .local v9, "mFooterView":Landroid/view/View;
     if-eqz v9, :cond_0
 
-    .line 389
+    .line 400
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -377,7 +377,7 @@
 
     float-to-int v11, v0
 
-    .line 393
+    .line 404
     .local v11, "measuredWidth":I
     invoke-virtual {v9}, Landroid/view/View;->getRight()I
 
@@ -387,7 +387,7 @@
 
     if-gt v0, v11, :cond_9
 
-    .line 394
+    .line 405
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -402,7 +402,7 @@
 
     invoke-virtual/range {v18 .. v19}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 395
+    .line 406
     const v18, 0x7f090213
 
     move/from16 v0, v18
@@ -411,7 +411,7 @@
 
     move-result-object v7
 
-    .line 397
+    .line 408
     .restart local v7    # "itemFloatingView":Landroid/view/View;
     invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -419,11 +419,11 @@
 
     check-cast v6, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 399
+    .line 410
     .local v6, "floatLayoutParams":Landroid/widget/LinearLayout$LayoutParams;
     if-eqz v6, :cond_3
 
-    .line 400
+    .line 411
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -460,7 +460,7 @@
 
     check-cast v13, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
-    .line 401
+    .line 412
     .local v13, "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-virtual {v13}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getContent()Ljava/lang/Object;
 
@@ -468,7 +468,7 @@
 
     check-cast v4, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 402
+    .line 413
     .local v4, "content":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCurrent()Z
 
@@ -476,7 +476,7 @@
 
     if-eqz v18, :cond_7
 
-    .line 403
+    .line 414
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -517,7 +517,7 @@
 
     iput v0, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 411
+    .line 422
     .end local v4    # "content":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     .end local v13    # "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :cond_3
@@ -528,7 +528,7 @@
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 416
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -557,7 +557,7 @@
 
     move/from16 v16, v0
 
-    .line 420
+    .line 431
     .local v16, "scrollDis":I
     const v18, 0x3e4ccccd    # 0.2f
 
@@ -573,7 +573,7 @@
 
     mul-float v8, v18, v19
 
-    .line 421
+    .line 432
     .local v8, "limitDis":F
     if-ltz v16, :cond_8
 
@@ -587,7 +587,7 @@
 
     if-gez v18, :cond_8
 
-    .line 423
+    .line 434
     move/from16 v0, v16
 
     int-to-float v0, v0
@@ -596,7 +596,7 @@
 
     div-float v15, v18, v8
 
-    .line 424
+    .line 435
     .local v15, "percent":F
     const/high16 v18, 0x3f800000    # 1.0f
 
@@ -606,13 +606,13 @@
 
     sub-float v3, v18, v19
 
-    .line 427
+    .line 438
     .local v3, "alpha":F
     invoke-virtual {v7, v3}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_0
 
-    .line 530
+    .line 541
     .end local v3    # "alpha":F
     .end local v6    # "floatLayoutParams":Landroid/widget/LinearLayout$LayoutParams;
     .end local v7    # "itemFloatingView":Landroid/view/View;
@@ -626,7 +626,7 @@
 
     goto/16 :goto_0
 
-    .line 346
+    .line 357
     .restart local v10    # "mHeaderView":Landroid/view/View;
     :cond_4
     const v18, 0x7f090213
@@ -637,18 +637,18 @@
 
     move-result-object v7
 
-    .line 348
+    .line 359
     .restart local v7    # "itemFloatingView":Landroid/view/View;
     if-eqz v7, :cond_5
 
-    .line 349
+    .line 360
     const/16 v18, 0x0
 
     move/from16 v0, v18
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 352
+    .line 363
     :cond_5
     move-object/from16 v0, p0
 
@@ -666,7 +666,7 @@
 
     sub-int v5, v18, v19
 
-    .line 356
+    .line 367
     .local v5, "distance":I
     move-object/from16 v0, p0
 
@@ -682,7 +682,7 @@
 
     float-to-int v11, v0
 
-    .line 358
+    .line 369
     .restart local v11    # "measuredWidth":I
     const v18, 0x3f4ccccd    # 0.8f
 
@@ -698,20 +698,20 @@
 
     mul-float v8, v18, v19
 
-    .line 360
+    .line 371
     .restart local v8    # "limitDis":F
     const v12, 0x3e4ccccd    # 0.2f
 
-    .line 362
+    .line 373
     .local v12, "minAlpha":F
     if-lez v5, :cond_2
 
     if-ge v5, v11, :cond_2
 
-    .line 364
+    .line 375
     move/from16 v16, v5
 
-    .line 366
+    .line 377
     .restart local v16    # "scrollDis":I
     move/from16 v0, v16
 
@@ -723,15 +723,15 @@
 
     if-gez v18, :cond_6
 
-    .line 367
+    .line 378
     if-eqz v7, :cond_2
 
-    .line 368
+    .line 379
     invoke-virtual {v7, v12}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_1
 
-    .line 373
+    .line 384
     :cond_6
     move/from16 v0, v16
 
@@ -749,7 +749,7 @@
 
     div-float v15, v18, v19
 
-    .line 375
+    .line 386
     .restart local v15    # "percent":F
     const v18, 0x3f4ccccd    # 0.8f
 
@@ -757,16 +757,16 @@
 
     add-float v3, v12, v18
 
-    .line 378
+    .line 389
     .restart local v3    # "alpha":F
     if-eqz v7, :cond_2
 
-    .line 379
+    .line 390
     invoke-virtual {v7, v3}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_1
 
-    .line 406
+    .line 417
     .end local v3    # "alpha":F
     .end local v5    # "distance":I
     .end local v8    # "limitDis":F
@@ -821,7 +821,7 @@
 
     goto/16 :goto_2
 
-    .line 429
+    .line 440
     .end local v4    # "content":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     .end local v13    # "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     .restart local v8    # "limitDis":F
@@ -829,13 +829,13 @@
     :cond_8
     const v12, 0x3e4ccccd    # 0.2f
 
-    .line 430
+    .line 441
     .restart local v12    # "minAlpha":F
     invoke-virtual {v7, v12}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_0
 
-    .line 435
+    .line 446
     .end local v6    # "floatLayoutParams":Landroid/widget/LinearLayout$LayoutParams;
     .end local v7    # "itemFloatingView":Landroid/view/View;
     .end local v8    # "limitDis":F
@@ -862,7 +862,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 436
+    .line 447
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -879,7 +879,7 @@
 
     goto/16 :goto_0
 
-    .line 442
+    .line 453
     .end local v9    # "mFooterView":Landroid/view/View;
     .end local v11    # "measuredWidth":I
     :cond_a
@@ -907,7 +907,7 @@
 
     if-eq v0, v1, :cond_b
 
-    .line 443
+    .line 454
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -938,7 +938,7 @@
 
     move-result-object v10
 
-    .line 444
+    .line 455
     .restart local v10    # "mHeaderView":Landroid/view/View;
     const v18, 0x7f090213
 
@@ -948,7 +948,7 @@
 
     move-result-object v7
 
-    .line 446
+    .line 457
     .restart local v7    # "itemFloatingView":Landroid/view/View;
     invoke-virtual {v10}, Landroid/view/View;->getLeft()I
 
@@ -956,7 +956,7 @@
 
     if-lez v18, :cond_b
 
-    .line 450
+    .line 461
     invoke-virtual {v10}, Landroid/view/View;->getLeft()I
 
     move-result v18
@@ -981,10 +981,10 @@
 
     if-gtz v18, :cond_e
 
-    .line 451
+    .line 462
     if-eqz v10, :cond_b
 
-    .line 452
+    .line 463
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -999,21 +999,21 @@
 
     invoke-virtual/range {v18 .. v19}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 453
+    .line 464
     const/high16 v18, 0x3f800000    # 1.0f
 
     move/from16 v0, v18
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 454
+    .line 465
     const/16 v18, 0x0
 
     move/from16 v0, v18
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 486
+    .line 497
     .end local v7    # "itemFloatingView":Landroid/view/View;
     .end local v10    # "mHeaderView":Landroid/view/View;
     :cond_b
@@ -1042,7 +1042,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 487
+    .line 498
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -1073,11 +1073,11 @@
 
     move-result-object v9
 
-    .line 488
+    .line 499
     .restart local v9    # "mFooterView":Landroid/view/View;
     if-eqz v9, :cond_0
 
-    .line 490
+    .line 501
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -1092,7 +1092,7 @@
 
     float-to-int v11, v0
 
-    .line 491
+    .line 502
     .restart local v11    # "measuredWidth":I
     const v18, 0x7f090213
 
@@ -1102,7 +1102,7 @@
 
     move-result-object v7
 
-    .line 493
+    .line 504
     .restart local v7    # "itemFloatingView":Landroid/view/View;
     invoke-virtual {v9}, Landroid/view/View;->getRight()I
 
@@ -1118,18 +1118,18 @@
 
     if-gt v0, v11, :cond_d
 
-    .line 497
+    .line 508
     invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v14
 
     check-cast v14, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 498
+    .line 509
     .local v14, "params":Landroid/widget/LinearLayout$LayoutParams;
     if-eqz v14, :cond_c
 
-    .line 499
+    .line 510
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -1168,7 +1168,7 @@
 
     iput v0, v14, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 501
+    .line 512
     :cond_c
     const/16 v18, 0x0
 
@@ -1176,12 +1176,12 @@
 
     invoke-virtual {v7, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 503
+    .line 514
     invoke-virtual {v9}, Landroid/view/View;->getRight()I
 
     move-result v16
 
-    .line 505
+    .line 516
     .restart local v16    # "scrollDis":I
     const v18, 0x3f4ccccd    # 0.8f
 
@@ -1197,11 +1197,11 @@
 
     mul-float v8, v18, v19
 
-    .line 507
+    .line 518
     .restart local v8    # "limitDis":F
     const v12, 0x3e4ccccd    # 0.2f
 
-    .line 509
+    .line 520
     .restart local v12    # "minAlpha":F
     if-lez v16, :cond_10
 
@@ -1215,10 +1215,10 @@
 
     if-gez v18, :cond_10
 
-    .line 510
+    .line 521
     invoke-virtual {v7, v12}, Landroid/view/View;->setAlpha(F)V
 
-    .line 520
+    .line 531
     .end local v8    # "limitDis":F
     .end local v12    # "minAlpha":F
     .end local v14    # "params":Landroid/widget/LinearLayout$LayoutParams;
@@ -1245,14 +1245,14 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 522
+    .line 533
     invoke-virtual {v7}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v17
 
     check-cast v17, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
 
-    .line 523
+    .line 534
     .restart local v17    # "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
     move-object/from16 v0, p0
 
@@ -1278,7 +1278,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;->access$600(Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;Landroid/widget/RelativeLayout;)V
 
-    .line 524
+    .line 535
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -1293,7 +1293,7 @@
 
     invoke-virtual/range {v18 .. v19}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 525
+    .line 536
     const/16 v18, 0x8
 
     move/from16 v0, v18
@@ -1302,7 +1302,7 @@
 
     goto/16 :goto_0
 
-    .line 458
+    .line 469
     .end local v9    # "mFooterView":Landroid/view/View;
     .end local v11    # "measuredWidth":I
     .end local v17    # "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
@@ -1324,7 +1324,7 @@
 
     sub-int v5, v18, v19
 
-    .line 462
+    .line 473
     .restart local v5    # "distance":I
     if-lez v5, :cond_b
 
@@ -1346,7 +1346,7 @@
 
     if-gez v18, :cond_b
 
-    .line 465
+    .line 476
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
@@ -1369,7 +1369,7 @@
 
     move/from16 v16, v0
 
-    .line 469
+    .line 480
     .restart local v16    # "scrollDis":I
     const v18, 0x3e4ccccd    # 0.2f
 
@@ -1385,7 +1385,7 @@
 
     mul-float v8, v18, v19
 
-    .line 470
+    .line 481
     .restart local v8    # "limitDis":F
     if-ltz v16, :cond_f
 
@@ -1399,7 +1399,7 @@
 
     if-gez v18, :cond_f
 
-    .line 472
+    .line 483
     move/from16 v0, v16
 
     int-to-float v0, v0
@@ -1408,7 +1408,7 @@
 
     div-float v15, v18, v8
 
-    .line 473
+    .line 484
     .restart local v15    # "percent":F
     const/high16 v18, 0x3f800000    # 1.0f
 
@@ -1418,25 +1418,25 @@
 
     sub-float v3, v18, v19
 
-    .line 476
+    .line 487
     .restart local v3    # "alpha":F
     invoke-virtual {v7, v3}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_3
 
-    .line 478
+    .line 489
     .end local v3    # "alpha":F
     .end local v15    # "percent":F
     :cond_f
     const v12, 0x3e4ccccd    # 0.2f
 
-    .line 479
+    .line 490
     .restart local v12    # "minAlpha":F
     invoke-virtual {v7, v12}, Landroid/view/View;->setAlpha(F)V
 
     goto/16 :goto_3
 
-    .line 513
+    .line 524
     .end local v5    # "distance":I
     .end local v10    # "mHeaderView":Landroid/view/View;
     .restart local v9    # "mFooterView":Landroid/view/View;
@@ -1459,7 +1459,7 @@
 
     div-float v15, v18, v19
 
-    .line 514
+    .line 525
     .restart local v15    # "percent":F
     const v18, 0x3f4ccccd    # 0.8f
 
@@ -1467,7 +1467,7 @@
 
     add-float v3, v12, v18
 
-    .line 517
+    .line 528
     .restart local v3    # "alpha":F
     invoke-virtual {v7, v3}, Landroid/view/View;->setAlpha(F)V
     :try_end_0

@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 1535
+    .line 1564
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$3;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$3;->a:Ljava/lang/String;
@@ -52,14 +52,14 @@
     .param p1, "audioDataSetsTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/AudioDataSetsTemplate;
 
     .prologue
-    .line 1548
+    .line 1577
     if-eqz p1, :cond_0
 
     iget v0, p1, Lcom/jiliguala/niuwa/logic/network/json/AudioDataSetsTemplate;->code:I
 
     if-nez v0, :cond_0
 
-    .line 1549
+    .line 1578
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v0
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/k/a;->a(Ljava/util/ArrayList;Ljava/lang/String;)V
 
-    .line 1551
+    .line 1580
     :cond_0
     return-void
 .end method
@@ -79,7 +79,7 @@
     .locals 0
 
     .prologue
-    .line 1539
+    .line 1568
     return-void
 .end method
 
@@ -88,7 +88,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1544
+    .line 1573
     return-void
 .end method
 
@@ -96,7 +96,7 @@
     .locals 0
 
     .prologue
-    .line 1535
+    .line 1564
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/AudioDataSetsTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$3;->a(Lcom/jiliguala/niuwa/logic/network/json/AudioDataSetsTemplate;)V

@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 387
+    .line 391
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$12;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,17 +52,17 @@
     .param p1, "pictureEvent"    # Lcom/jiliguala/niuwa/logic/b/a/g;
 
     .prologue
-    .line 391
+    .line 395
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/g;->a:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 400
+    .line 404
     :goto_0
     :pswitch_0
     return-void
 
-    .line 395
+    .line 399
     :pswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$12;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -78,7 +78,7 @@
 
     goto :goto_0
 
-    .line 391
+    .line 395
     :pswitch_data_0
     .packed-switch 0x1010
         :pswitch_0
@@ -90,7 +90,7 @@
     .locals 0
 
     .prologue
-    .line 387
+    .line 391
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/g;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$12;->a(Lcom/jiliguala/niuwa/logic/b/a/g;)V

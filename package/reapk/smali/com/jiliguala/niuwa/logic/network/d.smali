@@ -92,7 +92,7 @@
             ")",
             "Lrx/e",
             "<",
-            "Ljava/lang/Void;",
+            "Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;",
             ">;"
         }
     .end annotation
@@ -278,6 +278,28 @@
 
     .annotation runtime Lretrofit2/http/POST;
         value = "/api/users/guest/upgrade"
+    .end annotation
+.end method
+
+.method public abstract H(Lokhttp3/ab;)Lrx/e;
+    .param p1    # Lokhttp3/ab;
+        .annotation runtime Lretrofit2/http/Body;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/ab;",
+            ")",
+            "Lrx/e",
+            "<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lretrofit2/http/POST;
+        value = "/api/global/log"
     .end annotation
 .end method
 
@@ -2386,6 +2408,22 @@
     .end annotation
 
     .annotation runtime Lretrofit2/http/GET;
+    .end annotation
+.end method
+
+.method public abstract o()Lrx/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/e",
+            "<",
+            "Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lretrofit2/http/GET;
+        value = "/api/guavatar/package"
     .end annotation
 .end method
 

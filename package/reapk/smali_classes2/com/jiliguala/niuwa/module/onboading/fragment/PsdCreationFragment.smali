@@ -348,7 +348,7 @@
     .line 91
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/PsdCreationFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090273
+    const v1, 0x7f090278
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -383,7 +383,7 @@
     .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/PsdCreationFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -396,7 +396,7 @@
     .line 103
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/PsdCreationFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090537
+    const v1, 0x7f090541
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -409,7 +409,7 @@
     .line 104
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/PsdCreationFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f09040b
+    const v1, 0x7f090412
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

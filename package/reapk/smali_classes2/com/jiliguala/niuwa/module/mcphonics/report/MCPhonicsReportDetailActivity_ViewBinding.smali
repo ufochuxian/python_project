@@ -52,7 +52,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailActivity_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailActivity;
 
     .line 33
-    const v1, 0x7f090595
+    const v1, 0x7f09059f
 
     const-string v2, "field \'topBarTitle\'"
 
@@ -98,7 +98,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 43
-    const v1, 0x7f09044f
+    const v1, 0x7f090456
 
     const-string v2, "field \'reportRecyclerView\'"
 

@@ -53,7 +53,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$PhReportViewHolder;->alphabet:Landroid/widget/TextView;
 
     .line 26
-    const v0, 0x7f09040a
+    const v0, 0x7f090411
 
     const-string v1, "field \'pronunciationTitle\'"
 
@@ -68,7 +68,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$PhReportViewHolder;->pronunciationTitle:Landroid/widget/TextView;
 
     .line 27
-    const v0, 0x7f090409
+    const v0, 0x7f090410
 
     const-string v1, "field \'pronunciation\'"
 
@@ -158,7 +158,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$PhReportViewHolder;->commonWord:Landroid/widget/TextView;
 
     .line 33
-    const v0, 0x7f09035b
+    const v0, 0x7f090362
 
     const-string v1, "field \'moreExpandWordContainer\'"
 
@@ -173,7 +173,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$PhReportViewHolder;->moreExpandWordContainer:Landroid/widget/RelativeLayout;
 
     .line 34
-    const v0, 0x7f09035c
+    const v0, 0x7f090363
 
     const-string v1, "field \'moreExpandWordTitle\'"
 
@@ -188,7 +188,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$PhReportViewHolder;->moreExpandWordTitle:Landroid/widget/TextView;
 
     .line 35
-    const v0, 0x7f09035a
+    const v0, 0x7f090361
 
     const-string v1, "field \'moreExpandWord\'"
 

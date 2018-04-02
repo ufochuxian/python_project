@@ -42,9 +42,9 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     const/16 v5, 0x1001
 
@@ -264,8 +264,8 @@
     .sparse-switch
         0x7f0901d7 -> :sswitch_4
         0x7f0901d8 -> :sswitch_3
-        0x7f0902f4 -> :sswitch_1
-        0x7f0902f5 -> :sswitch_2
-        0x7f0902f6 -> :sswitch_0
+        0x7f0902fb -> :sswitch_1
+        0x7f0902fc -> :sswitch_2
+        0x7f0902fd -> :sswitch_0
     .end sparse-switch
 .end method

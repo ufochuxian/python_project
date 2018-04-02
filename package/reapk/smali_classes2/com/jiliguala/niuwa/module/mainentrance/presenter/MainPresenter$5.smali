@@ -49,11 +49,11 @@
 
     .prologue
     .line 444
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/p/a;->a()Lcom/jiliguala/niuwa/logic/p/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/p/a;->c()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/q/a;->c()V
 
     .line 445
     return-void

@@ -46,7 +46,7 @@
     if-eqz v0, :cond_0
 
     .line 114
-    const v0, 0x7f08013a
+    const v0, 0x7f08013c
 
     .line 120
     :goto_0
@@ -61,7 +61,7 @@
     if-eqz v0, :cond_1
 
     .line 116
-    const v0, 0x7f080139
+    const v0, 0x7f08013b
 
     goto :goto_0
 
@@ -74,13 +74,13 @@
     if-eqz v0, :cond_2
 
     .line 118
-    const v0, 0x7f080138
+    const v0, 0x7f08013a
 
     goto :goto_0
 
     .line 120
     :cond_2
-    const v0, 0x7f08013b
+    const v0, 0x7f08013d
 
     goto :goto_0
 .end method
@@ -159,7 +159,7 @@
     .line 51
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/RecommendCourseAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0b00da
+    const v4, 0x7f0b00db
 
     const/4 v5, 0x0
 
@@ -174,7 +174,7 @@
 
     .line 53
     .local v2, "viewHolder":Lcom/jiliguala/niuwa/module/qualitycourse/adapter/RecommendCourseAdapter$a;
-    const v3, 0x7f090273
+    const v3, 0x7f090278
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 817
+    .line 822
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$26;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 820
+    .line 825
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$26;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->isAdded()Z
@@ -50,7 +50,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 821
+    .line 826
     new-instance v0, Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$26;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -61,18 +61,18 @@
 
     invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 822
+    .line 827
     .local v0, "cdText":Landroid/widget/TextView;
     const/16 v1, 0x11
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 823
+    .line 828
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 824
+    .line 829
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$26;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 827
+    .line 832
     .end local v0    # "cdText":Landroid/widget/TextView;
     :goto_0
     return-object v0

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/container" n1:background="@drawable/course_white_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.jiliguala.niuwa.common.widget.RatioImageView n1:id="@id/icon" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:src="@color/image_placeholder_gray" n1:scaleType="centerCrop" n2:border_width="2.0dip" n2:corner_radius="5.0dip" n2:ratio="0.75" n2:riv_corner_radius_bottom_left="10.0dip" n2:riv_corner_radius_bottom_right="10.0dip" n2:riv_corner_radius_top_left="10.0dip" n2:riv_corner_radius_top_right="10.0dip" n2:riv_oval="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageView n1:id="@id/display_icon" n1:layout_width="@dimen/course_type_icon_size" n1:layout_height="@dimen/course_type_icon_size" n1:layout_marginLeft="2.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/course_type_buy" n1:scaleType="centerCrop" n1:layout_alignLeft="@id/icon" n1:layout_alignBottom="@id/icon" />
+        <ImageView n1:id="@id/course_category_icon" n1:visibility="gone" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginBottom="5.0dip" n1:src="@drawable/icon_course_type_game_sm" n1:layout_alignLeft="@id/icon" n1:layout_alignBottom="@id/icon" />
+        <RelativeLayout n1:gravity="top" n1:paddingTop="5.0dip" n1:layout_width="fill_parent" n1:layout_height="54.0dip" n1:layout_below="@id/icon">
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/eng_txt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="I am a frog" n1:maxLines="1" n1:singleLine="true" n1:layout_alignParentLeft="true" />
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:ellipsize="end" n1:id="@id/chinese_txt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_below="@id/eng_txt" n1:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <ImageView n1:id="@id/course_new_notice" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/unread_newmessage_type2" />
+    </RelativeLayout>
+</LinearLayout>

@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1624
+    .line 1637
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->a:Ljava/lang/String;
@@ -50,7 +50,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1641
+    .line 1654
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3300(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/nineoldandroids/a/d;
@@ -59,7 +59,7 @@
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/d;->i()V
 
-    .line 1642
+    .line 1655
     return-void
 .end method
 
@@ -68,7 +68,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1632
+    .line 1645
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->a:Ljava/lang/String;
@@ -77,7 +77,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3100(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1633
+    .line 1646
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->a:Ljava/lang/String;
@@ -86,7 +86,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3200(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1635
+    .line 1648
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$9;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3300(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/nineoldandroids/a/d;
@@ -95,7 +95,7 @@
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/d;->i()V
 
-    .line 1636
+    .line 1649
     return-void
 .end method
 
@@ -104,7 +104,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1647
+    .line 1660
     return-void
 .end method
 
@@ -113,6 +113,6 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1628
+    .line 1641
     return-void
 .end method

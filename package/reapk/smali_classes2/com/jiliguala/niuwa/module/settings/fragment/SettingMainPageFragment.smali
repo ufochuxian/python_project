@@ -892,9 +892,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -948,9 +948,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -1051,18 +1051,18 @@
     .line 505
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment;->dailyDurationTv:Landroid/widget/TextView;
 
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/q/b;->i()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/r/b;->i()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 507
-    const v1, 0x7f09041a
+    const v1, 0x7f090421
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1080,7 +1080,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 509
-    const v1, 0x7f090391
+    const v1, 0x7f090398
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1113,7 +1113,7 @@
     invoke-virtual {v1, v3}, Lcom/kyleduo/switchbutton/SwitchButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 522
-    const v1, 0x7f09041b
+    const v1, 0x7f090422
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1163,7 +1163,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 545
-    const v1, 0x7f090589
+    const v1, 0x7f090593
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1181,7 +1181,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 547
-    const v1, 0x7f09043e
+    const v1, 0x7f090445
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1243,7 +1243,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 560
-    const v1, 0x7f0905e7
+    const v1, 0x7f0905f1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1281,7 +1281,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 562
-    const v1, 0x7f0904e6
+    const v1, 0x7f0904f0
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1310,7 +1310,7 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 565
-    const v1, 0x7f09034f
+    const v1, 0x7f090356
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1321,7 +1321,7 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 566
-    const v1, 0x7f0905b6
+    const v1, 0x7f0905c0
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1344,7 +1344,7 @@
     invoke-virtual {v3, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 568
-    const v1, 0x7f0905b9
+    const v1, 0x7f0905c3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1757,7 +1757,7 @@
     invoke-virtual {v4}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 780
-    const v4, 0x7f0b0192
+    const v4, 0x7f0b0197
 
     invoke-virtual {v0, v4}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -2081,7 +2081,7 @@
 
     .prologue
     .line 465
-    const v1, 0x7f0b017b
+    const v1, 0x7f0b0180
 
     const/4 v2, 0x0
 

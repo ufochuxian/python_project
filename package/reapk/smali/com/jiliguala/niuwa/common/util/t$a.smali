@@ -83,6 +83,8 @@
 
 .field public static final aG:Ljava/lang/String; = "PREFS_AB_TEST_SONG_MASK"
 
+.field public static final aH:Ljava/lang/String; = "PREFS_GUAVATAR_MASK"
+
 .field public static final aa:Ljava/lang/String; = "PREFS_KEY_HAS_OPEN_RECORD_PERMISSION"
 
 .field public static final ab:Ljava/lang/String; = "PREFS_KEY_AUDIO_CTRL_TIME_ON_TIMESTAMP"

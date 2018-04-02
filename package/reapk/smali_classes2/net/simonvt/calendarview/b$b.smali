@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final day_picker_week_view_dayline_holo:I = 0x7f08013d
+.field public static final day_picker_week_view_dayline_holo:I = 0x7f08013f
 
-.field public static final list_divider_holo_dark:I = 0x7f08021a
+.field public static final list_divider_holo_dark:I = 0x7f080224
 
-.field public static final list_divider_holo_light:I = 0x7f08021b
+.field public static final list_divider_holo_light:I = 0x7f080225
 
 
 # direct methods

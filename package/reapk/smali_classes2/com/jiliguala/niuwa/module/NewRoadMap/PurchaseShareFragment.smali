@@ -114,7 +114,7 @@
 
     iget-object v11, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;->mSource:Ljava/lang/String;
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 116
     return-void
@@ -220,7 +220,7 @@
 
     .line 97
     :pswitch_data_0
-    .packed-switch 0x7f0904e2
+    .packed-switch 0x7f0904ec
         :pswitch_0
     .end packed-switch
 .end method
@@ -250,7 +250,7 @@
 
     .prologue
     .line 90
-    const v1, 0x7f0b0122
+    const v1, 0x7f0b0126
 
     const/4 v2, 0x0
 
@@ -260,7 +260,7 @@
 
     .line 91
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0904e2
+    const v1, 0x7f0904ec
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

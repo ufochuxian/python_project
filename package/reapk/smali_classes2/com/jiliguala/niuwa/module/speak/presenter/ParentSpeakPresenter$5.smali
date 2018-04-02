@@ -17,7 +17,7 @@
     value = {
         "Lrx/l",
         "<",
-        "Ljava/lang/Void;",
+        "Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;",
         ">;"
     }
 .end annotation
@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     .prologue
-    .line 473
+    .line 474
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -43,12 +43,12 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Void;)V
+.method public a(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
     .locals 1
-    .param p1, "unitDataTemplate"    # Ljava/lang/Void;
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
     .prologue
-    .line 490
+    .line 491
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -57,17 +57,17 @@
 
     if-nez v0, :cond_1
 
-    .line 491
+    .line 492
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$300(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)V
 
-    .line 498
+    .line 499
     :cond_0
     :goto_0
     return-void
 
-    .line 495
+    .line 496
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
@@ -77,7 +77,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 496
+    .line 497
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$400(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)V
@@ -89,7 +89,7 @@
     .locals 0
 
     .prologue
-    .line 477
+    .line 478
     return-void
 .end method
 
@@ -98,7 +98,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 481
+    .line 482
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -107,7 +107,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 482
+    .line 483
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -116,18 +116,18 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->onUpLoadFailed()V
 
-    .line 484
+    .line 485
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$200(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)V
 
-    .line 485
+    .line 486
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$300(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)V
 
-    .line 486
+    .line 487
     return-void
 .end method
 
@@ -135,10 +135,10 @@
     .locals 0
 
     .prologue
-    .line 473
-    check-cast p1, Ljava/lang/Void;
+    .line 474
+    check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
-    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$5;->a(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 
     return-void
 .end method

@@ -157,12 +157,12 @@
 
     iget-object v11, v11, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplete;->mSource:Ljava/lang/String;
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 276
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mShareSuccessListener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     .line 277
     return-void
@@ -411,12 +411,12 @@
 
     move-object v10, v9
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 250
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mShareSuccessListener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     goto/16 :goto_0
 
@@ -429,12 +429,12 @@
     .line 222
     :sswitch_data_0
     .sparse-switch
-        0x7f0903c9 -> :sswitch_1
-        0x7f0904dd -> :sswitch_1
-        0x7f0904e2 -> :sswitch_0
-        0x7f0904e3 -> :sswitch_2
-        0x7f0904e4 -> :sswitch_3
-        0x7f090612 -> :sswitch_0
+        0x7f0903d0 -> :sswitch_1
+        0x7f0904e7 -> :sswitch_1
+        0x7f0904ec -> :sswitch_0
+        0x7f0904ed -> :sswitch_2
+        0x7f0904ee -> :sswitch_3
+        0x7f09061c -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -565,7 +565,7 @@
     const/4 v2, 0x0
 
     .line 171
-    const v1, 0x7f0b0129
+    const v1, 0x7f0b012e
 
     invoke-virtual {p1, v1, p2, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -573,7 +573,7 @@
 
     .line 172
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0903c9
+    const v1, 0x7f0903d0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -591,7 +591,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mBottomContainer:Landroid/view/View;
 
     .line 174
-    const v1, 0x7f090612
+    const v1, 0x7f09061c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -600,7 +600,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mWeixincontainer:Landroid/view/View;
 
     .line 175
-    const v1, 0x7f0904dd
+    const v1, 0x7f0904e7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -616,7 +616,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 177
-    const v1, 0x7f0904e2
+    const v1, 0x7f0904ec
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -632,7 +632,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 179
-    const v1, 0x7f0904fe
+    const v1, 0x7f090508
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -641,7 +641,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mSocialGroup:Landroid/view/View;
 
     .line 180
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -652,7 +652,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mTitleTv:Landroid/widget/TextView;
 
     .line 181
-    const v1, 0x7f090531
+    const v1, 0x7f09053b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -675,7 +675,7 @@
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 183
-    const v1, 0x7f0904e3
+    const v1, 0x7f0904ed
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SimpleShareFragment;->mWeiBoBtn:Landroid/view/View;
 
     .line 184
-    const v1, 0x7f0904e4
+    const v1, 0x7f0904ee
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -700,7 +700,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 186
-    const v1, 0x7f09058d
+    const v1, 0x7f090597
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -783,9 +783,9 @@
 
     const/4 v6, 0x0
 
-    const v3, 0x7f0800af
+    const v3, 0x7f0800b1
 
-    const v2, 0x7f0600fc
+    const v2, 0x7f0600fe
 
     .line 193
     invoke-super {p0, p1, p2}, Landroid/support/v4/app/ac;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
@@ -810,7 +810,7 @@
 
     if-nez v1, :cond_3
 
-    const v1, 0x7f08036a
+    const v1, 0x7f080377
 
     :goto_0
     invoke-virtual {v5, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;

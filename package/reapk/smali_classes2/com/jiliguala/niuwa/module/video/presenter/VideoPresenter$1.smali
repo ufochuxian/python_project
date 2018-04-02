@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 211
+    .line 212
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$1;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$1;->a:Ljava/lang/String;
@@ -52,10 +52,10 @@
     .param p1, "videoDataSetsTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/VideoDataSetsTemplate;
 
     .prologue
-    .line 224
+    .line 225
     if-eqz p1, :cond_0
 
-    .line 225
+    .line 226
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
 
     move-result-object v0
@@ -66,7 +66,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/k/e;->a(Ljava/util/ArrayList;Ljava/lang/String;)V
 
-    .line 227
+    .line 228
     :cond_0
     return-void
 .end method
@@ -75,7 +75,7 @@
     .locals 0
 
     .prologue
-    .line 215
+    .line 216
     return-void
 .end method
 
@@ -84,7 +84,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 220
+    .line 221
     return-void
 .end method
 
@@ -92,7 +92,7 @@
     .locals 0
 
     .prologue
-    .line 211
+    .line 212
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/VideoDataSetsTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$1;->a(Lcom/jiliguala/niuwa/logic/network/json/VideoDataSetsTemplate;)V

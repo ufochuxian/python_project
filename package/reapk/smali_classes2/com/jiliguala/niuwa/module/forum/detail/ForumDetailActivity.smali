@@ -254,7 +254,7 @@
 
     .line 268
     .local v4, "content":Ljava/lang/String;
-    const v2, 0x7f0801e3
+    const v2, 0x7f0801ec
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/course/main/fragment/AudioVideoShareFragment;->setTopIconRes(I)V
 
@@ -298,7 +298,7 @@
 
     const/4 v12, 0x0
 
-    const v13, 0x7f080369
+    const v13, 0x7f080376
 
     const v14, 0x7f0f0074
 
@@ -537,9 +537,9 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 446
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailActivity;->overridePendingTransition(II)V
 
@@ -824,9 +824,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailActivity;->finish()V
 
     .line 296
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailActivity;->overridePendingTransition(II)V
 
@@ -1024,7 +1024,7 @@
         0x7f090014 -> :sswitch_0
         0x7f090038 -> :sswitch_1
         0x7f0901f9 -> :sswitch_2
-        0x7f090585 -> :sswitch_3
+        0x7f09058f -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -1083,7 +1083,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 309
-    const v0, 0x7f090585
+    const v0, 0x7f09058f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailActivity;->findViewById(I)Landroid/view/View;
 
@@ -1472,7 +1472,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0802c9
+    const v0, 0x7f0802d3
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setBackgroundResource(I)V
@@ -1482,7 +1482,7 @@
 
     .line 283
     :cond_0
-    const v0, 0x7f0802d2
+    const v0, 0x7f0802dc
 
     goto :goto_0
 .end method

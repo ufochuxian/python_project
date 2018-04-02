@@ -77,13 +77,12 @@
     :array_0
     .array-data 4
         0x7f040001
-        0x7f040165
+        0x7f040166
     .end array-data
 
     .line 36
     :array_1
     .array-data 4
-        0x7f04022a
         0x7f04022b
         0x7f04022c
         0x7f04022d
@@ -95,6 +94,7 @@
         0x7f040233
         0x7f040234
         0x7f040235
+        0x7f040236
     .end array-data
 .end method
 

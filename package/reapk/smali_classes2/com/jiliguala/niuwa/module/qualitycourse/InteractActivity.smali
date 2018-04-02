@@ -70,9 +70,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     .prologue
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
     .line 57
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -310,7 +310,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     .line 44
-    const v1, 0x7f090595
+    const v1, 0x7f09059f
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;->findViewById(I)Landroid/view/View;
 

@@ -51,9 +51,9 @@
     .param p1, "baseResp"    # Lcom/tencent/mm/opensdk/modelbase/BaseResp;
 
     .prologue
-    const v10, 0x7f01001d
+    const v10, 0x7f01001f
 
-    const v9, 0x7f010013
+    const v9, 0x7f010014
 
     const/high16 v8, 0x14000000
 

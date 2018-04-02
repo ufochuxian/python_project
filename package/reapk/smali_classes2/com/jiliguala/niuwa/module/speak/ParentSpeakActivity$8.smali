@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 774
+    .line 777
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
 
     const/4 v3, -0x1
 
-    .line 777
+    .line 780
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -54,7 +54,7 @@
 
     if-nez v0, :cond_0
 
-    .line 778
+    .line 781
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -65,7 +65,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$102(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
-    .line 780
+    .line 783
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setTotalHeight(I)V
 
-    .line 781
+    .line 784
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0, v4}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setVisibility(I)V
 
-    .line 782
+    .line 785
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -101,14 +101,14 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setCallBack(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
-    .line 783
+    .line 786
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     if-eqz v0, :cond_1
 
-    .line 784
+    .line 787
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -131,7 +131,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->changeRecordIconByRecordStatus(Z)V
 
-    .line 786
+    .line 789
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
@@ -141,7 +141,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->addOnGlobalLayoutListener()V
 
-    .line 787
+    .line 790
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$8;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -156,6 +156,6 @@
 
     invoke-virtual {v0, v1, v2, v4}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addMaskView(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;Z)V
 
-    .line 794
+    .line 797
     return-void
 .end method

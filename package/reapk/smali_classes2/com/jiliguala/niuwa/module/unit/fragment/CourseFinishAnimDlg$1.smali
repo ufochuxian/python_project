@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     .prologue
-    .line 105
+    .line 101
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$1;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,12 +44,12 @@
     .param p3, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 108
+    .line 104
     const/4 v0, 0x4
 
     if-ne p2, v0, :cond_1
 
-    .line 109
+    .line 105
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$1;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 110
+    .line 106
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$1;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -67,11 +67,11 @@
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->onBackPressed()V
 
-    .line 112
+    .line 108
     :cond_0
     const/4 v0, 0x1
 
-    .line 114
+    .line 110
     :goto_0
     return v0
 

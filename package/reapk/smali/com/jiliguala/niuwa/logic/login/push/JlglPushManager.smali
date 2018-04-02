@@ -762,7 +762,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    const v4, 0x7f0801cb
+    const v4, 0x7f0801d2
 
     const/4 v3, 0x1
 

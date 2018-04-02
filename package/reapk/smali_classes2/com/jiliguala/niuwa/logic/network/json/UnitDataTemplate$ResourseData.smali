@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 361
+    .line 364
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData$1;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData$1;-><init>()V
@@ -56,24 +56,24 @@
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
-    .line 375
+    .line 378
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 376
+    .line 379
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData;->_id:Ljava/lang/String;
 
-    .line 377
+    .line 380
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData;->typ:Ljava/lang/String;
 
-    .line 378
+    .line 381
     return-void
 .end method
 
@@ -83,7 +83,7 @@
     .locals 1
 
     .prologue
-    .line 382
+    .line 385
     const/4 v0, 0x0
 
     return v0
@@ -98,16 +98,16 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 387
+    .line 390
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData;->_id:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 388
+    .line 391
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$ResourseData;->typ:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 389
+    .line 392
     return-void
 .end method

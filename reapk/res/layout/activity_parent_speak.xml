@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiliguala.niuwa.common.widget.customview.SuperView n1:orientation="vertical" n1:id="@id/superview" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:errorView="@layout/layout_errorview" n2:loadingView="@layout/layout_speak_loadingpage"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:id="@id/container" n1:background="@android:color/black" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.jiliguala.niuwa.common.widget.NoScrollViewPager n1:id="@id/flashcard_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            <FrameLayout n1:id="@id/flashcard_maskview" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="center" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:gravity="right" n1:id="@id/pageNum" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="20.0dip" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:gravity="right" n1:id="@id/old_score_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginBottom="20.0dip" n1:layout_alignParentBottom="true" />
+            <TextView n1:textSize="18.0sp" n1:textColor="@color/white" n1:id="@id/evaluate_score_tips" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0dip" n1:text="正在打分..." n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+            <ImageButton n1:id="@id/top_back_btn" n1:background="@drawable/nav_icon_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.jiliguala.niuwa.common.widget.customview.SuperView>

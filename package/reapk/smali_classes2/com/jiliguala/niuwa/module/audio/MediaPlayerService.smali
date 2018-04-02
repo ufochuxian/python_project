@@ -752,8 +752,10 @@
     :goto_6
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 522
     throw v5
 
+    .line 521
     .end local v3    # "fis":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v2    # "fileDescriptor":Ljava/io/FileDescriptor;
@@ -816,7 +818,7 @@
 
     .line 130
     .local v4, "pendingIntent":Landroid/app/PendingIntent;
-    const v5, 0x7f080187
+    const v5, 0x7f08018a
 
     invoke-virtual {v0, v5}, Landroid/support/v4/app/ay$d;->a(I)Landroid/support/v4/app/ay$d;
 

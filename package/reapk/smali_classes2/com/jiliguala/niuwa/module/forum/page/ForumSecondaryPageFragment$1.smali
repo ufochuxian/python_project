@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     .prologue
-    .line 65
+    .line 66
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .end annotation
 
     .prologue
-    .line 68
+    .line 69
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
@@ -63,12 +63,12 @@
 
     if-nez v3, :cond_1
 
-    .line 89
+    .line 90
     :cond_0
     :goto_0
     return-void
 
-    .line 73
+    .line 74
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
@@ -84,14 +84,14 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/ForumSets$SingleForum;
 
-    .line 74
+    .line 75
     .local v0, "currentForum":Lcom/jiliguala/niuwa/logic/network/json/ForumSets$SingleForum;
     if-eqz v0, :cond_0
 
-    .line 77
+    .line 78
     iget-object v1, v0, Lcom/jiliguala/niuwa/logic/network/json/ForumSets$SingleForum;->_id:Ljava/lang/String;
 
-    .line 79
+    .line 80
     .local v1, "forum_id":Ljava/lang/String;
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -99,12 +99,12 @@
 
     if-nez v3, :cond_0
 
-    .line 83
+    .line 84
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 84
+    .line 85
     .local v2, "intent":Landroid/content/Intent;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
@@ -116,12 +116,12 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 85
+    .line 86
     const-string v3, "rid"
 
     invoke-virtual {v2, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 86
+    .line 87
     const-string v3, "lock"
 
     iget-object v4, v0, Lcom/jiliguala/niuwa/logic/network/json/ForumSets$SingleForum;->meta:Lcom/jiliguala/niuwa/logic/network/json/ForumSets$ForumMetaPart;
@@ -130,7 +130,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 87
+    .line 88
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -139,16 +139,16 @@
 
     invoke-virtual {v3, v2}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 88
+    .line 89
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$1;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
-    const v5, 0x7f010013
+    const v5, 0x7f010014
 
     invoke-virtual {v3, v4, v5}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 

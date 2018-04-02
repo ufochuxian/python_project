@@ -50,13 +50,13 @@
 
 .field listen:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902d6
+        a = 0x7f0902dc
     .end annotation
 .end field
 
 .field loadingProgress:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902e6
+        a = 0x7f0902ed
     .end annotation
 .end field
 
@@ -70,7 +70,7 @@
 
 .field recyclerView:Landroid/widget/ListView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090437
+        a = 0x7f09043e
     .end annotation
 .end field
 
@@ -155,14 +155,14 @@
     .param p1, "enablePostPurchaseEvent"    # Z
 
     .prologue
-    .line 190
+    .line 195
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/jiliguala/niuwa/module/mcphonics/detail/LandScapeNewMcPcLessonSharePageActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 191
+    .line 196
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "id"
 
@@ -170,7 +170,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 192
+    .line 197
     const-string v1, "title"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -179,7 +179,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 193
+    .line 198
     const-string v1, "thumb"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -188,7 +188,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 194
+    .line 199
     const-string v1, "score"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -197,17 +197,17 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
-    .line 195
+    .line 200
     const-string v1, "flag"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 196
+    .line 201
     const/16 v1, 0xa1
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 197
+    .line 202
     return-void
 .end method
 
@@ -227,7 +227,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0160
+    const v1, 0x7f0b0165
 
     const/4 v2, 0x0
 
@@ -240,7 +240,7 @@
     .line 116
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mHeadView:Landroid/view/View;
 
-    const v1, 0x7f090584
+    const v1, 0x7f09058e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -328,12 +328,12 @@
     .param p1, "lessons"    # Lcom/jiliguala/niuwa/logic/network/json/Lessons;
 
     .prologue
-    .line 210
+    .line 215
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 211
+    .line 216
     .local v0, "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "ID"
 
@@ -341,7 +341,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 212
+    .line 217
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -350,7 +350,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->c(Ljava/lang/String;)V
 
-    .line 213
+    .line 218
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -359,7 +359,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 214
+    .line 219
     return-void
 .end method
 
@@ -368,12 +368,12 @@
     .param p1, "taskTicket"    # Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     .prologue
-    .line 253
+    .line 258
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 254
+    .line 259
     .local v1, "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v8, "ID"
 
@@ -383,7 +383,7 @@
 
     invoke-interface {v1, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 255
+    .line 260
     const-string v8, "Position"
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getPosition()I
@@ -396,37 +396,37 @@
 
     invoke-interface {v1, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 257
+    .line 262
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
 
     move-result-object v7
 
-    .line 258
+    .line 263
     .local v7, "sub":Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
     if-eqz v7, :cond_0
 
-    .line 259
+    .line 264
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->isMcWatch()Z
 
     move-result v8
 
     if-eqz v8, :cond_1
 
-    .line 260
+    .line 265
     const-string v8, "Type"
 
     const-string v9, "MC-video"
 
     invoke-interface {v1, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 266
+    .line 271
     :cond_0
     :goto_0
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSectionScoreMap()Ljava/util/Map;
 
     move-result-object v6
 
-    .line 268
+    .line 273
     .local v6, "sectionScoreMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
     if-eqz v6, :cond_3
 
@@ -436,18 +436,18 @@
 
     if-lez v8, :cond_3
 
-    .line 269
+    .line 274
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 270
+    .line 275
     .local v3, "resultList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 271
+    .line 276
     .local v2, "realScoreList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-interface {v6}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -470,7 +470,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 272
+    .line 277
     .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -478,7 +478,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 273
+    .line 278
     .local v5, "sectionID":Ljava/lang/String;
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -486,7 +486,7 @@
 
     check-cast v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
-    .line 274
+    .line 279
     .local v4, "sectionCompleteTemplete":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     iget-object v9, v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
@@ -498,7 +498,7 @@
 
     invoke-interface {v1, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 275
+    .line 280
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -527,7 +527,7 @@
 
     invoke-interface {v3, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 276
+    .line 281
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -558,7 +558,7 @@
 
     goto :goto_1
 
-    .line 262
+    .line 267
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
     .end local v2    # "realScoreList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .end local v3    # "resultList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
@@ -574,7 +574,7 @@
 
     goto/16 :goto_0
 
-    .line 278
+    .line 283
     .restart local v2    # "realScoreList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .restart local v3    # "resultList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .restart local v6    # "sectionScoreMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
@@ -589,17 +589,17 @@
 
     invoke-interface {v1, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 280
+    .line 285
     const-string v8, "Parents Score"
 
     invoke-interface {v1, v8, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 282
+    .line 287
     const-string v8, "Real Section Score"
 
     invoke-interface {v1, v8, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 284
+    .line 289
     .end local v2    # "realScoreList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .end local v3    # "resultList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     :cond_3
@@ -611,7 +611,7 @@
 
     invoke-virtual {v8, v9, v1}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 285
+    .line 290
     return-void
 .end method
 
@@ -650,7 +650,7 @@
     .locals 4
 
     .prologue
-    .line 218
+    .line 223
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -667,7 +667,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/f;
 
-    .line 219
+    .line 224
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -680,15 +680,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity$2;-><init>(Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;)V
 
-    .line 220
+    .line 225
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 218
+    .line 223
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 249
+    .line 254
     return-void
 .end method
 
@@ -753,38 +753,68 @@
 .end method
 
 .method goListen()V
-    .locals 2
+    .locals 4
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0902d6
+            0x7f0902dc
         }
     .end annotation
 
     .prologue
     .line 166
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->listen:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->listen:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
     .line 167
-    .local v0, "tag":Ljava/lang/String;
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    .local v1, "tag":Ljava/lang/String;
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_1
 
-    .line 171
+    .line 176
+    :cond_0
     :goto_0
     return-void
 
     .line 170
-    :cond_0
-    invoke-static {p0, v0}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
+    :cond_1
+    invoke-static {p0, v1}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 171
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
+
+    if-eqz v2, :cond_0
+
+    .line 172
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 173
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v2, "LessonID"
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->_id:Ljava/lang/String;
+
+    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 174
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v2
+
+    const-string v3, "audio click"
+
+    invoke-virtual {v2, v3, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
     goto :goto_0
 .end method
@@ -828,7 +858,7 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->_id:Ljava/lang/String;
 
-    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -885,23 +915,23 @@
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 289
+    .line 294
     invoke-super {p0, p1, p2, p3}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 290
+    .line 295
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 291
+    .line 296
     const/16 v0, 0xa1
 
     if-ne p1, v0, :cond_0
 
-    .line 292
+    .line 297
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->finish()V
 
-    .line 295
+    .line 300
     :cond_0
     return-void
 .end method
@@ -956,7 +986,7 @@
     .param p1, "lessons"    # Lcom/jiliguala/niuwa/logic/network/json/Lessons;
 
     .prologue
-    .line 202
+    .line 207
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->isComplete()Z
@@ -971,19 +1001,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 203
+    .line 208
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->reportLessonComplete(Lcom/jiliguala/niuwa/logic/network/json/Lessons;)V
 
-    .line 204
+    .line 209
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->goToNewLessonSharePageActivity(Z)V
 
-    .line 206
+    .line 211
     :cond_0
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->showData(Lcom/jiliguala/niuwa/logic/network/json/Lessons;)V
 
-    .line 207
+    .line 212
     return-void
 .end method
 
@@ -1050,24 +1080,24 @@
 
     const/4 v1, 0x0
 
-    .line 175
+    .line 180
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->mLessons:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
 
-    .line 176
+    .line 181
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->courseDesc:Landroid/widget/TextView;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->desc:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 177
+    .line 182
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->courseName:Landroid/widget/TextView;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->ttl:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 178
+    .line 183
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->listen:Landroid/widget/TextView;
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->audio:Ljava/lang/String;
@@ -1083,14 +1113,14 @@
     :goto_0
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 179
+    .line 184
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->listen:Landroid/widget/TextView;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->audio:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 180
+    .line 185
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/FragmentActivity;)Lcom/bumptech/glide/o;
 
     move-result-object v0
@@ -1105,7 +1135,7 @@
 
     invoke-virtual {v0, v3}, Lcom/bumptech/glide/g;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 181
+    .line 186
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->finishCount:Landroid/widget/TextView;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1130,7 +1160,7 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 182
+    .line 187
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->subs:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1143,12 +1173,12 @@
 
     if-lez v0, :cond_0
 
-    .line 183
+    .line 188
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->adapter:Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter;
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter;->update(Lcom/jiliguala/niuwa/logic/network/json/Lessons;)V
 
-    .line 185
+    .line 190
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->btnReport:Landroid/widget/Button;
 
@@ -1161,19 +1191,19 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 186
+    .line 191
     return-void
 
     :cond_1
     move v0, v2
 
-    .line 178
+    .line 183
     goto :goto_0
 
     :cond_2
     move v1, v2
 
-    .line 185
+    .line 190
     goto :goto_1
 .end method
 

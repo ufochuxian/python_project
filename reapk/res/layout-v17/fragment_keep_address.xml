@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/scrollView" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/name_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/name" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="收货人" />
+                <EditText n1:textSize="@dimen/content_normal_size" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|left" n1:id="@id/keep_name" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="姓名" n1:maxLines="1" n1:singleLine="true" n1:layout_toRightOf="@id/name" />
+                <View n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/phone_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <View n1:id="@id/view2" n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/phone" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="联系电话" n1:layout_above="@id/view2" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true" />
+                <EditText n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|left" n1:id="@id/keep_phone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="手机号码" n1:maxLength="11" n1:digits="\ 1234567890" n1:layout_toRightOf="@id/phone" n1:inputType="phone" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/area_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip">
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/area" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="地区" />
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|right" n1:id="@id/keep_region" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="请选择地区" n1:drawableRight="@drawable/s_icon_right_arrow_type2" n1:layout_toRightOf="@id/area" />
+                <View n1:textColorHint="@color/color_disable_gray" n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:hint="手机号" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/detail_address_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/view">
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/detail" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="详细地址" />
+                <View n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+                <EditText n1:textSize="@dimen/content_normal_size" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|left" n1:id="@id/detail_area" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="街道门牌，无重复地区信息" n1:maxLines="1" n1:singleLine="true" n1:layout_toRightOf="@id/detail" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/post_code_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/post" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="邮政编码" n1:layout_alignTop="@id/post_code" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true" />
+                <View n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+                <EditText n1:textSize="@dimen/content_normal_size" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|left" n1:id="@id/post_code" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="选填" n1:maxLines="1" n1:singleLine="true" n1:layout_toRightOf="@id/post" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/weixin_container" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center|left" n1:id="@id/weixin" n1:layout_width="90.0dip" n1:layout_height="fill_parent" n1:text="微信号" />
+                <EditText n1:textSize="@dimen/content_normal_size" n1:textColorHint="@color/color_disable_gray" n1:gravity="center|left" n1:id="@id/weixin_txt" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="选填" n1:maxLines="1" n1:singleLine="true" n1:layout_toRightOf="@id/weixin" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/weixin_container" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

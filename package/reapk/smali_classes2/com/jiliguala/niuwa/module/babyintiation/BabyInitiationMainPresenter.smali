@@ -29,7 +29,7 @@
 
 .field private mSkinDownloaded:Z
 
-.field private skinManager:Lcom/jiliguala/niuwa/logic/m/a;
+.field private skinManager:Lcom/jiliguala/niuwa/logic/n/a;
 
 
 # direct methods
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 45
+    .line 44
     const-class v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -53,7 +53,7 @@
     .locals 0
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/d;-><init>()V
 
     return-void
@@ -65,7 +65,7 @@
     .param p1, "x1"    # Ljava/util/List;
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->downloadSplash(Ljava/util/List;)V
 
     return-void
@@ -77,19 +77,19 @@
     .param p1, "x1"    # Ljava/util/List;
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->downloadSkin(Ljava/util/List;)V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/m/a;
+.method static synthetic access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)Lcom/jiliguala/niuwa/logic/n/a;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 42
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/m/a;
+    .line 41
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/n/a;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 42
+    .line 41
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->hasDownload:Z
 
     return p1
@@ -111,7 +111,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->refreshDelay()V
 
     return-void
@@ -123,7 +123,7 @@
     .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/b/a/j;
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->postShareGiftResultToServer(Lcom/jiliguala/niuwa/logic/b/a/j;)V
 
     return-void
@@ -134,7 +134,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 42
+    .line 41
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->refresh()V
 
     return-void
@@ -144,7 +144,7 @@
     .locals 4
 
     .prologue
-    .line 195
+    .line 193
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
     move-result-object v0
@@ -155,7 +155,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    .line 196
+    .line 194
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -168,15 +168,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$6;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 197
+    .line 195
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 195
+    .line 193
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 218
+    .line 216
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
     move-result-object v0
@@ -187,7 +187,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/j;
 
-    .line 219
+    .line 217
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -200,15 +200,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$8;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 220
+    .line 218
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 218
+    .line 216
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 239
+    .line 237
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
     move-result-object v0
@@ -219,7 +219,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/c;
 
-    .line 240
+    .line 238
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -228,15 +228,15 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$9;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 241
+    .line 239
     invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 239
+    .line 237
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 247
+    .line 245
     return-void
 .end method
 
@@ -253,23 +253,23 @@
     .end annotation
 
     .prologue
-    .line 93
+    .line 91
     .local p1, "skinList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;>;"
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->mSkinDownloaded:Z
 
     if-eqz v0, :cond_0
 
-    .line 110
+    .line 108
     :goto_0
     return-void
 
-    .line 96
+    .line 94
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->mSkinDownloaded:Z
 
-    .line 97
+    .line 95
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
     move-result-object v0
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    .line 98
+    .line 96
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -287,7 +287,7 @@
 
     move-result-object v1
 
-    .line 99
+    .line 97
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -300,12 +300,12 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$3;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 100
+    .line 98
     invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 97
+    .line 95
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -324,17 +324,17 @@
     .end annotation
 
     .prologue
-    .line 113
+    .line 111
     .local p1, "splashList":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;>;"
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->hasDownload:Z
 
     if-eqz v0, :cond_0
 
-    .line 130
+    .line 128
     :goto_0
     return-void
 
-    .line 116
+    .line 114
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
@@ -344,7 +344,7 @@
 
     move-result-object v1
 
-    .line 117
+    .line 115
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -353,7 +353,7 @@
 
     move-result-object v1
 
-    .line 118
+    .line 116
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -366,12 +366,12 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$4;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 119
+    .line 117
     invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 116
+    .line 114
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -385,7 +385,7 @@
 
     const/4 v3, 0x0
 
-    .line 179
+    .line 177
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v4
@@ -394,7 +394,7 @@
 
     move-result-object v0
 
-    .line 182
+    .line 180
     .local v0, "createTime":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -406,14 +406,14 @@
 
     if-eqz v4, :cond_2
 
-    .line 183
+    .line 181
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 184
+    .line 182
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/f;->c(Ljava/lang/String;)J
 
     move-result-wide v4
@@ -434,12 +434,12 @@
 
     move v1, v2
 
-    .line 185
+    .line 183
     .local v1, "isNew":Z
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 189
+    .line 187
     :goto_1
     return v2
 
@@ -447,17 +447,17 @@
     :cond_0
     move v1, v3
 
-    .line 184
+    .line 182
     goto :goto_0
 
     .restart local v1    # "isNew":Z
     :cond_1
     move v2, v3
 
-    .line 185
+    .line 183
     goto :goto_1
 
-    .line 187
+    .line 185
     .end local v1    # "isNew":Z
     :cond_2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -466,7 +466,7 @@
 
     if-nez v4, :cond_3
 
-    .line 188
+    .line 186
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/f;->c(Ljava/lang/String;)J
 
     move-result-wide v4
@@ -487,7 +487,7 @@
 
     move v1, v2
 
-    .line 189
+    .line 187
     .restart local v1    # "isNew":Z
     :goto_2
     if-eqz v1, :cond_4
@@ -500,10 +500,10 @@
     :cond_3
     move v1, v3
 
-    .line 188
+    .line 186
     goto :goto_2
 
-    .line 189
+    .line 187
     .restart local v1    # "isNew":Z
     :cond_4
     const/4 v2, 0x2
@@ -516,7 +516,7 @@
     .param p1, "event"    # Lcom/jiliguala/niuwa/logic/b/a/j;
 
     .prologue
-    .line 250
+    .line 248
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v3
@@ -525,7 +525,7 @@
 
     move-result-object v0
 
-    .line 251
+    .line 249
     .local v0, "bid":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -533,7 +533,7 @@
 
     if-nez v3, :cond_0
 
-    .line 252
+    .line 250
     new-instance v3, Lcom/jiliguala/niuwa/logic/network/json/GiftEntity;
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/b/a/j;->b()Ljava/lang/String;
@@ -546,13 +546,13 @@
 
     move-result-object v2
 
-    .line 253
+    .line 251
     .local v2, "json":Ljava/lang/String;
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v1
 
-    .line 254
+    .line 252
     .local v1, "body":Lokhttp3/ab;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
@@ -562,17 +562,17 @@
 
     move-result-object v4
 
-    .line 255
+    .line 253
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v4
 
-    .line 256
+    .line 254
     invoke-interface {v4, v1}, Lcom/jiliguala/niuwa/logic/network/d;->z(Lokhttp3/ab;)Lrx/e;
 
     move-result-object v4
 
-    .line 257
+    .line 255
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v5
@@ -581,7 +581,7 @@
 
     move-result-object v4
 
-    .line 258
+    .line 256
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v5
@@ -590,7 +590,7 @@
 
     move-result-object v4
 
-    .line 259
+    .line 257
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v5
@@ -603,15 +603,15 @@
 
     invoke-direct {v5, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$10;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 260
+    .line 258
     invoke-virtual {v4, v5}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v4
 
-    .line 254
+    .line 252
     invoke-virtual {v3, v4}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 277
+    .line 275
     .end local v1    # "body":Lokhttp3/ab;
     .end local v2    # "json":Ljava/lang/String;
     :cond_0
@@ -619,10 +619,10 @@
 .end method
 
 .method private refresh()V
-    .locals 4
+    .locals 3
 
     .prologue
-    .line 167
+    .line 165
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -631,7 +631,7 @@
 
     move-result-object v0
 
-    .line 168
+    .line 166
     .local v0, "curBabyId":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -639,31 +639,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 176
+    .line 174
     :goto_0
     return-void
 
-    .line 172
+    .line 171
     :cond_0
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;
-
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
-
-    move-result-object v2
-
-    const-string v3, "PREFS_AB_TEST_SONG"
-
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/login/a;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;->showFree(Ljava/lang/String;)V
-
-    .line 173
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -680,7 +661,7 @@
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;->showUserInfo(Ljava/lang/String;)V
 
-    .line 174
+    .line 172
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -693,7 +674,7 @@
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;->showUiOnAge(I)V
 
-    .line 175
+    .line 173
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->requestServer()V
 
     goto :goto_0
@@ -703,7 +684,7 @@
     .locals 4
 
     .prologue
-    .line 285
+    .line 283
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$2;
@@ -714,7 +695,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 291
+    .line 289
     return-void
 .end method
 
@@ -722,12 +703,12 @@
     .locals 3
 
     .prologue
-    .line 158
+    .line 156
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getAgeType()I
 
     move-result v0
 
-    .line 159
+    .line 157
     .local v0, "ageType":I
     if-eqz v0, :cond_0
 
@@ -735,7 +716,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 161
+    .line 159
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -750,11 +731,11 @@
     :goto_0
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;->showMask(Z)V
 
-    .line 163
+    .line 161
     :cond_1
     return-void
 
-    .line 161
+    .line 159
     :cond_2
     const/4 v2, 0x0
 
@@ -763,19 +744,18 @@
 
 
 # virtual methods
-.method public getSkin(Landroid/content/Context;)V
+.method public getSkin()V
     .locals 2
-    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 134
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/m/a;
+    .line 132
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/n/a;
 
-    invoke-virtual {v1, p1}, Lcom/jiliguala/niuwa/logic/m/a;->a(Landroid/content/Context;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/n/a;->a()Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
 
     move-result-object v0
 
-    .line 135
+    .line 133
     .local v0, "skin":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
     if-eqz v0, :cond_0
 
@@ -787,12 +767,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 139
+    .line 137
     :cond_0
     :goto_0
     return-void
 
-    .line 138
+    .line 136
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -809,24 +789,24 @@
     .locals 1
 
     .prologue
-    .line 142
+    .line 140
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->mHandler:Landroid/os/Handler;
 
-    .line 143
-    new-instance v0, Lcom/jiliguala/niuwa/logic/m/a;
+    .line 141
+    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
 
-    invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/m/a;-><init>()V
+    invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/n/a;-><init>()V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/m/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/n/a;
 
-    .line 144
+    .line 142
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->addEventObserver()V
 
-    .line 146
+    .line 144
     return-void
 .end method
 
@@ -834,17 +814,17 @@
     .locals 1
 
     .prologue
-    .line 149
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/m/a;
+    .line 147
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/n/a;
 
     if-eqz v0, :cond_0
 
+    .line 148
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/n/a;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->b()V
+
     .line 150
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->skinManager:Lcom/jiliguala/niuwa/logic/m/a;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/m/a;->a()V
-
-    .line 152
     :cond_0
     return-void
 .end method
@@ -853,10 +833,10 @@
     .locals 0
 
     .prologue
-    .line 281
+    .line 279
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->refresh()V
 
-    .line 282
+    .line 280
     return-void
 .end method
 
@@ -864,7 +844,7 @@
     .locals 4
 
     .prologue
-    .line 59
+    .line 57
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -873,7 +853,7 @@
 
     move-result-object v0
 
-    .line 60
+    .line 58
     .local v0, "curBabyId":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -881,27 +861,27 @@
 
     if-eqz v1, :cond_0
 
-    .line 89
+    .line 87
     :goto_0
     return-void
 
-    .line 63
+    .line 61
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSubscription()Lrx/i/b;
 
     move-result-object v1
 
-    .line 64
+    .line 62
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/g;->a()Lcom/jiliguala/niuwa/logic/network/g;
 
     move-result-object v2
 
-    .line 65
+    .line 63
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
-    .line 66
+    .line 64
     invoke-interface {v2, v0}, Lcom/jiliguala/niuwa/logic/network/d;->C(Ljava/lang/String;)Lrx/e;
 
     move-result-object v2
@@ -914,7 +894,7 @@
 
     move-result-object v2
 
-    .line 67
+    .line 65
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -923,7 +903,7 @@
 
     move-result-object v2
 
-    .line 68
+    .line 66
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -936,12 +916,12 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;)V
 
-    .line 69
+    .line 67
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 63
+    .line 61
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0

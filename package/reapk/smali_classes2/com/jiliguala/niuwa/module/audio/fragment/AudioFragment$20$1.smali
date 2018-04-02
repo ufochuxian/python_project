@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
 
     .prologue
-    .line 2312
+    .line 2325
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 2315
+    .line 2328
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -58,6 +58,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 2327
+    .line 2340
     return-void
 .end method

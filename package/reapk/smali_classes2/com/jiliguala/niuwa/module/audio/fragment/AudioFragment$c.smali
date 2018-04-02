@@ -36,17 +36,17 @@
     .param p1, "audioFragment"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2632
+    .line 2650
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2633
+    .line 2651
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$c;->a:Ljava/lang/ref/WeakReference;
 
-    .line 2634
+    .line 2652
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 4
 
     .prologue
-    .line 2639
+    .line 2657
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$c;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -68,13 +68,13 @@
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
     if-eqz v0, :cond_0
 
-    .line 2640
+    .line 2658
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)V
 
-    .line 2641
+    .line 2659
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1400(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)V
 
-    .line 2642
+    .line 2660
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2400(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;
 
     move-result-object v1
@@ -83,7 +83,7 @@
 
     invoke-virtual {v1, p0, v2, v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 2644
+    .line 2662
     :cond_0
     return-void
 .end method

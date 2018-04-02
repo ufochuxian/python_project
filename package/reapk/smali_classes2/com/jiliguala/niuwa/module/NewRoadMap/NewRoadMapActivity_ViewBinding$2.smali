@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity_ViewBinding;
 
     .prologue
-    .line 79
+    .line 81
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity_ViewBinding$2;->c:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity_ViewBinding;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity_ViewBinding$2;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
@@ -43,11 +43,11 @@
     .param p1, "p0"    # Landroid/view/View;
 
     .prologue
-    .line 82
+    .line 84
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity_ViewBinding$2;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->findLeftCurrent()V
 
-    .line 83
+    .line 85
     return-void
 .end method

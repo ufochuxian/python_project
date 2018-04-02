@@ -58,6 +58,8 @@
 
 .field private mAgeType:I
 
+.field private mApngConfig:Lcom/github/sahasbhop/a/b$a;
+
 .field private mBabyName:Landroid/widget/TextView;
 
 .field private mBigCardBg:Landroid/widget/ImageView;
@@ -85,7 +87,11 @@
     .end annotation
 .end field
 
-.field private mFree:Landroid/view/View;
+.field private mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+.field private mGuavatarEntrance:Landroid/view/View;
+
+.field private mGuavatarIcon:Landroid/widget/ImageView;
 
 .field private mGuide:Lcom/blog/www/guideview/f;
 
@@ -167,7 +173,7 @@
     .locals 1
 
     .prologue
-    .line 89
+    .line 90
     const-class v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -180,30 +186,43 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 4
 
     .prologue
-    .line 79
+    .line 80
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/c;-><init>()V
 
-    .line 108
+    .line 109
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAgeType:I
 
-    .line 109
+    .line 110
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
-    .line 113
+    .line 114
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCourseViews:Ljava/util/List;
+
+    .line 150
+    new-instance v0, Lcom/github/sahasbhop/a/b$a;
+
+    const v1, 0x7fffffff
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/github/sahasbhop/a/b$a;-><init>(IZZ)V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mApngConfig:Lcom/github/sahasbhop/a/b$a;
 
     return-void
 .end method
@@ -214,7 +233,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 79
+    .line 80
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
 
     return p1
@@ -225,19 +244,52 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .prologue
-    .line 79
+    .line 80
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;I)V
+.method static synthetic access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    .prologue
+    .line 80
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->prepareShowMask()V
+
+    return-void
+.end method
+
+.method static synthetic access$300(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/blog/www/guideview/f;
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    .prologue
+    .line 80
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
+
+    return-object v0
+.end method
+
+.method static synthetic access$400(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    .prologue
+    .line 80
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goGuavatar()V
+
+    return-void
+.end method
+
+.method static synthetic access$500(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;I)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
     .param p1, "x1"    # I
 
     .prologue
-    .line 79
+    .line 80
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->reportRecommendBarClick(I)V
 
     return-void
@@ -247,7 +299,7 @@
     .locals 2
 
     .prologue
-    .line 863
+    .line 1073
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
@@ -258,7 +310,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 865
+    .line 1075
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v0
@@ -269,7 +321,18 @@
 
     if-nez v0, :cond_0
 
-    .line 866
+    .line 1076
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowGuavatarMask()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
+
+    if-nez v0, :cond_0
+
+    .line 1077
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
@@ -280,12 +343,12 @@
 
     invoke-static {v0, p0, v1}, Lcom/jiliguala/niuwa/common/util/c/a;->a(Landroid/support/v4/app/ag;Landroid/support/v4/app/Fragment;Landroid/app/Activity;)V
 
-    .line 879
+    .line 1090
     :cond_0
     :goto_0
     return-void
 
-    .line 868
+    .line 1079
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -297,14 +360,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 870
+    .line 1081
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowParentHomeMask()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 871
+    .line 1082
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
@@ -317,7 +380,7 @@
 
     goto :goto_0
 
-    .line 875
+    .line 1086
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowBabyHomeMask()Z
 
@@ -325,7 +388,7 @@
 
     if-nez v0, :cond_0
 
-    .line 876
+    .line 1087
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
@@ -343,7 +406,7 @@
     .locals 3
 
     .prologue
-    .line 667
+    .line 822
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -354,7 +417,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/module/NewRoadMap/BuyUtil;->goByOneVOneCourse(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 668
+    .line 823
     return-void
 .end method
 
@@ -362,7 +425,7 @@
     .locals 3
 
     .prologue
-    .line 663
+    .line 818
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -389,15 +452,168 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 664
+    .line 819
     return-void
+.end method
+
+.method private goGuavatar()V
+    .locals 5
+
+    .prologue
+    .line 790
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    if-eqz v3, :cond_1
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    if-eqz v3, :cond_1
+
+    .line 791
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 792
+    .local v0, "intent":Landroid/content/Intent;
+    const-string v3, "rid"
+
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v4, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    iget-object v4, v4, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->_id:Ljava/lang/String;
+
+    invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 793
+    const-string v3, "typ"
+
+    const-string v4, "guagua"
+
+    invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 794
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    const-class v4, Lcom/jiliguala/niuwa/module/game/GuavatarActivity;
+
+    invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    .line 795
+    invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->startActivity(Landroid/content/Intent;)V
+
+    .line 797
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 798
+    .local v1, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v2, ""
+
+    .line 799
+    .local v2, "state":Ljava/lang/String;
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isSatisfy()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 800
+    const-string v2, "sing"
+
+    .line 808
+    :cond_0
+    :goto_0
+    const-string v3, "State"
+
+    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 809
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v3
+
+    const-string v4, "Guavatar Entry"
+
+    invoke-virtual {v3, v4, v1}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 811
+    .end local v0    # "intent":Landroid/content/Intent;
+    .end local v1    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    .end local v2    # "state":Ljava/lang/String;
+    :cond_1
+    return-void
+
+    .line 801
+    .restart local v0    # "intent":Landroid/content/Intent;
+    .restart local v1    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    .restart local v2    # "state":Ljava/lang/String;
+    :cond_2
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isNeed()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 802
+    const-string v2, "hungry"
+
+    goto :goto_0
+
+    .line 803
+    :cond_3
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isNecessary()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    .line 804
+    const-string v2, "very hungry"
+
+    goto :goto_0
+
+    .line 805
+    :cond_4
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isSleep()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 806
+    const-string v2, "sleep"
+
+    goto :goto_0
 .end method
 
 .method private goMc()V
     .locals 3
 
     .prologue
-    .line 708
+    .line 863
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     if-eqz v1, :cond_0
@@ -408,7 +624,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 709
+    .line 864
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
@@ -421,7 +637,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 710
+    .line 865
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
@@ -432,7 +648,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 711
+    .line 866
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "type"
 
@@ -440,7 +656,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 712
+    .line 867
     const-string v1, "server_lv"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -451,16 +667,16 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 713
+    .line 868
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 727
+    .line 882
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 714
+    .line 869
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
@@ -474,7 +690,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 715
+    .line 870
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
@@ -485,7 +701,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 716
+    .line 871
     .restart local v0    # "intent":Landroid/content/Intent;
     const-string v1, "type"
 
@@ -493,7 +709,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 717
+    .line 872
     const-string v1, "server_lv"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -504,12 +720,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 718
+    .line 873
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 720
+    .line 875
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_2
     new-instance v0, Landroid/content/Intent;
@@ -522,20 +738,20 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 721
+    .line 876
     .restart local v0    # "intent":Landroid/content/Intent;
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 722
+    .line 877
     const-string v1, "type"
 
     const-string v2, "MC"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 723
+    .line 878
     const-string v1, "server_lv"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -546,7 +762,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 724
+    .line 879
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -560,18 +776,18 @@
     .locals 3
 
     .prologue
-    .line 730
+    .line 885
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     if-eqz v1, :cond_0
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
-    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->ph:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$PhBean;
 
     if-eqz v1, :cond_0
 
-    .line 731
+    .line 886
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
@@ -582,7 +798,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 732
+    .line 887
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "type"
 
@@ -590,7 +806,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 733
+    .line 888
     const-string v1, "server_lv"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -601,10 +817,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 734
+    .line 889
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 736
+    .line 891
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
@@ -614,7 +830,7 @@
     .locals 7
 
     .prologue
-    .line 768
+    .line 923
     :try_start_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
 
@@ -630,7 +846,7 @@
 
     move-result-object v1
 
-    .line 769
+    .line 924
     .local v1, "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
@@ -640,48 +856,48 @@
 
     move-result-object v2
 
-    .line 770
+    .line 925
     .local v2, "ft":Landroid/support/v4/app/an;
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
-    .line 774
+    .line 929
     invoke-virtual {v1}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 775
-    const v3, 0x7f090478
+    .line 930
+    const v3, 0x7f090481
 
     sget-object v4, Lcom/jiliguala/niuwa/module/qualitycourse/QualityCourseFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v1, v4}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 776
+    .line 931
     sget-object v3, Lcom/jiliguala/niuwa/module/qualitycourse/QualityCourseFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 780
+    .line 935
     :goto_0
     invoke-virtual {v2}, Landroid/support/v4/app/an;->i()I
 
-    .line 784
+    .line 939
     .end local v1    # "fragment":Landroid/support/v4/app/Fragment;
     .end local v2    # "ft":Landroid/support/v4/app/an;
     :goto_1
     return-void
 
-    .line 778
+    .line 933
     .restart local v1    # "fragment":Landroid/support/v4/app/Fragment;
     .restart local v2    # "ft":Landroid/support/v4/app/an;
     :cond_0
@@ -691,13 +907,13 @@
 
     goto :goto_0
 
-    .line 781
+    .line 936
     .end local v1    # "fragment":Landroid/support/v4/app/Fragment;
     .end local v2    # "ft":Landroid/support/v4/app/an;
     :catch_0
     move-exception v0
 
-    .line 782
+    .line 937
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -708,12 +924,12 @@
     .locals 4
 
     .prologue
-    .line 686
+    .line 841
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 687
+    .line 842
     .local v0, "audioIntent":Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -723,25 +939,25 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 688
+    .line 843
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 689
+    .line 844
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 690
+    .line 845
     return-void
 .end method
 
@@ -749,7 +965,7 @@
     .locals 8
 
     .prologue
-    .line 740
+    .line 895
     :try_start_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
 
@@ -765,20 +981,20 @@
 
     move-result-object v2
 
-    .line 741
+    .line 896
     .local v2, "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 742
+    .line 897
     .local v0, "arguments":Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 743
+    .line 898
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    .line 747
+    .line 902
     :goto_0
     const-string v4, "source"
 
@@ -786,10 +1002,10 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 748
+    .line 903
     invoke-virtual {v2, v0}, Landroid/support/v4/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 749
+    .line 904
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v4
@@ -798,49 +1014,49 @@
 
     move-result-object v3
 
-    .line 750
+    .line 905
     .local v3, "ft":Landroid/support/v4/app/an;
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
-    const v7, 0x7f01001e
+    const v7, 0x7f010020
 
     invoke-virtual {v3, v4, v5, v6, v7}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
-    .line 754
+    .line 909
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 755
-    const v4, 0x7f090478
+    .line 910
+    const v4, 0x7f090481
 
     sget-object v5, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v2, v5}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 756
+    .line 911
     sget-object v4, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 760
+    .line 915
     :goto_1
     invoke-virtual {v3}, Landroid/support/v4/app/an;->i()I
 
-    .line 764
+    .line 919
     .end local v0    # "arguments":Landroid/os/Bundle;
     .end local v2    # "fragment":Landroid/support/v4/app/Fragment;
     .end local v3    # "ft":Landroid/support/v4/app/an;
     :goto_2
     return-void
 
-    .line 745
+    .line 900
     .restart local v0    # "arguments":Landroid/os/Bundle;
     .restart local v2    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_0
@@ -852,7 +1068,7 @@
     .restart local v0    # "arguments":Landroid/os/Bundle;
     goto :goto_0
 
-    .line 758
+    .line 913
     .restart local v3    # "ft":Landroid/support/v4/app/an;
     :cond_1
     invoke-virtual {v3, v2}, Landroid/support/v4/app/an;->c(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/an;
@@ -861,14 +1077,14 @@
 
     goto :goto_1
 
-    .line 761
+    .line 916
     .end local v0    # "arguments":Landroid/os/Bundle;
     .end local v2    # "fragment":Landroid/support/v4/app/Fragment;
     .end local v3    # "ft":Landroid/support/v4/app/an;
     :catch_0
     move-exception v1
 
-    .line 762
+    .line 917
     .local v1, "e":Ljava/lang/Exception;
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -879,12 +1095,12 @@
     .locals 4
 
     .prologue
-    .line 693
+    .line 848
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 694
+    .line 849
     .local v0, "audioIntent":Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -894,25 +1110,25 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 695
+    .line 850
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 696
+    .line 851
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 697
+    .line 852
     return-void
 .end method
 
@@ -920,12 +1136,12 @@
     .locals 4
 
     .prologue
-    .line 679
+    .line 834
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 680
+    .line 835
     .local v0, "flashcardIntent":Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
 
@@ -935,21 +1151,21 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 681
+    .line 836
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 682
+    .line 837
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 683
+    .line 838
     return-void
 .end method
 
@@ -957,12 +1173,12 @@
     .locals 4
 
     .prologue
-    .line 700
+    .line 855
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 701
+    .line 856
     .local v0, "videoIntent":Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -972,32 +1188,32 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 702
+    .line 857
     const-string v1, "IS_WATCH"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 703
+    .line 858
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 704
+    .line 859
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 705
+    .line 860
     return-void
 .end method
 
@@ -1005,14 +1221,14 @@
     .locals 2
 
     .prologue
-    .line 659
+    .line 814
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->redDot:Landroid/widget/TextView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 660
+    .line 815
     return-void
 .end method
 
@@ -1021,12 +1237,12 @@
     .param p1, "vp"    # Landroid/view/ViewGroup;
 
     .prologue
-    .line 509
+    .line 630
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
-    .line 510
+    .line 631
     .local v0, "childCount":I
     const/4 v2, 0x0
 
@@ -1034,22 +1250,22 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 511
+    .line 632
     invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 512
+    .line 633
     .local v1, "convertView":Landroid/view/ViewGroup;
     new-instance v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
 
     invoke-direct {v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;-><init>()V
 
-    .line 513
+    .line 634
     .local v3, "viewHolder":Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
-    const v4, 0x7f090273
+    const v4, 0x7f090278
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1059,7 +1275,7 @@
 
     iput-object v4, v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->a:Landroid/widget/ImageView;
 
-    .line 514
+    .line 635
     const v4, 0x7f0901e4
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1070,7 +1286,7 @@
 
     iput-object v4, v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->b:Landroid/widget/TextView;
 
-    .line 515
+    .line 636
     const v4, 0x7f090135
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1081,7 +1297,7 @@
 
     iput-object v4, v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->c:Landroid/widget/TextView;
 
-    .line 516
+    .line 637
     const v4, 0x7f0901be
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1092,7 +1308,7 @@
 
     iput-object v4, v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->d:Landroid/widget/ImageView;
 
-    .line 517
+    .line 638
     const v4, 0x7f09016c
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1103,20 +1319,20 @@
 
     iput-object v4, v3, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->e:Landroid/widget/ImageView;
 
-    .line 518
+    .line 639
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setTag(Ljava/lang/Object;)V
 
-    .line 519
+    .line 640
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCourseViews:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 510
+    .line 631
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 521
+    .line 642
     .end local v1    # "convertView":Landroid/view/ViewGroup;
     .end local v3    # "viewHolder":Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
     :cond_0
@@ -1130,8 +1346,8 @@
     .prologue
     const v1, 0x7f090028
 
-    .line 429
-    const v0, 0x7f090267
+    .line 546
+    const v0, 0x7f09026c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1141,8 +1357,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScrollview:Landroid/widget/ScrollView;
 
-    .line 430
-    const v0, 0x7f09030b
+    .line 547
+    const v0, 0x7f090312
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1150,7 +1366,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 431
+    .line 548
     const v0, 0x7f090091
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1161,7 +1377,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mBabyName:Landroid/widget/TextView;
 
-    .line 432
+    .line 549
     const v0, 0x7f090122
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1172,7 +1388,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->redDot:Landroid/widget/TextView;
 
-    .line 435
+    .line 552
     const v0, 0x7f0900a4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1183,13 +1399,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mBigCardBg:Landroid/widget/ImageView;
 
-    .line 436
+    .line 553
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mBigCardBg:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 437
-    const v0, 0x7f0902b1
+    .line 554
+    const v0, 0x7f0902b7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1199,8 +1415,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeTitle:Landroid/widget/TextView;
 
-    .line 438
-    const v0, 0x7f0902b0
+    .line 555
+    const v0, 0x7f0902b6
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1210,8 +1426,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeLevel:Landroid/widget/TextView;
 
-    .line 439
-    const v0, 0x7f0902ae
+    .line 556
+    const v0, 0x7f0902b4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1221,8 +1437,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeCurrent:Landroid/widget/TextView;
 
-    .line 440
-    const v0, 0x7f0902b2
+    .line 557
+    const v0, 0x7f0902b8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1232,8 +1448,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeTtl:Landroid/widget/TextView;
 
-    .line 441
-    const v0, 0x7f0902af
+    .line 558
+    const v0, 0x7f0902b5
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1243,8 +1459,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeIcon:Landroid/widget/ImageView;
 
-    .line 442
-    const v0, 0x7f0905b3
+    .line 559
+    const v0, 0x7f0905bd
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1254,8 +1470,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
 
-    .line 443
-    const v0, 0x7f09030c
+    .line 560
+    const v0, 0x7f090313
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1263,13 +1479,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeShadow:Landroid/view/View;
 
-    .line 444
+    .line 561
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeShadow:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 446
-    const v0, 0x7f090316
+    .line 563
+    const v0, 0x7f09031d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1279,13 +1495,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcContainer:Landroid/widget/RelativeLayout;
 
-    .line 447
+    .line 564
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 448
-    const v0, 0x7f09031f
+    .line 565
+    const v0, 0x7f090326
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1295,8 +1511,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcTitle:Landroid/widget/TextView;
 
-    .line 449
-    const v0, 0x7f09031c
+    .line 566
+    const v0, 0x7f090323
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1306,8 +1522,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcLevel:Landroid/widget/TextView;
 
-    .line 450
-    const v0, 0x7f090319
+    .line 567
+    const v0, 0x7f090320
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1317,8 +1533,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCurrent:Landroid/widget/TextView;
 
-    .line 451
-    const v0, 0x7f090318
+    .line 568
+    const v0, 0x7f09031f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1328,8 +1544,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCourseTtl:Landroid/widget/TextView;
 
-    .line 452
-    const v0, 0x7f09031a
+    .line 569
+    const v0, 0x7f090321
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1339,8 +1555,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcIcon:Landroid/widget/ImageView;
 
-    .line 453
-    const v0, 0x7f090315
+    .line 570
+    const v0, 0x7f09031c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1350,8 +1566,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCardBg:Landroid/widget/ImageView;
 
-    .line 455
-    const v0, 0x7f0903cb
+    .line 572
+    const v0, 0x7f0903d2
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1361,13 +1577,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhContainer:Landroid/widget/RelativeLayout;
 
-    .line 456
+    .line 573
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 457
-    const v0, 0x7f0903db
+    .line 574
+    const v0, 0x7f0903e2
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1377,8 +1593,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCardBg:Landroid/widget/ImageView;
 
-    .line 458
-    const v0, 0x7f0903d2
+    .line 575
+    const v0, 0x7f0903d9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1388,8 +1604,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhLevel:Landroid/widget/TextView;
 
-    .line 459
-    const v0, 0x7f0903cf
+    .line 576
+    const v0, 0x7f0903d6
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1399,8 +1615,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCurrent:Landroid/widget/TextView;
 
-    .line 460
-    const v0, 0x7f0903ce
+    .line 577
+    const v0, 0x7f0903d5
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1410,8 +1626,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCourseTtl:Landroid/widget/TextView;
 
-    .line 461
-    const v0, 0x7f0903d0
+    .line 578
+    const v0, 0x7f0903d7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1421,8 +1637,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhIcon:Landroid/widget/ImageView;
 
-    .line 463
-    const v0, 0x7f09033e
+    .line 580
+    const v0, 0x7f090345
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1430,8 +1646,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMinutes5Container:Landroid/view/View;
 
-    .line 465
-    const v0, 0x7f0902d7
+    .line 582
+    const v0, 0x7f0902dd
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1441,8 +1657,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenBg:Landroid/widget/ImageView;
 
-    .line 466
-    const v0, 0x7f090606
+    .line 583
+    const v0, 0x7f090610
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1452,8 +1668,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mWatchBg:Landroid/widget/ImageView;
 
-    .line 467
-    const v0, 0x7f0903e9
+    .line 584
+    const v0, 0x7f0903f0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1463,8 +1679,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPlayBg:Landroid/widget/ImageView;
 
-    .line 468
-    const v0, 0x7f09042c
+    .line 585
+    const v0, 0x7f090433
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1474,8 +1690,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mReadingBg:Landroid/widget/ImageView;
 
-    .line 470
-    const v0, 0x7f0902d8
+    .line 587
+    const v0, 0x7f0902de
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1485,8 +1701,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenText:Landroid/widget/TextView;
 
-    .line 471
-    const v0, 0x7f090607
+    .line 588
+    const v0, 0x7f090611
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1496,8 +1712,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mWatchText:Landroid/widget/TextView;
 
-    .line 472
-    const v0, 0x7f0903ed
+    .line 589
+    const v0, 0x7f0903f4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1507,8 +1723,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPlayText:Landroid/widget/TextView;
 
-    .line 473
-    const v0, 0x7f09042d
+    .line 590
+    const v0, 0x7f090434
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1518,26 +1734,26 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mReadingText:Landroid/widget/TextView;
 
-    .line 475
+    .line 592
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 476
+    .line 593
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenView:Landroid/view/View;
 
-    .line 477
+    .line 594
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenView:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 478
+    .line 595
     const v0, 0x7f09003c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1546,7 +1762,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 479
+    .line 596
     const v0, 0x7f090032
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1555,7 +1771,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 480
+    .line 597
     const v0, 0x7f090035
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1564,7 +1780,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 482
+    .line 599
     const v0, 0x7f090012
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1575,8 +1791,8 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
-    .line 483
-    const v0, 0x7f0903a3
+    .line 600
+    const v0, 0x7f0903aa
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1586,12 +1802,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
-    .line 484
+    .line 601
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 486
+    .line 603
     const v0, 0x7f09002e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1600,12 +1816,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mActionMore:Landroid/view/View;
 
-    .line 487
+    .line 604
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mActionMore:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 489
+    .line 606
     const v0, 0x7f09016f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1616,12 +1832,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC1:Landroid/view/ViewGroup;
 
-    .line 490
+    .line 607
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC1:Landroid/view/ViewGroup;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->initCourse(Landroid/view/ViewGroup;)V
 
-    .line 491
+    .line 608
     const v0, 0x7f090170
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1632,12 +1848,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC2:Landroid/view/ViewGroup;
 
-    .line 492
+    .line 609
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC2:Landroid/view/ViewGroup;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->initCourse(Landroid/view/ViewGroup;)V
 
-    .line 493
+    .line 610
     const v0, 0x7f090171
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1648,12 +1864,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC3:Landroid/view/ViewGroup;
 
-    .line 494
+    .line 611
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC3:Landroid/view/ViewGroup;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->initCourse(Landroid/view/ViewGroup;)V
 
-    .line 496
+    .line 613
     const v0, 0x7f09013f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1664,29 +1880,41 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassRedDot:Landroid/widget/ImageView;
 
-    .line 497
-    const v0, 0x7f09022c
+    .line 615
+    const v0, 0x7f09024d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mFree:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarEntrance:Landroid/view/View;
 
-    .line 498
+    .line 616
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarEntrance:Landroid/view/View;
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 617
+    const v0, 0x7f09024e
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarIcon:Landroid/widget/ImageView;
+
+    .line 619
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
 
     check-cast v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSkin()V
 
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getSkin(Landroid/content/Context;)V
-
-    .line 499
+    .line 620
     return-void
 .end method
 
@@ -1696,7 +1924,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 604
+    .line 732
     iget v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAgeType:I
 
     if-eq v1, v0, :cond_0
@@ -1723,7 +1951,7 @@
 
     const/4 v2, 0x0
 
-    .line 383
+    .line 425
     :try_start_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1767,24 +1995,76 @@
 
     if-nez v3, :cond_0
 
-    .line 385
+    .line 427
     :goto_0
     return v1
 
     :cond_0
     move v1, v2
 
-    .line 383
+    .line 425
     goto :goto_0
 
-    .line 384
+    .line 426
     :catch_0
     move-exception v0
 
     .local v0, "e":Ljava/lang/Exception;
     move v1, v2
 
-    .line 385
+    .line 427
+    goto :goto_0
+.end method
+
+.method private isNeedShowGuavatarMask()Z
+    .locals 3
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 433
+    :try_start_0
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/login/a;->V()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    if-eqz v2, :cond_0
+
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/util/n;->h()Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const/4 v1, 0x1
+
+    .line 435
+    :cond_0
+    :goto_0
+    return v1
+
+    .line 434
+    :catch_0
+    move-exception v0
+
+    .line 435
+    .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
 
@@ -1796,7 +2076,7 @@
 
     const/4 v2, 0x0
 
-    .line 375
+    .line 417
     :try_start_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1840,24 +2120,24 @@
 
     if-nez v3, :cond_0
 
-    .line 377
+    .line 419
     :goto_0
     return v1
 
     :cond_0
     move v1, v2
 
-    .line 375
+    .line 417
     goto :goto_0
 
-    .line 376
+    .line 418
     :catch_0
     move-exception v0
 
     .local v0, "e":Ljava/lang/Exception;
     move v1, v2
 
-    .line 377
+    .line 419
     goto :goto_0
 .end method
 
@@ -1867,7 +2147,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 599
+    .line 727
     iget v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAgeType:I
 
     if-eq v1, v0, :cond_0
@@ -1888,13 +2168,37 @@
     goto :goto_0
 .end method
 
+.method private isOneVOneShow()Z
+    .locals 1
+
+    .prologue
+    .line 534
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
+
+    invoke-virtual {v0}, Landroid/widget/RelativeLayout;->getVisibility()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method private loadImage(Landroid/widget/ImageView;Ljava/lang/String;)V
     .locals 2
     .param p1, "imageView"    # Landroid/widget/ImageView;
     .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 889
+    .line 1100
     invoke-virtual {p1}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
 
     move-result-object v0
@@ -1911,13 +2215,13 @@
 
     if-nez v0, :cond_1
 
-    .line 890
+    .line 1101
     :cond_0
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v0
 
-    .line 892
+    .line 1103
     invoke-static {}, Lcom/jiliguala/niuwa/logic/e/a;->a()Lcom/jiliguala/niuwa/logic/e/a;
 
     move-result-object v1
@@ -1926,13 +2230,13 @@
 
     move-result-object v1
 
-    .line 890
+    .line 1101
     invoke-virtual {v0, p2, p1, v1}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;)V
 
-    .line 893
+    .line 1104
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 895
+    .line 1106
     :cond_1
     return-void
 .end method
@@ -1941,7 +2245,7 @@
     .locals 1
 
     .prologue
-    .line 398
+    .line 448
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
 
     if-nez v0, :cond_0
@@ -1952,7 +2256,7 @@
 
     if-nez v0, :cond_0
 
-    .line 400
+    .line 450
     :try_start_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1962,9 +2266,9 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 401
+    .line 451
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v0
@@ -1973,7 +2277,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
@@ -1985,18 +2289,41 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 402
+    .line 452
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuideView()V
 
-    .line 419
+    .line 474
     :cond_0
     :goto_0
     return-void
 
-    .line 409
+    .line 460
     :cond_1
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/n;->h()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 461
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuavatarMask()V
+
+    goto :goto_0
+
+    .line 470
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+
+    .line 464
+    :cond_2
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
@@ -2005,21 +2332,15 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    .line 410
+    .line 465
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showParentHomeMask()V
 
     goto :goto_0
 
-    .line 415
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
-
-    .line 412
-    :cond_2
+    .line 467
+    :cond_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showBabyHomeMask()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2033,19 +2354,19 @@
     .param p2, "width"    # I
 
     .prologue
-    .line 503
+    .line 624
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 504
+    .line 625
     .local v0, "layoutParams":Landroid/view/ViewGroup$LayoutParams;
     iput p2, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 505
+    .line 626
     invoke-virtual {p1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 506
+    .line 627
     return-void
 .end method
 
@@ -2053,10 +2374,10 @@
     .locals 3
 
     .prologue
-    .line 181
+    .line 187
     const-string v0, "none"
 
-    .line 182
+    .line 188
     .local v0, "guideValue":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -2068,7 +2389,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 183
+    .line 189
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v1
@@ -2079,10 +2400,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 184
+    .line 190
     const-string v0, "1"
 
-    .line 189
+    .line 195
     :cond_0
     :goto_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
@@ -2093,10 +2414,10 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 190
+    .line 196
     return-void
 
-    .line 186
+    .line 192
     :cond_1
     const-string v0, "0"
 
@@ -2108,12 +2429,12 @@
     .param p1, "pos"    # I
 
     .prologue
-    .line 882
+    .line 1093
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 883
+    .line 1094
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "Position"
 
@@ -2123,7 +2444,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 884
+    .line 1095
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -2132,7 +2453,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 886
+    .line 1097
     return-void
 .end method
 
@@ -2140,7 +2461,7 @@
     .locals 3
 
     .prologue
-    .line 422
+    .line 539
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2149,7 +2470,7 @@
 
     move-result-object v0
 
-    .line 424
+    .line 541
     .local v0, "absoluteAge":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
@@ -2159,15 +2480,41 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 426
+    .line 543
     return-void
+.end method
+
+.method private resumeApng()V
+    .locals 2
+
+    .prologue
+    .line 1067
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarIcon:Landroid/widget/ImageView;
+
+    invoke-static {v1}, Lcom/github/sahasbhop/a/a;->a(Landroid/view/View;)Lcom/github/sahasbhop/a/a;
+
+    move-result-object v0
+
+    .line 1068
+    .local v0, "apngDrawable":Lcom/github/sahasbhop/a/a;
+    if-nez v0, :cond_0
+
+    .line 1070
+    :goto_0
+    return-void
+
+    .line 1069
+    :cond_0
+    invoke-virtual {v0}, Lcom/github/sahasbhop/a/a;->start()V
+
+    goto :goto_0
 .end method
 
 .method private scrollToSong()V
     .locals 5
 
     .prologue
-    .line 257
+    .line 285
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mRootView:Landroid/view/View;
 
     if-eqz v2, :cond_0
@@ -2176,12 +2523,12 @@
 
     if-nez v2, :cond_1
 
-    .line 266
+    .line 294
     :cond_0
     :goto_0
     return-void
 
-    .line 260
+    .line 288
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mRootView:Landroid/view/View;
 
@@ -2189,7 +2536,7 @@
 
     move-result v1
 
-    .line 261
+    .line 289
     .local v1, "height":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMinutes5Container:Landroid/view/View;
 
@@ -2197,11 +2544,11 @@
 
     move-result v0
 
-    .line 263
+    .line 291
     .local v0, "bottom":I
     if-le v0, v1, :cond_0
 
-    .line 264
+    .line 292
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScrollview:Landroid/widget/ScrollView;
 
     const/4 v3, 0x0
@@ -2213,70 +2560,563 @@
     goto :goto_0
 .end method
 
-.method private setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-    .locals 1
+.method private setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 3
     .param p1, "iv"    # Landroid/widget/ImageView;
     .param p2, "path"    # Ljava/lang/String;
-    .param p3, "errResId"    # I
+    .param p3, "name"    # Ljava/lang/String;
+    .param p4, "errResId"    # I
 
     .prologue
-    .line 574
+    .line 695
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 703
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 698
+    :cond_1
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/Fragment;)Lcom/bumptech/glide/o;
 
     move-result-object v0
 
-    .line 575
-    invoke-virtual {v0, p2}, Lcom/bumptech/glide/o;->a(Ljava/lang/String;)Lcom/bumptech/glide/g;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 699
+    invoke-virtual {v0, v1}, Lcom/bumptech/glide/o;->a(Ljava/lang/String;)Lcom/bumptech/glide/g;
 
     move-result-object v0
 
-    .line 576
-    invoke-virtual {v0, p3}, Lcom/bumptech/glide/g;->j(I)Lcom/bumptech/glide/f;
+    .line 700
+    invoke-virtual {v0, p4}, Lcom/bumptech/glide/g;->j(I)Lcom/bumptech/glide/f;
 
     move-result-object v0
 
-    .line 577
+    .line 701
     invoke-virtual {v0}, Lcom/bumptech/glide/f;->g()Lcom/bumptech/glide/f;
 
     move-result-object v0
 
-    .line 578
+    .line 702
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 579
-    return-void
+    goto :goto_0
 .end method
 
-.method private setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
-    .locals 2
+.method private setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 3
     .param p1, "tv"    # Landroid/widget/TextView;
     .param p2, "path"    # Ljava/lang/String;
+    .param p3, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 582
+    .line 706
+    invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 724
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 709
+    :cond_1
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/Fragment;)Lcom/bumptech/glide/o;
 
     move-result-object v0
 
-    .line 583
-    invoke-virtual {v0, p2}, Lcom/bumptech/glide/o;->a(Ljava/lang/String;)Lcom/bumptech/glide/g;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 710
+    invoke-virtual {v0, v1}, Lcom/bumptech/glide/o;->a(Ljava/lang/String;)Lcom/bumptech/glide/g;
 
     move-result-object v0
 
-    .line 584
+    .line 711
     invoke-virtual {v0}, Lcom/bumptech/glide/g;->j()Lcom/bumptech/glide/c;
 
     move-result-object v0
 
+    .line 712
+    invoke-virtual {v0}, Lcom/bumptech/glide/c;->h()Lcom/bumptech/glide/b;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$4;
+
+    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$4;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Landroid/widget/TextView;)V
+
+    .line 713
+    invoke-virtual {v0, v1}, Lcom/bumptech/glide/b;->b(Lcom/bumptech/glide/g/b/m;)Lcom/bumptech/glide/g/b/m;
+
+    goto :goto_0
+.end method
+
+.method private showApng(Ljava/lang/String;)V
+    .locals 6
+    .param p1, "uri"    # Ljava/lang/String;
+
+    .prologue
+    .line 1043
+    const/4 v1, 0x0
+
+    .line 1044
+    .local v1, "isSame":Z
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarIcon:Landroid/widget/ImageView;
+
+    invoke-static {v3}, Lcom/github/sahasbhop/a/a;->a(Landroid/view/View;)Lcom/github/sahasbhop/a/a;
+
+    move-result-object v0
+
+    .line 1045
+    .local v0, "apngDrawable":Lcom/github/sahasbhop/a/a;
+    if-eqz v0, :cond_0
+
+    .line 1046
+    invoke-virtual {v0}, Lcom/github/sahasbhop/a/a;->e()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 1047
+    .local v2, "resourceUri":Ljava/lang/String;
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 1048
+    const/4 v1, 0x1
+
+    .line 1051
+    .end local v2    # "resourceUri":Ljava/lang/String;
+    :cond_0
+    if-nez v1, :cond_1
+
+    .line 1052
+    invoke-static {}, Lcom/github/sahasbhop/a/b;->a()Lcom/github/sahasbhop/a/b;
+
+    move-result-object v3
+
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarIcon:Landroid/widget/ImageView;
+
+    iget-object v5, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mApngConfig:Lcom/github/sahasbhop/a/b$a;
+
+    invoke-virtual {v3, p1, v4, v5}, Lcom/github/sahasbhop/a/b;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/github/sahasbhop/a/b$a;)V
+
+    .line 1056
+    :goto_0
+    return-void
+
+    .line 1054
+    :cond_1
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->resumeApng()V
+
+    goto :goto_0
+.end method
+
+.method private showGuavatar(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;)V
+    .locals 3
+    .param p1, "dataBean"    # Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1021
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    if-eqz v2, :cond_1
+
+    const/4 v0, 0x1
+
+    .line 1023
+    .local v0, "hasGuavatar":Z
+    :goto_0
+    if-eqz v0, :cond_5
+
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isHighAge()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    .line 1024
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarEntrance:Landroid/view/View;
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1025
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->stopApng()V
+
+    .line 1027
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isNecessary()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 1028
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->getNecessaryUri()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showApng(Ljava/lang/String;)V
+
+    .line 1040
+    :cond_0
+    :goto_1
+    return-void
+
+    .end local v0    # "hasGuavatar":Z
+    :cond_1
+    move v0, v1
+
+    .line 1021
+    goto :goto_0
+
+    .line 1029
+    .restart local v0    # "hasGuavatar":Z
+    :cond_2
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isNeed()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 1030
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->getNeedUri()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showApng(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 1031
+    :cond_3
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isSatisfy()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    .line 1032
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->getSatisfyUri()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showApng(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 1033
+    :cond_4
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->isSleep()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 1034
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;->getSleepUri()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showApng(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 1037
+    :cond_5
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->stopApng()V
+
+    .line 1038
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarEntrance:Landroid/view/View;
+
+    const/4 v2, 0x4
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_1
+.end method
+
+.method private showGuavatarGuideView()V
+    .locals 5
+
+    .prologue
+    const/4 v4, 0x0
+
+    const/4 v3, 0x1
+
+    .line 478
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->scrollToTop()V
+
+    .line 479
+    new-instance v0, Lcom/blog/www/guideview/g;
+
+    invoke-direct {v0}, Lcom/blog/www/guideview/g;-><init>()V
+
+    .line 480
+    .local v0, "builder":Lcom/blog/www/guideview/g;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarEntrance:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Lcom/blog/www/guideview/g;->a(Landroid/view/View;)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    const v2, 0x7f09024d
+
+    .line 481
+    invoke-virtual {v1, v2}, Lcom/blog/www/guideview/g;->c(I)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    const/16 v2, 0xc8
+
+    .line 482
+    invoke-virtual {v1, v2}, Lcom/blog/www/guideview/g;->a(I)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    .line 483
+    invoke-virtual {v1, v4}, Lcom/blog/www/guideview/g;->d(Z)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    .line 484
+    invoke-virtual {v1, v3}, Lcom/blog/www/guideview/g;->b(Z)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    .line 485
+    invoke-virtual {v1, v3}, Lcom/blog/www/guideview/g;->e(I)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    .line 486
+    invoke-virtual {v1, v4}, Lcom/blog/www/guideview/g;->c(Z)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    .line 487
+    invoke-virtual {v1, v3}, Lcom/blog/www/guideview/g;->e(Z)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenWidth:I
+
+    .line 488
+    invoke-virtual {v1, v2}, Lcom/blog/www/guideview/g;->g(I)Lcom/blog/www/guideview/g;
+
+    move-result-object v1
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenHeight:I
+
+    .line 489
+    invoke-virtual {v1, v2}, Lcom/blog/www/guideview/g;->h(I)Lcom/blog/www/guideview/g;
+
+    .line 490
     new-instance v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;
 
-    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Landroid/widget/TextView;)V
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
 
-    .line 585
-    invoke-virtual {v0, v1}, Lcom/bumptech/glide/c;->b(Lcom/bumptech/glide/g/b/m;)Lcom/bumptech/glide/g/b/m;
+    invoke-virtual {v0, v1}, Lcom/blog/www/guideview/g;->a(Lcom/blog/www/guideview/g$a;)Lcom/blog/www/guideview/g;
 
-    .line 596
+    .line 514
+    new-instance v1, Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isOneVOneShow()Z
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;-><init>(Z)V
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    .line 515
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    new-instance v2, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;
+
+    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;->setOnClickListener(Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent$OnClickListener;)V
+
+    .line 525
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    invoke-virtual {v0, v1}, Lcom/blog/www/guideview/g;->a(Lcom/blog/www/guideview/d;)Lcom/blog/www/guideview/g;
+
+    .line 526
+    invoke-virtual {v0}, Lcom/blog/www/guideview/g;->a()Lcom/blog/www/guideview/f;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
+
+    .line 527
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
+
+    invoke-virtual {v1, v3}, Lcom/blog/www/guideview/f;->a(Z)V
+
+    .line 528
+    iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
+
+    if-nez v1, :cond_0
+
+    .line 529
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/blog/www/guideview/f;->a(Landroid/app/Activity;)V
+
+    .line 531
+    :cond_0
     return-void
+.end method
+
+.method private showGuavatarMask()V
+    .locals 1
+
+    .prologue
+    .line 409
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isVisible()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 413
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 410
+    :cond_1
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowGuavatarMask()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 411
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuavatarGuideView()V
+
+    goto :goto_0
+.end method
+
+.method private stopApng()V
+    .locals 2
+
+    .prologue
+    .line 1059
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarIcon:Landroid/widget/ImageView;
+
+    invoke-static {v1}, Lcom/github/sahasbhop/a/a;->a(Landroid/view/View;)Lcom/github/sahasbhop/a/a;
+
+    move-result-object v0
+
+    .line 1060
+    .local v0, "apngDrawable":Lcom/github/sahasbhop/a/a;
+    if-nez v0, :cond_1
+
+    .line 1064
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 1061
+    :cond_1
+    invoke-virtual {v0}, Lcom/github/sahasbhop/a/a;->isRunning()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 1062
+    invoke-virtual {v0}, Lcom/github/sahasbhop/a/a;->stop()V
+
+    goto :goto_0
 .end method
 
 
@@ -2285,7 +3125,7 @@
     .locals 1
 
     .prologue
-    .line 79
+    .line 80
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->createPresenter()Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     move-result-object v0
@@ -2297,7 +3137,7 @@
     .locals 1
 
     .prologue
-    .line 149
+    .line 155
     new-instance v0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;-><init>()V
@@ -2309,7 +3149,7 @@
     .locals 1
 
     .prologue
-    .line 79
+    .line 80
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getUi()Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;
 
     move-result-object v0
@@ -2321,7 +3161,7 @@
     .locals 0
 
     .prologue
-    .line 154
+    .line 160
     return-object p0
 .end method
 
@@ -2329,7 +3169,7 @@
     .locals 2
 
     .prologue
-    .line 671
+    .line 826
     const-string v0, "buy"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassIcon:Ljava/lang/String;
@@ -2345,7 +3185,7 @@
     .locals 2
 
     .prologue
-    .line 675
+    .line 830
     const-string v0, "teacher"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassIcon:Ljava/lang/String;
@@ -2386,10 +3226,10 @@
     .end param
 
     .prologue
-    .line 326
+    .line 354
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/c;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 331
+    .line 359
     return-void
 .end method
 
@@ -2398,7 +3238,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 609
+    .line 737
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -2407,12 +3247,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 656
+    .line 787
     :cond_0
     :goto_0
     return-void
 
-    .line 612
+    .line 740
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -2422,16 +3262,16 @@
 
     goto :goto_0
 
-    .line 628
+    .line 756
     :sswitch_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->gotoAudioPlay()V
 
-    .line 629
+    .line 757
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 630
+    .line 758
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     const-string v1, "Type"
 
@@ -2439,7 +3279,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 631
+    .line 759
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -2450,44 +3290,44 @@
 
     goto :goto_0
 
-    .line 614
+    .line 742
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     :sswitch_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->hideCheckInNotice()V
 
-    .line 615
+    .line 743
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goReport()V
 
     goto :goto_0
 
-    .line 619
+    .line 747
     :sswitch_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goMc()V
 
     goto :goto_0
 
-    .line 622
+    .line 750
     :sswitch_3
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goRoadMap()V
 
     goto :goto_0
 
-    .line 625
+    .line 753
     :sswitch_4
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goPhonics()V
 
     goto :goto_0
 
-    .line 634
+    .line 762
     :sswitch_5
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->gotoVideoPlay()V
 
-    .line 635
+    .line 763
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 636
+    .line 764
     .restart local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     const-string v1, "Type"
 
@@ -2495,7 +3335,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 637
+    .line 765
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -2506,14 +3346,14 @@
 
     goto :goto_0
 
-    .line 640
+    .line 768
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     :sswitch_6
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->gotoFlashCard()V
 
     goto :goto_0
 
-    .line 643
+    .line 771
     :sswitch_7
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
 
@@ -2523,7 +3363,7 @@
 
     goto :goto_0
 
-    .line 646
+    .line 774
     :sswitch_8
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isBuy()Z
 
@@ -2531,12 +3371,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 647
+    .line 775
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goByOneVOneCourse()V
 
     goto :goto_0
 
-    .line 648
+    .line 776
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isClassRoom()Z
 
@@ -2544,18 +3384,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 649
+    .line 777
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goClass()V
 
     goto :goto_0
 
-    .line 653
+    .line 781
     :sswitch_9
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goQuality()V
 
     goto :goto_0
 
-    .line 612
+    .line 784
+    :sswitch_a
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->goGuavatar()V
+
+    goto :goto_0
+
+    .line 740
     :sswitch_data_0
     .sparse-switch
         0x7f090028 -> :sswitch_0
@@ -2563,12 +3409,13 @@
         0x7f090032 -> :sswitch_6
         0x7f090035 -> :sswitch_7
         0x7f09003c -> :sswitch_5
-        0x7f090308 -> :sswitch_2
-        0x7f09030b -> :sswitch_1
-        0x7f09030c -> :sswitch_2
-        0x7f090316 -> :sswitch_3
-        0x7f0903a3 -> :sswitch_8
-        0x7f0903cb -> :sswitch_4
+        0x7f09024d -> :sswitch_a
+        0x7f09030f -> :sswitch_2
+        0x7f090312 -> :sswitch_1
+        0x7f090313 -> :sswitch_2
+        0x7f09031d -> :sswitch_3
+        0x7f0903aa -> :sswitch_8
+        0x7f0903d2 -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -2580,24 +3427,24 @@
     .end param
 
     .prologue
-    .line 159
+    .line 165
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/c;->onCreate(Landroid/os/Bundle;)V
 
-    .line 160
+    .line 166
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenWidth:I
 
-    .line 161
+    .line 167
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenHeight:I
 
-    .line 162
+    .line 168
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2606,10 +3453,10 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->onCreate()V
 
-    .line 163
+    .line 169
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->reportGuideAmplitude()V
 
-    .line 164
+    .line 170
     return-void
 .end method
 
@@ -2628,7 +3475,7 @@
     .end annotation
 
     .prologue
-    .line 170
+    .line 176
     const v0, 0x7f0b00ac
 
     const/4 v1, 0x0
@@ -2639,12 +3486,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mRootView:Landroid/view/View;
 
-    .line 171
+    .line 177
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mRootView:Landroid/view/View;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->initView(Landroid/view/View;)V
 
-    .line 172
+    .line 178
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mRootView:Landroid/view/View;
 
     return-object v0
@@ -2654,13 +3501,13 @@
     .locals 1
 
     .prologue
-    .line 335
+    .line 363
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onDestroy()V
 
-    .line 336
+    .line 364
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/c/a;->a()V
 
-    .line 337
+    .line 365
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2669,7 +3516,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->onDestroy()V
 
-    .line 338
+    .line 366
     return-void
 .end method
 
@@ -2678,13 +3525,27 @@
     .param p1, "hidden"    # Z
 
     .prologue
-    .line 392
+    .line 442
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/c;->onHiddenChanged(Z)V
 
-    .line 393
+    .line 443
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->prepareShowMask()V
 
-    .line 395
+    .line 445
+    return-void
+.end method
+
+.method public onPause()V
+    .locals 0
+
+    .prologue
+    .line 378
+    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onPause()V
+
+    .line 379
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->stopApng()V
+
+    .line 380
     return-void
 .end method
 
@@ -2692,10 +3553,13 @@
     .locals 1
 
     .prologue
-    .line 342
+    .line 370
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onResume()V
 
-    .line 343
+    .line 371
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->resumeApng()V
+
+    .line 372
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2704,10 +3568,10 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->onResume()V
 
-    .line 344
+    .line 373
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->reportToAmplitude()V
 
-    .line 345
+    .line 374
     return-void
 .end method
 
@@ -2720,10 +3584,10 @@
     .end param
 
     .prologue
-    .line 177
+    .line 183
     invoke-super {p0, p1, p2}, Lcom/jiliguala/niuwa/common/base/c;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 178
+    .line 184
     return-void
 .end method
 
@@ -2731,7 +3595,7 @@
     .locals 3
 
     .prologue
-    .line 898
+    .line 1109
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v0
@@ -2740,7 +3604,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
 
-    .line 900
+    .line 1111
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v0
@@ -2751,7 +3615,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 902
+    .line 1113
     return-void
 .end method
 
@@ -2761,17 +3625,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 251
+    .line 279
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScrollview:Landroid/widget/ScrollView;
 
     if-eqz v0, :cond_0
 
-    .line 252
+    .line 280
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScrollview:Landroid/widget/ScrollView;
 
     invoke-virtual {v0, v1, v1}, Landroid/widget/ScrollView;->scrollTo(II)V
 
-    .line 254
+    .line 282
     :cond_0
     return-void
 .end method
@@ -2781,18 +3645,18 @@
     .param p1, "type"    # Ljava/lang/String;
 
     .prologue
-    const v2, 0x7f080187
+    const v2, 0x7f08018a
 
-    .line 960
+    .line 1176
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
     if-nez v0, :cond_0
 
-    .line 972
+    .line 1188
     :goto_0
     return-void
 
-    .line 961
+    .line 1177
     :cond_0
     const/4 v0, -0x1
 
@@ -2808,7 +3672,7 @@
 
     goto :goto_0
 
-    .line 963
+    .line 1179
     :pswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
@@ -2816,7 +3680,7 @@
 
     goto :goto_0
 
-    .line 961
+    .line 1177
     :sswitch_0
     const-string v1, "teacher"
 
@@ -2856,7 +3720,7 @@
 
     goto :goto_1
 
-    .line 966
+    .line 1182
     :pswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
@@ -2864,7 +3728,7 @@
 
     goto :goto_0
 
-    .line 969
+    .line 1185
     :pswitch_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
@@ -2872,7 +3736,7 @@
 
     goto :goto_0
 
-    .line 961
+    .line 1177
     :sswitch_data_0
     .sparse-switch
         -0x70017dc5 -> :sswitch_1
@@ -2892,19 +3756,19 @@
     .locals 1
 
     .prologue
-    .line 362
+    .line 397
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isVisible()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 371
+    .line 406
     :cond_0
     :goto_0
     return-void
 
-    .line 363
+    .line 398
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowBabyHomeMask()Z
 
@@ -2912,7 +3776,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 364
+    .line 399
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuideView()V
 
     goto :goto_0
@@ -2924,31 +3788,31 @@
     .param p2, "cls"    # Z
 
     .prologue
-    const v4, 0x7f08038d
+    const v4, 0x7f08039a
 
     const/16 v2, 0x8
 
     const/4 v1, 0x0
 
-    .line 931
+    .line 1142
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassIcon:Ljava/lang/String;
 
-    .line 932
+    .line 1143
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassRedDot:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 933
+    .line 1144
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mClassRedDot:Landroid/widget/ImageView;
 
-    if-eqz p2, :cond_2
+    if-eqz p2, :cond_3
 
     move v0, v1
 
     :goto_0
     invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 935
+    .line 1146
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
@@ -2958,49 +3822,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 936
+    .line 1147
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_7
 
-    .line 937
+    .line 1148
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setIconByType(Ljava/lang/String;)V
 
-    .line 938
+    .line 1149
     const-string v0, "teacher"
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 939
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
-
-    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
-    .line 940
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    .line 957
-    :cond_1
-    :goto_1
-    return-void
-
-    :cond_2
-    move v0, v2
-
-    .line 933
-    goto :goto_0
-
-    .line 942
-    :cond_3
-    const-string v0, "student"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3008,21 +3841,49 @@
 
     if-eqz v0, :cond_4
 
-    .line 943
+    .line 1150
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 944
+    .line 1151
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    goto :goto_1
+    .line 1169
+    :cond_1
+    :goto_1
+    iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
 
-    .line 946
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    if-eqz v0, :cond_2
+
+    .line 1170
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuavatarComponent:Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;
+
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isOneVOneShow()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent;->setTeacherVisible(Z)V
+
+    .line 1172
+    :cond_2
+    return-void
+
+    :cond_3
+    move v0, v2
+
+    .line 1144
+    goto :goto_0
+
+    .line 1153
     :cond_4
-    const-string v0, "buy"
+    const-string v0, "student"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3030,28 +3891,50 @@
 
     if-eqz v0, :cond_5
 
-    .line 947
+    .line 1154
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 948
+    .line 1155
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_1
 
-    .line 951
+    .line 1157
     :cond_5
+    const-string v0, "buy"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 1158
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
+
+    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+
+    .line 1159
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAction1v1:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    goto :goto_1
+
+    .line 1162
+    :cond_6
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 954
-    :cond_6
+    .line 1165
+    :cond_7
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->m1v1Container:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
@@ -3064,16 +3947,16 @@
     .param p1, "dataBean"    # Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     .prologue
-    .line 789
+    .line 944
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
-    .line 792
+    .line 947
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->checkAnnouncementShare()V
 
-    .line 794
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->prepareShowMask()V
+    .line 949
+    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuavatar(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;)V
 
-    .line 796
+    .line 951
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->redDot:Landroid/widget/TextView;
 
     iget-boolean v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->clockinnotif:Z
@@ -3085,12 +3968,15 @@
     :goto_0
     invoke-virtual {v9, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 798
+    .line 953
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->prepareShowMask()V
+
+    .line 955
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->roadmap:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$RoadmapBean;
 
     if-eqz v8, :cond_0
 
-    .line 799
+    .line 956
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCurrent:Landroid/widget/TextView;
 
     const v9, 0x7f0f0091
@@ -3121,7 +4007,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 800
+    .line 957
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCourseTtl:Landroid/widget/TextView;
 
     iget-object v9, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->roadmap:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$RoadmapBean;
@@ -3130,7 +4016,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 801
+    .line 958
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v8
@@ -3143,13 +4029,13 @@
 
     invoke-virtual {v8, v9, v10}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
-    .line 804
+    .line 961
     :cond_0
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->ph:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$PhBean;
 
     if-eqz v8, :cond_1
 
-    .line 805
+    .line 962
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhLevel:Landroid/widget/TextView;
 
     const v9, 0x7f0f014a
@@ -3180,7 +4066,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 806
+    .line 963
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCurrent:Landroid/widget/TextView;
 
     const v9, 0x7f0f0091
@@ -3211,7 +4097,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 807
+    .line 964
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCourseTtl:Landroid/widget/TextView;
 
     iget-object v9, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->ph:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$PhBean;
@@ -3220,7 +4106,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 808
+    .line 965
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v8
@@ -3233,13 +4119,13 @@
 
     invoke-virtual {v8, v9, v10}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
-    .line 811
+    .line 968
     :cond_1
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
 
     if-eqz v8, :cond_2
 
-    .line 814
+    .line 971
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
 
     iget-object v8, v8, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
@@ -3250,14 +4136,14 @@
 
     if-eqz v8, :cond_5
 
-    .line 815
+    .line 972
     const v8, 0x7f0f011d
 
     invoke-virtual {p0, v8}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 816
+    .line 973
     .local v3, "lvText":Ljava/lang/String;
     const v8, 0x7f0f011f
 
@@ -3265,19 +4151,19 @@
 
     move-result-object v6
 
-    .line 824
+    .line 981
     .local v6, "title":Ljava/lang/String;
     :goto_1
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeTitle:Landroid/widget/TextView;
 
     invoke-virtual {v8, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 825
+    .line 982
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeLevel:Landroid/widget/TextView;
 
     invoke-virtual {v8, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 826
+    .line 983
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeCurrent:Landroid/widget/TextView;
 
     const v9, 0x7f0f0091
@@ -3308,7 +4194,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 827
+    .line 984
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeTtl:Landroid/widget/TextView;
 
     iget-object v9, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
@@ -3317,7 +4203,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 828
+    .line 985
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v8
@@ -3330,7 +4216,7 @@
 
     invoke-virtual {v8, v9, v10}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
-    .line 831
+    .line 988
     .end local v3    # "lvText":Ljava/lang/String;
     .end local v6    # "title":Ljava/lang/String;
     :cond_2
@@ -3338,7 +4224,6 @@
 
     if-eqz v8, :cond_7
 
-    .line 832
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->curatedentry:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;
 
     iget-object v8, v8, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;->content:Ljava/util/List;
@@ -3349,6 +4234,7 @@
 
     iget-object v8, v8, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;->content:Ljava/util/List;
 
+    .line 990
     invoke-interface {v8}, Ljava/util/List;->size()I
 
     move-result v8
@@ -3357,28 +4243,28 @@
 
     if-lt v8, v9, :cond_7
 
-    .line 833
+    .line 991
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC1:Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
     invoke-virtual {v8, v9}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 834
+    .line 992
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC2:Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
     invoke-virtual {v8, v9}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 835
+    .line 993
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCC3:Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
     invoke-virtual {v8, v9}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 836
+    .line 994
     const/4 v2, 0x0
 
     .local v2, "i":I
@@ -3391,7 +4277,7 @@
 
     if-ge v2, v8, :cond_7
 
-    .line 837
+    .line 995
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mCourseViews:Ljava/util/List;
 
     invoke-interface {v8, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -3400,7 +4286,7 @@
 
     check-cast v7, Landroid/view/ViewGroup;
 
-    .line 838
+    .line 996
     .local v7, "vp":Landroid/view/ViewGroup;
     invoke-virtual {v7}, Landroid/view/ViewGroup;->getTag()Ljava/lang/Object;
 
@@ -3408,7 +4294,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
 
-    .line 839
+    .line 997
     .local v1, "holder":Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->curatedentry:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;
 
@@ -3420,7 +4306,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
 
-    .line 840
+    .line 998
     .local v0, "course":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
     iget-object v8, v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->a:Landroid/widget/ImageView;
 
@@ -3428,17 +4314,17 @@
 
     invoke-direct {p0, v8, v9}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->loadImage(Landroid/widget/ImageView;Ljava/lang/String;)V
 
-    .line 841
+    .line 999
     iget-object v8, v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->c:Landroid/widget/TextView;
 
     iget-object v9, v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;->desc:Ljava/lang/String;
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 842
+    .line 1000
     iget-object v5, v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;->ttl:Ljava/lang/String;
 
-    .line 843
+    .line 1001
     .local v5, "text":Ljava/lang/String;
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3446,7 +4332,7 @@
 
     if-nez v8, :cond_3
 
-    .line 844
+    .line 1002
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
     move-result v8
@@ -3469,7 +4355,7 @@
 
     if-eqz v8, :cond_3
 
-    .line 845
+    .line 1003
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -3488,36 +4374,36 @@
 
     move-result-object v5
 
-    .line 847
+    .line 1005
     :cond_3
     iget-object v8, v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->b:Landroid/widget/TextView;
 
     invoke-virtual {v8, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 848
+    .line 1006
     iget-object v8, v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;->d:Landroid/widget/ImageView;
 
     const/16 v9, 0x8
 
     invoke-virtual {v8, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 849
+    .line 1007
     move v4, v2
 
-    .line 850
+    .line 1008
     .local v4, "pos":I
-    new-instance v8, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;
+    new-instance v8, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$5;
 
-    invoke-direct {v8, p0, v4, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;ILcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;)V
+    invoke-direct {v8, p0, v4, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$5;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;ILcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;)V
 
     invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 836
+    .line 994
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_2
 
-    .line 796
+    .line 951
     .end local v0    # "course":Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
     .end local v1    # "holder":Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$a;
     .end local v2    # "i":I
@@ -3529,7 +4415,7 @@
 
     goto/16 :goto_0
 
-    .line 817
+    .line 974
     :cond_5
     iget-object v8, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
 
@@ -3541,14 +4427,14 @@
 
     if-eqz v8, :cond_6
 
-    .line 818
+    .line 975
     const v8, 0x7f0f011e
 
     invoke-virtual {p0, v8}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 819
+    .line 976
     .restart local v3    # "lvText":Ljava/lang/String;
     const v8, 0x7f0f0120
 
@@ -3559,7 +4445,7 @@
     .restart local v6    # "title":Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 821
+    .line 978
     .end local v3    # "lvText":Ljava/lang/String;
     .end local v6    # "title":Ljava/lang/String;
     :cond_6
@@ -3589,7 +4475,7 @@
 
     move-result-object v3
 
-    .line 822
+    .line 979
     .restart local v3    # "lvText":Ljava/lang/String;
     const v8, 0x7f0f0121
 
@@ -3600,7 +4486,7 @@
     .restart local v6    # "title":Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 860
+    .line 1017
     .end local v3    # "lvText":Ljava/lang/String;
     .end local v6    # "title":Ljava/lang/String;
     :cond_7
@@ -3608,34 +4494,12 @@
 .end method
 
 .method public showFree(Ljava/lang/String;)V
-    .locals 2
+    .locals 0
     .param p1, "test"    # Ljava/lang/String;
 
     .prologue
-    .line 984
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mFree:Landroid/view/View;
-
-    const-string v0, "A"
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 985
+    .line 1201
     return-void
-
-    .line 984
-    :cond_0
-    const/16 v0, 0x8
-
-    goto :goto_0
 .end method
 
 .method public showGuideView()V
@@ -3646,15 +4510,15 @@
 
     const/4 v4, 0x0
 
-    .line 193
+    .line 199
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->scrollToTop()V
 
-    .line 194
+    .line 200
     new-instance v0, Lcom/blog/www/guideview/g;
 
     invoke-direct {v0}, Lcom/blog/www/guideview/g;-><init>()V
 
-    .line 195
+    .line 201
     .local v0, "builder":Lcom/blog/www/guideview/g;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeShadow:Landroid/view/View;
 
@@ -3662,23 +4526,23 @@
 
     move-result-object v2
 
-    const v3, 0x7f09030c
+    const v3, 0x7f090313
 
-    .line 196
+    .line 202
     invoke-virtual {v2, v3}, Lcom/blog/www/guideview/g;->c(I)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
     const/16 v3, 0xc8
 
-    .line 197
+    .line 203
     invoke-virtual {v2, v3}, Lcom/blog/www/guideview/g;->a(I)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
     const/high16 v3, 0x41a00000    # 20.0f
 
-    .line 198
+    .line 204
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
 
     move-result v3
@@ -3687,54 +4551,54 @@
 
     move-result-object v2
 
-    .line 199
+    .line 205
     invoke-virtual {v2, v4}, Lcom/blog/www/guideview/g;->k(I)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
-    .line 200
+    .line 206
     invoke-virtual {v2, v4}, Lcom/blog/www/guideview/g;->d(Z)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
-    .line 201
+    .line 207
     invoke-virtual {v2, v5}, Lcom/blog/www/guideview/g;->b(Z)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
-    .line 202
+    .line 208
     invoke-virtual {v2, v4}, Lcom/blog/www/guideview/g;->c(Z)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
-    .line 203
+    .line 209
     invoke-virtual {v2, v5}, Lcom/blog/www/guideview/g;->e(Z)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenWidth:I
 
-    .line 204
+    .line 210
     invoke-virtual {v2, v3}, Lcom/blog/www/guideview/g;->g(I)Lcom/blog/www/guideview/g;
 
     move-result-object v2
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mScreenHeight:I
 
-    .line 205
+    .line 211
     invoke-virtual {v2, v3}, Lcom/blog/www/guideview/g;->h(I)Lcom/blog/www/guideview/g;
 
-    .line 206
+    .line 212
     new-instance v2, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
 
     invoke-virtual {v0, v2}, Lcom/blog/www/guideview/g;->a(Lcom/blog/www/guideview/g$a;)Lcom/blog/www/guideview/g;
 
-    .line 236
-    const v1, 0x7f0803e7
+    .line 264
+    const v1, 0x7f0803f4
 
-    .line 237
+    .line 265
     .local v1, "icon":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
@@ -3758,10 +4622,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 238
-    const v1, 0x7f0803e9
+    .line 266
+    const v1, 0x7f0803f6
 
-    .line 242
+    .line 270
     :cond_0
     :goto_0
     new-instance v2, Lcom/jiliguala/niuwa/module/guideview/HomeImageComponent;
@@ -3770,24 +4634,24 @@
 
     invoke-virtual {v0, v2}, Lcom/blog/www/guideview/g;->a(Lcom/blog/www/guideview/d;)Lcom/blog/www/guideview/g;
 
-    .line 243
+    .line 271
     invoke-virtual {v0}, Lcom/blog/www/guideview/g;->a()Lcom/blog/www/guideview/f;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
 
-    .line 244
+    .line 272
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
 
     invoke-virtual {v2, v5}, Lcom/blog/www/guideview/f;->a(Z)V
 
-    .line 245
+    .line 273
     iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isGuideShowing:Z
 
     if-nez v2, :cond_1
 
-    .line 246
+    .line 274
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mGuide:Lcom/blog/www/guideview/f;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -3796,11 +4660,11 @@
 
     invoke-virtual {v2, v3}, Lcom/blog/www/guideview/f;->a(Landroid/app/Activity;)V
 
-    .line 248
+    .line 276
     :cond_1
     return-void
 
-    .line 239
+    .line 267
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mHomeData:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
@@ -3824,8 +4688,8 @@
 
     if-eqz v2, :cond_0
 
-    .line 240
-    const v1, 0x7f0803e8
+    .line 268
+    const v1, 0x7f0803f5
 
     goto :goto_0
 .end method
@@ -3835,12 +4699,12 @@
     .param p1, "isHighAge"    # Z
 
     .prologue
-    .line 976
+    .line 1192
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 977
+    .line 1193
     .local v0, "activity":Landroid/support/v4/app/FragmentActivity;
     if-eqz v0, :cond_0
 
@@ -3848,13 +4712,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 978
+    .line 1194
     check-cast v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .end local v0    # "activity":Landroid/support/v4/app/FragmentActivity;
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showMask(Z)V
 
-    .line 980
+    .line 1196
     :cond_0
     return-void
 .end method
@@ -3863,19 +4727,19 @@
     .locals 1
 
     .prologue
-    .line 348
+    .line 383
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isVisible()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 358
+    .line 393
     :cond_0
     :goto_0
     return-void
 
-    .line 349
+    .line 384
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNeedShowParentHomeMask()Z
 
@@ -3883,367 +4747,125 @@
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 385
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuideView()V
 
     goto :goto_0
 .end method
 
 .method public showSkin(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;)V
-    .locals 4
+    .locals 5
     .param p1, "skin"    # Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;
 
     .prologue
-    const v3, 0x7f0600f2
+    const v4, 0x7f0600f4
 
-    .line 558
+    .line 679
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mBigCardBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->mcBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const v3, 0x7f0802cb
 
-    move-result-object v1
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const v2, 0x7f0802c1
-
-    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 559
+    .line 680
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhCardBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->phBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const v3, 0x7f08030e
 
-    move-result-object v1
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const v2, 0x7f080304
-
-    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 560
+    .line 681
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCardBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->oldmapBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const v3, 0x7f080308
 
-    move-result-object v1
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const v2, 0x7f0802fe
-
-    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 562
+    .line 683
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenText:Landroid/widget/TextView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->listenIcon:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
-
-    .line 563
+    .line 684
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mWatchText:Landroid/widget/TextView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->watchIcon:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
-
-    .line 564
+    .line 685
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPlayText:Landroid/widget/TextView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->flashIcon:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
-
-    .line 565
+    .line 686
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mReadingText:Landroid/widget/TextView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->readingIcon:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
-
-    .line 567
+    .line 688
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mListenBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->squareBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2, v4}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 568
+    .line 689
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mWatchBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->squareBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2, v4}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 569
+    .line 690
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPlayBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->squareBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2, v4}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 570
+    .line 691
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mReadingBg:Landroid/widget/ImageView;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->path:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;->squareBg:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v0, v1, v2, v4}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;I)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, v3}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setBg(Landroid/widget/ImageView;Ljava/lang/String;I)V
-
-    .line 571
+    .line 692
     return-void
 .end method
 
@@ -4252,7 +4874,7 @@
     .param p1, "treasure"    # Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;
 
     .prologue
-    .line 909
+    .line 1120
     if-eqz p1, :cond_1
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;->img:Ljava/lang/String;
@@ -4271,14 +4893,14 @@
 
     if-nez v0, :cond_1
 
-    .line 910
+    .line 1121
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 911
+    .line 1122
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;->img:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
@@ -4293,7 +4915,7 @@
 
     if-nez v0, :cond_0
 
-    .line 912
+    .line 1123
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v0
@@ -4312,28 +4934,28 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;)V
 
-    .line 913
+    .line 1124
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;->img:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 915
+    .line 1126
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$4;
+    new-instance v1, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$6;
 
-    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$4;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;)V
+    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$6;-><init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Lcom/jiliguala/niuwa/logic/network/json/GlobeTemplate$Treasure;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 927
+    .line 1138
     :goto_0
     return-void
 
-    .line 925
+    .line 1136
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mTreasureImg:Landroid/widget/ImageView;
 
@@ -4353,44 +4975,44 @@
 
     const/4 v3, 0x0
 
-    .line 528
+    .line 649
     iget v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAgeType:I
 
     if-ne v1, p1, :cond_0
 
-    .line 553
+    .line 674
     :goto_0
     return-void
 
-    .line 531
+    .line 652
     :cond_0
     iput p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mAgeType:I
 
-    .line 533
+    .line 654
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeTitle:Landroid/widget/TextView;
 
     const v2, 0x7f0f0121
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 534
+    .line 655
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeLevel:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 535
+    .line 656
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mLargeCurrent:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 536
+    .line 658
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->isNewUser()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 538
+    .line 660
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->h()I
 
     move-result v1
@@ -4403,42 +5025,42 @@
 
     sub-int v0, v1, v2
 
-    .line 539
+    .line 661
     .local v0, "size":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->relayoutWidth(Landroid/view/View;I)V
 
-    .line 540
+    .line 662
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->relayoutWidth(Landroid/view/View;I)V
 
-    .line 542
+    .line 664
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 543
+    .line 665
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcTitle:Landroid/widget/TextView;
 
     const v2, 0x7f0f01a0
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 544
+    .line 666
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcLevel:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 545
+    .line 667
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcCurrent:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 548
+    .line 670
     .end local v0    # "size":I
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->h()I
@@ -4453,13 +5075,13 @@
 
     sub-int v0, v1, v2
 
-    .line 549
+    .line 671
     .restart local v0    # "size":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mPhContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->relayoutWidth(Landroid/view/View;I)V
 
-    .line 550
+    .line 672
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mMcContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
@@ -4472,7 +5094,7 @@
     .param p1, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 524
+    .line 645
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->mBabyName:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4495,6 +5117,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 525
+    .line 646
     return-void
 .end method

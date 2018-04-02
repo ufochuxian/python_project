@@ -93,7 +93,7 @@
 
     .line 55
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v2, 0x7f0b0109
+    const v2, 0x7f0b010a
 
     const/4 v3, 0x0
 
@@ -103,7 +103,7 @@
 
     .line 57
     .local v1, "rootView":Landroid/view/View;
-    const v2, 0x7f0903c6
+    const v2, 0x7f0903cd
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -114,7 +114,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;->mPayResultDesc:Landroid/widget/TextView;
 
     .line 59
-    const v2, 0x7f090273
+    const v2, 0x7f090278
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

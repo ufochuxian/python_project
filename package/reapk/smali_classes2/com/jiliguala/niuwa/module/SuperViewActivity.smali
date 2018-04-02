@@ -28,12 +28,12 @@
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 20
-    const v1, 0x7f0b0103
+    const v1, 0x7f0b0104
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/SuperViewActivity;->setContentView(I)V
 
     .line 21
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/SuperViewActivity;->findViewById(I)Landroid/view/View;
 

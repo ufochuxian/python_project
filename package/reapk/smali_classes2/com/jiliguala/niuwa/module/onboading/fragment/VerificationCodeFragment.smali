@@ -761,7 +761,7 @@
     .line 95
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/VerificationCodeFragment;->mRoot:Landroid/view/View;
 
-    const v2, 0x7f0905e3
+    const v2, 0x7f0905ed
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -773,7 +773,7 @@
     .local v0, "verrifyCodeEt":Lcom/jkb/vcedittext/VerificationCodeEditText;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/VerificationCodeFragment;->mRoot:Landroid/view/View;
 
-    const v2, 0x7f09057a
+    const v2, 0x7f090584
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -786,7 +786,7 @@
     .line 97
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/VerificationCodeFragment;->mRoot:Landroid/view/View;
 
-    const v2, 0x7f090273
+    const v2, 0x7f090278
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -799,7 +799,7 @@
     .line 98
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/VerificationCodeFragment;->mRoot:Landroid/view/View;
 
-    const v2, 0x7f09058f
+    const v2, 0x7f090599
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

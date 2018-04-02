@@ -284,7 +284,7 @@
     .line 75
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/story/adapter/ShelfAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0b0180
+    const v3, 0x7f0b0185
 
     const/4 v4, 0x0
 
@@ -393,9 +393,9 @@
 
     check-cast v3, Landroid/app/Activity;
 
-    const v4, 0x7f010021
+    const v4, 0x7f010023
 
-    const v5, 0x7f010014
+    const v5, 0x7f010015
 
     invoke-virtual {v3, v4, v5}, Landroid/app/Activity;->overridePendingTransition(II)V
 

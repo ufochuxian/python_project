@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 211
+    .line 209
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$6;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
     .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 215
+    .line 213
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 0
 
     .prologue
-    .line 211
+    .line 209
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$6;->a(Ljava/lang/Throwable;)V

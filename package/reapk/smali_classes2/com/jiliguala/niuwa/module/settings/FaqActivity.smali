@@ -48,14 +48,14 @@
     .locals 1
 
     .prologue
-    .line 163
+    .line 173
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/FaqActivity$2;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity$2;-><init>(Lcom/jiliguala/niuwa/module/settings/FaqActivity;)V
 
     invoke-static {v0}, Lcom/alibaba/sdk/android/feedback/impl/FeedbackAPI;->getFeedbackUnreadCount(Lcom/alibaba/sdk/android/feedback/util/IUnreadCountCallback;)V
 
-    .line 178
+    .line 188
     return-void
 .end method
 
@@ -63,28 +63,28 @@
     .locals 3
 
     .prologue
-    .line 125
+    .line 135
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 126
+    .line 136
     .local v0, "intent":Landroid/content/Intent;
     const-class v1, Lcom/jiliguala/niuwa/module/settings/AliFeedBackActivity;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 127
+    .line 137
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 128
-    const v1, 0x7f01001d
+    .line 138
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->overridePendingTransition(II)V
 
-    .line 129
+    .line 139
     return-void
 .end method
 
@@ -92,17 +92,17 @@
     .locals 2
 
     .prologue
-    .line 143
+    .line 153
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->finish()V
 
-    .line 144
-    const v0, 0x7f010012
+    .line 154
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->overridePendingTransition(II)V
 
-    .line 145
+    .line 155
     return-void
 .end method
 
@@ -110,25 +110,25 @@
     .locals 3
 
     .prologue
-    .line 119
+    .line 129
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/jiliguala/niuwa/module/settings/ContactUsActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 120
+    .line 130
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 121
-    const v1, 0x7f01001d
+    .line 131
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->overridePendingTransition(II)V
 
-    .line 122
+    .line 132
     return-void
 .end method
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 28
-    const v1, 0x7f090609
+    const v1, 0x7f090613
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->findViewById(I)Landroid/view/View;
 
@@ -194,14 +194,14 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 154
+    .line 164
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/FaqActivity$1;
 
     invoke-direct {v0, p0, p1}, Lcom/jiliguala/niuwa/module/settings/FaqActivity$1;-><init>(Lcom/jiliguala/niuwa/module/settings/FaqActivity;Z)V
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 160
+    .line 170
     return-void
 .end method
 
@@ -225,28 +225,37 @@
     return-void
 .end method
 
+.method public goToLesson(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "target"    # Ljava/lang/String;
+
+    .prologue
+    .line 84
+    return-void
+.end method
+
 .method public onBackPressed()V
     .locals 1
 
     .prologue
-    .line 134
+    .line 144
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onBackPressed()V
 
-    .line 135
+    .line 145
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->canGoBack()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 136
+    .line 146
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->goBack()V
 
-    .line 140
+    .line 150
     :goto_0
     return-void
 
-    .line 138
+    .line 148
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->pressBack()V
 
@@ -258,36 +267,36 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 103
+    .line 113
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 116
+    .line 126
     :goto_0
     return-void
 
-    .line 105
+    .line 115
     :sswitch_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->finishWithAnim()V
 
     goto :goto_0
 
-    .line 108
+    .line 118
     :sswitch_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->onBackPressed()V
 
     goto :goto_0
 
-    .line 111
+    .line 121
     :sswitch_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->goContactUs()V
 
     goto :goto_0
 
-    .line 103
+    .line 113
     :sswitch_data_0
     .sparse-switch
         0x7f090014 -> :sswitch_1
@@ -317,7 +326,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v1, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -353,7 +362,7 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 89
+    .line 94
     return-void
 .end method
 
@@ -362,7 +371,16 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 84
+    .line 89
+    return-void
+.end method
+
+.method public onProgressChanged(I)V
+    .locals 0
+    .param p1, "progressInPercent"    # I
+
+    .prologue
+    .line 109
     return-void
 .end method
 
@@ -371,7 +389,7 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 94
+    .line 99
     return-void
 .end method
 
@@ -379,7 +397,7 @@
     .locals 0
 
     .prologue
-    .line 99
+    .line 104
     return-void
 .end method
 
@@ -387,10 +405,10 @@
     .locals 0
 
     .prologue
-    .line 149
+    .line 159
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onResume()V
 
-    .line 151
+    .line 161
     return-void
 .end method
 

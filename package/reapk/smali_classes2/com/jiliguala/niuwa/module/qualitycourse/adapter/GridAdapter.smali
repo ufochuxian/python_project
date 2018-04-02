@@ -123,7 +123,7 @@
     .line 62
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/GridAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00dd
+    const v3, 0x7f0b00de
 
     const/4 v4, 0x0
 
@@ -138,7 +138,7 @@
 
     .line 64
     .local v1, "viewHolder":Lcom/jiliguala/niuwa/module/qualitycourse/adapter/GridAdapter$a;
-    const v2, 0x7f090598
+    const v2, 0x7f0905a2
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

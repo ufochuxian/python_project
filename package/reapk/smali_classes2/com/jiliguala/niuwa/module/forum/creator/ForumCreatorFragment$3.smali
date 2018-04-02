@@ -260,11 +260,11 @@
         0x7f090147 -> :sswitch_4
         0x7f09021e -> :sswitch_0
         0x7f09022b -> :sswitch_0
-        0x7f090431 -> :sswitch_2
-        0x7f090432 -> :sswitch_4
-        0x7f090433 -> :sswitch_4
-        0x7f090434 -> :sswitch_4
-        0x7f090457 -> :sswitch_3
-        0x7f090555 -> :sswitch_1
+        0x7f090438 -> :sswitch_2
+        0x7f090439 -> :sswitch_4
+        0x7f09043a -> :sswitch_4
+        0x7f09043b -> :sswitch_4
+        0x7f09045e -> :sswitch_3
+        0x7f09055f -> :sswitch_1
     .end sparse-switch
 .end method

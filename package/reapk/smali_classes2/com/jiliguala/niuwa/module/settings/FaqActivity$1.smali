@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/FaqActivity;
 
     .prologue
-    .line 154
+    .line 164
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/FaqActivity$1;->b:Lcom/jiliguala/niuwa/module/settings/FaqActivity;
 
     iput-boolean p2, p0, Lcom/jiliguala/niuwa/module/settings/FaqActivity$1;->a:Z
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 157
+    .line 167
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/FaqActivity$1;->b:Lcom/jiliguala/niuwa/module/settings/FaqActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/FaqActivity;->access$000(Lcom/jiliguala/niuwa/module/settings/FaqActivity;)Landroid/widget/ImageView;
@@ -61,10 +61,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 158
+    .line 168
     return-void
 
-    .line 157
+    .line 167
     :cond_0
     const/4 v0, 0x4
 

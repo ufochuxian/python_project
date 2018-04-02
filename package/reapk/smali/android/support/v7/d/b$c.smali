@@ -39,17 +39,17 @@
 
 .field public static final fill_vertical:I = 0x7f090202
 
-.field public static final horizontal:I = 0x7f09026a
+.field public static final horizontal:I = 0x7f09026f
 
-.field public static final left:I = 0x7f0902b6
+.field public static final left:I = 0x7f0902bc
 
-.field public static final right:I = 0x7f09045b
+.field public static final right:I = 0x7f090464
 
-.field public static final start:I = 0x7f09051a
+.field public static final start:I = 0x7f090524
 
-.field public static final top:I = 0x7f09058b
+.field public static final top:I = 0x7f090595
 
-.field public static final vertical:I = 0x7f0905e8
+.field public static final vertical:I = 0x7f0905f2
 
 
 # direct methods

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     .prologue
-    .line 79
+    .line 80
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$3;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "what"    # I
 
     .prologue
-    .line 82
+    .line 83
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$3;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 84
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$3;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -66,7 +66,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->onRecordPlayError(I)V
 
-    .line 85
+    .line 86
     :cond_0
     return-void
 .end method

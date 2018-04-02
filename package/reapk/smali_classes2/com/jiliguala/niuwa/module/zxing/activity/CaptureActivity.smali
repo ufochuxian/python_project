@@ -600,9 +600,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/zxing/activity/CaptureActivity;->finish()V
 
     .line 177
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/zxing/activity/CaptureActivity;->overridePendingTransition(II)V
 
@@ -785,7 +785,7 @@
 
     .line 139
     :cond_0
-    const v3, 0x7f090480
+    const v3, 0x7f090489
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/zxing/activity/CaptureActivity;->findViewById(I)Landroid/view/View;
 
@@ -1114,7 +1114,7 @@
     .line 322
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/zxing/activity/CaptureActivity;->handler:Lcom/jiliguala/niuwa/module/zxing/utils/CaptureActivityHandler;
 
-    const v1, 0x7f090452
+    const v1, 0x7f090459
 
     invoke-virtual {v0, v1, p1, p2}, Lcom/jiliguala/niuwa/module/zxing/utils/CaptureActivityHandler;->sendEmptyMessageDelayed(IJ)Z
 

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final VerProgressBar_Default:I = 0x7f100162
+.field public static final VerProgressBar_Default:I = 0x7f100164
 
 
 # direct methods

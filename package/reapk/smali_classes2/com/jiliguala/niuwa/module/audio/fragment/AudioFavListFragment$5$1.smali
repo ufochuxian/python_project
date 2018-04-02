@@ -72,7 +72,7 @@
 
     const/4 v5, 0x3
 
-    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/l/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/m/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 244
     return-void

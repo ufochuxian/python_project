@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final pickerview_dividerColor:I = 0x7f040172
+.field public static final pickerview_dividerColor:I = 0x7f040173
 
-.field public static final pickerview_gravity:I = 0x7f040173
+.field public static final pickerview_gravity:I = 0x7f040174
 
-.field public static final pickerview_textColorCenter:I = 0x7f040174
+.field public static final pickerview_textColorCenter:I = 0x7f040175
 
-.field public static final pickerview_textColorOut:I = 0x7f040175
+.field public static final pickerview_textColorOut:I = 0x7f040176
 
-.field public static final pickerview_textSize:I = 0x7f040176
+.field public static final pickerview_textSize:I = 0x7f040177
 
 
 # direct methods

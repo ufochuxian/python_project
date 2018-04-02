@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 260
+    .line 258
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$10;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "result"    # Lcom/jiliguala/niuwa/logic/network/json/PostBaseResult;
 
     .prologue
-    .line 274
+    .line 272
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 0
 
     .prologue
-    .line 264
+    .line 262
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 269
+    .line 267
     return-void
 .end method
 
@@ -73,7 +73,7 @@
     .locals 0
 
     .prologue
-    .line 260
+    .line 258
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/PostBaseResult;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$10;->a(Lcom/jiliguala/niuwa/logic/network/json/PostBaseResult;)V

@@ -269,9 +269,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -307,7 +307,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 285
-    const v1, 0x7f09038e
+    const v1, 0x7f090395
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -325,7 +325,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mBabyTv:Landroid/view/View;
 
     .line 288
-    const v1, 0x7f090333
+    const v1, 0x7f09033a
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -341,7 +341,7 @@
     invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 289
-    const v1, 0x7f0904c9
+    const v1, 0x7f0904d3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -371,7 +371,7 @@
     invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 291
-    const v1, 0x7f090246
+    const v1, 0x7f090247
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -396,7 +396,7 @@
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 293
-    const v1, 0x7f0904c7
+    const v1, 0x7f0904d1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -407,7 +407,7 @@
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 294
-    const v1, 0x7f0904c2
+    const v1, 0x7f0904cc
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -418,7 +418,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     .line 296
-    const v1, 0x7f0905d2
+    const v1, 0x7f0905dc
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -436,7 +436,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 298
-    const v1, 0x7f0905dc
+    const v1, 0x7f0905e6
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -454,7 +454,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 300
-    const v1, 0x7f0903ca
+    const v1, 0x7f0903d1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -465,7 +465,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mDesc:Landroid/widget/TextView;
 
     .line 301
-    const v1, 0x7f0905d7
+    const v1, 0x7f0905e1
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -476,7 +476,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->userCity:Landroid/widget/TextView;
 
     .line 302
-    const v1, 0x7f0905d9
+    const v1, 0x7f0905e3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -519,7 +519,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 305
-    const v1, 0x7f09027e
+    const v1, 0x7f090283
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -541,7 +541,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->childListContainer:Landroid/widget/LinearLayout;
 
     .line 308
-    const v1, 0x7f0904c5
+    const v1, 0x7f0904cf
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -569,7 +569,7 @@
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 312
-    const v1, 0x7f0904c4
+    const v1, 0x7f0904ce
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -585,7 +585,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 316
-    const v1, 0x7f0903fe
+    const v1, 0x7f090405
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -641,7 +641,7 @@
 
     .line 329
     :goto_5
-    const v1, 0x7f09047e
+    const v1, 0x7f090487
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -819,7 +819,7 @@
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
-    const v1, 0x7f080318
+    const v1, 0x7f080322
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1070,7 +1070,7 @@
     .line 403
     .end local v12    # "url":Ljava/lang/String;
     :cond_3
-    const v15, 0x7f090569
+    const v15, 0x7f090573
 
     invoke-virtual {v13, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1083,7 +1083,7 @@
     invoke-virtual {v4, v15}, Landroid/view/View;->setVisibility(I)V
 
     .line 405
-    const v15, 0x7f090378
+    const v15, 0x7f09037f
 
     invoke-virtual {v13, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1457,9 +1457,9 @@
     invoke-virtual {p1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     .line 493
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p1, v1, v2}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -1723,7 +1723,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/PersonalInfoFragment;->mInflater:Landroid/view/LayoutInflater;
 
     .line 243
-    const v2, 0x7f0b017c
+    const v2, 0x7f0b0181
 
     const/4 v3, 0x0
 

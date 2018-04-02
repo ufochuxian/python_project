@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9;
 
     .prologue
-    .line 996
+    .line 1025
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9$1;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9$1;->a:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -45,7 +45,7 @@
     .locals 6
 
     .prologue
-    .line 999
+    .line 1028
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9$1;->a:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->meta:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;
@@ -72,8 +72,8 @@
 
     const/4 v5, 0x3
 
-    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/l/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/m/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
 
-    .line 1000
+    .line 1029
     return-void
 .end method

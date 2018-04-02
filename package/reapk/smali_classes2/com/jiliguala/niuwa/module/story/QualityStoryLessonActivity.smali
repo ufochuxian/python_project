@@ -66,9 +66,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/story/QualityStoryCourseFragment;
 
     .prologue
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
     .line 66
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/story/QualityStoryLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -326,7 +326,7 @@
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/story/QualityStoryLessonActivity;->setContentView(I)V
 
     .line 47
-    const v2, 0x7f090595
+    const v2, 0x7f09059f
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/story/QualityStoryLessonActivity;->findViewById(I)Landroid/view/View;
 

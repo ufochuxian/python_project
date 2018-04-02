@@ -289,7 +289,7 @@
     .line 105
     sget-object v6, Lcom/alibaba/sdk/android/feedback/impl/FeedbackAPI;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0b00e2
+    const v7, 0x7f0b00e3
 
     const/4 v8, 0x0
 
@@ -299,7 +299,7 @@
 
     .line 106
     .local v5, "view":Landroid/view/View;
-    const v6, 0x7f0902fd
+    const v6, 0x7f090304
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -309,7 +309,7 @@
 
     .line 107
     .local v2, "iv":Landroid/widget/ImageView;
-    const v6, 0x7f0905e9
+    const v6, 0x7f0905f3
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

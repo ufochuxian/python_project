@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#cc000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@android:color/white" n1:gravity="center|left" n1:id="@id/action_copy" n1:paddingLeft="15.0dip" n1:paddingTop="10.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/forum_copy_text" />
+</LinearLayout>

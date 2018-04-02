@@ -163,7 +163,7 @@
     .end annotation
 .end field
 
-.field private mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private mSpeakCardModelTemplete:Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
@@ -1205,7 +1205,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mCountDownDlg:Landroid/app/Dialog;
 
     .line 2498
-    const v1, 0x7f0b010f
+    const v1, 0x7f0b0110
 
     const/4 v2, 0x0
 
@@ -1586,7 +1586,7 @@
 
     move-result v2
 
-    const v3, 0x7f090486
+    const v3, 0x7f09048f
 
     if-ne v2, v3, :cond_0
 
@@ -1756,7 +1756,7 @@
 
     move-result v2
 
-    const v3, 0x7f090486
+    const v3, 0x7f09048f
 
     if-ne v2, v3, :cond_0
 
@@ -2063,73 +2063,73 @@
 
     .prologue
     .line 191
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 192
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000c
+    const v1, 0x7f0e000d
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->countingSoundId:I
 
     .line 193
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000f
+    const v1, 0x7f0e0010
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mTryAgainSoundId:I
 
     .line 194
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0005
+    const v1, 0x7f0e0006
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mExcellentSoundId:I
 
     .line 195
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0006
+    const v1, 0x7f0e0007
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mGoodJobSoundId:I
 
     .line 196
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0007
+    const v1, 0x7f0e0008
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mGreatSoundId:I
 
     .line 197
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000a
+    const v1, 0x7f0e000b
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
@@ -2148,12 +2148,12 @@
     const/4 v2, 0x0
 
     .line 464
-    const v0, 0x7f0b012b
+    const v0, 0x7f0b0130
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->setContentView(I)V
 
     .line 465
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2197,7 +2197,7 @@
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->setOnErrorClickListener(Lcom/jiliguala/niuwa/common/widget/customview/b;)V
 
     .line 472
-    const v0, 0x7f0903b8
+    const v0, 0x7f0903bf
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2213,7 +2213,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 474
-    const v0, 0x7f090590
+    const v0, 0x7f09059a
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2333,7 +2333,7 @@
     .line 491
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mFlashCardAdapter:Lcom/jiliguala/niuwa/module/flashcard/adapter/FlashCardAdapter;
 
-    const v1, 0x7f0600e7
+    const v1, 0x7f0600e9
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/flashcard/adapter/FlashCardAdapter;->setBgColorId(I)V
 
@@ -2373,7 +2373,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mEvaluateScoreTips:Landroid/widget/TextView;
 
     .line 499
-    const v0, 0x7f0905f7
+    const v0, 0x7f090601
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2408,7 +2408,7 @@
     invoke-interface {v0, p0}, Landroid/view/SurfaceHolder;->addCallback(Landroid/view/SurfaceHolder$Callback;)V
 
     .line 505
-    const v0, 0x7f0905f5
+    const v0, 0x7f0905ff
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2419,7 +2419,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mVideoPlayBtn:Landroid/widget/ImageView;
 
     .line 506
-    const v0, 0x7f0905f2
+    const v0, 0x7f0905fc
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->findViewById(I)Landroid/view/View;
 
@@ -2585,9 +2585,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->finish()V
 
     .line 430
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->overridePendingTransition(II)V
 
@@ -2606,16 +2606,16 @@
 
     .prologue
     .line 2100
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 2101
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->countingSoundId:I
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 2103
     :cond_0
@@ -2685,14 +2685,14 @@
 
     .prologue
     .line 201
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 202
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 204
     :cond_0
@@ -2873,14 +2873,14 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 208
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 210
     :cond_0
@@ -3162,7 +3162,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902e9
+    const v2, 0x7f0902f0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3419,7 +3419,7 @@
     .line 2510
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/SpeakActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
-    const v1, 0x7f0600e7
+    const v1, 0x7f0600e9
 
     invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setBackgroundResource(I)V
 
@@ -5255,9 +5255,9 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f090383 -> :sswitch_2
-        0x7f090590 -> :sswitch_1
-        0x7f0905f5 -> :sswitch_0
+        0x7f09038a -> :sswitch_2
+        0x7f09059a -> :sswitch_1
+        0x7f0905ff -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -5978,7 +5978,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902e9
+    const v2, 0x7f0902f0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

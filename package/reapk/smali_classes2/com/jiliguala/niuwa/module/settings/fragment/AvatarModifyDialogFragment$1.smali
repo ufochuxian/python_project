@@ -113,6 +113,6 @@
     .sparse-switch
         0x7f090049 -> :sswitch_1
         0x7f0900fa -> :sswitch_2
-        0x7f090555 -> :sswitch_0
+        0x7f09055f -> :sswitch_0
     .end sparse-switch
 .end method

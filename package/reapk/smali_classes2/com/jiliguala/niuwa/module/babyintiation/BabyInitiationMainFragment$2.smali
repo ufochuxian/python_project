@@ -1,11 +1,14 @@
 .class Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;
-.super Lcom/bumptech/glide/g/b/j;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/blog/www/guideview/g$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->setDrawableTop(Landroid/widget/TextView;Ljava/lang/String;)V
+    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuavatarGuideView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,81 +16,108 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/bumptech/glide/g/b/j",
-        "<",
-        "Landroid/graphics/Bitmap;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic b:Landroid/widget/TextView;
-
-.field final synthetic c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+.field final synthetic a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Landroid/widget/TextView;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .prologue
-    .line 585
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    .line 490
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->b:Landroid/widget/TextView;
-
-    invoke-direct {p0}, Lcom/bumptech/glide/g/b/j;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/g/a/c;)V
-    .locals 4
-    .param p1, "resource"    # Landroid/graphics/Bitmap;
-    .param p2, "glideAnimation"    # Lcom/bumptech/glide/g/a/c;
+.method public a()V
+    .locals 3
 
     .prologue
-    const/4 v3, 0x0
+    const/4 v2, 0x1
 
-    .line 588
-    if-eqz p1, :cond_0
+    .line 493
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
-    .line 589
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->b:Landroid/widget/TextView;
+    move-result-object v0
 
-    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+    const-string v1, "Guavatar Guide View"
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
 
-    .line 590
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getResources()Landroid/content/res/Resources;
+    .line 494
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    move-result-object v2
+    invoke-static {v0, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
 
-    invoke-direct {v1, v2, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    .line 495
+    const-string v0, "PREFS_GUAVATAR_MASK"
 
-    .line 589
-    invoke-virtual {v0, v3, v1, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v0, v2}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
 
-    .line 594
-    :cond_0
+    .line 496
     return-void
 .end method
 
-.method public bridge synthetic a(Ljava/lang/Object;Lcom/bumptech/glide/g/a/c;)V
-    .locals 0
+.method public b()V
+    .locals 2
 
     .prologue
-    .line 585
-    check-cast p1, Landroid/graphics/Bitmap;
+    .line 500
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    invoke-virtual {p0, p1, p2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$2;->a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/g/a/c;)V
+    const/4 v1, 0x0
 
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
+
+    .line 501
+    return-void
+.end method
+
+.method public c()V
+    .locals 2
+
+    .prologue
+    .line 505
+    const-string v0, "PREFS_SONG_GUDIE_MASK"
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
+
+    .line 506
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v0
+
+    const-string v1, "Guavatar Guide Exit"
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+
+    .line 507
+    return-void
+.end method
+
+.method public d()V
+    .locals 2
+
+    .prologue
+    .line 511
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v0
+
+    const-string v1, "Guavatar Guide Complete"
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+
+    .line 512
     return-void
 .end method

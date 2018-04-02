@@ -23,17 +23,17 @@
 
 .field public static final BaseQuickAdapter_viewholder_support:I = 0x7f090003
 
-.field public static final load_more_load_end_view:I = 0x7f0902e1
+.field public static final load_more_load_end_view:I = 0x7f0902e8
 
-.field public static final load_more_load_fail_view:I = 0x7f0902e2
+.field public static final load_more_load_fail_view:I = 0x7f0902e9
 
-.field public static final load_more_loading_view:I = 0x7f0902e3
+.field public static final load_more_loading_view:I = 0x7f0902ea
 
-.field public static final loading_progress:I = 0x7f0902e6
+.field public static final loading_progress:I = 0x7f0902ed
 
-.field public static final loading_text:I = 0x7f0902e8
+.field public static final loading_text:I = 0x7f0902ef
 
-.field public static final tv_prompt:I = 0x7f0905ba
+.field public static final tv_prompt:I = 0x7f0905c4
 
 
 # direct methods

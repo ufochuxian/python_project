@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2304
+    .line 2317
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->a:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
@@ -49,7 +49,7 @@
     .locals 2
 
     .prologue
-    .line 2307
+    .line 2320
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->isAdded()Z
@@ -58,11 +58,11 @@
 
     if-nez v1, :cond_0
 
-    .line 2329
+    .line 2342
     :goto_0
     return-void
 
-    .line 2310
+    .line 2323
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -74,7 +74,7 @@
 
     move-result-object v0
 
-    .line 2311
+    .line 2324
     .local v0, "courseFinishAnimDlg":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -84,7 +84,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->show(Landroid/support/v4/app/ag;)V
 
-    .line 2312
+    .line 2325
     new-instance v1, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;)V

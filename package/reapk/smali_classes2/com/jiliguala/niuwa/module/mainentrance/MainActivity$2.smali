@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/jiliguala/niuwa/common/widget/MainMaskView$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onFinishUserMigration()V
+    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showMask(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1060
+    .line 820
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$2;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,15 +37,17 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public a()V
+    .locals 2
 
     .prologue
-    .line 1063
-    const-string v0, "\u6570\u636e\u8fc1\u79fb\u540e\u5c06\u91cd\u542f"
+    .line 823
+    const-string v0, "SHOW_MASK_VIEW"
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
+    const/4 v1, 0x1
 
-    .line 1064
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
+
+    .line 824
     return-void
 .end method

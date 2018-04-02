@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6;
 
     .prologue
-    .line 571
+    .line 572
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6$1;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 1
 
     .prologue
-    .line 574
+    .line 575
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6$1;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$6;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$300(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)V
 
-    .line 575
+    .line 576
     return-void
 .end method

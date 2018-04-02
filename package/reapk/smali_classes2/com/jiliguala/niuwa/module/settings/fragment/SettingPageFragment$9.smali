@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 959
+    .line 968
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->b:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
@@ -47,19 +47,19 @@
     .param p2, "view"    # Landroid/view/View;
 
     .prologue
-    .line 981
+    .line 990
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     if-eqz v0, :cond_0
 
-    .line 982
+    .line 991
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v1}, Lcom/makeramen/roundedimageview/RoundedImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 984
+    .line 993
     :cond_0
     return-void
 .end method
@@ -71,12 +71,12 @@
     .param p3, "bitmap"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 974
+    .line 983
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     if-eqz v0, :cond_1
 
-    .line 975
+    .line 984
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     if-eqz p1, :cond_0
@@ -95,11 +95,11 @@
     :goto_0
     invoke-virtual {v1, v0}, Lcom/makeramen/roundedimageview/RoundedImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 977
+    .line 986
     :cond_1
     return-void
 
-    .line 975
+    .line 984
     :cond_2
     sget-object v0, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
@@ -113,19 +113,19 @@
     .param p3, "failReason"    # Lcom/nostra13/universalimageloader/core/assist/FailReason;
 
     .prologue
-    .line 967
+    .line 976
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     if-eqz v0, :cond_0
 
-    .line 968
+    .line 977
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$9;->a:Lcom/makeramen/roundedimageview/RoundedImageView;
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v1}, Lcom/makeramen/roundedimageview/RoundedImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 970
+    .line 979
     :cond_0
     return-void
 .end method
@@ -136,6 +136,6 @@
     .param p2, "view"    # Landroid/view/View;
 
     .prologue
-    .line 963
+    .line 972
     return-void
 .end method

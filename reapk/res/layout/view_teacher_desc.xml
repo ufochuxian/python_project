@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/teacher_txt" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="老师介绍" />
+    <RelativeLayout n1:background="@color/white" n1:paddingTop="15.0dip" n1:paddingBottom="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/teacher_txt">
+        <LinearLayout n1:gravity="center_vertical" n1:id="@id/icon_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/teacher_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_launcher" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <TextView n1:id="@id/eng_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Curt Mabry" />
+                <TextView n1:id="@id/chinese_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="叽里呱啦老师" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView n1:id="@id/teacher_desc" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="绘本-跟专业老师一起快乐读绘本!动画-2分钟教孩子看懂原版英文动画!绘本-跟专业老师一起快乐读绘本!" n1:layout_below="@id/icon_container" />
+    </RelativeLayout>
+</RelativeLayout>

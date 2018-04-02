@@ -57,7 +57,7 @@
     const/4 v6, 0x4
 
     .line 215
-    const v4, 0x7f090549
+    const v4, 0x7f090553
 
     invoke-virtual {p2, v4}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -131,7 +131,7 @@
     if-ne v3, v5, :cond_0
 
     .line 222
-    const v4, 0x7f0904ad
+    const v4, 0x7f0904b7
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

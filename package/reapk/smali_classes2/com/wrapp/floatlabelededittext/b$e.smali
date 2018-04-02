@@ -17,7 +17,7 @@
 # static fields
 .field public static final GrayText:I = 0x7f1000bd
 
-.field public static final TextMini:I = 0x7f10013e
+.field public static final TextMini:I = 0x7f100140
 
 
 # direct methods

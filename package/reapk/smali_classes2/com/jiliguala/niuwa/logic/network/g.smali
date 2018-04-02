@@ -48,7 +48,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 48
     sget-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     if-eqz v0, :cond_0
@@ -58,7 +58,7 @@
     :goto_0
     sput-object v0, Lcom/jiliguala/niuwa/logic/network/g;->d:Ljava/lang/String;
 
-    .line 49
+    .line 51
     const-class v0, Lcom/jiliguala/niuwa/logic/network/g;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -69,7 +69,7 @@
 
     return-void
 
-    .line 46
+    .line 48
     :cond_0
     const-string v0, "https://jiliguala.com"
 
@@ -82,22 +82,22 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 56
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 52
+    .line 54
     iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/g;->j:Lcom/google/gson/Gson;
 
-    .line 53
+    .line 55
     iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/g;->k:Lretrofit2/Retrofit$Builder;
 
-    .line 54
+    .line 56
     iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/g;->m:Lokhttp3/y$a;
 
-    .line 57
+    .line 59
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/g;->c()V
 
-    .line 58
+    .line 60
     return-void
 .end method
 
@@ -106,7 +106,7 @@
     .param p1, "x0"    # Lcom/jiliguala/niuwa/logic/network/g$1;
 
     .prologue
-    .line 38
+    .line 40
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/g;-><init>()V
 
     return-void
@@ -116,7 +116,7 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 63
     sget-object v0, Lcom/jiliguala/niuwa/logic/network/g$c;->a:Lcom/jiliguala/niuwa/logic/network/g;
 
     return-object v0
@@ -135,7 +135,7 @@
     .end annotation
 
     .prologue
-    .line 136
+    .line 138
     .local p1, "serviceClass":Ljava/lang/Class;, "Ljava/lang/Class<TS;>;"
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/g;->l:Lokhttp3/y$a;
 
@@ -143,7 +143,7 @@
 
     move-result-object v0
 
-    .line 137
+    .line 139
     .local v0, "client":Lokhttp3/y;
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/g;->k:Lretrofit2/Retrofit$Builder;
 
@@ -155,7 +155,7 @@
 
     move-result-object v1
 
-    .line 139
+    .line 141
     .local v1, "retrofit":Lretrofit2/Retrofit;
     invoke-virtual {v1, p1}, Lretrofit2/Retrofit;->create(Ljava/lang/Class;)Ljava/lang/Object;
 
@@ -169,7 +169,7 @@
     .param p0, "x0"    # Lokhttp3/aa;
 
     .prologue
-    .line 38
+    .line 40
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/network/g;->b(Lokhttp3/aa;)Lokhttp3/u$a;
 
     move-result-object v0
@@ -182,7 +182,7 @@
     .param p0, "x0"    # Lokhttp3/aa$a;
 
     .prologue
-    .line 38
+    .line 40
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/network/g;->c(Lokhttp3/aa$a;)V
 
     return-void
@@ -194,7 +194,7 @@
     .param p1, "x1"    # Lokhttp3/aa;
 
     .prologue
-    .line 38
+    .line 40
     invoke-static {p0, p1}, Lcom/jiliguala/niuwa/logic/network/g;->b(Lokhttp3/aa$a;Lokhttp3/aa;)V
 
     return-void
@@ -205,7 +205,7 @@
     .param p0, "original"    # Lokhttp3/aa;
 
     .prologue
-    .line 66
+    .line 68
     if-eqz p0, :cond_0
 
     invoke-virtual {p0}, Lokhttp3/aa;->b()Ljava/lang/String;
@@ -220,17 +220,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 68
+    .line 70
     invoke-virtual {p0}, Lokhttp3/aa;->a()Lokhttp3/u;
 
     move-result-object v1
 
-    .line 69
+    .line 71
     invoke-virtual {v1}, Lokhttp3/u;->u()Lokhttp3/u$a;
 
     move-result-object v1
 
-    .line 70
+    .line 72
     invoke-virtual {p0}, Lokhttp3/aa;->a()Lokhttp3/u;
 
     move-result-object v2
@@ -243,7 +243,7 @@
 
     move-result-object v1
 
-    .line 71
+    .line 73
     invoke-virtual {p0}, Lokhttp3/aa;->a()Lokhttp3/u;
 
     move-result-object v2
@@ -258,14 +258,14 @@
 
     const-string v2, "nonce"
 
-    .line 72
+    .line 74
     invoke-virtual {v1, v2}, Lokhttp3/u$a;->o(Ljava/lang/String;)Lokhttp3/u$a;
 
     move-result-object v1
 
     const-string v2, "nonce"
 
-    .line 73
+    .line 75
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->e()Ljava/lang/String;
 
     move-result-object v3
@@ -274,7 +274,7 @@
 
     move-result-object v0
 
-    .line 76
+    .line 78
     :goto_0
     return-object v0
 
@@ -289,7 +289,7 @@
     .param p0, "x0"    # Lokhttp3/aa$a;
 
     .prologue
-    .line 38
+    .line 40
     invoke-static {p0}, Lcom/jiliguala/niuwa/logic/network/g;->d(Lokhttp3/aa$a;)V
 
     return-void
@@ -301,7 +301,7 @@
     .param p1, "original"    # Lokhttp3/aa;
 
     .prologue
-    .line 88
+    .line 90
     invoke-virtual {p1}, Lokhttp3/aa;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -312,7 +312,7 @@
 
     invoke-virtual {p0, v0, v1}, Lokhttp3/aa$a;->a(Ljava/lang/String;Lokhttp3/ab;)Lokhttp3/aa$a;
 
-    .line 89
+    .line 91
     return-void
 .end method
 
@@ -322,12 +322,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 104
+    .line 106
     new-instance v0, Lcom/google/gson/GsonBuilder;
 
     invoke-direct {v0}, Lcom/google/gson/GsonBuilder;-><init>()V
 
-    .line 105
+    .line 107
     .local v0, "gsonBuilder":Lcom/google/gson/GsonBuilder;
     const-class v1, Lcom/jiliguala/niuwa/logic/network/json/InteractLessonTemplate;
 
@@ -337,14 +337,14 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/google/gson/GsonBuilder;->registerTypeAdapter(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/GsonBuilder;
 
-    .line 106
+    .line 108
     invoke-virtual {v0}, Lcom/google/gson/GsonBuilder;->create()Lcom/google/gson/Gson;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/logic/network/g;->j:Lcom/google/gson/Gson;
 
-    .line 107
+    .line 109
     new-instance v1, Lretrofit2/Retrofit$Builder;
 
     invoke-direct {v1}, Lretrofit2/Retrofit$Builder;-><init>()V
@@ -357,7 +357,7 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/g;->j:Lcom/google/gson/Gson;
 
-    .line 108
+    .line 110
     invoke-static {v2}, Lretrofit2/converter/gson/GsonConverterFactory;->create(Lcom/google/gson/Gson;)Lretrofit2/converter/gson/GsonConverterFactory;
 
     move-result-object v2
@@ -366,7 +366,7 @@
 
     move-result-object v1
 
-    .line 109
+    .line 111
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/h;->a()Lretrofit2/CallAdapter$Factory;
 
     move-result-object v2
@@ -377,7 +377,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/logic/network/g;->k:Lretrofit2/Retrofit$Builder;
 
-    .line 110
+    .line 112
     new-instance v1, Lokhttp3/y$a;
 
     invoke-direct {v1}, Lokhttp3/y$a;-><init>()V
@@ -392,7 +392,7 @@
 
     const/4 v2, 0x0
 
-    .line 111
+    .line 113
     invoke-virtual {v1, v2}, Lokhttp3/y$a;->c(Z)Lokhttp3/y$a;
 
     move-result-object v1
@@ -401,7 +401,7 @@
 
     sget-object v4, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 112
+    .line 114
     invoke-virtual {v1, v2, v3, v4}, Lokhttp3/y$a;->b(JLjava/util/concurrent/TimeUnit;)Lokhttp3/y$a;
 
     move-result-object v1
@@ -410,7 +410,7 @@
 
     invoke-direct {v2}, Lokhttp3/logging/HttpLoggingInterceptor;-><init>()V
 
-    .line 113
+    .line 115
     invoke-virtual {v1, v2}, Lokhttp3/y$a;->a(Lokhttp3/v;)Lokhttp3/y$a;
 
     move-result-object v1
@@ -419,7 +419,7 @@
 
     invoke-direct {v2, v5}, Lcom/jiliguala/niuwa/logic/network/g$a;-><init>(Lcom/jiliguala/niuwa/logic/network/g$1;)V
 
-    .line 114
+    .line 116
     invoke-virtual {v1, v2}, Lokhttp3/y$a;->a(Lokhttp3/v;)Lokhttp3/y$a;
 
     move-result-object v1
@@ -436,12 +436,12 @@
 
     invoke-direct {v2}, Lcom/jiliguala/niuwa/logic/network/b;-><init>()V
 
-    .line 116
+    .line 118
     invoke-virtual {v1, v2}, Lokhttp3/y$a;->a(Lokhttp3/q;)Lokhttp3/y$a;
 
     move-result-object v1
 
-    .line 117
+    .line 119
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/g;->e()Lokhttp3/c;
 
     move-result-object v2
@@ -452,14 +452,14 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/logic/network/g;->l:Lokhttp3/y$a;
 
-    .line 118
+    .line 120
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/g;->d()Lokhttp3/y$a;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/logic/network/g;->m:Lokhttp3/y$a;
 
-    .line 119
+    .line 121
     return-void
 .end method
 
@@ -468,7 +468,7 @@
     .param p0, "requestBuilder"    # Lokhttp3/aa$a;
 
     .prologue
-    .line 80
+    .line 82
     const-string v0, "content-type"
 
     const-string v1, "application/json"
@@ -481,7 +481,7 @@
 
     const-string v2, "1"
 
-    .line 81
+    .line 83
     invoke-virtual {v0, v1, v2}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
     move-result-object v0
@@ -490,14 +490,14 @@
 
     const-string v2, "close"
 
-    .line 82
+    .line 84
     invoke-virtual {v0, v1, v2}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
     move-result-object v0
 
     const-string v1, "User-Agent"
 
-    .line 83
+    .line 85
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -510,10 +510,10 @@
 
     const-string v2, "*/*"
 
-    .line 84
+    .line 86
     invoke-virtual {v0, v1, v2}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
-    .line 85
+    .line 87
     return-void
 .end method
 
@@ -521,7 +521,7 @@
     .locals 4
 
     .prologue
-    .line 122
+    .line 124
     new-instance v0, Lokhttp3/y$a;
 
     invoke-direct {v0}, Lokhttp3/y$a;-><init>()V
@@ -536,7 +536,7 @@
 
     const/4 v1, 0x0
 
-    .line 123
+    .line 125
     invoke-virtual {v0, v1}, Lokhttp3/y$a;->c(Z)Lokhttp3/y$a;
 
     move-result-object v0
@@ -545,7 +545,7 @@
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 124
+    .line 126
     invoke-virtual {v0, v2, v3, v1}, Lokhttp3/y$a;->b(JLjava/util/concurrent/TimeUnit;)Lokhttp3/y$a;
 
     move-result-object v0
@@ -554,7 +554,7 @@
 
     invoke-direct {v1}, Lokhttp3/logging/HttpLoggingInterceptor;-><init>()V
 
-    .line 125
+    .line 127
     invoke-virtual {v0, v1}, Lokhttp3/y$a;->a(Lokhttp3/v;)Lokhttp3/y$a;
 
     move-result-object v0
@@ -563,12 +563,12 @@
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/b;-><init>()V
 
-    .line 126
+    .line 128
     invoke-virtual {v0, v1}, Lokhttp3/y$a;->a(Lokhttp3/q;)Lokhttp3/y$a;
 
     move-result-object v0
 
-    .line 127
+    .line 129
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/g;->e()Lokhttp3/c;
 
     move-result-object v1
@@ -577,7 +577,7 @@
 
     move-result-object v0
 
-    .line 122
+    .line 124
     return-object v0
 .end method
 
@@ -586,7 +586,7 @@
     .param p0, "requestBuilder"    # Lokhttp3/aa$a;
 
     .prologue
-    .line 92
+    .line 94
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v4
@@ -597,7 +597,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 93
+    .line 95
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v4
@@ -606,7 +606,7 @@
 
     move-result-object v3
 
-    .line 94
+    .line 96
     .local v3, "uid":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -616,7 +616,7 @@
 
     move-result-object v2
 
-    .line 95
+    .line 97
     .local v2, "token":Ljava/lang/String;
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -630,7 +630,7 @@
 
     if-nez v4, :cond_0
 
-    .line 96
+    .line 98
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -653,7 +653,7 @@
 
     move-result-object v1
 
-    .line 97
+    .line 99
     .local v1, "credentials":Ljava/lang/String;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -683,13 +683,13 @@
 
     move-result-object v0
 
-    .line 98
+    .line 100
     .local v0, "basicAuth":Ljava/lang/String;
     const-string v4, "authorization"
 
     invoke-virtual {p0, v4, v0}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
-    .line 101
+    .line 103
     .end local v0    # "basicAuth":Ljava/lang/String;
     .end local v1    # "credentials":Ljava/lang/String;
     .end local v2    # "token":Ljava/lang/String;
@@ -702,7 +702,7 @@
     .locals 4
 
     .prologue
-    .line 131
+    .line 133
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -713,7 +713,7 @@
 
     move-result-object v0
 
-    .line 132
+    .line 134
     .local v0, "httpCacheFile":Ljava/io/File;
     new-instance v1, Lokhttp3/c;
 
@@ -731,7 +731,7 @@
     .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 166
+    .line 168
     :try_start_0
     move-object v0, p1
 
@@ -739,7 +739,7 @@
 
     move-object v2, v0
 
-    .line 167
+    .line 169
     .local v2, "error":Lcom/jiliguala/niuwa/logic/network/RetrofitException;
     const-class v4, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;
 
@@ -751,22 +751,22 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 168
+    .line 170
     .local v3, "response":Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;
     if-eqz v3, :cond_0
 
-    .line 174
+    .line 176
     .end local v2    # "error":Lcom/jiliguala/niuwa/logic/network/RetrofitException;
     .end local v3    # "response":Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;
     :cond_0
     :goto_0
     return-object v3
 
-    .line 172
+    .line 174
     :catch_0
     move-exception v1
 
-    .line 174
+    .line 176
     .local v1, "e":Ljava/lang/Exception;
     const/4 v3, 0x0
 
@@ -794,7 +794,7 @@
     .end annotation
 
     .prologue
-    .line 143
+    .line 145
     .local p3, "headers":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     iget-object v7, p0, Lcom/jiliguala/niuwa/logic/network/g;->m:Lokhttp3/y$a;
 
@@ -802,7 +802,7 @@
 
     move-result-object v1
 
-    .line 144
+    .line 146
     .local v1, "client":Lokhttp3/y;
     new-instance v7, Lokhttp3/aa$a;
 
@@ -812,25 +812,25 @@
 
     move-result-object v0
 
-    .line 145
+    .line 147
     .local v0, "builder":Lokhttp3/aa$a;
     if-eqz p2, :cond_0
 
-    .line 146
+    .line 148
     const-string v7, "Cookie"
 
     invoke-virtual {v0, v7, p2}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
-    .line 148
+    .line 150
     :cond_0
     if-eqz p3, :cond_1
 
-    .line 149
+    .line 151
     invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v2
 
-    .line 150
+    .line 152
     .local v2, "entries":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;>;"
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -849,7 +849,7 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 151
+    .line 153
     .local v3, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;"
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -857,7 +857,7 @@
 
     check-cast v4, Ljava/lang/String;
 
-    .line 152
+    .line 154
     .local v4, "key":Ljava/lang/String;
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -865,13 +865,13 @@
 
     check-cast v6, Ljava/lang/String;
 
-    .line 153
+    .line 155
     .local v6, "value":Ljava/lang/String;
     invoke-virtual {v0, v4, v6}, Lokhttp3/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/aa$a;
 
     goto :goto_0
 
-    .line 156
+    .line 158
     .end local v2    # "entries":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;>;"
     .end local v3    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;"
     .end local v4    # "key":Ljava/lang/String;
@@ -881,7 +881,7 @@
 
     move-result-object v5
 
-    .line 157
+    .line 159
     .local v5, "request":Lokhttp3/aa;
     invoke-virtual {v1, v5}, Lokhttp3/y;->a(Lokhttp3/aa;)Lokhttp3/e;
 
@@ -889,7 +889,7 @@
 
     invoke-interface {v7, p4}, Lokhttp3/e;->a(Lokhttp3/f;)V
 
-    .line 158
+    .line 160
     return-void
 .end method
 
@@ -897,7 +897,7 @@
     .locals 1
 
     .prologue
-    .line 161
+    .line 163
     const-class v0, Lcom/jiliguala/niuwa/logic/network/d;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/logic/network/g;->a(Ljava/lang/Class;)Ljava/lang/Object;

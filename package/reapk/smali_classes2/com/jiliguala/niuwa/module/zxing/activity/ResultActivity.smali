@@ -50,7 +50,7 @@
 
     .line 27
     .local v2, "extras":Landroid/os/Bundle;
-    const v7, 0x7f090453
+    const v7, 0x7f09045a
 
     invoke-virtual {p0, v7}, Lcom/jiliguala/niuwa/module/zxing/activity/ResultActivity;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
     iput-object v7, p0, Lcom/jiliguala/niuwa/module/zxing/activity/ResultActivity;->mResultImage:Landroid/widget/ImageView;
 
     .line 28
-    const v7, 0x7f090454
+    const v7, 0x7f09045b
 
     invoke-virtual {p0, v7}, Lcom/jiliguala/niuwa/module/zxing/activity/ResultActivity;->findViewById(I)Landroid/view/View;
 

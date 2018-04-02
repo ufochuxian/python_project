@@ -223,7 +223,7 @@
 
     .line 255
     .local v1, "fragment":Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;
-    const v2, 0x7f0801e1
+    const v2, 0x7f0801ea
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->setTopIconRes(I)V
 
@@ -302,7 +302,7 @@
 
     const/4 v12, 0x0
 
-    const v13, 0x7f080369
+    const v13, 0x7f080376
 
     const v14, 0x7f0f00b6
 
@@ -380,7 +380,7 @@
 
     const/4 v6, 0x1
 
-    invoke-static {v5, v3, v0, v6}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v5, v3, v0, v6}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v4
 
@@ -512,9 +512,9 @@
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 245
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     invoke-virtual {p0, v5, v6}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->overridePendingTransition(II)V
 
@@ -764,7 +764,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f0904d5
+    const v2, 0x7f0904df
 
     .line 409
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -824,9 +824,9 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 422
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->overridePendingTransition(II)V
 
@@ -859,7 +859,7 @@
     const/4 v3, 0x0
 
     .line 124
-    const v0, 0x7f090533
+    const v0, 0x7f09053d
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -922,7 +922,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->courseBgIv:Landroid/widget/ImageView;
 
     .line 128
-    const v0, 0x7f090477
+    const v0, 0x7f090480
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -943,7 +943,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f060052
+    const v2, 0x7f060054
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1020,7 +1020,7 @@
     invoke-virtual {v0, v1, v4, v5}, Landroid/widget/ImageView;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 142
-    const v0, 0x7f090558
+    const v0, 0x7f090562
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -1029,7 +1029,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 143
-    const v0, 0x7f090559
+    const v0, 0x7f090563
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -1080,7 +1080,7 @@
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/MultiViewPager;->setAdapter(Landroid/support/v4/view/af;)V
 
     .line 172
-    const v0, 0x7f09055a
+    const v0, 0x7f090564
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -1106,7 +1106,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06005e
+    const v2, 0x7f060060
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1133,7 +1133,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 193
-    const v0, 0x7f0904e4
+    const v0, 0x7f0904ee
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->findViewById(I)Landroid/view/View;
 
@@ -1167,9 +1167,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->finish()V
 
     .line 301
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->overridePendingTransition(II)V
 
@@ -1250,8 +1250,8 @@
     :sswitch_data_0
     .sparse-switch
         0x7f0901bd -> :sswitch_1
-        0x7f0904e4 -> :sswitch_2
-        0x7f090558 -> :sswitch_0
+        0x7f0904ee -> :sswitch_2
+        0x7f090562 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -1261,7 +1261,7 @@
 
     .prologue
     .line 480
-    const v0, 0x7f0904d5
+    const v0, 0x7f0904df
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/course/main/CourseActivity;->mCurClickId:I
 

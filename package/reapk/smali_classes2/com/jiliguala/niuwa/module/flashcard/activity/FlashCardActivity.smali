@@ -503,7 +503,7 @@
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->setContentView(I)V
 
     .line 481
-    const v1, 0x7f090402
+    const v1, 0x7f090409
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->findViewById(I)Landroid/view/View;
 
@@ -517,7 +517,7 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 484
-    const v1, 0x7f090477
+    const v1, 0x7f090480
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->findViewById(I)Landroid/view/View;
 
@@ -549,7 +549,7 @@
     invoke-virtual {v6, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 487
-    const v1, 0x7f090383
+    const v1, 0x7f09038a
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->findViewById(I)Landroid/view/View;
 
@@ -630,7 +630,7 @@
     if-eqz v1, :cond_0
 
     .line 496
-    const v1, 0x7f0802cc
+    const v1, 0x7f0802d6
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
@@ -671,7 +671,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->mChannelTitle:Landroid/widget/TextView;
 
     .line 506
-    const v1, 0x7f09037c
+    const v1, 0x7f090383
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->findViewById(I)Landroid/view/View;
 
@@ -779,7 +779,7 @@
     .line 529
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->mFcAdapter:Lcom/jiliguala/niuwa/module/flashcard/adapter/FlashCardAdapter;
 
-    const v4, 0x7f060086
+    const v4, 0x7f060088
 
     invoke-virtual {v1, v4}, Lcom/jiliguala/niuwa/module/flashcard/adapter/FlashCardAdapter;->setBgColorId(I)V
 
@@ -801,7 +801,7 @@
     invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/common/widget/CustomViewPager;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$f;)V
 
     .line 537
-    const v1, 0x7f0904f2
+    const v1, 0x7f0904fc
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->findViewById(I)Landroid/view/View;
 
@@ -906,9 +906,9 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .prologue
-    const v3, 0x7f010025
+    const v3, 0x7f010027
 
-    const v2, 0x7f010022
+    const v2, 0x7f010024
 
     .line 648
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -972,7 +972,7 @@
     invoke-virtual {v2, p1}, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardChannelFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 659
-    const v2, 0x7f090477
+    const v2, 0x7f090480
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->mFlashCardChannelFragment:Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardChannelFragment;
 
@@ -996,9 +996,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->finish()V
 
     .line 607
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->overridePendingTransition(II)V
 
@@ -1761,7 +1761,7 @@
         0x7f09006f -> :sswitch_0
         0x7f090072 -> :sswitch_1
         0x7f090079 -> :sswitch_3
-        0x7f090383 -> :sswitch_4
+        0x7f09038a -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -2241,7 +2241,7 @@
     .line 201
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->mNextBtn:Landroid/widget/ImageView;
 
-    const v3, 0x7f08012e
+    const v3, 0x7f080130
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2258,7 +2258,7 @@
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/flashcard/activity/FlashCardActivity;->mNextBtn:Landroid/widget/ImageView;
 
-    const v3, 0x7f080137
+    const v3, 0x7f080139
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2538,13 +2538,13 @@
 
     move-result-object v12
 
-    const v13, 0x7f01001d
+    const v13, 0x7f01001f
 
-    const v14, 0x7f01001e
+    const v14, 0x7f010020
 
-    const v15, 0x7f01001d
+    const v15, 0x7f01001f
 
-    const v16, 0x7f01001e
+    const v16, 0x7f010020
 
     .line 827
     invoke-virtual/range {v12 .. v16}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
@@ -2594,13 +2594,13 @@
 
     move-result-object v12
 
-    const v13, 0x7f010022
+    const v13, 0x7f010024
 
-    const v14, 0x7f010025
+    const v14, 0x7f010027
 
-    const v15, 0x7f010022
+    const v15, 0x7f010024
 
-    const v16, 0x7f010025
+    const v16, 0x7f010027
 
     .line 845
     invoke-virtual/range {v12 .. v16}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;

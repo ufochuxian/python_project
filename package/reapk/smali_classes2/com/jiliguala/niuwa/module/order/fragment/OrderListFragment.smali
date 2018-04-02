@@ -120,9 +120,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -140,7 +140,7 @@
     const/4 v7, 0x0
 
     .line 71
-    const v4, 0x7f0b0121
+    const v4, 0x7f0b0125
 
     const/4 v5, 0x0
 
@@ -150,7 +150,7 @@
 
     .line 73
     .local v3, "view":Landroid/view/View;
-    const v4, 0x7f0902da
+    const v4, 0x7f0902e1
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
     invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setMode(Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$Mode;)V
 
     .line 75
-    const v4, 0x7f09053c
+    const v4, 0x7f090546
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -207,7 +207,7 @@
     invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 85
-    const v4, 0x7f090389
+    const v4, 0x7f090390
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060052
+    const v6, 0x7f060054
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 

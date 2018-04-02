@@ -224,7 +224,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f090284
+    const v5, 0x7f090289
 
     const-class v6, Lcom/jiliguala/niuwa/module/album/multi_image_selector/MultiImageSelectorFragment;
 

@@ -536,7 +536,7 @@
     .line 68
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/WeChatSignUpFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f0904f8
+    const v1, 0x7f090502
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -549,7 +549,7 @@
     .line 70
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/WeChatSignUpFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f09060d
+    const v1, 0x7f090617
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -571,7 +571,7 @@
     .line 79
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/WeChatSignUpFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090347
+    const v1, 0x7f09034e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

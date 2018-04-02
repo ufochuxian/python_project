@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 172
+    .line 180
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$1;->a:Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,16 +52,16 @@
     .param p1, "gameEvent"    # Lcom/jiliguala/niuwa/logic/b/a/e;
 
     .prologue
-    .line 176
+    .line 184
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/e;->a:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 183
+    .line 191
     :goto_0
     return-void
 
-    .line 178
+    .line 186
     :pswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$1;->a:Lcom/jiliguala/niuwa/module/game/GameActivity;
 
@@ -69,7 +69,7 @@
 
     goto :goto_0
 
-    .line 176
+    .line 184
     :pswitch_data_0
     .packed-switch 0x1028
         :pswitch_0
@@ -80,7 +80,7 @@
     .locals 0
 
     .prologue
-    .line 172
+    .line 180
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/e;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity$1;->a(Lcom/jiliguala/niuwa/logic/b/a/e;)V

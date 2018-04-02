@@ -151,7 +151,7 @@
 
     .line 108
     :cond_2
-    const v9, 0x7f0903f8
+    const v9, 0x7f0903ff
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
 
     .line 112
     :cond_3
-    const v9, 0x7f090429
+    const v9, 0x7f090430
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -183,7 +183,7 @@
 
     .line 147
     :cond_4
-    const v9, 0x7f09042f
+    const v9, 0x7f090436
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -194,7 +194,7 @@
     iput-object v9, p0, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->mRecommendedBooksGrid:Landroid/widget/GridView;
 
     .line 149
-    const v9, 0x7f09056c
+    const v9, 0x7f090576
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -216,7 +216,7 @@
 
     .line 170
     :cond_5
-    const v9, 0x7f090528
+    const v9, 0x7f090532
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
 
     .line 180
     :cond_7
-    const v9, 0x7f09052e
+    const v9, 0x7f090538
 
     invoke-virtual {p0, v9}, Lcom/jiliguala/niuwa/module/story/views/book/PostStoryPageView;->findViewById(I)Landroid/view/View;
 
@@ -479,7 +479,7 @@
 
     .prologue
     .line 205
-    const v0, 0x7f0b015f
+    const v0, 0x7f0b0164
 
     return v0
 .end method
@@ -489,7 +489,7 @@
 
     .prologue
     .line 215
-    const v0, 0x7f0b015f
+    const v0, 0x7f0b0164
 
     return v0
 .end method
@@ -499,7 +499,7 @@
 
     .prologue
     .line 210
-    const v0, 0x7f0b015f
+    const v0, 0x7f0b0164
 
     return v0
 .end method
@@ -527,7 +527,7 @@
 
     move-result v5
 
-    const v6, 0x7f090429
+    const v6, 0x7f090430
 
     if-ne v5, v6, :cond_0
 
@@ -600,7 +600,7 @@
 
     move-result v5
 
-    const v6, 0x7f090528
+    const v6, 0x7f090532
 
     if-ne v5, v6, :cond_3
 

@@ -15,6 +15,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;,
         Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Skin;,
         Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;,
         Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;,
@@ -30,6 +31,8 @@
 .field public clockinnotif:Z
 
 .field public curatedentry:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry;
+
+.field public guavatar:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Guavatar;
 
 .field public homenotif:Z
 

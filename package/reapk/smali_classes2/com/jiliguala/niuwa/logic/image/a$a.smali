@@ -324,8 +324,10 @@
     :goto_0
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/image/e;->a(Ljava/io/Closeable;)V
 
+    .line 807
     throw v2
 
+    .line 806
     .end local v0    # "writer":Ljava/io/Writer;
     .restart local v1    # "writer":Ljava/io/Writer;
     :catchall_1

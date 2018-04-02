@@ -361,9 +361,9 @@
     .line 165
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/search/SearchActivity$3;->a:Lcom/jiliguala/niuwa/module/search/SearchActivity;
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
-    const v7, 0x7f010013
+    const v7, 0x7f010014
 
     invoke-virtual {v5, v6, v7}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->overridePendingTransition(II)V
 

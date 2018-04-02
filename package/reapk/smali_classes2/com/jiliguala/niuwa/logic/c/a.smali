@@ -762,7 +762,7 @@
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/RecyclingImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 530
-    const v24, 0x7f090286
+    const v24, 0x7f09028b
 
     move-object/from16 v0, v19
 
@@ -771,7 +771,7 @@
     invoke-virtual {v0, v1, v8}, Lcom/jiliguala/niuwa/common/widget/RecyclingImageView;->setTag(ILjava/lang/Object;)V
 
     .line 531
-    const v24, 0x7f090287
+    const v24, 0x7f09028c
 
     move-object/from16 v0, v19
 
@@ -2371,7 +2371,7 @@
 
     .line 340
     .local v12, "layout":Landroid/widget/RelativeLayout;
-    const v29, 0x7f080344
+    const v29, 0x7f08034e
 
     move/from16 v0, v29
 
@@ -2424,7 +2424,7 @@
     invoke-virtual {v10, v0}, Landroid/widget/ImageView;->setClickable(Z)V
 
     .line 347
-    const v29, 0x7f080347
+    const v29, 0x7f080351
 
     move/from16 v0, v29
 
@@ -2621,7 +2621,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f06004f
+    const v30, 0x7f060051
 
     invoke-virtual/range {v29 .. v30}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2690,7 +2690,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setClickable(Z)V
 
     .line 371
-    const v29, 0x7f08034a
+    const v29, 0x7f080354
 
     move-object/from16 v0, v18
 
@@ -3710,7 +3710,7 @@
     if-eqz v4, :cond_0
 
     .line 231
-    const v4, 0x7f090287
+    const v4, 0x7f09028c
 
     invoke-virtual {v3, v4}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

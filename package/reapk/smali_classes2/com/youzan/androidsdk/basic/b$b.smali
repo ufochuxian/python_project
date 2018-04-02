@@ -32,7 +32,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f040249
+    const v2, 0x7f04024a
 
     aput v2, v0, v1
 

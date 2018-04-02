@@ -28,7 +28,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment_ViewBinding;->target:Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment;
 
     .line 25
-    const v1, 0x7f090437
+    const v1, 0x7f09043e
 
     const-string v2, "field \'mRecyclerView\'"
 

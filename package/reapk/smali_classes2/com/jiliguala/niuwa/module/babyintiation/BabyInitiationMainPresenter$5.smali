@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 197
+    .line 195
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$5;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,17 +52,17 @@
     .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 200
+    .line 198
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 210
+    .line 208
     :goto_0
     :pswitch_0
     return-void
 
-    .line 203
+    .line 201
     :pswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$5;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
@@ -70,7 +70,7 @@
 
     goto :goto_0
 
-    .line 207
+    .line 205
     :pswitch_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$5;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
@@ -78,7 +78,7 @@
 
     goto :goto_0
 
-    .line 200
+    .line 198
     :pswitch_data_0
     .packed-switch 0x1004
         :pswitch_1
@@ -92,7 +92,7 @@
     .locals 0
 
     .prologue
-    .line 197
+    .line 195
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$5;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V

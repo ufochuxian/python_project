@@ -100,7 +100,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/story/views/book/PageView;->mReadingExperienceManager:Lcom/jiliguala/niuwa/module/story/data/ReadingExperienceManager;
 
     .line 62
-    const v7, 0x7f0903b9
+    const v7, 0x7f0903c0
 
     invoke-virtual {p0, v7}, Lcom/jiliguala/niuwa/module/story/views/book/PageView;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
     .line 88
     .end local v1    # "artwork":Lcom/jiliguala/niuwa/module/story/data/internal/Asset;
     :cond_0
-    const v7, 0x7f0905b2
+    const v7, 0x7f0905bc
 
     invoke-virtual {p0, v7}, Lcom/jiliguala/niuwa/module/story/views/book/PageView;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     invoke-virtual {v7, v8}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 113
-    const v7, 0x7f0903bd
+    const v7, 0x7f0903c4
 
     invoke-virtual {p0, v7}, Lcom/jiliguala/niuwa/module/story/views/book/PageView;->findViewById(I)Landroid/view/View;
 
@@ -599,7 +599,7 @@
 
     .prologue
     .line 196
-    const v0, 0x7f0b015e
+    const v0, 0x7f0b0163
 
     return v0
 .end method
@@ -609,7 +609,7 @@
 
     .prologue
     .line 206
-    const v0, 0x7f0b015d
+    const v0, 0x7f0b0162
 
     return v0
 .end method
@@ -619,7 +619,7 @@
 
     .prologue
     .line 201
-    const v0, 0x7f0b015e
+    const v0, 0x7f0b0163
 
     return v0
 .end method

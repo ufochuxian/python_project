@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.boldfont.BoldButton n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/white" n1:id="@id/btn_next" n1:background="@color/color_default_green" n1:layout_width="fill_parent" n1:layout_height="@dimen/large_button_height" n1:text="下一步" n1:layout_alignParentBottom="true" />
+    <RelativeLayout n1:id="@id/main_content_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/btn_next">
+        <RelativeLayout n1:gravity="center_vertical" n1:id="@id/top_bar_container" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height">
+            <TextView n1:textColor="@color/color_default_green" n1:gravity="center_vertical" n1:id="@id/has_account" n1:layout_width="wrap_content" n1:layout_height="@dimen/default_icon_height" n1:text="已有账号" n1:layout_alignParentRight="true" style="@style/TopbarSideTitle" />
+        </RelativeLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/header_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_below="@id/top_bar_container">
+            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/title_x_large" n1:textColor="@color/color_default_dark_gray" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="宝贝的生日?" n1:layout_below="@id/birthday_icon" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_gray" n1:id="@id/sub_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="叽里呱啦将推荐适龄的课程" n1:layout_centerHorizontal="true" />
+            <ImageView n1:id="@id/birthday_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/l_icon_birthday" n1:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <RelativeLayout n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/header_container" n1:layout_alignParentBottom="true">
+            <net.simonvt.datepicker.DatePicker n1:gravity="center_vertical" n1:id="@id/date_picker" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n2:dp_calendarViewShown="false" n2:dp_limit_year="true" n2:dp_show_day="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/baby_age" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0dip" n1:text="您的宝贝今年0岁" n1:layout_above="@id/date_picker" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <EditText n1:enabled="false" n1:textColorHint="@color/color_default_gray" n1:id="@id/edit" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:hint="宝贝生日" n1:layout_alignParentLeft="true" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

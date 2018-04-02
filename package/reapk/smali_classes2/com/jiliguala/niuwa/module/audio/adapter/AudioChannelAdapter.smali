@@ -187,7 +187,7 @@
 
     .line 108
     .local v2, "groupHolder":Lcom/jiliguala/niuwa/module/audio/adapter/AudioChannelAdapter$GroupHolder;
-    const v6, 0x7f0902a3
+    const v6, 0x7f0902a9
 
     invoke-virtual {p2, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

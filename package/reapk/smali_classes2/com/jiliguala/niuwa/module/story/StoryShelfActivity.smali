@@ -49,7 +49,7 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f0904e7
+    const v4, 0x7f0904f1
 
     .line 64
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->mTopBack:Landroid/view/View;
@@ -57,7 +57,7 @@
     if-nez v3, :cond_0
 
     .line 65
-    const v3, 0x7f09058f
+    const v3, 0x7f090599
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->findViewById(I)Landroid/view/View;
 
@@ -77,7 +77,7 @@
     if-eqz v3, :cond_1
 
     .line 69
-    const v3, 0x7f0904e9
+    const v3, 0x7f0904f3
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->findViewById(I)Landroid/view/View;
 
@@ -140,7 +140,7 @@
 
     .line 84
     .local v2, "ft":Landroid/support/v4/app/an;
-    const v3, 0x7f0904e7
+    const v3, 0x7f0904f1
 
     sget-object v4, Lcom/jiliguala/niuwa/module/story/fragments/ShelfFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -192,9 +192,9 @@
     check-cast p0, Landroid/app/Activity;
 
     .end local p0    # "context":Landroid/content/Context;
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -211,9 +211,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->finish()V
 
     .line 114
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->overridePendingTransition(II)V
 
@@ -260,7 +260,7 @@
 
     .line 105
     :pswitch_data_0
-    .packed-switch 0x7f09058f
+    .packed-switch 0x7f090599
         :pswitch_0
     .end packed-switch
 .end method
@@ -277,7 +277,7 @@
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 59
-    const v0, 0x7f0b0181
+    const v0, 0x7f0b0186
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/story/StoryShelfActivity;->setContentView(I)V
 

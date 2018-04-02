@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     .prologue
-    .line 1705
+    .line 1715
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b$1;->f:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b$1;->a:Ljava/lang/String;
@@ -61,7 +61,7 @@
     .locals 7
 
     .prologue
-    .line 1708
+    .line 1718
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b$1;->f:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;)Ljava/lang/ref/WeakReference;
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    .line 1709
+    .line 1719
     .local v0, "activity":Landroid/support/v4/app/FragmentActivity;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b$1;->a:Ljava/lang/String;
 
@@ -94,18 +94,18 @@
 
     move-result-object v6
 
-    .line 1710
+    .line 1720
     .local v6, "intent":Landroid/content/Intent;
     invoke-virtual {v0, v6}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 1711
-    const v1, 0x7f01001d
+    .line 1721
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 1712
+    .line 1722
     return-void
 .end method
 
@@ -113,6 +113,6 @@
     .locals 0
 
     .prologue
-    .line 1717
+    .line 1727
     return-void
 .end method

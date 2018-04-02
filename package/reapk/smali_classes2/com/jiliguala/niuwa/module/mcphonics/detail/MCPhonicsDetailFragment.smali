@@ -473,7 +473,7 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->_id:Ljava/lang/String;
 
-    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -533,7 +533,7 @@
     .param p2, "enablePostPurchaseEven"    # Z
 
     .prologue
-    .line 631
+    .line 636
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -544,7 +544,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 632
+    .line 637
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "id"
 
@@ -552,7 +552,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 633
+    .line 638
     const-string v1, "title"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -561,7 +561,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 634
+    .line 639
     const-string v1, "thumb"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -570,12 +570,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 635
+    .line 640
     const-string v1, "isRefreshScore"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 636
+    .line 641
     const-string v1, "score"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -584,24 +584,24 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
-    .line 637
+    .line 642
     const-string v1, "flag"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 638
+    .line 643
     if-eqz p1, :cond_0
 
-    .line 639
+    .line 644
     const/16 v1, 0xa2
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 643
+    .line 648
     :goto_0
     return-void
 
-    .line 641
+    .line 646
     :cond_0
     const/16 v1, 0xa1
 
@@ -616,7 +616,7 @@
     .param p2, "enablePostPurchaseEvent"    # Z
 
     .prologue
-    .line 615
+    .line 620
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -627,7 +627,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 616
+    .line 621
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "id"
 
@@ -635,7 +635,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 617
+    .line 622
     const-string v1, "title"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -644,7 +644,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 618
+    .line 623
     const-string v1, "thumb"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -653,12 +653,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 619
+    .line 624
     const-string v1, "isRefreshScore"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 620
+    .line 625
     const-string v1, "score"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
@@ -667,24 +667,24 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
-    .line 621
+    .line 626
     const-string v1, "flag"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 622
+    .line 627
     if-eqz p1, :cond_0
 
-    .line 623
+    .line 628
     const/16 v1, 0xa2
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 627
+    .line 632
     :goto_0
     return-void
 
-    .line 625
+    .line 630
     :cond_0
     const/16 v1, 0xa1
 
@@ -774,7 +774,7 @@
 
     if-nez v7, :cond_1
 
-    .line 610
+    .line 615
     :cond_0
     :goto_0
     return-void
@@ -957,18 +957,15 @@
 
     .line 604
     .local v1, "currentSubean":Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->isCurrent()Z
+    iget-object v7, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mRootView:Landroid/view/View;
 
-    move-result v7
+    new-instance v8, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$6;
 
-    if-eqz v7, :cond_0
+    invoke-direct {v8, p0, v1, v0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment$6;-><init>(Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;I)V
 
-    .line 605
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mAdapter:Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;
+    const-wide/16 v10, 0x64
 
-    const/4 v8, 0x0
-
-    invoke-virtual {v7, v8, v1, v0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->startCourse(Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView;Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;I)V
+    invoke-virtual {v7, v8, v10, v11}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto/16 :goto_0
 .end method
@@ -983,7 +980,7 @@
     const/4 v2, 0x0
 
     .line 253
-    const v0, 0x7f09057a
+    const v0, 0x7f090584
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -994,7 +991,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mTitle:Landroid/widget/TextView;
 
     .line 255
-    const v0, 0x7f090407
+    const v0, 0x7f09040e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1021,7 +1018,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 258
-    const v0, 0x7f0902c2
+    const v0, 0x7f0902c8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1032,7 +1029,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mLessonIcon:Landroid/widget/ImageView;
 
     .line 259
-    const v0, 0x7f090436
+    const v0, 0x7f09043d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1108,7 +1105,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->mFinishCount:Landroid/widget/TextView;
 
     .line 280
-    const v0, 0x7f09044b
+    const v0, 0x7f090452
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1670,7 +1667,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v2, v5}, Landroid/support/v7/widget/RecyclerView;->scrollBy(II)V
+    invoke-virtual {v4, v2, v5}, Landroid/support/v7/widget/RecyclerView;->a(II)V
 
     .line 329
     const/4 v4, 0x1
@@ -2040,23 +2037,23 @@
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 647
+    .line 652
     invoke-super {p0, p1, p2, p3}, Lcom/jiliguala/niuwa/common/base/c;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 648
+    .line 653
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 649
+    .line 654
     const/16 v0, 0xa1
 
     if-ne p1, v0, :cond_0
 
-    .line 650
+    .line 655
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->exit()V
 
-    .line 653
+    .line 658
     :cond_0
     return-void
 .end method
@@ -2158,7 +2155,7 @@
         0x7f090096 -> :sswitch_1
         0x7f0900e5 -> :sswitch_3
         0x7f0900e6 -> :sswitch_2
-        0x7f09044b -> :sswitch_0
+        0x7f090452 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -2344,28 +2341,28 @@
     .locals 2
 
     .prologue
-    .line 657
+    .line 662
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 658
+    .line 663
     .local v0, "activity":Landroid/support/v4/app/FragmentActivity;
     instance-of v1, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     if-eqz v1, :cond_0
 
-    .line 659
+    .line 664
     check-cast v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .end local v0    # "activity":Landroid/support/v4/app/FragmentActivity;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->checkAllShowAnim()V
 
-    .line 661
+    .line 666
     :cond_0
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onDestroy()V
 
-    .line 662
+    .line 667
     return-void
 .end method
 
@@ -2606,6 +2603,8 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->getCurrentPos()I
 
     move-result v1
+
+    add-int/lit8 v1, v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->a(I)V
 

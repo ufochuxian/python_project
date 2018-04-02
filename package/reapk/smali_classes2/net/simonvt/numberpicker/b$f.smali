@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final NPWidget:I = 0x7f1000c3
+.field public static final NPWidget:I = 0x7f1000c4
 
-.field public static final NPWidget_Holo_Light_NumberPicker:I = 0x7f1000c4
+.field public static final NPWidget_Holo_Light_NumberPicker:I = 0x7f1000c5
 
-.field public static final NPWidget_Holo_NumberPicker:I = 0x7f1000c5
+.field public static final NPWidget_Holo_NumberPicker:I = 0x7f1000c6
 
-.field public static final NPWidget_NumberPicker:I = 0x7f1000c6
+.field public static final NPWidget_NumberPicker:I = 0x7f1000c7
 
 
 # direct methods

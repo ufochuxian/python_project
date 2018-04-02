@@ -19,13 +19,13 @@
 
 .field songsContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090505
+        a = 0x7f09050f
     .end annotation
 .end field
 
 .field touchContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0905ae
+        a = 0x7f0905b8
     .end annotation
 .end field
 

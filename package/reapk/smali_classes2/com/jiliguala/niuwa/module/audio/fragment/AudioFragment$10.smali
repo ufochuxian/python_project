@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1773
+    .line 1786
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$10;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +42,10 @@
     .param p1, "animator"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1786
+    .line 1799
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 1787
+    .line 1800
     return-void
 .end method
 
@@ -54,10 +54,10 @@
     .param p1, "animator"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1781
+    .line 1794
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 1782
+    .line 1795
     return-void
 .end method
 
@@ -66,7 +66,7 @@
     .param p1, "animator"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1792
+    .line 1805
     return-void
 .end method
 
@@ -75,6 +75,6 @@
     .param p1, "animator"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1777
+    .line 1790
     return-void
 .end method

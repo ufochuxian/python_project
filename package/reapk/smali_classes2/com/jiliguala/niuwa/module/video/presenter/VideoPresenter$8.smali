@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/jiliguala/niuwa/logic/t/a/a;
+.implements Lcom/jiliguala/niuwa/logic/u/a/a;
 
 
 # annotations
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 1316
+    .line 1324
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$8;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 1
 
     .prologue
-    .line 1319
+    .line 1327
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$8;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$100(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1320
+    .line 1328
     return-void
 .end method
 
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 1324
+    .line 1332
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$8;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$100(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1325
+    .line 1333
     return-void
 .end method

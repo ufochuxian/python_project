@@ -349,7 +349,7 @@
     .param p3, "viewGroup"    # Landroid/view/ViewGroup;
 
     .prologue
-    const v4, 0x7f0b013c
+    const v4, 0x7f0b0141
 
     const/4 v5, 0x0
 
@@ -365,7 +365,7 @@
     .line 175
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/ImageGridAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0b013a
+    const v4, 0x7f0b013f
 
     invoke-virtual {v3, v4, p3, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

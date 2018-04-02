@@ -99,28 +99,28 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->l:I
+    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->m:I
 
     .line 20
     invoke-interface {p1}, Lcom/blog/www/guideview/d;->getYOffset()I
 
     move-result v2
 
-    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->m:I
+    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->n:I
 
     .line 21
     invoke-interface {p1}, Lcom/blog/www/guideview/d;->getAnchor()I
 
     move-result v2
 
-    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->j:I
+    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->k:I
 
     .line 22
     invoke-interface {p1}, Lcom/blog/www/guideview/d;->getFitPosition()I
 
     move-result v2
 
-    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->k:I
+    iput v2, v0, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     .line 23
     invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V

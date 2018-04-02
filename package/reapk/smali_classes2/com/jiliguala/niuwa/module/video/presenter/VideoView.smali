@@ -34,6 +34,9 @@
 .method public abstract isFromPratise()Z
 .end method
 
+.method public abstract isNotLesson()Z
+.end method
+
 .method public abstract onAlreadySwitchToFirst()V
 .end method
 
@@ -94,7 +97,7 @@
 .method public abstract onSendProgressFail()V
 .end method
 
-.method public abstract onSendProgressSuccess()V
+.method public abstract onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 .end method
 
 .method public abstract onShowVideoLimitDialog()V

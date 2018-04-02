@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 242
+    .line 253
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$l;-><init>()V
@@ -40,10 +40,10 @@
     .param p2, "newState"    # I
 
     .prologue
-    .line 245
+    .line 256
     invoke-super {p0, p1, p2}, Landroid/support/v7/widget/RecyclerView$l;->a(Landroid/support/v7/widget/RecyclerView;I)V
 
-    .line 246
+    .line 257
     return-void
 .end method
 
@@ -54,10 +54,10 @@
     .param p3, "dy"    # I
 
     .prologue
-    .line 250
+    .line 261
     invoke-super {p0, p1, p2, p3}, Landroid/support/v7/widget/RecyclerView$l;->a(Landroid/support/v7/widget/RecyclerView;II)V
 
-    .line 251
+    .line 262
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
@@ -82,24 +82,24 @@
 
     if-lez v0, :cond_0
 
-    .line 252
+    .line 263
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollBg()V
 
-    .line 253
+    .line 264
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     int-to-float v1, p2
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->access$000(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;F)V
 
-    .line 254
+    .line 265
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->access$100(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;)V
 
-    .line 256
+    .line 267
     :cond_0
     return-void
 .end method

@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final slide_in_bottom:I = 0x7f010020
+.field public static final slide_in_bottom:I = 0x7f010022
 
-.field public static final slide_out_bottom:I = 0x7f010023
+.field public static final slide_out_bottom:I = 0x7f010025
 
 
 # direct methods

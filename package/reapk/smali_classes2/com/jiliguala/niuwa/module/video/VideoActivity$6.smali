@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->onUpdateRenderIcon(ZZ)V
+    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->onSubCourseReportSucceed(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,25 +18,25 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic a:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
-.field final synthetic b:Z
+.field final synthetic b:Ljava/lang/String;
 
 .field final synthetic c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;ZZ)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 2384
+    .line 2399
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    iput-boolean p2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->a:Z
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->a:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
-    iput-boolean p3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->b:Z
+    iput-object p3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->b:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,77 +46,48 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
     .prologue
-    const/16 v2, 0x8
+    .line 2402
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    const/4 v1, 0x0
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$300(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Lcom/jiliguala/niuwa/module/video/VideoActivity$b;
 
-    .line 2387
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    move-result-object v3
+    .line 2403
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->a:Z
+    .line 2404
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
-    if-eqz v0, :cond_0
+    move-result-object v1
 
-    move v0, v1
-
-    :goto_0
-    invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 2388
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    .line 2403
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     move-result-object v0
 
-    iget-boolean v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->b:Z
+    .line 2405
+    .local v0, "courseFinishAnimDlg":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setClickable(Z)V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
-    .line 2389
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->show(Landroid/support/v4/app/ag;)V
 
-    move-result-object v0
+    .line 2406
+    new-instance v1, Lcom/jiliguala/niuwa/module/video/VideoActivity$6$1;
 
-    iget-boolean v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->a:Z
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/video/VideoActivity$6$1;-><init>(Lcom/jiliguala/niuwa/module/video/VideoActivity$6;)V
 
-    if-eqz v3, :cond_1
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->setIDismissListener(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;)V
 
-    :goto_1
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 2390
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->c:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$1800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/ImageView;
-
-    move-result-object v0
-
-    iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$6;->b:Z
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setClickable(Z)V
-
-    .line 2391
+    .line 2413
     return-void
-
-    :cond_0
-    move v0, v2
-
-    .line 2387
-    goto :goto_0
-
-    :cond_1
-    move v1, v2
-
-    .line 2389
-    goto :goto_1
 .end method

@@ -30,18 +30,18 @@
     .param p3, "remoceScoreView"    # Z
 
     .prologue
-    .line 1630
+    .line 1658
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1631
+    .line 1659
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->a:Landroid/view/View;
 
-    .line 1632
+    .line 1660
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->b:Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 1633
+    .line 1661
     iput-boolean p3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$a;->c:Z
 
-    .line 1634
+    .line 1662
     return-void
 .end method

@@ -143,7 +143,7 @@
     .locals 1
 
     .prologue
-    .line 84
+    .line 87
     const-class v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -159,15 +159,15 @@
     .locals 1
 
     .prologue
-    .line 82
+    .line 85
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;-><init>()V
 
-    .line 117
+    .line 120
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->isScoreViewShowing:Z
 
-    .line 126
+    .line 129
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
@@ -182,7 +182,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionScriptId:Ljava/lang/String;
 
     return-object v0
@@ -193,18 +193,52 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
+.method static synthetic access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
+
+    .prologue
+    .line 85
+    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showMcPhReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+
+    return-void
+.end method
+
+.method static synthetic access$1100(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    .prologue
+    .line 85
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->postAndBack()V
+
+    return-void
+.end method
+
+.method static synthetic access$1200(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    .prologue
+    .line 85
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->updateTextAndUpdateProgress()V
+
+    return-void
+.end method
+
+.method static synthetic access$1300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionContainer:Landroid/widget/FrameLayout;
 
     return-object v0
@@ -215,7 +249,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     return-object v0
@@ -226,7 +260,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
     return v0
@@ -237,7 +271,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->score:Landroid/widget/TextView;
 
     return-object v0
@@ -248,7 +282,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
     return-object v0
@@ -261,7 +295,7 @@
     .param p2, "x2"    # I
 
     .prologue
-    .line 82
+    .line 85
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->startProgressAnim(Landroid/view/View;I)V
 
     return-void
@@ -272,21 +306,22 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static synthetic access$800(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
-    .locals 1
+.method static synthetic access$800(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
+    .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    .line 82
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+    .line 85
+    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showInteractReward(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
 
-    return-object v0
+    return-void
 .end method
 
 .method static synthetic access$900(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
@@ -294,8 +329,8 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 82
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->updateTextAndUpdateProgress()V
+    .line 85
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sendAndBack()V
 
     return-void
 .end method
@@ -306,12 +341,12 @@
     .param p2, "fl"    # Landroid/widget/FrameLayout$LayoutParams;
 
     .prologue
-    .line 483
+    .line 486
     new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;
 
     invoke-direct {v1, p1, p2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;-><init>(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
-    .line 484
+    .line 487
     .local v1, "obj":Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
@@ -321,18 +356,18 @@
 
     move-result-object v0
 
-    .line 485
+    .line 488
     .local v0, "msg":Landroid/os/Message;
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 486
+    .line 489
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     const-wide/16 v4, 0x12c
 
     invoke-virtual {v2, v0, v4, v5}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 487
+    .line 490
     return-void
 .end method
 
@@ -343,12 +378,12 @@
     .prologue
     const/4 v7, -0x2
 
-    .line 791
+    .line 794
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v3
 
-    const v4, 0x7f0b00d6
+    const v4, 0x7f0b00d7
 
     const/4 v5, 0x0
 
@@ -360,7 +395,7 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
-    .line 792
+    .line 795
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
     const v4, 0x7f090086
@@ -371,16 +406,16 @@
 
     check-cast v1, Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 793
+    .line 796
     .local v1, "babyAvaIv":Lcom/makeramen/roundedimageview/RoundedImageView;
     const/16 v3, 0x8
 
     invoke-virtual {v1, v3}, Lcom/makeramen/roundedimageview/RoundedImageView;->setVisibility(I)V
 
-    .line 798
+    .line 801
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
-    const v4, 0x7f090485
+    const v4, 0x7f09048e
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -390,10 +425,10 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->score:Landroid/widget/TextView;
 
-    .line 799
+    .line 802
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
-    const v4, 0x7f090482
+    const v4, 0x7f09048b
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -401,10 +436,10 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->topBox:Landroid/view/View;
 
-    .line 800
+    .line 803
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
-    const v4, 0x7f090426
+    const v4, 0x7f09042d
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -414,14 +449,14 @@
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
-    .line 802
+    .line 805
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
     sget-object v4, Lcom/jiliguala/progressbar/vertical/VerticalProgressBar$ProgressTextVisibility;->Invisible:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar$ProgressTextVisibility;
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;->setProgressTextVisibility(Lcom/jiliguala/progressbar/vertical/VerticalProgressBar$ProgressTextVisibility;)V
 
-    .line 803
+    .line 806
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v3
@@ -430,13 +465,13 @@
 
     move-result-object v0
 
-    .line 805
+    .line 808
     .local v0, "babyAva":Ljava/lang/String;
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v2, v7, v7}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 806
+    .line 809
     .local v2, "fl":Landroid/widget/FrameLayout$LayoutParams;
     const/high16 v3, -0x3f600000    # -5.0f
 
@@ -446,25 +481,25 @@
 
     iput v3, v2, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
-    .line 807
+    .line 810
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
     invoke-direct {p0, v3, v2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addMaskView(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
-    .line 809
+    .line 812
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreView:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v3
 
-    new-instance v4, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$6;
+    new-instance v4, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$8;
 
-    invoke-direct {v4, p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$6;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;I)V
+    invoke-direct {v4, p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$8;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;I)V
 
     invoke-virtual {v3, v4}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 826
+    .line 829
     return-void
 .end method
 
@@ -472,24 +507,24 @@
     .locals 1
 
     .prologue
-    .line 154
+    .line 157
     new-instance v0, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
-    .line 155
+    .line 158
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->a(Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher$a;)V
 
-    .line 156
+    .line 159
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->c()V
 
-    .line 157
+    .line 160
     return-void
 .end method
 
@@ -499,7 +534,7 @@
     .prologue
     const/high16 v3, 0x43480000    # 200.0f
 
-    .line 671
+    .line 674
     new-instance v0, Landroid/widget/ImageView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
@@ -508,13 +543,13 @@
 
     invoke-direct {v0, v2}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 672
+    .line 675
     .local v0, "imageView":Landroid/widget/ImageView;
-    const v2, 0x7f0801da
+    const v2, 0x7f0801e1
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 673
+    .line 676
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
@@ -527,7 +562,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 674
+    .line 677
     .local v1, "params":Landroid/widget/FrameLayout$LayoutParams;
     const/high16 v2, 0x42960000    # 75.0f
 
@@ -537,7 +572,7 @@
 
     iput v2, v1, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
 
-    .line 675
+    .line 678
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->i()I
 
     move-result v2
@@ -554,10 +589,10 @@
 
     iput v2, v1, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
-    .line 676
+    .line 679
     invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addMaskView(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
-    .line 677
+    .line 680
     return-void
 .end method
 
@@ -565,7 +600,7 @@
     .locals 1
 
     .prologue
-    .line 241
+    .line 244
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dialog:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -578,7 +613,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 243
+    .line 246
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dialog:Lcom/jiliguala/niuwa/common/a/g;
 
@@ -586,12 +621,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 247
+    .line 250
     :cond_0
     :goto_0
     return-void
 
-    .line 244
+    .line 247
     :catch_0
     move-exception v0
 
@@ -602,7 +637,7 @@
     .locals 1
 
     .prologue
-    .line 150
+    .line 153
     sget v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sVideoH:I
 
     return v0
@@ -612,7 +647,7 @@
     .locals 1
 
     .prologue
-    .line 146
+    .line 149
     sget v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sVideoW:I
 
     return v0
@@ -622,13 +657,13 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f09053e
+    const v4, 0x7f090548
 
     const v3, 0x7f090024
 
     const/16 v1, 0x8
 
-    .line 319
+    .line 322
     const v0, 0x7f090021
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
@@ -639,7 +674,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionContainer:Landroid/widget/FrameLayout;
 
-    .line 320
+    .line 323
     const v0, 0x7f090014
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
@@ -650,7 +685,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionBack:Landroid/widget/ImageView;
 
-    .line 321
+    .line 324
     const v0, 0x7f090032
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
@@ -661,22 +696,22 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionPlay:Landroid/widget/ImageView;
 
-    .line 322
+    .line 325
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 323
+    .line 326
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionBack:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 324
+    .line 327
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionPlay:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 325
+    .line 328
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -690,21 +725,21 @@
     :goto_0
     invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 326
+    .line 329
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 327
+    .line 330
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 328
+    .line 331
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -713,7 +748,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
-    .line 329
+    .line 332
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
@@ -722,8 +757,8 @@
 
     invoke-interface {v0, p0}, Landroid/view/SurfaceHolder;->addCallback(Landroid/view/SurfaceHolder$Callback;)V
 
-    .line 331
-    const v0, 0x7f090402
+    .line 334
+    const v0, 0x7f090409
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
@@ -731,13 +766,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
 
-    .line 332
+    .line 335
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 334
-    const v0, 0x7f090310
+    .line 337
+    const v0, 0x7f090317
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->findViewById(I)Landroid/view/View;
 
@@ -747,13 +782,13 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mMaskContainer:Landroid/widget/FrameLayout;
 
-    .line 338
+    .line 341
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 325
+    .line 328
     goto :goto_0
 .end method
 
@@ -761,7 +796,7 @@
     .locals 1
 
     .prologue
-    .line 358
+    .line 361
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->standardExitFragment:Lcom/jiliguala/niuwa/common/widget/d;
 
     if-eqz v0, :cond_0
@@ -786,10 +821,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 359
+    .line 362
     const/4 v0, 0x1
 
-    .line 361
+    .line 364
     :goto_0
     return v0
 
@@ -810,56 +845,82 @@
     .param p6, "mcPcSubTaskTicket"    # Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     .prologue
-    .line 134
+    .line 137
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 135
+    .line 138
     .local v0, "intent":Landroid/content/Intent;
     const-class v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 136
+    .line 139
     const-string v1, "folder_name"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 137
+    .line 140
     const-string v1, "COURSE_ID"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 138
+    .line 141
     const-string v1, "ACTION_SCRIPT_ID"
 
     invoke-virtual {v0, v1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 139
+    .line 142
     const-string v1, "sub_course_id"
 
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 140
+    .line 143
     const-string v1, "type"
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 141
+    .line 144
     const-string v1, "mc_pc_sub_task_ticket"
 
     invoke-virtual {v0, v1, p6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 142
+    .line 145
     return-object v0
+.end method
+
+.method private postAndBack()V
+    .locals 4
+
+    .prologue
+    .line 1095
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/b/a/f;
+
+    const/16 v2, 0x1023
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+
+    invoke-direct {v1, v2, v3}, Lcom/jiliguala/niuwa/logic/b/a/f;-><init>(ILcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;)V
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
+
+    .line 1096
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
+
+    .line 1097
+    return-void
 .end method
 
 .method private releaseSoundPlayerRes()V
     .locals 4
 
     .prologue
-    .line 341
+    .line 344
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v3, :cond_0
@@ -870,16 +931,16 @@
 
     if-eqz v3, :cond_0
 
-    .line 342
+    .line 345
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
 
-    .line 343
+    .line 346
     .local v0, "interDragView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;->releaseMediaPlay()V
 
-    .line 346
+    .line 349
     .end local v0    # "interDragView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
     :cond_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
@@ -892,16 +953,16 @@
 
     if-eqz v3, :cond_1
 
-    .line 347
+    .line 350
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v2, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
 
-    .line 348
+    .line 351
     .local v2, "interTapView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;->releaseSoundRes()V
 
-    .line 351
+    .line 354
     .end local v2    # "interTapView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
@@ -914,16 +975,16 @@
 
     if-eqz v3, :cond_2
 
-    .line 352
+    .line 355
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
 
-    .line 353
+    .line 356
     .local v1, "interSpeakView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->releaseSoundRes()V
 
-    .line 355
+    .line 358
     .end local v1    # "interSpeakView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
     :cond_2
     return-void
@@ -937,35 +998,35 @@
     .param p4, "score"    # Ljava/lang/String;
 
     .prologue
-    .line 550
+    .line 553
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     if-eqz v0, :cond_1
 
-    .line 551
+    .line 554
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 552
+    .line 555
     invoke-static {p4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 553
+    .line 556
     const-string p4, "0"
 
-    .line 555
+    .line 558
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/jiliguala/niuwa/common/util/xutils/util/k;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 558
+    .line 561
     :cond_1
     return-void
 .end method
@@ -976,18 +1037,18 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 445
+    .line 448
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->c(Landroid/app/Activity;)I
 
     move-result v4
 
-    .line 446
+    .line 449
     .local v4, "videoW":I
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->b(Landroid/app/Activity;)I
 
     move-result v3
 
-    .line 448
+    .line 451
     .local v3, "videoH":I
     int-to-float v5, p1
 
@@ -995,7 +1056,7 @@
 
     div-float v1, v5, v6
 
-    .line 449
+    .line 452
     .local v1, "realRatio":F
     int-to-float v5, v4
 
@@ -1003,20 +1064,20 @@
 
     div-float v2, v5, v6
 
-    .line 451
+    .line 454
     .local v2, "surfaceRatio":F
     cmpl-float v5, v1, v2
 
     if-ltz v5, :cond_1
 
-    .line 454
+    .line 457
     int-to-float v5, v4
 
     div-float/2addr v5, v1
 
     float-to-int v3, v5
 
-    .line 460
+    .line 463
     :goto_0
     int-to-float v5, v3
 
@@ -1024,13 +1085,13 @@
 
     float-to-int v4, v5
 
-    .line 461
+    .line 464
     sput v4, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sVideoW:I
 
-    .line 462
+    .line 465
     sput v3, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sVideoH:I
 
-    .line 463
+    .line 466
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     if-eqz v5, :cond_0
@@ -1039,7 +1100,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 464
+    .line 467
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v5}, Landroid/view/SurfaceView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -1048,39 +1109,39 @@
 
     check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 465
+    .line 468
     .local v0, "llp":Landroid/widget/FrameLayout$LayoutParams;
     iput v4, v0, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
-    .line 466
+    .line 469
     iput v3, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
-    .line 468
+    .line 471
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v5, v0}, Landroid/view/SurfaceView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 469
+    .line 472
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v5}, Landroid/view/SurfaceView;->requestLayout()V
 
-    .line 470
+    .line 473
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mMaskContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v5, v0}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 471
+    .line 474
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mMaskContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v5}, Landroid/widget/FrameLayout;->requestLayout()V
 
-    .line 473
+    .line 476
     .end local v0    # "llp":Landroid/widget/FrameLayout$LayoutParams;
     :cond_0
     return-void
 
-    .line 457
+    .line 460
     :cond_1
     int-to-float v5, v3
 
@@ -1091,11 +1152,33 @@
     goto :goto_0
 .end method
 
+.method private sendAndBack()V
+    .locals 2
+
+    .prologue
+    .line 1000
+    new-instance v0, Landroid/content/Intent;
+
+    sget-object v1, Lcom/jiliguala/niuwa/receivers/SendCourseReportReceiver;->a:Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 1001
+    .local v0, "intent":Landroid/content/Intent;
+    invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 1002
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
+
+    .line 1003
+    return-void
+.end method
+
 .method private showDialog()V
     .locals 2
 
     .prologue
-    .line 235
+    .line 238
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dialog:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -1108,7 +1191,7 @@
 
     if-nez v0, :cond_0
 
-    .line 236
+    .line 239
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dialog:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -1117,9 +1200,161 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/a/g;->b(Landroid/support/v4/app/ag;)V
 
-    .line 238
+    .line 241
     :cond_0
     return-void
+.end method
+
+.method private showInteractReward(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
+    .locals 3
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
+
+    .prologue
+    .line 984
+    if-eqz p1, :cond_0
+
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
+
+    if-eqz v1, :cond_0
+
+    .line 985
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+
+    move-result-object v0
+
+    .line 986
+    .local v0, "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSubCourseId:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setGuavatar(Lcom/jiliguala/niuwa/logic/network/json/Guavatar;Ljava/lang/String;)V
+
+    .line 987
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$11;
+
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$11;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setDismissListener(Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog$DismissListener;)V
+
+    .line 993
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->show(Landroid/support/v4/app/ag;)V
+
+    .line 997
+    .end local v0    # "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    :goto_0
+    return-void
+
+    .line 995
+    :cond_0
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->sendAndBack()V
+
+    goto :goto_0
+.end method
+
+.method private showMcPhReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+    .locals 3
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
+
+    .prologue
+    .line 1075
+    if-eqz p1, :cond_1
+
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
+
+    if-eqz v2, :cond_1
+
+    .line 1076
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+
+    move-result-object v0
+
+    .line 1077
+    .local v0, "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    const-string v1, ""
+
+    .line 1078
+    .local v1, "subLessonId":Ljava/lang/String;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    .line 1079
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
+
+    move-result-object v2
+
+    iget-object v1, v2, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->_id:Ljava/lang/String;
+
+    .line 1081
+    :cond_0
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
+
+    invoke-virtual {v0, v2, v1}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setGuavatar(Lcom/jiliguala/niuwa/logic/network/json/Guavatar;Ljava/lang/String;)V
+
+    .line 1082
+    new-instance v2, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;
+
+    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+
+    invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setDismissListener(Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog$DismissListener;)V
+
+    .line 1088
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->show(Landroid/support/v4/app/ag;)V
+
+    .line 1092
+    .end local v0    # "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    .end local v1    # "subLessonId":Ljava/lang/String;
+    :goto_0
+    return-void
+
+    .line 1090
+    :cond_1
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->postAndBack()V
+
+    goto :goto_0
 .end method
 
 .method private startProgressAnim(Landroid/view/View;I)V
@@ -1128,7 +1363,7 @@
     .param p2, "dstProgress"    # I
 
     .prologue
-    .line 685
+    .line 688
     const-string v1, "progress"
 
     const/4 v2, 0x2
@@ -1151,30 +1386,30 @@
 
     move-result-object v0
 
-    .line 686
+    .line 689
     .local v0, "animator":Lcom/nineoldandroids/a/l;
     const-wide/16 v2, 0x5dc
 
     invoke-virtual {v0, v2, v3}, Lcom/nineoldandroids/a/l;->a_(J)Lcom/nineoldandroids/a/l;
 
-    .line 687
+    .line 690
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {v0, v1}, Lcom/nineoldandroids/a/l;->a(Landroid/view/animation/Interpolator;)V
 
-    .line 688
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$2;
+    .line 691
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$2;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/view/View;Lcom/nineoldandroids/a/l;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/view/View;Lcom/nineoldandroids/a/l;)V
 
     invoke-virtual {v0, v1}, Lcom/nineoldandroids/a/l;->a(Lcom/nineoldandroids/a/a$a;)V
 
-    .line 714
+    .line 717
     invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->a()V
 
-    .line 715
+    .line 718
     return-void
 .end method
 
@@ -1182,17 +1417,17 @@
     .locals 1
 
     .prologue
-    .line 160
+    .line 163
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     if-eqz v0, :cond_0
 
-    .line 161
+    .line 164
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->d()V
 
-    .line 163
+    .line 166
     :cond_0
     return-void
 .end method
@@ -1201,7 +1436,7 @@
     .locals 2
 
     .prologue
-    .line 314
+    .line 317
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1210,10 +1445,10 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->clearFlags(I)V
 
-    .line 315
+    .line 318
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->f(Landroid/app/Activity;)V
 
-    .line 316
+    .line 319
     return-void
 .end method
 
@@ -1221,7 +1456,7 @@
     .locals 2
 
     .prologue
-    .line 309
+    .line 312
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1230,10 +1465,10 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->addFlags(I)V
 
-    .line 310
+    .line 313
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->e(Landroid/app/Activity;)V
 
-    .line 311
+    .line 314
     return-void
 .end method
 
@@ -1241,23 +1476,23 @@
     .locals 2
 
     .prologue
-    .line 880
+    .line 883
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     instance-of v1, v1, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
 
     if-eqz v1, :cond_0
 
-    .line 881
+    .line 884
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
 
-    .line 882
+    .line 885
     .local v0, "interSpeakView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->toggleRecord()V
 
-    .line 884
+    .line 887
     .end local v0    # "interSpeakView":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
     :cond_0
     return-void
@@ -1267,14 +1502,14 @@
     .locals 8
 
     .prologue
-    .line 829
+    .line 832
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
     invoke-virtual {v4}, Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;->getHeight()I
 
     move-result v3
 
-    .line 831
+    .line 834
     .local v3, "totalHeight":I
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
@@ -1296,7 +1531,7 @@
 
     double-to-int v1, v4
 
-    .line 833
+    .line 836
     .local v1, "result":I
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->score:Landroid/widget/TextView;
 
@@ -1320,7 +1555,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 834
+    .line 837
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->topBox:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -1329,7 +1564,7 @@
 
     check-cast v2, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 835
+    .line 838
     .local v2, "rl":Landroid/widget/RelativeLayout$LayoutParams;
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->progressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
@@ -1365,7 +1600,7 @@
 
     neg-int v0, v4
 
-    .line 836
+    .line 839
     .local v0, "bottom":I
     iget v4, v2, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -1385,12 +1620,12 @@
 
     invoke-virtual {v2, v4, v5, v6, v7}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 837
+    .line 840
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->topBox:Landroid/view/View;
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 838
+    .line 841
     return-void
 .end method
 
@@ -1400,7 +1635,7 @@
     .locals 1
 
     .prologue
-    .line 82
+    .line 85
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->createPresenter()Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
 
     move-result-object v0
@@ -1412,7 +1647,7 @@
     .locals 1
 
     .prologue
-    .line 167
+    .line 170
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;-><init>()V
@@ -1424,10 +1659,10 @@
     .locals 0
 
     .prologue
-    .line 636
+    .line 639
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dismissDialog()V
 
-    .line 637
+    .line 640
     return-void
 .end method
 
@@ -1435,7 +1670,7 @@
     .locals 1
 
     .prologue
-    .line 735
+    .line 738
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
 
     return-object v0
@@ -1445,7 +1680,7 @@
     .locals 1
 
     .prologue
-    .line 731
+    .line 734
     iget v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
     return v0
@@ -1455,7 +1690,7 @@
     .locals 1
 
     .prologue
-    .line 82
+    .line 85
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getUi()Lcom/jiliguala/niuwa/module/interact/course/view/InteractView;
 
     move-result-object v0
@@ -1467,7 +1702,7 @@
     .locals 0
 
     .prologue
-    .line 172
+    .line 175
     return-object p0
 .end method
 
@@ -1475,7 +1710,7 @@
     .locals 1
 
     .prologue
-    .line 954
+    .line 957
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hasFocus:Z
 
     return v0
@@ -1487,12 +1722,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 490
+    .line 493
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mMaskContainer:Landroid/widget/FrameLayout;
 
     if-eqz v1, :cond_0
 
-    .line 491
+    .line 494
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mMaskContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getChildCount()I
@@ -1503,7 +1738,7 @@
 
     const/4 v0, 0x1
 
-    .line 493
+    .line 496
     :cond_0
     return v0
 .end method
@@ -1512,17 +1747,17 @@
     .locals 1
 
     .prologue
-    .line 940
+    .line 943
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v0, :cond_0
 
-    .line 941
+    .line 944
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;->hideTimeOutProgress()V
 
-    .line 943
+    .line 946
     :cond_0
     return-void
 .end method
@@ -1531,18 +1766,18 @@
     .locals 4
 
     .prologue
-    .line 870
+    .line 873
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
 
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$9;
 
-    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$9;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
     const-wide/16 v2, 0x320
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 877
+    .line 880
     return-void
 .end method
 
@@ -1550,7 +1785,7 @@
     .locals 1
 
     .prologue
-    .line 1027
+    .line 1053
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getVisibility()I
@@ -1574,17 +1809,17 @@
     .locals 1
 
     .prologue
-    .line 629
+    .line 632
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v0, :cond_0
 
-    .line 630
+    .line 633
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;->onInteractTimeOut()V
 
-    .line 632
+    .line 635
     :cond_0
     return-void
 .end method
@@ -1593,7 +1828,7 @@
     .locals 2
 
     .prologue
-    .line 394
+    .line 397
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->clickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -1602,14 +1837,14 @@
 
     if-nez v0, :cond_0
 
-    .line 395
+    .line 398
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 396
+    .line 399
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
@@ -1620,12 +1855,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
-    .line 397
+    .line 400
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->setCallBack(Lcom/jiliguala/niuwa/module/game/GameExitFragment$CallBack;)V
 
-    .line 398
+    .line 401
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->isShowing()Z
@@ -1634,7 +1869,7 @@
 
     if-nez v0, :cond_0
 
-    .line 399
+    .line 402
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -1643,7 +1878,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->show(Landroid/support/v4/app/ag;)V
 
-    .line 404
+    .line 407
     :cond_0
     return-void
 .end method
@@ -1652,10 +1887,10 @@
     .locals 0
 
     .prologue
-    .line 1071
+    .line 1121
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleRecord()V
 
-    .line 1072
+    .line 1122
     return-void
 .end method
 
@@ -1666,25 +1901,25 @@
     .prologue
     const/16 v1, 0x1003
 
-    .line 986
+    .line 1012
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 1016
+    .line 1042
     :cond_0
     :goto_0
     return-void
 
-    .line 988
+    .line 1014
     :sswitch_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->onBackPressed()V
 
     goto :goto_0
 
-    .line 991
+    .line 1017
     :sswitch_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -1696,7 +1931,7 @@
 
     goto :goto_0
 
-    .line 994
+    .line 1020
     :sswitch_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hasMaksView()Z
 
@@ -1704,14 +1939,14 @@
 
     if-nez v0, :cond_0
 
-    .line 995
+    .line 1021
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->isActionContainterVisible()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 996
+    .line 1022
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->hasMessages(I)Z
@@ -1720,12 +1955,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 997
+    .line 1023
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->removeMessages(I)V
 
-    .line 999
+    .line 1025
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
@@ -1733,7 +1968,7 @@
 
     goto :goto_0
 
-    .line 1002
+    .line 1028
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
@@ -1743,7 +1978,7 @@
 
     goto :goto_0
 
-    .line 1007
+    .line 1033
     :sswitch_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hasMaksView()Z
 
@@ -1751,7 +1986,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1008
+    .line 1034
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -1762,7 +1997,7 @@
 
     goto :goto_0
 
-    .line 986
+    .line 1012
     nop
 
     :sswitch_data_0
@@ -1770,7 +2005,7 @@
         0x7f090014 -> :sswitch_0
         0x7f090024 -> :sswitch_1
         0x7f090032 -> :sswitch_3
-        0x7f09053e -> :sswitch_2
+        0x7f090548 -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -1779,19 +2014,19 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 177
+    .line 180
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 179
+    .line 182
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 181
+    .line 184
     .local v0, "intent":Landroid/content/Intent;
     if-eqz v0, :cond_0
 
-    .line 182
+    .line 185
     const-string v1, "folder_name"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1800,7 +2035,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mFolderName:Ljava/lang/String;
 
-    .line 183
+    .line 186
     const-string v1, "COURSE_ID"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1809,7 +2044,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
 
-    .line 184
+    .line 187
     const-string v1, "sub_course_id"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1818,7 +2053,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSubCourseId:Ljava/lang/String;
 
-    .line 185
+    .line 188
     const-string v1, "ACTION_SCRIPT_ID"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1827,7 +2062,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionScriptId:Ljava/lang/String;
 
-    .line 187
+    .line 190
     const-string v1, "type"
 
     sget-object v2, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;->NORMAL:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;
@@ -1840,7 +2075,7 @@
 
     iput v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mType:I
 
-    .line 189
+    .line 192
     const-string v1, "mc_pc_sub_task_ticket"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getSerializableExtra(Ljava/lang/String;)Ljava/io/Serializable;
@@ -1851,7 +2086,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    .line 192
+    .line 195
     new-instance v2, Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
@@ -1872,12 +2107,12 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
-    .line 194
+    .line 197
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/common/util/xutils/util/k;->a(Lcom/jiliguala/niuwa/common/util/xutils/util/k$a;)V
 
-    .line 196
+    .line 199
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mFolderName:Ljava/lang/String;
 
@@ -1887,32 +2122,32 @@
 
     if-eqz v1, :cond_1
 
-    .line 197
+    .line 200
     const-string v1, "Empty folder. Fail to start."
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 198
+    .line 201
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->finish()V
 
-    .line 232
+    .line 235
     :goto_0
     return-void
 
-    .line 202
+    .line 205
     :cond_1
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->S_IS_SUB_COURSE_VISIBLE:Z
 
-    .line 204
+    .line 207
     new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
-    .line 206
+    .line 209
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -1923,7 +2158,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->setFolderName(Ljava/lang/String;)V
 
-    .line 207
+    .line 210
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -1934,15 +2169,15 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->setReplay(Z)V
 
-    .line 209
+    .line 212
     const v1, 0x7f0b002f
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->setContentView(I)V
 
-    .line 211
+    .line 214
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->initView()V
 
-    .line 213
+    .line 216
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v1}, Landroid/view/SurfaceView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -1955,7 +2190,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 230
+    .line 233
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleOnFullScreen()V
 
     goto :goto_0
@@ -1965,19 +2200,19 @@
     .locals 0
 
     .prologue
-    .line 917
+    .line 920
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onDestroy()V
 
-    .line 918
+    .line 921
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleOnFullScreen()V
 
-    .line 919
+    .line 922
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->stopScreenStateWatcher()V
 
-    .line 920
+    .line 923
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseSoundPlayerRes()V
 
-    .line 921
+    .line 924
     return-void
 .end method
 
@@ -1985,7 +2220,7 @@
     .locals 4
 
     .prologue
-    .line 535
+    .line 538
     iget v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mType:I
 
     sget-object v3, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;->NORMAL:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;
@@ -1994,22 +2229,22 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 536
+    .line 539
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     if-eqz v2, :cond_0
 
-    .line 537
+    .line 540
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/util/xutils/util/k;->b()V
 
-    .line 547
+    .line 550
     :cond_0
     :goto_0
     return-void
 
-    .line 539
+    .line 542
     :cond_1
     iget v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mType:I
 
@@ -2019,12 +2254,12 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 540
+    .line 543
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;-><init>()V
 
-    .line 541
+    .line 544
     .local v0, "data":Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -2036,26 +2271,26 @@
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->bid:Ljava/lang/String;
 
-    .line 542
+    .line 545
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->lid:Ljava/lang/String;
 
-    .line 543
+    .line 546
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSubCourseId:Ljava/lang/String;
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->subtaskid:Ljava/lang/String;
 
-    .line 544
+    .line 547
     new-instance v1, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;-><init>()V
 
-    .line 545
+    .line 548
     .local v1, "sendLessonProgressManager":Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
     invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->setCallBack(Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager$CallBack;)V
 
-    .line 546
+    .line 549
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->sendProgress(Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;)V
 
     goto :goto_0
@@ -2065,21 +2300,22 @@
     .locals 0
 
     .prologue
-    .line 1057
+    .line 1107
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->reportSubLessonExit()V
 
-    .line 1058
+    .line 1108
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
 
-    .line 1059
+    .line 1109
     return-void
 .end method
 
-.method public onExitInteractLesson()V
+.method public onExitInteractLesson(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
     .locals 2
+    .param p1, "unitDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    .line 967
+    .line 973
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
@@ -2088,7 +2324,7 @@
 
     move-result-object v0
 
-    .line 968
+    .line 974
     .local v0, "courseFinishAnimDlg":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -2096,14 +2332,14 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->show(Landroid/support/v4/app/ag;)V
 
-    .line 969
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$8;
+    .line 975
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$10;
 
-    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$8;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$10;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->setIDismissListener(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;)V
 
-    .line 977
+    .line 981
     return-void
 .end method
 
@@ -2112,7 +2348,7 @@
     .param p1, "jumpId"    # Ljava/lang/String;
 
     .prologue
-    .line 653
+    .line 656
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2121,7 +2357,7 @@
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->onGainResult(Ljava/lang/String;)V
 
-    .line 654
+    .line 657
     return-void
 .end method
 
@@ -2129,10 +2365,10 @@
     .locals 2
 
     .prologue
-    .line 271
+    .line 274
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onPause()V
 
-    .line 272
+    .line 275
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -2141,7 +2377,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->clearFlags(I)V
 
-    .line 273
+    .line 276
     return-void
 .end method
 
@@ -2151,10 +2387,10 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 441
+    .line 444
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->requestSurfaceLayout(II)V
 
-    .line 442
+    .line 445
     return-void
 .end method
 
@@ -2162,10 +2398,10 @@
     .locals 0
 
     .prologue
-    .line 681
+    .line 684
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
 
-    .line 682
+    .line 685
     return-void
 .end method
 
@@ -2174,13 +2410,13 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 292
+    .line 295
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 294
+    .line 297
     if-eqz p1, :cond_0
 
-    .line 295
+    .line 298
     const-string v0, "FOLDER_NAME"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -2189,7 +2425,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mFolderName:Ljava/lang/String;
 
-    .line 296
+    .line 299
     const-string v0, "SCORE_NUM"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -2198,7 +2434,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
-    .line 297
+    .line 300
     const-string v0, "CURRENT_WIDGET"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -2209,7 +2445,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
 
-    .line 298
+    .line 301
     const-string v0, "COURSE_ID"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -2218,7 +2454,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
 
-    .line 299
+    .line 302
     const-string v0, "SUB_COURSE_ID"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -2227,12 +2463,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSubCourseId:Ljava/lang/String;
 
-    .line 300
+    .line 303
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     if-eqz v0, :cond_0
 
-    .line 301
+    .line 304
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
 
     const-string v0, "REPORT_TEMPLATE"
@@ -2245,7 +2481,7 @@
 
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/common/util/xutils/util/k;->a(Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;)V
 
-    .line 305
+    .line 308
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -2255,7 +2491,7 @@
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 306
+    .line 309
     return-void
 .end method
 
@@ -2263,10 +2499,10 @@
     .locals 2
 
     .prologue
-    .line 265
+    .line 268
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onResume()V
 
-    .line 266
+    .line 269
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -2275,7 +2511,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->addFlags(I)V
 
-    .line 267
+    .line 270
     return-void
 .end method
 
@@ -2283,21 +2519,21 @@
     .locals 1
 
     .prologue
-    .line 1063
+    .line 1113
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     if-eqz v0, :cond_0
 
-    .line 1064
+    .line 1114
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->dismiss()V
 
-    .line 1066
+    .line 1116
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleRecord()V
 
-    .line 1067
+    .line 1117
     return-void
 .end method
 
@@ -2306,48 +2542,48 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 277
+    .line 280
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 279
+    .line 282
     if-eqz p1, :cond_0
 
-    .line 280
+    .line 283
     const-string v0, "FOLDER_NAME"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mFolderName:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 281
+    .line 284
     const-string v0, "SCORE_NUM"
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 282
+    .line 285
     const-string v0, "CURRENT_WIDGET"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 283
+    .line 286
     const-string v0, "COURSE_ID"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCourseId:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 284
+    .line 287
     const-string v0, "SUB_COURSE_ID"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSubCourseId:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 285
+    .line 288
     const-string v0, "REPORT_TEMPLATE"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mReporter:Lcom/jiliguala/niuwa/common/util/xutils/util/k;
@@ -2358,7 +2594,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 287
+    .line 290
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -2368,7 +2604,7 @@
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 288
+    .line 291
     return-void
 .end method
 
@@ -2378,7 +2614,7 @@
     .param p2, "nextId"    # Ljava/lang/String;
 
     .prologue
-    .line 720
+    .line 723
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2387,10 +2623,10 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->removeTransitionHideWatcher()V
 
-    .line 721
+    .line 724
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hideTransition()V
 
-    .line 723
+    .line 726
     const/4 v0, -0x1
 
     if-eq p1, v0, :cond_0
@@ -2399,13 +2635,13 @@
     :goto_0
     iput p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
-    .line 726
+    .line 729
     invoke-virtual {p0, p2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->onGainResult(Ljava/lang/String;)V
 
-    .line 728
+    .line 731
     return-void
 
-    .line 723
+    .line 726
     .restart local p1    # "scoreNum":I
     :cond_0
     const/4 p1, 0x0
@@ -2417,14 +2653,14 @@
     .locals 1
 
     .prologue
-    .line 893
+    .line 896
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 894
+    .line 897
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2433,7 +2669,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->saveStateWhileDestroy()V
 
-    .line 896
+    .line 899
     :cond_0
     return-void
 .end method
@@ -2442,10 +2678,10 @@
     .locals 0
 
     .prologue
-    .line 888
+    .line 891
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleRecord()V
 
-    .line 889
+    .line 892
     return-void
 .end method
 
@@ -2453,7 +2689,7 @@
     .locals 4
 
     .prologue
-    .line 1051
+    .line 1101
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -2468,29 +2704,30 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 1052
+    .line 1102
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
 
-    .line 1053
+    .line 1103
     return-void
 .end method
 
-.method public onSendProgressSuccess()V
+.method public onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
     .locals 4
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
     .prologue
-    .line 1032
+    .line 1058
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$9;
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$2;
 
-    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$9;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$2;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 
     const-wide/16 v2, 0x190
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1047
+    .line 1072
     return-void
 .end method
 
@@ -2498,7 +2735,7 @@
     .locals 0
 
     .prologue
-    .line 843
+    .line 846
     return-void
 .end method
 
@@ -2506,7 +2743,7 @@
     .locals 1
 
     .prologue
-    .line 848
+    .line 851
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showTransition()V
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -2517,7 +2754,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->pausePlay()V
 
-    .line 850
+    .line 853
     return-void
 .end method
 
@@ -2525,7 +2762,7 @@
     .locals 0
 
     .prologue
-    .line 647
+    .line 650
     return-void
 .end method
 
@@ -2533,7 +2770,7 @@
     .locals 0
 
     .prologue
-    .line 912
+    .line 915
     return-void
 .end method
 
@@ -2542,7 +2779,7 @@
     .param p1, "md5name"    # Ljava/lang/String;
 
     .prologue
-    .line 906
+    .line 909
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2551,7 +2788,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->startPlayOpening()V
 
-    .line 907
+    .line 910
     return-void
 .end method
 
@@ -2560,13 +2797,13 @@
     .param p1, "hasFocus"    # Z
 
     .prologue
-    .line 251
+    .line 254
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onWindowFocusChanged(Z)V
 
-    .line 253
+    .line 256
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hasFocus:Z
 
-    .line 254
+    .line 257
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hasFocus:Z
 
     if-eqz v0, :cond_0
@@ -2577,7 +2814,7 @@
 
     if-nez v0, :cond_0
 
-    .line 255
+    .line 258
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2586,14 +2823,14 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->setAsForeGround()V
 
-    .line 256
+    .line 259
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleOnFullScreen()V
 
-    .line 261
+    .line 264
     :goto_0
     return-void
 
-    .line 258
+    .line 261
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -2613,7 +2850,7 @@
     .param p3, "id"    # Ljava/lang/String;
 
     .prologue
-    .line 901
+    .line 904
     return-void
 .end method
 
@@ -2621,17 +2858,17 @@
     .locals 1
 
     .prologue
-    .line 426
+    .line 429
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->S_IS_SUB_COURSE_VISIBLE:Z
 
-    .line 427
+    .line 430
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     if-eqz v0, :cond_0
 
-    .line 428
+    .line 431
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
@@ -2640,7 +2877,7 @@
 
     invoke-interface {v0, p0}, Landroid/view/SurfaceHolder;->removeCallback(Landroid/view/SurfaceHolder$Callback;)V
 
-    .line 429
+    .line 432
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
@@ -2653,7 +2890,7 @@
 
     invoke-virtual {v0}, Landroid/view/Surface;->release()V
 
-    .line 431
+    .line 434
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -2661,7 +2898,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 432
+    .line 435
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2670,11 +2907,11 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->releaseMediaPlayer()V
 
-    .line 435
+    .line 438
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->finish()V
 
-    .line 436
+    .line 439
     return-void
 .end method
 
@@ -2682,12 +2919,12 @@
     .locals 4
 
     .prologue
-    .line 477
+    .line 480
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->isScoreViewShowing:Z
 
-    .line 478
+    .line 481
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     const/16 v1, 0x1001
@@ -2696,7 +2933,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 479
+    .line 482
     return-void
 .end method
 
@@ -2704,7 +2941,7 @@
     .locals 4
 
     .prologue
-    .line 610
+    .line 613
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -2715,11 +2952,11 @@
 
     move-result-object v0
 
-    .line 611
+    .line 614
     .local v0, "widgetBase":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     if-eqz v0, :cond_1
 
-    .line 612
+    .line 615
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;->widgetType:Ljava/lang/String;
 
     const/4 v1, -0x1
@@ -2734,12 +2971,12 @@
     :goto_0
     packed-switch v1, :pswitch_data_0
 
-    .line 625
+    .line 628
     :goto_1
     :pswitch_0
     return-void
 
-    .line 612
+    .line 615
     :sswitch_0
     const-string v3, "drag"
 
@@ -2779,7 +3016,7 @@
 
     goto :goto_0
 
-    .line 618
+    .line 621
     :pswitch_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
@@ -2789,18 +3026,18 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->removeTransitionHideWatcher()V
 
-    .line 619
+    .line 622
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hideTransition()V
 
     goto :goto_1
 
-    .line 623
+    .line 626
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
 
     goto :goto_1
 
-    .line 612
+    .line 615
     nop
 
     :sswitch_data_0
@@ -2822,10 +3059,10 @@
     .locals 0
 
     .prologue
-    .line 981
+    .line 1007
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseResAndExit()V
 
-    .line 982
+    .line 1008
     return-void
 .end method
 
@@ -2837,10 +3074,10 @@
     .param p4, "totalScore"    # Ljava/lang/String;
 
     .prologue
-    .line 854
+    .line 857
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->reportScore(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 855
+    .line 858
     return-void
 .end method
 
@@ -2848,22 +3085,22 @@
     .locals 4
 
     .prologue
-    .line 407
+    .line 410
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     if-nez v2, :cond_0
 
-    .line 423
+    .line 426
     :goto_0
     return-void
 
-    .line 408
+    .line 411
     :cond_0
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 409
+    .line 412
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "ID"
 
@@ -2875,7 +3112,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 410
+    .line 413
     const-string v2, "Position"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
@@ -2890,25 +3127,25 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 411
+    .line 414
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
 
     move-result-object v1
 
-    .line 412
+    .line 415
     .local v1, "sub":Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
     if-eqz v1, :cond_1
 
-    .line 413
+    .line 416
     const-string v2, "Type"
 
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->typ:Ljava/lang/String;
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 418
+    .line 421
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
 
@@ -2924,7 +3161,7 @@
 
     if-nez v2, :cond_2
 
-    .line 419
+    .line 422
     const-string v2, "WidgetID"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
@@ -2933,7 +3170,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 421
+    .line 424
     :cond_2
     const-string v2, "Time"
 
@@ -2945,7 +3182,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 422
+    .line 425
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
@@ -2957,35 +3194,48 @@
     goto :goto_0
 .end method
 
-.method public reportSuccess()V
+.method public reportSuccess(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
     .locals 4
+    .param p1, "unitDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    const/16 v1, 0x1005
-
-    .line 960
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 961
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->removeMessages(I)V
+    const/16 v2, 0x1005
 
     .line 963
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->hasMessages(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 964
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->removeMessages(I)V
+
+    .line 966
     :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
+    invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
+
+    move-result-object v0
+
+    .line 967
+    .local v0, "message":Landroid/os/Message;
+    iput v2, v0, Landroid/os/Message;->what:I
+
+    .line 968
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 969
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {v1, v0, v2, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 964
+    .line 970
     return-void
 .end method
 
@@ -2994,10 +3244,10 @@
     .param p1, "flag"    # Z
 
     .prologue
-    .line 859
+    .line 862
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mHasShowSpeak:Z
 
-    .line 860
+    .line 863
     return-void
 .end method
 
@@ -3005,17 +3255,17 @@
     .locals 1
 
     .prologue
-    .line 933
+    .line 936
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v0, :cond_0
 
-    .line 934
+    .line 937
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;->resetTimeOutProgress()V
 
-    .line 936
+    .line 939
     :cond_0
     return-void
 .end method
@@ -3025,22 +3275,22 @@
     .param p1, "isPaused"    # Z
 
     .prologue
-    .line 1023
+    .line 1049
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mActionPlay:Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f080099
+    const v0, 0x7f08009b
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    .line 1024
+    .line 1050
     return-void
 
-    .line 1023
+    .line 1049
     :cond_0
-    const v0, 0x7f080097
+    const v0, 0x7f080099
 
     goto :goto_0
 .end method
@@ -3056,24 +3306,24 @@
 
     const/4 v1, -0x1
 
-    .line 498
+    .line 501
     if-nez p1, :cond_1
 
-    .line 530
+    .line 533
     .end local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     :cond_0
     :goto_0
     return-void
 
-    .line 502
+    .line 505
     .restart local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->releaseSoundPlayerRes()V
 
-    .line 503
+    .line 506
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
 
-    .line 504
+    .line 507
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;->widgetType:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -3090,18 +3340,18 @@
 
     goto :goto_0
 
-    .line 506
+    .line 509
     :pswitch_0
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 507
+    .line 510
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 508
+    .line 511
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragItemGenerator;
 
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/http/entity/DragWidget;
@@ -3129,7 +3379,7 @@
 
     invoke-virtual {v2, v0, p0, v3, v4}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragItemGenerator;->renderData(Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;Landroid/content/Context;II)V
 
-    .line 509
+    .line 512
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
@@ -3142,7 +3392,7 @@
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;->setFolderName(Ljava/lang/String;)Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/InterDragView;
 
-    .line 510
+    .line 513
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
@@ -3153,7 +3403,7 @@
 
     goto :goto_0
 
-    .line 504
+    .line 507
     .restart local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     :sswitch_0
     const-string v3, "drag"
@@ -3194,18 +3444,18 @@
 
     goto :goto_1
 
-    .line 513
+    .line 516
     :pswitch_1
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 514
+    .line 517
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 515
+    .line 518
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
@@ -3218,7 +3468,7 @@
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;->setFolderName(Ljava/lang/String;)Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
 
-    .line 516
+    .line 519
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;
@@ -3228,7 +3478,7 @@
     .end local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;->setData(Lcom/jiliguala/niuwa/logic/network/http/entity/TapWidget;)V
 
-    .line 517
+    .line 520
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
@@ -3239,24 +3489,24 @@
 
     goto/16 :goto_0
 
-    .line 520
+    .line 523
     .restart local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     :pswitch_2
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mHasShowSpeak:Z
 
     if-nez v0, :cond_0
 
-    .line 521
+    .line 524
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 522
+    .line 525
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
-    .line 523
+    .line 526
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
@@ -3266,7 +3516,7 @@
     .end local p1    # "widget":Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->setData(Lcom/jiliguala/niuwa/logic/network/http/entity/SpeakWidget;)V
 
-    .line 524
+    .line 527
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
@@ -3279,7 +3529,7 @@
 
     invoke-virtual {v0, v3}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->setFolderName(Ljava/lang/String;)Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;
 
-    .line 525
+    .line 528
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     new-instance v3, Landroid/widget/FrameLayout$LayoutParams;
@@ -3288,12 +3538,12 @@
 
     invoke-direct {p0, v0, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addMaskView(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
-    .line 526
+    .line 529
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mHasShowSpeak:Z
 
     goto/16 :goto_0
 
-    .line 504
+    .line 507
     :sswitch_data_0
     .sparse-switch
         0x1bfa3 -> :sswitch_1
@@ -3319,14 +3569,14 @@
 
     const/4 v6, 0x0
 
-    .line 741
+    .line 744
     new-instance v0, Landroid/app/Dialog;
 
     const v4, 0x7f1000b4
 
     invoke-direct {v0, p0, v4}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    .line 742
+    .line 745
     .local v0, "dialog":Landroid/app/Dialog;
     invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -3334,12 +3584,12 @@
 
     invoke-virtual {v4}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
-    .line 743
-    const v4, 0x7f0b012d
+    .line 746
+    const v4, 0x7f0b0132
 
     invoke-virtual {v0, v4}, Landroid/app/Dialog;->setContentView(I)V
 
-    .line 745
+    .line 748
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->h()I
 
     move-result v4
@@ -3356,11 +3606,11 @@
 
     div-int/lit8 v3, v4, 0x5
 
-    .line 746
+    .line 749
     .local v3, "width":I
     const/4 v1, -0x2
 
-    .line 747
+    .line 750
     .local v1, "height":I
     invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -3368,21 +3618,21 @@
 
     invoke-virtual {v4, v3, v1}, Landroid/view/Window;->setLayout(II)V
 
-    .line 748
+    .line 751
     invoke-virtual {v0, v6}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 749
+    .line 752
     invoke-virtual {v0, v6}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 750
-    new-instance v4, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;
+    .line 753
+    new-instance v4, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;
 
-    invoke-direct {v4, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$3;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-direct {v4, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
     invoke-virtual {v0, v4}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
-    .line 756
-    const v4, 0x7f09057a
+    .line 759
+    const v4, 0x7f090584
 
     invoke-virtual {v0, v4}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -3394,7 +3644,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 757
+    .line 760
     const v4, 0x7f09004c
 
     invoke-virtual {v0, v4}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -3407,7 +3657,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 758
+    .line 761
     invoke-virtual {v0, v7}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
@@ -3418,7 +3668,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 759
+    .line 762
     invoke-virtual {v0, v8}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
@@ -3429,12 +3679,12 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 760
-    new-instance v2, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;
+    .line 763
+    new-instance v2, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$6;
 
-    invoke-direct {v2, p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/app/Dialog;)V
+    invoke-direct {v2, p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$6;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/app/Dialog;)V
 
-    .line 775
+    .line 778
     .local v2, "listener":Landroid/view/View$OnClickListener;
     invoke-virtual {v0, v7}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -3442,17 +3692,17 @@
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 776
+    .line 779
     invoke-virtual {v0, v8}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 777
+    .line 780
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
-    .line 778
+    .line 781
     return-void
 .end method
 
@@ -3460,7 +3710,7 @@
     .locals 2
 
     .prologue
-    .line 658
+    .line 661
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCurWidget:Lcom/jiliguala/niuwa/logic/network/http/entity/InteractWidgetBase;
 
     if-eqz v0, :cond_0
@@ -3493,29 +3743,29 @@
 
     if-nez v0, :cond_0
 
-    .line 661
+    .line 664
     iget v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
     const/16 v1, 0x3c
 
     if-le v0, v1, :cond_1
 
-    .line 662
+    .line 665
     iget v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mScoreNum:I
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addScoreView(I)V
 
-    .line 666
+    .line 669
     :goto_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->isScoreViewShowing:Z
 
-    .line 668
+    .line 671
     :cond_0
     return-void
 
-    .line 664
+    .line 667
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addTextScoreView()V
 
@@ -3526,17 +3776,17 @@
     .locals 1
 
     .prologue
-    .line 947
+    .line 950
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v0, :cond_0
 
-    .line 948
+    .line 951
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;->showTimeOutProgress()V
 
-    .line 950
+    .line 953
     :cond_0
     return-void
 .end method
@@ -3545,14 +3795,14 @@
     .locals 2
 
     .prologue
-    .line 864
+    .line 867
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 865
+    .line 868
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -3561,7 +3811,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->startTransitionHideWatcher()V
 
-    .line 866
+    .line 869
     return-void
 .end method
 
@@ -3573,7 +3823,7 @@
     .param p4, "height"    # I
 
     .prologue
-    .line 589
+    .line 592
     return-void
 .end method
 
@@ -3582,12 +3832,12 @@
     .param p1, "holder"    # Landroid/view/SurfaceHolder;
 
     .prologue
-    .line 568
+    .line 571
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
 
     move-result-object v0
 
-    .line 569
+    .line 572
     .local v0, "surface":Landroid/view/Surface;
     if-eqz v0, :cond_0
 
@@ -3597,13 +3847,13 @@
 
     if-nez v1, :cond_2
 
-    .line 570
+    .line 573
     :cond_0
     const-string v1, "[set visibility]...surface is inValid."
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->c(Ljava/lang/String;)V
 
-    .line 571
+    .line 574
     new-instance v1, Ljava/lang/Exception;
 
     const-string v2, "Invalid surface view."
@@ -3612,30 +3862,30 @@
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
-    .line 573
+    .line 576
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/view/SurfaceView;->setVisibility(I)V
 
-    .line 574
+    .line 577
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/view/SurfaceView;->setVisibility(I)V
 
-    .line 584
+    .line 587
     :cond_1
     :goto_0
     return-void
 
-    .line 579
+    .line 582
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->addScreenStateWatcher()V
 
-    .line 581
+    .line 584
     if-eqz p1, :cond_1
 
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
@@ -3648,7 +3898,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 582
+    .line 585
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -3665,7 +3915,7 @@
     .param p1, "holder"    # Landroid/view/SurfaceHolder;
 
     .prologue
-    .line 595
+    .line 598
     :try_start_0
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
 
@@ -3675,20 +3925,20 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 599
+    .line 602
     :goto_0
     const-string v1, "[surfaceDestroyed]"
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->c(Ljava/lang/String;)V
 
-    .line 600
+    .line 603
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 601
+    .line 604
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -3697,14 +3947,14 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->saveStateWhileDestroy()V
 
-    .line 603
+    .line 606
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toggleOffFullScreen()V
 
-    .line 604
+    .line 607
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->stopScreenStateWatcher()V
 
-    .line 605
+    .line 608
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -3713,7 +3963,7 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->setAsBackGround()V
 
-    .line 606
+    .line 609
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v1
@@ -3722,14 +3972,14 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->destoryMediaPlayer()V
 
-    .line 607
+    .line 610
     return-void
 
-    .line 596
+    .line 599
     :catch_0
     move-exception v0
 
-    .line 597
+    .line 600
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -3741,7 +3991,7 @@
     .param p1, "holder"    # Landroid/view/SurfaceHolder;
 
     .prologue
-    .line 563
+    .line 566
     return-void
 .end method
 
@@ -3749,18 +3999,18 @@
     .locals 4
 
     .prologue
-    .line 782
+    .line 785
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;
 
-    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;-><init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
     const-wide/16 v2, 0xc8
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 788
+    .line 791
     return-void
 .end method
 
@@ -3769,17 +4019,17 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 926
+    .line 929
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     if-eqz v0, :cond_0
 
-    .line 927
+    .line 930
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mInterBaseView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/base/InterBaseView;->updateTimeOutProgress(I)V
 
-    .line 929
+    .line 932
     :cond_0
     return-void
 .end method

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final transparent:I = 0x7f0600f3
+.field public static final transparent:I = 0x7f0600f5
 
 
 # direct methods

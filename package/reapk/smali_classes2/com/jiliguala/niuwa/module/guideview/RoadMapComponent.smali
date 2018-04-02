@@ -96,7 +96,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0600fc
+    const v5, 0x7f0600fe
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -120,7 +120,7 @@
 
     .line 29
     .local v0, "imageView":Landroid/widget/ImageView;
-    const v4, 0x7f080213
+    const v4, 0x7f08021d
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 

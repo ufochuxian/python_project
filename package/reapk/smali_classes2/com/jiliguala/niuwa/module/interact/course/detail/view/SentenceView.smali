@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b01aa
+    const v1, 0x7f0b01b0
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 

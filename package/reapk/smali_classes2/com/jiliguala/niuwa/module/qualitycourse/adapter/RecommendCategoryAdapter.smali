@@ -166,7 +166,7 @@
 
     .line 150
     .local v4, "viewHolder":Lcom/jiliguala/niuwa/module/qualitycourse/adapter/RecommendCategoryAdapter$a;
-    const v5, 0x7f090273
+    const v5, 0x7f090278
 
     invoke-virtual {v1, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -260,7 +260,7 @@
     if-eqz v0, :cond_0
 
     .line 133
-    const v0, 0x7f08013a
+    const v0, 0x7f08013c
 
     .line 139
     :goto_0
@@ -275,7 +275,7 @@
     if-eqz v0, :cond_1
 
     .line 135
-    const v0, 0x7f080139
+    const v0, 0x7f08013b
 
     goto :goto_0
 
@@ -288,13 +288,13 @@
     if-eqz v0, :cond_2
 
     .line 137
-    const v0, 0x7f080138
+    const v0, 0x7f08013a
 
     goto :goto_0
 
     .line 139
     :cond_2
-    const v0, 0x7f08013b
+    const v0, 0x7f08013d
 
     goto :goto_0
 .end method
@@ -764,7 +764,7 @@
     .line 66
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/RecommendCategoryAdapter;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b00d9
+    const v5, 0x7f0b00da
 
     const/4 v6, 0x0
 

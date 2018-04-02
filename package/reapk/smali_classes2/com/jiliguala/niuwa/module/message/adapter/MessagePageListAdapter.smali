@@ -98,7 +98,7 @@
     .param p3, "position"    # I
 
     .prologue
-    const v10, 0x7f060059
+    const v10, 0x7f06005b
 
     const/16 v9, 0x8
 
@@ -690,7 +690,7 @@
     .line 76
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0b0143
+    const v3, 0x7f0b0148
 
     const/4 v4, 0x0
 
@@ -708,7 +708,7 @@
 
     .line 78
     .local v0, "normalViewHolder":Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;
-    const v2, 0x7f09028c
+    const v2, 0x7f090291
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -730,7 +730,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;->b:Lcom/jiliguala/niuwa/common/widget/CircleImageView;
 
     .line 80
-    const v2, 0x7f090467
+    const v2, 0x7f090470
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -741,7 +741,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;->c:Lcom/jiliguala/niuwa/common/widget/RecyclingImageView;
 
     .line 81
-    const v2, 0x7f09046b
+    const v2, 0x7f090474
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -752,7 +752,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;->d:Landroid/widget/TextView;
 
     .line 82
-    const v2, 0x7f0905df
+    const v2, 0x7f0905e9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -763,7 +763,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;->e:Landroid/widget/TextView;
 
     .line 83
-    const v2, 0x7f090571
+    const v2, 0x7f09057b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -774,7 +774,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter$a;->f:Landroid/widget/TextView;
 
     .line 84
-    const v2, 0x7f090588
+    const v2, 0x7f090592
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

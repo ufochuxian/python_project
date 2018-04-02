@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 511
+    .line 520
     const-string v0, "CustomWebViewClient"
 
     sput-object v0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->a:Ljava/lang/String;
@@ -63,31 +63,31 @@
     .param p2, "client"    # Lcom/jiliguala/niuwa/module/webview/base/callback/WebActionClient;
 
     .prologue
-    .line 517
+    .line 526
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
-    .line 512
+    .line 521
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->b:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
-    .line 518
+    .line 527
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
-    .line 519
+    .line 528
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
-    .line 520
+    .line 529
     return-void
 .end method
 
@@ -99,10 +99,10 @@
     .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 525
+    .line 534
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onLoadResource(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 527
+    .line 536
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -125,7 +125,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 528
+    .line 537
     new-instance v0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
@@ -152,7 +152,7 @@
 
     invoke-direct {v0, v2, v3, v1}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$a;-><init>(Ljava/lang/String;Ljava/lang/Class;Lcom/jiliguala/niuwa/module/webview/base/callback/WebActionClient;)V
 
-    .line 529
+    .line 538
     .local v0, "client":Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$a;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
@@ -168,7 +168,7 @@
 
     invoke-virtual {v1, v0}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
-    .line 531
+    .line 540
     .end local v0    # "client":Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$a;
     :cond_0
     return-void
@@ -180,7 +180,7 @@
     .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 577
+    .line 586
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -193,7 +193,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 578
+    .line 587
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -204,7 +204,7 @@
 
     invoke-interface {v0, p2}, Lcom/jiliguala/niuwa/module/webview/base/callback/WebActionClient;->onLoadFinished(Ljava/lang/String;)V
 
-    .line 580
+    .line 589
     :cond_0
     return-void
 .end method
@@ -216,7 +216,7 @@
     .param p3, "favicon"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 569
+    .line 578
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -229,7 +229,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 570
+    .line 579
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -240,7 +240,7 @@
 
     invoke-interface {v0, p2}, Lcom/jiliguala/niuwa/module/webview/base/callback/WebActionClient;->onLoadStarted(Ljava/lang/String;)V
 
-    .line 572
+    .line 581
     :cond_0
     return-void
 .end method
@@ -253,14 +253,14 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 536
+    .line 545
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 540
+    .line 549
     invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
@@ -273,7 +273,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 541
+    .line 550
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->b:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -284,11 +284,11 @@
 
     move v0, v1
 
-    .line 563
+    .line 572
     :goto_0
     return v0
 
-    .line 544
+    .line 553
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
@@ -302,7 +302,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 545
+    .line 554
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -313,7 +313,7 @@
 
     invoke-static {v0, p2}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 546
+    .line 555
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->c:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -326,16 +326,16 @@
 
     move v0, v1
 
-    .line 547
+    .line 556
     goto :goto_0
 
-    .line 553
+    .line 562
     :cond_1
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 555
+    .line 564
     const-string v0, "file:///android_asset/refresh"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -344,7 +344,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 557
+    .line 566
     if-eqz p1, :cond_2
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
@@ -355,7 +355,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 558
+    .line 567
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;->d:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -368,10 +368,10 @@
 
     move v0, v1
 
-    .line 559
+    .line 568
     goto :goto_0
 
-    .line 563
+    .line 572
     :cond_2
     const/4 v0, 0x0
 

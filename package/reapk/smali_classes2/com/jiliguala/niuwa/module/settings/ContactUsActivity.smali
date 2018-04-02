@@ -70,7 +70,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 44
-    const v1, 0x7f090421
+    const v1, 0x7f090428
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/settings/ContactUsActivity;->findViewById(I)Landroid/view/View;
 

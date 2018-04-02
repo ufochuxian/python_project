@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1826
+    .line 1839
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$13;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$13;->a:Landroid/app/Dialog;
@@ -46,17 +46,17 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1829
+    .line 1842
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$13;->a:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1830
+    .line 1843
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$13;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->onBackPressed()V
 
-    .line 1831
+    .line 1844
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$13;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/app/Activity;
@@ -65,6 +65,6 @@
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 1832
+    .line 1845
     return-void
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7;
 
     .prologue
-    .line 1301
+    .line 1309
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7$1;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7$1;->a:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
@@ -47,7 +47,7 @@
     .prologue
     const/4 v4, 0x2
 
-    .line 1304
+    .line 1312
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7$1;->a:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->meta:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData$MetaPart;
@@ -72,8 +72,8 @@
 
     move v5, v4
 
-    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/l/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/m/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
 
-    .line 1305
+    .line 1313
     return-void
 .end method

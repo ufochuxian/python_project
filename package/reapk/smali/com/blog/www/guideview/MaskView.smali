@@ -19,6 +19,8 @@
 # instance fields
 .field private A:I
 
+.field private B:I
+
 .field private b:Lcom/blog/www/guideview/MaskView$a;
 
 .field private final c:Landroid/graphics/RectF;
@@ -76,14 +78,14 @@
     .param p1, "activity"    # Landroid/app/Activity;
 
     .prologue
-    .line 62
+    .line 61
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-direct {p0, p1, v0, v1}, Lcom/blog/www/guideview/MaskView;-><init>(Landroid/app/Activity;Landroid/util/AttributeSet;I)V
 
-    .line 63
+    .line 62
     return-void
 .end method
 
@@ -93,12 +95,12 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    .line 66
+    .line 65
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/blog/www/guideview/MaskView;-><init>(Landroid/app/Activity;Landroid/util/AttributeSet;I)V
 
-    .line 67
+    .line 66
     return-void
 .end method
 
@@ -111,62 +113,62 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 70
+    .line 69
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 34
+    .line 32
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
-    .line 35
+    .line 33
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/blog/www/guideview/MaskView;->d:Landroid/graphics/RectF;
 
-    .line 36
+    .line 34
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    .line 37
+    .line 35
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/blog/www/guideview/MaskView;->f:Landroid/graphics/Paint;
 
-    .line 38
+    .line 36
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
-    .line 39
+    .line 37
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->h:I
 
-    .line 40
+    .line 38
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->i:I
 
-    .line 41
+    .line 39
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->j:I
 
-    .line 42
+    .line 40
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->k:I
 
-    .line 45
+    .line 43
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->n:I
 
-    .line 46
+    .line 44
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->o:I
 
-    .line 71
+    .line 70
     invoke-virtual {p0, v1}, Lcom/blog/www/guideview/MaskView;->setWillNotDraw(Z)V
 
-    .line 72
+    .line 71
     return-void
 .end method
 
@@ -179,14 +181,14 @@
     .prologue
     const/high16 v2, 0x40000000    # 2.0f
 
-    .line 189
+    .line 188
     sparse-switch p3, :sswitch_data_0
 
-    .line 204
+    .line 207
     :goto_0
     return-void
 
-    .line 191
+    .line 190
     :sswitch_0
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -194,7 +196,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->left:F
 
-    .line 192
+    .line 191
     iget v0, p2, Landroid/graphics/RectF;->left:F
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
@@ -209,7 +211,7 @@
 
     goto :goto_0
 
-    .line 195
+    .line 194
     :sswitch_1
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -229,7 +231,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->left:F
 
-    .line 196
+    .line 195
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -248,7 +250,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->right:F
 
-    .line 197
+    .line 196
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -259,7 +261,7 @@
 
     goto :goto_0
 
-    .line 200
+    .line 199
     :sswitch_2
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -267,7 +269,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->right:F
 
-    .line 201
+    .line 200
     iget v0, p2, Landroid/graphics/RectF;->right:F
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
@@ -282,14 +284,48 @@
 
     goto :goto_0
 
-    .line 189
-    nop
+    .line 203
+    :sswitch_3
+    invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getMeasuredWidth()I
 
+    move-result v0
+
+    div-int/lit8 v0, v0, 0x2
+
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v1
+
+    div-int/lit8 v1, v1, 0x2
+
+    sub-int/2addr v0, v1
+
+    int-to-float v0, v0
+
+    iput v0, p2, Landroid/graphics/RectF;->left:F
+
+    .line 204
+    iget v0, p2, Landroid/graphics/RectF;->left:F
+
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    add-float/2addr v0, v1
+
+    iput v0, p2, Landroid/graphics/RectF;->right:F
+
+    goto :goto_0
+
+    .line 188
     :sswitch_data_0
     .sparse-switch
         0x10 -> :sswitch_0
         0x20 -> :sswitch_1
         0x30 -> :sswitch_2
+        0x32 -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -302,14 +338,14 @@
     .prologue
     const/high16 v2, 0x40000000    # 2.0f
 
-    .line 207
+    .line 210
     sparse-switch p3, :sswitch_data_0
 
-    .line 222
+    .line 225
     :goto_0
     return-void
 
-    .line 209
+    .line 212
     :sswitch_0
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -317,7 +353,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->top:F
 
-    .line 210
+    .line 213
     iget v0, p2, Landroid/graphics/RectF;->top:F
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
@@ -332,7 +368,7 @@
 
     goto :goto_0
 
-    .line 213
+    .line 216
     :sswitch_1
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -352,7 +388,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->top:F
 
-    .line 214
+    .line 217
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -371,7 +407,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->bottom:F
 
-    .line 215
+    .line 218
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -382,7 +418,7 @@
 
     goto :goto_0
 
-    .line 218
+    .line 221
     :sswitch_2
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
@@ -390,7 +426,7 @@
 
     iput v0, p2, Landroid/graphics/RectF;->bottom:F
 
-    .line 219
+    .line 222
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
@@ -407,7 +443,7 @@
 
     goto :goto_0
 
-    .line 207
+    .line 210
     nop
 
     :sswitch_data_0
@@ -422,10 +458,10 @@
     .locals 0
 
     .prologue
-    .line 225
+    .line 228
     invoke-direct {p0}, Lcom/blog/www/guideview/MaskView;->e()V
 
-    .line 226
+    .line 229
     return-void
 .end method
 
@@ -433,7 +469,7 @@
     .locals 3
 
     .prologue
-    .line 232
+    .line 235
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
     if-eqz v0, :cond_0
@@ -442,7 +478,7 @@
 
     if-nez v0, :cond_0
 
-    .line 233
+    .line 236
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
@@ -455,7 +491,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->left:F
 
-    .line 235
+    .line 238
     :cond_0
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
@@ -465,7 +501,7 @@
 
     if-nez v0, :cond_1
 
-    .line 236
+    .line 239
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->top:F
@@ -478,7 +514,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->top:F
 
-    .line 238
+    .line 241
     :cond_1
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
@@ -488,7 +524,7 @@
 
     if-nez v0, :cond_2
 
-    .line 239
+    .line 242
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->right:F
@@ -501,7 +537,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 241
+    .line 244
     :cond_2
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
@@ -511,7 +547,7 @@
 
     if-nez v0, :cond_3
 
-    .line 242
+    .line 245
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->bottom:F
@@ -524,13 +560,13 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 244
+    .line 247
     :cond_3
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->h:I
 
     if-eqz v0, :cond_4
 
-    .line 245
+    .line 248
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
@@ -543,13 +579,13 @@
 
     iput v1, v0, Landroid/graphics/RectF;->left:F
 
-    .line 247
+    .line 250
     :cond_4
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->i:I
 
     if-eqz v0, :cond_5
 
-    .line 248
+    .line 251
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->top:F
@@ -562,13 +598,13 @@
 
     iput v1, v0, Landroid/graphics/RectF;->top:F
 
-    .line 250
+    .line 253
     :cond_5
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->j:I
 
     if-eqz v0, :cond_6
 
-    .line 251
+    .line 254
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->right:F
@@ -581,13 +617,13 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 253
+    .line 256
     :cond_6
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->k:I
 
     if-eqz v0, :cond_7
 
-    .line 254
+    .line 257
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->bottom:F
@@ -600,7 +636,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 256
+    .line 259
     :cond_7
     return-void
 .end method
@@ -611,23 +647,23 @@
     .locals 4
 
     .prologue
-    .line 75
+    .line 74
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
-    .line 76
+    .line 75
     .local v0, "size":Landroid/graphics/Point;
     iget v1, p0, Lcom/blog/www/guideview/MaskView;->z:I
 
     iput v1, v0, Landroid/graphics/Point;->x:I
 
-    .line 77
+    .line 76
     iget v1, p0, Lcom/blog/www/guideview/MaskView;->A:I
 
     iput v1, v0, Landroid/graphics/Point;->y:I
 
-    .line 78
+    .line 77
     iget v1, v0, Landroid/graphics/Point;->x:I
 
     iget v2, v0, Landroid/graphics/Point;->y:I
@@ -640,7 +676,7 @@
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->q:Landroid/graphics/Bitmap;
 
-    .line 79
+    .line 78
     new-instance v1, Landroid/graphics/Canvas;
 
     iget-object v2, p0, Lcom/blog/www/guideview/MaskView;->q:Landroid/graphics/Bitmap;
@@ -649,28 +685,28 @@
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
-    .line 81
+    .line 80
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->s:Landroid/graphics/Paint;
 
-    .line 82
+    .line 81
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->s:Landroid/graphics/Paint;
 
     const/high16 v2, -0x34000000    # -3.3554432E7f
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 83
+    .line 82
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->t:Landroid/graphics/Paint;
 
-    .line 84
+    .line 83
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->t:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getResources()Landroid/content/res/Resources;
@@ -685,7 +721,7 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 85
+    .line 84
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->t:Landroid/graphics/Paint;
 
     new-instance v2, Landroid/graphics/PorterDuffXfermode;
@@ -696,21 +732,21 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 87
+    .line 86
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->p:Landroid/graphics/Paint;
 
-    .line 88
+    .line 87
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->p:Landroid/graphics/Paint;
 
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 89
+    .line 88
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->p:Landroid/graphics/Paint;
 
     new-instance v2, Landroid/graphics/PorterDuffXfermode;
@@ -721,14 +757,14 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 90
+    .line 89
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->p:Landroid/graphics/Paint;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setFlags(I)V
 
-    .line 91
+    .line 90
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -743,7 +779,7 @@
 
     iput v1, p0, Lcom/blog/www/guideview/MaskView;->y:I
 
-    .line 92
+    .line 91
     return-void
 .end method
 
@@ -752,15 +788,15 @@
     .param p1, "alpha"    # I
 
     .prologue
-    .line 310
+    .line 313
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 311
+    .line 314
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->invalidate()V
 
-    .line 312
+    .line 315
     return-void
 .end method
 
@@ -769,18 +805,18 @@
     .param p1, "rect"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 297
+    .line 300
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     invoke-virtual {v0, p1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
-    .line 298
+    .line 301
     invoke-direct {p0}, Lcom/blog/www/guideview/MaskView;->d()V
 
-    .line 299
+    .line 302
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->invalidate()V
 
-    .line 300
+    .line 303
     return-void
 .end method
 
@@ -789,10 +825,10 @@
     .param p1, "callBack"    # Lcom/blog/www/guideview/MaskView$a;
 
     .prologue
-    .line 130
+    .line 129
     iput-object p1, p0, Lcom/blog/www/guideview/MaskView;->b:Lcom/blog/www/guideview/MaskView$a;
 
-    .line 131
+    .line 130
     return-void
 .end method
 
@@ -801,10 +837,10 @@
     .param p1, "b"    # Z
 
     .prologue
-    .line 328
+    .line 331
     iput-boolean p1, p0, Lcom/blog/www/guideview/MaskView;->m:Z
 
-    .line 329
+    .line 332
     return-void
 .end method
 
@@ -814,7 +850,7 @@
     .prologue
     const/4 v1, -0x2
 
-    .line 259
+    .line 262
     new-instance v0, Lcom/blog/www/guideview/MaskView$b;
 
     invoke-direct {v0, v1, v1}, Lcom/blog/www/guideview/MaskView$b;-><init>(II)V
@@ -827,15 +863,15 @@
     .param p1, "color"    # I
 
     .prologue
-    .line 315
+    .line 318
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 316
+    .line 319
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->invalidate()V
 
-    .line 317
+    .line 320
     return-void
 .end method
 
@@ -844,23 +880,23 @@
     .param p1, "rect"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 303
+    .line 306
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->d:Landroid/graphics/RectF;
 
     invoke-virtual {v0, p1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
-    .line 304
+    .line 307
     invoke-direct {p0}, Lcom/blog/www/guideview/MaskView;->d()V
 
-    .line 305
+    .line 308
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/blog/www/guideview/MaskView;->l:Z
 
-    .line 306
+    .line 309
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->invalidate()V
 
-    .line 307
+    .line 310
     return-void
 .end method
 
@@ -868,12 +904,12 @@
     .locals 1
 
     .prologue
-    .line 436
+    .line 445
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/blog/www/guideview/MaskView;->b:Lcom/blog/www/guideview/MaskView$a;
 
-    .line 437
+    .line 446
     return-void
 .end method
 
@@ -882,10 +918,10 @@
     .param p1, "corner"    # I
 
     .prologue
-    .line 320
+    .line 323
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->n:I
 
-    .line 321
+    .line 324
     return-void
 .end method
 
@@ -894,10 +930,10 @@
     .param p1, "style"    # I
 
     .prologue
-    .line 324
+    .line 327
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->o:I
 
-    .line 325
+    .line 328
     return-void
 .end method
 
@@ -906,12 +942,12 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .prologue
-    .line 263
+    .line 266
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getDrawingTime()J
 
     move-result-wide v2
 
-    .line 266
+    .line 269
     .local v2, "drawingTime":J
     const/4 v1, 0x0
 
@@ -924,28 +960,28 @@
 
     if-ge v1, v4, :cond_0
 
-    .line 267
+    .line 270
     invoke-virtual {p0, v1}, Lcom/blog/www/guideview/MaskView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 268
+    .line 271
     .local v0, "child":Landroid/view/View;
     invoke-virtual {p0, p1, v0, v2, v3}, Lcom/blog/www/guideview/MaskView;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 266
+    .line 269
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 270
+    .line 273
     .end local v0    # "child":Landroid/view/View;
     :catch_0
     move-exception v4
 
-    .line 273
+    .line 276
     :cond_0
     return-void
 .end method
@@ -955,7 +991,7 @@
     .param p1, "ev"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 400
+    .line 405
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -968,10 +1004,10 @@
     .param p1, "padding"    # I
 
     .prologue
-    .line 332
+    .line 335
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->g:I
 
-    .line 333
+    .line 336
     return-void
 .end method
 
@@ -980,10 +1016,10 @@
     .param p1, "paddingLeft"    # I
 
     .prologue
-    .line 336
+    .line 339
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->h:I
 
-    .line 337
+    .line 340
     return-void
 .end method
 
@@ -992,10 +1028,10 @@
     .param p1, "paddingTop"    # I
 
     .prologue
-    .line 340
+    .line 343
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->i:I
 
-    .line 341
+    .line 344
     return-void
 .end method
 
@@ -1003,7 +1039,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 26
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->b()Lcom/blog/www/guideview/MaskView$b;
 
     move-result-object v0
@@ -1016,10 +1052,10 @@
     .param p1, "paddingRight"    # I
 
     .prologue
-    .line 344
+    .line 347
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->j:I
 
-    .line 345
+    .line 348
     return-void
 .end method
 
@@ -1028,10 +1064,10 @@
     .param p1, "paddingBottom"    # I
 
     .prologue
-    .line 348
+    .line 351
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->k:I
 
-    .line 349
+    .line 352
     return-void
 .end method
 
@@ -1040,10 +1076,10 @@
     .param p1, "screenWidth"    # I
 
     .prologue
-    .line 352
+    .line 355
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->z:I
 
-    .line 353
+    .line 356
     return-void
 .end method
 
@@ -1052,10 +1088,22 @@
     .param p1, "screenHeight"    # I
 
     .prologue
-    .line 356
+    .line 359
     iput p1, p0, Lcom/blog/www/guideview/MaskView;->A:I
 
-    .line 357
+    .line 360
+    return-void
+.end method
+
+.method public l(I)V
+    .locals 0
+    .param p1, "offset"    # I
+
+    .prologue
+    .line 436
+    iput p1, p0, Lcom/blog/www/guideview/MaskView;->B:I
+
+    .line 437
     return-void
 .end method
 
@@ -1063,36 +1111,36 @@
     .locals 3
 
     .prologue
-    .line 95
+    .line 94
     invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
-    .line 97
+    .line 96
     :try_start_0
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->clearFocus()V
 
-    .line 98
+    .line 97
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 99
+    .line 98
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/blog/www/guideview/MaskView;->q:Landroid/graphics/Bitmap;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 103
+    .line 102
     :goto_0
     return-void
 
-    .line 100
+    .line 99
     :catch_0
     move-exception v0
 
-    .line 101
+    .line 100
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -1106,17 +1154,17 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 276
+    .line 279
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 277
+    .line 280
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->q:Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/graphics/Bitmap;->eraseColor(I)V
 
-    .line 278
+    .line 281
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->f:Landroid/graphics/Paint;
@@ -1127,17 +1175,17 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 279
+    .line 282
     iget-boolean v0, p0, Lcom/blog/www/guideview/MaskView;->m:Z
 
     if-nez v0, :cond_0
 
-    .line 280
+    .line 283
     iget v0, p0, Lcom/blog/www/guideview/MaskView;->o:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 289
+    .line 292
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -1154,7 +1202,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
-    .line 292
+    .line 295
     :goto_0
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->q:Landroid/graphics/Bitmap;
 
@@ -1162,11 +1210,11 @@
 
     invoke-virtual {p1, v0, v5, v5, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 294
+    .line 297
     :cond_0
     return-void
 
-    .line 282
+    .line 285
     :pswitch_0
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
@@ -1186,7 +1234,7 @@
 
     goto :goto_0
 
-    .line 285
+    .line 288
     :pswitch_1
     iget-object v0, p0, Lcom/blog/www/guideview/MaskView;->r:Landroid/graphics/Canvas;
 
@@ -1204,7 +1252,7 @@
 
     iget-object v3, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
-    .line 286
+    .line 289
     invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
 
     move-result v3
@@ -1215,12 +1263,12 @@
 
     iget-object v4, p0, Lcom/blog/www/guideview/MaskView;->p:Landroid/graphics/Paint;
 
-    .line 285
+    .line 288
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     goto :goto_0
 
-    .line 280
+    .line 283
     nop
 
     :pswitch_data_0
@@ -1235,7 +1283,7 @@
     .param p1, "ev"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 395
+    .line 400
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -1252,12 +1300,12 @@
     .param p5, "b"    # I
 
     .prologue
-    .line 134
+    .line 133
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getChildCount()I
 
     move-result v1
 
-    .line 135
+    .line 134
     .local v1, "count":I
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getResources()Landroid/content/res/Resources;
 
@@ -1269,7 +1317,7 @@
 
     iget v2, v5, Landroid/util/DisplayMetrics;->density:F
 
-    .line 137
+    .line 136
     .local v2, "density":F
     const/4 v3, 0x0
 
@@ -1277,23 +1325,23 @@
     :goto_0
     if-ge v3, v1, :cond_2
 
-    .line 138
+    .line 137
     invoke-virtual {p0, v3}, Lcom/blog/www/guideview/MaskView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 139
+    .line 138
     .local v0, "child":Landroid/view/View;
     if-nez v0, :cond_1
 
-    .line 137
+    .line 136
     :cond_0
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 142
+    .line 141
     :cond_1
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1301,27 +1349,27 @@
 
     check-cast v4, Lcom/blog/www/guideview/MaskView$b;
 
-    .line 143
+    .line 142
     .local v4, "lp":Lcom/blog/www/guideview/MaskView$b;
     if-eqz v4, :cond_0
 
-    .line 146
-    iget v5, v4, Lcom/blog/www/guideview/MaskView$b;->j:I
+    .line 145
+    iget v5, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
 
     sparse-switch v5, :sswitch_data_0
 
-    .line 178
+    .line 177
     :goto_2
-    iget v5, v4, Lcom/blog/www/guideview/MaskView$b;->j:I
+    iget v5, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
 
     const/16 v6, 0x31
 
     if-eq v5, v6, :cond_0
 
-    .line 180
+    .line 179
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->l:I
+    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->m:I
 
     int-to-float v6, v6
 
@@ -1335,7 +1383,7 @@
 
     int-to-float v6, v6
 
-    iget v7, v4, Lcom/blog/www/guideview/MaskView$b;->m:I
+    iget v7, v4, Lcom/blog/www/guideview/MaskView$b;->n:I
 
     int-to-float v7, v7
 
@@ -1351,7 +1399,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 182
+    .line 181
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget v5, v5, Landroid/graphics/RectF;->left:F
@@ -1380,7 +1428,7 @@
 
     goto :goto_1
 
-    .line 148
+    .line 147
     :sswitch_0
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
@@ -1390,7 +1438,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->right:F
 
-    .line 149
+    .line 148
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
@@ -1407,16 +1455,16 @@
 
     iput v6, v5, Landroid/graphics/RectF;->left:F
 
-    .line 150
+    .line 149
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
+    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     invoke-direct {p0, v0, v5, v6}, Lcom/blog/www/guideview/MaskView;->b(Landroid/view/View;Landroid/graphics/RectF;I)V
 
     goto :goto_2
 
-    .line 153
+    .line 152
     :sswitch_1
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
@@ -1426,7 +1474,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->bottom:F
 
-    .line 154
+    .line 153
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
@@ -1443,16 +1491,16 @@
 
     iput v6, v5, Landroid/graphics/RectF;->top:F
 
-    .line 155
+    .line 154
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
+    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     invoke-direct {p0, v0, v5, v6}, Lcom/blog/www/guideview/MaskView;->a(Landroid/view/View;Landroid/graphics/RectF;I)V
 
     goto :goto_2
 
-    .line 158
+    .line 157
     :sswitch_2
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
@@ -1462,7 +1510,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->left:F
 
-    .line 159
+    .line 158
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
@@ -1479,16 +1527,16 @@
 
     iput v6, v5, Landroid/graphics/RectF;->right:F
 
-    .line 160
+    .line 159
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
+    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     invoke-direct {p0, v0, v5, v6}, Lcom/blog/www/guideview/MaskView;->b(Landroid/view/View;Landroid/graphics/RectF;I)V
 
     goto/16 :goto_2
 
-    .line 163
+    .line 162
     :sswitch_3
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
@@ -1498,7 +1546,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->top:F
 
-    .line 164
+    .line 163
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
@@ -1515,16 +1563,16 @@
 
     iput v6, v5, Landroid/graphics/RectF;->bottom:F
 
-    .line 165
+    .line 164
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
-    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->k:I
+    iget v6, v4, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     invoke-direct {p0, v0, v5, v6}, Lcom/blog/www/guideview/MaskView;->a(Landroid/view/View;Landroid/graphics/RectF;I)V
 
     goto/16 :goto_2
 
-    .line 168
+    .line 167
     :sswitch_4
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
@@ -1548,7 +1596,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->left:F
 
-    .line 169
+    .line 168
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -1571,7 +1619,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->top:F
 
-    .line 170
+    .line 169
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -1594,7 +1642,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->right:F
 
-    .line 171
+    .line 170
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -1617,7 +1665,7 @@
 
     iput v6, v5, Landroid/graphics/RectF;->bottom:F
 
-    .line 172
+    .line 171
     iget-object v5, p0, Lcom/blog/www/guideview/MaskView;->e:Landroid/graphics/RectF;
 
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
@@ -1632,7 +1680,7 @@
 
     goto/16 :goto_2
 
-    .line 175
+    .line 174
     :sswitch_5
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
@@ -1666,13 +1714,13 @@
 
     goto/16 :goto_2
 
-    .line 186
+    .line 185
     .end local v0    # "child":Landroid/view/View;
     .end local v4    # "lp":Lcom/blog/www/guideview/MaskView$b;
     :cond_2
     return-void
 
-    .line 146
+    .line 145
     nop
 
     :sswitch_data_0
@@ -1696,30 +1744,30 @@
 
     const/4 v9, 0x0
 
-    .line 106
+    .line 105
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
-    .line 107
+    .line 106
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v5
 
-    .line 108
+    .line 107
     .local v5, "w":I
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v2
 
-    .line 109
+    .line 108
     .local v2, "h":I
     invoke-virtual {p0, v5, v2}, Lcom/blog/www/guideview/MaskView;->setMeasuredDimension(II)V
 
-    .line 110
+    .line 109
     iget-boolean v6, p0, Lcom/blog/www/guideview/MaskView;->l:Z
 
     if-nez v6, :cond_0
 
-    .line 111
+    .line 110
     iget-object v6, p0, Lcom/blog/www/guideview/MaskView;->d:Landroid/graphics/RectF;
 
     int-to-float v7, v5
@@ -1728,16 +1776,16 @@
 
     invoke-virtual {v6, v9, v9, v7, v8}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 112
+    .line 111
     invoke-direct {p0}, Lcom/blog/www/guideview/MaskView;->d()V
 
-    .line 115
+    .line 114
     :cond_0
     invoke-virtual {p0}, Lcom/blog/www/guideview/MaskView;->getChildCount()I
 
     move-result v1
 
-    .line 117
+    .line 116
     .local v1, "count":I
     const/4 v3, 0x0
 
@@ -1745,30 +1793,30 @@
     :goto_0
     if-ge v3, v1, :cond_3
 
-    .line 118
+    .line 117
     invoke-virtual {p0, v3}, Lcom/blog/www/guideview/MaskView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 119
+    .line 118
     .local v0, "child":Landroid/view/View;
     if-eqz v0, :cond_2
 
-    .line 120
+    .line 119
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v4
 
     check-cast v4, Lcom/blog/www/guideview/MaskView$b;
 
-    .line 121
+    .line 120
     .local v4, "lp":Lcom/blog/www/guideview/MaskView$b;
     if-nez v4, :cond_1
 
-    .line 122
+    .line 121
     invoke-virtual {v0, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 124
+    .line 123
     :cond_1
     add-int v6, v5, v10
 
@@ -1776,14 +1824,14 @@
 
     invoke-virtual {p0, v0, v6, v7}, Lcom/blog/www/guideview/MaskView;->measureChild(Landroid/view/View;II)V
 
-    .line 117
+    .line 116
     .end local v4    # "lp":Lcom/blog/www/guideview/MaskView$b;
     :cond_2
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 127
+    .line 126
     .end local v0    # "child":Landroid/view/View;
     :cond_3
     return-void
@@ -1796,34 +1844,46 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 405
+    .line 410
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v3
 
     packed-switch v3, :pswitch_data_0
 
-    .line 427
+    .line 432
     :cond_0
     :goto_0
     return v2
 
-    .line 407
+    .line 412
     :pswitch_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v3
 
+    iget v4, p0, Lcom/blog/www/guideview/MaskView;->B:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
     iput v3, p0, Lcom/blog/www/guideview/MaskView;->u:F
 
-    .line 408
+    .line 413
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v3
 
+    iget v4, p0, Lcom/blog/www/guideview/MaskView;->B:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
     iput v3, p0, Lcom/blog/www/guideview/MaskView;->v:F
 
-    .line 410
+    .line 415
     :pswitch_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1831,21 +1891,33 @@
 
     if-ne v3, v2, :cond_0
 
-    .line 411
+    .line 416
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v3
 
+    iget v4, p0, Lcom/blog/www/guideview/MaskView;->B:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
     iput v3, p0, Lcom/blog/www/guideview/MaskView;->w:F
 
-    .line 412
+    .line 417
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v3
 
+    iget v4, p0, Lcom/blog/www/guideview/MaskView;->B:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
     iput v3, p0, Lcom/blog/www/guideview/MaskView;->x:F
 
-    .line 413
+    .line 418
     iget-object v3, p0, Lcom/blog/www/guideview/MaskView;->c:Landroid/graphics/RectF;
 
     iget v4, p0, Lcom/blog/www/guideview/MaskView;->u:F
@@ -1870,7 +1942,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 414
+    .line 419
     iget v3, p0, Lcom/blog/www/guideview/MaskView;->u:F
 
     iget v4, p0, Lcom/blog/www/guideview/MaskView;->w:F
@@ -1881,7 +1953,7 @@
 
     move-result v0
 
-    .line 415
+    .line 420
     .local v0, "xInstance":F
     iget v3, p0, Lcom/blog/www/guideview/MaskView;->v:F
 
@@ -1893,7 +1965,7 @@
 
     move-result v1
 
-    .line 416
+    .line 421
     .local v1, "yInstance":F
     const-string v3, "MASKVIEW"
 
@@ -1971,7 +2043,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 417
+    .line 422
     const-string v3, "MASKVIEW"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2016,7 +2088,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 418
+    .line 423
     iget v3, p0, Lcom/blog/www/guideview/MaskView;->y:I
 
     int-to-float v3, v3
@@ -2033,22 +2105,22 @@
 
     if-gez v3, :cond_0
 
-    .line 419
+    .line 424
     iget-object v3, p0, Lcom/blog/www/guideview/MaskView;->b:Lcom/blog/www/guideview/MaskView$a;
 
     if-eqz v3, :cond_0
 
-    .line 420
+    .line 425
     iget-object v2, p0, Lcom/blog/www/guideview/MaskView;->b:Lcom/blog/www/guideview/MaskView$a;
 
     invoke-interface {v2}, Lcom/blog/www/guideview/MaskView$a;->b()V
 
-    .line 421
+    .line 426
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 405
+    .line 410
     nop
 
     :pswitch_data_0

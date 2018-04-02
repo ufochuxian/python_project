@@ -10,6 +10,9 @@
 .method public abstract onLoadStarted(Ljava/lang/String;)V
 .end method
 
+.method public abstract onProgressChanged(I)V
+.end method
+
 .method public abstract onReceivedTitle(Ljava/lang/String;)V
 .end method
 

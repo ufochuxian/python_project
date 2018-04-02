@@ -357,6 +357,7 @@
 
     invoke-virtual {p1}, Ljava/io/RandomAccessFile;->close()V
 
+    .line 349
     throw v0
 .end method
 
@@ -716,5 +717,6 @@
 
     iput-object v1, p0, Lcom/chivox/android/AIRecorder;->future:Ljava/util/concurrent/Future;
 
+    .line 202
     throw v0
 .end method

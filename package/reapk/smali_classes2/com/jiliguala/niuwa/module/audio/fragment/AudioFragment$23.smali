@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 474
+    .line 478
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,25 +42,25 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 477
+    .line 481
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 492
+    .line 496
     :cond_0
     :goto_0
     return-void
 
-    .line 479
+    .line 483
     :sswitch_0
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->AudioResNoneWifiDownloadEnable:Z
 
-    .line 480
+    .line 484
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$100(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
@@ -69,7 +69,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->clickDownloadThisSong()V
 
-    .line 481
+    .line 485
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1500(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -90,7 +90,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 482
+    .line 486
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1500(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -101,13 +101,13 @@
 
     goto :goto_0
 
-    .line 486
+    .line 490
     :sswitch_1
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->AudioResNoneWifiDownloadEnable:Z
 
-    .line 487
+    .line 491
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1500(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -128,7 +128,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 488
+    .line 492
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$23;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1500(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -139,7 +139,7 @@
 
     goto :goto_0
 
-    .line 477
+    .line 481
     nop
 
     :sswitch_data_0

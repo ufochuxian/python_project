@@ -79,7 +79,7 @@
 
     .line 120
     :sswitch_1
-    const v0, 0x7f09054c
+    const v0, 0x7f090556
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -87,7 +87,7 @@
 
     .line 121
     .local v8, "downloadStatus":Ljava/lang/Object;
-    const v0, 0x7f09054b
+    const v0, 0x7f090555
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -95,7 +95,7 @@
 
     .line 122
     .local v7, "downloadObj":Ljava/lang/Object;
-    const v0, 0x7f09054a
+    const v0, 0x7f090554
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -228,9 +228,9 @@
 
     .line 158
     .local v11, "transaction":Landroid/support/v4/app/an;
-    const v0, 0x7f01001d
+    const v0, 0x7f01001f
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
     invoke-virtual {v11, v0, v4}, Landroid/support/v4/app/an;->a(II)Landroid/support/v4/app/an;
 

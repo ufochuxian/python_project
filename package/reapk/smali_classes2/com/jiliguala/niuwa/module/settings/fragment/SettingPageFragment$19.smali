@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 492
+    .line 496
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$19;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 1
 
     .prologue
-    .line 495
+    .line 499
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$19;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 496
+    .line 500
     return-void
 .end method
 
@@ -54,6 +54,6 @@
     .locals 0
 
     .prologue
-    .line 501
+    .line 505
     return-void
 .end method

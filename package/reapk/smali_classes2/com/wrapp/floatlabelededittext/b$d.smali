@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final icon_clear:I = 0x7f080197
+.field public static final icon_clear:I = 0x7f08019b
 
-.field public static final input_delete_icon:I = 0x7f0801fe
+.field public static final input_delete_icon:I = 0x7f080208
 
 
 # direct methods

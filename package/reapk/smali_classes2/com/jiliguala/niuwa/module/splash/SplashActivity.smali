@@ -334,7 +334,7 @@
     invoke-virtual {v2, v3}, Lrx/i/b;->a(Lrx/m;)V
 
     .line 151
-    invoke-static {p0}, Lcom/jiliguala/niuwa/logic/o/a;->b(Landroid/content/Context;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;
+    invoke-static {p0}, Lcom/jiliguala/niuwa/logic/p/a;->b(Landroid/content/Context;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;
 
     move-result-object v2
 
@@ -612,7 +612,7 @@
     .line 183
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->splash:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;)V
+    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/p/a;->a(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;)V
 
     goto :goto_0
 .end method
@@ -676,9 +676,9 @@
 
     .line 275
     :cond_0
-    const v1, 0x7f01000c
+    const v1, 0x7f01000d
 
-    const v2, 0x7f010011
+    const v2, 0x7f010012
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->overridePendingTransition(II)V
 
@@ -768,15 +768,15 @@
     .line 247
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->splash:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;)V
+    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/p/a;->b(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;)V
 
     goto :goto_0
 
     .line 235
     :sswitch_data_0
     .sparse-switch
-        0x7f090405 -> :sswitch_0
-        0x7f090511 -> :sswitch_1
+        0x7f09040c -> :sswitch_0
+        0x7f09051b -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -863,7 +863,7 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->setContentView(I)V
 
     .line 90
-    const v0, 0x7f090510
+    const v0, 0x7f09051a
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->findViewById(I)Landroid/view/View;
 
@@ -874,7 +874,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->splashContainer:Landroid/widget/RelativeLayout;
 
     .line 91
-    const v0, 0x7f090405
+    const v0, 0x7f09040c
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->findViewById(I)Landroid/view/View;
 
@@ -890,7 +890,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 93
-    const v0, 0x7f090511
+    const v0, 0x7f09051b
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->findViewById(I)Landroid/view/View;
 
@@ -906,7 +906,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 95
-    const v0, 0x7f0904f8
+    const v0, 0x7f090502
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->findViewById(I)Landroid/view/View;
 

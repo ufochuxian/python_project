@@ -197,7 +197,7 @@
     .line 197
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/detail/FullScreenPicDialogFragment;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f090303
+    const v1, 0x7f09030a
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -292,7 +292,7 @@
     .line 135
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/detail/FullScreenPicDialogFragment;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0903e6
+    const v2, 0x7f0903ed
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -312,7 +312,7 @@
     .line 137
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/detail/FullScreenPicDialogFragment;->mContainer:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f090283
+    const v2, 0x7f090288
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

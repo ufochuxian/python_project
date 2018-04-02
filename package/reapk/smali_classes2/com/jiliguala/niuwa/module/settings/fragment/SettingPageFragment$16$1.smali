@@ -33,7 +33,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;
 
     .prologue
-    .line 1373
+    .line 1380
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "userInfoTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;
 
     .prologue
-    .line 1388
+    .line 1395
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -61,25 +61,25 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 1390
+    .line 1397
     if-eqz p1, :cond_0
 
-    .line 1391
+    .line 1398
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/login/a;->b(Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;)V
 
-    .line 1393
+    .line 1400
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$3000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$3100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 1394
+    .line 1401
     return-void
 .end method
 
@@ -87,7 +87,7 @@
     .locals 0
 
     .prologue
-    .line 1377
+    .line 1384
     return-void
 .end method
 
@@ -96,7 +96,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1381
+    .line 1388
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16$1;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
@@ -107,12 +107,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1382
+    .line 1389
     const-string v0, "\u56fe\u7247\u4e0a\u4f20\u5931\u8d25"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1384
+    .line 1391
     :cond_0
     return-void
 .end method
@@ -121,7 +121,7 @@
     .locals 0
 
     .prologue
-    .line 1373
+    .line 1380
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$16$1;->a(Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate;)V

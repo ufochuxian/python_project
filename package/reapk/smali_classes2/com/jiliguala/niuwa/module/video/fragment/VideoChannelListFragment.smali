@@ -532,9 +532,9 @@
 
     .line 355
     .local v14, "transaction":Landroid/support/v4/app/an;
-    const v2, 0x7f010022
+    const v2, 0x7f010024
 
-    const v3, 0x7f010025
+    const v3, 0x7f010027
 
     invoke-virtual {v14, v2, v3}, Landroid/support/v4/app/an;->a(II)Landroid/support/v4/app/an;
 
@@ -708,7 +708,7 @@
 
     .prologue
     .line 182
-    const v0, 0x7f09048f
+    const v0, 0x7f090499
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -894,13 +894,13 @@
 
     .line 371
     .local v0, "transaction":Landroid/support/v4/app/an;
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
-    const v3, 0x7f010012
+    const v3, 0x7f010013
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -918,7 +918,7 @@
     if-nez v1, :cond_0
 
     .line 373
-    const v1, 0x7f09049f
+    const v1, 0x7f0904a9
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
@@ -1237,7 +1237,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fb
+    const v2, 0x7f0600fd
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1577,9 +1577,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 

@@ -13,7 +13,7 @@
 
 .field private view2131296465:Landroid/view/View;
 
-.field private view2131296982:Landroid/view/View;
+.field private view2131296988:Landroid/view/View;
 
 
 # direct methods
@@ -47,7 +47,7 @@
     .end annotation
 
     .prologue
-    const v5, 0x7f0902d6
+    const v5, 0x7f0902dc
 
     const v4, 0x7f0900d1
 
@@ -106,7 +106,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->finishCount:Landroid/widget/TextView;
 
     .line 49
-    const v1, 0x7f090437
+    const v1, 0x7f09043e
 
     const-string v2, "field \'recyclerView\'"
 
@@ -141,7 +141,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity;->listen:Landroid/widget/TextView;
 
     .line 52
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296982:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296988:Landroid/view/View;
 
     .line 53
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding$2;
@@ -181,7 +181,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 68
-    const v1, 0x7f0902e6
+    const v1, 0x7f0902ed
 
     const-string v2, "field \'loadingProgress\'"
 
@@ -255,12 +255,12 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296406:Landroid/view/View;
 
     .line 87
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296982:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296988:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 88
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296982:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296988:Landroid/view/View;
 
     .line 89
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailActivity_ViewBinding;->view2131296465:Landroid/view/View;

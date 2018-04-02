@@ -34,7 +34,7 @@
 
 .field listView:Landroid/widget/ListView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902d2
+        a = 0x7f0902d8
     .end annotation
 .end field
 
@@ -44,7 +44,7 @@
 
 .field shareCancel:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904d1
+        a = 0x7f0904db
     .end annotation
 .end field
 
@@ -376,7 +376,7 @@
 
     .prologue
     .line 118
-    const v0, 0x7f0b0108
+    const v0, 0x7f0b0109
 
     const/4 v1, 0x0
 

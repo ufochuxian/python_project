@@ -18,5 +18,5 @@
 .method public abstract onSendProgressFail()V
 .end method
 
-.method public abstract onSendProgressSuccess()V
+.method public abstract onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 .end method

@@ -23,7 +23,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB1ReportViewHolder_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB1ReportViewHolder;
 
     .line 22
-    const v0, 0x7f090505
+    const v0, 0x7f09050f
 
     const-string v1, "field \'songsContainer\'"
 
@@ -38,7 +38,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB1ReportViewHolder;->songsContainer:Landroid/widget/LinearLayout;
 
     .line 23
-    const v0, 0x7f0905ae
+    const v0, 0x7f0905b8
 
     const-string v1, "field \'touchContainer\'"
 

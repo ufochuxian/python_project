@@ -61,20 +61,23 @@
 
 .field private u:Landroid/graphics/PaintFlagsDrawFilter;
 
+.field private v:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/net/Uri;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/net/Uri;Ljava/lang/String;)V
     .locals 6
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "bitmap"    # Landroid/graphics/Bitmap;
     .param p3, "uri"    # Landroid/net/Uri;
+    .param p4, "originUrl"    # Ljava/lang/String;
 
     .prologue
     const/4 v5, 0x1
 
     const/4 v4, 0x0
 
-    .line 75
+    .line 76
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 50
@@ -90,32 +93,35 @@
     .line 58
     iput-boolean v4, p0, Lcom/github/sahasbhop/a/a;->j:Z
 
-    .line 77
+    .line 78
+    iput-object p4, p0, Lcom/github/sahasbhop/a/a;->v:Ljava/lang/String;
+
+    .line 80
     const/4 v1, -0x1
 
     iput v1, p0, Lcom/github/sahasbhop/a/a;->m:I
 
-    .line 78
+    .line 81
     iput v4, p0, Lcom/github/sahasbhop/a/a;->n:I
 
-    .line 79
+    .line 82
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/github/sahasbhop/a/a;->r:F
 
-    .line 81
+    .line 84
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->g:Landroid/graphics/Paint;
 
-    .line 82
+    .line 85
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v5}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 84
+    .line 87
     new-instance v1, Landroid/graphics/PaintFlagsDrawFilter;
 
     const/4 v2, 0x3
@@ -124,34 +130,34 @@
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->u:Landroid/graphics/PaintFlagsDrawFilter;
 
-    .line 86
+    .line 89
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    .line 87
+    .line 90
     invoke-virtual {v1, v4}, Lcom/nostra13/universalimageloader/core/c$a;->b(Z)Lcom/nostra13/universalimageloader/core/c$a;
 
     move-result-object v1
 
-    .line 88
+    .line 91
     invoke-virtual {v1, v5}, Lcom/nostra13/universalimageloader/core/c$a;->d(Z)Lcom/nostra13/universalimageloader/core/c$a;
 
     move-result-object v1
 
-    .line 89
+    .line 92
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/c$a;->d()Lcom/nostra13/universalimageloader/core/c;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->e:Lcom/nostra13/universalimageloader/core/c;
 
-    .line 91
+    .line 94
     invoke-static {p1}, Lcom/github/sahasbhop/a/a/f;->a(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
 
-    .line 93
+    .line 96
     .local v0, "workingDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -159,34 +165,34 @@
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->h:Ljava/lang/String;
 
-    .line 94
+    .line 97
     iput-object p3, p0, Lcom/github/sahasbhop/a/a;->b:Landroid/net/Uri;
 
-    .line 96
+    .line 99
     invoke-static {}, Lcom/github/sahasbhop/a/a/g;->a()Lcom/github/sahasbhop/a/a/g;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
 
-    .line 98
+    .line 101
     iput-object p2, p0, Lcom/github/sahasbhop/a/a;->d:Landroid/graphics/Bitmap;
 
-    .line 99
+    .line 102
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v1
 
     iput v1, p0, Lcom/github/sahasbhop/a/a;->k:I
 
-    .line 100
+    .line 103
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v1
 
     iput v1, p0, Lcom/github/sahasbhop/a/a;->l:I
 
-    .line 102
+    .line 105
     sget-boolean v1, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v1, :cond_0
@@ -201,7 +207,7 @@
 
     invoke-static {v1, v2}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 103
+    .line 106
     :cond_0
     sget-boolean v1, Lcom/github/sahasbhop/a/b;->b:Z
 
@@ -231,7 +237,7 @@
 
     invoke-static {v1, v2}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 104
+    .line 107
     :cond_1
     return-void
 .end method
@@ -247,7 +253,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 501
+    .line 504
     :try_start_0
     sget-boolean v4, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -261,7 +267,7 @@
 
     invoke-static {v4, v5}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 502
+    .line 505
     :cond_0
     iget v4, p0, Lcom/github/sahasbhop/a/a;->k:I
 
@@ -273,17 +279,17 @@
 
     move-result-object v2
 
-    .line 504
+    .line 507
     .local v2, "redrawnBitmap":Landroid/graphics/Bitmap;
     new-instance v0, Landroid/graphics/Canvas;
 
     invoke-direct {v0, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 506
+    .line 509
     .local v0, "canvas":Landroid/graphics/Canvas;
     if-eqz p5, :cond_1
 
-    .line 507
+    .line 510
     const/4 v4, 0x0
 
     const/4 v5, 0x0
@@ -292,10 +298,10 @@
 
     invoke-virtual {v0, p5, v4, v5, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 509
+    .line 512
     if-nez p3, :cond_1
 
-    .line 510
+    .line 513
     invoke-virtual {p4}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v4
@@ -310,14 +316,14 @@
 
     invoke-virtual {v0, p1, p2, v4, v5}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 511
+    .line 514
     const/4 v4, 0x0
 
     sget-object v5, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v0, v4, v5}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 512
+    .line 515
     const/4 v4, 0x0
 
     const/4 v5, 0x0
@@ -328,7 +334,7 @@
 
     invoke-virtual {v0, v4, v5, v6, v7}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 516
+    .line 519
     :cond_1
     int-to-float v4, p1
 
@@ -340,23 +346,23 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 524
+    .line 527
     .end local v0    # "canvas":Landroid/graphics/Canvas;
     .end local v2    # "redrawnBitmap":Landroid/graphics/Bitmap;
     :goto_0
     return-object v2
 
-    .line 520
+    .line 523
     :catch_0
     move-exception v1
 
-    .line 521
+    .line 524
     .local v1, "e":Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     move-object v2, v3
 
-    .line 524
+    .line 527
     goto :goto_0
 .end method
 
@@ -367,37 +373,37 @@
     .param p3, "previousChunk"    # Lar/com/hjg/pngj/chunks/k;
 
     .prologue
-    .line 373
+    .line 376
     const/4 v4, 0x0
 
-    .line 375
+    .line 378
     .local v4, "bitmap":Landroid/graphics/Bitmap;
     invoke-virtual/range {p3 .. p3}, Lar/com/hjg/pngj/chunks/k;->r()B
 
     move-result v5
 
-    .line 376
+    .line 379
     .local v5, "disposeOp":B
     invoke-virtual/range {p3 .. p3}, Lar/com/hjg/pngj/chunks/k;->n()I
 
     move-result v8
 
-    .line 377
+    .line 380
     .local v8, "offsetX":I
     invoke-virtual/range {p3 .. p3}, Lar/com/hjg/pngj/chunks/k;->o()I
 
     move-result v9
 
-    .line 384
+    .line 387
     .local v9, "offsetY":I
     packed-switch v5, :pswitch_data_0
 
-    .line 449
+    .line 452
     :cond_0
     :goto_0
     return-object v4
 
-    .line 387
+    .line 390
     :pswitch_0
     if-lez p1, :cond_1
 
@@ -411,17 +417,17 @@
 
     move-result-object v4
 
-    .line 388
+    .line 391
     :goto_1
     goto :goto_0
 
-    .line 387
+    .line 390
     :cond_1
     const/4 v4, 0x0
 
     goto :goto_1
 
-    .line 392
+    .line 395
     :pswitch_1
     if-lez p1, :cond_3
 
@@ -435,11 +441,11 @@
 
     move-result-object v4
 
-    .line 393
+    .line 396
     :goto_2
     if-eqz v4, :cond_0
 
-    .line 395
+    .line 398
     new-instance v17, Ljava/io/File;
 
     move-object/from16 v0, p0
@@ -464,7 +470,7 @@
 
     move-result-object v15
 
-    .line 396
+    .line 399
     .local v15, "tempPath":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -496,7 +502,7 @@
 
     move-result-object v6
 
-    .line 398
+    .line 401
     .local v6, "frameBitmap":Landroid/graphics/Bitmap;
     sget-boolean v17, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -514,7 +520,7 @@
 
     invoke-static/range {v17 .. v18}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 399
+    .line 402
     :cond_2
     move-object/from16 v0, p0
 
@@ -534,13 +540,13 @@
 
     move-result-object v10
 
-    .line 400
+    .line 403
     .local v10, "tempBitmap":Landroid/graphics/Bitmap;
     new-instance v11, Landroid/graphics/Canvas;
 
     invoke-direct {v11, v10}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 401
+    .line 404
     .local v11, "tempCanvas":Landroid/graphics/Canvas;
     const/16 v17, 0x0
 
@@ -556,7 +562,7 @@
 
     invoke-virtual {v11, v4, v0, v1, v2}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 403
+    .line 406
     invoke-virtual {v6}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v17
@@ -575,7 +581,7 @@
 
     invoke-virtual {v11, v8, v9, v0, v1}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 404
+    .line 407
     const/16 v17, 0x0
 
     sget-object v18, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
@@ -586,7 +592,7 @@
 
     invoke-virtual {v11, v0, v1}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 405
+    .line 408
     const/16 v17, 0x0
 
     const/16 v18, 0x0
@@ -613,13 +619,13 @@
 
     invoke-virtual {v11, v0, v1, v2, v3}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 407
+    .line 410
     move-object v4, v10
 
-    .line 408
+    .line 411
     goto/16 :goto_0
 
-    .line 392
+    .line 395
     .end local v6    # "frameBitmap":Landroid/graphics/Bitmap;
     .end local v10    # "tempBitmap":Landroid/graphics/Bitmap;
     .end local v11    # "tempCanvas":Landroid/graphics/Canvas;
@@ -629,7 +635,7 @@
 
     goto/16 :goto_2
 
-    .line 411
+    .line 414
     :pswitch_2
     const/16 v17, 0x1
 
@@ -639,14 +645,14 @@
 
     if-le v0, v1, :cond_0
 
-    .line 414
+    .line 417
     add-int/lit8 v7, p1, -0x2
 
     .local v7, "i":I
     :goto_3
     if-ltz v7, :cond_0
 
-    .line 415
+    .line 418
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/github/sahasbhop/a/a;->c:Ljava/util/ArrayList;
@@ -661,25 +667,25 @@
 
     check-cast v16, Lar/com/hjg/pngj/chunks/k;
 
-    .line 416
+    .line 419
     .local v16, "tempPngChunk":Lar/com/hjg/pngj/chunks/k;
     invoke-virtual/range {v16 .. v16}, Lar/com/hjg/pngj/chunks/k;->r()B
 
     move-result v12
 
-    .line 417
+    .line 420
     .local v12, "tempDisposeOp":I
     invoke-virtual/range {v16 .. v16}, Lar/com/hjg/pngj/chunks/k;->n()I
 
     move-result v13
 
-    .line 418
+    .line 421
     .local v13, "tempOffsetX":I
     invoke-virtual/range {v16 .. v16}, Lar/com/hjg/pngj/chunks/k;->o()I
 
     move-result v14
 
-    .line 420
+    .line 423
     .local v14, "tempOffsetY":I
     new-instance v17, Ljava/io/File;
 
@@ -701,7 +707,7 @@
 
     move-result-object v15
 
-    .line 421
+    .line 424
     .restart local v15    # "tempPath":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -733,7 +739,7 @@
 
     move-result-object v6
 
-    .line 423
+    .line 426
     .restart local v6    # "frameBitmap":Landroid/graphics/Bitmap;
     const/16 v17, 0x2
 
@@ -741,20 +747,20 @@
 
     if-eq v12, v0, :cond_6
 
-    .line 425
+    .line 428
     if-nez v12, :cond_4
 
-    .line 426
+    .line 429
     move-object/from16 v0, p0
 
     invoke-direct {v0, v7}, Lcom/github/sahasbhop/a/a;->d(I)Landroid/graphics/Bitmap;
 
     move-result-object v4
 
-    .line 427
+    .line 430
     if-nez v4, :cond_0
 
-    .line 428
+    .line 431
     const-string v17, "Can\'t retrieve previous APNG_DISPOSE_OP_NONE frame: please try to increase memory cache size!"
 
     const/16 v18, 0x0
@@ -769,7 +775,7 @@
 
     goto/16 :goto_0
 
-    .line 431
+    .line 434
     :cond_4
     const/16 v17, 0x1
 
@@ -777,7 +783,7 @@
 
     if-ne v12, v0, :cond_0
 
-    .line 432
+    .line 435
     sget-boolean v17, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v17, :cond_5
@@ -794,7 +800,7 @@
 
     invoke-static/range {v17 .. v18}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 433
+    .line 436
     :cond_5
     move-object/from16 v0, p0
 
@@ -814,13 +820,13 @@
 
     move-result-object v10
 
-    .line 434
+    .line 437
     .restart local v10    # "tempBitmap":Landroid/graphics/Bitmap;
     new-instance v11, Landroid/graphics/Canvas;
 
     invoke-direct {v11, v10}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 435
+    .line 438
     .restart local v11    # "tempCanvas":Landroid/graphics/Canvas;
     move-object/from16 v0, p0
 
@@ -844,7 +850,7 @@
 
     invoke-virtual {v11, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 437
+    .line 440
     invoke-virtual {v6}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v17
@@ -863,7 +869,7 @@
 
     invoke-virtual {v11, v13, v14, v0, v1}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 438
+    .line 441
     const/16 v17, 0x0
 
     sget-object v18, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
@@ -874,7 +880,7 @@
 
     invoke-virtual {v11, v0, v1}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 439
+    .line 442
     const/16 v17, 0x0
 
     const/16 v18, 0x0
@@ -901,12 +907,12 @@
 
     invoke-virtual {v11, v0, v1, v2, v3}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
-    .line 441
+    .line 444
     move-object v4, v10
 
     goto/16 :goto_0
 
-    .line 414
+    .line 417
     .end local v10    # "tempBitmap":Landroid/graphics/Bitmap;
     .end local v11    # "tempCanvas":Landroid/graphics/Canvas;
     :cond_6
@@ -914,7 +920,7 @@
 
     goto/16 :goto_3
 
-    .line 384
+    .line 387
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -930,7 +936,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 107
+    .line 110
     if-eqz p0, :cond_0
 
     instance-of v2, p0, Landroid/widget/ImageView;
@@ -940,12 +946,12 @@
     :cond_0
     move-object v0, v1
 
-    .line 110
+    .line 113
     .end local p0    # "view":Landroid/view/View;
     :goto_0
     return-object v0
 
-    .line 108
+    .line 111
     .restart local p0    # "view":Landroid/view/View;
     :cond_1
     check-cast p0, Landroid/widget/ImageView;
@@ -955,7 +961,7 @@
 
     move-result-object v0
 
-    .line 109
+    .line 112
     .local v0, "drawable":Landroid/graphics/drawable/Drawable;
     if-eqz v0, :cond_2
 
@@ -968,7 +974,7 @@
 
     goto :goto_0
 
-    .line 110
+    .line 113
     :cond_3
     check-cast v0, Lcom/github/sahasbhop/a/a;
 
@@ -981,15 +987,15 @@
     .param p2, "bitmap"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 533
+    .line 536
     if-nez p2, :cond_1
 
-    .line 537
+    .line 540
     :cond_0
     :goto_0
     return-void
 
-    .line 534
+    .line 537
     :cond_1
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
 
@@ -997,12 +1003,12 @@
 
     const/4 v0, 0x0
 
-    .line 535
+    .line 538
     .local v0, "memoryCache":Lcom/nostra13/universalimageloader/a/b/c;
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 536
+    .line 539
     invoke-direct {p0, p1}, Lcom/github/sahasbhop/a/a;->c(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1011,7 +1017,7 @@
 
     goto :goto_0
 
-    .line 534
+    .line 537
     .end local v0    # "memoryCache":Lcom/nostra13/universalimageloader/a/b/c;
     :cond_2
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
@@ -1034,25 +1040,25 @@
 
     const/4 v8, 0x0
 
-    .line 294
+    .line 297
     iget v5, p0, Lcom/github/sahasbhop/a/a;->r:F
 
     cmpl-float v5, v5, v10
 
     if-nez v5, :cond_3
 
-    .line 295
+    .line 298
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v4
 
-    .line 296
+    .line 299
     .local v4, "width":I
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getHeight()I
 
     move-result v1
 
-    .line 298
+    .line 301
     .local v1, "height":I
     sget-boolean v5, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -1078,7 +1084,7 @@
 
     invoke-static {v5, v6}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 300
+    .line 303
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
@@ -1092,7 +1098,7 @@
 
     div-float v3, v5, v6
 
-    .line 301
+    .line 304
     .local v3, "scalingByWidth":F
     sget-boolean v5, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -1110,7 +1116,7 @@
 
     invoke-static {v5, v6}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 303
+    .line 306
     :cond_1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getHeight()I
 
@@ -1124,7 +1130,7 @@
 
     div-float v2, v5, v6
 
-    .line 304
+    .line 307
     .local v2, "scalingByHeight":F
     sget-boolean v5, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -1142,7 +1148,7 @@
 
     invoke-static {v5, v6}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 306
+    .line 309
     :cond_2
     cmpg-float v5, v3, v2
 
@@ -1152,7 +1158,7 @@
     :goto_0
     iput v3, p0, Lcom/github/sahasbhop/a/a;->r:F
 
-    .line 307
+    .line 310
     sget-boolean v5, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v5, :cond_3
@@ -1171,7 +1177,7 @@
 
     invoke-static {v5, v6}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 310
+    .line 313
     .end local v1    # "height":I
     .end local v2    # "scalingByHeight":F
     .end local v4    # "width":I
@@ -1196,7 +1202,7 @@
 
     invoke-direct {v0, v10, v10, v5, v6}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 311
+    .line 314
     .local v0, "dst":Landroid/graphics/RectF;
     iget-object v5, p0, Lcom/github/sahasbhop/a/a;->d:Landroid/graphics/Bitmap;
 
@@ -1206,12 +1212,12 @@
 
     invoke-virtual {p1, v5, v6, v0, v7}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 313
+    .line 316
     iget-object v5, p0, Lcom/github/sahasbhop/a/a;->d:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v8, v5}, Lcom/github/sahasbhop/a/a;->a(ILandroid/graphics/Bitmap;)V
 
-    .line 314
+    .line 317
     return-void
 
     .end local v0    # "dst":Landroid/graphics/RectF;
@@ -1222,7 +1228,7 @@
     :cond_4
     move v3, v2
 
-    .line 306
+    .line 309
     goto :goto_0
 .end method
 
@@ -1234,38 +1240,38 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 317
+    .line 320
     invoke-direct {p0, p2}, Lcom/github/sahasbhop/a/a;->d(I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 318
+    .line 321
     .local v0, "bitmap":Landroid/graphics/Bitmap;
     if-nez v0, :cond_0
 
-    .line 319
+    .line 322
     invoke-direct {p0, p2}, Lcom/github/sahasbhop/a/a;->b(I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 320
+    .line 323
     invoke-direct {p0, p2, v0}, Lcom/github/sahasbhop/a/a;->a(ILandroid/graphics/Bitmap;)V
 
-    .line 323
+    .line 326
     :cond_0
     if-nez v0, :cond_1
 
-    .line 331
+    .line 334
     :goto_0
     return-void
 
-    .line 325
+    .line 328
     :cond_1
     new-instance v1, Landroid/graphics/RectF;
 
     iget v2, p0, Lcom/github/sahasbhop/a/a;->r:F
 
-    .line 327
+    .line 330
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -1276,7 +1282,7 @@
 
     iget v3, p0, Lcom/github/sahasbhop/a/a;->r:F
 
-    .line 328
+    .line 331
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v4
@@ -1287,7 +1293,7 @@
 
     invoke-direct {v1, v5, v5, v2, v3}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 330
+    .line 333
     .local v1, "dst":Landroid/graphics/RectF;
     const/4 v2, 0x0
 
@@ -1307,16 +1313,16 @@
 
     const/4 v7, 0x0
 
-    .line 267
+    .line 270
     new-instance v3, Lar/com/hjg/pngj/aa;
 
     invoke-direct {v3, p1}, Lar/com/hjg/pngj/aa;-><init>(Ljava/io/File;)V
 
-    .line 268
+    .line 271
     .local v3, "reader":Lar/com/hjg/pngj/aa;
     invoke-virtual {v3}, Lar/com/hjg/pngj/aa;->i()V
 
-    .line 270
+    .line 273
     invoke-virtual {v3}, Lar/com/hjg/pngj/aa;->b()Lar/com/hjg/pngj/chunks/f;
 
     move-result-object v4
@@ -1325,7 +1331,7 @@
 
     move-result-object v2
 
-    .line 273
+    .line 276
     .local v2, "pngChunks":Ljava/util/List;, "Ljava/util/List<Lar/com/hjg/pngj/chunks/PngChunk;>;"
     const/4 v1, 0x0
 
@@ -1337,14 +1343,14 @@
 
     if-ge v1, v4, :cond_4
 
-    .line 274
+    .line 277
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lar/com/hjg/pngj/chunks/PngChunk;
 
-    .line 276
+    .line 279
     .local v0, "chunk":Lar/com/hjg/pngj/chunks/PngChunk;
     instance-of v4, v0, Lar/com/hjg/pngj/chunks/h;
 
@@ -1352,7 +1358,7 @@
 
     move-object v4, v0
 
-    .line 277
+    .line 280
     check-cast v4, Lar/com/hjg/pngj/chunks/h;
 
     invoke-virtual {v4}, Lar/com/hjg/pngj/chunks/h;->j()I
@@ -1361,7 +1367,7 @@
 
     iput v4, p0, Lcom/github/sahasbhop/a/a;->o:I
 
-    .line 278
+    .line 281
     sget-boolean v4, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v4, :cond_0
@@ -1380,13 +1386,13 @@
 
     invoke-static {v4, v5}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 280
+    .line 283
     :cond_0
     iget v4, p0, Lcom/github/sahasbhop/a/a;->p:I
 
     if-lez v4, :cond_2
 
-    .line 281
+    .line 284
     sget-boolean v4, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v4, :cond_1
@@ -1405,7 +1411,7 @@
 
     invoke-static {v4, v5}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 273
+    .line 276
     .end local v0    # "chunk":Lar/com/hjg/pngj/chunks/PngChunk;
     :cond_1
     :goto_1
@@ -1413,7 +1419,7 @@
 
     goto :goto_0
 
-    .line 283
+    .line 286
     .restart local v0    # "chunk":Lar/com/hjg/pngj/chunks/PngChunk;
     :cond_2
     check-cast v0, Lar/com/hjg/pngj/chunks/h;
@@ -1425,7 +1431,7 @@
 
     iput v4, p0, Lcom/github/sahasbhop/a/a;->p:I
 
-    .line 284
+    .line 287
     sget-boolean v4, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v4, :cond_1
@@ -1446,14 +1452,14 @@
 
     goto :goto_1
 
-    .line 287
+    .line 290
     .restart local v0    # "chunk":Lar/com/hjg/pngj/chunks/PngChunk;
     :cond_3
     instance-of v4, v0, Lar/com/hjg/pngj/chunks/k;
 
     if-eqz v4, :cond_1
 
-    .line 288
+    .line 291
     iget-object v4, p0, Lcom/github/sahasbhop/a/a;->c:Ljava/util/ArrayList;
 
     check-cast v0, Lar/com/hjg/pngj/chunks/k;
@@ -1463,7 +1469,7 @@
 
     goto :goto_1
 
-    .line 291
+    .line 294
     :cond_4
     return-void
 .end method
@@ -1475,7 +1481,7 @@
     .prologue
     const/4 v11, 0x0
 
-    .line 336
+    .line 339
     :try_start_0
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -1489,11 +1495,11 @@
 
     invoke-static {v0, v12}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 337
+    .line 340
     :cond_0
     const/4 v5, 0x0
 
-    .line 339
+    .line 342
     .local v5, "bitmap":Landroid/graphics/Bitmap;
     if-lez p1, :cond_3
 
@@ -1509,19 +1515,19 @@
 
     move-object v9, v0
 
-    .line 341
+    .line 344
     .local v9, "previousChunk":Lar/com/hjg/pngj/chunks/k;
     :goto_0
     if-eqz v9, :cond_1
 
-    .line 342
+    .line 345
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->s:Ljava/io/File;
 
     invoke-direct {p0, p1, v0, v9}, Lcom/github/sahasbhop/a/a;->a(ILjava/io/File;Lar/com/hjg/pngj/chunks/k;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    .line 345
+    .line 348
     :cond_1
     new-instance v0, Ljava/io/File;
 
@@ -1539,7 +1545,7 @@
 
     move-result-object v8
 
-    .line 346
+    .line 349
     .local v8, "path":Ljava/lang/String;
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
 
@@ -1561,7 +1567,7 @@
 
     move-result-object v4
 
-    .line 348
+    .line 351
     .local v4, "frameBitmap":Landroid/graphics/Bitmap;
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->c:Ljava/util/ArrayList;
 
@@ -1575,7 +1581,7 @@
 
     move-object v10, v11
 
-    .line 368
+    .line 371
     .end local v4    # "frameBitmap":Landroid/graphics/Bitmap;
     .end local v5    # "bitmap":Landroid/graphics/Bitmap;
     .end local v8    # "path":Ljava/lang/String;
@@ -1588,10 +1594,10 @@
     :cond_3
     move-object v9, v11
 
-    .line 339
+    .line 342
     goto :goto_0
 
-    .line 352
+    .line 355
     .restart local v4    # "frameBitmap":Landroid/graphics/Bitmap;
     .restart local v8    # "path":Ljava/lang/String;
     .restart local v9    # "previousChunk":Lar/com/hjg/pngj/chunks/k;
@@ -1604,19 +1610,19 @@
 
     check-cast v6, Lar/com/hjg/pngj/chunks/k;
 
-    .line 354
+    .line 357
     .local v6, "chunk":Lar/com/hjg/pngj/chunks/k;
     invoke-virtual {v6}, Lar/com/hjg/pngj/chunks/k;->s()B
 
     move-result v3
 
-    .line 355
+    .line 358
     .local v3, "blendOp":B
     invoke-virtual {v6}, Lar/com/hjg/pngj/chunks/k;->n()I
 
     move-result v1
 
-    .line 356
+    .line 359
     .local v1, "offsetX":I
     invoke-virtual {v6}, Lar/com/hjg/pngj/chunks/k;->o()I
 
@@ -1625,12 +1631,12 @@
     .local v2, "offsetY":I
     move-object v0, p0
 
-    .line 358
+    .line 361
     invoke-direct/range {v0 .. v5}, Lcom/github/sahasbhop/a/a;->a(IIBLandroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v10
 
-    .line 360
+    .line 363
     .local v10, "redrawnBitmap":Landroid/graphics/Bitmap;
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -1648,7 +1654,7 @@
 
     goto :goto_1
 
-    .line 364
+    .line 367
     .end local v1    # "offsetX":I
     .end local v2    # "offsetY":I
     .end local v3    # "blendOp":B
@@ -1661,13 +1667,13 @@
     :catch_0
     move-exception v7
 
-    .line 365
+    .line 368
     .local v7, "e":Ljava/lang/Exception;
     invoke-virtual {v7}, Ljava/lang/Exception;->printStackTrace()V
 
     move-object v10, v11
 
-    .line 368
+    .line 371
     goto :goto_1
 .end method
 
@@ -1676,7 +1682,7 @@
     .param p1, "frameIndex"    # I
 
     .prologue
-    .line 528
+    .line 531
     const-string v1, "%s-%s"
 
     const/4 v2, 0x2
@@ -1705,7 +1711,7 @@
 
     move-result-object v0
 
-    .line 529
+    .line 532
     .local v0, "format":Ljava/lang/String;
     return-object v0
 .end method
@@ -1717,23 +1723,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 540
+    .line 543
     iget-object v2, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
 
     if-nez v2, :cond_0
 
     move-object v0, v1
 
-    .line 541
+    .line 544
     .local v0, "memoryCache":Lcom/nostra13/universalimageloader/a/b/c;
     :goto_0
     if-nez v0, :cond_1
 
-    .line 542
+    .line 545
     :goto_1
     return-object v1
 
-    .line 540
+    .line 543
     .end local v0    # "memoryCache":Lcom/nostra13/universalimageloader/a/b/c;
     :cond_0
     iget-object v2, p0, Lcom/github/sahasbhop/a/a;->f:Lcom/github/sahasbhop/a/a/g;
@@ -1744,7 +1750,7 @@
 
     goto :goto_0
 
-    .line 542
+    .line 545
     .restart local v0    # "memoryCache":Lcom/nostra13/universalimageloader/a/b/c;
     :cond_1
     invoke-direct {p0, p1}, Lcom/github/sahasbhop/a/a;->c(I)Ljava/lang/String;
@@ -1758,27 +1764,27 @@
     goto :goto_1
 .end method
 
-.method private e()V
+.method private f()V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
-    .line 453
-    invoke-direct {p0}, Lcom/github/sahasbhop/a/a;->f()Ljava/lang/String;
+    .line 456
+    invoke-direct {p0}, Lcom/github/sahasbhop/a/a;->g()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 454
+    .line 457
     .local v0, "imagePath":Ljava/lang/String;
     if-nez v0, :cond_1
 
-    .line 467
+    .line 470
     :cond_0
     :goto_0
     return-void
 
-    .line 456
+    .line 459
     :cond_1
     new-instance v1, Ljava/io/File;
 
@@ -1786,7 +1792,7 @@
 
     iput-object v1, p0, Lcom/github/sahasbhop/a/a;->s:Ljava/io/File;
 
-    .line 457
+    .line 460
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->s:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
@@ -1795,7 +1801,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 459
+    .line 462
     sget-boolean v1, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v1, :cond_2
@@ -1806,13 +1812,13 @@
 
     invoke-static {v1, v2}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 460
+    .line 463
     :cond_2
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->s:Ljava/io/File;
 
     invoke-static {v1}, Lcom/github/sahasbhop/a/a/a;->a(Ljava/io/File;)I
 
-    .line 461
+    .line 464
     sget-boolean v1, Lcom/github/sahasbhop/a/b;->b:Z
 
     if-eqz v1, :cond_3
@@ -1823,7 +1829,7 @@
 
     invoke-static {v1, v2}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 463
+    .line 466
     :cond_3
     sget-boolean v1, Lcom/github/sahasbhop/a/b;->b:Z
 
@@ -1835,13 +1841,13 @@
 
     invoke-static {v1, v2}, Lcom/github/sahasbhop/flog/FLog;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 464
+    .line 467
     :cond_4
     iget-object v1, p0, Lcom/github/sahasbhop/a/a;->s:Ljava/io/File;
 
     invoke-direct {p0, v1}, Lcom/github/sahasbhop/a/a;->a(Ljava/io/File;)V
 
-    .line 466
+    .line 469
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/github/sahasbhop/a/a;->i:Z
@@ -1849,7 +1855,7 @@
     goto :goto_0
 .end method
 
-.method private f()Ljava/lang/String;
+.method private g()Ljava/lang/String;
     .locals 10
 
     .prologue
@@ -1857,22 +1863,22 @@
 
     const/4 v8, 0x0
 
-    .line 470
+    .line 473
     iget-object v4, p0, Lcom/github/sahasbhop/a/a;->b:Landroid/net/Uri;
 
     if-nez v4, :cond_0
 
     const/4 v3, 0x0
 
-    .line 490
+    .line 493
     :goto_0
     return-object v3
 
-    .line 472
+    .line 475
     :cond_0
     const/4 v3, 0x0
 
-    .line 475
+    .line 478
     .local v3, "imagePath":Ljava/lang/String;
     :try_start_0
     iget-object v4, p0, Lcom/github/sahasbhop/a/a;->b:Landroid/net/Uri;
@@ -1881,7 +1887,7 @@
 
     move-result-object v2
 
-    .line 477
+    .line 480
     .local v2, "filename":Ljava/lang/String;
     new-instance v1, Ljava/io/File;
 
@@ -1889,7 +1895,7 @@
 
     invoke-direct {v1, v4, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 479
+    .line 482
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -1897,7 +1903,7 @@
 
     if-nez v4, :cond_2
 
-    .line 480
+    .line 483
     sget-boolean v4, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v4, :cond_1
@@ -1928,7 +1934,7 @@
 
     invoke-static {v4, v5}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 481
+    .line 484
     :cond_1
     new-instance v4, Ljava/io/File;
 
@@ -1942,7 +1948,7 @@
 
     invoke-static {v4, v1}, Lorg/apache/commons/io/FileUtils;->copyFile(Ljava/io/File;Ljava/io/File;)V
 
-    .line 484
+    .line 487
     :cond_2
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
     :try_end_0
@@ -1952,13 +1958,13 @@
 
     goto :goto_0
 
-    .line 486
+    .line 489
     .end local v1    # "file":Ljava/io/File;
     .end local v2    # "filename":Ljava/lang/String;
     :catch_0
     move-exception v0
 
-    .line 487
+    .line 490
     .local v0, "e":Ljava/lang/Exception;
     const-string v4, "Error: %s"
 
@@ -1981,7 +1987,7 @@
     .locals 1
 
     .prologue
-    .line 117
+    .line 120
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->t:Lcom/github/sahasbhop/a/a/e;
 
     return-object v0
@@ -1992,10 +1998,10 @@
     .param p1, "numPlays"    # I
 
     .prologue
-    .line 140
+    .line 143
     iput p1, p0, Lcom/github/sahasbhop/a/a;->p:I
 
-    .line 141
+    .line 144
     return-void
 .end method
 
@@ -2004,10 +2010,10 @@
     .param p1, "apngListener"    # Lcom/github/sahasbhop/a/a/e;
 
     .prologue
-    .line 125
+    .line 128
     iput-object p1, p0, Lcom/github/sahasbhop/a/a;->t:Lcom/github/sahasbhop/a/a/e;
 
-    .line 126
+    .line 129
     return-void
 .end method
 
@@ -2016,10 +2022,10 @@
     .param p1, "showLastFrameOnStop"    # Z
 
     .prologue
-    .line 162
+    .line 165
     iput-boolean p1, p0, Lcom/github/sahasbhop/a/a;->q:Z
 
-    .line 163
+    .line 166
     return-void
 .end method
 
@@ -2027,7 +2033,7 @@
     .locals 1
 
     .prologue
-    .line 132
+    .line 135
     iget v0, p0, Lcom/github/sahasbhop/a/a;->p:I
 
     return v0
@@ -2037,7 +2043,7 @@
     .locals 1
 
     .prologue
-    .line 147
+    .line 150
     iget v0, p0, Lcom/github/sahasbhop/a/a;->o:I
 
     return v0
@@ -2047,7 +2053,7 @@
     .locals 1
 
     .prologue
-    .line 154
+    .line 157
     iget-boolean v0, p0, Lcom/github/sahasbhop/a/a;->q:Z
 
     return v0
@@ -2062,7 +2068,7 @@
 
     const/4 v3, 0x0
 
-    .line 228
+    .line 231
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v0, :cond_0
@@ -2081,21 +2087,21 @@
 
     invoke-static {v0, v1}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 230
+    .line 233
     :cond_0
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->u:Landroid/graphics/PaintFlagsDrawFilter;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->setDrawFilter(Landroid/graphics/DrawFilter;)V
 
-    .line 232
+    .line 235
     iget v0, p0, Lcom/github/sahasbhop/a/a;->m:I
 
     if-gtz v0, :cond_4
 
-    .line 233
+    .line 236
     invoke-direct {p0, p1}, Lcom/github/sahasbhop/a/a;->a(Landroid/graphics/Canvas;)V
 
-    .line 238
+    .line 241
     :goto_0
     iget-boolean v0, p0, Lcom/github/sahasbhop/a/a;->q:Z
 
@@ -2111,10 +2117,10 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 239
+    .line 242
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->stop()V
 
-    .line 242
+    .line 245
     :cond_1
     iget v0, p0, Lcom/github/sahasbhop/a/a;->p:I
 
@@ -2128,14 +2134,14 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 243
+    .line 246
     iget v0, p0, Lcom/github/sahasbhop/a/a;->n:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/github/sahasbhop/a/a;->n:I
 
-    .line 244
+    .line 247
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->t:Lcom/github/sahasbhop/a/a/e;
 
     if-eqz v0, :cond_2
@@ -2144,7 +2150,7 @@
 
     invoke-virtual {v0, p0}, Lcom/github/sahasbhop/a/a/e;->b(Lcom/github/sahasbhop/a/a;)V
 
-    .line 245
+    .line 248
     :cond_2
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
@@ -2174,7 +2180,7 @@
 
     invoke-static {v0, v1}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 248
+    .line 251
     :cond_3
     iget v0, p0, Lcom/github/sahasbhop/a/a;->m:I
 
@@ -2182,10 +2188,10 @@
 
     iput v0, p0, Lcom/github/sahasbhop/a/a;->m:I
 
-    .line 249
+    .line 252
     return-void
 
-    .line 235
+    .line 238
     :cond_4
     iget v0, p0, Lcom/github/sahasbhop/a/a;->m:I
 
@@ -2194,11 +2200,21 @@
     goto :goto_0
 .end method
 
+.method public e()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 549
+    iget-object v0, p0, Lcom/github/sahasbhop/a/a;->v:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public getOpacity()I
     .locals 1
 
     .prologue
-    .line 263
+    .line 266
     const/4 v0, -0x3
 
     return v0
@@ -2208,7 +2224,7 @@
     .locals 1
 
     .prologue
-    .line 199
+    .line 202
     iget-boolean v0, p0, Lcom/github/sahasbhop/a/a;->j:Z
 
     return v0
@@ -2220,7 +2236,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 204
+    .line 207
     iget-boolean v4, p0, Lcom/github/sahasbhop/a/a;->q:Z
 
     if-eqz v4, :cond_0
@@ -2235,23 +2251,23 @@
 
     if-lt v4, v5, :cond_0
 
-    .line 205
+    .line 208
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->stop()V
 
-    .line 224
+    .line 227
     :goto_0
     return-void
 
-    .line 209
+    .line 212
     :cond_0
     iget v4, p0, Lcom/github/sahasbhop/a/a;->m:I
 
     if-gez v4, :cond_2
 
-    .line 210
+    .line 213
     iput v6, p0, Lcom/github/sahasbhop/a/a;->m:I
 
-    .line 216
+    .line 219
     :cond_1
     :goto_1
     iget-object v4, p0, Lcom/github/sahasbhop/a/a;->c:Ljava/util/ArrayList;
@@ -2264,19 +2280,19 @@
 
     check-cast v3, Lar/com/hjg/pngj/chunks/k;
 
-    .line 218
+    .line 221
     .local v3, "pngChunk":Lar/com/hjg/pngj/chunks/k;
     invoke-virtual {v3}, Lar/com/hjg/pngj/chunks/k;->p()I
 
     move-result v2
 
-    .line 219
+    .line 222
     .local v2, "delayNum":I
     invoke-virtual {v3}, Lar/com/hjg/pngj/chunks/k;->q()I
 
     move-result v1
 
-    .line 220
+    .line 223
     .local v1, "delayDen":I
     int-to-float v4, v2
 
@@ -2292,7 +2308,7 @@
 
     move-result v0
 
-    .line 222
+    .line 225
     .local v0, "delay":I
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -2304,12 +2320,12 @@
 
     invoke-virtual {p0, p0, v4, v5}, Lcom/github/sahasbhop/a/a;->scheduleSelf(Ljava/lang/Runnable;J)V
 
-    .line 223
+    .line 226
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->invalidateSelf()V
 
     goto :goto_0
 
-    .line 212
+    .line 215
     .end local v0    # "delay":I
     .end local v1    # "delayDen":I
     .end local v2    # "delayNum":I
@@ -2327,7 +2343,7 @@
 
     if-le v4, v5, :cond_1
 
-    .line 213
+    .line 216
     iput v6, p0, Lcom/github/sahasbhop/a/a;->m:I
 
     goto :goto_1
@@ -2338,12 +2354,12 @@
     .param p1, "alpha"    # I
 
     .prologue
-    .line 253
+    .line 256
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 254
+    .line 257
     return-void
 .end method
 
@@ -2352,12 +2368,12 @@
     .param p1, "cf"    # Landroid/graphics/ColorFilter;
 
     .prologue
-    .line 258
+    .line 261
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 259
+    .line 262
     return-void
 .end method
 
@@ -2367,27 +2383,27 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 167
+    .line 170
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->isRunning()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    .line 168
+    .line 171
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/github/sahasbhop/a/a;->j:Z
 
-    .line 169
+    .line 172
     iput v2, p0, Lcom/github/sahasbhop/a/a;->m:I
 
-    .line 171
+    .line 174
     iget-boolean v0, p0, Lcom/github/sahasbhop/a/a;->i:Z
 
     if-nez v0, :cond_1
 
-    .line 172
+    .line 175
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v0, :cond_0
@@ -2398,17 +2414,17 @@
 
     invoke-static {v0, v1}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 173
-    :cond_0
-    invoke-direct {p0}, Lcom/github/sahasbhop/a/a;->e()V
-
     .line 176
+    :cond_0
+    invoke-direct {p0}, Lcom/github/sahasbhop/a/a;->f()V
+
+    .line 179
     :cond_1
     iget-boolean v0, p0, Lcom/github/sahasbhop/a/a;->i:Z
 
     if-eqz v0, :cond_4
 
-    .line 177
+    .line 180
     sget-boolean v0, Lcom/github/sahasbhop/a/b;->a:Z
 
     if-eqz v0, :cond_2
@@ -2419,11 +2435,11 @@
 
     invoke-static {v0, v1}, Lcom/github/sahasbhop/flog/FLog;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 178
+    .line 181
     :cond_2
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->run()V
 
-    .line 179
+    .line 182
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->t:Lcom/github/sahasbhop/a/a/e;
 
     if-eqz v0, :cond_3
@@ -2432,12 +2448,12 @@
 
     invoke-virtual {v0, p0}, Lcom/github/sahasbhop/a/a/e;->a(Lcom/github/sahasbhop/a/a;)V
 
-    .line 184
+    .line 187
     :cond_3
     :goto_0
     return-void
 
-    .line 181
+    .line 184
     :cond_4
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->stop()V
 
@@ -2450,23 +2466,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 188
+    .line 191
     invoke-virtual {p0}, Lcom/github/sahasbhop/a/a;->isRunning()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 189
+    .line 192
     iput v1, p0, Lcom/github/sahasbhop/a/a;->n:I
 
-    .line 191
+    .line 194
     invoke-virtual {p0, p0}, Lcom/github/sahasbhop/a/a;->unscheduleSelf(Ljava/lang/Runnable;)V
 
-    .line 192
+    .line 195
     iput-boolean v1, p0, Lcom/github/sahasbhop/a/a;->j:Z
 
-    .line 193
+    .line 196
     iget-object v0, p0, Lcom/github/sahasbhop/a/a;->t:Lcom/github/sahasbhop/a/a/e;
 
     if-eqz v0, :cond_0
@@ -2475,7 +2491,7 @@
 
     invoke-virtual {v0, p0}, Lcom/github/sahasbhop/a/a/e;->c(Lcom/github/sahasbhop/a/a;)V
 
-    .line 195
+    .line 198
     :cond_0
     return-void
 .end method

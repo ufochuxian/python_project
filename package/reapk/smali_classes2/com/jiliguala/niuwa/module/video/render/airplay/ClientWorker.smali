@@ -471,6 +471,7 @@
     .line 131
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/render/airplay/ClientWorker;->closeClientSocket(Ljava/net/Socket;)V
 
+    .line 133
     :cond_5
     throw v3
 
@@ -690,6 +691,7 @@
     .line 158
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/render/airplay/ClientWorker;->closeClientSocket(Ljava/net/Socket;)V
 
+    .line 160
     :cond_5
     throw v3
 
@@ -909,6 +911,7 @@
     .line 185
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/render/airplay/ClientWorker;->closeClientSocket(Ljava/net/Socket;)V
 
+    .line 187
     :cond_5
     throw v3
 
@@ -1521,6 +1524,7 @@
     .line 263
     invoke-direct/range {p0 .. p1}, Lcom/jiliguala/niuwa/module/video/render/airplay/ClientWorker;->closeClientSocket(Ljava/net/Socket;)V
 
+    .line 265
     :cond_8
     throw v5
 
@@ -1875,6 +1879,7 @@
     .line 317
     invoke-direct/range {p0 .. p1}, Lcom/jiliguala/niuwa/module/video/render/airplay/ClientWorker;->closeClientSocket(Ljava/net/Socket;)V
 
+    .line 319
     :cond_f
     throw v5
 

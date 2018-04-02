@@ -26,7 +26,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;
 
     .line 24
-    const v0, 0x7f0902c2
+    const v0, 0x7f0902c8
 
     const-string v1, "field \'lessonIcon\'"
 
@@ -41,7 +41,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->lessonIcon:Landroid/widget/ImageView;
 
     .line 25
-    const v0, 0x7f0902c7
+    const v0, 0x7f0902cd
 
     const-string v1, "field \'lessonTitle\'"
 
@@ -56,7 +56,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->lessonTitle:Landroid/widget/TextView;
 
     .line 26
-    const v0, 0x7f0902c5
+    const v0, 0x7f0902cb
 
     const-string v1, "field \'lessonReportImg\'"
 
@@ -71,7 +71,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->lessonReportImg:Landroid/widget/ImageView;
 
     .line 27
-    const v0, 0x7f09044e
+    const v0, 0x7f090455
 
     const-string v1, "field \'reportDetailHead\'"
 
@@ -86,7 +86,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->reportDetailHead:Landroid/widget/RelativeLayout;
 
     .line 28
-    const v0, 0x7f09027a
+    const v0, 0x7f09027f
 
     const-string v1, "field \'iconRight\'"
 

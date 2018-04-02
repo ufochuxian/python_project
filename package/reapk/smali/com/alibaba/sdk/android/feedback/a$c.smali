@@ -37,7 +37,7 @@
 
 .field public static final ali_feedback_pub_btn_white_nor:I = 0x7f080060
 
-.field public static final yw_1222:I = 0x7f080414
+.field public static final yw_1222:I = 0x7f080421
 
 
 # direct methods

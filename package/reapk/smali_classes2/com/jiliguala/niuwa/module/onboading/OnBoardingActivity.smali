@@ -488,9 +488,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingActivity;->finish()V
 
     .line 201
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/onboading/OnBoardingActivity;->overridePendingTransition(II)V
 
@@ -703,7 +703,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fc
+    const v2, 0x7f0600fe
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -808,13 +808,13 @@
 
     .line 207
     .local v2, "transaction":Landroid/support/v4/app/an;
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f010013
+    const v4, 0x7f010014
 
-    const v5, 0x7f010012
+    const v5, 0x7f010013
 
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
     .line 208
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;

@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 3228
+    .line 3276
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 3229
+    .line 3277
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
-    .line 3230
+    .line 3278
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "objects"    # [Ljava/lang/Object;
 
     .prologue
-    .line 3234
+    .line 3282
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -67,7 +67,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3235
+    .line 3283
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -82,7 +82,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3236
+    .line 3284
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -99,7 +99,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->sendProgressTrackerReport()V
 
-    .line 3237
+    .line 3285
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -110,7 +110,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->sendExitReport()V
 
-    .line 3238
+    .line 3286
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -127,7 +127,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->destroyMediaPlayer()V
 
-    .line 3241
+    .line 3289
     :cond_0
     const/4 v0, 0x0
 

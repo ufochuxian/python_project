@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/jiliguala/niuwa/logic/t/a/a;
+.implements Lcom/jiliguala/niuwa/logic/u/a/a;
 
 
 # annotations
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 978
+    .line 1007
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$8;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 0
 
     .prologue
-    .line 982
+    .line 1011
     return-void
 .end method
 
@@ -49,11 +49,11 @@
     .locals 1
 
     .prologue
-    .line 986
+    .line 1015
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$8;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$100(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 987
+    .line 1016
     return-void
 .end method

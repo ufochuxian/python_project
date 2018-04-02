@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 90
+    .line 94
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -63,7 +63,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 91
+    .line 95
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->meta:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$MetaBean;
@@ -74,7 +74,7 @@
 
     int-to-float v0, v0
 
-    .line 93
+    .line 97
     :goto_0
     return v0
 
@@ -88,7 +88,7 @@
     .locals 1
 
     .prologue
-    .line 97
+    .line 101
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -107,7 +107,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 98
+    .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->meta:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$MetaBean;
@@ -118,7 +118,7 @@
 
     int-to-float v0, v0
 
-    .line 100
+    .line 104
     :goto_0
     return v0
 
@@ -141,14 +141,14 @@
     .end annotation
 
     .prologue
-    .line 216
+    .line 220
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 217
+    .line 221
     :goto_0
     return-object v0
 
@@ -173,14 +173,14 @@
     .end annotation
 
     .prologue
-    .line 221
+    .line 225
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 222
+    .line 226
     :goto_0
     return-object v0
 
@@ -197,7 +197,7 @@
     .param p1, "content"    # Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
     .prologue
-    .line 240
+    .line 244
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getUnitRoadMap()Ljava/util/List;
 
     move-result-object v1
@@ -219,7 +219,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
 
-    .line 241
+    .line 245
     .local v0, "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->prt:Ljava/lang/String;
 
@@ -231,7 +231,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 245
+    .line 249
     .end local v0    # "unitRoadMap":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$UnitRoadMap;
     :goto_0
     return-object v0
@@ -246,7 +246,7 @@
     .locals 1
 
     .prologue
-    .line 236
+    .line 240
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -272,7 +272,7 @@
     .locals 1
 
     .prologue
-    .line 105
+    .line 109
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -316,7 +316,7 @@
     .locals 1
 
     .prologue
-    .line 212
+    .line 216
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -362,12 +362,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 226
+    .line 230
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-nez v1, :cond_1
 
-    .line 227
+    .line 231
     :cond_0
     :goto_0
     return v0
@@ -392,7 +392,7 @@
     .locals 1
 
     .prologue
-    .line 86
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -418,7 +418,7 @@
     .locals 1
 
     .prologue
-    .line 207
+    .line 211
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -462,7 +462,7 @@
     .locals 1
 
     .prologue
-    .line 109
+    .line 113
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -508,12 +508,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 231
+    .line 235
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-nez v1, :cond_1
 
-    .line 232
+    .line 236
     :cond_0
     :goto_0
     return v0
@@ -538,7 +538,7 @@
     .locals 1
 
     .prologue
-    .line 203
+    .line 207
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0
@@ -582,7 +582,7 @@
     .locals 2
 
     .prologue
-    .line 81
+    .line 85
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-eqz v0, :cond_0

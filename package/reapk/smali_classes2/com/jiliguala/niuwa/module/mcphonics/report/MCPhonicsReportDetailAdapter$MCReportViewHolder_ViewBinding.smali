@@ -23,7 +23,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$MCReportViewHolder_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$MCReportViewHolder;
 
     .line 23
-    const v0, 0x7f090621
+    const v0, 0x7f09062b
 
     const-string v1, "field \'wordContainer\'"
 
@@ -38,7 +38,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$MCReportViewHolder;->wordContainer:Landroid/widget/LinearLayout;
 
     .line 24
-    const v0, 0x7f0904b2
+    const v0, 0x7f0904bc
 
     const-string v1, "field \'sentenceContainer\'"
 
@@ -53,7 +53,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$MCReportViewHolder;->sentenceContainer:Landroid/widget/LinearLayout;
 
     .line 25
-    const v0, 0x7f090623
+    const v0, 0x7f09062d
 
     const-string v1, "field \'wordsTitle\'"
 

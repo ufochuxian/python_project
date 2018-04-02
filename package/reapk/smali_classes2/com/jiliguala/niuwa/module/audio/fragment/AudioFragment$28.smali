@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 875
+    .line 880
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,23 +44,23 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 878
+    .line 883
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v2
 
     sparse-switch v2, :sswitch_data_0
 
-    .line 899
+    .line 904
     :cond_0
     :goto_0
     return-void
 
-    .line 881
+    .line 886
     :sswitch_0
     sput-boolean v3, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayChangeToOfflineCancelled:Z
 
-    .line 882
+    .line 887
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -81,7 +81,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 883
+    .line 888
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -90,7 +90,7 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/a/a;->dismissAllowingStateLoss()V
 
-    .line 885
+    .line 890
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -102,7 +102,7 @@
 
     move-result v1
 
-    .line 886
+    .line 891
     .local v1, "networkState":I
     const-string v2, "NONE_WIFI_NOTIFY_ENABLE"
 
@@ -110,7 +110,7 @@
 
     move-result v0
 
-    .line 887
+    .line 892
     .local v0, "enabled":Z
     const/4 v2, 0x2
 
@@ -122,14 +122,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 888
+    .line 893
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->show3GNetStateDialog()V
 
     goto :goto_0
 
-    .line 892
+    .line 897
     .end local v0    # "enabled":Z
     .end local v1    # "networkState":I
     :sswitch_1
@@ -137,7 +137,7 @@
 
     sput-boolean v2, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayChangeToOfflineCancelled:Z
 
-    .line 893
+    .line 898
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -158,7 +158,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 894
+    .line 899
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -167,7 +167,7 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/a/a;->dismissAllowingStateLoss()V
 
-    .line 896
+    .line 901
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$28;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -179,7 +179,7 @@
 
     goto :goto_0
 
-    .line 878
+    .line 883
     nop
 
     :sswitch_data_0

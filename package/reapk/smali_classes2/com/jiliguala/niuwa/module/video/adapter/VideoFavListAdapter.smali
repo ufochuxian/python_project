@@ -242,7 +242,7 @@
     .line 73
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/adapter/VideoFavListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0b0195
+    const v3, 0x7f0b019a
 
     const/4 v4, 0x0
 
@@ -260,7 +260,7 @@
 
     .line 75
     .local v0, "childrenHolder":Lcom/jiliguala/niuwa/module/video/adapter/VideoFavListAdapter$ChildrenHolder;
-    const v2, 0x7f0902a3
+    const v2, 0x7f0902a9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

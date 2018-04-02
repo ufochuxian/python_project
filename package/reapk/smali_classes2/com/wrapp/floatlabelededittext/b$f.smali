@@ -52,13 +52,13 @@
 
     :array_0
     .array-data 4
-        0x7f0400b9
         0x7f0400ba
         0x7f0400bb
         0x7f0400bc
         0x7f0400bd
         0x7f0400be
         0x7f0400bf
+        0x7f0400c0
     .end array-data
 .end method
 

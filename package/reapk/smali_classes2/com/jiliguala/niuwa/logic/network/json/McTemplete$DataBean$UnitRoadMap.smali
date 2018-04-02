@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 62
+    .line 66
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;-><init>()V
 
     return-void

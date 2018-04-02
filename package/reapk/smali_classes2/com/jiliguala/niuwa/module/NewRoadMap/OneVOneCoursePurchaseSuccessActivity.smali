@@ -108,7 +108,7 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/OneVOneCoursePurchaseSuccessActivity;->handleIntent()V
 
     .line 34
-    const v0, 0x7f0b0120
+    const v0, 0x7f0b0124
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/OneVOneCoursePurchaseSuccessActivity;->setContentView(I)V
 

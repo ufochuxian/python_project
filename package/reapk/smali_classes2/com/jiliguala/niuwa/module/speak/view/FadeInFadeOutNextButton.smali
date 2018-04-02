@@ -255,7 +255,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b019b
+    const v1, 0x7f0b01a0
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -266,7 +266,7 @@
     .line 44
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/FadeInFadeOutNextButton;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090385
+    const v1, 0x7f09038c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
     .line 46
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/FadeInFadeOutNextButton;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090383
+    const v1, 0x7f09038a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -292,7 +292,7 @@
     .line 48
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/FadeInFadeOutNextButton;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0905d0
+    const v1, 0x7f0905da
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -366,7 +366,7 @@
     .line 63
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/FadeInFadeOutNextButton;->mNextBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f08012e
+    const v1, 0x7f080130
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -398,7 +398,7 @@
     .line 56
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/FadeInFadeOutNextButton;->mNextBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f080137
+    const v1, 0x7f080139
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

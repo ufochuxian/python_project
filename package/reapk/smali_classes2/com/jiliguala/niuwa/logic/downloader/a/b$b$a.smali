@@ -524,6 +524,7 @@
     .line 360
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
+    .line 362
     :cond_d
     throw v8
 

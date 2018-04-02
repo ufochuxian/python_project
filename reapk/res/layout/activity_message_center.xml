@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.pulltorefresh.PullToRefreshListView n1:id="@id/message_list" n1:background="@color/pull_to_refresh_bg" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:cacheColorHint="#00000000" n1:divider="@color/divider_grey_line" n1:dividerHeight="@dimen/divider_line_height" n1:fastScrollEnabled="false" n1:headerDividersEnabled="false" n1:footerDividersEnabled="false" n1:smoothScrollbar="true" n2:ptrAnimationStyle="flip" n2:ptrHeaderTextAppearance="@style/Pull_refresh_text_style" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:orientation="vertical" n1:id="@id/empty" n1:background="@color/pull_to_refresh_bg" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <TextView n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="网络不给力" n1:layout_centerHorizontal="true" />
+            <TextView n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:text="请刷新重试" n1:layout_centerHorizontal="true" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

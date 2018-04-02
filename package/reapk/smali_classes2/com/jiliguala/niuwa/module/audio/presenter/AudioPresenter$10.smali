@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 1139
+    .line 1168
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$10;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 1153
+    .line 1182
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 0
 
     .prologue
-    .line 1143
+    .line 1172
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1148
+    .line 1177
     return-void
 .end method
 
@@ -73,7 +73,7 @@
     .locals 0
 
     .prologue
-    .line 1139
+    .line 1168
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$10;->a(Ljava/lang/Void;)V

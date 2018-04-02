@@ -33,17 +33,17 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2684
+    .line 2702
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 2685
+    .line 2703
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 2686
+    .line 2704
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 2690
+    .line 2708
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -65,28 +65,28 @@
 
     if-eqz v4, :cond_0
 
-    .line 2691
+    .line 2709
     iget v4, p1, Landroid/os/Message;->what:I
 
     packed-switch v4, :pswitch_data_0
 
-    .line 2747
+    .line 2765
     invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    .line 2751
+    .line 2769
     :cond_0
     :goto_0
     return-void
 
-    .line 2693
+    .line 2711
     :pswitch_0
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    .line 2694
+    .line 2712
     .local v1, "current":I
     iget v2, p1, Landroid/os/Message;->arg2:I
 
-    .line 2695
+    .line 2713
     .local v2, "dur":I
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -100,7 +100,7 @@
 
     goto :goto_0
 
-    .line 2698
+    .line 2716
     .end local v1    # "current":I
     .end local v2    # "dur":I
     :pswitch_1
@@ -136,7 +136,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2699
+    .line 2717
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 2703
+    .line 2721
     :pswitch_2
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -169,7 +169,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2704
+    .line 2722
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -186,7 +186,7 @@
 
     goto :goto_0
 
-    .line 2708
+    .line 2726
     :pswitch_3
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -202,7 +202,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2709
+    .line 2727
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -221,7 +221,7 @@
 
     goto :goto_0
 
-    .line 2713
+    .line 2731
     :pswitch_4
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -237,7 +237,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2714
+    .line 2732
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -252,7 +252,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 2718
+    .line 2736
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -267,14 +267,14 @@
 
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->pausePlay()V
 
-    .line 2722
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
+    .line 2740
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/a;->a()Lcom/jiliguala/niuwa/logic/r/a;
 
     move-result-object v4
 
-    invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/logic/q/a;->a(Z)V
+    invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/logic/r/a;->a(Z)V
 
-    .line 2724
+    .line 2742
     :cond_1
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -286,7 +286,7 @@
 
     invoke-static {v4}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1400(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)V
 
-    .line 2725
+    .line 2743
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -299,7 +299,7 @@
 
     goto/16 :goto_0
 
-    .line 2729
+    .line 2747
     :pswitch_5
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -323,7 +323,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2730
+    .line 2748
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -340,7 +340,7 @@
 
     goto/16 :goto_0
 
-    .line 2734
+    .line 2752
     :pswitch_6
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -364,7 +364,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2735
+    .line 2753
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -379,20 +379,20 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;
 
-    .line 2736
+    .line 2754
     .local v0, "audioActivity":Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;
     if-eqz v0, :cond_0
 
-    .line 2739
+    .line 2757
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;->isAudioChannelListFragmentShowing()Z
 
     move-result v3
 
-    .line 2741
+    .line 2759
     .local v3, "isAudioChannelShowing":Z
     if-eqz v3, :cond_0
 
-    .line 2742
+    .line 2760
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -409,7 +409,7 @@
 
     goto/16 :goto_0
 
-    .line 2691
+    .line 2709
     :pswitch_data_0
     .packed-switch 0x1000
         :pswitch_0

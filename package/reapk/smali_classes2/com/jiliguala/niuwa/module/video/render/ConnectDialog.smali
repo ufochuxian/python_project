@@ -97,7 +97,7 @@
     .line 59
     .end local v2    # "ri":Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;
     :cond_0
-    const v3, 0x7f0902d0
+    const v3, 0x7f0902d6
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/video/render/ConnectDialog;->findViewById(I)Landroid/view/View;
 
@@ -126,7 +126,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0600dd
+    const v5, 0x7f0600df
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 

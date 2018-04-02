@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 268
-    const v0, 0x7f090534
+    const v0, 0x7f09053e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -45,7 +45,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 269
-    const v0, 0x7f090535
+    const v0, 0x7f09053f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -56,7 +56,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter$a;->b:Landroid/widget/TextView;
 
     .line 270
-    const v0, 0x7f090532
+    const v0, 0x7f09053c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -67,7 +67,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter$a;->c:Landroid/widget/CheckedTextView;
 
     .line 271
-    const v0, 0x7f090525
+    const v0, 0x7f09052f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

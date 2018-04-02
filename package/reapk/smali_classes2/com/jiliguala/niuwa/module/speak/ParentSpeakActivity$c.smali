@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 1809
+    .line 1837
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1818
+    .line 1846
     return-void
 .end method
 
@@ -51,7 +51,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 1850
+    .line 1878
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .locals 1
 
     .prologue
-    .line 1894
+    .line 1922
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSubscriptions()Lrx/i/b;
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 1899
+    .line 1927
     const/4 v0, 0x0
 
     return v0
@@ -83,7 +83,7 @@
     .locals 0
 
     .prologue
-    .line 1870
+    .line 1898
     return-void
 .end method
 
@@ -92,12 +92,12 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1812
+    .line 1840
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2700(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;I)V
 
-    .line 1813
+    .line 1841
     return-void
 .end method
 
@@ -106,7 +106,7 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1874
+    .line 1902
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$3300(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Z
@@ -131,12 +131,12 @@
 
     if-nez v1, :cond_2
 
-    .line 1875
+    .line 1903
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->addSpeakView()V
 
-    .line 1876
+    .line 1904
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$600(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
@@ -145,7 +145,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1877
+    .line 1905
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$600(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;
@@ -158,7 +158,7 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$b;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1878
+    .line 1906
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -167,7 +167,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1879
+    .line 1907
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -178,7 +178,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setWaitingRecord(Z)V
 
-    .line 1886
+    .line 1914
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -187,18 +187,18 @@
 
     move-result-object v0
 
-    .line 1887
+    .line 1915
     .local v0, "flashCardFragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     if-eqz v0, :cond_1
 
-    .line 1888
+    .line 1916
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->hideTitleContainer()V
 
-    .line 1890
+    .line 1918
     :cond_1
     return-void
 
-    .line 1883
+    .line 1911
     .end local v0    # "flashCardFragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -212,7 +212,7 @@
     .locals 1
 
     .prologue
-    .line 1842
+    .line 1870
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$3200(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
@@ -221,7 +221,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1843
+    .line 1871
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$3200(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
@@ -230,7 +230,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->c()V
 
-    .line 1845
+    .line 1873
     :cond_0
     return-void
 .end method
@@ -239,7 +239,7 @@
     .locals 0
 
     .prologue
-    .line 1838
+    .line 1866
     return-void
 .end method
 
@@ -247,24 +247,24 @@
     .locals 2
 
     .prologue
-    .line 1909
+    .line 1937
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getCurrentFlashCardFragment()Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
 
     move-result-object v0
 
-    .line 1910
+    .line 1938
     .local v0, "flashCardFragment":Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;
     if-eqz v0, :cond_0
 
-    .line 1911
+    .line 1939
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->showTitleContainer()V
 
-    .line 1912
+    .line 1940
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->showWordContainer()V
 
-    .line 1915
+    .line 1943
     :cond_0
     return-void
 .end method
@@ -273,7 +273,7 @@
     .locals 0
 
     .prologue
-    .line 1865
+    .line 1893
     return-void
 .end method
 
@@ -281,7 +281,7 @@
     .locals 0
 
     .prologue
-    .line 1860
+    .line 1888
     return-void
 .end method
 
@@ -291,7 +291,7 @@
     .param p2, "subTaskId"    # Ljava/lang/String;
 
     .prologue
-    .line 1855
+    .line 1883
     return-void
 .end method
 
@@ -300,7 +300,7 @@
     .param p1, "speakCardModelTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/SpeakCardModelTemplete;
 
     .prologue
-    .line 1905
+    .line 1933
     return-void
 .end method
 
@@ -317,13 +317,13 @@
     .end annotation
 
     .prologue
-    .line 1823
+    .line 1851
     .local p1, "mPlayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/FlashCardModel;>;"
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2802(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;Ljava/util/List;)Ljava/util/List;
 
-    .line 1824
+    .line 1852
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2900(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
@@ -332,7 +332,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1825
+    .line 1853
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2900(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;
@@ -341,20 +341,20 @@
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakAdapter;->updateData(Ljava/util/ArrayList;)V
 
-    .line 1827
+    .line 1855
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->prepareFlashCardLogic()V
 
-    .line 1828
+    .line 1856
     invoke-static {p1}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 1829
+    .line 1857
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$800(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Landroid/widget/TextView;
@@ -385,17 +385,17 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1831
+    .line 1859
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$3000(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1832
+    .line 1860
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$c;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$3100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1833
+    .line 1861
     return-void
 .end method

@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 671
+    .line 675
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,12 +52,12 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 674
+    .line 678
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$1600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 675
+    .line 679
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .locals 0
 
     .prologue
-    .line 671
+    .line 675
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;->a(Ljava/lang/Void;)V

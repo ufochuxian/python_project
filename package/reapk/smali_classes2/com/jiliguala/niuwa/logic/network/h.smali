@@ -14,13 +14,15 @@
 # static fields
 .field public static final a:I = 0x1388
 
-.field private static b:Ljava/lang/String;
+.field public static final b:I = 0x3e8
 
-.field private static c:J
+.field private static c:Ljava/lang/String;
+
+.field private static d:J
 
 
 # instance fields
-.field private final d:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
+.field private final e:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
 
 
 # direct methods
@@ -28,17 +30,17 @@
     .locals 1
 
     .prologue
-    .line 39
+    .line 40
     invoke-direct {p0}, Lretrofit2/CallAdapter$Factory;-><init>()V
 
-    .line 40
+    .line 41
     invoke-static {}, Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;->create()Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/h;->d:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/h;->e:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
 
-    .line 41
+    .line 42
     return-void
 .end method
 
@@ -48,7 +50,7 @@
 
     .prologue
     .line 31
-    sput-wide p0, Lcom/jiliguala/niuwa/logic/network/h;->c:J
+    sput-wide p0, Lcom/jiliguala/niuwa/logic/network/h;->d:J
 
     return-wide p0
 .end method
@@ -59,7 +61,7 @@
 
     .prologue
     .line 31
-    sput-object p0, Lcom/jiliguala/niuwa/logic/network/h;->b:Ljava/lang/String;
+    sput-object p0, Lcom/jiliguala/niuwa/logic/network/h;->c:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -68,7 +70,7 @@
     .locals 1
 
     .prologue
-    .line 44
+    .line 45
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/h;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/h;-><init>()V
@@ -81,7 +83,7 @@
 
     .prologue
     .line 31
-    sget-wide v0, Lcom/jiliguala/niuwa/logic/network/h;->c:J
+    sget-wide v0, Lcom/jiliguala/niuwa/logic/network/h;->d:J
 
     return-wide v0
 .end method
@@ -91,7 +93,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/jiliguala/niuwa/logic/network/h;->b:Ljava/lang/String;
+    sget-object v0, Lcom/jiliguala/niuwa/logic/network/h;->c:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -117,10 +119,10 @@
     .end annotation
 
     .prologue
-    .line 49
+    .line 50
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/h$a;
 
-    iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/h;->d:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/h;->e:Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;
 
     invoke-virtual {v1, p1, p2, p3}, Lretrofit2/adapter/rxjava/RxJavaCallAdapterFactory;->get(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lretrofit2/Retrofit;)Lretrofit2/CallAdapter;
 

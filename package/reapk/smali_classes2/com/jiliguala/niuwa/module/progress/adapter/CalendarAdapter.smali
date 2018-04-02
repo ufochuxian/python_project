@@ -991,7 +991,7 @@
 
     .line 173
     .local v6, "holder":Lcom/jiliguala/niuwa/module/progress/adapter/CalendarAdapter$a;
-    const v9, 0x7f0905bc
+    const v9, 0x7f0905c6
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1002,7 +1002,7 @@
     iput-object v9, v6, Lcom/jiliguala/niuwa/module/progress/adapter/CalendarAdapter$a;->c:Landroid/widget/TextView;
 
     .line 174
-    const v9, 0x7f0905f6
+    const v9, 0x7f090600
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1035,7 +1035,7 @@
     iput-object v9, v6, Lcom/jiliguala/niuwa/module/progress/adapter/CalendarAdapter$a;->d:Lcom/jiliguala/niuwa/common/widget/CircleImageView;
 
     .line 177
-    const v9, 0x7f0904ad
+    const v9, 0x7f0904b7
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1145,7 +1145,7 @@
     if-lt p1, v9, :cond_7
 
     .line 196
-    const v9, 0x7f090549
+    const v9, 0x7f090553
 
     invoke-virtual {p2, v9, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1348,7 +1348,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0600f3
+    const v11, 0x7f0600f5
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1432,7 +1432,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0600f3
+    const v11, 0x7f0600f5
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1470,7 +1470,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0600aa
+    const v11, 0x7f0600ac
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1508,7 +1508,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0600a9
+    const v11, 0x7f0600ab
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1533,7 +1533,7 @@
     .end local v4    # "dailyModel":Lcom/jiliguala/niuwa/logic/network/json/MonthlyProgressTemplate$DailyModel;
     .end local v5    # "date":I
     :cond_7
-    const v9, 0x7f090549
+    const v9, 0x7f090553
 
     const/4 v10, -0x1
 

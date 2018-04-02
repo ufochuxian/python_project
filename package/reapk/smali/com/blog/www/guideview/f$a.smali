@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/blog/www/guideview/f;
 
     .prologue
-    .line 291
+    .line 320
     iput-object p1, p0, Lcom/blog/www/guideview/f$a;->a:Lcom/blog/www/guideview/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +42,14 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 295
+    .line 324
     const-string v0, ""
 
     const-string v1, "v click"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 296
+    .line 325
     iget-object v0, p0, Lcom/blog/www/guideview/f$a;->a:Lcom/blog/www/guideview/f;
 
     invoke-static {v0}, Lcom/blog/www/guideview/f;->a(Lcom/blog/www/guideview/f;)Lcom/blog/www/guideview/g$a;
@@ -58,11 +58,11 @@
 
     invoke-interface {v0}, Lcom/blog/www/guideview/g$a;->c()V
 
-    .line 297
+    .line 326
     iget-object v0, p0, Lcom/blog/www/guideview/f$a;->a:Lcom/blog/www/guideview/f;
 
     invoke-virtual {v0}, Lcom/blog/www/guideview/f;->a()V
 
-    .line 298
+    .line 327
     return-void
 .end method

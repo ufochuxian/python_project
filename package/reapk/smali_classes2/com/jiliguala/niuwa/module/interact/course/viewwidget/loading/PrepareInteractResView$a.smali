@@ -33,17 +33,17 @@
     .param p1, "ref"    # Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView;
 
     .prologue
-    .line 849
+    .line 879
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 850
+    .line 880
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 851
+    .line 881
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 855
+    .line 885
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v2, :cond_0
@@ -67,23 +67,23 @@
 
     if-eqz v2, :cond_0
 
-    .line 856
+    .line 886
     iget v2, p1, Landroid/os/Message;->what:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 887
+    .line 917
     :cond_0
     :goto_0
     return-void
 
-    .line 858
+    .line 888
     :pswitch_0
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;
 
-    .line 859
+    .line 889
     .local v0, "obj":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -103,14 +103,14 @@
 
     goto :goto_0
 
-    .line 863
+    .line 893
     .end local v0    # "obj":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;
     :pswitch_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;
 
-    .line 864
+    .line 894
     .restart local v0    # "obj":Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -156,7 +156,7 @@
 
     if-nez v2, :cond_1
 
-    .line 867
+    .line 897
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -175,7 +175,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 868
+    .line 898
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -190,7 +190,7 @@
 
     goto :goto_0
 
-    .line 872
+    .line 902
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -210,7 +210,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 873
+    .line 903
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -221,7 +221,7 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView;->showDownloadProgress()V
 
-    .line 874
+    .line 904
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -232,7 +232,7 @@
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView;->showTextDownloading()V
 
-    .line 875
+    .line 905
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -247,7 +247,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 876
+    .line 906
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -266,7 +266,7 @@
 
     invoke-virtual {v2, v3}, Lcom/mikhaellopez/circularprogressbar/CircularProgressBar;->setProgress(F)V
 
-    .line 878
+    .line 908
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -282,7 +282,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 879
+    .line 909
     iget-wide v2, v0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;->c:J
 
     long-to-float v2, v2
@@ -293,7 +293,7 @@
 
     move-result v1
 
-    .line 881
+    .line 911
     .local v1, "progress":F
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -311,7 +311,7 @@
 
     goto/16 :goto_0
 
-    .line 856
+    .line 886
     nop
 
     :pswitch_data_0

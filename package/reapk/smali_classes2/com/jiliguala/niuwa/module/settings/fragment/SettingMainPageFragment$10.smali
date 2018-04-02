@@ -262,9 +262,9 @@
 
     move-result-object v13
 
-    const v14, 0x7f01001d
+    const v14, 0x7f01001f
 
-    const v15, 0x7f010013
+    const v15, 0x7f010014
 
     invoke-virtual {v13, v14, v15}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -501,12 +501,12 @@
 
     .line 282
     .local v7, "fragment":Lcom/jiliguala/niuwa/common/a/k;
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v12
 
     .line 283
-    .local v12, "videoTimeCtrlUnit":Lcom/jiliguala/niuwa/logic/q/b;
+    .local v12, "videoTimeCtrlUnit":Lcom/jiliguala/niuwa/logic/r/b;
     if-nez v7, :cond_5
 
     .line 284
@@ -576,7 +576,7 @@
 
     move-result-object v13
 
-    sget-object v14, Lcom/jiliguala/niuwa/logic/q/b;->c:[Ljava/lang/String;
+    sget-object v14, Lcom/jiliguala/niuwa/logic/r/b;->c:[Ljava/lang/String;
 
     .line 288
     invoke-static {v14}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -601,10 +601,10 @@
 
     move-result-object v13
 
-    sget-object v14, Lcom/jiliguala/niuwa/logic/q/b;->d:[I
+    sget-object v14, Lcom/jiliguala/niuwa/logic/r/b;->d:[I
 
     .line 291
-    invoke-virtual {v12}, Lcom/jiliguala/niuwa/logic/q/b;->g()I
+    invoke-virtual {v12}, Lcom/jiliguala/niuwa/logic/r/b;->g()I
 
     move-result v15
 
@@ -672,7 +672,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v13, v0, v12}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;Lcom/jiliguala/niuwa/logic/q/b;)V
+    invoke-direct {v13, v0, v12}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;Lcom/jiliguala/niuwa/logic/r/b;)V
 
     invoke-virtual {v7, v13}, Lcom/jiliguala/niuwa/common/a/k;->a(Lcom/jiliguala/niuwa/common/a/k$a;)V
 
@@ -691,7 +691,7 @@
 
     .line 326
     .end local v7    # "fragment":Lcom/jiliguala/niuwa/common/a/k;
-    .end local v12    # "videoTimeCtrlUnit":Lcom/jiliguala/niuwa/logic/q/b;
+    .end local v12    # "videoTimeCtrlUnit":Lcom/jiliguala/niuwa/logic/r/b;
     :sswitch_9
     move-object/from16 v0, p0
 
@@ -818,10 +818,10 @@
         0x7f090142 -> :sswitch_a
         0x7f090191 -> :sswitch_8
         0x7f0901fe -> :sswitch_1
-        0x7f09034f -> :sswitch_7
-        0x7f09043e -> :sswitch_3
-        0x7f0904e6 -> :sswitch_6
-        0x7f090589 -> :sswitch_0
-        0x7f0905b9 -> :sswitch_9
+        0x7f090356 -> :sswitch_7
+        0x7f090445 -> :sswitch_3
+        0x7f0904f0 -> :sswitch_6
+        0x7f090593 -> :sswitch_0
+        0x7f0905c3 -> :sswitch_9
     .end sparse-switch
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 1543
+    .line 1571
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->a:Ljava/lang/String;
@@ -45,7 +45,7 @@
     .locals 8
 
     .prologue
-    .line 1546
+    .line 1574
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->a:Ljava/lang/String;
 
     const-class v6, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
@@ -56,7 +56,7 @@
 
     check-cast v2, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
 
-    .line 1549
+    .line 1577
     .local v2, "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->isVolumeCallBack()Z
 
@@ -64,7 +64,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 1550
+    .line 1578
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -73,7 +73,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 1551
+    .line 1579
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -86,12 +86,12 @@
 
     invoke-virtual {v5, v6, v7}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->changeVolumeIcon(D)V
 
-    .line 1587
+    .line 1615
     :cond_0
     :goto_0
     return-void
 
-    .line 1556
+    .line 1584
     :cond_1
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->isErrorResult()Z
 
@@ -99,18 +99,18 @@
 
     if-nez v5, :cond_3
 
-    .line 1557
+    .line 1585
     iget-object v5, v2, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->result:Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;
 
     iget v1, v5, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;->overall:I
 
-    .line 1558
+    .line 1586
     .local v1, "realScore":I
     invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->processScore(I)I
 
     move-result v4
 
-    .line 1560
+    .line 1588
     .local v4, "score":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
@@ -120,7 +120,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 1561
+    .line 1589
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -131,12 +131,12 @@
 
     invoke-virtual {v5, v6, v7}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->changeVolumeIcon(D)V
 
-    .line 1562
+    .line 1590
     new-instance v3, Lcom/jiliguala/niuwa/module/speak/model/Result;
 
     invoke-direct {v3}, Lcom/jiliguala/niuwa/module/speak/model/Result;-><init>()V
 
-    .line 1563
+    .line 1591
     .local v3, "result":Lcom/jiliguala/niuwa/module/speak/model/Result;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->getRefTextString()Ljava/lang/String;
 
@@ -144,7 +144,7 @@
 
     iput-object v5, v3, Lcom/jiliguala/niuwa/module/speak/model/Result;->content:Ljava/lang/String;
 
-    .line 1564
+    .line 1592
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$100(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
@@ -153,12 +153,12 @@
 
     invoke-virtual {v5, v4, v3}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->onScoreAnswer(ILcom/jiliguala/niuwa/module/speak/model/Result;)V
 
-    .line 1565
+    .line 1593
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v5, v4, v3}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->onResult(ILcom/jiliguala/niuwa/module/speak/model/Result;)V
 
-    .line 1566
+    .line 1594
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -169,7 +169,7 @@
 
     invoke-static {v5, v6, v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$500(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;II)V
 
-    .line 1568
+    .line 1596
     .end local v3    # "result":Lcom/jiliguala/niuwa/module/speak/model/Result;
     :cond_2
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
@@ -180,7 +180,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 1569
+    .line 1597
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     iget-object v5, v5, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->mSpeakPresenter:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
@@ -205,7 +205,7 @@
 
     goto :goto_0
 
-    .line 1577
+    .line 1605
     .end local v1    # "realScore":I
     .end local v4    # "score":I
     :cond_3
@@ -213,7 +213,7 @@
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$400(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1579
+    .line 1607
     const-string v5, "40092"
 
     iget-object v6, v2, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->errId:Ljava/lang/String;
@@ -224,7 +224,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 1581
+    .line 1609
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -235,7 +235,7 @@
 
     move-result-object v0
 
-    .line 1582
+    .line 1610
     .local v0, "noticeFragment":Lcom/jiliguala/niuwa/common/widget/b;
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$2;->b:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
@@ -247,7 +247,7 @@
 
     goto/16 :goto_0
 
-    .line 1584
+    .line 1612
     .end local v0    # "noticeFragment":Lcom/jiliguala/niuwa/common/widget/b;
     :cond_4
     iget-object v5, v2, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->error:Ljava/lang/String;

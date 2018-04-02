@@ -660,6 +660,7 @@
     .line 224
     iput-object v1, p0, Lcom/qiniu/resumableio/SliceUploadTask$UpBlock;->orginHost:Ljava/lang/String;
 
+    .line 225
     throw v0
 .end method
 

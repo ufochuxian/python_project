@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 1002
+    .line 1029
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;->a:Landroid/view/View;
@@ -45,13 +45,13 @@
     .locals 2
 
     .prologue
-    .line 1005
+    .line 1032
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;->b:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;->a:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->access$600(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;Landroid/view/View;)V
 
-    .line 1006
+    .line 1033
     return-void
 .end method

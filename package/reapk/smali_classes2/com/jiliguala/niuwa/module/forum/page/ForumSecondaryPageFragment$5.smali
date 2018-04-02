@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     .prologue
-    .line 330
+    .line 331
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$5;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 333
+    .line 334
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
@@ -63,7 +63,7 @@
 
     if-nez v0, :cond_0
 
-    .line 334
+    .line 335
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$5;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$500(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Ljava/util/concurrent/atomic/AtomicInteger;
@@ -74,12 +74,12 @@
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
-    .line 336
+    .line 337
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$5;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->autoRefresh()V
 
-    .line 339
+    .line 340
     :cond_0
     return-void
 .end method

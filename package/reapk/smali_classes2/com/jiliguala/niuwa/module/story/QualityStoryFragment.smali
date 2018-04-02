@@ -520,14 +520,14 @@
     .sparse-switch
         0x7f090045 -> :sswitch_3
         0x7f0901aa -> :sswitch_3
-        0x7f090378 -> :sswitch_3
-        0x7f0903da -> :sswitch_3
-        0x7f090443 -> :sswitch_2
-        0x7f09045c -> :sswitch_3
-        0x7f090569 -> :sswitch_3
-        0x7f0905a0 -> :sswitch_3
-        0x7f090612 -> :sswitch_0
-        0x7f090629 -> :sswitch_1
+        0x7f09037f -> :sswitch_3
+        0x7f0903e1 -> :sswitch_3
+        0x7f09044a -> :sswitch_2
+        0x7f090465 -> :sswitch_3
+        0x7f090573 -> :sswitch_3
+        0x7f0905aa -> :sswitch_3
+        0x7f09061c -> :sswitch_0
+        0x7f090633 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -580,7 +580,7 @@
     .line 112
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09045c
+    const v2, 0x7f090465
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -598,7 +598,7 @@
     .line 114
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090612
+    const v2, 0x7f09061c
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -616,7 +616,7 @@
     .line 116
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090629
+    const v2, 0x7f090633
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -634,7 +634,7 @@
     .line 118
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090569
+    const v2, 0x7f090573
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -652,7 +652,7 @@
     .line 120
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0905a0
+    const v2, 0x7f0905aa
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -670,7 +670,7 @@
     .line 123
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090378
+    const v2, 0x7f09037f
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -688,7 +688,7 @@
     .line 125
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0903da
+    const v2, 0x7f0903e1
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -724,7 +724,7 @@
     .line 129
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090273
+    const v2, 0x7f090278
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -737,7 +737,7 @@
     .line 131
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0905b5
+    const v2, 0x7f0905bf
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -750,7 +750,7 @@
     .line 133
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0903fc
+    const v2, 0x7f090403
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -776,7 +776,7 @@
     .line 137
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09052d
+    const v2, 0x7f090537
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -789,7 +789,7 @@
     .line 139
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09022d
+    const v2, 0x7f09022c
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -802,7 +802,7 @@
     .line 141
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0905ab
+    const v2, 0x7f0905b5
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -848,7 +848,7 @@
     .line 147
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090443
+    const v2, 0x7f09044a
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1252,7 +1252,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f060050
+    const v2, 0x7f060052
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 

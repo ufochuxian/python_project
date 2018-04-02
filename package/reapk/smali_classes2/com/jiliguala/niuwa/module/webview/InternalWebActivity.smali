@@ -605,7 +605,7 @@
 
     .line 407
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v2, 0x7f0b0136
+    const v2, 0x7f0b013b
 
     const/4 v3, 0x0
 
@@ -704,7 +704,7 @@
     const/4 v3, 0x0
 
     .line 304
-    const v2, 0x7f0902e6
+    const v2, 0x7f0902ed
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -720,7 +720,7 @@
     invoke-virtual {v2, v4}, Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;->setVisibility(I)V
 
     .line 307
-    const v2, 0x7f090402
+    const v2, 0x7f090409
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -967,7 +967,7 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0802c7
+    const v2, 0x7f0802d1
 
     :goto_0
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -1040,7 +1040,7 @@
 
     .line 344
     :cond_4
-    const v2, 0x7f0802d6
+    const v2, 0x7f0802e0
 
     goto :goto_0
 .end method
@@ -1287,7 +1287,7 @@
 
     .line 499
     :cond_4
-    const v3, 0x7f0904dd
+    const v3, 0x7f0904e7
 
     move-object/from16 v0, p0
 
@@ -1315,7 +1315,7 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1347,7 +1347,7 @@
 
     .line 510
     :cond_5
-    const v3, 0x7f0904e2
+    const v3, 0x7f0904ec
 
     move-object/from16 v0, p0
 
@@ -1375,7 +1375,7 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -1400,7 +1400,7 @@
 
     .line 520
     :cond_6
-    const v3, 0x7f0904de
+    const v3, 0x7f0904e8
 
     move-object/from16 v0, p0
 
@@ -1426,7 +1426,7 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -1451,7 +1451,7 @@
 
     .line 531
     :cond_7
-    const v3, 0x7f0904df
+    const v3, 0x7f0904e9
 
     move-object/from16 v0, p0
 
@@ -1477,13 +1477,13 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
     .line 537
     :pswitch_4
-    const v3, 0x7f0904dc
+    const v3, 0x7f0904e6
 
     move-object/from16 v0, p0
 
@@ -1509,13 +1509,13 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
     .line 541
     :pswitch_5
-    const v3, 0x7f0903b1
+    const v3, 0x7f0903b8
 
     move-object/from16 v0, p0
 
@@ -1541,7 +1541,7 @@
 
     move-object/from16 v11, p0
 
-    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v3 .. v14}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -1609,7 +1609,7 @@
     .line 554
     const-string v3, "key_plat"
 
-    const v4, 0x7f0904e3
+    const v4, 0x7f0904ed
 
     move-object/from16 v0, v17
 
@@ -1639,9 +1639,9 @@
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 558
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f010013
+    const v4, 0x7f010014
 
     move-object/from16 v0, p0
 
@@ -2050,6 +2050,15 @@
     goto :goto_0
 .end method
 
+.method public goToLesson(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "target"    # Ljava/lang/String;
+
+    .prologue
+    .line 648
+    return-void
+.end method
+
 .method protected goToMobilePage()V
     .locals 3
 
@@ -2184,7 +2193,7 @@
     .line 138
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->thmb:Ljava/lang/String;
 
-    sget-object v2, Lcom/jiliguala/niuwa/logic/l/f;->A:Ljava/lang/String;
+    sget-object v2, Lcom/jiliguala/niuwa/logic/m/f;->A:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/share/ShareDialogFragment;->setShareUrl(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2332,8 +2341,8 @@
         0x7f090014 -> :sswitch_0
         0x7f090025 -> :sswitch_2
         0x7f090038 -> :sswitch_1
-        0x7f090540 -> :sswitch_0
-        0x7f090541 -> :sswitch_1
+        0x7f09054a -> :sswitch_0
+        0x7f09054b -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -2362,7 +2371,7 @@
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->setContentView(I)V
 
     .line 208
-    const v4, 0x7f090626
+    const v4, 0x7f090630
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2378,7 +2387,7 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->initUI()V
 
     .line 213
-    const v4, 0x7f090591
+    const v4, 0x7f09059b
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2388,7 +2397,7 @@
 
     .line 214
     .local v3, "topBar":Landroid/widget/RelativeLayout;
-    const v4, 0x7f090542
+    const v4, 0x7f09054c
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2439,7 +2448,7 @@
     .line 224
     .end local v0    # "layoutParams":Landroid/widget/RelativeLayout$LayoutParams;
     :cond_0
-    const v4, 0x7f090540
+    const v4, 0x7f09054a
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2453,13 +2462,13 @@
 
     if-nez v4, :cond_1
 
-    const v4, 0x7f0802d5
+    const v4, 0x7f0802df
 
     :goto_0
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 226
-    const v4, 0x7f090541
+    const v4, 0x7f09054b
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2542,39 +2551,39 @@
     .prologue
     const/16 v0, 0x8
 
-    .line 661
+    .line 666
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->progressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
     if-eqz v1, :cond_0
 
-    .line 662
+    .line 667
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->progressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;->setVisibility(I)V
 
-    .line 664
+    .line 669
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->centerProgressBar:Landroid/view/View;
 
     if-eqz v1, :cond_1
 
-    .line 665
+    .line 670
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->centerProgressBar:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 667
+    .line 672
     :cond_1
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->loadFinished:Z
 
-    .line 669
+    .line 674
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->btnClose:Landroid/view/View;
 
     if-eqz v1, :cond_3
 
-    .line 670
+    .line 675
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->btnClose:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->canGoBack()Z
@@ -2588,7 +2597,7 @@
     :cond_2
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 672
+    .line 677
     :cond_3
     return-void
 .end method
@@ -2600,7 +2609,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 649
+    .line 654
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->progressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
     if-eqz v0, :cond_0
@@ -2609,12 +2618,12 @@
 
     if-nez v0, :cond_0
 
-    .line 650
+    .line 655
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->progressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;->setVisibility(I)V
 
-    .line 652
+    .line 657
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->centerProgressBar:Landroid/view/View;
 
@@ -2624,13 +2633,22 @@
 
     if-nez v0, :cond_1
 
-    .line 653
+    .line 658
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->centerProgressBar:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 655
+    .line 660
     :cond_1
+    return-void
+.end method
+
+.method public onProgressChanged(I)V
+    .locals 0
+    .param p1, "progressInPercent"    # I
+
+    .prologue
+    .line 700
     return-void
 .end method
 
@@ -2639,11 +2657,11 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 676
+    .line 681
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->mWebViewTitle:Ljava/lang/String;
 
-    .line 678
-    const v1, 0x7f09057a
+    .line 683
+    const v1, 0x7f090584
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->findViewById(I)Landroid/view/View;
 
@@ -2651,19 +2669,19 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 679
+    .line 684
     .local v0, "titleTv":Landroid/widget/TextView;
     if-eqz v0, :cond_0
 
-    .line 680
+    .line 685
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 681
+    .line 686
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 683
+    .line 688
     :cond_0
     return-void
 .end method
@@ -2672,7 +2690,7 @@
     .locals 1
 
     .prologue
-    .line 687
+    .line 692
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->url:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2681,12 +2699,12 @@
 
     if-nez v0, :cond_0
 
-    .line 688
+    .line 693
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->url:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;->loadUrl(Ljava/lang/String;)V
 
-    .line 690
+    .line 695
     :cond_0
     return-void
 .end method

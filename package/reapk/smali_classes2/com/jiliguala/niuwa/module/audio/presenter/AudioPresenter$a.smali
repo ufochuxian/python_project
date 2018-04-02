@@ -34,17 +34,17 @@
     .param p2, "controller"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 1561
+    .line 1590
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1562
+    .line 1591
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1563
+    .line 1592
     return-void
 .end method
 
@@ -59,7 +59,7 @@
 
     const/4 v5, 0x0
 
-    .line 1567
+    .line 1596
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -68,17 +68,17 @@
 
     if-eqz v2, :cond_0
 
-    .line 1568
+    .line 1597
     iget v2, p1, Landroid/os/Message;->what:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 1587
+    .line 1616
     :cond_0
     :goto_0
     return-void
 
-    .line 1570
+    .line 1599
     :pswitch_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -96,7 +96,7 @@
 
     move-result v1
 
-    .line 1571
+    .line 1600
     .local v1, "pos":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -114,7 +114,7 @@
 
     move-result v0
 
-    .line 1572
+    .line 1601
     .local v0, "dur":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -130,7 +130,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1573
+    .line 1602
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -149,7 +149,7 @@
 
     invoke-interface {v2, v4, v5, v6, v7}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onProgressUpdate(JJ)V
 
-    .line 1575
+    .line 1604
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -171,7 +171,7 @@
 
     goto :goto_0
 
-    .line 1578
+    .line 1607
     .end local v0    # "dur":I
     .end local v1    # "pos":I
     :pswitch_1
@@ -191,7 +191,7 @@
 
     goto :goto_0
 
-    .line 1581
+    .line 1610
     :pswitch_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -203,7 +203,7 @@
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1582
+    .line 1611
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -238,7 +238,7 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
 
-    .line 1583
+    .line 1612
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -259,12 +259,12 @@
 
     move-result-object v3
 
-    .line 1582
+    .line 1611
     invoke-static {v2, v4, v5, v3}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$500(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;Ljava/lang/String;Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
     goto/16 :goto_0
 
-    .line 1568
+    .line 1597
     nop
 
     :pswitch_data_0

@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/jiliguala/niuwa/logic/q/a;
+.field final synthetic a:Lcom/jiliguala/niuwa/logic/r/a;
 
 .field final synthetic b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;Lcom/jiliguala/niuwa/logic/q/a;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;Lcom/jiliguala/niuwa/logic/r/a;)V
     .locals 0
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;
 
@@ -32,7 +32,7 @@
     .line 360
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;
 
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/q/a;
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/r/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,20 +55,20 @@
 
     .prologue
     .line 363
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/q/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/r/a;
 
-    sget-object v1, Lcom/jiliguala/niuwa/logic/q/a;->b:[I
+    sget-object v1, Lcom/jiliguala/niuwa/logic/r/a;->b:[I
 
     aget v1, v1, p1
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/q/a;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/r/a;->a(I)V
 
     .line 364
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/q/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->a:Lcom/jiliguala/niuwa/logic/r/a;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/q/a;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/r/a;->a(Z)V
 
     .line 365
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$12;

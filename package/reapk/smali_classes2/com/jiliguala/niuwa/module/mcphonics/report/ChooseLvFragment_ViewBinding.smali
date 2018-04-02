@@ -26,7 +26,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/ChooseLvFragment_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/report/ChooseLvFragment;
 
     .line 22
-    const v0, 0x7f0904d1
+    const v0, 0x7f0904db
 
     const-string v1, "field \'shareCancel\'"
 
@@ -41,7 +41,7 @@
     iput-object v0, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/ChooseLvFragment;->shareCancel:Landroid/widget/TextView;
 
     .line 23
-    const v0, 0x7f0902d2
+    const v0, 0x7f0902d8
 
     const-string v1, "field \'listView\'"
 

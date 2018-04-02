@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     .prologue
-    .line 348
+    .line 349
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$6;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .param p4, "totalItemCount"    # I
 
     .prologue
-    .line 375
+    .line 376
     return-void
 .end method
 
@@ -55,28 +55,28 @@
     .param p2, "scrollState"    # I
 
     .prologue
-    .line 352
+    .line 353
     const/4 v0, 0x2
 
     if-ne p2, v0, :cond_1
 
-    .line 354
+    .line 355
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/d;->j()V
 
-    .line 359
+    .line 360
     :goto_0
     packed-switch p2, :pswitch_data_0
 
-    .line 370
+    .line 371
     :cond_0
     :goto_1
     return-void
 
-    .line 356
+    .line 357
     :cond_1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
@@ -86,7 +86,7 @@
 
     goto :goto_0
 
-    .line 363
+    .line 364
     :pswitch_0
     invoke-virtual {p1}, Landroid/widget/AbsListView;->getLastVisiblePosition()I
 
@@ -100,7 +100,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 364
+    .line 365
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$6;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$300(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
@@ -117,14 +117,14 @@
 
     if-nez v0, :cond_0
 
-    .line 365
+    .line 366
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$6;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$600(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)V
 
     goto :goto_1
 
-    .line 359
+    .line 360
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

@@ -259,7 +259,7 @@
     if-nez v0, :cond_1
 
     .line 125
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/p/a;->a()Lcom/jiliguala/niuwa/logic/p/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
 
     move-result-object v0
 
@@ -293,7 +293,7 @@
     move-wide v4, p2
 
     .line 125
-    invoke-virtual/range {v0 .. v6}, Lcom/jiliguala/niuwa/logic/p/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/jiliguala/niuwa/logic/q/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
 
     goto :goto_0
 .end method

@@ -19,7 +19,7 @@
     .param p0, "typ"    # Ljava/lang/String;
 
     .prologue
-    const v0, 0x7f06007d
+    const v0, 0x7f06007f
 
     .line 13
     const/4 v1, -0x1
@@ -94,13 +94,13 @@
 
     .line 19
     :pswitch_1
-    const v0, 0x7f0600e5
+    const v0, 0x7f0600e7
 
     goto :goto_1
 
     .line 21
     :pswitch_2
-    const v0, 0x7f0600fd
+    const v0, 0x7f0600ff
 
     goto :goto_1
 

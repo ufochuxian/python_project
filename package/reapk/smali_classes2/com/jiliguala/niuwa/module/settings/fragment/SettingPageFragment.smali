@@ -157,6 +157,8 @@
 
 .field private mScanResult:Lcom/jiliguala/niuwa/module/settings/ScanResult;
 
+.field private mScrollview:Landroid/view/View;
+
 .field private mSocietyViewBg:Landroid/view/View;
 
 .field private mSwitchBabyListener:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
@@ -387,7 +389,18 @@
     return-void
 .end method
 
-.method static synthetic access$1800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Z)V
+.method static synthetic access$1800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Z
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    .prologue
+    .line 119
+    iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
+
+    return v0
+.end method
+
+.method static synthetic access$1900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Z)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     .param p1, "x1"    # Z
@@ -397,18 +410,6 @@
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->wechatCheckedChange(Z)V
 
     return-void
-.end method
-
-.method static synthetic access$1902(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;)Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
-    .locals 0
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
-
-    .prologue
-    .line 119
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickBaby:Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
-
-    return-object p1
 .end method
 
 .method static synthetic access$200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
@@ -422,7 +423,19 @@
     return-object v0
 .end method
 
-.method static synthetic access$2000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
+.method static synthetic access$2002(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;)Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
+
+    .prologue
+    .line 119
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickBaby:Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -433,7 +446,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2002(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
+.method static synthetic access$2102(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     .param p1, "x1"    # Lcom/makeramen/roundedimageview/RoundedImageView;
@@ -445,36 +458,13 @@
     return-object p1
 .end method
 
-.method static synthetic access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
-    .locals 1
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    .prologue
-    .line 119
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickNameTv:Landroid/widget/TextView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2102(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
-    .locals 0
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-    .param p1, "x1"    # Landroid/widget/TextView;
-
-    .prologue
-    .line 119
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickNameTv:Landroid/widget/TextView;
-
-    return-object p1
-.end method
-
 .method static synthetic access$2200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickAgeTv:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickNameTv:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -486,12 +476,35 @@
 
     .prologue
     .line 119
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickNameTv:Landroid/widget/TextView;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    .prologue
+    .line 119
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickAgeTv:Landroid/widget/TextView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+    .param p1, "x1"    # Landroid/widget/TextView;
+
+    .prologue
+    .line 119
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->clickAgeTv:Landroid/widget/TextView;
 
     return-object p1
 .end method
 
-.method static synthetic access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
+.method static synthetic access$2400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -502,7 +515,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+.method static synthetic access$2500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -513,7 +526,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$2600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -524,7 +537,7 @@
     return-void
 .end method
 
-.method static synthetic access$2600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$2700(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -535,7 +548,7 @@
     return-void
 .end method
 
-.method static synthetic access$2700(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$2800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -546,7 +559,7 @@
     return-void
 .end method
 
-.method static synthetic access$2800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$2900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -555,17 +568,6 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserAvatar()V
 
     return-void
-.end method
-
-.method static synthetic access$2900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
-    .locals 1
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    .prologue
-    .line 119
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
-
-    return-object v0
 .end method
 
 .method static synthetic access$300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
@@ -579,7 +581,18 @@
     return-void
 .end method
 
-.method static synthetic access$3000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    .prologue
+    .line 119
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -590,7 +603,7 @@
     return-void
 .end method
 
-.method static synthetic access$3100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -601,7 +614,7 @@
     return-void
 .end method
 
-.method static synthetic access$3200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -612,7 +625,7 @@
     return-void
 .end method
 
-.method static synthetic access$3300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -623,7 +636,7 @@
     return-void
 .end method
 
-.method static synthetic access$3400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -634,7 +647,7 @@
     return-void
 .end method
 
-.method static synthetic access$3500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -645,7 +658,7 @@
     return-void
 .end method
 
-.method static synthetic access$3600(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$3700(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -656,7 +669,7 @@
     return-void
 .end method
 
-.method static synthetic access$3700(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/app/Dialog;
+.method static synthetic access$3800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/app/Dialog;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -667,7 +680,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/FrameLayout;
+.method static synthetic access$3900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/FrameLayout;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -678,24 +691,13 @@
     return-object v0
 .end method
 
-.method static synthetic access$3900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/ImageView;
-    .locals 1
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    .prologue
-    .line 119
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
-
-    return-object v0
-.end method
-
 .method static synthetic access$4000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/ImageView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -712,7 +714,18 @@
     return p1
 .end method
 
-.method static synthetic access$4100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+.method static synthetic access$4100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/ImageView;
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    .prologue
+    .line 119
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$4200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -723,7 +736,7 @@
     return-void
 .end method
 
-.method static synthetic access$4200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
+.method static synthetic access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -734,7 +747,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4202(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
+.method static synthetic access$4302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     .param p1, "x1"    # Lcom/makeramen/roundedimageview/RoundedImageView;
@@ -746,7 +759,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+.method static synthetic access$4400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -757,7 +770,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+.method static synthetic access$4402(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     .param p1, "x1"    # Landroid/widget/TextView;
@@ -769,7 +782,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$4400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+.method static synthetic access$4500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
@@ -780,7 +793,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4402(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+.method static synthetic access$4502(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     .param p1, "x1"    # Landroid/widget/TextView;
@@ -852,7 +865,7 @@
     .locals 4
 
     .prologue
-    .line 1187
+    .line 1196
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -863,7 +876,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    .line 1188
+    .line 1197
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -876,15 +889,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$14;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 1189
+    .line 1198
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 1187
+    .line 1196
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1243
+    .line 1252
     return-void
 .end method
 
@@ -892,7 +905,7 @@
     .locals 4
 
     .prologue
-    .line 385
+    .line 389
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -903,7 +916,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/g;
 
-    .line 386
+    .line 390
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -916,15 +929,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$18;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 387
+    .line 391
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 385
+    .line 389
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 407
+    .line 411
     return-void
 .end method
 
@@ -933,7 +946,7 @@
     .param p1, "loginType"    # I
 
     .prologue
-    .line 758
+    .line 767
     new-instance v1, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -944,36 +957,36 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 759
+    .line 768
     .local v1, "intent":Landroid/content/Intent;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 760
+    .line 769
     .local v0, "bundle":Landroid/os/Bundle;
     const-string v2, "login_type"
 
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 761
+    .line 770
     const-string v2, "source"
 
     const-string v3, "bind_weichat"
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 762
+    .line 771
     invoke-virtual {v1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 763
+    .line 772
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
     invoke-virtual {v2, v1}, Landroid/support/v4/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 764
+    .line 773
     return-void
 .end method
 
@@ -981,12 +994,12 @@
     .locals 2
 
     .prologue
-    .line 1133
+    .line 1142
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGiftContainer:Landroid/widget/RelativeLayout;
 
     if-eqz v0, :cond_0
 
-    .line 1134
+    .line 1143
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGiftContainer:Landroid/widget/RelativeLayout;
 
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
@@ -1002,11 +1015,11 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 1136
+    .line 1145
     :cond_0
     return-void
 
-    .line 1134
+    .line 1143
     :cond_1
     const/16 v0, 0x8
 
@@ -1017,7 +1030,7 @@
     .locals 5
 
     .prologue
-    .line 459
+    .line 463
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -1030,7 +1043,7 @@
 
     check-cast v0, Landroid/content/ClipboardManager;
 
-    .line 460
+    .line 464
     .local v0, "clipboard":Landroid/content/ClipboardManager;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
 
@@ -1042,7 +1055,7 @@
 
     move-result-object v2
 
-    .line 461
+    .line 465
     .local v2, "text":Ljava/lang/String;
     const-string v3, "text"
 
@@ -1054,11 +1067,11 @@
 
     move-result-object v1
 
-    .line 462
+    .line 466
     .local v1, "myClip":Landroid/content/ClipData;
     invoke-virtual {v0, v1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
 
-    .line 463
+    .line 467
     const v3, 0x7f0f008c
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getString(I)Ljava/lang/String;
@@ -1067,7 +1080,7 @@
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 464
+    .line 468
     return-void
 .end method
 
@@ -1076,28 +1089,28 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 1602
+    .line 1612
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
     if-eqz v0, :cond_0
 
-    .line 1603
+    .line 1613
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/d;->b()V
 
-    .line 1605
+    .line 1615
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 1606
+    .line 1616
     invoke-static {p1}, Lcom/jiliguala/niuwa/common/util/a;->g(Landroid/view/View;)Lcom/nineoldandroids/a/d;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
-    .line 1608
+    .line 1618
     :cond_1
     return-void
 .end method
@@ -1111,7 +1124,7 @@
     .prologue
     const/4 v6, 0x2
 
-    .line 877
+    .line 886
     const-string v1, "translationY"
 
     new-array v2, v6, [F
@@ -1142,37 +1155,37 @@
 
     const-wide/16 v2, 0x258
 
-    .line 878
+    .line 887
     invoke-virtual {v1, v2, v3}, Lcom/nineoldandroids/a/l;->a_(J)Lcom/nineoldandroids/a/l;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
-    .line 879
+    .line 888
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     invoke-virtual {v1, v6}, Lcom/nineoldandroids/a/l;->b(I)V
 
-    .line 880
+    .line 889
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     const v2, 0x7fffffff
 
     invoke-virtual {v1, v2}, Lcom/nineoldandroids/a/l;->a(I)V
 
-    .line 881
+    .line 890
     new-instance v0, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
 
-    .line 882
+    .line 891
     .local v0, "mDecelerateInterpolator":Landroid/view/animation/AccelerateDecelerateInterpolator;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     invoke-virtual {v1, v0}, Lcom/nineoldandroids/a/l;->a(Landroid/view/animation/Interpolator;)V
 
-    .line 883
+    .line 892
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     new-instance v2, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$8;
@@ -1181,12 +1194,12 @@
 
     invoke-virtual {v1, v2}, Lcom/nineoldandroids/a/l;->a(Lcom/nineoldandroids/a/a$a;)V
 
-    .line 905
+    .line 914
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     invoke-virtual {v1}, Lcom/nineoldandroids/a/l;->a()V
 
-    .line 906
+    .line 915
     return-void
 .end method
 
@@ -1195,7 +1208,7 @@
     .param p0, "fm"    # Landroid/support/v4/app/ag;
 
     .prologue
-    .line 283
+    .line 284
     sget-object v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/app/ag;->a(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
@@ -1204,17 +1217,17 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    .line 284
+    .line 285
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     if-nez v0, :cond_0
 
-    .line 285
+    .line 286
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .end local v0    # "fragment":Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;-><init>()V
 
-    .line 287
+    .line 288
     .restart local v0    # "fragment":Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
     :cond_0
     return-object v0
@@ -1224,12 +1237,12 @@
     .locals 4
 
     .prologue
-    .line 805
+    .line 814
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 806
+    .line 815
     .local v1, "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "Type"
 
@@ -1237,17 +1250,17 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 807
+    .line 816
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
 
     const-string v3, "Setting Action"
 
-    .line 808
+    .line 817
     invoke-virtual {v2, v3, v1}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 809
+    .line 818
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getContext()Landroid/content/Context;
@@ -1258,11 +1271,11 @@
 
     invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 810
+    .line 819
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 811
+    .line 820
     return-void
 .end method
 
@@ -1270,14 +1283,14 @@
     .locals 1
 
     .prologue
-    .line 801
+    .line 810
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/BuyUtil;->goMemberRenewal(Landroid/content/Context;)V
 
-    .line 802
+    .line 811
     return-void
 .end method
 
@@ -1285,7 +1298,7 @@
     .locals 4
 
     .prologue
-    .line 768
+    .line 777
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1294,24 +1307,24 @@
 
     move-result-object v0
 
-    .line 769
+    .line 778
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 770
+    .line 779
     const/16 v1, 0x2002
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 771
+    .line 780
     return-void
 .end method
 
@@ -1319,14 +1332,14 @@
     .locals 3
 
     .prologue
-    .line 517
+    .line 521
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 518
+    .line 522
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -1337,11 +1350,11 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 519
+    .line 523
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 521
+    .line 525
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
@@ -1351,7 +1364,7 @@
     .locals 4
 
     .prologue
-    .line 1294
+    .line 1300
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -1360,22 +1373,22 @@
 
     move-result-object v0
 
-    .line 1295
+    .line 1301
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 1296
+    .line 1302
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 1297
+    .line 1303
     return-void
 .end method
 
@@ -1383,14 +1396,14 @@
     .locals 4
 
     .prologue
-    .line 525
+    .line 529
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 527
+    .line 531
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -1403,11 +1416,11 @@
 
     move-result-object v0
 
-    .line 533
+    .line 537
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 535
+    .line 539
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
@@ -1418,7 +1431,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 538
+    .line 542
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -1429,26 +1442,26 @@
 
     if-nez v1, :cond_1
 
-    .line 539
+    .line 543
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
     iput v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCurClickId:I
 
-    .line 544
+    .line 548
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 545
+    .line 549
     const v1, 0x7f0f013b
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 546
+    .line 550
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -1457,17 +1470,17 @@
 
     move-result-object v0
 
-    .line 547
+    .line 551
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 555
+    .line 559
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 550
+    .line 554
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
@@ -1475,7 +1488,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 551
+    .line 555
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -1484,7 +1497,7 @@
 
     invoke-direct {p0, v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showMyForum(Landroid/app/Activity;I)V
 
-    .line 552
+    .line 556
     const/4 v1, -0x1
 
     iput v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCurClickId:I
@@ -1498,17 +1511,17 @@
     .prologue
     const v5, 0x7f0f0152
 
-    .line 410
+    .line 414
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->markGuaCoinClicked()V
 
-    .line 411
+    .line 415
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 412
+    .line 416
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -1517,19 +1530,19 @@
 
     if-eqz v3, :cond_1
 
-    .line 413
+    .line 417
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinRedDot:Landroid/widget/ImageView;
 
     if-eqz v3, :cond_0
 
-    .line 414
+    .line 418
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinRedDot:Landroid/widget/ImageView;
 
     const/16 v4, 0x8
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 416
+    .line 420
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -1539,7 +1552,7 @@
 
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isHideRedBot(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 419
+    .line 423
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1551,19 +1564,19 @@
 
     if-nez v3, :cond_3
 
-    .line 420
+    .line 424
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 421
+    .line 425
     const v3, 0x7f0f00ec
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 422
+    .line 426
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -1572,17 +1585,17 @@
 
     move-result-object v2
 
-    .line 423
+    .line 427
     .local v2, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 456
+    .line 460
     .end local v2    # "intent":Landroid/content/Intent;
     :cond_2
     :goto_0
     return-void
 
-    .line 426
+    .line 430
     :cond_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
@@ -1590,12 +1603,12 @@
 
     if-eqz v3, :cond_2
 
-    .line 430
+    .line 434
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v0
 
-    .line 431
+    .line 435
     .local v0, "accountCenter":Lcom/jiliguala/niuwa/logic/login/a;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->p()Z
 
@@ -1603,7 +1616,7 @@
 
     if-nez v3, :cond_4
 
-    .line 432
+    .line 436
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -1614,7 +1627,7 @@
 
     move-result-object v1
 
-    .line 434
+    .line 438
     .local v1, "i":Landroid/content/Intent;
     const/16 v3, 0x8fd
 
@@ -1622,7 +1635,7 @@
 
     goto :goto_0
 
-    .line 437
+    .line 441
     .end local v1    # "i":Landroid/content/Intent;
     :cond_4
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->n()Z
@@ -1631,7 +1644,7 @@
 
     if-nez v3, :cond_6
 
-    .line 439
+    .line 443
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v3
@@ -1642,7 +1655,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 441
+    .line 445
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
@@ -1653,7 +1666,7 @@
 
     move-result-object v1
 
-    .line 450
+    .line 454
     .restart local v1    # "i":Landroid/content/Intent;
     :goto_1
     const/16 v3, 0x2329
@@ -1662,7 +1675,7 @@
 
     goto :goto_0
 
-    .line 446
+    .line 450
     .end local v1    # "i":Landroid/content/Intent;
     :cond_5
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -1678,7 +1691,7 @@
     .restart local v1    # "i":Landroid/content/Intent;
     goto :goto_1
 
-    .line 453
+    .line 457
     .end local v1    # "i":Landroid/content/Intent;
     :cond_6
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showGuaCoin()V
@@ -1692,26 +1705,26 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 467
+    .line 471
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 469
+    .line 473
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showMessageCenter(Landroid/app/Activity;)V
 
-    .line 471
+    .line 475
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 472
+    .line 476
     .local v0, "activity":Landroid/app/Activity;
     if-eqz v0, :cond_0
 
@@ -1721,12 +1734,12 @@
 
     move-object v1, v0
 
-    .line 474
+    .line 478
     check-cast v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isHideRedBot(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 477
+    .line 481
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -1737,32 +1750,32 @@
 
     if-nez v1, :cond_0
 
-    .line 478
+    .line 482
     const-string v1, "FIRST_START"
 
     invoke-static {v1, v3}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
 
-    .line 481
+    .line 485
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     if-eqz v1, :cond_1
 
-    .line 482
+    .line 486
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 486
+    .line 490
     :cond_1
     check-cast v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .end local v0    # "activity":Landroid/app/Activity;
     iput-boolean v3, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldRecvNotifShowRedDot:Z
 
-    .line 488
+    .line 492
     :cond_2
     return-void
 .end method
@@ -1771,14 +1784,14 @@
     .locals 4
 
     .prologue
-    .line 507
+    .line 511
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 508
+    .line 512
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -1789,7 +1802,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 509
+    .line 513
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "SETTING_TYPE"
 
@@ -1797,764 +1810,738 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 510
+    .line 514
     const/16 v1, 0x2001
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 511
+    .line 515
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 513
+    .line 517
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
 .end method
 
 .method private initUIComponent(Landroid/view/View;)V
-    .locals 10
+    .locals 9
     .param p1, "parent"    # Landroid/view/View;
 
     .prologue
-    const v9, 0x7f090560
+    const v8, 0x7f09056a
 
-    const/16 v6, 0x8
+    const/16 v5, 0x8
 
-    const/4 v5, 0x4
+    const/4 v4, 0x4
 
-    const/4 v4, 0x0
-
-    .line 558
-    const v3, 0x7f0904ff
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mSocietyViewBg:Landroid/view/View;
-
-    .line 559
-    const v3, 0x7f090044
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAddBabyIv:Landroid/widget/ImageView;
-
-    .line 560
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAddBabyIv:Landroid/widget/ImageView;
-
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 561
-    const v3, 0x7f09038e
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
+    const/4 v3, 0x0
 
     .line 562
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
+    const v2, 0x7f090509
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mSocietyViewBg:Landroid/view/View;
 
     .line 563
-    const v3, 0x7f090141
+    const v2, 0x7f090044
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBabyTv:Landroid/view/View;
+    check-cast v2, Landroid/widget/ImageView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAddBabyIv:Landroid/widget/ImageView;
+
+    .line 564
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAddBabyIv:Landroid/widget/ImageView;
+
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+
+    invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 565
-    const v3, 0x7f090591
+    const v2, 0x7f090395
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
 
     .line 566
-    const v3, 0x7f0904c7
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mForumEntrance:Landroid/view/View;
+    invoke-virtual {v2, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 567
+    const v2, 0x7f090141
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBabyTv:Landroid/view/View;
+
+    .line 569
+    const v2, 0x7f09059b
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+
+    invoke-virtual {v2, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 570
+    const v2, 0x7f0904d1
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mForumEntrance:Landroid/view/View;
+
+    .line 571
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mForumEntrance:Landroid/view/View;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mForumEntrance:Landroid/view/View;
 
-    new-instance v8, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;
+    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;
 
-    invoke-direct {v8, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v7, v8}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v6, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v6}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 573
-    const v3, 0x7f090246
+    .line 577
+    const v2, 0x7f090247
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinContainer:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinContainer:Landroid/view/View;
 
-    .line 574
+    .line 578
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinContainer:Landroid/view/View;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinContainer:Landroid/view/View;
 
-    new-instance v8, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$21;
+    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$21;
 
-    invoke-direct {v8, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$21;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$21;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v7, v8}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v6, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v6}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 580
-    const v3, 0x7f090014
+    .line 584
+    const v2, 0x7f090014
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v7
+    move-result-object v6
 
-    iget-boolean v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->fromAvaClick:Z
+    iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->fromAvaClick:Z
 
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
-    move v3, v4
+    move v2, v3
 
     :goto_0
-    invoke-virtual {v7, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 585
-    const v3, 0x7f0904c2
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
-
-    .line 586
-    const v3, 0x7f0903fe
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/FrameLayout;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mProfileBgMask:Landroid/widget/FrameLayout;
-
-    .line 587
-    const v3, 0x7f0905d2
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
-
-    .line 588
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
-
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 589
-    const v3, 0x7f0905dc
+    const v2, 0x7f0904cc
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v2, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUsersInfoTv:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
+
+    .line 590
+    const v2, 0x7f090405
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/FrameLayout;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mProfileBgMask:Landroid/widget/FrameLayout;
 
     .line 591
-    const v3, 0x7f0903ca
+    const v2, 0x7f0905dc
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v2, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
+
+    .line 592
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
+
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+
+    invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 593
-    const v3, 0x7f0905d7
+    const v2, 0x7f0905e6
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v2, Landroid/widget/TextView;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCity:Landroid/widget/TextView;
-
-    .line 594
-    const v3, 0x7f0905d9
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/TextView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUsersInfoTv:Landroid/widget/TextView;
 
     .line 595
+    const v2, 0x7f0903d1
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
+
+    .line 597
+    const v2, 0x7f0905e1
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCity:Landroid/widget/TextView;
+
+    .line 598
+    const v2, 0x7f0905e3
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
+
+    .line 599
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
 
-    new-instance v8, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$22;
+    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$22;
 
-    invoke-direct {v8, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$22;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$22;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v7, v8}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v6, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v6}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 604
-    const v3, 0x7f09027e
+    .line 608
+    const v2, 0x7f090283
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/LinearLayout;
+    check-cast v2, Landroid/widget/LinearLayout;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mTagContainer:Landroid/widget/LinearLayout;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mTagContainer:Landroid/widget/LinearLayout;
 
-    .line 606
-    const v3, 0x7f090333
+    .line 610
+    const v2, 0x7f09033a
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageCenter:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageCenter:Landroid/view/View;
 
-    .line 607
+    .line 611
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageCenter:Landroid/view/View;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageCenter:Landroid/view/View;
 
-    new-instance v8, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$23;
+    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$23;
 
-    invoke-direct {v8, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$23;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$23;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v7, v8}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v6, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v6}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 614
-    const v3, 0x7f0904c9
+    .line 618
+    const v2, 0x7f0904d3
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/RelativeLayout;
+    check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->settingPage:Landroid/widget/RelativeLayout;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->settingPage:Landroid/widget/RelativeLayout;
 
-    .line 615
+    .line 619
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->settingPage:Landroid/widget/RelativeLayout;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->settingPage:Landroid/widget/RelativeLayout;
 
-    new-instance v8, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$24;
+    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$24;
 
-    invoke-direct {v8, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$24;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$24;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v7, v8}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v6, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Lrx/i/b;->a(Lrx/m;)V
-
-    .line 622
-    const v3, 0x7f090334
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
-
-    .line 625
-    const v3, 0x7f090249
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinRedDot:Landroid/widget/ImageView;
+    invoke-virtual {v2, v6}, Lrx/i/b;->a(Lrx/m;)V
 
     .line 626
-    const v3, 0x7f090248
+    const v2, 0x7f09033b
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v2, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinHint:Landroid/widget/TextView;
-
-    .line 628
-    const v3, 0x7f09012d
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/LinearLayout;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     .line 629
+    const v2, 0x7f09024a
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/ImageView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinRedDot:Landroid/widget/ImageView;
+
+    .line 630
+    const v2, 0x7f090249
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinHint:Landroid/widget/TextView;
+
+    .line 632
+    const v2, 0x7f09012d
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/LinearLayout;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
+
+    .line 633
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 631
+    .line 635
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/login/a;->v()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/login/a;->v()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 633
+    .line 637
     .local v1, "ava":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/login/a;->m()Z
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/login/a;->m()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_0
+    if-nez v2, :cond_0
 
-    .line 634
+    .line 638
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserAvatar()V
 
-    .line 636
+    .line 640
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserInfoBg()V
 
-    .line 637
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
+    .line 641
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/login/a;->y()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/jiliguala/niuwa/logic/login/a;->y()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 638
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserTags()V
-
-    .line 640
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserCity()V
-
-    .line 641
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserGuaId()V
+    invoke-virtual {v2, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 642
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateGuaCoinReddot()V
-
-    .line 643
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateGuaCoin()V
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserTags()V
 
     .line 644
-    invoke-virtual {p1, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserCity()V
 
     .line 645
-    invoke-virtual {p1, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserGuaId()V
 
-    move-result-object v3
-
-    iget-object v7, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    .line 646
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateGuaCoinReddot()V
 
     .line 647
-    const v3, 0x7f09037b
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/TextView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateGuaCoin()V
 
     .line 648
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
+    invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    move-result-object v2
 
-    .line 650
-    const v3, 0x7f0904c5
+    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 649
+    invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mEshopEntrance:Landroid/view/View;
+    iget-object v6, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+
+    invoke-virtual {v2, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 651
+    const v2, 0x7f090382
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
+
+    .line 652
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 654
+    const v2, 0x7f0904cf
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mEshopEntrance:Landroid/view/View;
+
+    .line 655
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mEshopEntrance:Landroid/view/View;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mEshopEntrance:Landroid/view/View;
 
-    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$2;
+    new-instance v6, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$2;
 
-    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$2;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v6, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$2;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v5, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v4, v6}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v4}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 658
-    const v3, 0x7f0904c4
+    .line 662
+    const v2, 0x7f0904ce
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/RelativeLayout;
+    check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBuyedGoodsContainer:Landroid/widget/RelativeLayout;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBuyedGoodsContainer:Landroid/widget/RelativeLayout;
 
-    .line 660
+    .line 664
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBuyedGoodsContainer:Landroid/widget/RelativeLayout;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBuyedGoodsContainer:Landroid/widget/RelativeLayout;
 
-    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$3;
+    new-instance v6, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$3;
 
-    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$3;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v6, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$3;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v5, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v4, v6}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Lrx/i/b;->a(Lrx/m;)V
-
-    .line 667
-    const v3, 0x7f0901f6
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
-
-    .line 670
-    const v3, 0x7f0901f4
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/RelativeLayout;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqContainer:Landroid/widget/RelativeLayout;
+    invoke-virtual {v2, v4}, Lrx/i/b;->a(Lrx/m;)V
 
     .line 671
+    const v2, 0x7f0901f6
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/ImageView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
+
+    .line 674
+    const v2, 0x7f0901f4
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/RelativeLayout;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqContainer:Landroid/widget/RelativeLayout;
+
+    .line 675
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqContainer:Landroid/widget/RelativeLayout;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqContainer:Landroid/widget/RelativeLayout;
 
-    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;
+    new-instance v6, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;
 
-    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v6, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$4;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v5, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v4, v6}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Lrx/i/b;->a(Lrx/m;)V
+    invoke-virtual {v2, v4}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 678
-    const v3, 0x7f090600
+    .line 682
+    const v2, 0x7f09060a
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/RelativeLayout;
+    check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipContainer:Landroid/widget/RelativeLayout;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipContainer:Landroid/widget/RelativeLayout;
 
-    .line 679
+    .line 683
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipContainer:Landroid/widget/RelativeLayout;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipContainer:Landroid/widget/RelativeLayout;
 
-    new-instance v7, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$5;
+    new-instance v6, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$5;
 
-    invoke-direct {v7, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$5;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-direct {v6, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$5;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    invoke-static {v5, v7}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
+    invoke-static {v4, v6}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a(Landroid/view/View;Lrx/c/c;)Lrx/m;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Lrx/i/b;->a(Lrx/m;)V
-
-    .line 685
-    const v3, 0x7f090601
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/TextView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
-
-    .line 686
-    const v3, 0x7f090602
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/TextView;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
-
-    .line 687
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateVip()V
+    invoke-virtual {v2, v4}, Lrx/i/b;->a(Lrx/m;)V
 
     .line 689
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    const v2, 0x7f09060b
 
-    move-result-object v3
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    sget-object v5, Lcom/jiliguala/niuwa/wxapi/WXEntryActivity;->WEI_XIN_LOGIN_APP_ID:Ljava/lang/String;
+    move-result-object v2
 
-    invoke-static {v3, v5}, Lcom/tencent/mm/opensdk/openapi/WXAPIFactory;->createWXAPI(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/mm/opensdk/openapi/IWXAPI;
+    check-cast v2, Landroid/widget/TextView;
 
-    move-result-object v3
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mApi:Lcom/tencent/mm/opensdk/openapi/IWXAPI;
+    .line 690
+    const v2, 0x7f09060c
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
 
     .line 691
-    const v3, 0x7f090238
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/widget/RelativeLayout;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGiftContainer:Landroid/widget/RelativeLayout;
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateVip()V
 
     .line 693
-    const v3, 0x7f090010
+    const v2, 0x7f090238
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Landroid/widget/ImageView;
+    check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourse:Landroid/widget/ImageView;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGiftContainer:Landroid/widget/RelativeLayout;
 
     .line 695
-    const v3, 0x7f090058
+    const v2, 0x7f090010
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/ImageView;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourse:Landroid/widget/ImageView;
+
+    .line 697
+    const v2, 0x7f090058
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 696
+    .line 698
     .local v0, "animBg":Landroid/widget/ImageView;
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->doBgAnim(Landroid/view/View;)V
 
-    .line 697
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourse:Landroid/widget/ImageView;
-
-    invoke-virtual {v3, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 699
-    const v3, 0x7f09047e
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourse:Landroid/widget/ImageView;
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    move-result-object v3
+    .line 701
+    const v2, 0x7f090487
 
-    check-cast v3, Landroid/widget/ImageView;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScan:Landroid/widget/ImageView;
+    move-result-object v2
 
-    .line 700
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScan:Landroid/widget/ImageView;
+    check-cast v2, Landroid/widget/ImageView;
 
-    iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScan:Landroid/widget/ImageView;
 
     .line 702
-    const v3, 0x7f0900a6
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScan:Landroid/widget/ImageView;
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    move-result-object v3
-
-    .line 703
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/p;->a()Lcom/jiliguala/niuwa/common/util/p;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Lcom/jiliguala/niuwa/common/util/p;->c()Z
-
-    move-result v5
-
-    if-nez v5, :cond_1
-
-    move v4, v6
-
-    :cond_1
-    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 704
-    const v3, 0x7f0900a7
+    const v2, 0x7f0900a6
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
-
-    check-cast v3, Lcom/kyleduo/switchbutton/SwitchButton;
-
-    iput-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
+    move-result-object v2
 
     .line 705
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/p;->a()Lcom/jiliguala/niuwa/common/util/p;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/login/a;->ac()Z
+    invoke-virtual {v4}, Lcom/jiliguala/niuwa/common/util/p;->c()Z
 
-    move-result v2
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    move v3, v5
+
+    :cond_1
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 706
-    .local v2, "wechatBinded":Z
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
+    const v2, 0x7f0900a7
 
-    invoke-virtual {v3, v2}, Lcom/kyleduo/switchbutton/SwitchButton;->setCheckedImmediately(Z)V
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/kyleduo/switchbutton/SwitchButton;
+
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
 
     .line 707
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateBindWeChat()V
 
-    new-instance v4, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;
+    .line 708
+    const v2, 0x7f090494
 
-    invoke-direct {v4, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v3, v4}, Lcom/kyleduo/switchbutton/SwitchButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    move-result-object v2
 
-    .line 714
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScrollview:Landroid/view/View;
+
+    .line 709
     return-void
 
     .end local v0    # "animBg":Landroid/widget/ImageView;
     .end local v1    # "ava":Ljava/lang/String;
-    .end local v2    # "wechatBinded":Z
     :cond_2
-    move v3, v5
+    move v2, v4
 
-    .line 580
+    .line 584
     goto/16 :goto_0
 .end method
 
@@ -2563,7 +2550,7 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 292
+    .line 293
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getVisibility()I
@@ -2588,12 +2575,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 293
+    .line 294
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showIndicatorRedDot(Z)V
 
-    .line 295
+    .line 296
     :cond_0
     return-void
 .end method
@@ -2602,7 +2589,7 @@
     .locals 4
 
     .prologue
-    .line 1417
+    .line 1424
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2617,7 +2604,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1418
+    .line 1425
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2644,7 +2631,7 @@
 
     move-result-object v0
 
-    .line 1419
+    .line 1426
     .local v0, "url":Ljava/lang/String;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
 
@@ -2666,7 +2653,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1421
+    .line 1428
     :cond_0
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
@@ -2684,12 +2671,12 @@
 
     invoke-virtual {v1, v0, v2, v3}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;)V
 
-    .line 1422
+    .line 1429
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 1425
+    .line 1432
     .end local v0    # "url":Ljava/lang/String;
     :cond_1
     return-void
@@ -2701,11 +2688,11 @@
     .prologue
     const/4 v4, 0x0
 
-    const v3, 0x7f080318
+    const v3, 0x7f080322
 
     const/16 v2, 0x8
 
-    .line 1428
+    .line 1435
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2716,7 +2703,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 1429
+    .line 1436
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2725,7 +2712,7 @@
 
     move-result-object v0
 
-    .line 1430
+    .line 1437
     .local v0, "bgUrl":Ljava/lang/String;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
@@ -2747,7 +2734,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1431
+    .line 1438
     :cond_0
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2755,7 +2742,7 @@
 
     if-nez v1, :cond_2
 
-    .line 1432
+    .line 1439
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v1
@@ -2780,7 +2767,7 @@
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
-    .line 1434
+    .line 1441
     invoke-static {}, Lcom/jiliguala/niuwa/logic/e/a;->a()Lcom/jiliguala/niuwa/logic/e/a;
 
     move-result-object v4
@@ -2793,52 +2780,52 @@
 
     invoke-direct {v5, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$17;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 1432
+    .line 1439
     invoke-virtual {v1, v2, v3, v4, v5}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;Lcom/nostra13/universalimageloader/core/d/a;)V
 
-    .line 1455
+    .line 1462
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 1469
+    .line 1476
     .end local v0    # "bgUrl":Ljava/lang/String;
     :cond_1
     :goto_0
     return-void
 
-    .line 1457
+    .line 1464
     .restart local v0    # "bgUrl":Ljava/lang/String;
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1458
+    .line 1465
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mProfileBgMask:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1461
+    .line 1468
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 1465
+    .line 1472
     .end local v0    # "bgUrl":Ljava/lang/String;
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1466
+    .line 1473
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mProfileBgMask:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1467
+    .line 1474
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mPersonalProfileBg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
@@ -2850,17 +2837,17 @@
     .locals 2
 
     .prologue
-    .line 841
+    .line 850
     const-string v0, "PREFS_KEY_GUA_COIN_CLICKED_FLAG"
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
 
-    .line 842
+    .line 851
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateGuaCoinReddot()V
 
-    .line 843
+    .line 852
     return-void
 .end method
 
@@ -2868,7 +2855,7 @@
     .locals 4
 
     .prologue
-    .line 1139
+    .line 1148
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
@@ -2877,14 +2864,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 1140
+    .line 1149
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     check-cast v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    .line 1141
+    .line 1150
     .local v1, "mainActivity":Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->isCurrentOnMyPage()Z
 
@@ -2892,7 +2879,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1142
+    .line 1151
     const-string v2, "PREFS_KEY_HAS_WECHAT_SUBSCRIBE_DIALOG_SHOW"
 
     const/4 v3, 0x0
@@ -2901,7 +2888,7 @@
 
     move-result v0
 
-    .line 1143
+    .line 1152
     .local v0, "hasAcquireCourse":Z
     if-nez v0, :cond_0
 
@@ -2913,7 +2900,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1144
+    .line 1153
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
@@ -2928,7 +2915,7 @@
 
     invoke-static {v2, v3}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 1148
+    .line 1157
     .end local v0    # "hasAcquireCourse":Z
     .end local v1    # "mainActivity":Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
     :cond_0
@@ -2936,51 +2923,21 @@
 .end method
 
 .method private onBindWeChatFail()V
-    .locals 3
+    .locals 0
 
     .prologue
-    const/4 v0, 0x1
+    .line 1255
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateBindWeChat()V
 
-    .line 1246
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 1247
-    iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
-
-    .line 1249
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
-
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
-
-    invoke-virtual {v2}, Lcom/kyleduo/switchbutton/SwitchButton;->isChecked()Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    :goto_0
-    invoke-virtual {v1, v0}, Lcom/kyleduo/switchbutton/SwitchButton;->setCheckedImmediately(Z)V
-
-    .line 1251
-    :cond_0
+    .line 1256
     return-void
-
-    .line 1249
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method private requestUsers()V
     .locals 6
 
     .prologue
-    .line 1057
+    .line 1066
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2991,7 +2948,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1058
+    .line 1067
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -3000,7 +2957,7 @@
 
     move-result-object v0
 
-    .line 1059
+    .line 1068
     .local v0, "uid":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getSubscriptions()Lrx/i/b;
 
@@ -3010,17 +2967,17 @@
 
     move-result-object v2
 
-    .line 1060
+    .line 1069
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
-    .line 1061
+    .line 1070
     invoke-interface {v2, v0}, Lcom/jiliguala/niuwa/logic/network/d;->g(Ljava/lang/String;)Lrx/e;
 
     move-result-object v2
 
-    .line 1062
+    .line 1071
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -3029,7 +2986,7 @@
 
     move-result-object v2
 
-    .line 1063
+    .line 1072
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -3042,12 +2999,12 @@
 
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 1064
+    .line 1073
     invoke-virtual {v2, v4, v5, v3}, Lrx/e;->q(JLjava/util/concurrent/TimeUnit;)Lrx/e;
 
     move-result-object v2
 
-    .line 1065
+    .line 1074
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -3060,31 +3017,50 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$11;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 1066
+    .line 1075
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 1059
+    .line 1068
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1095
+    .line 1104
     .end local v0    # "uid":Ljava/lang/String;
     :cond_0
     return-void
 .end method
 
 .method private sendReq()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 1542
+    .line 1549
     :try_start_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mApi:Lcom/tencent/mm/opensdk/openapi/IWXAPI;
+
+    if-nez v1, :cond_0
+
+    .line 1550
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v1
+
+    sget-object v2, Lcom/jiliguala/niuwa/wxapi/WXEntryActivity;->WEI_XIN_LOGIN_APP_ID:Ljava/lang/String;
+
+    invoke-static {v1, v2}, Lcom/tencent/mm/opensdk/openapi/WXAPIFactory;->createWXAPI(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/mm/opensdk/openapi/IWXAPI;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mApi:Lcom/tencent/mm/opensdk/openapi/IWXAPI;
+
+    .line 1552
+    :cond_0
     new-instance v0, Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;
 
     invoke-direct {v0}, Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;-><init>()V
 
-    .line 1543
+    .line 1553
     .local v0, "req":Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
 
@@ -3102,7 +3078,7 @@
 
     iput v1, v0, Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;->scene:I
 
-    .line 1544
+    .line 1554
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
 
     move-result-object v1
@@ -3111,19 +3087,19 @@
 
     iput-object v1, v0, Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;->templateID:Ljava/lang/String;
 
-    .line 1546
+    .line 1556
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mApi:Lcom/tencent/mm/opensdk/openapi/IWXAPI;
 
     invoke-interface {v1, v0}, Lcom/tencent/mm/opensdk/openapi/IWXAPI;->sendReq(Lcom/tencent/mm/opensdk/modelbase/BaseReq;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1550
+    .line 1560
     .end local v0    # "req":Lcom/tencent/mm/opensdk/modelbiz/SubscribeMessage$Req;
     :goto_0
     return-void
 
-    .line 1547
+    .line 1557
     :catch_0
     move-exception v1
 
@@ -3134,7 +3110,7 @@
     .locals 3
 
     .prologue
-    .line 774
+    .line 783
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
 
     move-result-object v0
@@ -3157,7 +3133,7 @@
 
     if-nez v0, :cond_0
 
-    .line 775
+    .line 784
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -3182,7 +3158,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0800e4
+    const v2, 0x7f0800e6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3200,7 +3176,7 @@
 
     invoke-virtual {v0, v1}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 778
+    .line 787
     :cond_0
     return-void
 .end method
@@ -3209,7 +3185,7 @@
     .locals 4
 
     .prologue
-    .line 298
+    .line 299
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -3218,22 +3194,22 @@
 
     move-result-object v0
 
-    .line 299
+    .line 300
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 300
+    .line 301
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
-    .line 301
+    .line 302
     return-void
 .end method
 
@@ -3242,17 +3218,17 @@
     .param p1, "resId"    # I
 
     .prologue
-    .line 1049
+    .line 1058
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1050
+    .line 1059
     invoke-static {p1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 1051
+    .line 1060
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -3261,11 +3237,11 @@
 
     move-result-object v0
 
-    .line 1052
+    .line 1061
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 1054
+    .line 1063
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     return-void
@@ -3276,28 +3252,28 @@
     .param p1, "activity"    # Landroid/app/Activity;
 
     .prologue
-    .line 1502
+    .line 1509
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1503
+    .line 1510
     .local v0, "intent":Landroid/content/Intent;
     const-class v1, Lcom/jiliguala/niuwa/module/message/MessageCenterActivity;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 1504
+    .line 1511
     invoke-virtual {p1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 1505
-    const v1, 0x7f01001d
+    .line 1512
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p1, v1, v2}, Landroid/app/Activity;->overridePendingTransition(II)V
 
-    .line 1506
+    .line 1513
     return-void
 .end method
 
@@ -3307,40 +3283,40 @@
     .param p2, "indexToShow"    # I
 
     .prologue
-    .line 304
+    .line 305
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 305
+    .line 306
     .local v0, "intent":Landroid/content/Intent;
     const-class v1, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 306
+    .line 307
     const-string v1, "KEY_ME_MYSELF"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 307
+    .line 308
     const-string v1, "KEY_INDEX_TO_SHOW"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 308
+    .line 309
     invoke-virtual {p1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 309
-    const v1, 0x7f01001d
+    .line 310
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p1, v1, v2}, Landroid/app/Activity;->overridePendingTransition(II)V
 
-    .line 310
+    .line 311
     return-void
 .end method
 
@@ -3350,28 +3326,28 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 856
+    .line 865
     const-string v1, "NAME_BABY_FLOAT_HIDE"
 
     invoke-static {v1, v3}, Lcom/jiliguala/niuwa/common/util/t;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 857
+    .line 866
     .local v0, "hide":Z
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 858
+    .line 867
     if-nez v0, :cond_1
 
-    .line 859
+    .line 868
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 860
+    .line 869
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
 
     const/high16 v2, 0x41700000    # 15.0f
@@ -3382,12 +3358,12 @@
 
     invoke-direct {p0, v1, v3, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->executeTransaction(Landroid/view/View;II)V
 
-    .line 865
+    .line 874
     :cond_0
     :goto_0
     return-void
 
-    .line 862
+    .line 871
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->stopAnim()V
 
@@ -3400,7 +3376,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 1027
+    .line 1036
     new-instance v2, Landroid/app/Dialog;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -3413,7 +3389,7 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
-    .line 1028
+    .line 1037
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
     invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
@@ -3422,21 +3398,21 @@
 
     invoke-virtual {v2}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
-    .line 1029
+    .line 1038
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
-    const v3, 0x7f0b0167
+    const v3, 0x7f0b016c
 
     invoke-virtual {v2, v3}, Landroid/app/Dialog;->setContentView(I)V
 
-    .line 1031
+    .line 1040
     const/4 v1, -0x2
 
-    .line 1032
+    .line 1041
     .local v1, "width":I
     const/4 v0, -0x2
 
-    .line 1033
+    .line 1042
     .local v0, "height":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
@@ -3446,17 +3422,17 @@
 
     invoke-virtual {v2, v1, v0}, Landroid/view/Window;->setLayout(II)V
 
-    .line 1034
+    .line 1043
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
     invoke-virtual {v2, v5}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 1035
+    .line 1044
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
     invoke-virtual {v2, v5}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 1038
+    .line 1047
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
@@ -3464,11 +3440,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1042
+    .line 1051
     :goto_0
     return-void
 
-    .line 1039
+    .line 1048
     :catch_0
     move-exception v2
 
@@ -3479,7 +3455,7 @@
     .locals 2
 
     .prologue
-    .line 491
+    .line 495
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
@@ -3488,7 +3464,7 @@
 
     move-result-object v0
 
-    .line 492
+    .line 496
     .local v0, "safeModeFragment":Lcom/jiliguala/niuwa/common/widget/c;
     new-instance v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$19;
 
@@ -3496,14 +3472,14 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/c;->a(Lcom/jiliguala/niuwa/common/widget/c$a;)V
 
-    .line 503
+    .line 507
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/c;->b(Landroid/support/v4/app/ag;)V
 
-    .line 504
+    .line 508
     return-void
 .end method
 
@@ -3511,22 +3487,22 @@
     .locals 2
 
     .prologue
-    .line 868
+    .line 877
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
 
     if-eqz v0, :cond_1
 
-    .line 869
+    .line 878
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     if-eqz v0, :cond_0
 
-    .line 870
+    .line 879
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mYtransAnimator:Lcom/nineoldandroids/a/l;
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->b()V
 
-    .line 872
+    .line 881
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->nameingBabyFloatingTv:Landroid/widget/TextView;
 
@@ -3534,8 +3510,50 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 874
+    .line 883
     :cond_1
+    return-void
+.end method
+
+.method private updateBindWeChat()V
+    .locals 3
+
+    .prologue
+    .line 713
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/login/a;->ac()Z
+
+    move-result v0
+
+    .line 714
+    .local v0, "wechatBinded":Z
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
+
+    .line 715
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
+
+    invoke-virtual {v1, v0}, Lcom/kyleduo/switchbutton/SwitchButton;->setCheckedImmediately(Z)V
+
+    .line 716
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBindWeChatSwbtn:Lcom/kyleduo/switchbutton/SwitchButton;
+
+    new-instance v2, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;
+
+    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+
+    invoke-virtual {v1, v2}, Lcom/kyleduo/switchbutton/SwitchButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 724
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
+
+    .line 725
     return-void
 .end method
 
@@ -3543,7 +3561,7 @@
     .locals 22
 
     .prologue
-    .line 910
+    .line 919
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v2
@@ -3552,7 +3570,7 @@
 
     move-result-object v13
 
-    .line 911
+    .line 920
     .local v13, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;>;"
     if-eqz v13, :cond_0
 
@@ -3562,7 +3580,7 @@
 
     if-nez v2, :cond_2
 
-    .line 912
+    .line 921
     :cond_0
     move-object/from16 v0, p0
 
@@ -3572,7 +3590,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 913
+    .line 922
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
@@ -3581,7 +3599,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 914
+    .line 923
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBabyTv:Landroid/view/View;
@@ -3590,7 +3608,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 915
+    .line 924
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -3599,15 +3617,15 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 1024
+    .line 1033
     :cond_1
     return-void
 
-    .line 917
+    .line 926
     :cond_2
     invoke-direct/range {p0 .. p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showNamingBabyFloatingDlg()V
 
-    .line 919
+    .line 928
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAddBabyIv:Landroid/widget/ImageView;
@@ -3616,7 +3634,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 920
+    .line 929
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mNoBabyHolder:Landroid/view/View;
@@ -3625,7 +3643,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 921
+    .line 930
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mBabyTv:Landroid/view/View;
@@ -3634,7 +3652,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 922
+    .line 931
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -3643,7 +3661,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 924
+    .line 933
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastBabyList:Ljava/util/ArrayList;
@@ -3660,20 +3678,20 @@
 
     if-nez v2, :cond_1
 
-    .line 928
+    .line 937
     :cond_3
     move-object/from16 v0, p0
 
     iput-object v13, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastBabyList:Ljava/util/ArrayList;
 
-    .line 930
+    .line 939
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 931
+    .line 940
     new-instance v14, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v2, -0x2
@@ -3682,7 +3700,7 @@
 
     invoke-direct {v14, v2, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 933
+    .line 942
     .local v14, "llp":Landroid/widget/LinearLayout$LayoutParams;
     const/4 v2, 0x0
 
@@ -3702,13 +3720,13 @@
 
     invoke-virtual {v14, v2, v3, v0, v1}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 935
+    .line 944
     if-eqz v13, :cond_1
 
-    .line 936
+    .line 945
     const/4 v12, 0x0
 
-    .line 937
+    .line 946
     .local v12, "index":I
     invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -3727,7 +3745,7 @@
 
     check-cast v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
 
-    .line 938
+    .line 947
     .local v4, "item":Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
     move-object/from16 v0, p0
 
@@ -3747,7 +3765,7 @@
 
     move-result-object v18
 
-    .line 939
+    .line 948
     .local v18, "view":Landroid/view/View;
     const v2, 0x7f090086
 
@@ -3759,9 +3777,9 @@
 
     check-cast v5, Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 940
+    .line 949
     .local v5, "iv":Lcom/makeramen/roundedimageview/RoundedImageView;
-    const v2, 0x7f090569
+    const v2, 0x7f090573
 
     move-object/from16 v0, v18
 
@@ -3769,14 +3787,14 @@
 
     move-result-object v9
 
-    .line 941
+    .line 950
     .local v9, "container":Landroid/view/View;
     const/4 v2, 0x0
 
     invoke-virtual {v9, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 942
-    const v2, 0x7f090378
+    .line 951
+    const v2, 0x7f09037f
 
     move-object/from16 v0, v18
 
@@ -3786,7 +3804,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    .line 943
+    .line 952
     .local v6, "nameTv":Landroid/widget/TextView;
     const v2, 0x7f090046
 
@@ -3798,7 +3816,7 @@
 
     check-cast v7, Landroid/widget/TextView;
 
-    .line 944
+    .line 953
     .local v7, "ageTv":Landroid/widget/TextView;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -3808,41 +3826,41 @@
 
     move-result v10
 
-    .line 945
+    .line 954
     .local v10, "curIndex":I
     if-ne v10, v12, :cond_4
 
-    .line 946
+    .line 955
     move-object/from16 v0, p0
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastIv:Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 947
+    .line 956
     move-object/from16 v0, p0
 
     iput-object v6, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastNameTv:Landroid/widget/TextView;
 
-    .line 948
+    .line 957
     move-object/from16 v0, p0
 
     iput-object v7, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastAgeTv:Landroid/widget/TextView;
 
-    .line 949
+    .line 958
     const/4 v2, 0x1
 
     invoke-virtual {v5, v2}, Lcom/makeramen/roundedimageview/RoundedImageView;->setSelected(Z)V
 
-    .line 950
+    .line 959
     const/4 v2, 0x1
 
     invoke-virtual {v6, v2}, Landroid/widget/TextView;->setSelected(Z)V
 
-    .line 951
+    .line 960
     const/4 v2, 0x1
 
     invoke-virtual {v7, v2}, Landroid/widget/TextView;->setSelected(Z)V
 
-    .line 953
+    .line 962
     :cond_4
     invoke-virtual {v5}, Lcom/makeramen/roundedimageview/RoundedImageView;->getTag()Ljava/lang/Object;
 
@@ -3862,7 +3880,7 @@
 
     if-nez v2, :cond_6
 
-    .line 957
+    .line 966
     :cond_5
     iget-object v2, v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->ava:Ljava/lang/String;
 
@@ -3874,7 +3892,7 @@
 
     iget-object v15, v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->ava:Ljava/lang/String;
 
-    .line 958
+    .line 967
     .local v15, "url":Ljava/lang/String;
     :goto_1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
@@ -3901,12 +3919,12 @@
 
     invoke-virtual {v2, v15, v5, v3, v0}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;Lcom/nostra13/universalimageloader/core/d/a;)V
 
-    .line 986
+    .line 995
     iget-object v2, v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->ava:Ljava/lang/String;
 
     invoke-virtual {v5, v2}, Lcom/makeramen/roundedimageview/RoundedImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 988
+    .line 997
     .end local v15    # "url":Ljava/lang/String;
     :cond_6
     iget-object v2, v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->bd:Ljava/lang/String;
@@ -3915,7 +3933,7 @@
 
     move-result-wide v16
 
-    .line 989
+    .line 998
     .local v16, "time":J
     new-instance v11, Ljava/util/Date;
 
@@ -3923,29 +3941,29 @@
 
     invoke-direct {v11, v0, v1}, Ljava/util/Date;-><init>(J)V
 
-    .line 990
+    .line 999
     .local v11, "date":Ljava/util/Date;
     const/4 v8, 0x0
 
-    .line 991
+    .line 1000
     .local v8, "age":Ljava/lang/String;
     if-eqz v11, :cond_7
 
-    .line 992
+    .line 1001
     invoke-static {v11}, Lcom/jiliguala/niuwa/common/util/d;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 994
+    .line 1003
     :cond_7
     iget-object v2, v4, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->nick:Ljava/lang/String;
 
     invoke-virtual {v6, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 995
+    .line 1004
     invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 996
+    .line 1005
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->childListContainer:Landroid/widget/LinearLayout;
@@ -3954,7 +3972,7 @@
 
     invoke-virtual {v2, v0, v14}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 997
+    .line 1006
     invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -3963,7 +3981,7 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 998
+    .line 1007
     new-instance v2, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;
 
     move-object/from16 v3, p0
@@ -3974,13 +3992,13 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1020
+    .line 1029
     add-int/lit8 v12, v12, 0x1
 
-    .line 1021
+    .line 1030
     goto/16 :goto_0
 
-    .line 957
+    .line 966
     .end local v8    # "age":Ljava/lang/String;
     .end local v11    # "date":Ljava/util/Date;
     .end local v16    # "time":J
@@ -4012,14 +4030,14 @@
     .locals 6
 
     .prologue
-    .line 818
+    .line 827
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 819
+    .line 828
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -4028,11 +4046,11 @@
 
     move-result v0
 
-    .line 820
+    .line 829
     .local v0, "coinNum":I
     if-lez v0, :cond_1
 
-    .line 821
+    .line 830
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinHint:Landroid/widget/TextView;
 
     const v2, 0x7f0f00eb
@@ -4063,13 +4081,13 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 826
+    .line 835
     .end local v0    # "coinNum":I
     :cond_0
     :goto_0
     return-void
 
-    .line 823
+    .line 832
     .restart local v0    # "coinNum":I
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinHint:Landroid/widget/TextView;
@@ -4089,7 +4107,7 @@
     .locals 0
 
     .prologue
-    .line 835
+    .line 844
     return-void
 .end method
 
@@ -4097,7 +4115,7 @@
     .locals 3
 
     .prologue
-    .line 1285
+    .line 1291
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -4106,7 +4124,7 @@
 
     move-result-object v0
 
-    .line 1286
+    .line 1292
     .local v0, "nick":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4114,18 +4132,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 1287
+    .line 1293
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUsersInfoTv:Landroid/widget/TextView;
 
     const v2, 0x7f0f00ac
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 1291
+    .line 1297
     :goto_0
     return-void
 
-    .line 1289
+    .line 1295
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUsersInfoTv:Landroid/widget/TextView;
 
@@ -4138,7 +4156,7 @@
     .locals 2
 
     .prologue
-    .line 846
+    .line 855
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCity:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -4155,12 +4173,12 @@
 
     move-result-object v0
 
-    .line 847
+    .line 856
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->u()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 846
+    .line 855
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -4173,7 +4191,7 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 848
+    .line 857
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCity:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -4186,10 +4204,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 849
+    .line 858
     return-void
 
-    .line 846
+    .line 855
     :cond_1
     const/4 v0, 0x0
 
@@ -4200,7 +4218,7 @@
     .locals 6
 
     .prologue
-    .line 852
+    .line 861
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaId:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
@@ -4231,7 +4249,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 853
+    .line 862
     return-void
 .end method
 
@@ -4239,14 +4257,14 @@
     .locals 5
 
     .prologue
-    .line 1509
+    .line 1516
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1510
+    .line 1517
     invoke-static {}, Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;->getInstance()Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;
 
     move-result-object v0
@@ -4261,17 +4279,17 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->lastTags:Ljava/util/ArrayList;
 
-    .line 1512
+    .line 1519
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mTagContainer:Landroid/widget/LinearLayout;
 
-    .line 1510
+    .line 1517
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/jiliguala/niuwa/module/settings/fragment/UserTagHelper;->updateUserTags(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;Landroid/view/ViewGroup;)V
 
-    .line 1515
+    .line 1522
     :cond_0
     return-void
 .end method
@@ -4280,7 +4298,7 @@
     .locals 3
 
     .prologue
-    .line 781
+    .line 790
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipContainer:Landroid/widget/RelativeLayout;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -4298,7 +4316,7 @@
     :goto_0
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 782
+    .line 791
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -4307,7 +4325,7 @@
 
     move-result-object v0
 
-    .line 783
+    .line 792
     .local v0, "status":Ljava/lang/String;
     const-string v1, "valid"
 
@@ -4317,14 +4335,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 784
+    .line 793
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
 
     const v2, 0x7f0f012e
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 785
+    .line 794
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -4337,18 +4355,18 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 796
+    .line 805
     :goto_1
     return-void
 
-    .line 781
+    .line 790
     .end local v0    # "status":Ljava/lang/String;
     :cond_0
     const/16 v1, 0x8
 
     goto :goto_0
 
-    .line 786
+    .line 795
     .restart local v0    # "status":Ljava/lang/String;
     :cond_1
     const-string v1, "expired"
@@ -4359,14 +4377,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 787
+    .line 796
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
 
     const v2, 0x7f0f012a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 788
+    .line 797
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
 
     const-string v2, ""
@@ -4375,7 +4393,7 @@
 
     goto :goto_1
 
-    .line 789
+    .line 798
     :cond_2
     const-string v1, "empty"
 
@@ -4385,14 +4403,14 @@
 
     if-eqz v1, :cond_3
 
-    .line 790
+    .line 799
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
 
     const v2, 0x7f0f0129
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 791
+    .line 800
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
 
     const-string v2, ""
@@ -4401,7 +4419,7 @@
 
     goto :goto_1
 
-    .line 793
+    .line 802
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipDesc:Landroid/widget/TextView;
 
@@ -4409,7 +4427,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 794
+    .line 803
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mVipValidity:Landroid/widget/TextView;
 
     const-string v2, ""
@@ -4424,58 +4442,46 @@
     .param p1, "isChecked"    # Z
 
     .prologue
-    .line 717
+    .line 729
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 755
+    .line 764
     :goto_0
     return-void
 
-    .line 720
+    .line 732
     :cond_0
-    iget-boolean v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
+    if-eqz p1, :cond_1
 
-    if-nez v3, :cond_1
-
-    .line 721
-    if-eqz p1, :cond_2
-
-    .line 722
+    .line 733
     const/16 v3, 0x1001
 
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->bindWechatNow(I)V
 
-    .line 754
-    :cond_1
-    :goto_1
-    const/4 v3, 0x0
-
-    iput-boolean v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->swBtnReverse:Z
-
     goto :goto_0
 
-    .line 725
-    :cond_2
+    .line 736
+    :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getChildFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v3
 
-    .line 724
+    .line 735
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/widget/d;->a(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/common/widget/d;
 
     move-result-object v2
 
-    .line 726
+    .line 737
     .local v2, "standardExitFragment":Lcom/jiliguala/niuwa/common/widget/d;
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 727
+    .line 738
     .local v1, "bundle":Landroid/os/Bundle;
     const-string v3, "ALERT_TEXT"
 
@@ -4483,66 +4489,66 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 728
+    .line 739
     const-string v3, "CONFIRM_TEXT"
 
     const-string v4, "\u786e\u5b9a"
 
     invoke-virtual {v1, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 729
+    .line 740
     const-string v3, "CANCLE_TEXT"
 
     const-string v4, "\u53d6\u6d88"
 
     invoke-virtual {v1, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 730
+    .line 741
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/widget/d;->isAdded()Z
 
     move-result v3
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_3
 
-    .line 731
+    .line 742
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/widget/d;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 732
+    .line 743
     .local v0, "arguments":Landroid/os/Bundle;
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
-    .line 733
+    .line 744
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    .line 734
+    .line 745
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 739
+    .line 750
     .end local v0    # "arguments":Landroid/os/Bundle;
-    :cond_3
-    :goto_2
+    :cond_2
+    :goto_1
     new-instance v3, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$7;
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$7;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/common/widget/d;->a(Lcom/jiliguala/niuwa/common/widget/d$a;)V
 
-    .line 750
+    .line 761
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getChildFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/common/widget/d;->b(Landroid/support/v4/app/ag;)V
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 737
-    :cond_4
+    .line 748
+    :cond_3
     invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/common/widget/d;->setArguments(Landroid/os/Bundle;)V
 
-    goto :goto_2
+    goto :goto_1
 .end method
 
 
@@ -4551,17 +4557,17 @@
     .locals 1
 
     .prologue
-    .line 1611
+    .line 1621
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
     if-eqz v0, :cond_0
 
-    .line 1612
+    .line 1622
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/d;->b()V
 
-    .line 1615
+    .line 1625
     :cond_0
     return-void
 .end method
@@ -4570,14 +4576,14 @@
     .locals 2
 
     .prologue
-    .line 1518
+    .line 1525
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1519
+    .line 1526
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -4592,7 +4598,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1520
+    .line 1527
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -4603,7 +4609,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showIndicatorRedDot(Z)V
 
-    .line 1523
+    .line 1530
     :cond_0
     return-void
 .end method
@@ -4612,21 +4618,21 @@
     .locals 2
 
     .prologue
-    .line 1526
+    .line 1533
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1527
+    .line 1534
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1528
+    .line 1535
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -4641,7 +4647,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1529
+    .line 1536
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -4652,7 +4658,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showIndicatorRedDot(Z)V
 
-    .line 1532
+    .line 1539
     :cond_0
     return-void
 .end method
@@ -4661,12 +4667,12 @@
     .locals 2
 
     .prologue
-    .line 1577
+    .line 1587
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     if-nez v0, :cond_0
 
-    .line 1578
+    .line 1588
     new-instance v0, Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getContext()Landroid/content/Context;
@@ -4677,19 +4683,19 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
-    .line 1579
+    .line 1589
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->b(Z)V
 
-    .line 1580
+    .line 1590
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/h;->a(Lcom/jiliguala/niuwa/a/b/h$a;)V
 
-    .line 1582
+    .line 1592
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
@@ -4697,14 +4703,14 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->b(Ljava/lang/String;)V
 
-    .line 1583
+    .line 1593
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     const-string v1, "\u4e00\u952e\u9886\u53d6"
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->e(Ljava/lang/String;)V
 
-    .line 1584
+    .line 1594
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mAcquireCourseDialog:Lcom/jiliguala/niuwa/a/b/h;
 
     return-object v0
@@ -4714,12 +4720,12 @@
     .locals 2
 
     .prologue
-    .line 1590
+    .line 1600
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
     if-nez v0, :cond_0
 
-    .line 1591
+    .line 1601
     new-instance v0, Lcom/jiliguala/niuwa/a/b/a;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getContext()Landroid/content/Context;
@@ -4730,26 +4736,26 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
-    .line 1592
+    .line 1602
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
-    const v1, 0x7f08030b
+    const v1, 0x7f080315
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/a;->b(I)V
 
-    .line 1593
+    .line 1603
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/a;->b(Z)V
 
-    .line 1594
+    .line 1604
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/a;->a(Lcom/jiliguala/niuwa/a/b/a$a;)V
 
-    .line 1596
+    .line 1606
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
@@ -4757,7 +4763,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/a;->b(Ljava/lang/String;)V
 
-    .line 1597
+    .line 1607
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->confirmAcquireWechatCourseDialog:Lcom/jiliguala/niuwa/a/b/a;
 
     return-object v0
@@ -4767,39 +4773,41 @@
     .locals 1
 
     .prologue
-    .line 1554
+    .line 1564
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getConfirmAcquireWechatCourseDialog()Lcom/jiliguala/niuwa/a/b/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/a/b/a;->b()V
 
-    .line 1555
+    .line 1565
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->sendReq()V
 
-    .line 1556
+    .line 1566
     return-void
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 4
+    .locals 5
     .param p1, "requestCode"    # I
     .param p2, "resultCode"    # I
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 337
+    const/4 v4, 0x0
+
+    .line 338
     invoke-super {p0, p1, p2, p3}, Lcom/jiliguala/niuwa/common/base/b;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 339
+    .line 340
     sparse-switch p1, :sswitch_data_0
 
-    .line 366
+    .line 370
     :cond_0
     :goto_0
     return-void
 
-    .line 341
+    .line 342
     :sswitch_0
     const v1, 0x9331
 
@@ -4811,7 +4819,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 345
+    .line 346
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -4822,50 +4830,55 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 346
+    .line 347
     .local v0, "intent":Landroid/content/Intent;
     const/high16 v1, 0x34000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 347
+    .line 348
     const-string v1, "ARGUMENT_IS_FROM_LOGOUT"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 348
+    .line 349
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 350
+    .line 351
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
+    .line 354
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScrollview:Landroid/view/View;
+
+    invoke-virtual {v1, v4, v4}, Landroid/view/View;->scrollTo(II)V
+
     goto :goto_0
 
-    .line 358
+    .line 362
     .end local v0    # "intent":Landroid/content/Intent;
     :sswitch_1
     const/4 v1, -0x1
 
     if-ne p2, v1, :cond_0
 
-    .line 359
+    .line 363
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinContainer:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->performClick()Z
 
     goto :goto_0
 
-    .line 363
+    .line 367
     :sswitch_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScanResult:Lcom/jiliguala/niuwa/module/settings/ScanResult;
 
@@ -4873,7 +4886,7 @@
 
     goto :goto_0
 
-    .line 339
+    .line 340
     :sswitch_data_0
     .sparse-switch
         0x8fd -> :sswitch_1
@@ -4887,17 +4900,17 @@
     .locals 1
 
     .prologue
-    .line 1536
+    .line 1543
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getAcquireCourseDialog()Lcom/jiliguala/niuwa/a/b/h;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/a/b/h;->b()V
 
-    .line 1537
+    .line 1544
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->sendReq()V
 
-    .line 1538
+    .line 1545
     return-void
 .end method
 
@@ -4905,13 +4918,13 @@
     .locals 0
 
     .prologue
-    .line 1307
+    .line 1313
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateRegisterTv()V
 
-    .line 1308
+    .line 1314
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 1309
+    .line 1315
     return-void
 .end method
 
@@ -4920,19 +4933,19 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1560
+    .line 1570
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 1573
+    .line 1583
     :cond_0
     :goto_0
     return-void
 
-    .line 1562
+    .line 1572
     :pswitch_0
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
 
@@ -4942,7 +4955,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1563
+    .line 1573
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -4951,7 +4964,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
 
-    .line 1564
+    .line 1574
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ae;->a()Lcom/jiliguala/niuwa/common/util/ae;
 
     move-result-object v1
@@ -4964,11 +4977,11 @@
 
     move-result v0
 
-    .line 1565
+    .line 1575
     .local v0, "hasAuthorized":Z
     if-eqz v0, :cond_1
 
-    .line 1566
+    .line 1576
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getConfirmAcquireWechatCourseDialog()Lcom/jiliguala/niuwa/a/b/a;
 
     move-result-object v1
@@ -4977,7 +4990,7 @@
 
     goto :goto_0
 
-    .line 1568
+    .line 1578
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -4995,7 +5008,7 @@
 
     goto :goto_0
 
-    .line 1560
+    .line 1570
     :pswitch_data_0
     .packed-switch 0x7f090010
         :pswitch_0
@@ -5007,16 +5020,16 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 370
+    .line 374
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/b;->onCreate(Landroid/os/Bundle;)V
 
-    .line 372
+    .line 376
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->addPicEventObserver()V
 
-    .line 373
+    .line 377
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->addEventObserver()V
 
-    .line 375
+    .line 379
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/ScanResult;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -5031,21 +5044,21 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mScanResult:Lcom/jiliguala/niuwa/module/settings/ScanResult;
 
-    .line 376
+    .line 380
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mSwitchBabyListener:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
-    .line 378
+    .line 382
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;-><init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mHandler:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
 
-    .line 381
+    .line 385
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -5058,7 +5071,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mRightMarginOfTag:I
 
-    .line 382
+    .line 386
     return-void
 .end method
 
@@ -5075,11 +5088,11 @@
     .end param
 
     .prologue
-    .line 315
+    .line 316
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 316
-    const v1, 0x7f0b017c
+    .line 317
+    const v1, 0x7f0b0181
 
     const/4 v2, 0x0
 
@@ -5087,11 +5100,11 @@
 
     move-result-object v0
 
-    .line 317
+    .line 318
     .local v0, "view":Landroid/view/View;
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->initUIComponent(Landroid/view/View;)V
 
-    .line 318
+    .line 319
     return-object v0
 .end method
 
@@ -5099,13 +5112,13 @@
     .locals 0
 
     .prologue
-    .line 1178
+    .line 1187
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->cancelAnim()V
 
-    .line 1179
+    .line 1188
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/b;->onDestroy()V
 
-    .line 1184
+    .line 1193
     return-void
 .end method
 
@@ -5114,22 +5127,22 @@
     .param p1, "hidden"    # Z
 
     .prologue
-    .line 1152
+    .line 1161
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/b;->onHiddenChanged(Z)V
 
-    .line 1154
+    .line 1163
     if-nez p1, :cond_0
 
-    .line 1155
+    .line 1164
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->setAcquireCourseImg()V
 
-    .line 1156
+    .line 1165
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->checkIfNeedShowWechatSubscribeIcon()V
 
-    .line 1157
+    .line 1166
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->requestUsers()V
 
-    .line 1159
+    .line 1168
     :cond_0
     return-void
 .end method
@@ -5138,7 +5151,7 @@
     .locals 1
 
     .prologue
-    .line 1301
+    .line 1307
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -5151,12 +5164,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1302
+    .line 1308
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 1304
+    .line 1310
     :cond_0
     return-void
 .end method
@@ -5167,31 +5180,34 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1255
+    .line 1260
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserAvatar()V
 
-    .line 1256
+    .line 1261
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserInfoBg()V
 
-    .line 1257
+    .line 1262
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateRegisterTv()V
 
-    .line 1258
+    .line 1263
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 1259
+    .line 1264
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserTags()V
 
-    .line 1260
+    .line 1265
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserCity()V
 
-    .line 1261
+    .line 1266
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserGuaId()V
 
-    .line 1262
+    .line 1267
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateVip()V
 
-    .line 1263
+    .line 1268
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateBindWeChat()V
+
+    .line 1269
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -5204,7 +5220,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1264
+    .line 1270
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_0
@@ -5217,31 +5233,31 @@
 
     if-eqz v0, :cond_0
 
-    .line 1265
+    .line 1271
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 1267
+    .line 1273
     :cond_0
     iget v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCurClickId:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 1282
+    .line 1288
     :goto_0
     return-void
 
-    .line 1271
+    .line 1277
     :sswitch_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->gotoAddBaby()V
 
-    .line 1272
+    .line 1278
     iput v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCurClickId:I
 
     goto :goto_0
 
-    .line 1276
+    .line 1282
     :sswitch_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
@@ -5249,7 +5265,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1277
+    .line 1283
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -5258,18 +5274,20 @@
 
     invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showMyForum(Landroid/app/Activity;I)V
 
-    .line 1279
+    .line 1285
     :cond_1
     iput v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mCurClickId:I
 
     goto :goto_0
 
-    .line 1267
+    .line 1273
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x7f090044 -> :sswitch_0
-        0x7f09038e -> :sswitch_0
-        0x7f0904c7 -> :sswitch_1
+        0x7f090395 -> :sswitch_0
+        0x7f0904d1 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -5277,7 +5295,7 @@
     .locals 2
 
     .prologue
-    .line 1340
+    .line 1347
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getChildFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v0
@@ -5288,7 +5306,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
-    .line 1341
+    .line 1348
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     if-eqz v0, :cond_1
@@ -5309,7 +5327,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1342
+    .line 1349
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
@@ -5319,7 +5337,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/a/g;->b(Landroid/support/v4/app/ag;)V
 
-    .line 1344
+    .line 1351
     :cond_1
     return-void
 .end method
@@ -5328,9 +5346,9 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f08031a
+    const v2, 0x7f080324
 
-    .line 1312
+    .line 1318
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -5343,33 +5361,36 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1313
+    .line 1319
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateRegisterTv()V
 
-    .line 1314
+    .line 1320
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 1315
+    .line 1321
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserTags()V
 
-    .line 1316
+    .line 1322
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserCity()V
 
-    .line 1317
+    .line 1323
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserGuaId()V
 
-    .line 1318
+    .line 1324
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserInfoBg()V
 
-    .line 1319
+    .line 1325
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateVip()V
 
-    .line 1320
+    .line 1326
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateBindWeChat()V
+
+    .line 1327
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1321
+    .line 1328
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mUserAvaIv:Landroid/widget/ImageView;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -5378,7 +5399,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 1322
+    .line 1329
     return-void
 .end method
 
@@ -5388,12 +5409,12 @@
     .param p2, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 1356
+    .line 1363
     const/4 v0, 0x4
 
     if-ne p1, v0, :cond_0
 
-    .line 1357
+    .line 1364
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/f;-><init>()V
@@ -5404,7 +5425,7 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;Lcom/jiliguala/niuwa/logic/network/f$b;)V
 
-    .line 1414
+    .line 1421
     :cond_0
     return-void
 .end method
@@ -5413,21 +5434,21 @@
     .locals 4
 
     .prologue
-    .line 1100
+    .line 1109
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/b;->onResume()V
 
-    .line 1101
+    .line 1110
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->setAcquireCourseImg()V
 
-    .line 1103
+    .line 1112
     const-string v1, "Other page"
 
     invoke-static {v1}, Lcom/umeng/analytics/MobclickAgent;->a(Ljava/lang/String;)V
 
-    .line 1105
+    .line 1114
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->requestUsers()V
 
-    .line 1107
+    .line 1116
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -5448,7 +5469,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 1118
+    .line 1127
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
@@ -5463,25 +5484,25 @@
 
     if-eqz v1, :cond_1
 
-    .line 1119
+    .line 1128
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDlg:Lcom/jiliguala/niuwa/common/a/g;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/a/g;->dismissAllowingStateLoss()V
 
-    .line 1122
+    .line 1131
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mSocietyViewBg:Landroid/view/View;
 
     if-eqz v1, :cond_2
 
-    .line 1123
+    .line 1132
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mSocietyViewBg:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v3, 0x7f0600fc
+    const v3, 0x7f0600fe
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -5489,17 +5510,17 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 1126
+    .line 1135
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->checkIfNeedShowWechatSubscribeIcon()V
 
-    .line 1128
+    .line 1137
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->needShowAcquireCouseDialog()V
 
-    .line 1130
+    .line 1139
     return-void
 
-    .line 1110
+    .line 1119
     :cond_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
@@ -5507,12 +5528,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 1111
+    .line 1120
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 1112
+    .line 1121
     .local v0, "activity":Landroid/app/Activity;
     if-eqz v0, :cond_0
 
@@ -5522,7 +5543,7 @@
 
     move-object v1, v0
 
-    .line 1113
+    .line 1122
     check-cast v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     move-object v2, v0
@@ -5550,7 +5571,7 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mGuaCoinRedDot:Landroid/widget/ImageView;
 
-    .line 1114
+    .line 1123
     invoke-virtual {v2}, Landroid/widget/ImageView;->getVisibility()I
 
     move-result v2
@@ -5560,13 +5581,13 @@
     :cond_4
     const/4 v2, 0x1
 
-    .line 1113
+    .line 1122
     :goto_1
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showIndicatorRedDot(Z)V
 
     goto :goto_0
 
-    .line 1114
+    .line 1123
     :cond_5
     const/4 v2, 0x0
 
@@ -5577,13 +5598,13 @@
     .locals 0
 
     .prologue
-    .line 1163
+    .line 1172
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/b;->onStart()V
 
-    .line 1165
+    .line 1174
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->showNamingBabyFloatingDlg()V
 
-    .line 1166
+    .line 1175
     return-void
 .end method
 
@@ -5591,18 +5612,18 @@
     .locals 1
 
     .prologue
-    .line 1170
+    .line 1179
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/b;->onStop()V
 
-    .line 1171
+    .line 1180
     const-string v0, "Other page"
 
     invoke-static {v0}, Lcom/umeng/analytics/MobclickAgent;->b(Ljava/lang/String;)V
 
-    .line 1173
+    .line 1182
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->stopAnim()V
 
-    .line 1174
+    .line 1183
     return-void
 .end method
 
@@ -5610,12 +5631,12 @@
     .locals 4
 
     .prologue
-    .line 1325
+    .line 1332
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->progressDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    .line 1326
+    .line 1333
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mHandler:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$15;
@@ -5626,7 +5647,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1333
+    .line 1340
     :cond_0
     return-void
 .end method
@@ -5635,10 +5656,10 @@
     .locals 0
 
     .prologue
-    .line 1336
+    .line 1343
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 1337
+    .line 1344
     return-void
 .end method
 
@@ -5646,22 +5667,22 @@
     .locals 2
 
     .prologue
-    .line 1347
+    .line 1354
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserAvatar()V
 
-    .line 1348
+    .line 1355
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->loadUserInfoBg()V
 
-    .line 1349
+    .line 1356
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateRegisterTv()V
 
-    .line 1350
+    .line 1357
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateChildListUI()V
 
-    .line 1351
+    .line 1358
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateUserTags()V
 
-    .line 1352
+    .line 1359
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mDesc:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
@@ -5674,7 +5695,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1353
+    .line 1360
     return-void
 .end method
 
@@ -5687,10 +5708,10 @@
     .end param
 
     .prologue
-    .line 323
+    .line 324
     invoke-super {p0, p1, p2}, Lcom/jiliguala/niuwa/common/base/b;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 324
+    .line 325
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -5699,7 +5720,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 325
+    .line 326
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -5708,17 +5729,17 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMainActivity:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    .line 326
+    .line 327
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMainActivity:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     iget-boolean v0, v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->shouldRecvMsgShowRedDot:Z
 
     if-eqz v0, :cond_0
 
-    .line 327
+    .line 328
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->changeRedBot()V
 
-    .line 329
+    .line 330
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMainActivity:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
@@ -5726,10 +5747,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 330
+    .line 331
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->changeSettingBot()V
 
-    .line 333
+    .line 334
     :cond_1
     return-void
 .end method
@@ -5739,10 +5760,10 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 1482
+    .line 1489
     if-eqz p1, :cond_1
 
-    .line 1483
+    .line 1490
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mHandler:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
 
     const/16 v2, 0x1002
@@ -5751,37 +5772,37 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1498
+    .line 1505
     :cond_0
     :goto_0
     return-void
 
-    .line 1485
+    .line 1492
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
 
     if-eqz v1, :cond_0
 
-    .line 1486
+    .line 1493
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mFaqRedDot:Landroid/widget/ImageView;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1489
+    .line 1496
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1490
+    .line 1497
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 1491
+    .line 1498
     .local v0, "activity":Landroid/app/Activity;
     if-eqz v0, :cond_0
 
@@ -5789,7 +5810,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1492
+    .line 1499
     check-cast v0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .end local v0    # "activity":Landroid/app/Activity;
@@ -5803,10 +5824,10 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 1472
+    .line 1479
     if-eqz p1, :cond_1
 
-    .line 1473
+    .line 1480
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mHandler:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;
 
     const/16 v1, 0x1000
@@ -5815,18 +5836,18 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$a;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1479
+    .line 1486
     :cond_0
     :goto_0
     return-void
 
-    .line 1475
+    .line 1482
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 1476
+    .line 1483
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->mMessageRedDot:Landroid/widget/ImageView;
 
     const/4 v1, 0x4

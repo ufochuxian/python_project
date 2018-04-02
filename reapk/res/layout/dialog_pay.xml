@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/default_back_ground_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="bottom|center" n1:id="@id/top_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_centerHorizontal="true">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="应付" />
+        <TextView n1:textSize="@dimen/content_xx_large_size" n1:textColor="@color/progress_video_color" n1:id="@id/pay_money" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/pay_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/top_container">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="请选择支付方式" n1:layout_below="@id/top_container" />
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/weixin_container" n1:background="@drawable/list_item_selector_white" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip">
+            <ImageView n1:id="@id/weixin_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/payment_icon_weixin" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="微信支付" n1:layout_toRightOf="@id/weixin_icon" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" />
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/zhifubao_container" n1:background="@drawable/list_item_selector_white" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip">
+            <ImageView n1:id="@id/zhifubao_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/payment_icon_zhifubao" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="支付宝" n1:layout_toRightOf="@id/zhifubao_icon" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

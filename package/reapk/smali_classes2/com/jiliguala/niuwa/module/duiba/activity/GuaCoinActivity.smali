@@ -101,9 +101,9 @@
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/duiba/activity/CreditActivity;->onBackClick()V
 
     .line 216
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/duiba/activity/GuaCoinActivity;->overridePendingTransition(II)V
 
@@ -199,7 +199,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v8, 0x7f090588
+    const v8, 0x7f090592
 
     const/4 v7, 0x0
 
@@ -313,7 +313,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0801aa
+    const v5, 0x7f0801af
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

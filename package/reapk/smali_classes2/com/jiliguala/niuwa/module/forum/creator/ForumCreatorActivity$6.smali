@@ -82,9 +82,9 @@
     .line 202
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity$6;->b:Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;
 
-    const v1, 0x7f010012
+    const v1, 0x7f010013
 
-    const v2, 0x7f01001e
+    const v2, 0x7f010020
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->overridePendingTransition(II)V
 

@@ -30,6 +30,8 @@
 
 
 # instance fields
+.field public audiochannel:Ljava/lang/String;
+
 .field public autopay:Z
 
 .field public branch:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$Branch;
@@ -70,6 +72,8 @@
     .end annotation
 .end field
 
+.field public videointro:Ljava/lang/String;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -88,7 +92,7 @@
     .locals 2
 
     .prologue
-    .line 45
+    .line 49
     const-string v0, "buy1v1"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->buy:Ljava/lang/String;
@@ -104,7 +108,7 @@
     .locals 2
 
     .prologue
-    .line 49
+    .line 53
     const-string v0, "buyroadmap"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->buy:Ljava/lang/String;
@@ -120,7 +124,7 @@
     .locals 2
 
     .prologue
-    .line 67
+    .line 71
     const-string v0, "A"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->plan:Ljava/lang/String;

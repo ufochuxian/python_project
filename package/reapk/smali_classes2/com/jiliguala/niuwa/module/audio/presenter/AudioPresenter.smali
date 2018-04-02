@@ -74,6 +74,8 @@
 
 .field private mPlayBackReceiver:Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;
 
+.field private mPlayCount:I
+
 .field private mPowerManager:Landroid/os/PowerManager;
 
 .field private mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
@@ -119,7 +121,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 140
+    .line 141
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 101
@@ -130,16 +132,16 @@
     .line 113
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
-    .line 118
+    .line 119
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mIsFirstPlay:Z
 
-    .line 138
+    .line 139
     iput v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->errorCounter:I
 
-    .line 141
+    .line 142
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
-    .line 142
+    .line 143
     new-instance v1, Landroid/os/HandlerThread;
 
     const-string v2, "JOB_THREAD"
@@ -148,12 +150,12 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mJobThread:Landroid/os/HandlerThread;
 
-    .line 143
+    .line 144
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mJobThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 144
+    .line 145
     new-instance v1, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mJobThread:Landroid/os/HandlerThread;
@@ -166,38 +168,38 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
-    .line 145
+    .line 146
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->initDownloadReceiver()V
 
-    .line 147
+    .line 148
     new-instance v1, Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;-><init>(Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver$PlayBackInterface;)V
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayBackReceiver:Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;
 
-    .line 148
+    .line 149
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 149
+    .line 150
     .local v0, "filter":Landroid/content/IntentFilter;
     sget-object v1, Lcom/jiliguala/niuwa/module/audio/MediaPlayerService;->ACTION_NAME:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 150
+    .line 151
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayBackReceiver:Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 152
+    .line 153
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
-    .line 153
+    .line 154
     return-void
 .end method
 
@@ -275,7 +277,7 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 317
+    .line 327
     const-string v0, "-1"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -284,16 +286,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 318
+    .line 328
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
-    .line 326
+    .line 336
     :goto_0
     return-void
 
-    .line 319
+    .line 329
     :cond_0
     const-string v0, "1000"
 
@@ -303,14 +305,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 320
+    .line 330
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
     goto :goto_0
 
-    .line 321
+    .line 331
     :cond_1
     const-string v0, "-2"
 
@@ -320,14 +322,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 322
+    .line 332
     const/4 v0, 0x4
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
     goto :goto_0
 
-    .line 324
+    .line 334
     :cond_2
     const/4 v0, 0x1
 
@@ -342,10 +344,10 @@
     .param p2, "lrcUrl"    # Ljava/lang/String;
 
     .prologue
-    .line 1351
+    .line 1380
     invoke-static {p2}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
-    .line 1352
+    .line 1381
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/d/a;->b(Landroid/content/Context;)Ljava/io/File;
@@ -356,19 +358,19 @@
 
     move-result-object v2
 
-    .line 1354
+    .line 1383
     .local v2, "filePath":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1355
+    .line 1384
     .local v0, "dstFile":Ljava/io/File;
     const/4 v4, 0x1
 
     invoke-static {v0, v4}, Lcom/jiliguala/niuwa/common/util/i;->a(Ljava/io/File;Z)Z
 
-    .line 1358
+    .line 1387
     new-instance v3, Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
@@ -377,42 +379,42 @@
 
     invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 1359
+    .line 1388
     .local v3, "lrcDownloadIntent":Landroid/content/Intent;
     sget-object v4, Lcom/jiliguala/niuwa/services/DownloadService;->a:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1360
+    .line 1389
     const-string v4, "type"
 
     const/4 v5, 0x6
 
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1361
+    .line 1390
     const-string v4, "_id"
 
     invoke-virtual {v3, v4, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1362
+    .line 1391
     const-string v4, "url"
 
     invoke-virtual {v3, v4, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1363
+    .line 1392
     const-string v4, "download_type"
 
     const/4 v5, 0x0
 
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1364
+    .line 1393
     const-string v4, "path"
 
     invoke-virtual {v3, v4, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1366
+    .line 1395
     :try_start_0
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
@@ -420,15 +422,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1370
+    .line 1399
     :goto_0
     return-void
 
-    .line 1367
+    .line 1396
     :catch_0
     move-exception v1
 
-    .line 1368
+    .line 1397
     .local v1, "e":Ljava/lang/Exception;
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -440,27 +442,27 @@
     .param p1, "audioItem"    # Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     .prologue
-    .line 1485
+    .line 1514
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1486
+    .line 1515
     const-string v1, "\u4e0b\u8f7d\u5931\u8d25\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc"
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1491
+    .line 1520
     :goto_0
     return-void
 
-    .line 1488
+    .line 1517
     :cond_0
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->_id:Ljava/lang/String;
 
-    .line 1489
+    .line 1518
     .local v0, "id":Ljava/lang/String;
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
 
@@ -487,10 +489,10 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 1462
+    .line 1491
     invoke-static {p2}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
-    .line 1464
+    .line 1493
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/d/a;->f(Landroid/content/Context;)Ljava/io/File;
@@ -501,17 +503,17 @@
 
     move-result-object v2
 
-    .line 1466
+    .line 1495
     .local v2, "filePath":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1467
+    .line 1496
     .local v0, "dstFile":Ljava/io/File;
     invoke-static {v0, v6}, Lcom/jiliguala/niuwa/common/util/i;->a(Ljava/io/File;Z)Z
 
-    .line 1470
+    .line 1499
     new-instance v3, Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
@@ -520,40 +522,40 @@
 
     invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 1471
+    .line 1500
     .local v3, "lrcDownloadIntent":Landroid/content/Intent;
     sget-object v4, Lcom/jiliguala/niuwa/services/DownloadService;->a:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1472
+    .line 1501
     const-string v4, "type"
 
     const/4 v5, 0x6
 
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1473
+    .line 1502
     const-string v4, "_id"
 
     invoke-virtual {v3, v4, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1474
+    .line 1503
     const-string v4, "url"
 
     invoke-virtual {v3, v4, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1475
+    .line 1504
     const-string v4, "path"
 
     invoke-virtual {v3, v4, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1476
+    .line 1505
     const-string v4, "download_type"
 
     invoke-virtual {v3, v4, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1478
+    .line 1507
     :try_start_0
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
@@ -561,15 +563,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1482
+    .line 1511
     :goto_0
     return-void
 
-    .line 1479
+    .line 1508
     :catch_0
     move-exception v1
 
-    .line 1480
+    .line 1509
     .local v1, "e":Ljava/lang/Exception;
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -582,24 +584,24 @@
     .param p2, "bid"    # Ljava/lang/String;
 
     .prologue
-    .line 1159
+    .line 1188
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;
 
     invoke-direct {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1160
+    .line 1189
     .local v1, "favDataEntity":Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1161
+    .line 1190
     .local v2, "json":Ljava/lang/String;
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v0
 
-    .line 1162
+    .line 1191
     .local v0, "body":Lokhttp3/ab;
     return-object v0
 .end method
@@ -624,37 +626,37 @@
     .end annotation
 
     .prologue
-    .line 774
+    .line 803
     .local p4, "speakUrls":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate$SpeakModel;>;"
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;-><init>()V
 
-    .line 775
+    .line 804
     .local v1, "data":Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;
     iput-object p1, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->bid:Ljava/lang/String;
 
-    .line 776
+    .line 805
     iput-object p2, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->courseid:Ljava/lang/String;
 
-    .line 777
+    .line 806
     iput-object p3, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->subtaskid:Ljava/lang/String;
 
-    .line 778
+    .line 807
     iput-object p4, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->speakurl:Ljava/util/ArrayList;
 
-    .line 780
+    .line 809
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 782
+    .line 811
     .local v2, "json":Ljava/lang/String;
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v0
 
-    .line 783
+    .line 812
     .local v0, "body":Lokhttp3/ab;
     return-object v0
 .end method
@@ -663,32 +665,32 @@
     .locals 3
 
     .prologue
-    .line 1373
+    .line 1402
     new-instance v1, Lcom/jiliguala/niuwa/receivers/DownloadReceiver;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/receivers/DownloadReceiver;-><init>(Lcom/jiliguala/niuwa/receivers/DownloadReceiver$a;)V
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mDownloadReceiver:Lcom/jiliguala/niuwa/receivers/DownloadReceiver;
 
-    .line 1374
+    .line 1403
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 1375
+    .line 1404
     .local v0, "filter":Landroid/content/IntentFilter;
     sget-object v1, Lcom/jiliguala/niuwa/services/DownloadService;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 1376
+    .line 1405
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mDownloadReceiver:Lcom/jiliguala/niuwa/receivers/DownloadReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 1377
+    .line 1406
     return-void
 .end method
 
@@ -699,19 +701,19 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 822
+    .line 851
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 837
+    .line 866
     :cond_0
     :goto_0
     return v3
 
-    .line 825
+    .line 854
     :cond_1
     const-string v4, "."
 
@@ -719,13 +721,13 @@
 
     move-result v0
 
-    .line 826
+    .line 855
     .local v0, "dot_index":I
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 827
+    .line 856
     .local v1, "size":I
     const/4 v4, -0x1
 
@@ -735,14 +737,14 @@
 
     if-ge v0, v4, :cond_0
 
-    .line 828
+    .line 857
     add-int/lit8 v4, v0, 0x1
 
     invoke-virtual {p1, v4, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 829
+    .line 858
     .local v2, "suffix":Ljava/lang/String;
     const-string v4, "lrc"
 
@@ -752,12 +754,12 @@
 
     if-eqz v4, :cond_2
 
-    .line 830
+    .line 859
     const/4 v3, 0x1
 
     goto :goto_0
 
-    .line 831
+    .line 860
     :cond_2
     const-string v4, "txt"
 
@@ -777,23 +779,23 @@
     .param p3, "data"    # Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     .prologue
-    .line 1336
+    .line 1365
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1337
+    .line 1366
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onLyricLoadFailed()V
 
-    .line 1346
+    .line 1375
     :goto_0
     return-void
 
-    .line 1341
+    .line 1370
     :cond_0
     invoke-static {p1}, Lcom/jiliguala/niuwa/common/util/i;->a(Ljava/lang/String;)Z
 
@@ -801,12 +803,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 1342
+    .line 1371
     invoke-direct {p0, p2, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->notifyDownloadLyricSucceed(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1344
+    .line 1373
     :cond_1
     iget-object v0, p3, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->_id:Ljava/lang/String;
 
@@ -820,7 +822,7 @@
     .param p1, "id"    # Ljava/lang/String;
 
     .prologue
-    .line 1453
+    .line 1482
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
@@ -835,12 +837,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1454
+    .line 1483
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onLyricLoadFailed()V
 
-    .line 1456
+    .line 1485
     :cond_0
     return-void
 .end method
@@ -857,10 +859,10 @@
 
     const/4 v2, 0x0
 
-    .line 1434
+    .line 1463
     const/4 v0, 0x0
 
-    .line 1435
+    .line 1464
     .local v0, "list":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/common/widget/lyric/b;>;"
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -876,7 +878,7 @@
 
     if-ne v1, v3, :cond_3
 
-    .line 1436
+    .line 1465
     invoke-static {}, Lcom/jiliguala/niuwa/module/audio/DefaultLrcParser;->getInstance()Lcom/jiliguala/niuwa/module/audio/DefaultLrcParser;
 
     move-result-object v1
@@ -885,7 +887,7 @@
 
     move-result-object v0
 
-    .line 1440
+    .line 1469
     :cond_0
     :goto_0
     if-eqz v0, :cond_1
@@ -896,7 +898,7 @@
 
     if-nez v1, :cond_4
 
-    .line 1442
+    .line 1471
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/b;->a()Lcom/jiliguala/niuwa/logic/k/b;
 
@@ -908,12 +910,12 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/k/b;->c(Ljava/lang/String;)V
 
-    .line 1450
+    .line 1479
     :cond_2
     :goto_1
     return-void
 
-    .line 1437
+    .line 1466
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -929,7 +931,7 @@
 
     if-ne v1, v4, :cond_0
 
-    .line 1438
+    .line 1467
     invoke-static {}, Lcom/jiliguala/niuwa/module/audio/DefaultTxtLrcParser;->getInstance()Lcom/jiliguala/niuwa/module/audio/DefaultTxtLrcParser;
 
     move-result-object v1
@@ -940,7 +942,7 @@
 
     goto :goto_0
 
-    .line 1444
+    .line 1473
     :cond_4
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -956,14 +958,14 @@
 
     if-ne v1, v3, :cond_5
 
-    .line 1445
+    .line 1474
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onLyricLoadComplete(Ljava/util/List;)V
 
     goto :goto_1
 
-    .line 1446
+    .line 1475
     :cond_5
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -979,7 +981,7 @@
 
     if-ne v1, v4, :cond_2
 
-    .line 1447
+    .line 1476
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onLyricTxtLoadComplete(Ljava/util/List;)V
@@ -994,14 +996,14 @@
     .prologue
     const/4 v2, 0x3
 
-    .line 258
+    .line 268
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/i/a;->b()V
 
-    .line 260
+    .line 270
     const-string v0, "INVALID_LOCAL"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1024,13 +1026,13 @@
 
     if-nez v0, :cond_2
 
-    .line 262
+    .line 272
     :cond_0
     iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
     if-ne v0, v2, :cond_1
 
-    .line 265
+    .line 275
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
     move-result-object v0
@@ -1041,22 +1043,22 @@
 
     const/4 v2, 0x4
 
-    .line 266
+    .line 276
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/k/c;->a(Ljava/lang/String;I)V
 
-    .line 269
+    .line 279
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->tryPlayOnline(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    .line 304
+    .line 314
     :goto_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 272
+    .line 282
     :cond_2
     iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
@@ -1064,17 +1066,9 @@
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
-    if-nez v0, :cond_4
+    if-eqz v0, :cond_3
 
-    :cond_3
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    .line 273
-    :cond_4
+    .line 283
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
@@ -1085,23 +1079,23 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/g/a;->b(Ljava/lang/String;)V
 
-    .line 277
-    :cond_5
+    .line 287
+    :cond_3
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
     move-result v0
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_4
 
     iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
-    if-ne v0, v2, :cond_7
+    if-ne v0, v2, :cond_5
 
-    .line 280
-    :cond_6
+    .line 290
+    :cond_4
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->playNext()V
 
-    .line 302
+    .line 312
     :goto_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -1109,42 +1103,42 @@
 
     goto :goto_0
 
-    .line 287
-    :cond_7
+    .line 297
+    :cond_5
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->stop()V
 
-    .line 288
+    .line 298
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_6
 
-    .line 291
+    .line 301
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 293
-    :cond_8
+    .line 303
+    :cond_6
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPause()V
 
-    .line 294
+    .line 304
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_7
 
-    .line 297
+    .line 307
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->enableButtons(Z)V
 
-    .line 299
-    :cond_9
+    .line 309
+    :cond_7
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onNetworkUnavailable()V
@@ -1156,7 +1150,7 @@
     .locals 3
 
     .prologue
-    .line 1026
+    .line 1055
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
     move-result-object v1
@@ -1169,22 +1163,22 @@
 
     move-result v0
 
-    .line 1027
+    .line 1056
     .local v0, "status":I
     packed-switch v0, :pswitch_data_0
 
-    .line 1048
+    .line 1077
     :cond_0
     :goto_0
     return-void
 
-    .line 1029
+    .line 1058
     :pswitch_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1030
+    .line 1059
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -1195,7 +1189,7 @@
 
     goto :goto_0
 
-    .line 1037
+    .line 1066
     :pswitch_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1203,7 +1197,7 @@
 
     iput v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->downloadStatus:I
 
-    .line 1038
+    .line 1067
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
     move-result-object v1
@@ -1212,19 +1206,19 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/k/c;->b(Lcom/jiliguala/niuwa/logic/network/json/AbstractResData;)V
 
-    .line 1039
+    .line 1068
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->downloadMusic(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    .line 1040
+    .line 1069
     const-string v1, "\u5df2\u52a0\u5165\u4e0b\u8f7d\u961f\u5217"
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1045
+    .line 1074
     :pswitch_2
     const-string v1, "\u5df2\u52a0\u5165\u4e0b\u8f7d\u961f\u5217"
 
@@ -1232,7 +1226,7 @@
 
     goto :goto_0
 
-    .line 1027
+    .line 1056
     nop
 
     :pswitch_data_0
@@ -1249,7 +1243,7 @@
     .locals 5
 
     .prologue
-    .line 1125
+    .line 1154
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v2
@@ -1258,25 +1252,25 @@
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/k/a;->a(Lcom/jiliguala/niuwa/logic/network/json/AbstractResData;)V
 
-    .line 1126
+    .line 1155
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateFavIcon()V
 
-    .line 1127
+    .line 1156
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v2, :cond_0
 
-    .line 1129
+    .line 1158
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onClickFavThisSong()V
 
-    .line 1131
+    .line 1160
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v1, v2, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->_id:Ljava/lang/String;
 
-    .line 1132
+    .line 1161
     .local v1, "rid":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -1286,7 +1280,7 @@
 
     move-result-object v0
 
-    .line 1133
+    .line 1162
     .local v0, "bid":Ljava/lang/String;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -1298,12 +1292,12 @@
 
     move-result-object v3
 
-    .line 1134
+    .line 1163
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v3
 
-    .line 1135
+    .line 1164
     invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->generateBody(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v4
@@ -1312,7 +1306,7 @@
 
     move-result-object v3
 
-    .line 1136
+    .line 1165
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v4
@@ -1321,7 +1315,7 @@
 
     move-result-object v3
 
-    .line 1137
+    .line 1166
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v4
@@ -1330,7 +1324,7 @@
 
     move-result-object v3
 
-    .line 1138
+    .line 1167
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v4
@@ -1343,15 +1337,15 @@
 
     invoke-direct {v4, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$10;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 1139
+    .line 1168
     invoke-virtual {v3, v4}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v3
 
-    .line 1133
+    .line 1162
     invoke-virtual {v2, v3}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1156
+    .line 1185
     .end local v0    # "bid":Ljava/lang/String;
     .end local v1    # "rid":Ljava/lang/String;
     :cond_0
@@ -1366,17 +1360,17 @@
 
     const/4 v8, 0x0
 
-    .line 637
+    .line 656
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v6, :cond_0
 
-    .line 638
+    .line 657
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v6}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->showLoadingProgress()V
 
-    .line 642
+    .line 661
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
@@ -1388,12 +1382,12 @@
 
     iput-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
-    .line 643
+    .line 662
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-nez v6, :cond_2
 
-    .line 644
+    .line 663
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
@@ -1409,17 +1403,17 @@
     :goto_0
     invoke-virtual {p0, v9, v8, v6}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->doChannelSelectAction(Ljava/lang/String;IZ)V
 
-    .line 704
+    .line 723
     :goto_1
     return-void
 
     :cond_1
     move v6, v8
 
-    .line 644
+    .line 663
     goto :goto_0
 
-    .line 647
+    .line 666
     :cond_2
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1445,7 +1439,7 @@
 
     iput-object v9, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->mAudioPath:Ljava/lang/String;
 
-    .line 649
+    .line 668
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1458,11 +1452,11 @@
 
     iget-object v4, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->mAudioPath:Ljava/lang/String;
 
-    .line 650
+    .line 669
     .local v4, "source":Ljava/lang/String;
     if-nez v4, :cond_3
 
-    .line 651
+    .line 670
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1475,7 +1469,7 @@
 
     iget-object v4, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->link:Ljava/lang/String;
 
-    .line 653
+    .line 672
     :cond_3
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1483,15 +1477,15 @@
 
     if-eqz v6, :cond_4
 
-    .line 655
+    .line 674
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetProgress()V
 
-    .line 656
+    .line 675
     invoke-direct {p0, v4}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->onErrorLogic(Ljava/lang/String;)Z
 
     goto :goto_1
 
-    .line 660
+    .line 679
     :cond_4
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
@@ -1503,26 +1497,26 @@
 
     iput-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mNextPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
-    .line 662
+    .line 681
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-nez v6, :cond_8
 
     const-string v3, ""
 
-    .line 664
+    .line 683
     .local v3, "nextColorStr":Ljava/lang/String;
     :goto_2
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v6, :cond_5
 
-    .line 665
+    .line 684
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v6, v3}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateBackGround(Ljava/lang/String;)V
 
-    .line 668
+    .line 687
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -1539,7 +1533,7 @@
 
     invoke-interface {v6, v9, v10}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateTitleAndArtist(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 670
+    .line 689
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -1558,14 +1552,14 @@
     :goto_4
     invoke-interface {v10, v6, v9}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateCdCover(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 673
+    .line 692
     :cond_5
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateFavIcon()V
 
-    .line 674
+    .line 693
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateDownloadIcon()V
 
-    .line 676
+    .line 695
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1578,7 +1572,7 @@
 
     iget-object v2, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->lrc:Ljava/lang/String;
 
-    .line 677
+    .line 696
     .local v2, "lrcLink":Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1586,7 +1580,7 @@
 
     if-nez v6, :cond_6
 
-    .line 678
+    .line 697
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1601,7 +1595,7 @@
 
     move-result-object v9
 
-    .line 679
+    .line 698
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/x;->l(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
@@ -1612,7 +1606,7 @@
 
     iput-object v9, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->mLrcPath:Ljava/lang/String;
 
-    .line 682
+    .line 701
     :cond_6
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1630,7 +1624,7 @@
 
     move-result v1
 
-    .line 683
+    .line 702
     .local v1, "isLrcFile":Z
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1650,7 +1644,7 @@
 
     if-eqz v6, :cond_b
 
-    .line 684
+    .line 703
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1663,13 +1657,13 @@
 
     iput v8, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioResPart;->lrcmod:I
 
-    .line 690
+    .line 709
     :goto_5
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v6, :cond_7
 
-    .line 691
+    .line 710
     iget-object v7, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -1686,7 +1680,7 @@
 
     invoke-interface {v7, v6}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateMoreLyricBtn(I)V
 
-    .line 694
+    .line 713
     :cond_7
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
@@ -1694,19 +1688,19 @@
 
     invoke-virtual {v6, v7}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 696
+    .line 715
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     invoke-direct {p0, v6}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->sendMobEvent(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    .line 698
+    .line 717
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->meta:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;
 
     iget-object v5, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;->ttl:Ljava/lang/String;
 
-    .line 699
+    .line 718
     .local v5, "ttl":Ljava/lang/String;
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1714,13 +1708,13 @@
 
     iget-object v0, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;->art:Ljava/lang/String;
 
-    .line 702
+    .line 721
     .local v0, "art":Ljava/lang/String;
     invoke-direct {p0, v4, v5, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->play(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
-    .line 662
+    .line 681
     .end local v0    # "art":Ljava/lang/String;
     .end local v1    # "isLrcFile":Z
     .end local v2    # "lrcLink":Ljava/lang/String;
@@ -1735,7 +1729,7 @@
 
     goto/16 :goto_2
 
-    .line 670
+    .line 689
     .restart local v3    # "nextColorStr":Ljava/lang/String;
     :cond_9
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -1755,13 +1749,13 @@
 
     goto/16 :goto_4
 
-    .line 685
+    .line 704
     .restart local v1    # "isLrcFile":Z
     .restart local v2    # "lrcLink":Ljava/lang/String;
     :cond_b
     if-eqz v1, :cond_c
 
-    .line 686
+    .line 705
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v6, v6, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -1776,7 +1770,7 @@
 
     goto :goto_5
 
-    .line 688
+    .line 707
     :cond_c
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -1806,12 +1800,12 @@
 
     const/4 v1, 0x0
 
-    .line 707
+    .line 726
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v2, p1, p2, p3}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setAudioPlayDataSource(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 710
+    .line 729
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v2, :cond_1
@@ -1828,7 +1822,7 @@
 
     if-nez v2, :cond_1
 
-    .line 711
+    .line 730
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     iget-boolean v3, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mIsFirstPlay:Z
@@ -1838,20 +1832,20 @@
     :goto_0
     invoke-virtual {v2, v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->start(Z)V
 
-    .line 716
+    .line 735
     :goto_1
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mIsFirstPlay:Z
 
-    .line 717
+    .line 736
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 711
+    .line 730
     goto :goto_0
 
-    .line 713
+    .line 732
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
@@ -1865,14 +1859,14 @@
     .param p1, "manual"    # Z
 
     .prologue
-    .line 886
+    .line 915
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 887
+    .line 916
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
@@ -1883,27 +1877,27 @@
 
     if-nez v0, :cond_1
 
-    .line 889
+    .line 918
     const v0, 0x7f0f0142
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 890
+    .line 919
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 891
+    .line 920
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 912
+    .line 941
     :cond_0
     :goto_0
     return-void
 
-    .line 893
+    .line 922
     :cond_1
     if-nez p1, :cond_2
 
@@ -1911,18 +1905,18 @@
 
     if-eqz v0, :cond_2
 
-    .line 894
+    .line 923
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->sendProgressTrackerReport()V
 
-    .line 895
+    .line 924
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->play()V
 
-    .line 896
+    .line 925
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetProgress()V
 
     goto :goto_0
 
-    .line 898
+    .line 927
     :cond_2
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
@@ -1934,38 +1928,38 @@
 
     if-nez v0, :cond_3
 
-    .line 899
+    .line 928
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 900
+    .line 929
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onAlreadySwitchToFirst()V
 
     goto :goto_0
 
-    .line 903
+    .line 932
     :cond_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->sendProgressTrackerReport()V
 
-    .line 904
+    .line 933
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetProgress()V
 
-    .line 906
+    .line 935
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/a;->b()V
 
-    .line 907
+    .line 936
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 908
+    .line 937
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onResetLyricView()V
@@ -1977,14 +1971,14 @@
     .locals 2
 
     .prologue
-    .line 396
+    .line 411
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 398
+    .line 413
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mJobThread:Landroid/os/HandlerThread;
 
@@ -1992,11 +1986,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 402
+    .line 417
     :goto_0
     return-void
 
-    .line 399
+    .line 414
     :catch_0
     move-exception v0
 
@@ -2007,12 +2001,12 @@
     .locals 4
 
     .prologue
-    .line 933
+    .line 962
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
 
-    .line 934
+    .line 963
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2021,7 +2015,7 @@
 
     if-nez v0, :cond_1
 
-    .line 935
+    .line 964
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
     move-result-object v0
@@ -2040,12 +2034,12 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/logic/i/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 940
+    .line 969
     :cond_0
     :goto_0
     return-void
 
-    .line 937
+    .line 966
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
@@ -2075,24 +2069,24 @@
     .param p3, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 425
+    .line 440
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 426
+    .line 441
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 456
+    .line 471
     :cond_0
     :goto_0
     return-void
 
-    .line 429
+    .line 444
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -2104,17 +2098,17 @@
 
     move-result-object v1
 
-    .line 430
+    .line 445
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 431
+    .line 446
     invoke-interface {v1, p1, p2, p3}, Lcom/jiliguala/niuwa/logic/network/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
-    .line 432
+    .line 447
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2123,7 +2117,7 @@
 
     move-result-object v1
 
-    .line 433
+    .line 448
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2132,7 +2126,7 @@
 
     move-result-object v1
 
-    .line 434
+    .line 449
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2145,12 +2139,12 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$1;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 435
+    .line 450
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 429
+    .line 444
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -2162,12 +2156,12 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 459
+    .line 474
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 461
+    .line 476
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->getSubscriptions()Lrx/i/b;
@@ -2178,17 +2172,17 @@
 
     move-result-object v1
 
-    .line 462
+    .line 477
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 463
+    .line 478
     invoke-interface {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/d;->c(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
-    .line 464
+    .line 479
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2197,7 +2191,7 @@
 
     move-result-object v1
 
-    .line 465
+    .line 480
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2206,7 +2200,7 @@
 
     move-result-object v1
 
-    .line 466
+    .line 481
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2219,15 +2213,15 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$4;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 467
+    .line 482
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 461
+    .line 476
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 489
+    .line 504
     :cond_0
     return-void
 .end method
@@ -2238,7 +2232,7 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 406
+    .line 421
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2249,7 +2243,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 407
+    .line 422
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -2258,7 +2252,7 @@
 
     move-result-object v0
 
-    .line 409
+    .line 424
     .local v0, "bid":Ljava/lang/String;
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2266,22 +2260,22 @@
 
     if-eqz v1, :cond_0
 
-    .line 410
+    .line 425
     invoke-direct {p0, v0, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->requestAudios(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 422
+    .line 437
     .end local v0    # "bid":Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 412
+    .line 427
     .restart local v0    # "bid":Ljava/lang/String;
     :cond_0
     invoke-direct {p0, v0, p1, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->requestAudio(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 416
+    .line 431
     .end local v0    # "bid":Ljava/lang/String;
     :cond_1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2290,12 +2284,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 417
+    .line 432
     invoke-direct {p0, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->requestAudiosAnonymous(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 419
+    .line 434
     :cond_2
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->requestAudioAnonymous(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2308,24 +2302,24 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 492
+    .line 507
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 493
+    .line 508
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 524
+    .line 539
     :cond_0
     :goto_0
     return-void
 
-    .line 496
+    .line 511
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -2337,17 +2331,17 @@
 
     move-result-object v1
 
-    .line 497
+    .line 512
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 498
+    .line 513
     invoke-interface {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/d;->b(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
-    .line 499
+    .line 514
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2356,7 +2350,7 @@
 
     move-result-object v1
 
-    .line 500
+    .line 515
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2365,7 +2359,7 @@
 
     move-result-object v1
 
-    .line 501
+    .line 516
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2378,12 +2372,12 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$5;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 502
+    .line 517
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 496
+    .line 511
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -2394,12 +2388,12 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 527
+    .line 542
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 528
+    .line 543
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->getSubscriptions()Lrx/i/b;
@@ -2410,17 +2404,17 @@
 
     move-result-object v1
 
-    .line 529
+    .line 544
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 530
+    .line 545
     invoke-interface {v1, p1}, Lcom/jiliguala/niuwa/logic/network/d;->a(Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
-    .line 531
+    .line 546
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2429,7 +2423,7 @@
 
     move-result-object v1
 
-    .line 532
+    .line 547
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -2438,7 +2432,7 @@
 
     move-result-object v1
 
-    .line 533
+    .line 548
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2451,15 +2445,15 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$6;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 534
+    .line 549
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 528
+    .line 543
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 556
+    .line 571
     :cond_0
     return-void
 .end method
@@ -2468,21 +2462,21 @@
     .locals 2
 
     .prologue
-    .line 876
+    .line 905
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeMessages(I)V
 
-    .line 877
+    .line 906
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/16 v1, 0x1001
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 878
+    .line 907
     return-void
 .end method
 
@@ -2492,22 +2486,22 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 847
+    .line 876
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->setRid(Ljava/lang/String;)V
 
-    .line 848
+    .line 877
     const-string v0, "0"
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->setChannelId(Ljava/lang/String;)V
 
-    .line 849
+    .line 878
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->doChannelSelectAction(Ljava/lang/String;IZ)V
 
-    .line 850
+    .line 879
     return-void
 .end method
 
@@ -2516,12 +2510,12 @@
     .param p1, "data"    # Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     .prologue
-    .line 720
+    .line 739
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 721
+    .line 740
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     const-string v1, "Source"
 
@@ -2529,7 +2523,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 722
+    .line 741
     const-string v1, "Media_name"
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->meta:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;
@@ -2538,14 +2532,14 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 723
+    .line 742
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     const-string v2, "Skip"
 
     invoke-static {v1, v2, v0}, Lcom/umeng/analytics/MobclickAgent;->a(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 724
+    .line 743
     return-void
 .end method
 
@@ -2557,7 +2551,7 @@
 
     const/4 v4, 0x1
 
-    .line 584
+    .line 603
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v5
@@ -2566,7 +2560,7 @@
 
     move-result v1
 
-    .line 591
+    .line 610
     .local v1, "networkType":I
     sget-boolean v5, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayChangeToOfflineCancelled:Z
 
@@ -2574,12 +2568,12 @@
 
     if-eq v1, v4, :cond_0
 
-    .line 592
+    .line 611
     invoke-static {}, Lcom/jiliguala/niuwa/logic/db/b;->k()I
 
     move-result v2
 
-    .line 593
+    .line 612
     .local v2, "offlineSize":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
 
@@ -2589,22 +2583,22 @@
 
     if-lez v2, :cond_0
 
-    .line 594
+    .line 613
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v5, :cond_0
 
-    .line 595
+    .line 614
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v4}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->showChangeToOfflineDialog()V
 
-    .line 612
+    .line 631
     .end local v2    # "offlineSize":I
     :goto_0
     return v3
 
-    .line 604
+    .line 623
     :cond_0
     const-string v5, "NONE_WIFI_NOTIFY_ENABLE"
 
@@ -2612,7 +2606,7 @@
 
     move-result v0
 
-    .line 605
+    .line 624
     .local v0, "enabled":Z
     sget-boolean v5, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayNoneWifiEnable:Z
 
@@ -2630,12 +2624,12 @@
 
     if-eq v5, v6, :cond_1
 
-    .line 607
+    .line 626
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v5, :cond_1
 
-    .line 608
+    .line 627
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v4}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->show3GNetStateDialog()V
@@ -2645,7 +2639,7 @@
     :cond_1
     move v3, v4
 
-    .line 612
+    .line 631
     goto :goto_0
 .end method
 
@@ -2658,7 +2652,7 @@
 
     const/4 v2, 0x0
 
-    .line 241
+    .line 251
     if-eqz p1, :cond_0
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -2677,7 +2671,7 @@
 
     if-nez v0, :cond_0
 
-    .line 242
+    .line 252
     sget-object v0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->TAG:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -2688,7 +2682,7 @@
 
     invoke-static {v3, v0, v1}, Lcom/jiliguala/niuwa/common/util/e;->a(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 243
+    .line 253
     const-string v0, "NPE_AUDIO_ITEM"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -2699,7 +2693,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 244
+    .line 254
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2720,11 +2714,11 @@
 
     invoke-direct {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->play(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 254
+    .line 264
     :goto_0
     return-void
 
-    .line 246
+    .line 256
     :cond_0
     iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->errorCounter:I
 
@@ -2732,22 +2726,22 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->errorCounter:I
 
-    .line 247
+    .line 257
     iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->errorCounter:I
 
     if-lt v0, v3, :cond_1
 
-    .line 248
+    .line 258
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->pausePlay()V
 
-    .line 249
+    .line 259
     const v0, 0x7f0f0189
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
     goto :goto_0
 
-    .line 251
+    .line 261
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->playNext()V
 
@@ -2760,22 +2754,22 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 390
+    .line 405
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setMediaPlayerListener(Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver$PlayBackInterface;)V
 
-    .line 391
+    .line 406
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setConnectionListener(Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy$ServiceConnectionListener;)V
 
-    .line 392
+    .line 407
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->stopService()V
 
-    .line 393
+    .line 408
     return-void
 .end method
 
@@ -2783,14 +2777,14 @@
     .locals 2
 
     .prologue
-    .line 559
+    .line 574
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mDownloadReceiver:Lcom/jiliguala/niuwa/receivers/DownloadReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 560
+    .line 575
     return-void
 .end method
 
@@ -2800,7 +2794,7 @@
     .param p2, "status"    # I
 
     .prologue
-    .line 1242
+    .line 1271
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
@@ -2815,17 +2809,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 1243
+    .line 1272
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 1245
+    .line 1274
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateDownloadIcon(I)V
 
-    .line 1248
+    .line 1277
     :cond_0
     return-void
 .end method
@@ -2835,7 +2829,7 @@
     .param p1, "id"    # Ljava/lang/String;
 
     .prologue
-    .line 1226
+    .line 1255
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
@@ -2850,10 +2844,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1227
+    .line 1256
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateFavIcon()V
 
-    .line 1229
+    .line 1258
     :cond_0
     return-void
 .end method
@@ -2864,7 +2858,7 @@
     .locals 3
 
     .prologue
-    .line 329
+    .line 343
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     const-string v1, "power"
@@ -2877,7 +2871,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPowerManager:Landroid/os/PowerManager;
 
-    .line 330
+    .line 344
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPowerManager:Landroid/os/PowerManager;
 
     const v1, 0x2000000a
@@ -2890,12 +2884,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    .line 331
+    .line 345
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    .line 332
+    .line 346
     return-void
 .end method
 
@@ -2905,7 +2899,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 787
+    .line 816
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     if-nez v0, :cond_2
@@ -2915,25 +2909,25 @@
     :goto_0
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
-    .line 788
+    .line 817
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     if-eqz v0, :cond_0
 
-    .line 789
+    .line 818
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setLooping(Z)V
 
-    .line 791
+    .line 820
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_1
 
-    .line 792
+    .line 821
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
@@ -2947,7 +2941,7 @@
     :goto_1
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateLoopBtn(Z)V
 
-    .line 794
+    .line 823
     :cond_1
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
@@ -2958,22 +2952,22 @@
     :goto_2
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 795
+    .line 824
     return-void
 
     :cond_2
     move v0, v1
 
-    .line 787
+    .line 816
     goto :goto_0
 
-    .line 792
+    .line 821
     :cond_3
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     goto :goto_1
 
-    .line 794
+    .line 823
     :cond_4
     const-string v0, "\u5df2\u5207\u6362\u5230\u5217\u8868\u5faa\u73af\u6a21\u5f0f"
 
@@ -2984,10 +2978,10 @@
     .locals 0
 
     .prologue
-    .line 798
+    .line 827
     invoke-static {}, Lcom/jiliguala/niuwa/logic/db/b;->m()V
 
-    .line 799
+    .line 828
     return-void
 .end method
 
@@ -2995,7 +2989,7 @@
     .locals 3
 
     .prologue
-    .line 977
+    .line 1006
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
@@ -3004,8 +2998,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 978
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1007
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -3013,10 +3007,10 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$8;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/t/a/a;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/logic/u/a/a;)V
 
-    .line 989
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1018
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -3024,10 +3018,10 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
 
-    .line 1014
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1043
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -3035,21 +3029,21 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
-    .line 1015
+    .line 1044
     invoke-interface {v2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->getThisFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;Landroid/support/v4/app/ag;)Z
+    invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;Landroid/support/v4/app/ag;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1016
+    .line 1045
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->performDownload()V
 
-    .line 1023
+    .line 1052
     :cond_0
     return-void
 .end method
@@ -3058,12 +3052,12 @@
     .locals 3
 
     .prologue
-    .line 1065
+    .line 1094
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v1, :cond_2
 
-    .line 1066
+    .line 1095
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v1
@@ -3076,11 +3070,11 @@
 
     move-result v0
 
-    .line 1067
+    .line 1096
     .local v0, "isFav":Z
     if-nez v0, :cond_3
 
-    .line 1068
+    .line 1097
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/p;->a()Lcom/jiliguala/niuwa/common/util/p;
 
     move-result-object v1
@@ -3095,44 +3089,44 @@
 
     move-result-object v1
 
-    .line 1069
+    .line 1098
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/p;->e()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 1108
+    .line 1137
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_1
 
-    .line 1109
+    .line 1138
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->showPopFragment(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    .line 1112
+    .line 1141
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->performFavAudio()V
 
-    .line 1121
+    .line 1150
     .end local v0    # "isFav":Z
     :cond_2
     :goto_0
     return-void
 
-    .line 1114
+    .line 1143
     .restart local v0    # "isFav":Z
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_2
 
-    .line 1117
+    .line 1146
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -3149,14 +3143,14 @@
     .param p1, "id"    # Ljava/lang/String;
 
     .prologue
-    .line 1166
+    .line 1195
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v2
 
     invoke-virtual {v2, p1}, Lcom/jiliguala/niuwa/logic/k/a;->c(Ljava/lang/String;)V
 
-    .line 1167
+    .line 1196
     const-string v2, "1000"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
@@ -3167,28 +3161,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 1168
+    .line 1197
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v2
 
     invoke-virtual {v2, p1}, Lcom/jiliguala/niuwa/logic/g/a;->b(Ljava/lang/String;)V
 
-    .line 1170
+    .line 1199
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateFavIcon()V
 
-    .line 1172
+    .line 1201
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v2, :cond_1
 
-    .line 1173
+    .line 1202
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v1, v2, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->_id:Ljava/lang/String;
 
-    .line 1174
+    .line 1203
     .local v1, "rid":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -3198,7 +3192,7 @@
 
     move-result-object v0
 
-    .line 1175
+    .line 1204
     .local v0, "bid":Ljava/lang/String;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -3210,12 +3204,12 @@
 
     move-result-object v3
 
-    .line 1176
+    .line 1205
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v3
 
-    .line 1177
+    .line 1206
     invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->generateBody(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v4
@@ -3224,7 +3218,7 @@
 
     move-result-object v3
 
-    .line 1178
+    .line 1207
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v4
@@ -3233,7 +3227,7 @@
 
     move-result-object v3
 
-    .line 1179
+    .line 1208
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v4
@@ -3242,7 +3236,7 @@
 
     move-result-object v3
 
-    .line 1180
+    .line 1209
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v4
@@ -3255,15 +3249,15 @@
 
     invoke-direct {v4, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$11;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 1181
+    .line 1210
     invoke-virtual {v3, v4}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v3
 
-    .line 1175
+    .line 1204
     invoke-virtual {v2, v3}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1198
+    .line 1227
     .end local v0    # "bid":Ljava/lang/String;
     .end local v1    # "rid":Ljava/lang/String;
     :cond_1
@@ -3274,12 +3268,12 @@
     .locals 2
 
     .prologue
-    .line 1266
+    .line 1295
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 1268
+    .line 1297
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -3291,11 +3285,11 @@
     :goto_0
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->gotoChannelSelect(Ljava/lang/String;)V
 
-    .line 1270
+    .line 1299
     :cond_0
     return-void
 
-    .line 1268
+    .line 1297
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -3313,12 +3307,12 @@
     .param p3, "singleRes"    # Z
 
     .prologue
-    .line 1280
+    .line 1309
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->doChannelSelectAction(Ljava/lang/String;IZZ)V
 
-    .line 1281
+    .line 1310
     return-void
 .end method
 
@@ -3332,12 +3326,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1292
+    .line 1321
     iget v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 1325
+    .line 1354
     :cond_0
     :goto_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
@@ -3348,12 +3342,12 @@
 
     invoke-virtual {v1, p1, v2, p2, p3}, Lcom/jiliguala/niuwa/logic/g/a;->a(Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    .line 1328
+    .line 1357
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_1
 
-    .line 1330
+    .line 1359
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -3365,63 +3359,63 @@
     :goto_1
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateLoopBtn(Z)V
 
-    .line 1332
+    .line 1361
     :cond_1
     return-void
 
-    .line 1294
+    .line 1323
     :pswitch_0
     if-nez p4, :cond_2
 
-    .line 1295
+    .line 1324
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
-    .line 1296
+    .line 1325
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
-    .line 1302
+    .line 1331
     :cond_2
     :goto_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1304
+    .line 1333
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateTitle(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1299
+    .line 1328
     :cond_3
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     goto :goto_2
 
-    .line 1309
+    .line 1338
     :pswitch_1
     if-nez p4, :cond_0
 
-    .line 1310
+    .line 1339
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     goto :goto_0
 
-    .line 1314
+    .line 1343
     :pswitch_2
     if-nez p4, :cond_4
 
-    .line 1315
+    .line 1344
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
-    .line 1317
+    .line 1346
     :cond_4
     sget-object v1, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->CHANNEL_SELECTION_STATE:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -3429,22 +3423,22 @@
 
     goto :goto_0
 
-    .line 1320
+    .line 1349
     :pswitch_3
     if-nez p4, :cond_0
 
-    .line 1321
+    .line 1350
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     goto :goto_0
 
-    .line 1330
+    .line 1359
     :cond_5
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     goto :goto_1
 
-    .line 1292
+    .line 1321
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -3458,12 +3452,12 @@
     .locals 2
 
     .prologue
-    .line 1273
+    .line 1302
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 1275
+    .line 1304
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -3475,11 +3469,11 @@
     :goto_0
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onSearchAction(Ljava/lang/String;)V
 
-    .line 1277
+    .line 1306
     :cond_0
     return-void
 
-    .line 1275
+    .line 1304
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -3494,17 +3488,17 @@
     .locals 6
 
     .prologue
-    .line 1251
+    .line 1280
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v2, :cond_0
 
-    .line 1252
+    .line 1281
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 1253
+    .line 1282
     .local v0, "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "ID"
 
@@ -3514,7 +3508,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1254
+    .line 1283
     const-string v2, "Title"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -3525,22 +3519,22 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1255
+    .line 1284
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
 
     const-string v3, "Listen Share Dialog"
 
-    .line 1256
+    .line 1285
     invoke-virtual {v2, v3, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 1257
+    .line 1286
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v2, :cond_0
 
-    .line 1258
+    .line 1287
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3555,7 +3549,7 @@
 
     move-result-object v3
 
-    .line 1259
+    .line 1288
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/login/a;->N()Ljava/lang/String;
 
     move-result-object v3
@@ -3590,7 +3584,7 @@
 
     move-result-object v1
 
-    .line 1260
+    .line 1289
     .local v1, "shareTitle":Ljava/lang/String;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -3612,7 +3606,7 @@
 
     invoke-interface {v2, v3, v1, v4, v5}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->doShareAction(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1263
+    .line 1292
     .end local v0    # "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     .end local v1    # "shareTitle":Ljava/lang/String;
     :cond_0
@@ -3625,23 +3619,45 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 236
+    .line 246
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->requestAudioResource(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 237
+    .line 247
     return-void
+.end method
+
+.method public isCurPLayModeOffline()Z
+    .locals 2
+
+    .prologue
+    .line 339
+    iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public isCurrentItemFavored()Z
     .locals 2
 
     .prologue
-    .line 1218
+    .line 1247
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
 
-    .line 1219
+    .line 1248
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v0
@@ -3654,7 +3670,7 @@
 
     move-result v0
 
-    .line 1221
+    .line 1250
     :goto_0
     return v0
 
@@ -3668,12 +3684,12 @@
     .locals 1
 
     .prologue
-    .line 622
+    .line 641
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->launchOfflineMode()V
 
-    .line 623
+    .line 642
     return-void
 .end method
 
@@ -3681,15 +3697,15 @@
     .locals 3
 
     .prologue
-    .line 196
+    .line 198
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPause()V
 
-    .line 197
+    .line 199
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->sendProgressTrackerReport()V
 
-    .line 198
+    .line 200
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v1, :cond_0
@@ -3706,12 +3722,12 @@
 
     if-nez v1, :cond_0
 
-    .line 199
+    .line 201
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 200
+    .line 202
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "ID"
 
@@ -3721,7 +3737,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 201
+    .line 203
     const-string v1, "Title"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -3732,7 +3748,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 202
+    .line 204
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -3741,7 +3757,46 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 204
+    .line 206
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
+    invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->isFromRoadMap()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 207
+    invoke-interface {v0}, Ljava/util/Map;->clear()V
+
+    .line 208
+    const-string v1, "Channel"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 209
+    const-string v1, "Name"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->meta:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData$AudioMetaPart;->ttl:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 210
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Song Complete"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 214
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -3752,12 +3807,12 @@
 
     if-nez v1, :cond_1
 
-    .line 205
+    .line 215
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->playNext(Z)V
 
-    .line 207
+    .line 217
     :cond_1
     return-void
 .end method
@@ -3771,14 +3826,14 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1381
+    .line 1410
     packed-switch p3, :pswitch_data_0
 
-    .line 1388
+    .line 1417
     :goto_0
     return-void
 
-    .line 1384
+    .line 1413
     :pswitch_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
@@ -3786,12 +3841,12 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/jiliguala/niuwa/logic/k/c;->a(Ljava/lang/String;I)V
 
-    .line 1385
+    .line 1414
     invoke-direct {p0, p1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateDownloadIconById(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 1381
+    .line 1410
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -3808,15 +3863,15 @@
     .prologue
     const/4 v1, 0x3
 
-    .line 1392
+    .line 1421
     packed-switch p4, :pswitch_data_0
 
-    .line 1408
+    .line 1437
     :cond_0
     :goto_0
     return-void
 
-    .line 1395
+    .line 1424
     :pswitch_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
@@ -3824,25 +3879,25 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/jiliguala/niuwa/logic/k/c;->a(Ljava/lang/String;I)V
 
-    .line 1396
+    .line 1425
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/b;->a()Lcom/jiliguala/niuwa/logic/k/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p3}, Lcom/jiliguala/niuwa/logic/k/b;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1397
+    .line 1426
     invoke-direct {p0, p1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateDownloadIconById(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 1401
+    .line 1430
     :pswitch_1
     invoke-static {p2}, Lcom/jiliguala/niuwa/common/util/x;->o(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 1402
+    .line 1431
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/b;->a()Lcom/jiliguala/niuwa/logic/k/b;
 
     move-result-object v0
@@ -3853,7 +3908,7 @@
 
     invoke-virtual {v0, v1, p3}, Lcom/jiliguala/niuwa/logic/k/b;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1403
+    .line 1432
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
@@ -3874,12 +3929,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1404
+    .line 1433
     invoke-direct {p0, p2, p3}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->notifyDownloadLyricSucceed(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1392
+    .line 1421
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -3897,14 +3952,14 @@
     .prologue
     const/4 v1, 0x4
 
-    .line 1417
+    .line 1446
     packed-switch p3, :pswitch_data_0
 
-    .line 1426
+    .line 1455
     :goto_0
     return-void
 
-    .line 1419
+    .line 1448
     :pswitch_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
@@ -3912,18 +3967,18 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/jiliguala/niuwa/logic/k/c;->a(Ljava/lang/String;I)V
 
-    .line 1420
+    .line 1449
     invoke-direct {p0, p1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->updateDownloadIconById(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 1423
+    .line 1452
     :pswitch_1
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->notifyDownloadLyricFailed(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1417
+    .line 1446
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -3939,7 +3994,7 @@
     .param p4, "progress"    # J
 
     .prologue
-    .line 1413
+    .line 1442
     return-void
 .end method
 
@@ -3950,7 +4005,7 @@
     .param p3, "download_type"    # I
 
     .prologue
-    .line 1431
+    .line 1460
     return-void
 .end method
 
@@ -3961,10 +4016,10 @@
     .param p3, "extra"    # I
 
     .prologue
-    .line 162
+    .line 163
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetProgress()V
 
-    .line 163
+    .line 164
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->onErrorLogic(Ljava/lang/String;)Z
 
     move-result v0
@@ -3976,24 +4031,24 @@
     .locals 2
 
     .prologue
-    .line 223
+    .line 233
     const-string v0, "\u7f51\u7edc\u4e0d\u7ed9\u529b\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 224
+    .line 234
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 225
+    .line 235
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->enableButtons(Z)V
 
-    .line 227
+    .line 237
     :cond_0
     return-void
 .end method
@@ -4004,7 +4059,7 @@
     .prologue
     const/16 v1, 0x1000
 
-    .line 915
+    .line 944
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->isPlaying()Z
@@ -4013,48 +4068,48 @@
 
     if-nez v0, :cond_1
 
-    .line 917
+    .line 946
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->resume()V
 
-    .line 918
+    .line 947
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->recordTrackerStart()V
 
-    .line 919
+    .line 948
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayResume()V
 
-    .line 920
+    .line 949
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 930
+    .line 959
     :cond_0
     :goto_0
     return-void
 
-    .line 923
+    .line 952
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->pause()V
 
-    .line 924
+    .line 953
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/i/a;->c()V
 
-    .line 925
+    .line 954
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPause()V
 
-    .line 926
+    .line 955
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->hasMessages(I)Z
@@ -4063,7 +4118,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 927
+    .line 956
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeMessages(I)V
@@ -4075,10 +4130,10 @@
     .locals 0
 
     .prologue
-    .line 231
+    .line 241
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetToInitialState()V
 
-    .line 232
+    .line 242
     return-void
 .end method
 
@@ -4086,40 +4141,40 @@
     .locals 4
 
     .prologue
-    .line 171
+    .line 172
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 172
+    .line 173
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 174
+    .line 175
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->playRightNow()V
 
-    .line 175
+    .line 176
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayResume()V
 
-    .line 177
+    .line 178
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_1
 
-    .line 178
+    .line 179
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->enableButtons(Z)V
 
-    .line 181
+    .line 182
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
@@ -4133,28 +4188,35 @@
 
     invoke-interface {v0, v2, v3}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPrepared(J)V
 
-    .line 183
+    .line 184
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 185
+    .line 186
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->recordTrackerStart()V
-
-    .line 187
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
-
-    if-eqz v0, :cond_2
 
     .line 188
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
+    if-eqz v0, :cond_2
+
+    .line 189
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->pausePlayOnChannelShow()V
 
-    .line 191
+    .line 192
     :cond_2
+    iget v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayCount:I
+
+    .line 193
     return-void
 .end method
 
@@ -4163,12 +4225,12 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 812
+    .line 841
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_0
 
-    .line 813
+    .line 842
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;->res:Ljava/util/ArrayList;
@@ -4187,17 +4249,17 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 814
+    .line 843
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 815
+    .line 844
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateLyricView(I)V
 
-    .line 819
+    .line 848
     :cond_0
     return-void
 .end method
@@ -4207,7 +4269,7 @@
     .param p1, "chnName"    # Ljava/lang/String;
 
     .prologue
-    .line 213
+    .line 223
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
@@ -4226,12 +4288,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 214
+    .line 224
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateChannelName(Ljava/lang/String;)V
 
-    .line 216
+    .line 226
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->shouldPlayNextWithCheckState()Z
 
@@ -4239,10 +4301,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 217
+    .line 227
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->play()V
 
-    .line 219
+    .line 229
     :cond_1
     return-void
 .end method
@@ -4252,7 +4314,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 807
+    .line 836
     const-string v0, "KEY_PLAY_MODE"
 
     const/4 v1, 0x0
@@ -4263,14 +4325,14 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
-    .line 808
+    .line 837
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/g/a;->b(Landroid/os/Bundle;)V
 
-    .line 809
+    .line 838
     return-void
 .end method
 
@@ -4279,21 +4341,21 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 802
+    .line 831
     const-string v0, "KEY_PLAY_MODE"
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurPlayMode:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 803
+    .line 832
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/g/a;->a(Landroid/os/Bundle;)V
 
-    .line 804
+    .line 833
     return-void
 .end method
 
@@ -4303,23 +4365,37 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 565
+    .line 580
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v1
 
     invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/logic/g/a;->a(Lcom/jiliguala/niuwa/logic/g/d;)V
 
-    .line 570
+    .line 583
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
+    invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->isFromRoadMap()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 587
+    :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
-    .line 571
+    .line 588
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v1
@@ -4328,27 +4404,27 @@
 
     move-result-object v0
 
-    .line 572
+    .line 589
     .local v0, "channelId":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
-    .line 573
+    .line 590
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->setChannelId(Ljava/lang/String;)V
 
-    .line 577
+    .line 596
     .end local v0    # "channelId":Ljava/lang/String;
-    :cond_0
+    :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->shouldPlayNextWithCheckState()Z
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
-    .line 578
+    .line 597
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
@@ -4357,21 +4433,21 @@
 
     move-result v1
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_3
 
     const/4 v1, 0x1
 
     :goto_0
     invoke-virtual {p0, v3, v2, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->doChannelSelectAction(Ljava/lang/String;IZ)V
 
-    .line 580
-    :cond_1
+    .line 599
+    :cond_2
     return-void
 
-    :cond_2
+    :cond_3
     move v1, v2
 
-    .line 578
+    .line 597
     goto :goto_0
 .end method
 
@@ -4379,7 +4455,7 @@
     .locals 0
 
     .prologue
-    .line 628
+    .line 647
     return-void
 .end method
 
@@ -4389,7 +4465,7 @@
     .prologue
     const/16 v1, 0x1000
 
-    .line 954
+    .line 983
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->isPlaying()Z
@@ -4398,24 +4474,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 956
+    .line 985
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->pause()V
 
-    .line 957
+    .line 986
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/i/a;->c()V
 
-    .line 958
+    .line 987
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPause()V
 
-    .line 959
+    .line 988
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->hasMessages(I)Z
@@ -4424,18 +4500,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 960
+    .line 989
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeMessages(I)V
 
-    .line 963
+    .line 992
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayPause()V
 
-    .line 964
+    .line 993
     return-void
 .end method
 
@@ -4445,17 +4521,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 616
+    .line 635
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->reset()V
 
-    .line 618
+    .line 637
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->doChannelSelectAction(Ljava/lang/String;IZ)V
 
-    .line 619
+    .line 638
     return-void
 .end method
 
@@ -4463,15 +4539,15 @@
     .locals 1
 
     .prologue
-    .line 842
+    .line 871
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->sendProgressTrackerReport()V
 
-    .line 843
+    .line 872
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->playNext(Z)V
 
-    .line 844
+    .line 873
     return-void
 .end method
 
@@ -4480,14 +4556,14 @@
     .param p1, "manual"    # Z
 
     .prologue
-    .line 854
+    .line 883
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 855
+    .line 884
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
@@ -4498,56 +4574,56 @@
 
     if-nez v0, :cond_1
 
-    .line 857
+    .line 886
     const v0, 0x7f0f0142
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 858
+    .line 887
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 859
+    .line 888
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 873
+    .line 902
     :cond_0
     :goto_0
     return-void
 
-    .line 862
+    .line 891
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->resetProgress()V
 
-    .line 863
+    .line 892
     if-nez p1, :cond_2
 
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->singleLoop:Z
 
     if-eqz v0, :cond_2
 
-    .line 864
+    .line 893
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->play()V
 
     goto :goto_0
 
-    .line 866
+    .line 895
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_3
 
-    .line 868
+    .line 897
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->enableButtons(Z)V
 
-    .line 870
+    .line 899
     :cond_3
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
@@ -4564,12 +4640,12 @@
     .locals 1
 
     .prologue
-    .line 881
+    .line 910
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->playPrev(Z)V
 
-    .line 882
+    .line 911
     return-void
 .end method
 
@@ -4577,29 +4653,29 @@
     .locals 1
 
     .prologue
-    .line 366
+    .line 381
     new-instance v0, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
-    .line 367
+    .line 382
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setMediaPlayerListener(Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver$PlayBackInterface;)V
 
-    .line 368
+    .line 383
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->setConnectionListener(Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy$ServiceConnectionListener;)V
 
-    .line 369
+    .line 384
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->startAndBindService()V
 
-    .line 370
+    .line 385
     return-void
 .end method
 
@@ -4607,17 +4683,17 @@
     .locals 1
 
     .prologue
-    .line 335
+    .line 349
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     if-eqz v0, :cond_0
 
-    .line 336
+    .line 350
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
-    .line 338
+    .line 352
     :cond_0
     return-void
 .end method
@@ -4626,12 +4702,12 @@
     .locals 3
 
     .prologue
-    .line 1494
+    .line 1523
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
 
-    .line 1495
+    .line 1524
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->getSubscriptions()Lrx/i/b;
@@ -4642,17 +4718,17 @@
 
     move-result-object v1
 
-    .line 1496
+    .line 1525
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 1497
+    .line 1526
     invoke-interface {v1}, Lcom/jiliguala/niuwa/logic/network/d;->b()Lrx/e;
 
     move-result-object v1
 
-    .line 1498
+    .line 1527
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -4661,7 +4737,7 @@
 
     move-result-object v1
 
-    .line 1499
+    .line 1528
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -4670,7 +4746,7 @@
 
     move-result-object v1
 
-    .line 1500
+    .line 1529
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -4683,15 +4759,15 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$2;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 1501
+    .line 1530
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 1495
+    .line 1524
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1520
+    .line 1549
     :cond_0
     return-void
 .end method
@@ -4700,12 +4776,12 @@
     .locals 4
 
     .prologue
-    .line 1524
+    .line 1553
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1525
+    .line 1554
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -4714,7 +4790,7 @@
 
     move-result-object v0
 
-    .line 1526
+    .line 1555
     .local v0, "bid":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4722,13 +4798,13 @@
 
     if-eqz v1, :cond_1
 
-    .line 1554
+    .line 1583
     .end local v0    # "bid":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 1529
+    .line 1558
     .restart local v0    # "bid":Ljava/lang/String;
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -4741,19 +4817,19 @@
 
     move-result-object v2
 
-    .line 1530
+    .line 1559
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
     const-string v3, "1000"
 
-    .line 1531
+    .line 1560
     invoke-interface {v2, v0, v3}, Lcom/jiliguala/niuwa/logic/network/d;->a(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v2
 
-    .line 1532
+    .line 1561
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -4762,7 +4838,7 @@
 
     move-result-object v2
 
-    .line 1533
+    .line 1562
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -4771,7 +4847,7 @@
 
     move-result-object v2
 
-    .line 1534
+    .line 1563
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -4784,12 +4860,12 @@
 
     invoke-direct {v3, p0, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$3;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;Ljava/lang/String;)V
 
-    .line 1535
+    .line 1564
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 1529
+    .line 1558
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -4799,7 +4875,7 @@
     .locals 2
 
     .prologue
-    .line 944
+    .line 973
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->isPlaying()Z
@@ -4808,27 +4884,27 @@
 
     if-nez v0, :cond_0
 
-    .line 945
+    .line 974
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->resume()V
 
-    .line 946
+    .line 975
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->recordTrackerStart()V
 
-    .line 947
+    .line 976
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onPlayResume()V
 
-    .line 948
+    .line 977
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mHandler:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;
 
     const/16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 950
+    .line 979
     :cond_0
     return-void
 .end method
@@ -4838,19 +4914,75 @@
     .param p1, "pos"    # I
 
     .prologue
-    .line 359
+    .line 374
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     if-eqz v0, :cond_0
 
-    .line 360
+    .line 375
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     int-to-long v2, p1
 
     invoke-virtual {v0, v2, v3}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->seek(J)J
 
-    .line 362
+    .line 377
+    :cond_0
+    return-void
+.end method
+
+.method public sendPlayerExit()V
+    .locals 3
+
+    .prologue
+    .line 747
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
+
+    invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->isFromRoadMap()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 748
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 749
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Count"
+
+    iget v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayCount:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 750
+    const-string v1, "Channel"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 751
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Player Exit"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 753
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_0
     return-void
 .end method
@@ -4861,7 +4993,7 @@
     .param p2, "subtaskid"    # Ljava/lang/String;
 
     .prologue
-    .line 737
+    .line 766
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -4870,23 +5002,23 @@
 
     move-result-object v0
 
-    .line 738
+    .line 767
     .local v0, "bid":Ljava/lang/String;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 739
+    .line 768
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 740
+    .line 769
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->showLoadingProgress()V
 
-    .line 742
+    .line 771
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->getSubscriptions()Lrx/i/b;
@@ -4897,14 +5029,14 @@
 
     move-result-object v2
 
-    .line 743
+    .line 772
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 744
+    .line 773
     invoke-direct {p0, v0, p1, p2, v3}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->generateRequestBody(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)Lokhttp3/ab;
 
     move-result-object v3
@@ -4913,7 +5045,7 @@
 
     move-result-object v2
 
-    .line 745
+    .line 774
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -4922,7 +5054,7 @@
 
     move-result-object v2
 
-    .line 746
+    .line 775
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -4931,7 +5063,7 @@
 
     move-result-object v2
 
-    .line 747
+    .line 776
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -4944,15 +5076,15 @@
 
     invoke-direct {v3, p0, p2}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;-><init>(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;Ljava/lang/String;)V
 
-    .line 748
+    .line 777
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 742
+    .line 771
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 770
+    .line 799
     :cond_0
     return-void
 .end method
@@ -4961,12 +5093,12 @@
     .locals 2
 
     .prologue
-    .line 727
+    .line 756
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v0, :cond_1
 
-    .line 729
+    .line 758
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v0, :cond_0
@@ -4979,12 +5111,12 @@
 
     if-nez v0, :cond_0
 
-    .line 730
+    .line 759
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/db/b;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    .line 732
+    .line 761
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/a;->a()Lcom/jiliguala/niuwa/logic/i/a;
 
@@ -4996,7 +5128,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/i/a;->a(Ljava/lang/String;)V
 
-    .line 734
+    .line 763
     :cond_1
     return-void
 .end method
@@ -5006,13 +5138,13 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 312
+    .line 322
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
 
-    .line 313
+    .line 323
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->changePlayMode(Ljava/lang/String;)V
 
-    .line 314
+    .line 324
     return-void
 .end method
 
@@ -5021,10 +5153,10 @@
     .param p1, "rid"    # Ljava/lang/String;
 
     .prologue
-    .line 308
+    .line 318
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mRid:Ljava/lang/String;
 
-    .line 309
+    .line 319
     return-void
 .end method
 
@@ -5032,12 +5164,12 @@
     .locals 1
 
     .prologue
-    .line 967
+    .line 996
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mProxy:Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/audio/MediaPlayerServiceProxy;->stop()V
 
-    .line 968
+    .line 997
     return-void
 .end method
 
@@ -5045,18 +5177,25 @@
     .locals 3
 
     .prologue
-    .line 341
+    .line 355
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v1, :cond_0
 
-    .line 342
+    .line 356
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 343
+    .line 357
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Channel"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mChannel:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 358
     const-string v1, "ID"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
@@ -5065,7 +5204,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 344
+    .line 359
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -5074,7 +5213,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 346
+    .line 361
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_0
     return-void
@@ -5084,25 +5223,25 @@
     .locals 1
 
     .prologue
-    .line 375
+    .line 390
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->quitJobThread()V
 
-    .line 376
+    .line 391
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->unregisterReceiver()V
 
-    .line 377
+    .line 392
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/a;->m()V
 
-    .line 379
+    .line 394
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
-    .line 380
+    .line 395
     return-void
 .end method
 
@@ -5110,17 +5249,17 @@
     .locals 2
 
     .prologue
-    .line 383
+    .line 398
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mPlayBackReceiver:Lcom/jiliguala/niuwa/module/audio/PlayBackReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 384
+    .line 399
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->unRegisterMediaPlayService()V
 
-    .line 385
+    .line 400
     return-void
 .end method
 
@@ -5128,12 +5267,12 @@
     .locals 3
 
     .prologue
-    .line 1232
+    .line 1261
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v1, :cond_0
 
-    .line 1233
+    .line 1262
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
     move-result-object v1
@@ -5146,18 +5285,18 @@
 
     move-result v0
 
-    .line 1234
+    .line 1263
     .local v0, "status":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1236
+    .line 1265
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateDownloadIcon(I)V
 
-    .line 1239
+    .line 1268
     .end local v0    # "status":I
     :cond_0
     return-void
@@ -5167,12 +5306,12 @@
     .locals 3
 
     .prologue
-    .line 1201
+    .line 1230
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
     if-eqz v1, :cond_0
 
-    .line 1202
+    .line 1231
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -5183,7 +5322,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1203
+    .line 1232
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/a;->a()Lcom/jiliguala/niuwa/logic/k/a;
 
     move-result-object v1
@@ -5196,30 +5335,30 @@
 
     move-result v0
 
-    .line 1204
+    .line 1233
     .local v0, "isFav":Z
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1206
+    .line 1235
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateFavIcon(Z)V
 
-    .line 1215
+    .line 1244
     .end local v0    # "isFav":Z
     :cond_0
     :goto_0
     return-void
 
-    .line 1209
+    .line 1238
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     if-eqz v1, :cond_0
 
-    .line 1211
+    .line 1240
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->mAudioView:Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
 
     const/4 v2, 0x0

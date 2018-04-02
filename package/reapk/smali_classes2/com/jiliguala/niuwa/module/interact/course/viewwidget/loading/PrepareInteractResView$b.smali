@@ -30,18 +30,18 @@
     .param p3, "progress"    # J
 
     .prologue
-    .line 837
+    .line 867
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 838
+    .line 868
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;->a:Ljava/lang/String;
 
-    .line 839
+    .line 869
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;->b:Ljava/lang/String;
 
-    .line 840
+    .line 870
     iput-wide p3, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$b;->c:J
 
-    .line 841
+    .line 871
     return-void
 .end method

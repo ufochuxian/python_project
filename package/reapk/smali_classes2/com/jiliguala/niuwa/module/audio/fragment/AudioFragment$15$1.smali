@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     .prologue
-    .line 2101
+    .line 2114
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->a:Lcom/nineoldandroids/a/d;
@@ -46,7 +46,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 2118
+    .line 2131
     return-void
 .end method
 
@@ -55,12 +55,12 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 2112
+    .line 2125
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->a:Lcom/nineoldandroids/a/d;
 
     invoke-virtual {v0, p0}, Lcom/nineoldandroids/a/d;->b(Lcom/nineoldandroids/a/a$a;)V
 
-    .line 2113
+    .line 2126
     return-void
 .end method
 
@@ -69,7 +69,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 2123
+    .line 2136
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 2104
+    .line 2117
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 2105
+    .line 2118
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -102,7 +102,7 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 2106
+    .line 2119
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -125,7 +125,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/View;IZ)V
 
-    .line 2107
+    .line 2120
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15$1;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$15;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -150,6 +150,6 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/View;IZ)V
 
-    .line 2108
+    .line 2121
     return-void
 .end method

@@ -115,7 +115,7 @@
     const/4 v6, 0x0
 
     .line 120
-    const v5, 0x7f09037a
+    const v5, 0x7f090381
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -143,7 +143,7 @@
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 124
-    const v5, 0x7f09034a
+    const v5, 0x7f090351
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -156,7 +156,7 @@
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 126
-    const v5, 0x7f0904c1
+    const v5, 0x7f0904cb
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -422,9 +422,9 @@
     :sswitch_data_0
     .sparse-switch
         0x7f0900fa -> :sswitch_0
-        0x7f09034a -> :sswitch_1
-        0x7f09037a -> :sswitch_3
-        0x7f0904c1 -> :sswitch_2
+        0x7f090351 -> :sswitch_1
+        0x7f090381 -> :sswitch_3
+        0x7f0904cb -> :sswitch_2
     .end sparse-switch
 .end method
 

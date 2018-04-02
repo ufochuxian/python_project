@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     .prologue
-    .line 118
+    .line 119
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -50,10 +50,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 134
+    .line 135
     if-eqz p1, :cond_0
 
-    .line 135
+    .line 136
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$000(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;
@@ -64,7 +64,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;->updateDateSet(Ljava/util/ArrayList;Z)V
 
-    .line 136
+    .line 137
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$000(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;
@@ -73,13 +73,13 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;->notifyDataSetChanged()V
 
-    .line 138
+    .line 139
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$102(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;Z)Z
 
-    .line 139
+    .line 140
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$200(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Landroid/view/View;
@@ -101,10 +101,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 140
+    .line 141
     return-void
 
-    .line 139
+    .line 140
     :cond_1
     const/16 v0, 0x8
 
@@ -115,7 +115,7 @@
     .locals 0
 
     .prologue
-    .line 122
+    .line 123
     return-void
 .end method
 
@@ -126,12 +126,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 128
+    .line 129
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$102(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;Z)Z
 
-    .line 129
+    .line 130
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$200(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Landroid/view/View;
@@ -153,10 +153,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 130
+    .line 131
     return-void
 
-    .line 129
+    .line 130
     :cond_0
     const/16 v0, 0x8
 
@@ -167,7 +167,7 @@
     .locals 0
 
     .prologue
-    .line 118
+    .line 119
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/ForumSets;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$2;->a(Lcom/jiliguala/niuwa/logic/network/json/ForumSets;)V

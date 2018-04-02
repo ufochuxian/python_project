@@ -113,9 +113,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/SettingsActivity;->finish()V
 
     .line 80
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/SettingsActivity;->overridePendingTransition(II)V
     :try_end_0
@@ -255,13 +255,13 @@
 
     .line 64
     .local v0, "transaction":Landroid/support/v4/app/an;
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
-    const v3, 0x7f010012
+    const v3, 0x7f010013
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 

@@ -194,7 +194,7 @@
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonReportDetailTemplate$DataBean;->_id:Ljava/lang/String;
 
-    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -456,7 +456,7 @@
     :cond_1
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v9, 0x7f0b01a2
+    const v9, 0x7f0b01a7
 
     const/4 v10, 0x0
 
@@ -582,7 +582,7 @@
     .prologue
     const/4 v4, 0x0
 
-    const v10, 0x7f0803b8
+    const v10, 0x7f0803c5
 
     const/16 v9, 0x8
 
@@ -657,7 +657,7 @@
     :cond_0
     iget-object v3, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->lessonReportImg:Landroid/widget/ImageView;
 
-    const v5, 0x7f080352
+    const v5, 0x7f08035c
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -758,7 +758,7 @@
     .line 113
     iget-object v3, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$ReportViewHolder;->lessonReportImg:Landroid/widget/ImageView;
 
-    const v5, 0x7f080351
+    const v5, 0x7f08035b
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1159,7 +1159,7 @@
     .line 195
     iget-object v3, v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;->songTitle:Landroid/widget/TextView;
 
-    const v4, 0x7f0803bf
+    const v4, 0x7f0803cc
 
     invoke-direct {p0, v3, v4}, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->setDrableLeft(Landroid/widget/TextView;I)V
 
@@ -1195,7 +1195,7 @@
     .line 199
     iget-object v3, v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter$McB2ReportViewHolder;->songTitle:Landroid/widget/TextView;
 
-    const v4, 0x7f0803bc
+    const v4, 0x7f0803c9
 
     invoke-direct {p0, v3, v4}, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->setDrableLeft(Landroid/widget/TextView;I)V
 
@@ -1237,7 +1237,7 @@
     .line 82
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00f7
+    const v3, 0x7f0b00f8
 
     invoke-static {v2, v3, v1}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1264,7 +1264,7 @@
     .line 85
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00fa
+    const v3, 0x7f0b00fb
 
     invoke-static {v2, v3, v1}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1288,7 +1288,7 @@
     .line 88
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00f8
+    const v3, 0x7f0b00f9
 
     invoke-static {v2, v3, v1}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1312,7 +1312,7 @@
     .line 91
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportDetailAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00f9
+    const v3, 0x7f0b00fa
 
     invoke-static {v2, v3, v1}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 

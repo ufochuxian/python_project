@@ -276,13 +276,13 @@
 
     .line 327
     .local v4, "ft":Landroid/support/v4/app/an;
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
-    const v8, 0x7f01001e
+    const v8, 0x7f010020
 
-    const v9, 0x7f01001d
+    const v9, 0x7f01001f
 
-    const v10, 0x7f01001e
+    const v10, 0x7f010020
 
     invoke-virtual {v4, v7, v8, v9, v10}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -294,7 +294,7 @@
     if-nez v7, :cond_0
 
     .line 332
-    const v7, 0x7f090478
+    const v7, 0x7f090481
 
     sget-object v8, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -849,13 +849,13 @@
 
     .line 417
     .local v3, "ft":Landroid/support/v4/app/an;
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
-    const v7, 0x7f01001e
+    const v7, 0x7f010020
 
-    const v8, 0x7f01001d
+    const v8, 0x7f01001f
 
-    const v9, 0x7f01001e
+    const v9, 0x7f010020
 
     invoke-virtual {v3, v6, v7, v8, v9}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -867,7 +867,7 @@
     if-nez v6, :cond_1
 
     .line 419
-    const v6, 0x7f090478
+    const v6, 0x7f090481
 
     sget-object v7, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -1015,7 +1015,7 @@
 
     .prologue
     .line 87
-    const v2, 0x7f0b00f4
+    const v2, 0x7f0b00f5
 
     const/4 v3, 0x0
 
@@ -1038,7 +1038,7 @@
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 94
-    const v2, 0x7f090595
+    const v2, 0x7f09059f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1053,7 +1053,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 96
-    const v2, 0x7f0902da
+    const v2, 0x7f0902e1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1071,7 +1071,7 @@
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setMode(Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$Mode;)V
 
     .line 98
-    const v2, 0x7f09053c
+    const v2, 0x7f090546
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

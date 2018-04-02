@@ -13,7 +13,7 @@
 
 .field private view2131296406:Landroid/view/View;
 
-.field private view2131297486:Landroid/view/View;
+.field private view2131297496:Landroid/view/View;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .end annotation
 
     .prologue
-    const v4, 0x7f0904ce
+    const v4, 0x7f0904d8
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -34,7 +34,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->target:Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;
 
     .line 31
-    const v1, 0x7f090437
+    const v1, 0x7f09043e
 
     const-string v2, "field \'mRecyclerView\'"
 
@@ -70,7 +70,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;->mShareBtn:Landroid/widget/LinearLayout;
 
     .line 34
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297486:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297496:Landroid/view/View;
 
     .line 35
     new-instance v1, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding$1;
@@ -80,7 +80,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 41
-    const v1, 0x7f0904fd
+    const v1, 0x7f090507
 
     const-string v2, "field \'mSlogan\'"
 
@@ -175,12 +175,12 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;->mSlogan:Landroid/widget/TextView;
 
     .line 71
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297486:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297496:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 72
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297486:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131297496:Landroid/view/View;
 
     .line 73
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment_ViewBinding;->view2131296346:Landroid/view/View;

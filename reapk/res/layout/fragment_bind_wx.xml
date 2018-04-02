@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/top_bar_container" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/back_icon" n1:background="@drawable/nav_icon_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/header_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/top_bar_container">
+        <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/l_icon_mobile" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="注册账号" n1:layout_below="@id/icon" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_gray" n1:gravity="center" n1:id="@id/sub_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/bind_wechat_hint" n1:layout_below="@id/title" n1:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:id="@id/btn_bind_weixin" n1:background="@drawable/btn_round_green_25" n1:paddingLeft="15.0dip" n1:paddingTop="10.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:layout_below="@id/header_container" n1:layout_centerHorizontal="true">
+        <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:src="@drawable/icon_white_weixin" />
+        <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="一键绑定" />
+    </LinearLayout>
+</RelativeLayout>

@@ -3,17 +3,27 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lrx/c/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showUpdateDialog(Landroid/os/Bundle;)V
+    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->addEventObserver()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lrx/c/c",
+        "<",
+        "Ljava/lang/Throwable;",
+        ">;"
+    }
 .end annotation
 
 
@@ -27,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 388
+    .line 1341
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$7;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,20 +47,23 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 1
-    .param p1, "v"    # Landroid/view/View;
+.method public a(Ljava/lang/Throwable;)V
+    .locals 0
+    .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 391
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$7;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 1345
+    return-void
+.end method
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Landroid/app/Dialog;
+.method public synthetic call(Ljava/lang/Object;)V
+    .locals 0
 
-    move-result-object v0
+    .prologue
+    .line 1341
+    check-cast p1, Ljava/lang/Throwable;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$7;->a(Ljava/lang/Throwable;)V
 
-    .line 392
     return-void
 .end method

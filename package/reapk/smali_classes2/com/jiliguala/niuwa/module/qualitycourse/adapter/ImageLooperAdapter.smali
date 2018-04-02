@@ -275,7 +275,7 @@
     .line 54
     iget-object v7, p0, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/ImageLooperAdapter;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0b00e2
+    const v8, 0x7f0b00e3
 
     const/4 v9, 0x0
 
@@ -285,7 +285,7 @@
 
     .line 55
     .local v6, "view":Landroid/view/View;
-    const v7, 0x7f0902fd
+    const v7, 0x7f090304
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -300,7 +300,7 @@
     invoke-virtual {v1, v7}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 57
-    const v7, 0x7f0905e9
+    const v7, 0x7f0905f3
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

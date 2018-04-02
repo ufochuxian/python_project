@@ -75,7 +75,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(II)V
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/p/a;->a(II)V
 
     .line 101
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/splash/SplashActivity$1;->a:Lcom/jiliguala/niuwa/module/splash/SplashActivity;

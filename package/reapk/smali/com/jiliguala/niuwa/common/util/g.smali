@@ -90,7 +90,7 @@
     if-eqz v0, :cond_0
 
     .line 484
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->O()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->Q()I
 
     move-result v0
 
@@ -101,7 +101,7 @@
     return-wide v0
 
     :cond_0
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->N()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->P()I
 
     move-result v0
 
@@ -273,6 +273,7 @@
     .line 527
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 529
     :cond_2
     throw v8
 
@@ -510,8 +511,10 @@
     :goto_2
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 588
     throw v6
 
+    .line 587
     .end local v2    # "fileInputStream":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v3    # "fileInputStream":Ljava/io/FileInputStream;
@@ -633,8 +636,10 @@
     :goto_2
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 609
     throw v5
 
+    .line 608
     .end local v2    # "fileInputStream":Ljava/io/FileInputStream;
     .restart local v1    # "file":Ljava/io/File;
     .restart local v3    # "fileInputStream":Ljava/io/FileInputStream;
@@ -745,7 +750,47 @@
     return-object v0
 .end method
 
-.method private static M()Landroid/util/DisplayMetrics;
+.method public static M()I
+    .locals 2
+
+    .prologue
+    .line 684
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static N()I
+    .locals 2
+
+    .prologue
+    .line 688
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private static O()Landroid/util/DisplayMetrics;
     .locals 1
 
     .prologue
@@ -765,7 +810,7 @@
     return-object v0
 .end method
 
-.method private static N()I
+.method private static P()I
     .locals 9
 
     .prologue
@@ -877,6 +922,7 @@
     .line 463
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 465
     :cond_2
     throw v7
 
@@ -914,7 +960,7 @@
     goto :goto_0
 .end method
 
-.method private static O()I
+.method private static Q()I
     .locals 8
     .annotation build Landroid/annotation/TargetApi;
         value = 0x10
@@ -1868,7 +1914,7 @@
 
     .prologue
     .line 166
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()Landroid/util/DisplayMetrics;
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->O()Landroid/util/DisplayMetrics;
 
     move-result-object v0
 
@@ -1882,7 +1928,7 @@
 
     .prologue
     .line 175
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()Landroid/util/DisplayMetrics;
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->O()Landroid/util/DisplayMetrics;
 
     move-result-object v0
 
@@ -2039,7 +2085,7 @@
 
     .prologue
     .line 227
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()Landroid/util/DisplayMetrics;
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->O()Landroid/util/DisplayMetrics;
 
     move-result-object v0
 

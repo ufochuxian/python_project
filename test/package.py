@@ -36,23 +36,31 @@ channels_app_name_extra2 = "叽里呱啦-儿童英语"  # MXM #VIVOM
 app_name = channels_app_name
 
 channels_release = (
-"OPPOM",
-                    # "SAMSUNGM",
-                    # "YYBA",
-                    #                 "MIM",
-                    #                 "YYBM"
-                    #                 , "HUAWEIM"
-                    #                 , "JLGLWBM"
-                    #                 , "YYBM", "MIM", "BDM", "360M", "WDJM", "UCAPPM", "MXM", "ANZHUOM", "91M"
-                    #                 , "ANZHIM", "LENOVOM", "OPPOM"
-                    #                 , "SGPM", "YYHM", "YOUYIM", "YIYONGHUI", "LIQUM"
-                    #                 , "YOUYUEM", "VIVOM"
-                    #                 , "LEM"
-                    #                 , "CHUIZIM"
-                    #                 ,"SAMSUNGM",
-                    # "weibo1","weibo2","weibo3","weibo4","weibo5","weibo6","weibo7","weibo8","weibo9","weibo10","weibo11","weibo12"
-                    # ,"ZHIHUZ1","UCX","YYBA"
-                    )
+    # "WDJM","360M","HUAWEIM",
+    # "OPPOM",
+    #                     "SAMSUNGM",
+    #                     "YYBA",
+    #                                     "MIM",
+    #                                     "YYBM"
+    #                                     , "HUAWEIM"
+    #                                     , "JLGLWBM"
+    #                                     , "YYBM", "MIM", "BDM", "360M", "WDJM", "UCAPPM", "MXM", "ANZHUOM", "91M"
+    #                                     , "ANZHIM", "LENOVOM", "OPPOM"
+    #                                     , "SGPM", "YYHM", "YOUYIM", "YIYONGHUI", "LIQUM"
+    #                                     , "YOUYUEM", "VIVOM"
+    #                                     , "LEM"
+    #                                     , "CHUIZIM"
+    #                                     ,"SAMSUNGM",
+    #                     "weibo1","weibo2","weibo3","weibo4","weibo5","weibo6","weibo7","weibo8","weibo9","weibo10","weibo11","weibo12"
+    #                     ,"ZHIHUZ1","UCX","YYBA",
+    #     "SM1", "SM2", "SM3", "SM4", "SM5", "SM6", "SM7", "SM8", "SM9", "SM10", "SM11", "SM12", "SM13", "SM14", "SM15",
+    #     "SM16"
+
+    "JRTT",
+    "JRTT1",
+    "JRTT2",
+    "SM1"
+)
 
 
 # onlyfiles = [f for f in listdir(".") if isfile(join(".",f))]
@@ -81,8 +89,8 @@ def change_node_properties(nodelist, kv_map, is_delete=False):
             else:
                 node.set(key, kv_map.get(key))
 
-
-packagePath = '/Users/chen/PycharmProjects/untitled1/package'
+rootPath = os.path.dirname(os.getcwd())
+packagePath = rootPath + '/package'
 sourcePackagePath = packagePath + '/source/'
 reApkPath = packagePath + '/reapk'
 mainfestxmlPath = reApkPath + '/AndroidManifest.xml'

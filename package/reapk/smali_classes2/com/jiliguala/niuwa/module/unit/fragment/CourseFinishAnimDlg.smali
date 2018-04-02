@@ -12,8 +12,6 @@
 
 
 # static fields
-.field private static final DURATION:I = 0x12c
-
 .field private static final FRAGMENT_TAG:Ljava/lang/String;
 
 .field private static final TAG:Ljava/lang/String;
@@ -36,7 +34,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 26
     const-class v0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -45,7 +43,7 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->TAG:Ljava/lang/String;
 
-    .line 32
+    .line 27
     const-class v0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
@@ -61,22 +59,22 @@
     .locals 1
 
     .prologue
-    .line 30
+    .line 25
     invoke-direct {p0}, Landroid/support/v4/app/ac;-><init>()V
 
-    .line 35
+    .line 29
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mHandler:Landroid/os/Handler;
 
-    .line 36
+    .line 30
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->isShowing:Z
 
-    .line 43
+    .line 37
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->showProgress:Z
@@ -89,7 +87,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     .prologue
-    .line 30
+    .line 25
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -100,7 +98,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     .prologue
-    .line 30
+    .line 25
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mIDismissListener:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
     return-object v0
@@ -112,7 +110,7 @@
     .param p1, "x1"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
     .prologue
-    .line 30
+    .line 25
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mIDismissListener:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
     return-object p1
@@ -123,7 +121,7 @@
     .param p0, "fm"    # Landroid/support/v4/app/ag;
 
     .prologue
-    .line 46
+    .line 41
     sget-object v1, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/app/ag;->a(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
@@ -132,17 +130,17 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
-    .line 47
+    .line 42
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     if-nez v0, :cond_0
 
-    .line 48
+    .line 43
     new-instance v0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     .end local v0    # "fragment":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;-><init>()V
 
-    .line 50
+    .line 45
     .restart local v0    # "fragment":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     :cond_0
     return-object v0
@@ -155,17 +153,17 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 90
+    .line 86
     invoke-super {p0, p1}, Landroid/support/v4/app/ac;->onCreate(Landroid/os/Bundle;)V
 
-    .line 91
+    .line 87
     const/4 v0, 0x0
 
     const v1, 0x7f1000b4
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->setStyle(II)V
 
-    .line 94
+    .line 90
     return-void
 .end method
 
@@ -178,19 +176,19 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 125
+    .line 121
     invoke-super {p0, p1}, Landroid/support/v4/app/ac;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 126
+    .line 122
     .local v0, "dialog":Landroid/app/Dialog;
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    .line 127
+    .line 123
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 128
+    .line 124
     return-object v0
 .end method
 
@@ -207,16 +205,16 @@
     .end param
 
     .prologue
-    .line 135
+    .line 131
     const v1, 0x7f0b007e
 
     invoke-virtual {p1, v1, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 136
+    .line 132
     .local v0, "view":Landroid/view/View;
-    const v1, 0x7f0902e6
+    const v1, 0x7f0902ed
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -226,7 +224,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mProgressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
-    .line 137
+    .line 133
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mProgressBar:Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;
 
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->showProgress:Z
@@ -238,7 +236,7 @@
     :goto_0
     invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/common/widget/circleprogressbar/CircleProgressBar;->setVisibility(I)V
 
-    .line 153
+    .line 149
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mHandler:Landroid/os/Handler;
 
     new-instance v2, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;
@@ -249,10 +247,10 @@
 
     invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 165
+    .line 161
     return-object v0
 
-    .line 137
+    .line 133
     :cond_0
     const/16 v1, 0x8
 
@@ -264,15 +262,15 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 71
+    .line 67
     invoke-super {p0, p1}, Landroid/support/v4/app/ac;->onDismiss(Landroid/content/DialogInterface;)V
 
-    .line 72
+    .line 68
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->isShowing:Z
 
-    .line 86
+    .line 82
     return-void
 .end method
 
@@ -280,15 +278,15 @@
     .locals 4
 
     .prologue
-    .line 98
+    .line 94
     invoke-super {p0}, Landroid/support/v4/app/ac;->onStart()V
 
-    .line 99
+    .line 95
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
-    .line 100
+    .line 96
     .local v0, "dlg":Landroid/app/Dialog;
     if-eqz v0, :cond_0
 
@@ -298,14 +296,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 101
+    .line 97
     const/4 v2, -0x2
 
-    .line 102
+    .line 98
     .local v2, "width":I
     const/4 v1, -0x2
 
-    .line 103
+    .line 99
     .local v1, "height":I
     invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -313,14 +311,14 @@
 
     invoke-virtual {v3, v2, v1}, Landroid/view/Window;->setLayout(II)V
 
-    .line 105
+    .line 101
     new-instance v3, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$1;
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$1;-><init>(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;)V
 
     invoke-virtual {v0, v3}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
-    .line 120
+    .line 116
     .end local v1    # "height":I
     .end local v2    # "width":I
     :cond_0
@@ -332,10 +330,10 @@
     .param p1, "IDismissListener"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
     .prologue
-    .line 175
+    .line 172
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->mIDismissListener:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
-    .line 176
+    .line 173
     return-void
 .end method
 
@@ -344,10 +342,10 @@
     .param p1, "showProgress"    # Z
 
     .prologue
-    .line 183
+    .line 180
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->showProgress:Z
 
-    .line 184
+    .line 181
     return-void
 .end method
 
@@ -356,21 +354,21 @@
     .param p1, "fm"    # Landroid/support/v4/app/ag;
 
     .prologue
-    .line 55
+    .line 51
     if-nez p1, :cond_0
 
-    .line 67
+    .line 63
     :goto_0
     return-void
 
-    .line 58
+    .line 54
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Landroid/support/v4/app/ag;->a()Landroid/support/v4/app/an;
 
     move-result-object v0
 
-    .line 59
+    .line 55
     .local v0, "ft":Landroid/support/v4/app/an;
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->isShowing:Z
 
@@ -382,15 +380,15 @@
 
     if-nez v1, :cond_1
 
-    .line 60
+    .line 56
     sget-object v1, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v0, p0, v1}, Landroid/support/v4/app/an;->a(Landroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 61
+    .line 57
     invoke-virtual {v0}, Landroid/support/v4/app/an;->i()I
 
-    .line 63
+    .line 59
     :cond_1
     const/4 v1, 0x1
 
@@ -400,7 +398,7 @@
 
     goto :goto_0
 
-    .line 64
+    .line 60
     .end local v0    # "ft":Landroid/support/v4/app/an;
     :catch_0
     move-exception v1

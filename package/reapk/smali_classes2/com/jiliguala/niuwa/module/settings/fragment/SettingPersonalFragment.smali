@@ -284,7 +284,7 @@
     invoke-virtual {v4, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 292
-    const v4, 0x7f090353
+    const v4, 0x7f09035a
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -312,7 +312,7 @@
 
     .line 296
     .local v3, "type":Ljava/lang/String;
-    const v4, 0x7f090354
+    const v4, 0x7f09035b
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -323,7 +323,7 @@
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->modifyUserPwd:Landroid/widget/TextView;
 
     .line 297
-    const v4, 0x7f090355
+    const v4, 0x7f09035c
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -331,7 +331,7 @@
 
     .line 298
     .local v2, "modifyPwdContainer":Landroid/view/View;
-    const v4, 0x7f09034c
+    const v4, 0x7f090353
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -387,7 +387,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 304
-    const v4, 0x7f090351
+    const v4, 0x7f090358
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -405,7 +405,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 306
-    const v4, 0x7f0902f0
+    const v4, 0x7f0902f7
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -419,7 +419,7 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->updateUserCity()V
 
     .line 308
-    const v4, 0x7f090350
+    const v4, 0x7f090357
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -437,7 +437,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 310
-    const v4, 0x7f090352
+    const v4, 0x7f090359
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -455,7 +455,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 313
-    const v4, 0x7f0905d6
+    const v4, 0x7f0905e0
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -473,7 +473,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 315
-    const v4, 0x7f0905d5
+    const v4, 0x7f0905df
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -491,7 +491,7 @@
     invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/common/widget/CircleImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 318
-    const v4, 0x7f090387
+    const v4, 0x7f09038e
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -505,7 +505,7 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->updateUserNick()V
 
     .line 321
-    const v4, 0x7f090349
+    const v4, 0x7f090350
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -634,7 +634,7 @@
 
     .line 352
     .local v1, "descModifyDlg":Landroid/app/Dialog;
-    const v7, 0x7f0b0147
+    const v7, 0x7f0b014c
 
     invoke-virtual {v1, v7}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -673,7 +673,7 @@
     invoke-virtual {v7, v6, v3}, Landroid/view/Window;->setLayout(II)V
 
     .line 357
-    const v7, 0x7f0905de
+    const v7, 0x7f0905e8
 
     invoke-virtual {v1, v7}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -814,7 +814,7 @@
     .locals 10
 
     .prologue
-    const v9, 0x7f0902ee
+    const v9, 0x7f0902f5
 
     const/4 v8, 0x0
 
@@ -834,7 +834,7 @@
     .line 209
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->locModifyDlg:Landroid/app/Dialog;
 
-    const v6, 0x7f0b0147
+    const v6, 0x7f0b014c
 
     invoke-virtual {v5, v6}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -879,7 +879,7 @@
     .line 214
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->locModifyDlg:Landroid/app/Dialog;
 
-    const v6, 0x7f0905de
+    const v6, 0x7f0905e8
 
     invoke-virtual {v5, v6}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -1050,7 +1050,7 @@
     .prologue
     const v13, 0x7f090156
 
-    const v12, 0x7f090386
+    const v12, 0x7f09038d
 
     const/4 v11, 0x0
 
@@ -1067,7 +1067,7 @@
 
     .line 429
     .local v1, "dialog":Landroid/app/Dialog;
-    const v8, 0x7f0b0147
+    const v8, 0x7f0b014c
 
     invoke-virtual {v1, v8}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -1265,7 +1265,7 @@
     .prologue
     const v9, 0x7f090156
 
-    const v8, 0x7f09041e
+    const v8, 0x7f090425
 
     const/4 v7, 0x0
 
@@ -1285,7 +1285,7 @@
     .line 516
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->locModifyDlg:Landroid/app/Dialog;
 
-    const v5, 0x7f0b0147
+    const v5, 0x7f0b014c
 
     invoke-virtual {v4, v5}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -1315,7 +1315,7 @@
     .line 521
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment;->locModifyDlg:Landroid/app/Dialog;
 
-    const v5, 0x7f0905de
+    const v5, 0x7f0905e8
 
     invoke-virtual {v4, v5}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -1628,7 +1628,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 200
-    const v2, 0x7f0b0128
+    const v2, 0x7f0b012d
 
     invoke-virtual {p1, v2, v1, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

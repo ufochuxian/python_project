@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/jiliguala/niuwa/module/guideview/GuavatarComponent$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showData(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;)V
+    value = Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->showGuavatarGuideView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,25 +18,17 @@
 
 
 # instance fields
-.field final synthetic a:I
-
-.field final synthetic b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
-
-.field final synthetic c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+.field final synthetic a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;ILcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .prologue
-    .line 850
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
-
-    iput p2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:I
-
-    iput-object p3, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
+    .line 515
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,36 +38,43 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 3
-    .param p1, "v"    # Landroid/view/View;
+    .locals 2
+    .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 853
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    .line 518
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    iget v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:I
-
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;I)V
-
-    .line 854
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getContext()Landroid/content/Context;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$300(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/blog/www/guideview/f;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->b:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;
+    if-eqz v0, :cond_0
 
-    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Curatedentry$Content;->tgt:Ljava/lang/String;
+    .line 519
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->c:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$300(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/blog/www/guideview/f;
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->getFragmentManager()Landroid/support/v4/app/ag;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-virtual {v0}, Lcom/blog/www/guideview/f;->a()V
 
-    invoke-static {v0, v1, v2}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;Landroid/support/v4/app/ag;)V
+    .line 521
+    :cond_0
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
-    .line 855
+    move-result-object v0
+
+    const-string v1, "Guavatar Guide Complete"
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+
+    .line 522
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$3;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$400(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
+
+    .line 523
     return-void
 .end method

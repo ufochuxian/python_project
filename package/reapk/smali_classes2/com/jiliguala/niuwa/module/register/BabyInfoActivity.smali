@@ -1393,7 +1393,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f060051
+    const v8, 0x7f060053
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1402,7 +1402,7 @@
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 427
-    const v6, 0x7f090588
+    const v6, 0x7f090592
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

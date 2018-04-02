@@ -411,7 +411,7 @@
     if-eqz v2, :cond_0
 
     .line 542
-    const v2, 0x7f0905c3
+    const v2, 0x7f0905cd
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mCourseFragment:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFragment;
 
@@ -943,9 +943,9 @@
 
     move-result-object v8
 
-    const v9, 0x7f01001d
+    const v9, 0x7f01001f
 
-    const v10, 0x7f010013
+    const v10, 0x7f010014
 
     invoke-virtual {v8, v9, v10}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -980,7 +980,7 @@
     :cond_4
     iget-object v8, v4, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$CourseData;->_id:Ljava/lang/String;
 
-    invoke-static {v8, v6, v0, v9}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v8, v6, v0, v9}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1004,7 +1004,7 @@
 
     iget-object v8, v8, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;->_id:Ljava/lang/String;
 
-    invoke-static {v8}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1014,7 +1014,7 @@
     :cond_6
     iget-object v8, v4, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$CourseData;->_id:Ljava/lang/String;
 
-    invoke-static {v8, v6, v0, v9}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v8, v6, v0, v9}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1349,9 +1349,9 @@
 
     move-result-object v4
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     invoke-virtual {v4, v5, v6}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -1479,7 +1479,7 @@
 
     iget-object v7, v7, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$UnitData;->_id:Ljava/lang/String;
 
-    invoke-static {v7}, Lcom/jiliguala/niuwa/logic/l/e;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7}, Lcom/jiliguala/niuwa/logic/m/e;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1553,9 +1553,9 @@
 
     move-result-object v7
 
-    const v8, 0x7f01001d
+    const v8, 0x7f01001f
 
-    const v9, 0x7f010013
+    const v9, 0x7f010014
 
     invoke-virtual {v7, v8, v9}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -2124,7 +2124,7 @@
     .line 1136
     iget v1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mCurClickId:I
 
-    const v2, 0x7f0904d5
+    const v2, 0x7f0904df
 
     if-ne v1, v2, :cond_0
 
@@ -2182,9 +2182,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -2354,10 +2354,10 @@
     .param p1, "parent"    # Landroid/view/View;
 
     .prologue
-    const v3, 0x7f060058
+    const v3, 0x7f06005a
 
     .line 460
-    const v0, 0x7f09058f
+    const v0, 0x7f090599
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2366,7 +2366,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 461
-    const v0, 0x7f0905c5
+    const v0, 0x7f0905cf
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2382,7 +2382,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 464
-    const v0, 0x7f0905ca
+    const v0, 0x7f0905d4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2404,7 +2404,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mDoneUsers:Landroid/widget/TextView;
 
     .line 466
-    const v0, 0x7f090400
+    const v0, 0x7f090407
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2415,7 +2415,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mCourseProgress:Landroid/widget/TextView;
 
     .line 467
-    const v0, 0x7f0904e4
+    const v0, 0x7f0904ee
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2455,7 +2455,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f060051
+    const v2, 0x7f060053
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3179,7 +3179,7 @@
 
     const/4 v13, 0x0
 
-    const v14, 0x7f08036b
+    const v14, 0x7f080378
 
     const v15, 0x7f0f027d
 
@@ -3211,7 +3211,7 @@
 
     .line 1347
     .local v19, "fragment":Lcom/jiliguala/niuwa/module/course/main/fragment/WeiKeShareFragment;
-    const v2, 0x7f0801f2
+    const v2, 0x7f0801fb
 
     move-object/from16 v0, v19
 
@@ -4869,9 +4869,9 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0904e4 -> :sswitch_1
-        0x7f09058f -> :sswitch_0
-        0x7f0905c5 -> :sswitch_2
+        0x7f0904ee -> :sswitch_1
+        0x7f090599 -> :sswitch_0
+        0x7f0905cf -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -4997,7 +4997,7 @@
 
     .prologue
     .line 404
-    const v0, 0x7f0b0191
+    const v0, 0x7f0b0196
 
     const/4 v1, 0x0
 
@@ -5400,7 +5400,7 @@
     .line 445
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f080401
+    const v1, 0x7f08040e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -6065,7 +6065,7 @@
 
     const/4 v13, 0x0
 
-    const v14, 0x7f08036b
+    const v14, 0x7f080378
 
     const v15, 0x7f0f00b6
 
@@ -6097,7 +6097,7 @@
 
     .line 1413
     .local v18, "fragment":Lcom/jiliguala/niuwa/module/course/main/fragment/UnitShareFragment;
-    const v2, 0x7f0801f2
+    const v2, 0x7f0801fb
 
     move-object/from16 v0, v18
 
@@ -6163,7 +6163,7 @@
     .line 1532
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->mBindWeChatPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
-    const v1, 0x7f080316
+    const v1, 0x7f080320
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->c(I)V
 

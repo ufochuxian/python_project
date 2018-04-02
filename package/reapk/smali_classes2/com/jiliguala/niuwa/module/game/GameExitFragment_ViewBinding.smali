@@ -11,7 +11,7 @@
 
 .field private view2131296749:Landroid/view/View;
 
-.field private view2131297365:Landroid/view/View;
+.field private view2131297372:Landroid/view/View;
 
 
 # direct methods
@@ -50,7 +50,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 34
-    const v1, 0x7f090455
+    const v1, 0x7f09045c
 
     const-string v2, "method \'resume\'"
 
@@ -59,7 +59,7 @@
     move-result-object v0
 
     .line 35
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297365:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297372:Landroid/view/View;
 
     .line 36
     new-instance v1, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding$2;
@@ -108,12 +108,12 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131296749:Landroid/view/View;
 
     .line 53
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297365:Landroid/view/View;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297372:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 54
-    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297365:Landroid/view/View;
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameExitFragment_ViewBinding;->view2131297372:Landroid/view/View;
 
     .line 55
     return-void

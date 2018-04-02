@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/logic/network/f;
 
     .prologue
-    .line 63
+    .line 65
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->a:Ljava/lang/String;
@@ -52,25 +52,25 @@
     .param p1, "qiNiuTokenTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate;
 
     .prologue
-    .line 80
+    .line 82
     if-eqz p1, :cond_0
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate$QiNiuTokenData;
 
     if-eqz v1, :cond_0
 
-    .line 81
+    .line 83
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate$QiNiuTokenData;
 
     iget-object v0, v1, Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate$QiNiuTokenData;->tok:Ljava/lang/String;
 
-    .line 83
+    .line 85
     .local v0, "token":Ljava/lang/String;
-    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->a:Lcom/qiniu/auth/Authorizer;
+    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->b:Lcom/qiniu/auth/Authorizer;
 
     invoke-virtual {v1, v0}, Lcom/qiniu/auth/Authorizer;->setUploadToken(Ljava/lang/String;)V
 
-    .line 85
+    .line 87
     .end local v0    # "token":Ljava/lang/String;
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
@@ -79,7 +79,7 @@
 
     invoke-static {v1, v2}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;Ljava/lang/String;)V
 
-    .line 86
+    .line 88
     return-void
 .end method
 
@@ -87,7 +87,7 @@
     .locals 1
 
     .prologue
-    .line 66
+    .line 68
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;)Lrx/i/b;
@@ -96,7 +96,7 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/w;->a(Lrx/m;)V
 
-    .line 67
+    .line 69
     return-void
 .end method
 
@@ -105,7 +105,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 71
+    .line 73
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;)Lrx/i/b;
@@ -114,7 +114,7 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/w;->a(Lrx/m;)V
 
-    .line 72
+    .line 74
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -123,7 +123,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 73
+    .line 75
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -132,14 +132,14 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/logic/network/f$b;->onFailed()V
 
-    .line 74
+    .line 76
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$1;->b:Lcom/jiliguala/niuwa/logic/network/f;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;Lcom/jiliguala/niuwa/logic/network/f$b;)Lcom/jiliguala/niuwa/logic/network/f$b;
 
-    .line 76
+    .line 78
     :cond_0
     return-void
 .end method
@@ -148,7 +148,7 @@
     .locals 0
 
     .prologue
-    .line 63
+    .line 65
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/logic/network/f$1;->a(Lcom/jiliguala/niuwa/logic/network/json/QiNiuTokenTemplate;)V

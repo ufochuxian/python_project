@@ -48,9 +48,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/PersonalInfoPageActivity;->finish()V
 
     .line 45
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/PersonalInfoPageActivity;->overridePendingTransition(II)V
 

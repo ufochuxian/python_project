@@ -11,13 +11,13 @@
 
 .field private view2131296406:Landroid/view/View;
 
-.field private view2131297225:Landroid/view/View;
+.field private view2131297232:Landroid/view/View;
 
-.field private view2131297501:Landroid/view/View;
+.field private view2131297511:Landroid/view/View;
 
-.field private view2131297506:Landroid/view/View;
+.field private view2131297516:Landroid/view/View;
 
-.field private view2131297810:Landroid/view/View;
+.field private view2131297820:Landroid/view/View;
 
 
 # direct methods
@@ -91,7 +91,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 49
-    const v1, 0x7f0902c2
+    const v1, 0x7f0902c8
 
     const-string v2, "field \'lessonIcon\'"
 
@@ -106,7 +106,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity;->lessonIcon:Landroid/widget/ImageView;
 
     .line 50
-    const v1, 0x7f0904e5
+    const v1, 0x7f0904ef
 
     const-string v2, "field \'mShareTxt\'"
 
@@ -121,7 +121,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity;->mShareTxt:Landroid/widget/TextView;
 
     .line 51
-    const v1, 0x7f0903c9
+    const v1, 0x7f0903d0
 
     const-string v2, "method \'goShare\'"
 
@@ -130,7 +130,7 @@
     move-result-object v0
 
     .line 52
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297225:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297232:Landroid/view/View;
 
     .line 53
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding$2;
@@ -140,7 +140,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 59
-    const v1, 0x7f0904dd
+    const v1, 0x7f0904e7
 
     const-string v2, "method \'goShare\'"
 
@@ -149,7 +149,7 @@
     move-result-object v0
 
     .line 60
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297501:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297511:Landroid/view/View;
 
     .line 61
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding$3;
@@ -159,7 +159,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
-    const v1, 0x7f090612
+    const v1, 0x7f09061c
 
     const-string v2, "method \'goShare\'"
 
@@ -168,7 +168,7 @@
     move-result-object v0
 
     .line 68
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297810:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297820:Landroid/view/View;
 
     .line 69
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding$4;
@@ -178,7 +178,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 75
-    const v1, 0x7f0904e2
+    const v1, 0x7f0904ec
 
     const-string v2, "method \'goShare\'"
 
@@ -187,7 +187,7 @@
     move-result-object v0
 
     .line 76
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297506:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297516:Landroid/view/View;
 
     .line 77
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding$5;
@@ -247,36 +247,36 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131296406:Landroid/view/View;
 
     .line 98
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297225:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297232:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 99
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297225:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297232:Landroid/view/View;
 
     .line 100
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297501:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297511:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 101
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297501:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297511:Landroid/view/View;
 
     .line 102
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297810:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297820:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 103
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297810:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297820:Landroid/view/View;
 
     .line 104
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297506:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297516:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 105
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297506:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/McPcLessonSharePageActivity_ViewBinding;->view2131297516:Landroid/view/View;
 
     .line 106
     return-void

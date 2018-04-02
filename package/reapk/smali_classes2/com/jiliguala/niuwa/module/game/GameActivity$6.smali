@@ -3,27 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/webkit/ValueCallback;
+.implements Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog$DismissListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/game/GameActivity;->processFailedRecord()V
+    value = Lcom/jiliguala/niuwa/module/game/GameActivity;->showReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/webkit/ValueCallback",
-        "<",
-        "Ljava/lang/String;",
-        ">;"
-    }
 .end annotation
 
 
@@ -37,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 885
+    .line 830
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$6;->a:Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,23 +37,15 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;)V
-    .locals 0
-    .param p1, "value"    # Ljava/lang/String;
+.method public onDismiss()V
+    .locals 1
 
     .prologue
-    .line 889
-    return-void
-.end method
+    .line 833
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$6;->a:Lcom/jiliguala/niuwa/module/game/GameActivity;
 
-.method public synthetic onReceiveValue(Ljava/lang/Object;)V
-    .locals 0
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->access$300(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
-    .prologue
-    .line 885
-    check-cast p1, Ljava/lang/String;
-
-    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity$6;->a(Ljava/lang/String;)V
-
+    .line 834
     return-void
 .end method

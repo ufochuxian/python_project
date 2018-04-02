@@ -129,13 +129,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f08016c
+    const v2, 0x7f08016e
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
     move-result-object v1
 
-    const v2, 0x7f08016b
+    const v2, 0x7f08016d
 
     .line 74
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->d(I)Lcom/nostra13/universalimageloader/core/c$a;
@@ -191,7 +191,7 @@
     .locals 2
 
     .prologue
-    const v0, 0x7f060086
+    const v0, 0x7f060088
 
     .line 153
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -225,7 +225,7 @@
     if-eqz v1, :cond_0
 
     .line 159
-    const v0, 0x7f0600e7
+    const v0, 0x7f0600e9
 
     goto :goto_0
 .end method
@@ -761,7 +761,7 @@
     .line 113
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;->mRootView:Landroid/view/View;
 
-    const v3, 0x7f09030f
+    const v3, 0x7f090316
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -801,7 +801,7 @@
     .line 122
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/flashcard/fragment/FlashCardFragment;->mRootView:Landroid/view/View;
 
-    const v3, 0x7f090581
+    const v3, 0x7f09058b
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -908,7 +908,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0600f3
+    const v3, 0x7f0600f5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 

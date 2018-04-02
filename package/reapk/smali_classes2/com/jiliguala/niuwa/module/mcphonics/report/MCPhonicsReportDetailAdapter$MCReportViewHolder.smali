@@ -19,19 +19,19 @@
 
 .field sentenceContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b2
+        a = 0x7f0904bc
     .end annotation
 .end field
 
 .field wordContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090621
+        a = 0x7f09062b
     .end annotation
 .end field
 
 .field wordsTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090623
+        a = 0x7f09062d
     .end annotation
 .end field
 

@@ -87,7 +87,7 @@
     .line 42
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/matchgame/adapter/MatchGamePagerAdapter;->mFm:Landroid/support/v4/app/ag;
 
-    const v2, 0x7f090314
+    const v2, 0x7f09031b
 
     invoke-static {v1, v2, p1}, Lcom/jiliguala/niuwa/module/matchgame/fragment/MatchGameItemFragment;->findOrCreateFragment(Landroid/support/v4/app/ag;II)Lcom/jiliguala/niuwa/module/matchgame/fragment/MatchGameItemFragment;
 

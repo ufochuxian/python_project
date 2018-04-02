@@ -53,7 +53,7 @@
 
 .field private mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
-.field private mId:Ljava/lang/String;
+.field protected mId:Ljava/lang/String;
 
 .field private mIsCourseFinished:Z
 
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 79
+    .line 81
     const-class v0, Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -104,7 +104,7 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/module/game/GameActivity;->TAG:Ljava/lang/String;
 
-    .line 80
+    .line 82
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -126,41 +126,41 @@
     .locals 1
 
     .prologue
-    .line 77
+    .line 79
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;-><init>()V
 
-    .line 83
+    .line 85
     new-instance v0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
-    .line 87
+    .line 89
     const-string v0, "http://d5.jiliguala.com/dragdev/?id=testPHSpeak"
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
 
-    .line 89
+    .line 91
     new-instance v0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
-    .line 90
+    .line 92
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
-    .line 99
+    .line 101
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
 
-    .line 103
+    .line 105
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
@@ -175,99 +175,64 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 77
+    .line 79
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->tryLoadUrl()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/jiliguala/niuwa/module/game/GameActivity;)Ljava/lang/String;
+.method static synthetic access$100(Lcom/jiliguala/niuwa/module/game/GameActivity;)Lcom/jiliguala/niuwa/module/game/GameActivity$a;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 77
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static synthetic access$102(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
-    .param p1, "x1"    # Ljava/lang/String;
-
-    .prologue
-    .line 77
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method static synthetic access$202(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
-    .param p1, "x1"    # Ljava/lang/String;
-
-    .prologue
-    .line 77
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method static synthetic access$300(Lcom/jiliguala/niuwa/module/game/GameActivity;Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
-    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;
-
-    .prologue
-    .line 77
-    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->checkPackageIfUpdate(Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;)V
-
-    return-void
-.end method
-
-.method static synthetic access$400(Lcom/jiliguala/niuwa/module/game/GameActivity;)Lcom/jiliguala/niuwa/module/game/GameActivity$a;
-    .locals 1
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
-
-    .prologue
-    .line 77
+    .line 79
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/jiliguala/niuwa/module/game/GameActivity;)Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
-    .locals 1
+.method static synthetic access$200(Lcom/jiliguala/niuwa/module/game/GameActivity;Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
+    .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
+
+    .prologue
+    .line 79
+    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->showReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+
+    return-void
+.end method
+
+.method static synthetic access$300(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+    .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 77
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
+    .line 79
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->postAndBack()V
 
-    return-object v0
+    return-void
 .end method
 
-.method static synthetic access$600(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)V
+.method static synthetic access$400(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 77
+    .line 79
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->processChiShenResult(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+.method static synthetic access$500(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 77
+    .line 79
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->processFailedRecord()V
 
     return-void
@@ -277,7 +242,7 @@
     .locals 4
 
     .prologue
-    .line 170
+    .line 178
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -288,7 +253,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/e;
 
-    .line 171
+    .line 179
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -301,15 +266,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$2;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
-    .line 172
+    .line 180
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 170
+    .line 178
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 190
+    .line 198
     return-void
 .end method
 
@@ -317,24 +282,24 @@
     .locals 1
 
     .prologue
-    .line 362
+    .line 382
     new-instance v0, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
-    .line 363
+    .line 383
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->a(Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher$a;)V
 
-    .line 364
+    .line 384
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->c()V
 
-    .line 365
+    .line 385
     return-void
 .end method
 
@@ -342,7 +307,7 @@
     .locals 3
 
     .prologue
-    .line 526
+    .line 553
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -355,7 +320,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 527
+    .line 554
     return-void
 .end method
 
@@ -364,12 +329,12 @@
     .param p1, "gameTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;
 
     .prologue
-    .line 300
+    .line 320
     iget-object v4, p1, Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/GameTemplete$DataBean;
 
     iget-object v1, v4, Lcom/jiliguala/niuwa/logic/network/json/GameTemplete$DataBean;->key:Ljava/lang/String;
 
-    .line 301
+    .line 321
     .local v1, "key":Ljava/lang/String;
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -385,12 +350,12 @@
 
     if-nez v4, :cond_1
 
-    .line 321
+    .line 341
     :cond_0
     :goto_0
     return-void
 
-    .line 302
+    .line 322
     :cond_1
     const-string v4, ""
 
@@ -398,7 +363,7 @@
 
     move-result-object v2
 
-    .line 304
+    .line 324
     .local v2, "lastDownloadUrl":Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -414,7 +379,7 @@
 
     if-nez v4, :cond_3
 
-    .line 306
+    .line 326
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
 
     move-result-object v4
@@ -423,7 +388,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 307
+    .line 327
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
 
     move-result-object v4
@@ -434,7 +399,7 @@
 
     move-result-object v0
 
-    .line 308
+    .line 328
     .local v0, "downloadSaveFile":Ljava/io/File;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
 
@@ -446,7 +411,7 @@
 
     move-result-object v3
 
-    .line 309
+    .line 329
     .local v3, "saveFileDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -454,14 +419,14 @@
 
     if-eqz v4, :cond_2
 
-    .line 310
+    .line 330
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-static {v4}, Lcom/jiliguala/niuwa/common/util/i;->f(Ljava/lang/String;)V
 
-    .line 312
+    .line 332
     :cond_2
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -469,10 +434,10 @@
 
     if-eqz v4, :cond_3
 
-    .line 313
+    .line 333
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/i;->c(Ljava/io/File;)Z
 
-    .line 320
+    .line 340
     .end local v0    # "downloadSaveFile":Ljava/io/File;
     .end local v3    # "saveFileDir":Ljava/io/File;
     :cond_3
@@ -488,12 +453,12 @@
     .param p1, "gameSpeakSectionJsonTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;
 
     .prologue
-    .line 451
+    .line 478
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;-><init>()V
 
-    .line 452
+    .line 479
     .local v0, "pronunciation":Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;
     new-instance v2, Ljava/util/ArrayList;
 
@@ -501,37 +466,37 @@
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;->wordlist:Ljava/util/List;
 
-    .line 454
+    .line 481
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;-><init>()V
 
-    .line 456
+    .line 483
     .local v1, "wordList":Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;
     const-string v2, "pron"
 
     iput-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;->word:Ljava/lang/String;
 
-    .line 458
+    .line 485
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;->pron:Ljava/util/List;
 
-    .line 460
+    .line 487
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation$WordList;->pron:Ljava/util/List;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;->pron:Ljava/util/List;
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 462
+    .line 489
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;->wordlist:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 464
+    .line 491
     return-object v0
 .end method
 
@@ -539,17 +504,17 @@
     .locals 3
 
     .prologue
-    .line 743
+    .line 779
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     if-nez v0, :cond_1
 
-    .line 752
+    .line 788
     :cond_0
     :goto_0
     return-void
 
-    .line 745
+    .line 781
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
@@ -559,18 +524,18 @@
 
     if-eqz v0, :cond_2
 
-    .line 746
+    .line 782
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->stopRecording()V
 
     goto :goto_0
 
-    .line 748
+    .line 784
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v0, :cond_0
 
-    .line 749
+    .line 785
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     const-string v1, "javascript:onRecordFailed()"
@@ -582,84 +547,16 @@
     goto :goto_0
 .end method
 
-.method private doRequest()V
-    .locals 3
-
-    .prologue
-    .line 262
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSubscriptions()Lrx/i/b;
-
-    move-result-object v0
-
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/network/g;->a()Lcom/jiliguala/niuwa/logic/network/g;
-
-    move-result-object v1
-
-    .line 263
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
-
-    .line 264
-    invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/logic/network/d;->e(Ljava/lang/String;)Lrx/e;
-
-    move-result-object v1
-
-    .line 265
-    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
-
-    move-result-object v1
-
-    .line 266
-    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
-
-    move-result-object v1
-
-    .line 267
-    invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/e;->a(Lrx/h;)Lrx/e;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/jiliguala/niuwa/module/game/GameActivity$3;
-
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$3;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
-
-    .line 268
-    invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
-
-    move-result-object v1
-
-    .line 262
-    invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
-
-    .line 297
-    return-void
-.end method
-
 .method private getGameProgressTemplete()Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
     .locals 7
 
     .prologue
-    .line 506
+    .line 533
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;-><init>()V
 
-    .line 507
+    .line 534
     .local v0, "data":Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -671,12 +568,12 @@
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->bid:Ljava/lang/String;
 
-    .line 508
+    .line 535
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mLessonID:Ljava/lang/String;
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->lid:Ljava/lang/String;
 
-    .line 509
+    .line 536
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     if-eqz v5, :cond_0
@@ -689,7 +586,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 510
+    .line 537
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
@@ -700,7 +597,7 @@
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->subtaskid:Ljava/lang/String;
 
-    .line 512
+    .line 539
     :cond_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
@@ -725,7 +622,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 513
+    .line 540
     .local v2, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -733,7 +630,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 514
+    .line 541
     .local v3, "key":Ljava/lang/String;
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -741,41 +638,41 @@
 
     check-cast v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
-    .line 515
+    .line 542
     .local v4, "value":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;-><init>()V
 
-    .line 516
+    .line 543
     .local v1, "detailBean":Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;
     iget-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
     iput-object v6, v1, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;->sectionid:Ljava/lang/String;
 
-    .line 517
+    .line 544
     iget v6, v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->result:I
 
     iput v6, v1, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;->score:I
 
-    .line 518
+    .line 545
     iget v6, v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->realScore:I
 
     iput v6, v1, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;->realscore:I
 
-    .line 519
+    .line 546
     iget-object v6, v4, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->url:Ljava/lang/String;
 
     iput-object v6, v1, Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;->url:Ljava/lang/String;
 
-    .line 520
+    .line 547
     iget-object v6, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->detail:Ljava/util/List;
 
     invoke-interface {v6, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 522
+    .line 549
     .end local v1    # "detailBean":Lcom/jiliguala/niuwa/logic/network/json/DetailBeanTemplete;
     .end local v2    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;>;"
     .end local v3    # "key":Ljava/lang/String;
@@ -788,18 +685,18 @@
     .locals 3
 
     .prologue
-    .line 324
+    .line 344
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
     if-nez v1, :cond_0
 
-    .line 330
+    .line 350
     :goto_0
     return-void
 
-    .line 325
+    .line 345
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getIntent()Landroid/content/Intent;
 
@@ -809,7 +706,7 @@
 
     move-result-object v0
 
-    .line 326
+    .line 346
     .local v0, "bundle":Landroid/os/Bundle;
     const-string v1, "rid"
 
@@ -819,7 +716,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
 
-    .line 327
+    .line 347
     const-string v1, "id"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -828,7 +725,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mLessonID:Ljava/lang/String;
 
-    .line 328
+    .line 348
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -843,7 +740,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    .line 329
+    .line 349
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -863,7 +760,7 @@
     .locals 3
 
     .prologue
-    .line 256
+    .line 268
     const v0, 0x7f090014
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->findViewById(I)Landroid/view/View;
@@ -874,14 +771,16 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mActionBack:Landroid/widget/ImageView;
 
-    .line 257
+    .line 269
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mActionBack:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f080402
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getBackResId()I
+
+    move-result v2
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -889,35 +788,38 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 258
+    .line 270
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mActionBack:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 259
+    .line 271
     return-void
 .end method
 
-.method private pauseGame()V
-    .locals 3
+.method private postAndBack()V
+    .locals 4
 
     .prologue
-    .line 396
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+    .line 843
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
-    if-eqz v0, :cond_0
+    move-result-object v0
 
-    .line 397
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+    new-instance v1, Lcom/jiliguala/niuwa/logic/b/a/f;
 
-    const-string v1, "javascript:pauseCocosGame()"
+    const/16 v2, 0x1023
 
-    const/4 v2, 0x0
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    invoke-virtual {v0, v1, v2}, Lorg/xwalk/core/XWalkView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+    invoke-direct {v1, v2, v3}, Lcom/jiliguala/niuwa/logic/b/a/f;-><init>(ILcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;)V
 
-    .line 399
-    :cond_0
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
+
+    .line 844
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->onBackPressed()V
+
+    .line 845
     return-void
 .end method
 
@@ -926,7 +828,7 @@
     .param p1, "result"    # Ljava/lang/String;
 
     .prologue
-    .line 614
+    .line 650
     :try_start_0
     const-class v3, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
 
@@ -936,7 +838,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
 
-    .line 615
+    .line 651
     .local v1, "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->isVolumeCallBack()Z
 
@@ -944,12 +846,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 651
+    .line 687
     .end local v1    # "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     :goto_0
     return-void
 
-    .line 617
+    .line 653
     .restart local v1    # "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     :cond_0
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->isErrorResult()Z
@@ -958,18 +860,18 @@
 
     if-nez v3, :cond_2
 
-    .line 619
+    .line 655
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->result:Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;
 
     iget v2, v3, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;->overall:I
 
-    .line 621
+    .line 657
     .local v2, "score":I
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->processScore(I)I
 
     move-result v2
 
-    .line 624
+    .line 660
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->result:Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;
 
     iget v3, v3, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;->overall:I
@@ -978,14 +880,14 @@
 
     iput v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScoreOffest:I
 
-    .line 629
+    .line 665
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->result:Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;
 
     iget v3, v3, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete$Result;->wavetime:I
 
     if-eqz v3, :cond_1
 
-    .line 630
+    .line 666
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1020,7 +922,7 @@
 
     goto :goto_0
 
-    .line 648
+    .line 684
     .end local v1    # "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     .end local v2    # "score":I
     :catch_0
@@ -1028,13 +930,13 @@
 
     goto :goto_0
 
-    .line 638
+    .line 674
     .restart local v1    # "recordTemplete":Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;
     .restart local v2    # "score":I
     :cond_1
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
 
-    .line 639
+    .line 675
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getRecordPermissionDialog()Lcom/jiliguala/niuwa/a/b/f;
 
     move-result-object v3
@@ -1043,12 +945,12 @@
 
     goto :goto_0
 
-    .line 643
+    .line 679
     .end local v2    # "score":I
     :cond_2
     iget-object v0, v1, Lcom/jiliguala/niuwa/logic/network/json/RecordTemplete;->error:Ljava/lang/String;
 
-    .line 645
+    .line 681
     .local v0, "error":Ljava/lang/String;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
@@ -1089,25 +991,25 @@
     .locals 4
 
     .prologue
-    .line 881
+    .line 941
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v1, :cond_0
 
-    .line 882
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
+    .line 942
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
 
-    .line 883
+    .line 943
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getRecordPermissionDialog()Lcom/jiliguala/niuwa/a/b/f;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/a/b/f;->a()V
 
-    .line 884
+    .line 944
     const/4 v0, 0x0
 
-    .line 885
+    .line 945
     .local v0, "score":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
@@ -1135,13 +1037,13 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/jiliguala/niuwa/module/game/GameActivity$6;
+    new-instance v3, Lcom/jiliguala/niuwa/module/game/GameActivity$7;
 
-    invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$6;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+    invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$7;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
     invoke-virtual {v1, v2, v3}, Lorg/xwalk/core/XWalkView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 
-    .line 892
+    .line 952
     .end local v0    # "score":I
     :cond_0
     return-void
@@ -1151,14 +1053,14 @@
     .locals 2
 
     .prologue
-    .line 374
+    .line 394
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->isFinishing()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 375
+    .line 395
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
@@ -1167,95 +1069,122 @@
 
     move-result-object v0
 
-    .line 376
+    .line 396
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/course/main/fragment/OnCourseExitFragment;
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/course/main/fragment/OnCourseExitFragment;->setCallback(Lcom/jiliguala/niuwa/module/course/main/fragment/OnCourseExitFragment$OnExitCallback;)V
 
-    .line 377
+    .line 397
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/course/main/fragment/OnCourseExitFragment;->show(Landroid/support/v4/app/ag;)V
 
-    .line 379
+    .line 399
     .end local v0    # "fragment":Lcom/jiliguala/niuwa/module/course/main/fragment/OnCourseExitFragment;
     :cond_0
     return-void
 .end method
 
-.method private showExitGameDialog()V
-    .locals 2
+.method private showReward(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
+    .locals 3
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
     .prologue
-    .line 382
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->clickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+    .line 823
+    if-eqz p1, :cond_1
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
 
-    move-result v0
+    if-eqz v2, :cond_1
 
-    if-nez v0, :cond_0
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
 
-    .line 383
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->isFinishing()Z
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
 
-    move-result v0
+    if-eqz v2, :cond_1
 
-    if-nez v0, :cond_0
-
-    .line 385
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
-
-    .line 386
+    .line 824
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+    .line 825
+    .local v0, "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    const-string v1, ""
 
-    move-result-object v0
+    .line 826
+    .local v1, "subLessonId":Ljava/lang/String;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+    if-eqz v2, :cond_0
 
-    .line 387
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->setCallBack(Lcom/jiliguala/niuwa/module/game/GameExitFragment$CallBack;)V
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
 
-    .line 388
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+    move-result-object v2
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->isShowing()Z
+    if-eqz v2, :cond_0
 
-    move-result v0
+    .line 827
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
-    if-nez v0, :cond_0
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
 
-    .line 389
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+    move-result-object v2
 
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+    iget-object v1, v2, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->_id:Ljava/lang/String;
 
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->show(Landroid/support/v4/app/ag;)V
-
-    .line 393
+    .line 829
     :cond_0
+    iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate$Data;->guavatar:Lcom/jiliguala/niuwa/logic/network/json/Guavatar;
+
+    invoke-virtual {v0, v2, v1}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setGuavatar(Lcom/jiliguala/niuwa/logic/network/json/Guavatar;Ljava/lang/String;)V
+
+    .line 830
+    new-instance v2, Lcom/jiliguala/niuwa/module/game/GameActivity$6;
+
+    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$6;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+
+    invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->setDismissListener(Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog$DismissListener;)V
+
+    .line 836
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;->show(Landroid/support/v4/app/ag;)V
+
+    .line 840
+    .end local v0    # "grd":Lcom/jiliguala/niuwa/module/game/GuavatarRewardDialog;
+    .end local v1    # "subLessonId":Ljava/lang/String;
+    :goto_0
     return-void
+
+    .line 838
+    :cond_1
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->postAndBack()V
+
+    goto :goto_0
 .end method
 
 .method private startCourse()V
     .locals 1
 
     .prologue
-    .line 333
+    .line 353
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->loadUrl(Ljava/lang/String;)V
 
-    .line 334
+    .line 354
     return-void
 .end method
 
@@ -1263,17 +1192,17 @@
     .locals 1
 
     .prologue
-    .line 368
+    .line 388
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     if-eqz v0, :cond_0
 
-    .line 369
+    .line 389
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScreenStateWatcher:Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/ScreenStateWatcher;->d()V
 
-    .line 371
+    .line 391
     :cond_0
     return-void
 .end method
@@ -1282,7 +1211,7 @@
     .locals 3
 
     .prologue
-    .line 144
+    .line 146
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1291,24 +1220,444 @@
 
     if-nez v1, :cond_1
 
-    .line 145
+    .line 147
     sget-boolean v1, Lcom/jiliguala/niuwa/MyApplication;->initLocalServer:Z
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_2
 
-    .line 146
-    sget-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
+    .line 148
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
+
+    invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    .line 150
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    if-eqz v1, :cond_0
+
+    .line 151
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/a/b/d;->b()V
+
+    .line 153
+    :cond_0
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->startCourse()V
+
+    .line 154
+    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
+
+    invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;-><init>(Landroid/content/Context;)V
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
+
+    .line 155
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
+
+    invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->setCallBack(Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper$CallBack;)V
+
+    .line 165
+    :cond_1
+    :goto_0
+    return-void
+
+    .line 159
+    :cond_2
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/y;->a()Lcom/jiliguala/niuwa/common/util/y;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/y;->c()Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    move-result-object v0
+
+    .line 160
+    .local v0, "activity":Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    if-eqz v0, :cond_1
+
+    .line 161
+    const-string v1, "[GameActivity],tryLoadUrl"
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startServer(Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public addHomeKeyWatcher()V
+    .locals 1
+
+    .prologue
+    .line 256
+    new-instance v0, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
+
+    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
+
+    .line 257
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
+
+    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->a(Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher$a;)V
+
+    .line 258
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->c()V
+
+    .line 259
+    return-void
+.end method
+
+.method public brideGoBack()V
+    .locals 0
+
+    .prologue
+    .line 468
+    return-void
+.end method
+
+.method public cancel()V
+    .locals 0
+
+    .prologue
+    .line 616
+    return-void
+.end method
+
+.method public confirmExit()V
+    .locals 0
+
+    .prologue
+    .line 591
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->sendCourseTaskExitReport()V
+
+    .line 592
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->finish()V
+
+    .line 593
+    return-void
+.end method
+
+.method public dealWriteResult(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "jsonResult"    # Ljava/lang/String;
+
+    .prologue
+    .line 439
+    return-void
+.end method
+
+.method protected doRequest()V
+    .locals 3
+
+    .prologue
+    .line 278
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSubscriptions()Lrx/i/b;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/network/g;->a()Lcom/jiliguala/niuwa/logic/network/g;
+
+    move-result-object v1
+
+    .line 279
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
+
+    .line 280
+    invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/logic/network/d;->e(Ljava/lang/String;)Lrx/e;
+
+    move-result-object v1
+
+    .line 281
+    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
+
+    move-result-object v1
+
+    .line 282
+    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
+
+    move-result-object v1
+
+    .line 283
+    invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lrx/e;->a(Lrx/h;)Lrx/e;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/jiliguala/niuwa/module/game/GameActivity$3;
+
+    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$3;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+
+    .line 284
+    invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
+
+    move-result-object v1
+
+    .line 278
+    invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
+
+    .line 300
+    return-void
+.end method
+
+.method public doShare(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "shareJson"    # Ljava/lang/String;
+
+    .prologue
+    .line 434
+    return-void
+.end method
+
+.method public enableInnerContainer()V
+    .locals 0
+
+    .prologue
+    .line 867
+    return-void
+.end method
+
+.method public exitCurrentSubCourse()V
+    .locals 0
+
+    .prologue
+    .line 862
+    return-void
+.end method
+
+.method protected getBackResId()I
+    .locals 1
+
+    .prologue
+    .line 274
+    const v0, 0x7f08040f
+
+    return v0
+.end method
+
+.method public getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
+    .locals 2
+
+    .prologue
+    .line 201
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    if-nez v0, :cond_0
+
+    .line 202
+    new-instance v0, Lcom/jiliguala/niuwa/a/b/d;
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getDownloadPopDialogStyle()I
+
+    move-result v1
+
+    invoke-direct {v0, p0, v1}, Lcom/jiliguala/niuwa/a/b/d;-><init>(Landroid/content/Context;I)V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    .line 203
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mType:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/d;->a(Ljava/lang/String;)V
+
+    .line 205
+    :cond_0
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/d;->a(Lcom/jiliguala/niuwa/a/b/d$a;)V
+
+    .line 206
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+
+    return-object v0
+.end method
+
+.method public getDownloadPopDialogStyle()I
+    .locals 1
+
+    .prologue
+    .line 210
+    const/16 v0, 0x3e9
+
+    return v0
+.end method
+
+.method protected getPackageSuccess(Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;)V
+    .locals 5
+    .param p1, "gameTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;
+
+    .prologue
+    .line 303
+    if-eqz p1, :cond_0
+
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/GameTemplete$DataBean;
+
+    if-nez v1, :cond_1
+
+    .line 317
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 304
+    :cond_1
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/a/b/d;->a()V
+
+    .line 305
+    iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/GameTemplete$DataBean;
+
+    iget-object v0, v1, Lcom/jiliguala/niuwa/logic/network/json/GameTemplete$DataBean;->packages:Ljava/util/ArrayList;
+
+    .line 306
+    .local v0, "packages":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
+
+    move-result v1
 
     if-nez v1, :cond_2
 
-    .line 147
+    .line 307
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    .line 309
+    :cond_2
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    .line 310
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    const-string v3, "/"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    const-string v4, "."
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
+
+    .line 312
+    :cond_3
+    invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->checkPackageIfUpdate(Lcom/jiliguala/niuwa/logic/network/json/GameTemplete;)V
+
+    .line 314
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 315
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->startDownload()V
+
+    goto :goto_0
+.end method
+
+.method public getRecordPermissionDialog()Lcom/jiliguala/niuwa/a/b/f;
+    .locals 1
+
+    .prologue
+    .line 691
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
+
+    if-nez v0, :cond_0
+
+    .line 692
+    new-instance v0, Lcom/jiliguala/niuwa/a/b/f;
+
+    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/a/b/f;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
+
+    .line 693
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
+
+    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/f;->a(Lcom/jiliguala/niuwa/a/b/f$a;)V
+
+    .line 695
+    :cond_0
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
+
+    return-object v0
+.end method
+
+.method protected getUrl(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+    .param p1, "packageName"    # Ljava/lang/String;
+
+    .prologue
+    .line 169
+    sget-boolean v1, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
+
+    if-nez v1, :cond_0
+
+    .line 170
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
-
-    invoke-static {v2}, Lcom/jiliguala/niuwa/logic/downloader/d/c;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/jiliguala/niuwa/logic/downloader/d/c;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1330,55 +1679,21 @@
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
-
-    .line 152
+    .line 174
+    .local v0, "url":Ljava/lang/String;
     :goto_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+    return-object v0
 
-    if-eqz v1, :cond_0
-
-    .line 153
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
-
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/a/b/d;->b()V
-
-    .line 155
+    .line 172
+    .end local v0    # "url":Ljava/lang/String;
     :cond_0
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->startCourse()V
-
-    .line 156
-    new-instance v1, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
-
-    invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;-><init>(Landroid/content/Context;)V
-
-    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
-
-    .line 157
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
-
-    invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->setCallBack(Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper$CallBack;)V
-
-    .line 167
-    :cond_1
-    :goto_1
-    return-void
-
-    .line 149
-    :cond_2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
-
-    invoke-static {v2}, Lcom/jiliguala/niuwa/logic/downloader/d/c;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/jiliguala/niuwa/logic/downloader/d/c;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1406,193 +1721,37 @@
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 161
-    :cond_3
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/y;->a()Lcom/jiliguala/niuwa/common/util/y;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/y;->c()Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
     move-result-object v0
 
-    .line 162
-    .local v0, "activity":Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-    if-eqz v0, :cond_1
-
-    .line 163
-    const-string v1, "[GameActivity],tryLoadUrl"
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->startServer(Ljava/lang/String;)V
-
-    goto :goto_1
+    .restart local v0    # "url":Ljava/lang/String;
+    goto :goto_0
 .end method
 
-
-# virtual methods
-.method public addHomeKeyWatcher()V
+.method public goToLesson(Ljava/lang/String;)V
     .locals 1
+    .param p1, "target"    # Ljava/lang/String;
 
     .prologue
-    .line 244
-    new-instance v0, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
+    .line 472
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
-
-    .line 245
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
-
-    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->a(Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher$a;)V
-
-    .line 246
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->c()V
-
-    .line 247
-    return-void
-.end method
-
-.method public brideGoBack()V
-    .locals 0
-
-    .prologue
-    .line 448
-    return-void
-.end method
-
-.method public cancel()V
-    .locals 0
-
-    .prologue
-    .line 580
-    return-void
-.end method
-
-.method public confirmExit()V
-    .locals 0
-
-    .prologue
-    .line 555
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->sendCourseTaskExitReport()V
-
-    .line 556
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->finish()V
-
-    .line 557
-    return-void
-.end method
-
-.method public dealWriteResult(Ljava/lang/String;)V
-    .locals 0
-    .param p1, "jsonResult"    # Ljava/lang/String;
-
-    .prologue
-    .line 419
-    return-void
-.end method
-
-.method public doShare(Ljava/lang/String;)V
-    .locals 0
-    .param p1, "shareJson"    # Ljava/lang/String;
-
-    .prologue
-    .line 414
-    return-void
-.end method
-
-.method public enableInnerContainer()V
-    .locals 0
-
-    .prologue
-    .line 807
-    return-void
-.end method
-
-.method public exitCurrentSubCourse()V
-    .locals 0
-
-    .prologue
-    .line 802
-    return-void
-.end method
-
-.method public getDownloadPopDialog()Lcom/jiliguala/niuwa/a/b/d;
-    .locals 2
-
-    .prologue
-    .line 193
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
+    move-result v0
 
     if-nez v0, :cond_0
 
-    .line 194
-    new-instance v0, Lcom/jiliguala/niuwa/a/b/d;
+    .line 473
+    invoke-static {p0, p1}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/a/b/d;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
-
-    .line 195
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
-
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mType:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/d;->a(Ljava/lang/String;)V
-
-    .line 197
+    .line 475
     :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
-
-    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/d;->a(Lcom/jiliguala/niuwa/a/b/d$a;)V
-
-    .line 198
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
-
-    return-object v0
-.end method
-
-.method public getRecordPermissionDialog()Lcom/jiliguala/niuwa/a/b/f;
-    .locals 1
-
-    .prologue
-    .line 655
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
-
-    if-nez v0, :cond_0
-
-    .line 656
-    new-instance v0, Lcom/jiliguala/niuwa/a/b/f;
-
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/a/b/f;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
-
-    .line 657
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
-
-    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/a/b/f;->a(Lcom/jiliguala/niuwa/a/b/f$a;)V
-
-    .line 659
-    :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->recordPermissionPopDialog:Lcom/jiliguala/niuwa/a/b/f;
-
-    return-object v0
+    return-void
 .end method
 
 .method public hasCoursePay()Z
     .locals 1
 
     .prologue
-    .line 811
+    .line 871
     const/4 v0, 0x1
 
     return v0
@@ -1602,7 +1761,7 @@
     .locals 1
 
     .prologue
-    .line 816
+    .line 876
     const/4 v0, 0x0
 
     return v0
@@ -1612,7 +1771,7 @@
     .locals 1
 
     .prologue
-    .line 796
+    .line 856
     const/4 v0, 0x1
 
     return v0
@@ -1622,10 +1781,10 @@
     .locals 0
 
     .prologue
-    .line 821
+    .line 881
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->onBackPressed()V
 
-    .line 822
+    .line 882
     return-void
 .end method
 
@@ -1633,37 +1792,37 @@
     .locals 1
 
     .prologue
-    .line 349
+    .line 369
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mIsCourseFinished:Z
 
     if-eqz v0, :cond_1
 
-    .line 350
+    .line 370
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->canGoBack()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 351
+    .line 371
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->goBack()V
 
-    .line 352
+    .line 372
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->finish()V
 
-    .line 359
+    .line 379
     :goto_0
     return-void
 
-    .line 354
+    .line 374
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pressBack()V
 
     goto :goto_0
 
-    .line 357
+    .line 377
     :cond_1
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->showExitGameDialog()V
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->showExitGameDialog()V
 
     goto :goto_0
 .end method
@@ -1672,17 +1831,17 @@
     .locals 1
 
     .prologue
-    .line 844
+    .line 904
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getRecordPermissionDialog()Lcom/jiliguala/niuwa/a/b/f;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/a/b/f;->b()V
 
-    .line 845
+    .line 905
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->resumeGame()V
 
-    .line 846
+    .line 906
     return-void
 .end method
 
@@ -1690,10 +1849,10 @@
     .locals 0
 
     .prologue
-    .line 839
+    .line 899
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->resumeGame()V
 
-    .line 840
+    .line 900
     return-void
 .end method
 
@@ -1702,24 +1861,24 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 338
+    .line 358
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 345
+    .line 365
     :goto_0
     return-void
 
-    .line 340
+    .line 360
     :pswitch_0
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->showExitGameDialog()V
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->showExitGameDialog()V
 
     goto :goto_0
 
-    .line 338
+    .line 358
     :pswitch_data_0
     .packed-switch 0x7f090014
         :pswitch_0
@@ -1734,43 +1893,43 @@
     .end param
 
     .prologue
-    .line 113
+    .line 115
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 115
+    .line 117
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->setRequestedOrientation(I)V
 
-    .line 117
+    .line 119
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->d(Landroid/app/Activity;)V
 
-    .line 119
+    .line 121
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->addEventObserver()V
 
-    .line 121
+    .line 123
     const-string v1, "Niuwa"
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->setBridgeName(Ljava/lang/String;)V
 
-    .line 122
+    .line 124
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->setUsingCrossWalk(Z)V
 
-    .line 124
+    .line 126
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->addScreenStateWatcher()V
 
-    .line 126
+    .line 128
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->addHomeKeyWatcher()V
 
-    .line 128
+    .line 130
     const v1, 0x7f0b002e
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->setContentView(I)V
 
-    .line 129
-    const v1, 0x7f090626
+    .line 131
+    const v1, 0x7f090630
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->findViewById(I)Landroid/view/View;
 
@@ -1778,7 +1937,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    .line 131
+    .line 133
     .local v0, "parent":Landroid/widget/FrameLayout;
     const v1, 0x7f090233
 
@@ -1790,19 +1949,19 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameLoading:Landroid/widget/ImageView;
 
-    .line 133
+    .line 135
     invoke-super {p0, v0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->initWebView(Landroid/view/View;)V
 
-    .line 134
+    .line 136
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->initUI()V
 
-    .line 136
+    .line 138
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->handleIntent()V
 
-    .line 138
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->doRequest()V
-
     .line 140
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->doRequest()V
+
+    .line 142
     return-void
 .end method
 
@@ -1812,7 +1971,7 @@
     .param p2, "size"    # I
 
     .prologue
-    .line 665
+    .line 701
     return-void
 .end method
 
@@ -1820,55 +1979,55 @@
     .locals 2
 
     .prologue
-    .line 706
+    .line 742
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->stopScreenStateWatcher()V
 
-    .line 707
+    .line 743
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->stopHomeKeyWatcher()V
 
-    .line 708
+    .line 744
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onDestroy()V
 
-    .line 709
+    .line 745
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     if-eqz v0, :cond_0
 
-    .line 710
+    .line 746
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->releaseRes()V
 
-    .line 713
+    .line 749
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->removeCallBack()V
 
-    .line 715
+    .line 751
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     if-eqz v0, :cond_1
 
-    .line 716
+    .line 752
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 718
+    .line 754
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
 
     if-eqz v0, :cond_2
 
-    .line 719
+    .line 755
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/a/b/d;->c()V
 
-    .line 721
+    .line 757
     :cond_2
     return-void
 .end method
@@ -1877,12 +2036,12 @@
     .locals 3
 
     .prologue
-    .line 598
+    .line 634
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     if-eqz v1, :cond_0
 
-    .line 599
+    .line 635
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     const/16 v2, 0x1001
@@ -1891,13 +2050,13 @@
 
     move-result-object v0
 
-    .line 600
+    .line 636
     .local v0, "message":Landroid/os/Message;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->sendMessage(Landroid/os/Message;)Z
 
-    .line 602
+    .line 638
     .end local v0    # "message":Landroid/os/Message;
     :cond_0
     return-void
@@ -1907,10 +2066,10 @@
     .locals 0
 
     .prologue
-    .line 826
+    .line 886
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->finish()V
 
-    .line 827
+    .line 887
     return-void
 .end method
 
@@ -1918,7 +2077,7 @@
     .locals 0
 
     .prologue
-    .line 696
+    .line 732
     return-void
 .end method
 
@@ -1927,36 +2086,36 @@
     .param p1, "gameID"    # Ljava/lang/String;
 
     .prologue
-    .line 497
+    .line 524
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     if-eqz v1, :cond_0
 
-    .line 498
+    .line 525
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->setSectionScoreMap(Ljava/util/Map;)V
 
-    .line 500
+    .line 527
     :cond_0
     new-instance v0, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;-><init>()V
 
-    .line 501
+    .line 528
     .local v0, "sendLessonProgressManager":Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->setCallBack(Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager$CallBack;)V
 
-    .line 502
+    .line 529
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getGameProgressTemplete()Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->sendProgress(Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;)V
 
-    .line 503
+    .line 530
     return-void
 .end method
 
@@ -1964,7 +2123,7 @@
     .locals 0
 
     .prologue
-    .line 765
+    .line 801
     return-void
 .end method
 
@@ -1972,10 +2131,10 @@
     .locals 0
 
     .prologue
-    .line 758
+    .line 794
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->doOnLeft()V
 
-    .line 759
+    .line 795
     return-void
 .end method
 
@@ -1983,7 +2142,7 @@
     .locals 0
 
     .prologue
-    .line 670
+    .line 706
     return-void
 .end method
 
@@ -1992,19 +2151,19 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 538
+    .line 565
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameLoading:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 539
+    .line 566
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameLoading:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 541
+    .line 568
     :cond_0
     return-void
 .end method
@@ -2014,7 +2173,7 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 533
+    .line 560
     return-void
 .end method
 
@@ -2023,7 +2182,34 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 702
+    .line 738
+    return-void
+.end method
+
+.method public onProgressChanged(I)V
+    .locals 2
+    .param p1, "progressInPercent"    # I
+
+    .prologue
+    .line 582
+    const/16 v0, 0x46
+
+    if-lt p1, v0, :cond_0
+
+    .line 583
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameLoading:Landroid/widget/ImageView;
+
+    if-eqz v0, :cond_0
+
+    .line 584
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameLoading:Landroid/widget/ImageView;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 587
+    :cond_0
     return-void
 .end method
 
@@ -2032,7 +2218,7 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 546
+    .line 573
     return-void
 .end method
 
@@ -2040,7 +2226,7 @@
     .locals 0
 
     .prologue
-    .line 551
+    .line 578
     return-void
 .end method
 
@@ -2048,10 +2234,10 @@
     .locals 1
 
     .prologue
-    .line 229
+    .line 241
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onResume()V
 
-    .line 230
+    .line 242
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     if-eqz v0, :cond_0
@@ -2064,16 +2250,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 231
+    .line 243
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->dismiss()V
 
-    .line 233
+    .line 245
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->resumeGame()V
 
-    .line 235
+    .line 247
     return-void
 .end method
 
@@ -2081,21 +2267,21 @@
     .locals 1
 
     .prologue
-    .line 831
+    .line 891
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     if-eqz v0, :cond_0
 
-    .line 832
+    .line 892
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->dismiss()V
 
-    .line 834
+    .line 894
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->resumeGame()V
 
-    .line 835
+    .line 895
     return-void
 .end method
 
@@ -2104,18 +2290,18 @@
     .param p1, "result"    # Ljava/lang/String;
 
     .prologue
-    .line 606
+    .line 642
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->isFinishing()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 610
+    .line 646
     :goto_0
     return-void
 
-    .line 607
+    .line 643
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
@@ -2125,11 +2311,11 @@
 
     move-result-object v0
 
-    .line 608
+    .line 644
     .local v0, "message":Landroid/os/Message;
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 609
+    .line 645
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChishenHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->sendMessage(Landroid/os/Message;)Z
@@ -2141,10 +2327,10 @@
     .locals 0
 
     .prologue
-    .line 739
+    .line 775
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->doOnLeft()V
 
-    .line 740
+    .line 776
     return-void
 .end method
 
@@ -2152,7 +2338,7 @@
     .locals 0
 
     .prologue
-    .line 727
+    .line 763
     return-void
 .end method
 
@@ -2161,7 +2347,7 @@
     .param p1, "jsonString"    # Ljava/lang/String;
 
     .prologue
-    .line 477
+    .line 504
     const-class v2, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
     invoke-static {p1, v2}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
@@ -2170,21 +2356,21 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
-    .line 478
+    .line 505
     .local v1, "sectionCompleteTemplete":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     if-nez v1, :cond_0
 
-    .line 492
+    .line 519
     :goto_0
     return-void
 
-    .line 479
+    .line 506
     :cond_0
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
-    .line 480
+    .line 507
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2193,7 +2379,7 @@
 
     if-nez v2, :cond_1
 
-    .line 481
+    .line 508
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
@@ -2204,11 +2390,11 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
-    .line 482
+    .line 509
     .local v0, "scTemp":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     if-nez v0, :cond_2
 
-    .line 483
+    .line 510
     iget v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->result:I
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mScoreOffest:I
@@ -2217,14 +2403,14 @@
 
     iput v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->realScore:I
 
-    .line 484
+    .line 511
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
     invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 491
+    .line 518
     .end local v0    # "scTemp":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     :cond_1
     :goto_1
@@ -2234,7 +2420,7 @@
 
     goto :goto_0
 
-    .line 486
+    .line 513
     .restart local v0    # "scTemp":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     :cond_2
     iget v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->result:I
@@ -2245,12 +2431,12 @@
 
     iput v2, v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->realScore:I
 
-    .line 487
+    .line 514
     iget-object v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
-    .line 488
+    .line 515
     iget v2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->result:I
 
     iput v2, v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->result:I
@@ -2262,12 +2448,12 @@
     .locals 4
 
     .prologue
-    .line 789
+    .line 849
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mIsCourseFinished:Z
 
-    .line 790
+    .line 850
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -2282,34 +2468,35 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 791
+    .line 851
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->onBackPressed()V
 
-    .line 792
+    .line 852
     return-void
 .end method
 
-.method public onSendProgressSuccess()V
+.method public onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
     .locals 4
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
     .prologue
-    .line 769
+    .line 805
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mIsCourseFinished:Z
 
-    .line 770
+    .line 806
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHandler:Lcom/jiliguala/niuwa/module/game/GameActivity$a;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/game/GameActivity$5;
 
-    invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/game/GameActivity$5;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+    invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity$5;-><init>(Lcom/jiliguala/niuwa/module/game/GameActivity;Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 
     const-wide/16 v2, 0x190
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 785
+    .line 820
     return-void
 .end method
 
@@ -2317,10 +2504,10 @@
     .locals 0
 
     .prologue
-    .line 217
+    .line 229
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onStart()V
 
-    .line 219
+    .line 231
     return-void
 .end method
 
@@ -2328,7 +2515,7 @@
     .locals 0
 
     .prologue
-    .line 585
+    .line 621
     return-void
 .end method
 
@@ -2336,10 +2523,10 @@
     .locals 0
 
     .prologue
-    .line 239
+    .line 251
     invoke-super {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onStop()V
 
-    .line 241
+    .line 253
     return-void
 .end method
 
@@ -2347,7 +2534,7 @@
     .locals 4
 
     .prologue
-    .line 591
+    .line 627
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mRecordFilePath:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2364,7 +2551,7 @@
 
     if-nez v0, :cond_0
 
-    .line 592
+    .line 628
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/f;-><init>()V
@@ -2377,7 +2564,7 @@
 
     invoke-virtual {v0, v1, v2, v3, p0}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;Ljava/lang/String;Lcom/jiliguala/niuwa/logic/network/f$b;)V
 
-    .line 594
+    .line 630
     :cond_0
     return-void
 .end method
@@ -2387,7 +2574,7 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 676
+    .line 712
     return-void
 .end method
 
@@ -2397,7 +2584,7 @@
     .param p2, "sectionID"    # Ljava/lang/String;
 
     .prologue
-    .line 681
+    .line 717
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
     invoke-interface {v2, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2406,37 +2593,37 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
-    .line 682
+    .line 718
     .local v0, "scTemp":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     if-nez v0, :cond_0
 
-    .line 683
+    .line 719
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;-><init>()V
 
-    .line 684
+    .line 720
     .local v1, "sectionCompleteTemplete":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     iput-object p2, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
-    .line 685
+    .line 721
     iput-object p1, v1, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->url:Ljava/lang/String;
 
-    .line 686
+    .line 722
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionScoreMap:Ljava/util/Map;
 
     invoke-interface {v2, p2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 691
+    .line 727
     .end local v1    # "sectionCompleteTemplete":Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;
     :goto_0
     return-void
 
-    .line 688
+    .line 724
     :cond_0
     iput-object p2, v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->sectionID:Ljava/lang/String;
 
-    .line 689
+    .line 725
     iput-object p1, v0, Lcom/jiliguala/niuwa/logic/network/json/SectionCompleteTemplete;->url:Ljava/lang/String;
 
     goto :goto_0
@@ -2447,10 +2634,33 @@
     .param p1, "hasFocus"    # Z
 
     .prologue
-    .line 224
+    .line 236
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->e(Landroid/app/Activity;)V
 
-    .line 225
+    .line 237
+    return-void
+.end method
+
+.method protected pauseGame()V
+    .locals 3
+
+    .prologue
+    .line 416
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+
+    if-eqz v0, :cond_0
+
+    .line 417
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+
+    const-string v1, "javascript:pauseCocosGame()"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lorg/xwalk/core/XWalkView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+
+    .line 419
+    :cond_0
     return-void
 .end method
 
@@ -2458,7 +2668,7 @@
     .locals 3
 
     .prologue
-    .line 730
+    .line 766
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v0, :cond_0
@@ -2473,7 +2683,7 @@
 
     if-nez v0, :cond_0
 
-    .line 731
+    .line 767
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     const-string v1, "javascript:resumeCocosGame()"
@@ -2482,7 +2692,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/xwalk/core/XWalkView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 
-    .line 733
+    .line 769
     :cond_0
     return-void
 .end method
@@ -2491,22 +2701,22 @@
     .locals 4
 
     .prologue
-    .line 560
+    .line 596
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     if-nez v2, :cond_0
 
-    .line 575
+    .line 611
     :goto_0
     return-void
 
-    .line 561
+    .line 597
     :cond_0
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 562
+    .line 598
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
 
@@ -2516,14 +2726,14 @@
 
     if-nez v2, :cond_1
 
-    .line 563
+    .line 599
     const-string v2, "ID"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mId:Ljava/lang/String;
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 565
+    .line 601
     :cond_1
     const-string v2, "Position"
 
@@ -2539,14 +2749,14 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 566
+    .line 602
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->getSub()Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
 
     move-result-object v1
 
-    .line 567
+    .line 603
     .local v1, "sub":Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
     if-eqz v1, :cond_2
 
@@ -2558,14 +2768,14 @@
 
     if-nez v2, :cond_2
 
-    .line 568
+    .line 604
     const-string v2, "Type"
 
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;->typ:Ljava/lang/String;
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 570
+    .line 606
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
@@ -2575,14 +2785,14 @@
 
     if-nez v2, :cond_3
 
-    .line 571
+    .line 607
     const-string v2, "Step"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 573
+    .line 609
     :cond_3
     const-string v2, "Time"
 
@@ -2594,7 +2804,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 574
+    .line 610
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
@@ -2606,12 +2816,74 @@
     goto :goto_0
 .end method
 
+.method protected showExitGameDialog()V
+    .locals 2
+
+    .prologue
+    .line 402
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->clickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 403
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->isFinishing()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 405
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->pauseGame()V
+
+    .line 406
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+
+    .line 407
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+
+    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->setCallBack(Lcom/jiliguala/niuwa/module/game/GameExitFragment$CallBack;)V
+
+    .line 408
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->isShowing()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 409
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mGameExitFragment:Lcom/jiliguala/niuwa/module/game/GameExitFragment;
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/game/GameExitFragment;->show(Landroid/support/v4/app/ag;)V
+
+    .line 413
+    :cond_0
+    return-void
+.end method
+
 .method public showRightTopBtn(Ljava/lang/String;)V
     .locals 0
     .param p1, "show"    # Ljava/lang/String;
 
     .prologue
-    .line 409
+    .line 429
     return-void
 .end method
 
@@ -2620,7 +2892,7 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 404
+    .line 424
     return-void
 .end method
 
@@ -2628,12 +2900,12 @@
     .locals 6
 
     .prologue
-    .line 202
+    .line 214
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mDownloadPopDialog:Lcom/jiliguala/niuwa/a/b/d;
 
     iget-object v0, v3, Lcom/jiliguala/niuwa/a/b/d;->c:Lcom/jiliguala/niuwa/module/game/DownloadGameResView;
 
-    .line 203
+    .line 215
     .local v0, "downloadGameResView":Lcom/jiliguala/niuwa/module/game/DownloadGameResView;
     sget-object v3, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;->MC_PHONICS:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/InteractLessonTypeEnum;
 
@@ -2641,10 +2913,10 @@
 
     invoke-virtual {v0, v3}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->setType(I)V
 
-    .line 204
+    .line 216
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->updateUIOnlyShowProgress()V
 
-    .line 205
+    .line 217
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->packageName:Ljava/lang/String;
@@ -2653,34 +2925,34 @@
 
     invoke-virtual {v0, v3, v4, v5}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->initData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 206
+    .line 218
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 207
+    .line 219
     .local v2, "url":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mUrl:Ljava/lang/String;
 
-    .line 208
+    .line 220
     .local v1, "gamePackageUrl":Ljava/lang/String;
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 209
+    .line 221
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->setData(Ljava/util/ArrayList;)V
 
-    .line 210
+    .line 222
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->setCallBack(Lcom/jiliguala/niuwa/module/interact/course/viewwidget/loading/PrepareInteractResView$CallBack;)V
 
-    .line 211
+    .line 223
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mcPcSubTaskTicket:Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;
 
     invoke-virtual {v0, v3}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->setMcPcSubTaskTicket(Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;)V
 
-    .line 212
+    .line 224
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/game/DownloadGameResView;->startDownload()V
 
-    .line 213
+    .line 225
     return-void
 .end method
 
@@ -2689,7 +2961,7 @@
     .param p1, "text"    # Ljava/lang/String;
 
     .prologue
-    .line 424
+    .line 444
     const-class v1, Lcom/jiliguala/niuwa/logic/network/json/GameSectionJsonTemplete;
 
     invoke-static {p1, v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
@@ -2698,7 +2970,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/GameSectionJsonTemplete;
 
-    .line 425
+    .line 445
     .local v0, "gameSectionJsonTemplete":Lcom/jiliguala/niuwa/logic/network/json/GameSectionJsonTemplete;
     if-eqz v0, :cond_0
 
@@ -2710,18 +2982,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 431
+    .line 451
     :cond_0
     :goto_0
     return-void
 
-    .line 427
+    .line 447
     :cond_1
     iget-object v1, v0, Lcom/jiliguala/niuwa/logic/network/json/GameSectionJsonTemplete;->sectionID:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
-    .line 428
+    .line 448
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2756,7 +3028,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mRecordFilePath:Ljava/lang/String;
 
-    .line 430
+    .line 450
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/GameSectionJsonTemplete;->text:Ljava/lang/String;
@@ -2773,7 +3045,7 @@
     .param p1, "text"    # Ljava/lang/String;
 
     .prologue
-    .line 436
+    .line 456
     const-class v1, Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;
 
     invoke-static {p1, v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
@@ -2782,7 +3054,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;
 
-    .line 437
+    .line 457
     .local v0, "gameSpeakSectionJsonTemplete":Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;
     if-eqz v0, :cond_0
 
@@ -2794,18 +3066,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 443
+    .line 463
     :cond_0
     :goto_0
     return-void
 
-    .line 439
+    .line 459
     :cond_1
     iget-object v1, v0, Lcom/jiliguala/niuwa/logic/network/json/GameSpeakSectionJsonTemplete;->sectionID:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mSectionID:Ljava/lang/String;
 
-    .line 440
+    .line 460
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2840,7 +3112,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mRecordFilePath:Ljava/lang/String;
 
-    .line 442
+    .line 462
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     const-string v2, ""
@@ -2860,17 +3132,17 @@
     .locals 1
 
     .prologue
-    .line 250
+    .line 262
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     if-eqz v0, :cond_0
 
-    .line 251
+    .line 263
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mHomeKeyWatcher:Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/watchers/HomeKeyWatcher;->d()V
 
-    .line 253
+    .line 265
     :cond_0
     return-void
 .end method
@@ -2879,11 +3151,11 @@
     .locals 1
 
     .prologue
-    .line 470
+    .line 497
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity;->mChiShenRecorder:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ChiShenRecorderWrapper;->stopRecordByChiShen()V
 
-    .line 472
+    .line 499
     return-void
 .end method

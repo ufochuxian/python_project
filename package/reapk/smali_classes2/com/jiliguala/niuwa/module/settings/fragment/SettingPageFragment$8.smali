@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 883
+    .line 892
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$8;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +42,10 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 898
+    .line 907
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 899
+    .line 908
     return-void
 .end method
 
@@ -54,10 +54,10 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 892
+    .line 901
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 893
+    .line 902
     return-void
 .end method
 
@@ -66,7 +66,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 903
+    .line 912
     return-void
 .end method
 
@@ -75,6 +75,6 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 887
+    .line 896
     return-void
 .end method

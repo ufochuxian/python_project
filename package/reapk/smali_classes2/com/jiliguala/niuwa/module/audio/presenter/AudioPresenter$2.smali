@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 1501
+    .line 1530
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$2;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "audioChannelTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/AudioChannelTemplate;
 
     .prologue
-    .line 1514
+    .line 1543
     if-eqz p1, :cond_0
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/AudioChannelTemplate;->data:Ljava/util/ArrayList;
@@ -63,7 +63,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1515
+    .line 1544
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$2;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -74,7 +74,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->updateAudioChannelData(Ljava/util/ArrayList;)V
 
-    .line 1517
+    .line 1546
     :cond_0
     return-void
 .end method
@@ -83,7 +83,7 @@
     .locals 0
 
     .prologue
-    .line 1505
+    .line 1534
     return-void
 .end method
 
@@ -92,7 +92,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1510
+    .line 1539
     return-void
 .end method
 
@@ -100,7 +100,7 @@
     .locals 0
 
     .prologue
-    .line 1501
+    .line 1530
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/AudioChannelTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$2;->a(Lcom/jiliguala/niuwa/logic/network/json/AudioChannelTemplate;)V

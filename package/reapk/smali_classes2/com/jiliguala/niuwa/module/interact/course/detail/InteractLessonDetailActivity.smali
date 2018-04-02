@@ -111,9 +111,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 94
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -581,7 +581,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     .line 61
-    const v0, 0x7f090595
+    const v0, 0x7f09059f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailActivity;->findViewById(I)Landroid/view/View;
 
@@ -612,7 +612,7 @@
     .line 64
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailActivity;->mBackIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0802d6
+    const v1, 0x7f0802e0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

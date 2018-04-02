@@ -15,27 +15,27 @@
 
 
 # static fields
-.field public static final internalLayout:I = 0x7f0400df
+.field public static final internalLayout:I = 0x7f0400e0
 
-.field public static final internalMaxHeight:I = 0x7f0400e0
+.field public static final internalMaxHeight:I = 0x7f0400e1
 
-.field public static final internalMaxWidth:I = 0x7f0400e1
+.field public static final internalMaxWidth:I = 0x7f0400e2
 
-.field public static final internalMinHeight:I = 0x7f0400e2
+.field public static final internalMinHeight:I = 0x7f0400e3
 
-.field public static final internalMinWidth:I = 0x7f0400e3
+.field public static final internalMinWidth:I = 0x7f0400e4
 
-.field public static final numberPickerStyle:I = 0x7f040164
+.field public static final numberPickerStyle:I = 0x7f040165
 
-.field public static final selectionDivider:I = 0x7f0401ce
+.field public static final selectionDivider:I = 0x7f0401cf
 
-.field public static final selectionDividerHeight:I = 0x7f0401cf
+.field public static final selectionDividerHeight:I = 0x7f0401d0
 
-.field public static final selectionDividersDistance:I = 0x7f0401d0
+.field public static final selectionDividersDistance:I = 0x7f0401d1
 
-.field public static final solidColor:I = 0x7f0401dd
+.field public static final solidColor:I = 0x7f0401de
 
-.field public static final virtualButtonPressedDrawable:I = 0x7f040237
+.field public static final virtualButtonPressedDrawable:I = 0x7f040238
 
 
 # direct methods

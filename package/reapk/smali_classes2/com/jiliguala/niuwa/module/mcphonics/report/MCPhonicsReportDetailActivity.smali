@@ -48,13 +48,13 @@
 
 .field reportRecyclerView:Landroid/support/v7/widget/RecyclerView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09044f
+        a = 0x7f090456
     .end annotation
 .end field
 
 .field topBarTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090595
+        a = 0x7f09059f
     .end annotation
 .end field
 

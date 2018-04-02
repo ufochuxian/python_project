@@ -135,7 +135,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b01af
+    const v5, 0x7f0b01b5
 
     const/4 v6, 0x0
 
@@ -169,7 +169,7 @@
 
     .line 101
     .local v1, "viewHolder":Lcom/jiliguala/niuwa/module/interact/course/detail/view/GridWordView$b;
-    const v4, 0x7f09061a
+    const v4, 0x7f090624
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

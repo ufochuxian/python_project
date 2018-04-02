@@ -161,13 +161,13 @@
 
     .line 73
     .local v3, "ft":Landroid/support/v4/app/an;
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
-    const v7, 0x7f01001e
+    const v7, 0x7f010020
 
     invoke-virtual {v3, v4, v5, v6, v7}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -179,7 +179,7 @@
     if-nez v4, :cond_1
 
     .line 78
-    const v4, 0x7f090478
+    const v4, 0x7f090481
 
     sget-object v5, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -251,7 +251,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b00f0
+    const v2, 0x7f0b00f1
 
     invoke-static {v1, v2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 

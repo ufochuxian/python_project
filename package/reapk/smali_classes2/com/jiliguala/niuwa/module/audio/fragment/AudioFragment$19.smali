@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2233
+    .line 2246
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$19;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$19;->a:Landroid/app/Dialog;
@@ -50,12 +50,12 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 2236
+    .line 2249
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$19;->a:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 2237
+    .line 2250
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/c;->a()Lcom/jiliguala/niuwa/logic/k/c;
 
     move-result-object v0
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/k/c;->e(Ljava/lang/String;)V
 
-    .line 2238
+    .line 2251
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/a;->a()Lcom/jiliguala/niuwa/logic/g/a;
 
     move-result-object v0
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/g/a;->b(Ljava/lang/String;)V
 
-    .line 2239
+    .line 2252
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/b;->a()Lcom/jiliguala/niuwa/logic/k/b;
 
     move-result-object v0
@@ -82,13 +82,13 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/k/b;->c(Ljava/lang/String;)V
 
-    .line 2240
+    .line 2253
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$19;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->updateDownloadIcon(I)V
 
-    .line 2242
+    .line 2255
     return-void
 .end method

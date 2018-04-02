@@ -36,7 +36,7 @@
     invoke-direct {p0, p1}, Landroid/support/v7/widget/RecyclerView$w;-><init>(Landroid/view/View;)V
 
     .line 246
-    const v0, 0x7f0902a0
+    const v0, 0x7f0902a6
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -45,7 +45,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumBoradListAdapter$BoardListItemHolder;->root:Landroid/view/View;
 
     .line 247
-    const v0, 0x7f09056e
+    const v0, 0x7f090578
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -56,7 +56,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumBoradListAdapter$BoardListItemHolder;->thumb:Landroid/widget/ImageView;
 
     .line 248
-    const v0, 0x7f09057a
+    const v0, 0x7f090584
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumBoradListAdapter$BoardListItemHolder;->desc:Landroid/widget/TextView;
 
     .line 250
-    const v0, 0x7f09045c
+    const v0, 0x7f090465
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

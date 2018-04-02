@@ -21,21 +21,21 @@
 
 .field public static final error_view_refresh_btn:I = 0x7f0901eb
 
-.field public static final hybird_container:I = 0x7f090272
+.field public static final hybird_container:I = 0x7f090277
 
-.field public static final red_point:I = 0x7f090439
+.field public static final red_point:I = 0x7f090440
 
-.field public static final title:I = 0x7f09057a
+.field public static final title:I = 0x7f090584
 
-.field public static final title_back:I = 0x7f09057d
+.field public static final title_back:I = 0x7f090587
 
-.field public static final title_bar_shadow_view:I = 0x7f09057f
+.field public static final title_bar_shadow_view:I = 0x7f090589
 
-.field public static final title_button:I = 0x7f090580
+.field public static final title_button:I = 0x7f09058a
 
-.field public static final title_text:I = 0x7f090587
+.field public static final title_text:I = 0x7f090591
 
-.field public static final webview_icon_back:I = 0x7f09060b
+.field public static final webview_icon_back:I = 0x7f090615
 
 
 # direct methods

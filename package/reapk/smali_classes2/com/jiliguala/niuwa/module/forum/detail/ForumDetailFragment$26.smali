@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080194
+    const v1, 0x7f080198
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -173,9 +173,9 @@
 
     move-result-object v0
 
-    const v1, 0x7f010012
+    const v1, 0x7f010013
 
-    const v2, 0x7f01001e
+    const v2, 0x7f010020
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 

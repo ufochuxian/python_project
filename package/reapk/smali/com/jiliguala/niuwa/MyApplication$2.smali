@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/MyApplication;
 
     .prologue
-    .line 227
+    .line 236
     iput-object p1, p0, Lcom/jiliguala/niuwa/MyApplication$2;->a:Lcom/jiliguala/niuwa/MyApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .param p3, "code"    # Lcom/alibaba/sdk/android/feedback/util/ErrorCode;
 
     .prologue
-    .line 230
+    .line 239
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -71,6 +71,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 231
+    .line 240
     return-void
 .end method

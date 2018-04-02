@@ -169,7 +169,7 @@
 
     .prologue
     .line 222
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -177,10 +177,10 @@
 
     invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment$4;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment;Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/t/a/a;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/logic/u/a/a;)V
 
     .line 233
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -188,10 +188,10 @@
 
     invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment$5;-><init>(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment;Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
 
     .line 258
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p1, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;Landroid/support/v4/app/ag;)Z
+    invoke-virtual {v0, p1, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;Landroid/support/v4/app/ag;)Z
 
     move-result v0
 
@@ -472,7 +472,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 370
-    const v0, 0x7f0902d3
+    const v0, 0x7f0902d9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

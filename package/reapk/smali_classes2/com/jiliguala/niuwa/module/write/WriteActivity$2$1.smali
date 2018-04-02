@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/write/WriteActivity$2;
 
     .prologue
-    .line 347
+    .line 351
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity$2;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;->a:Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 350
+    .line 354
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity$2;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    .line 351
+    .line 355
     .local v0, "courseFinishAnimDlg":Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity$2;
 
@@ -70,13 +70,13 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->show(Landroid/support/v4/app/ag;)V
 
-    .line 352
+    .line 356
     new-instance v1, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;-><init>(Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;)V
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->setIDismissListener(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;)V
 
-    .line 368
+    .line 372
     return-void
 .end method

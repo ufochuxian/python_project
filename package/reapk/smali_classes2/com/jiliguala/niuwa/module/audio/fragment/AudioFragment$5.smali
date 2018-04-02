@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1212
+    .line 1225
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .end annotation
 
     .prologue
-    .line 1217
+    .line 1230
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -55,7 +55,7 @@
 
     move-result v0
 
-    .line 1218
+    .line 1231
     .local v0, "height":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -67,7 +67,7 @@
 
     move-result v1
 
-    .line 1221
+    .line 1234
     .local v1, "width":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -87,7 +87,7 @@
 
     invoke-static {v2, v3, v4, v5}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/View;IZ)V
 
-    .line 1222
+    .line 1235
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -106,14 +106,14 @@
 
     invoke-static {v2, v3, v4, v5}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2800(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/View;IZ)V
 
-    .line 1224
+    .line 1237
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x10
 
     if-lt v2, v3, :cond_0
 
-    .line 1225
+    .line 1238
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/widget/lyric/LrcView;
@@ -126,11 +126,11 @@
 
     invoke-virtual {v2, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 1229
+    .line 1242
     :goto_0
     return-void
 
-    .line 1227
+    .line 1240
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$5;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 

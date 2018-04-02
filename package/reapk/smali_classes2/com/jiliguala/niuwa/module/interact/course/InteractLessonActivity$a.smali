@@ -27,15 +27,15 @@
     .param p2, "fl"    # Landroid/widget/FrameLayout$LayoutParams;
 
     .prologue
-    .line 1078
+    .line 1128
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1079
+    .line 1129
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;->a:Landroid/view/View;
 
-    .line 1080
+    .line 1130
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;->b:Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 1081
+    .line 1131
     return-void
 .end method

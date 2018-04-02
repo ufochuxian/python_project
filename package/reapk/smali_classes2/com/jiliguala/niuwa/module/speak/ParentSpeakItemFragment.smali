@@ -234,7 +234,7 @@
     .line 80
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f09030f
+    const v4, 0x7f090316
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -342,7 +342,7 @@
     :goto_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f090616
+    const v4, 0x7f090620
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -397,7 +397,7 @@
     :goto_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakItemFragment;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f090618
+    const v4, 0x7f090622
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -416,7 +416,7 @@
 
     if-nez v3, :cond_3
 
-    const v3, 0x7f080411
+    const v3, 0x7f08041e
 
     :goto_2
     invoke-virtual {v4, v3}, Landroid/view/View;->setBackgroundResource(I)V
@@ -463,7 +463,7 @@
 
     .line 106
     :cond_3
-    const v3, 0x7f0803cb
+    const v3, 0x7f0803d8
 
     goto :goto_2
 .end method

@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1000c1
+    const v2, 0x7f1000c2
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 

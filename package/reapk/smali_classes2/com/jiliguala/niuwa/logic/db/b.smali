@@ -912,6 +912,7 @@
     .line 525
     const/4 v8, 0x0
 
+    .line 527
     :cond_3
     throw v1
     :try_end_4
@@ -956,6 +957,7 @@
     .line 535
     const/4 v9, 0x0
 
+    .line 537
     :cond_4
     throw v1
 
@@ -1301,6 +1303,7 @@
     .line 588
     const/4 v8, 0x0
 
+    .line 590
     :cond_3
     throw v1
     :try_end_6
@@ -1345,6 +1348,7 @@
     .line 598
     const/4 v9, 0x0
 
+    .line 600
     :cond_4
     throw v1
 
@@ -1556,6 +1560,7 @@
     .line 155
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 157
     :cond_4
     throw v0
 .end method
@@ -1786,6 +1791,7 @@
     .line 174
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 176
     :cond_4
     throw v0
 .end method
@@ -1957,6 +1963,7 @@
     .line 387
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 389
     :cond_4
     throw v0
 .end method
@@ -2196,6 +2203,7 @@
     .line 199
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
+    .line 201
     :cond_5
     throw v0
 .end method
@@ -2363,6 +2371,7 @@
     .line 224
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
+    .line 226
     :cond_5
     throw v0
 .end method
@@ -2530,6 +2539,7 @@
     .line 249
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
+    .line 251
     :cond_5
     throw v0
 .end method
@@ -2697,6 +2707,7 @@
     .line 275
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 277
     :cond_5
     throw v0
 .end method
@@ -2864,6 +2875,7 @@
     .line 301
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
+    .line 303
     :cond_5
     throw v0
 .end method
@@ -3002,6 +3014,7 @@
     .line 323
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 325
     :cond_4
     throw v0
 .end method
@@ -3134,6 +3147,7 @@
     .line 345
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 347
     :cond_4
     throw v0
 .end method
@@ -3266,6 +3280,7 @@
     .line 367
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 369
     :cond_4
     throw v0
 .end method
@@ -3404,6 +3419,7 @@
     .line 428
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 430
     :cond_4
     throw v0
 .end method
@@ -3625,6 +3641,7 @@
     .line 484
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
+    .line 486
     :cond_4
     throw v0
 .end method

@@ -1112,7 +1112,7 @@
     .locals 2
 
     .prologue
-    .line 502
+    .line 504
     const/16 v0, 0x5009
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mType:I
@@ -1134,7 +1134,7 @@
     .locals 2
 
     .prologue
-    .line 498
+    .line 500
     const/16 v0, 0x5003
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mType:I
@@ -1156,7 +1156,7 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0802c7
+    const v5, 0x7f0802d1
 
     const/16 v4, 0x8
 
@@ -1231,7 +1231,7 @@
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mBackIcon:Landroid/widget/ImageView;
 
-    const v2, 0x7f0802d6
+    const v2, 0x7f0802e0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1481,7 +1481,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 495
+    .line 497
     :cond_0
     :goto_0
     return-void
@@ -1498,9 +1498,15 @@
 
     const/16 v1, 0x5005
 
+    if-eq v0, v1, :cond_1
+
+    iget v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mType:I
+
+    const/16 v1, 0x5008
+
     if-ne v0, v1, :cond_2
 
-    .line 485
+    .line 487
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -1508,7 +1514,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 486
+    .line 488
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -1517,7 +1523,7 @@
 
     goto :goto_0
 
-    .line 489
+    .line 491
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->getFragmentManager()Landroid/support/v4/app/ag;
 
@@ -1573,7 +1579,7 @@
     .line 196
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1586,7 +1592,7 @@
     .line 197
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090537
+    const v1, 0x7f090541
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1599,7 +1605,7 @@
     .line 198
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f0904f8
+    const v1, 0x7f090502
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1612,7 +1618,7 @@
     .line 199
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f0903d9
+    const v1, 0x7f0903e0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1625,7 +1631,7 @@
     .line 200
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f0902e6
+    const v1, 0x7f0902ed
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1638,7 +1644,7 @@
     .line 201
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090397
+    const v1, 0x7f09039e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1664,7 +1670,7 @@
     .line 203
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->mRoot:Landroid/view/View;
 
-    const v1, 0x7f090396
+    const v1, 0x7f09039d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

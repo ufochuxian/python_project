@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->onPlayPauseOnUi()V
+    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->updateFavImg(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,21 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+.field final synthetic a:Ljava/lang/String;
+
+.field final synthetic b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 662
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    .line 3210
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,21 +42,49 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 665
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    .line 3213
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->onStopTimer()V
+    move-result-object v1
 
-    .line 666
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/login/a;->l()Z
 
-    const/4 v1, 0x1
+    move-result v1
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$200(Lcom/jiliguala/niuwa/module/video/VideoActivity;Z)V
+    if-eqz v1, :cond_0
 
-    .line 667
+    .line 3214
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->a:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/k/e;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
+    .line 3215
+    .local v0, "isFav":Z
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->updateFavIcon(Z)V
+
+    .line 3219
+    .end local v0    # "isFav":Z
+    :goto_0
     return-void
+
+    .line 3217
+    :cond_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$18;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->updateFavIcon(Z)V
+
+    goto :goto_0
 .end method

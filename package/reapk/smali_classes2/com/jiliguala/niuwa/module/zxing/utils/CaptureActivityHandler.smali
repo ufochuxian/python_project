@@ -185,8 +185,8 @@
     .sparse-switch
         0x7f0901a6 -> :sswitch_2
         0x7f0901a7 -> :sswitch_1
-        0x7f090452 -> :sswitch_0
-        0x7f090458 -> :sswitch_3
+        0x7f090459 -> :sswitch_0
+        0x7f09045f -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -211,7 +211,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090422
+    const v2, 0x7f090429
 
     invoke-static {v1, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 

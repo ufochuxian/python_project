@@ -1,35 +1,103 @@
-.class public interface abstract Lcom/jiliguala/niuwa/logic/l/d;
+.class public Lcom/jiliguala/niuwa/logic/l/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:I = -0x1
+.field private static a:Lcom/jiliguala/niuwa/logic/l/d;
 
-.field public static final b:I = 0x0
 
-.field public static final c:I = 0x1
+# instance fields
+.field private b:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference",
+            "<",
+            "Landroid/app/Activity;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final d:I = 0x2
 
-.field public static final e:I = 0x3
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
-.field public static final f:I = 0x4
+    .prologue
+    .line 12
+    new-instance v0, Lcom/jiliguala/niuwa/logic/l/d;
 
-.field public static final g:I = 0x5
+    invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/l/d;-><init>()V
 
-.field public static final h:I = 0x6
+    sput-object v0, Lcom/jiliguala/niuwa/logic/l/d;->a:Lcom/jiliguala/niuwa/logic/l/d;
 
-.field public static final i:I = 0x7
+    return-void
+.end method
 
-.field public static final j:I = 0x8
+.method private constructor <init>()V
+    .locals 0
 
-.field public static final k:I = 0x9
+    .prologue
+    .line 15
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static final l:I = 0xa
+    .line 17
+    return-void
+.end method
 
-.field public static final m:I = 0xb
+.method public static a()Lcom/jiliguala/niuwa/logic/l/d;
+    .locals 1
 
-.field public static final n:I = 0xc
+    .prologue
+    .line 20
+    sget-object v0, Lcom/jiliguala/niuwa/logic/l/d;->a:Lcom/jiliguala/niuwa/logic/l/d;
 
-.field public static final o:I = 0xd
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a(Landroid/app/Activity;)V
+    .locals 1
+    .param p1, "topActivity"    # Landroid/app/Activity;
+
+    .prologue
+    .line 31
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/l/d;->b:Ljava/lang/ref/WeakReference;
+
+    .line 32
+    return-void
+.end method
+
+.method public b()Landroid/app/Activity;
+    .locals 1
+
+    .prologue
+    .line 24
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/l/d;->b:Ljava/lang/ref/WeakReference;
+
+    if-eqz v0, :cond_0
+
+    .line 25
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/l/d;->b:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/Activity;
+
+    .line 27
+    :goto_0
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method

@@ -159,7 +159,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080405
+    const v2, 0x7f080412
 
     .line 322
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
@@ -298,7 +298,7 @@
 
     const/4 v3, 0x0
 
-    const v2, 0x7f0801b9
+    const v2, 0x7f0801bf
 
     .line 51
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
@@ -380,7 +380,7 @@
 
     const/4 v3, 0x0
 
-    const v2, 0x7f080148
+    const v2, 0x7f08014a
 
     .line 64
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
@@ -466,7 +466,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f08031b
+    const v2, 0x7f080325
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -532,7 +532,7 @@
 
     const/4 v3, 0x0
 
-    const v2, 0x7f08013e
+    const v2, 0x7f080140
 
     .line 86
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
@@ -608,7 +608,7 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f080141
+    const v5, 0x7f080143
 
     const/4 v4, 0x1
 
@@ -619,7 +619,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f08013e
+    const v2, 0x7f080140
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -694,7 +694,7 @@
 
     const/4 v3, 0x0
 
-    const v2, 0x7f08013e
+    const v2, 0x7f080140
 
     .line 108
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
@@ -760,7 +760,7 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f08013f
+    const v4, 0x7f080141
 
     const/4 v3, 0x1
 
@@ -844,7 +844,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f0801ba
+    const v2, 0x7f0801c0
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -926,7 +926,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600f3
+    const v4, 0x7f0600f5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1062,7 +1062,7 @@
 
     const/4 v2, 0x0
 
-    const v4, 0x7f0600f3
+    const v4, 0x7f0600f5
 
     .line 170
     new-instance v1, Lcom/nostra13/universalimageloader/core/c$a;
@@ -1196,7 +1196,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600f3
+    const v4, 0x7f0600f5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1249,7 +1249,7 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f080318
+    const v4, 0x7f080322
 
     const/4 v3, 0x1
 
@@ -1333,7 +1333,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f0800d9
+    const v2, 0x7f0800db
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -1404,7 +1404,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f0801b8
+    const v2, 0x7f0801be
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -1655,7 +1655,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f08016a
+    const v2, 0x7f08016c
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -1724,7 +1724,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f08040e
+    const v2, 0x7f08041b
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -1793,7 +1793,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f0801ba
+    const v2, 0x7f0801c0
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
 
@@ -1862,7 +1862,7 @@
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/c$a;-><init>()V
 
-    const v2, 0x7f08012b
+    const v2, 0x7f08012d
 
     .line 278
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/c$a;->b(I)Lcom/nostra13/universalimageloader/core/c$a;
@@ -2015,7 +2015,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600f3
+    const v4, 0x7f0600f5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 

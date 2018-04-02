@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lrx/c/c",
         "<",
-        "Ljava/lang/Throwable;",
+        "Lcom/jiliguala/niuwa/logic/b/a/a;",
         ">;"
     }
 .end annotation
@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 2520
+    .line 2555
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$13;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,23 +47,52 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Throwable;)V
-    .locals 0
-    .param p1, "throwable"    # Ljava/lang/Throwable;
+.method public a(Lcom/jiliguala/niuwa/logic/b/a/a;)V
+    .locals 1
+    .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 2524
+    .line 2559
+    iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
+
+    sparse-switch v0, :sswitch_data_0
+
+    .line 2567
+    :goto_0
     return-void
+
+    .line 2561
+    :sswitch_0
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$13;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->onLoginSucceed()V
+
+    goto :goto_0
+
+    .line 2564
+    :sswitch_1
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$13;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->onChildGained()V
+
+    goto :goto_0
+
+    .line 2559
+    :sswitch_data_0
+    .sparse-switch
+        0x1001 -> :sswitch_0
+        0x1007 -> :sswitch_1
+    .end sparse-switch
 .end method
 
 .method public synthetic call(Ljava/lang/Object;)V
     .locals 0
 
     .prologue
-    .line 2520
-    check-cast p1, Ljava/lang/Throwable;
+    .line 2555
+    check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/VideoActivity$13;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/VideoActivity$13;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V
 
     return-void
 .end method

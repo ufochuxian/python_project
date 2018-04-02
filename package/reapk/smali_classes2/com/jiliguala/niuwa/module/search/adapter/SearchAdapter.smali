@@ -399,7 +399,7 @@
 
     iget-object v13, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v14, 0x7f0b0174
+    const v14, 0x7f0b0179
 
     const/4 v15, 0x0
 
@@ -416,7 +416,7 @@
 
     .line 197
     .local v4, "audioHolder":Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$AudioChildrenHolder;
-    const v13, 0x7f0902a3
+    const v13, 0x7f0902a9
 
     move-object/from16 v0, p2
 
@@ -471,7 +471,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f06005e
+    const v16, 0x7f060060
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -528,7 +528,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f06005e
+    const v16, 0x7f060060
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -663,7 +663,7 @@
 
     iget-object v13, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v14, 0x7f0b0176
+    const v14, 0x7f0b017b
 
     const/4 v15, 0x0
 
@@ -680,7 +680,7 @@
 
     .line 222
     .local v12, "videoHolder":Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$VideoChildrenHolder;
-    const v13, 0x7f0902a3
+    const v13, 0x7f0902a9
 
     move-object/from16 v0, p2
 
@@ -735,7 +735,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f06005e
+    const v16, 0x7f060060
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -754,7 +754,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f06005e
+    const v16, 0x7f060060
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -908,7 +908,7 @@
 
     .line 247
     .local v6, "forumViewHolder":Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;
-    const v13, 0x7f090598
+    const v13, 0x7f0905a2
 
     move-object/from16 v0, p2
 
@@ -921,7 +921,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 248
-    const v13, 0x7f090519
+    const v13, 0x7f090523
 
     move-object/from16 v0, p2
 
@@ -934,7 +934,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->b:Landroid/widget/ImageView;
 
     .line 249
-    const v13, 0x7f090380
+    const v13, 0x7f090387
 
     move-object/from16 v0, p2
 
@@ -947,7 +947,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->c:Landroid/widget/ImageView;
 
     .line 250
-    const v13, 0x7f0905a5
+    const v13, 0x7f0905af
 
     move-object/from16 v0, p2
 
@@ -960,7 +960,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->d:Landroid/widget/TextView;
 
     .line 251
-    const v13, 0x7f09026b
+    const v13, 0x7f090270
 
     move-object/from16 v0, p2
 
@@ -973,7 +973,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->e:Landroid/widget/ImageView;
 
     .line 252
-    const v13, 0x7f090378
+    const v13, 0x7f09037f
 
     move-object/from16 v0, p2
 
@@ -986,7 +986,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->f:Landroid/widget/TextView;
 
     .line 253
-    const v13, 0x7f090573
+    const v13, 0x7f09057d
 
     move-object/from16 v0, p2
 
@@ -999,7 +999,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->g:Landroid/widget/TextView;
 
     .line 254
-    const v13, 0x7f090445
+    const v13, 0x7f09044c
 
     move-object/from16 v0, p2
 
@@ -1012,7 +1012,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->h:Landroid/widget/TextView;
 
     .line 255
-    const v13, 0x7f09042a
+    const v13, 0x7f090431
 
     move-object/from16 v0, p2
 
@@ -1025,7 +1025,7 @@
     iput-object v13, v6, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$a;->i:Landroid/widget/TextView;
 
     .line 256
-    const v13, 0x7f0905d3
+    const v13, 0x7f0905dd
 
     move-object/from16 v0, p2
 
@@ -1054,7 +1054,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1091,7 +1091,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1128,7 +1128,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1147,7 +1147,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1469,7 +1469,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1488,7 +1488,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1515,7 +1515,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060052
+    const v16, 0x7f060054
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1637,7 +1637,7 @@
 
     iget-object v13, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v14, 0x7f0b0175
+    const v14, 0x7f0b017a
 
     const/4 v15, 0x0
 
@@ -1656,7 +1656,7 @@
 
     .line 314
     .local v8, "groupHolder":Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$b;
-    const v13, 0x7f0903b4
+    const v13, 0x7f0903bb
 
     move-object/from16 v0, p2
 
@@ -1669,7 +1669,7 @@
     iput-object v13, v8, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$b;->c:Landroid/widget/ImageView;
 
     .line 315
-    const v13, 0x7f090245
+    const v13, 0x7f090246
 
     move-object/from16 v0, p2
 
@@ -1682,7 +1682,7 @@
     iput-object v13, v8, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$b;->a:Landroid/widget/TextView;
 
     .line 316
-    const v13, 0x7f090244
+    const v13, 0x7f090245
 
     move-object/from16 v0, p2
 
@@ -1695,7 +1695,7 @@
     iput-object v13, v8, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$b;->b:Landroid/widget/TextView;
 
     .line 317
-    const v13, 0x7f0903b6
+    const v13, 0x7f0903bd
 
     move-object/from16 v0, p2
 
@@ -1734,7 +1734,7 @@
     iput-object v13, v8, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter$b;->f:Landroid/widget/TextView;
 
     .line 320
-    const v13, 0x7f090325
+    const v13, 0x7f09032c
 
     move-object/from16 v0, p2
 
@@ -1761,7 +1761,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060058
+    const v16, 0x7f06005a
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 
@@ -1778,7 +1778,7 @@
 
     iget-object v15, v0, Lcom/jiliguala/niuwa/module/search/adapter/SearchAdapter;->keyWord:Ljava/lang/String;
 
-    const v16, 0x7f060058
+    const v16, 0x7f06005a
 
     invoke-static/range {v14 .. v16}, Lcom/jiliguala/niuwa/common/util/ad;->a(Ljava/lang/String;Ljava/lang/String;I)Landroid/text/SpannableString;
 

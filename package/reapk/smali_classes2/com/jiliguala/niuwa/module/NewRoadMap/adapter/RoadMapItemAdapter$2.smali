@@ -47,6 +47,11 @@
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->onShowGuideView()V
 
     .line 321
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->access$000(Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;)V
+
+    .line 322
     return-void
 .end method
 
@@ -54,69 +59,25 @@
     .locals 1
 
     .prologue
-    .line 325
+    .line 326
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->onDismissGuideView()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->setShowGuideFlag()V
 
-    .line 326
+    .line 327
     return-void
 .end method
 
 .method public c()V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 330
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->V()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isAgeOverTwoMC(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     .line 331
-    const-string v0, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->reportBeginnerGuideExit()V
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
-
-    .line 333
-    :cond_0
+    .line 332
     return-void
 .end method
 
@@ -124,7 +85,7 @@
     .locals 2
 
     .prologue
-    .line 337
+    .line 336
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/n;->a()Lcom/jiliguala/niuwa/common/util/n;
 
     move-result-object v0
@@ -132,6 +93,11 @@
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/jiliguala/niuwa/common/util/n;->a:Z
+
+    .line 337
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter$2;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->onDismissGuideView()V
 
     .line 338
     return-void

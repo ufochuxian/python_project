@@ -123,7 +123,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mEventName:Ljava/lang/String;
 
     .line 66
-    const v0, 0x7f080311
+    const v0, 0x7f08031b
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->topIconRes:I
 
@@ -204,7 +204,7 @@
 
     iget-object v13, v0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mUnitID:Ljava/lang/String;
 
-    invoke-static/range {v1 .. v13}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v1 .. v13}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 329
     .end local v12    # "source":Ljava/lang/String;
@@ -283,7 +283,7 @@
 
     move-result-object v11
 
-    invoke-static/range {v1 .. v12}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v1 .. v12}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 327
     .end local v12    # "source":Ljava/lang/String;
@@ -292,7 +292,7 @@
 
     iget-object v1, v0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mShareSuccessListener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v1}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     goto :goto_1
 
@@ -420,7 +420,7 @@
 
     move-object/from16 v25, v0
 
-    invoke-static/range {v13 .. v25}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v13 .. v25}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_3
 .end method
@@ -717,7 +717,7 @@
 
     move-object v10, v9
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -785,12 +785,12 @@
 
     move-object v10, v9
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 298
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mShareSuccessListener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     goto/16 :goto_0
 
@@ -805,7 +805,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0904dd
+    .packed-switch 0x7f0904e7
         :pswitch_2
         :pswitch_0
         :pswitch_3
@@ -876,13 +876,13 @@
     .end annotation
 
     .prologue
-    const v3, 0x7f0904e3
+    const v3, 0x7f0904ed
 
     .line 197
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->reportLessonReportShareDialog()V
 
     .line 198
-    const v1, 0x7f0b010c
+    const v1, 0x7f0b010d
 
     const/4 v2, 0x0
 
@@ -895,7 +895,7 @@
     .line 199
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0904dd
+    const v2, 0x7f0904e7
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -917,7 +917,7 @@
     .line 201
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0904e2
+    const v2, 0x7f0904ec
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -928,7 +928,7 @@
     .line 202
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0903c9
+    const v2, 0x7f0903d0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -950,7 +950,7 @@
     .line 204
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090612
+    const v2, 0x7f09061c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -976,7 +976,7 @@
     .line 207
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0904fe
+    const v2, 0x7f090508
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -987,7 +987,7 @@
     .line 209
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0904e0
+    const v2, 0x7f0904ea
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1012,7 +1012,7 @@
     .line 215
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09060e
+    const v2, 0x7f090618
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1040,7 +1040,7 @@
     .line 223
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09057a
+    const v2, 0x7f090584
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1053,7 +1053,7 @@
     .line 225
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/CourseCompleteShareFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090531
+    const v2, 0x7f09053b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

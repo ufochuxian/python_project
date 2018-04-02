@@ -36,7 +36,9 @@
 
 .field public static final p:Ljava/lang/String; = "skin"
 
-.field private static final q:Ljava/lang/String;
+.field public static final q:Ljava/lang/String; = "log"
+
+.field private static final r:Ljava/lang/String;
 
 
 # direct methods
@@ -44,14 +46,14 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 42
     const-class v0, Lcom/jiliguala/niuwa/common/util/d/a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/jiliguala/niuwa/common/util/d/a;->q:Ljava/lang/String;
+    sput-object v0, Lcom/jiliguala/niuwa/common/util/d/a;->r:Ljava/lang/String;
 
     return-void
 .end method
@@ -74,24 +76,24 @@
     .end annotation
 
     .prologue
-    .line 64
+    .line 65
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ac;->i()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 65
+    .line 66
     invoke-virtual {p0}, Landroid/os/StatFs;->getTotalBytes()J
 
     move-result-wide v0
 
-    .line 69
+    .line 70
     .local v0, "availableBytes":J
     :goto_0
     return-wide v0
 
-    .line 67
+    .line 68
     .end local v0    # "availableBytes":J
     :cond_0
     invoke-virtual {p0}, Landroid/os/StatFs;->getBlockCount()I
@@ -117,7 +119,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 118
+    .line 119
     const-string v0, "img"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -133,34 +135,34 @@
     .param p1, "uniqueName"    # Ljava/lang/String;
 
     .prologue
-    .line 196
+    .line 201
     if-nez p0, :cond_1
 
-    .line 197
+    .line 202
     const/4 v1, 0x0
 
-    .line 227
+    .line 232
     :cond_0
     :goto_0
     return-object v1
 
-    .line 202
+    .line 207
     :cond_1
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v3
 
-    .line 203
+    .line 208
     .local v3, "outer_cache":Ljava/io/File;
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v2
 
-    .line 206
+    .line 211
     .local v2, "inner_cache":Ljava/io/File;
     const/4 v0, 0x0
 
-    .line 210
+    .line 215
     .local v0, "cachePath":Ljava/lang/String;
     const-string v4, "mounted"
 
@@ -174,7 +176,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 214
+    .line 219
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -209,7 +211,7 @@
 
     move-result-object v0
 
-    .line 222
+    .line 227
     :goto_1
     new-instance v1, Ljava/io/File;
 
@@ -237,7 +239,7 @@
 
     invoke-direct {v1, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 223
+    .line 228
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -249,7 +251,7 @@
 
     if-nez v4, :cond_0
 
-    .line 224
+    .line 229
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
@@ -260,7 +262,7 @@
 
     goto :goto_0
 
-    .line 217
+    .line 222
     .end local v1    # "file":Ljava/io/File;
     :cond_2
     new-instance v4, Ljava/lang/StringBuilder;
@@ -300,7 +302,7 @@
     .locals 2
 
     .prologue
-    .line 49
+    .line 50
     const-string v0, "mounted"
 
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/d/a;->h()Ljava/lang/String;
@@ -336,12 +338,12 @@
     .param p0, "fileSize"    # J
 
     .prologue
-    .line 78
+    .line 79
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v0
 
-    .line 79
+    .line 80
     .local v0, "sdcard":Ljava/io/File;
     new-instance v1, Landroid/os/StatFs;
 
@@ -351,7 +353,7 @@
 
     invoke-direct {v1, v2}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 80
+    .line 81
     .local v1, "statFs":Landroid/os/StatFs;
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/d/a;->b(Landroid/os/StatFs;)J
 
@@ -379,10 +381,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 287
+    .line 292
     const/4 v1, 0x1
 
-    .line 288
+    .line 293
     .local v1, "result":Z
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -390,14 +392,14 @@
 
     if-eqz v3, :cond_4
 
-    .line 289
+    .line 294
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 290
+    .line 295
     invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v3
@@ -409,7 +411,7 @@
 
     aget-object v0, v3, v2
 
-    .line 291
+    .line 296
     .local v0, "child":Ljava/io/File;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Ljava/io/File;)Z
 
@@ -417,12 +419,12 @@
 
     and-int/2addr v1, v5
 
-    .line 290
+    .line 295
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 293
+    .line 298
     .end local v0    # "child":Ljava/io/File;
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
@@ -431,7 +433,7 @@
 
     and-int/2addr v1, v2
 
-    .line 295
+    .line 300
     :cond_1
     invoke-virtual {p0}, Ljava/io/File;->isFile()Z
 
@@ -439,21 +441,21 @@
 
     if-eqz v2, :cond_2
 
-    .line 296
+    .line 301
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
     move-result v2
 
     and-int/2addr v1, v2
 
-    .line 298
+    .line 303
     :cond_2
     if-nez v1, :cond_3
 
     :cond_3
     move v2, v1
 
-    .line 304
+    .line 309
     :cond_4
     return v2
 .end method
@@ -466,24 +468,24 @@
     .end annotation
 
     .prologue
-    .line 86
+    .line 87
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ac;->i()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 87
+    .line 88
     invoke-virtual {p0}, Landroid/os/StatFs;->getAvailableBytes()J
 
     move-result-wide v0
 
-    .line 91
+    .line 92
     .local v0, "availableBytes":J
     :goto_0
     return-wide v0
 
-    .line 89
+    .line 90
     .end local v0    # "availableBytes":J
     :cond_0
     invoke-virtual {p0}, Landroid/os/StatFs;->getAvailableBlocks()I
@@ -512,23 +514,23 @@
     .end annotation
 
     .prologue
-    .line 310
+    .line 315
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ac;->b()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 311
+    .line 316
     invoke-virtual {p0}, Ljava/io/File;->getUsableSpace()J
 
     move-result-wide v2
 
-    .line 314
+    .line 319
     :goto_0
     return-wide v2
 
-    .line 313
+    .line 318
     :cond_0
     new-instance v0, Landroid/os/StatFs;
 
@@ -538,7 +540,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 314
+    .line 319
     .local v0, "stats":Landroid/os/StatFs;
     invoke-virtual {v0}, Landroid/os/StatFs;->getBlockSize()I
 
@@ -562,7 +564,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 122
+    .line 123
     const-string v0, "lrc"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -578,22 +580,22 @@
     .param p1, "uniqueName"    # Ljava/lang/String;
 
     .prologue
-    .line 235
+    .line 240
     if-nez p0, :cond_1
 
-    .line 236
+    .line 241
     const/4 v1, 0x0
 
-    .line 246
+    .line 251
     :cond_0
     :goto_0
     return-object v1
 
-    .line 238
+    .line 243
     :cond_1
     const/4 v0, 0x0
 
-    .line 239
+    .line 244
     .local v0, "cachePath":Ljava/lang/String;
     const-string v2, "mounted"
 
@@ -607,7 +609,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 240
+    .line 245
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -648,7 +650,7 @@
 
     move-result-object v0
 
-    .line 242
+    .line 247
     :cond_2
     new-instance v1, Ljava/io/File;
 
@@ -676,7 +678,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 243
+    .line 248
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -688,7 +690,7 @@
 
     if-nez v2, :cond_0
 
-    .line 244
+    .line 249
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
@@ -704,7 +706,7 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 59
     invoke-static {}, Landroid/os/Environment;->isExternalStorageRemovable()Z
 
     move-result v0
@@ -717,7 +719,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 126
+    .line 127
     const-string v0, "video"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -731,7 +733,7 @@
     .locals 2
 
     .prologue
-    .line 99
+    .line 100
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v1
@@ -740,7 +742,7 @@
 
     move-result-object v0
 
-    .line 100
+    .line 101
     .local v0, "filePath":Ljava/lang/String;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/i;->a(Ljava/lang/String;)Z
 
@@ -748,12 +750,12 @@
 
     if-nez v1, :cond_0
 
-    .line 101
+    .line 102
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/i;->a(Ljava/lang/String;Z)Z
 
-    .line 103
+    .line 104
     :cond_0
     return-object v0
 .end method
@@ -764,14 +766,14 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 277
+    .line 282
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 278
+    .line 283
     .local v1, "intent":Landroid/content/Intent;
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -797,7 +799,7 @@
 
     move-result-object v0
 
-    .line 279
+    .line 284
     .local v0, "fileName":Ljava/lang/String;
     new-instance v2, Ljava/io/File;
 
@@ -811,22 +813,22 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 280
+    .line 285
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 281
+    .line 286
     const-string v2, "com.android.packageinstaller"
 
     const-string v3, "com.android.packageinstaller.PackageInstallerActivity"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 282
+    .line 287
     invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 283
+    .line 288
     return-void
 .end method
 
@@ -835,7 +837,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 130
+    .line 131
     const-string v0, "flash_card"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -849,7 +851,7 @@
     .locals 2
 
     .prologue
-    .line 111
+    .line 112
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -871,10 +873,10 @@
     .locals 10
 
     .prologue
-    .line 263
+    .line 268
     const/4 v4, 0x0
 
-    .line 264
+    .line 269
     .local v4, "storageDirectory":Ljava/lang/String;
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
@@ -884,13 +886,13 @@
 
     move-result-object v4
 
-    .line 267
+    .line 272
     :try_start_0
     new-instance v3, Landroid/os/StatFs;
 
     invoke-direct {v3, v4}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 268
+    .line 273
     .local v3, "stat":Landroid/os/StatFs;
     invoke-virtual {v3}, Landroid/os/StatFs;->getAvailableBlocks()I
 
@@ -908,16 +910,16 @@
 
     mul-long v0, v6, v8
 
-    .line 271
+    .line 276
     .end local v3    # "stat":Landroid/os/StatFs;
     :goto_0
     return-wide v0
 
-    .line 270
+    .line 275
     :catch_0
     move-exception v2
 
-    .line 271
+    .line 276
     .local v2, "ex":Ljava/lang/RuntimeException;
     const-wide/16 v0, 0x0
 
@@ -929,7 +931,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 134
+    .line 135
     const-string v0, "apk"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -944,7 +946,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 138
+    .line 139
     const-string v0, "audio"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -958,7 +960,7 @@
     .locals 3
 
     .prologue
-    .line 318
+    .line 323
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -969,16 +971,16 @@
 
     move-result-object v0
 
-    .line 319
+    .line 324
     .local v0, "file":Ljava/io/File;
     new-instance v1, Lcom/jiliguala/niuwa/common/util/d/a$1;
 
     invoke-direct {v1, v0}, Lcom/jiliguala/niuwa/common/util/d/a$1;-><init>(Ljava/io/File;)V
 
-    .line 324
+    .line 329
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/d/a$1;->start()V
 
-    .line 325
+    .line 330
     return-void
 .end method
 
@@ -987,7 +989,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 142
+    .line 143
     const-string v0, "photo"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1001,7 +1003,7 @@
     .locals 2
 
     .prologue
-    .line 328
+    .line 333
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -1010,16 +1012,16 @@
 
     move-result-object v0
 
-    .line 329
+    .line 334
     .local v0, "file":Ljava/io/File;
     new-instance v1, Lcom/jiliguala/niuwa/common/util/d/a$2;
 
     invoke-direct {v1, v0}, Lcom/jiliguala/niuwa/common/util/d/a$2;-><init>(Ljava/io/File;)V
 
-    .line 334
+    .line 339
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/d/a$2;->start()V
 
-    .line 335
+    .line 340
     return-void
 .end method
 
@@ -1028,7 +1030,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 146
+    .line 147
     const-string v0, "rec"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1042,10 +1044,10 @@
     .locals 2
 
     .prologue
-    .line 338
+    .line 343
     const-string v1, ""
 
-    .line 340
+    .line 345
     .local v1, "state":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
@@ -1054,15 +1056,15 @@
 
     move-result-object v1
 
-    .line 344
+    .line 349
     :goto_0
     return-object v1
 
-    .line 341
+    .line 346
     :catch_0
     move-exception v0
 
-    .line 342
+    .line 347
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -1074,7 +1076,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 150
+    .line 151
     const-string v0, "cam"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1089,7 +1091,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 154
+    .line 155
     const-string v0, "interact"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1104,7 +1106,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 158
+    .line 159
     const-string v0, "skin"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1119,7 +1121,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 162
+    .line 163
     const-string v0, "game"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1134,7 +1136,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 166
+    .line 167
     const-string v0, "qrcode_url"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
@@ -1145,38 +1147,53 @@
 .end method
 
 .method public static n(Landroid/content/Context;)Ljava/io/File;
+    .locals 1
+    .param p0, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 171
+    const-string v0, "log"
+
+    invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static o(Landroid/content/Context;)Ljava/io/File;
     .locals 6
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 170
+    .line 175
     if-nez p0, :cond_1
 
-    .line 171
+    .line 176
     const/4 v1, 0x0
 
-    .line 192
+    .line 197
     :cond_0
     :goto_0
     return-object v1
 
-    .line 173
+    .line 178
     :cond_1
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v3
 
-    .line 174
+    .line 179
     .local v3, "outer_cache":Ljava/io/File;
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v2
 
-    .line 177
+    .line 182
     .local v2, "inner_cache":Ljava/io/File;
     const/4 v0, 0x0
 
-    .line 179
+    .line 184
     .local v0, "cachePath":Ljava/lang/String;
     const-string v4, "mounted"
 
@@ -1190,7 +1207,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 180
+    .line 185
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1217,7 +1234,7 @@
 
     move-result-object v0
 
-    .line 188
+    .line 193
     :goto_1
     new-instance v1, Ljava/io/File;
 
@@ -1247,7 +1264,7 @@
 
     invoke-direct {v1, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 189
+    .line 194
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -1259,7 +1276,7 @@
 
     if-nez v4, :cond_0
 
-    .line 190
+    .line 195
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
@@ -1270,7 +1287,7 @@
 
     goto :goto_0
 
-    .line 183
+    .line 188
     .end local v1    # "file":Ljava/io/File;
     :cond_2
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1298,12 +1315,12 @@
     goto :goto_1
 .end method
 
-.method public static o(Landroid/content/Context;)Ljava/io/File;
+.method public static p(Landroid/content/Context;)Ljava/io/File;
     .locals 1
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 231
+    .line 236
     const-string v0, "qr_code"
 
     invoke-static {p0, v0}, Lcom/jiliguala/niuwa/common/util/d/a;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;

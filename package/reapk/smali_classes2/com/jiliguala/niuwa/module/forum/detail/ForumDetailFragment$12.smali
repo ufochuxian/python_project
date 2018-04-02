@@ -95,7 +95,7 @@
 
     .line 175
     :cond_2
-    const v5, 0x7f090286
+    const v5, 0x7f09028b
 
     invoke-virtual {p1, v5}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -219,7 +219,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f08034a
+    const v6, 0x7f080354
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -51,7 +51,7 @@
     .line 460
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPersonalFragment$12;->a:Landroid/app/Dialog;
 
-    const v4, 0x7f090386
+    const v4, 0x7f09038d
 
     invoke-virtual {v3, v4}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 

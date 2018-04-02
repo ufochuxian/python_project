@@ -67,7 +67,7 @@
     invoke-virtual {v5}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 50
-    const v5, 0x7f0b016d
+    const v5, 0x7f0b0172
 
     invoke-virtual {v1, v5}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -103,7 +103,7 @@
     invoke-virtual {v1, v6}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     .line 57
-    const v5, 0x7f090424
+    const v5, 0x7f09042b
 
     invoke-virtual {v1, v5}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -131,7 +131,7 @@
 
     .line 69
     :goto_1
-    const v5, 0x7f09039e
+    const v5, 0x7f0903a5
 
     invoke-virtual {v1, v5}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -298,9 +298,9 @@
     .locals 7
 
     .prologue
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
     .line 138
     sget-object v4, Lcom/jiliguala/niuwa/logic/j/b;->b:Landroid/content/Context;
@@ -397,7 +397,7 @@
     if-nez v4, :cond_2
 
     .line 148
-    const v4, 0x7f090478
+    const v4, 0x7f090481
 
     sget-object v5, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->FRAGMENT_TAG:Ljava/lang/String;
 

@@ -44,7 +44,7 @@
 
 .field private mResultCount:I
 
-.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private final mTabSoundId:I
 
@@ -105,7 +105,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mCorrectAnswers:Ljava/util/ArrayList;
 
     .line 43
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mTapView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/ITapView;
 
@@ -113,16 +113,16 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 45
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000d
+    const v1, 0x7f0e000e
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
@@ -383,16 +383,16 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mTabSoundId:I
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 95
     :cond_0
@@ -404,14 +404,14 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 87
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/TapViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 89
     :cond_0

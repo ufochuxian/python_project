@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 851
+    .line 911
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 852
+    .line 912
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 853
+    .line 913
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 857
+    .line 917
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_0
@@ -67,20 +67,20 @@
 
     if-eqz v1, :cond_0
 
-    .line 858
+    .line 918
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 872
+    .line 932
     invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    .line 877
+    .line 937
     :cond_0
     :goto_0
     return-void
 
-    .line 860
+    .line 920
     :pswitch_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -96,12 +96,12 @@
 
     if-nez v1, :cond_0
 
-    .line 861
+    .line 921
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
 
-    .line 863
+    .line 923
     .local v0, "result":Ljava/lang/String;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -111,11 +111,11 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/game/GameActivity;
 
-    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->access$600(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/game/GameActivity;->access$400(Lcom/jiliguala/niuwa/module/game/GameActivity;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 867
+    .line 927
     .end local v0    # "result":Ljava/lang/String;
     :pswitch_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
@@ -126,7 +126,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 868
+    .line 928
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -135,11 +135,11 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/game/GameActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->access$700(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/game/GameActivity;->access$500(Lcom/jiliguala/niuwa/module/game/GameActivity;)V
 
     goto :goto_0
 
-    .line 858
+    .line 918
     nop
 
     :pswitch_data_0

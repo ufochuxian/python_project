@@ -15,39 +15,39 @@
 
 
 # static fields
-.field public static final NPWidget:I = 0x7f1000c3
+.field public static final NPWidget:I = 0x7f1000c4
 
-.field public static final NPWidget_Holo_Light_NumberPicker:I = 0x7f1000c4
+.field public static final NPWidget_Holo_Light_NumberPicker:I = 0x7f1000c5
 
-.field public static final NPWidget_Holo_NumberPicker:I = 0x7f1000c5
+.field public static final NPWidget_Holo_NumberPicker:I = 0x7f1000c6
 
-.field public static final NPWidget_NumberPicker:I = 0x7f1000c6
+.field public static final NPWidget_NumberPicker:I = 0x7f1000c7
 
-.field public static final SampleTheme:I = 0x7f1000ee
+.field public static final SampleTheme:I = 0x7f1000ef
 
-.field public static final SampleTheme_Light:I = 0x7f1000ef
+.field public static final SampleTheme_Light:I = 0x7f1000f0
 
-.field public static final TextAppearance_Holo_CalendarViewWeekDayView:I = 0x7f100131
+.field public static final TextAppearance_Holo_CalendarViewWeekDayView:I = 0x7f100133
 
-.field public static final TextAppearance_Holo_Light_CalendarViewWeekDayView:I = 0x7f100132
+.field public static final TextAppearance_Holo_Light_CalendarViewWeekDayView:I = 0x7f100134
 
-.field public static final TextAppearance_Small_CalendarViewWeekDayView:I = 0x7f100133
+.field public static final TextAppearance_Small_CalendarViewWeekDayView:I = 0x7f100135
 
-.field public static final Theme_Dialog_Alert:I = 0x7f100155
+.field public static final Theme_Dialog_Alert:I = 0x7f100157
 
-.field public static final Widget:I = 0x7f100163
+.field public static final Widget:I = 0x7f100165
 
-.field public static final Widget_CalendarView:I = 0x7f1001ae
+.field public static final Widget_CalendarView:I = 0x7f1001b0
 
-.field public static final Widget_DatePicker:I = 0x7f1001af
+.field public static final Widget_DatePicker:I = 0x7f1001b1
 
-.field public static final Widget_Holo_CalendarView:I = 0x7f1001b0
+.field public static final Widget_Holo_CalendarView:I = 0x7f1001b2
 
-.field public static final Widget_Holo_DatePicker:I = 0x7f1001b1
+.field public static final Widget_Holo_DatePicker:I = 0x7f1001b3
 
-.field public static final Widget_Holo_Light_CalendarView:I = 0x7f1001b2
+.field public static final Widget_Holo_Light_CalendarView:I = 0x7f1001b4
 
-.field public static final Widget_Holo_Light_DatePicker:I = 0x7f1001b3
+.field public static final Widget_Holo_Light_DatePicker:I = 0x7f1001b5
 
 
 # direct methods

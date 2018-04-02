@@ -58,17 +58,17 @@
     .end annotation
 
     .prologue
-    .line 57
+    .line 58
     .local p2, "wrapped":Lretrofit2/CallAdapter;, "Lretrofit2/CallAdapter<*>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 58
+    .line 59
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/h$a;->b:Lretrofit2/Retrofit;
 
-    .line 59
+    .line 60
     iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/h$a;->c:Lretrofit2/CallAdapter;
 
-    .line 60
+    .line 61
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .param p1, "x1"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 52
+    .line 53
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/logic/network/h$a;->a(Ljava/lang/Throwable;)Lcom/jiliguala/niuwa/logic/network/RetrofitException;
 
     move-result-object v0
@@ -91,26 +91,26 @@
     .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 135
+    .line 136
     invoke-static {p1}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
-    .line 138
+    .line 139
     instance-of v2, p1, Lretrofit2/adapter/rxjava/HttpException;
 
     if-eqz v2, :cond_0
 
     move-object v0, p1
 
-    .line 139
+    .line 140
     check-cast v0, Lretrofit2/adapter/rxjava/HttpException;
 
-    .line 140
+    .line 141
     .local v0, "httpException":Lretrofit2/adapter/rxjava/HttpException;
     invoke-virtual {v0}, Lretrofit2/adapter/rxjava/HttpException;->response()Lretrofit2/Response;
 
     move-result-object v1
 
-    .line 141
+    .line 142
     .local v1, "response":Lretrofit2/Response;
     invoke-virtual {v1}, Lretrofit2/Response;->raw()Lokhttp3/ac;
 
@@ -134,21 +134,21 @@
 
     move-result-object v2
 
-    .line 149
+    .line 150
     .end local v0    # "httpException":Lretrofit2/adapter/rxjava/HttpException;
     .end local v1    # "response":Lretrofit2/Response;
     .end local p1    # "throwable":Ljava/lang/Throwable;
     :goto_0
     return-object v2
 
-    .line 144
+    .line 145
     .restart local p1    # "throwable":Ljava/lang/Throwable;
     :cond_0
     instance-of v2, p1, Ljava/io/IOException;
 
     if-eqz v2, :cond_1
 
-    .line 145
+    .line 146
     check-cast p1, Ljava/io/IOException;
 
     .end local p1    # "throwable":Ljava/lang/Throwable;
@@ -158,7 +158,7 @@
 
     goto :goto_0
 
-    .line 149
+    .line 150
     .restart local p1    # "throwable":Ljava/lang/Throwable;
     :cond_1
     invoke-static {p1}, Lcom/jiliguala/niuwa/logic/network/RetrofitException;->unexpectedError(Ljava/lang/Throwable;)Lcom/jiliguala/niuwa/logic/network/RetrofitException;
@@ -174,7 +174,7 @@
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 52
+    .line 53
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/logic/network/h$a;->a(Ljava/lang/String;)V
 
     return-void
@@ -185,7 +185,7 @@
     .param p1, "msgStr"    # Ljava/lang/String;
 
     .prologue
-    .line 153
+    .line 154
     const-string v0, "\u7f51\u7edc\u4e0d\u7ed9\u529b\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -194,7 +194,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 154
+    .line 155
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v0
@@ -203,21 +203,21 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
 
-    .line 156
+    .line 157
     :cond_0
     invoke-static {p1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 157
+    .line 158
     invoke-static {p1}, Lcom/jiliguala/niuwa/logic/network/h;->a(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 158
+    .line 159
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/network/h;->a(J)J
 
-    .line 159
+    .line 160
     return-void
 .end method
 
@@ -238,7 +238,7 @@
     .end annotation
 
     .prologue
-    .line 70
+    .line 71
     .local p1, "call":Lretrofit2/Call;, "Lretrofit2/Call<TR;>;"
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/h$a;->c:Lretrofit2/CallAdapter;
 
@@ -263,7 +263,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 53
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/logic/network/h$a;->a(Lretrofit2/Call;)Lrx/e;
 
     move-result-object v0
@@ -275,7 +275,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 65
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/h$a;->c:Lretrofit2/CallAdapter;
 
     invoke-interface {v0}, Lretrofit2/CallAdapter;->responseType()Ljava/lang/reflect/Type;

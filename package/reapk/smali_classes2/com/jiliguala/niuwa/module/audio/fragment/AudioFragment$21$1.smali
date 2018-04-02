@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21;
 
     .prologue
-    .line 2484
+    .line 2502
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 2487
+    .line 2505
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$21;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -52,6 +52,6 @@
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 2488
+    .line 2506
     return-void
 .end method

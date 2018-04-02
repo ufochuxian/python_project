@@ -147,7 +147,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    const v4, 0x7f090294
+    const v4, 0x7f09029a
 
     .line 239
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView$a;->a:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/tap/InterTapView;

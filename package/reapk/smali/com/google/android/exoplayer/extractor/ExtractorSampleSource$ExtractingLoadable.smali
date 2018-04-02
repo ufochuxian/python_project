@@ -317,6 +317,7 @@
 
     invoke-interface {v6}, Lcom/google/android/exoplayer/upstream/DataSource;->close()V
 
+    .line 696
     throw v1
 
     .line 692

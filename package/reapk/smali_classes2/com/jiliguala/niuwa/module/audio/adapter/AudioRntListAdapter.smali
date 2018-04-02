@@ -253,7 +253,7 @@
 
     .line 52
     .local v0, "childrenHolder":Lcom/jiliguala/niuwa/module/audio/adapter/AudioRntListAdapter$ChildrenHolder;
-    const v2, 0x7f0902a3
+    const v2, 0x7f0902a9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

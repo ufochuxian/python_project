@@ -172,6 +172,7 @@
 
     iput-object v1, p0, Lcom/google/android/exoplayer/upstream/DefaultUriDataSource;->dataSource:Lcom/google/android/exoplayer/upstream/UriDataSource;
 
+    .line 156
     throw v0
 .end method
 

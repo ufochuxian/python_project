@@ -312,7 +312,7 @@
     .end local v2    # "type":I
     :cond_2
     :goto_0
-    const v3, 0x7f0b013e
+    const v3, 0x7f0b0143
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/LoginActivity;->setContentView(I)V
 

@@ -626,9 +626,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -1372,7 +1372,7 @@
     .line 880
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->updateDialog:Landroid/app/Dialog;
 
-    const v6, 0x7f0b0192
+    const v6, 0x7f0b0197
 
     invoke-virtual {v5, v6}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -1694,9 +1694,9 @@
     .prologue
     const/4 v8, 0x1
 
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     .line 800
     if-nez p1, :cond_1
@@ -2186,7 +2186,7 @@
     .line 1026
     iget v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->mCurClickId:I
 
-    const v1, 0x7f09051c
+    const v1, 0x7f090526
 
     if-ne v0, v1, :cond_0
 
@@ -2429,7 +2429,7 @@
 
     .line 351
     :cond_0
-    const v10, 0x7f0b018a
+    const v10, 0x7f0b018f
 
     const/4 v11, 0x0
 
@@ -2474,7 +2474,7 @@
     .line 356
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f090556
+    const v11, 0x7f090560
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2486,7 +2486,7 @@
     .local v5, "thmb":Landroid/widget/ImageView;
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f090285
+    const v11, 0x7f09028a
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2497,7 +2497,7 @@
     .line 358
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f0903b0
+    const v11, 0x7f0903b7
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2510,7 +2510,7 @@
     .line 359
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f09059b
+    const v11, 0x7f0905a5
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2546,7 +2546,7 @@
     .line 361
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f090556
+    const v11, 0x7f090560
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2559,7 +2559,7 @@
     .line 362
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f090557
+    const v11, 0x7f090561
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2627,7 +2627,7 @@
     :cond_2
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f09051c
+    const v11, 0x7f090526
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2640,7 +2640,7 @@
     .line 373
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->view:Landroid/view/View;
 
-    const v11, 0x7f0905be
+    const v11, 0x7f0905c8
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2678,7 +2678,7 @@
     .line 393
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800cb
+    const v11, 0x7f0800cd
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2700,7 +2700,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600ad
+    const v13, 0x7f0600af
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2713,7 +2713,7 @@
     .line 396
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080132
+    const v11, 0x7f080134
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2769,7 +2769,7 @@
     .line 399
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800d0
+    const v11, 0x7f0800d2
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2791,7 +2791,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600fa
+    const v13, 0x7f0600fc
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2804,7 +2804,7 @@
     .line 402
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080136
+    const v11, 0x7f080138
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2827,7 +2827,7 @@
     .line 406
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800c8
+    const v11, 0x7f0800ca
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2849,7 +2849,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f060084
+    const v13, 0x7f060086
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2862,7 +2862,7 @@
     .line 409
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080130
+    const v11, 0x7f080132
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2885,7 +2885,7 @@
     .line 413
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800ce
+    const v11, 0x7f0800d0
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2907,7 +2907,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600e7
+    const v13, 0x7f0600e9
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2920,7 +2920,7 @@
     .line 416
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080134
+    const v11, 0x7f080136
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2956,7 +2956,7 @@
     :cond_9
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800c9
+    const v11, 0x7f0800cb
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2978,7 +2978,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f060086
+    const v13, 0x7f060088
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2991,7 +2991,7 @@
     .line 423
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080130
+    const v11, 0x7f080132
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3014,7 +3014,7 @@
     .line 427
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800cd
+    const v11, 0x7f0800cf
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3036,7 +3036,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600d9
+    const v13, 0x7f0600db
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3049,7 +3049,7 @@
     .line 430
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080133
+    const v11, 0x7f080135
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3072,7 +3072,7 @@
     .line 432
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800d1
+    const v11, 0x7f0800d3
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3095,7 +3095,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600ff
+    const v13, 0x7f060101
 
     .line 436
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
@@ -3110,7 +3110,7 @@
     .line 437
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080130
+    const v11, 0x7f080132
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3133,7 +3133,7 @@
     .line 439
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800ca
+    const v11, 0x7f0800cc
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3365,7 +3365,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600a0
+    const v13, 0x7f0600a2
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3378,7 +3378,7 @@
     .line 471
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080131
+    const v11, 0x7f080133
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3398,7 +3398,7 @@
     :cond_10
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v11, 0x7f0800cf
+    const v11, 0x7f0800d1
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3420,7 +3420,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0600f6
+    const v13, 0x7f0600f8
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3433,7 +3433,7 @@
     .line 477
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->taskThmbMask:Landroid/widget/ImageView;
 
-    const v11, 0x7f080135
+    const v11, 0x7f080137
 
     invoke-virtual {v10, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3472,7 +3472,7 @@
     .line 1019
     iget v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->mCurClickId:I
 
-    const v1, 0x7f09051c
+    const v1, 0x7f090526
 
     if-ne v0, v1, :cond_0
 
@@ -3702,7 +3702,7 @@
     .line 533
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800cb
+    const v1, 0x7f0800cd
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3725,7 +3725,7 @@
     .line 536
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800d0
+    const v1, 0x7f0800d2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3746,7 +3746,7 @@
     .line 540
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800c8
+    const v1, 0x7f0800ca
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3767,7 +3767,7 @@
     .line 544
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800ce
+    const v1, 0x7f0800d0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3799,7 +3799,7 @@
     :cond_4
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800c9
+    const v1, 0x7f0800cb
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3820,7 +3820,7 @@
     .line 552
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800cd
+    const v1, 0x7f0800cf
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3841,7 +3841,7 @@
     .line 555
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800d1
+    const v1, 0x7f0800d3
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3851,7 +3851,7 @@
     :cond_7
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800cf
+    const v1, 0x7f0800d1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -4047,7 +4047,7 @@
     .line 271
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800cc
+    const v1, 0x7f0800ce
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -4087,7 +4087,7 @@
     .line 287
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/course/main/fragment/SubCourseFragment;->startTaskBtn:Landroid/widget/ImageView;
 
-    const v1, 0x7f0800c7
+    const v1, 0x7f0800c9
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

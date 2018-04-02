@@ -222,7 +222,7 @@
 
     .line 124
     .local v2, "holder":Lcom/jiliguala/niuwa/module/video/adapter/VideoChannelAdapter$a;
-    const v8, 0x7f0902a3
+    const v8, 0x7f0902a9
 
     invoke-virtual {p2, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

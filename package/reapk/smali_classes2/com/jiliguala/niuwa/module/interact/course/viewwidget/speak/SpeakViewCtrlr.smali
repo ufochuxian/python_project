@@ -63,7 +63,7 @@
 
 .field private mResultCount:I
 
-.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private mSpeakView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/ISpeakView;
 
@@ -214,20 +214,20 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mPronunciation:Lcom/jiliguala/niuwa/logic/network/json/Pronunciation;
 
     .line 89
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 91
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e000d
+    const v1, 0x7f0e000e
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
@@ -802,7 +802,7 @@
 
     .line 393
     .local v1, "fragmentManager":Landroid/support/v4/app/ag;
-    const v3, 0x7f0b0107
+    const v3, 0x7f0b0108
 
     const-wide v4, 0x3fd999999999999aL    # 0.4
 
@@ -1001,16 +1001,16 @@
 
     .prologue
     .line 270
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 271
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mTappingSoundId:I
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 273
     :cond_0
@@ -1022,14 +1022,14 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_0
 
     .line 277
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/SpeakViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 279
     :cond_0

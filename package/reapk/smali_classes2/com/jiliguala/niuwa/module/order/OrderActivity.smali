@@ -159,7 +159,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 69
-    const v1, 0x7f090545
+    const v1, 0x7f09054f
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/order/OrderActivity;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/order/OrderActivity;->mTabStrip:Lcom/jiliguala/niuwa/module/babyintiation/PagerSlidingTabStrip;
 
     .line 70
-    const v1, 0x7f0905fc
+    const v1, 0x7f090606
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/order/OrderActivity;->findViewById(I)Landroid/view/View;
 

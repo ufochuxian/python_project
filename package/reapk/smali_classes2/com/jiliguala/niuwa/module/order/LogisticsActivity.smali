@@ -91,7 +91,7 @@
 
     .prologue
     .line 86
-    const v2, 0x7f090595
+    const v2, 0x7f09059f
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/order/LogisticsActivity;->findViewById(I)Landroid/view/View;
 
@@ -126,7 +126,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 96
-    const v2, 0x7f0902da
+    const v2, 0x7f0902e1
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/order/LogisticsActivity;->findViewById(I)Landroid/view/View;
 
@@ -137,7 +137,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/order/LogisticsActivity;->mListView:Landroid/widget/ListView;
 
     .line 97
-    const v2, 0x7f0b01a3
+    const v2, 0x7f0b01a8
 
     const/4 v3, 0x0
 
@@ -147,7 +147,7 @@
 
     .line 98
     .local v1, "mHead":Landroid/view/View;
-    const v2, 0x7f0904eb
+    const v2, 0x7f0904f5
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -158,7 +158,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/order/LogisticsActivity;->mShippingText:Landroid/widget/TextView;
 
     .line 99
-    const v2, 0x7f0902f7
+    const v2, 0x7f0902fe
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/order/LogisticsActivity;->mLogisticsCodeText:Landroid/widget/TextView;
 
     .line 100
-    const v2, 0x7f090262
+    const v2, 0x7f090267
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

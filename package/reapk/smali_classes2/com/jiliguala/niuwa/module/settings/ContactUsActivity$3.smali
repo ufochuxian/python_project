@@ -60,7 +60,7 @@
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/settings/ContactUsActivity$3;->a:Lcom/jiliguala/niuwa/module/settings/ContactUsActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/d/a;->o(Landroid/content/Context;)Ljava/io/File;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/d/a;->p(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v2
 

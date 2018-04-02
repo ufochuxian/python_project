@@ -19,25 +19,25 @@
 
 .field sentenceContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b2
+        a = 0x7f0904bc
     .end annotation
 .end field
 
 .field songContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090500
+        a = 0x7f09050a
     .end annotation
 .end field
 
 .field songTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090503
+        a = 0x7f09050d
     .end annotation
 .end field
 
 .field wordsContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090621
+        a = 0x7f09062b
     .end annotation
 .end field
 

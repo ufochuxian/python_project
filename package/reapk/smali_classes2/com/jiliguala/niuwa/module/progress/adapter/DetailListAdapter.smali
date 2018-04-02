@@ -188,7 +188,7 @@
     iput-object v3, v2, Lcom/jiliguala/niuwa/module/progress/adapter/DetailListAdapter$ViewHolder;->contentTv:Landroid/widget/TextView;
 
     .line 100
-    const v3, 0x7f09045d
+    const v3, 0x7f090466
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -230,7 +230,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f060050
+    const v4, 0x7f060052
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -262,7 +262,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600ad
+    const v4, 0x7f0600af
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -328,7 +328,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600fa
+    const v4, 0x7f0600fc
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -363,7 +363,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600aa
+    const v4, 0x7f0600ac
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -403,7 +403,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600a9
+    const v4, 0x7f0600ab
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 

@@ -240,7 +240,7 @@
 
     .prologue
     .line 57
-    const v1, 0x7f0b017f
+    const v1, 0x7f0b0184
 
     const/4 v2, 0x0
 
@@ -458,7 +458,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/story/fragments/ShelfFragment;->mShelfAdapter:Lcom/jiliguala/niuwa/module/story/adapter/ShelfAdapter;
 
     .line 77
-    const v1, 0x7f09043c
+    const v1, 0x7f090443
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -490,7 +490,7 @@
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/widget/PullToRefreshLayout;->setOnPullListener(Lcom/jiliguala/niuwa/common/widget/pulltorefresh/widget/PullToRefreshLayout$c;)V
 
     .line 96
-    const v1, 0x7f0904e8
+    const v1, 0x7f0904f2
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

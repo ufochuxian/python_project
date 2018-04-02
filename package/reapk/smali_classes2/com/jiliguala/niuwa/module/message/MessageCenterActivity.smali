@@ -466,9 +466,9 @@
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onBackPressed()V
 
     .line 257
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/message/MessageCenterActivity;->overridePendingTransition(II)V
 
@@ -498,7 +498,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0142
+    const v2, 0x7f0b0147
 
     const/4 v3, 0x0
 
@@ -555,7 +555,7 @@
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/message/MessageCenterActivity;->setContentView(I)V
 
     .line 157
-    const v1, 0x7f090332
+    const v1, 0x7f090339
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/message/MessageCenterActivity;->findViewById(I)Landroid/view/View;
 
@@ -692,7 +692,7 @@
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/module/message/adapter/MessagePageListAdapter;->clickOnNewItem(I)V
 
     .line 123
-    const v3, 0x7f09028c
+    const v3, 0x7f090291
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

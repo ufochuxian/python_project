@@ -185,7 +185,7 @@
     .line 95
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/video/adapter/VideoSecondaryListAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v5, 0x7f0b0195
+    const v5, 0x7f0b019a
 
     const/4 v6, 0x0
 
@@ -200,7 +200,7 @@
 
     .line 97
     .local v0, "childrenHolder":Lcom/jiliguala/niuwa/module/video/adapter/VideoSecondaryListAdapter$a;
-    const v4, 0x7f0902a3
+    const v4, 0x7f0902a9
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

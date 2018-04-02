@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
+        <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_back" n1:layout_width="@dimen/bar_button_width" n1:layout_height="@dimen/bar_button_height" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textColor="@color/color_green" n1:gravity="center" n1:id="@id/title_name_tv" n1:background="@drawable/forum_dropdown_bg" n1:paddingLeft="15.0dip" n1:paddingRight="25.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/bar_button_height" n1:maxWidth="180.0dip" n1:text="正序查看" n1:singleLine="true" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
+        <ImageView n1:id="@id/action_share" n1:background="@drawable/nav_icon_share" n1:padding="15.0dip" n1:layout_width="@dimen/bar_button_width" n1:layout_height="@dimen/bar_button_height" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/fav_iv" n1:background="@drawable/nav_icon_unbookmark" n1:layout_width="@dimen/bar_button_width" n1:layout_height="@dimen/bar_button_height" n1:layout_marginRight="10.0dip" n1:layout_toLeftOf="@id/action_share" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/top_bar" />
+</RelativeLayout>

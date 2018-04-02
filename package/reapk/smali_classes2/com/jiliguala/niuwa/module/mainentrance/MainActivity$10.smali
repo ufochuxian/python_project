@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnDismissListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->checkNetwork(Ljava/lang/String;)V
+    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showUpdateDialog(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,21 +18,17 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
-
-.field final synthetic b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+.field final synthetic a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;Ljava/lang/String;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
     .line 423
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,116 +37,26 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-    .param p1, "v"    # Landroid/view/View;
+.method public onDismiss(Landroid/content/DialogInterface;)V
+    .locals 1
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
     .line 426
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getCurrentPos()I
 
     move-result v0
 
-    sparse-switch v0, :sswitch_data_0
+    if-nez v0, :cond_0
 
-    .line 441
-    :cond_0
-    :goto_0
-    return-void
+    .line 427
+    const-string v0, "UPDATE_DIALOG"
 
-    .line 428
-    :sswitch_0
-    const/4 v0, 0x1
-
-    sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->ApkResNoneWifiDownloadEnable:Z
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/utils/DialogChain;->notifyDialogDismiss(Ljava/lang/String;)V
 
     .line 429
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$000(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->doAppUpGrade(Ljava/lang/String;)V
-
-    .line 430
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/a;->isAdded()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 431
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/a;->dismissAllowingStateLoss()V
-
-    goto :goto_0
-
-    .line 435
-    :sswitch_1
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/jiliguala/niuwa/MyApplication;->ApkResNoneWifiDownloadEnable:Z
-
-    .line 436
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/a;->isAdded()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 437
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$10;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/a;->dismissAllowingStateLoss()V
-
-    goto :goto_0
-
-    .line 426
-    nop
-
-    :sswitch_data_0
-    .sparse-switch
-        0x7f0900fa -> :sswitch_1
-        0x7f090156 -> :sswitch_0
-    .end sparse-switch
+    :cond_0
+    return-void
 .end method

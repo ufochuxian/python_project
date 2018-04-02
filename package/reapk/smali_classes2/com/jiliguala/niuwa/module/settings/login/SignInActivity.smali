@@ -223,9 +223,9 @@
     .sparse-switch
         0x7f0901d7 -> :sswitch_4
         0x7f0901d8 -> :sswitch_3
-        0x7f0902f4 -> :sswitch_1
-        0x7f0902f5 -> :sswitch_2
-        0x7f0902f6 -> :sswitch_0
+        0x7f0902fb -> :sswitch_1
+        0x7f0902fc -> :sswitch_2
+        0x7f0902fd -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -273,9 +273,9 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
     .line 292
     sget-object v2, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->FRAGMENT_TAG:Ljava/lang/String;
@@ -306,7 +306,7 @@
     if-nez v2, :cond_0
 
     .line 296
-    const v2, 0x7f090477
+    const v2, 0x7f090480
 
     sget-object v3, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -441,9 +441,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->finish()V
 
     .line 311
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->overridePendingTransition(II)V
 
@@ -563,8 +563,8 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090092 -> :sswitch_0
-        0x7f090345 -> :sswitch_2
-        0x7f09060c -> :sswitch_1
+        0x7f09034c -> :sswitch_2
+        0x7f090616 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -602,7 +602,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f060068
+    const v5, 0x7f06006a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -631,7 +631,7 @@
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->setContentView(I)V
 
     .line 116
-    const v3, 0x7f0902f2
+    const v3, 0x7f0902f9
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -661,7 +661,7 @@
     invoke-virtual {v3, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 122
-    const v3, 0x7f0902f6
+    const v3, 0x7f0902fd
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -677,7 +677,7 @@
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 125
-    const v3, 0x7f0902f4
+    const v3, 0x7f0902fb
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -688,7 +688,7 @@
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 126
-    const v3, 0x7f0902f5
+    const v3, 0x7f0902fc
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -699,7 +699,7 @@
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 128
-    const v3, 0x7f09060c
+    const v3, 0x7f090616
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -715,7 +715,7 @@
     invoke-virtual {v3, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 131
-    const v3, 0x7f090345
+    const v3, 0x7f09034c
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/settings/login/SignInActivity;->findViewById(I)Landroid/view/View;
 
@@ -809,7 +809,7 @@
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 144
-    const v3, 0x7f090588
+    const v3, 0x7f090592
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1015,13 +1015,13 @@
 
     .line 317
     .local v2, "transaction":Landroid/support/v4/app/an;
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f010013
+    const v4, 0x7f010014
 
-    const v5, 0x7f010012
+    const v5, 0x7f010013
 
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -1033,7 +1033,7 @@
     if-nez v3, :cond_0
 
     .line 319
-    const v3, 0x7f090477
+    const v3, 0x7f090480
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

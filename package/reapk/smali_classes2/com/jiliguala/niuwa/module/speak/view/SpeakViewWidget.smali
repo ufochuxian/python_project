@@ -353,7 +353,7 @@
     .param p1, "volume"    # D
 
     .prologue
-    const v0, 0x7f0801ca
+    const v0, 0x7f0801d1
 
     const-wide/high16 v10, 0x4040000000000000L    # 32.0
 
@@ -375,7 +375,7 @@
     if-gez v1, :cond_1
 
     .line 274
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801ce
 
     .line 284
     :cond_0
@@ -393,7 +393,7 @@
     if-gez v1, :cond_2
 
     .line 276
-    const v0, 0x7f0801c8
+    const v0, 0x7f0801cf
 
     goto :goto_0
 
@@ -408,7 +408,7 @@
     if-gez v1, :cond_3
 
     .line 278
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d0
 
     goto :goto_0
 
@@ -436,7 +436,7 @@
 
     .line 284
     :cond_5
-    const v0, 0x7f0803ca
+    const v0, 0x7f0803d7
 
     goto :goto_0
 .end method
@@ -1562,7 +1562,7 @@
     .line 625
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f090486
+    const v3, 0x7f09048f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setId(I)V
 
@@ -1587,7 +1587,7 @@
     .line 628
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f090485
+    const v3, 0x7f09048e
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1600,7 +1600,7 @@
     .line 629
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f090482
+    const v3, 0x7f09048b
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1618,7 +1618,7 @@
     .line 631
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f090426
+    const v3, 0x7f09042d
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1631,7 +1631,7 @@
     .line 633
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f09047b
+    const v3, 0x7f090484
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1651,7 +1651,7 @@
     .line 637
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mScoreView:Landroid/view/View;
 
-    const v3, 0x7f0903ec
+    const v3, 0x7f0903f3
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1716,7 +1716,7 @@
     .line 607
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mRecordBg:Landroid/widget/ImageView;
 
-    const v1, 0x7f0803ce
+    const v1, 0x7f0803db
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1729,7 +1729,7 @@
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mRecordBg:Landroid/widget/ImageView;
 
-    const v1, 0x7f0803cc
+    const v1, 0x7f0803d9
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1773,7 +1773,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0173
+    const v1, 0x7f0b0178
 
     const/4 v2, 0x0
 
@@ -1795,7 +1795,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0172
+    const v1, 0x7f0b0177
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1912,7 +1912,7 @@
 
     .line 107
     .local v0, "view":Landroid/view/View;
-    const v1, 0x7f090475
+    const v1, 0x7f09047e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1923,7 +1923,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mRecord:Landroid/widget/ImageView;
 
     .line 108
-    const v1, 0x7f090476
+    const v1, 0x7f09047f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1934,7 +1934,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mVolumeIcon:Landroid/widget/ImageView;
 
     .line 109
-    const v1, 0x7f090474
+    const v1, 0x7f09047d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1945,7 +1945,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mRecordBg:Landroid/widget/ImageView;
 
     .line 111
-    const v1, 0x7f0903e8
+    const v1, 0x7f0903ef
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2193,8 +2193,8 @@
     .sparse-switch
         0x7f090086 -> :sswitch_1
         0x7f0901f2 -> :sswitch_2
-        0x7f090474 -> :sswitch_0
-        0x7f090475 -> :sswitch_0
+        0x7f09047d -> :sswitch_0
+        0x7f09047e -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -2306,7 +2306,7 @@
     .line 250
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/SpeakViewWidget;->mRecordBg:Landroid/widget/ImageView;
 
-    const v1, 0x7f0803cc
+    const v1, 0x7f0803d9
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

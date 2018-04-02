@@ -17,11 +17,11 @@
 
 .field private view2131296776:Landroid/view/View;
 
-.field private view2131297165:Landroid/view/View;
+.field private view2131297172:Landroid/view/View;
 
-.field private view2131297501:Landroid/view/View;
+.field private view2131297511:Landroid/view/View;
 
-.field private view2131297506:Landroid/view/View;
+.field private view2131297516:Landroid/view/View;
 
 
 # direct methods
@@ -33,9 +33,9 @@
     .end annotation
 
     .prologue
-    const v7, 0x7f0904e2
+    const v7, 0x7f0904ec
 
-    const v6, 0x7f0904dd
+    const v6, 0x7f0904e7
 
     const v5, 0x7f090208
 
@@ -48,7 +48,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->target:Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;
 
     .line 42
-    const v1, 0x7f090273
+    const v1, 0x7f090278
 
     const-string v2, "field \'icon\'"
 
@@ -78,7 +78,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->courseTitle:Landroid/widget/TextView;
 
     .line 44
-    const v1, 0x7f09051b
+    const v1, 0x7f090525
 
     const-string v2, "field \'startReviewContainer\'"
 
@@ -93,7 +93,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->startReviewContainer:Landroid/widget/RelativeLayout;
 
     .line 45
-    const v1, 0x7f09038a
+    const v1, 0x7f090391
 
     const-string v2, "field \'noReviewContainer\'"
 
@@ -108,7 +108,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->noReviewContainer:Landroid/widget/RelativeLayout;
 
     .line 46
-    const v1, 0x7f090402
+    const v1, 0x7f090409
 
     const-string v2, "field \'progressBar\'"
 
@@ -123,7 +123,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->progressBar:Lcom/liulishuo/magicprogresswidget/MagicProgressBar;
 
     .line 47
-    const v1, 0x7f090405
+    const v1, 0x7f09040c
 
     const-string v2, "field \'progressContainer\'"
 
@@ -214,7 +214,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
-    const v1, 0x7f090279
+    const v1, 0x7f09027e
 
     const-string v2, "field \'mIconHasReview\'"
 
@@ -244,7 +244,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->courseTxtHasReview:Landroid/widget/TextView;
 
     .line 69
-    const v1, 0x7f0903ff
+    const v1, 0x7f090406
 
     const-string v2, "field \'mProgressTxt\'"
 
@@ -259,7 +259,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->mProgressTxt:Landroid/widget/TextView;
 
     .line 70
-    const v1, 0x7f090459
+    const v1, 0x7f090460
 
     const-string v2, "field \'mReviewProgressTxt\'"
 
@@ -289,7 +289,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->mContainueStudyContainer:Landroid/widget/LinearLayout;
 
     .line 72
-    const v1, 0x7f0904d2
+    const v1, 0x7f0904dc
 
     const-string v2, "field \'mShareContainer\'"
 
@@ -324,7 +324,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->pengyouquanContainer:Landroid/widget/RelativeLayout;
 
     .line 75
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297501:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297511:Landroid/view/View;
 
     .line 76
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding$3;
@@ -354,7 +354,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->weixinContainer:Landroid/widget/RelativeLayout;
 
     .line 84
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297506:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297516:Landroid/view/View;
 
     .line 85
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding$4;
@@ -364,7 +364,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 91
-    const v1, 0x7f09038c
+    const v1, 0x7f090393
 
     const-string v2, "field \'noReViewTxt\'"
 
@@ -379,7 +379,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->noReViewTxt:Landroid/widget/TextView;
 
     .line 92
-    const v1, 0x7f09038b
+    const v1, 0x7f090392
 
     const-string v2, "field \'noReviewSubTxt\'"
 
@@ -462,7 +462,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 111
-    const v1, 0x7f09038d
+    const v1, 0x7f090394
 
     const-string v2, "method \'onReviewTomorrow\'"
 
@@ -471,7 +471,7 @@
     move-result-object v0
 
     .line 112
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297165:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297172:Landroid/view/View;
 
     .line 113
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding$7;
@@ -593,20 +593,20 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131296776:Landroid/view/View;
 
     .line 154
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297501:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297511:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 155
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297501:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297511:Landroid/view/View;
 
     .line 156
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297506:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297516:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 157
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297506:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297516:Landroid/view/View;
 
     .line 158
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131296406:Landroid/view/View;
@@ -625,12 +625,12 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131296313:Landroid/view/View;
 
     .line 162
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297165:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297172:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 163
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297165:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment_ViewBinding;->view2131297172:Landroid/view/View;
 
     .line 164
     return-void

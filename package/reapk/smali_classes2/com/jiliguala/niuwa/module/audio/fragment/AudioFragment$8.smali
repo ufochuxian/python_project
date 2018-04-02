@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1508
+    .line 1521
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8;->a:Landroid/view/View;
@@ -46,10 +46,10 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1530
+    .line 1543
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 1531
+    .line 1544
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1518
+    .line 1531
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8;->a:Landroid/view/View;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8$1;
@@ -67,10 +67,10 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 1524
+    .line 1537
     invoke-virtual {p1}, Lcom/nineoldandroids/a/a;->i()V
 
-    .line 1525
+    .line 1538
     return-void
 .end method
 
@@ -79,7 +79,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1535
+    .line 1548
     return-void
 .end method
 
@@ -88,13 +88,13 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 1512
+    .line 1525
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$8;->a:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3000(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/View;)V
 
-    .line 1513
+    .line 1526
     return-void
 .end method

@@ -100,9 +100,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoFragment;
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 64
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -308,7 +308,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     .line 48
-    const v0, 0x7f090591
+    const v0, 0x7f09059b
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoActivity;->findViewById(I)Landroid/view/View;
 
@@ -326,7 +326,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 50
-    const v0, 0x7f090595
+    const v0, 0x7f09059f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/detail/LandScapeVideoActivity;->findViewById(I)Landroid/view/View;
 

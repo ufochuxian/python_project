@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->apkDownloadComplete(Ljava/lang/String;)V
+    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onFinishUserMigration()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,21 +18,17 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
-
-.field final synthetic b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+.field final synthetic a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;Ljava/lang/String;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1189
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Ljava/lang/String;
+    .line 1113
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,35 +38,65 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 10
 
     .prologue
-    .line 1192
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 1116
+    new-instance v2, Landroid/content/Intent;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$1100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/d;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    const-class v5, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    invoke-direct {v2, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 1117
+    .local v2, "mStartActivity":Landroid/content/Intent;
+    const v1, 0x1e240
+
+    .line 1118
+    .local v1, "mPendingIntentId":I
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    const/high16 v5, 0x10000000
+
+    invoke-static {v4, v1, v2, v5}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    .line 1120
+    .local v0, "mPendingIntent":Landroid/app/PendingIntent;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    .line 1193
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    const-string v5, "alarm"
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$1100(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/common/a/d;
+    invoke-virtual {v4, v5}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/a/d;->dismissAllowingStateLoss()V
+    check-cast v3, Landroid/app/AlarmManager;
 
-    .line 1195
-    :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->b:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 1121
+    .local v3, "mgr":Landroid/app/AlarmManager;
+    const/4 v4, 0x1
 
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$4;->a:Ljava/lang/String;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/d;->a(Landroid/content/Context;Ljava/lang/String;)V
+    move-result-wide v6
 
-    .line 1196
+    const-wide/16 v8, 0x64
+
+    add-long/2addr v6, v8
+
+    invoke-virtual {v3, v4, v6, v7, v0}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
+
+    .line 1123
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v4
+
+    invoke-static {v4}, Landroid/os/Process;->killProcess(I)V
+
+    .line 1124
     return-void
 .end method

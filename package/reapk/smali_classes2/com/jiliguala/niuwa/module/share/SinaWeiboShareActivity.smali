@@ -237,7 +237,7 @@
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 177
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->finish()V
@@ -246,7 +246,7 @@
 
     .line 165
     :pswitch_data_0
-    .packed-switch 0x7f0904dd
+    .packed-switch 0x7f0904e7
         :pswitch_0
         :pswitch_0
         :pswitch_0
@@ -267,9 +267,9 @@
     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 188
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->overridePendingTransition(II)V
 
@@ -321,7 +321,7 @@
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->shareSource:Ljava/lang/String;
 
-    invoke-static/range {v0 .. v6}, Lcom/jiliguala/niuwa/logic/l/c/a;->a(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v6}, Lcom/jiliguala/niuwa/logic/m/c/a;->a(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 194
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->onBackPressed()V
@@ -421,7 +421,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 100
-    const v5, 0x7f0904e1
+    const v5, 0x7f0904eb
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -437,7 +437,7 @@
     invoke-virtual {p0, v5}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->setContentView(I)V
 
     .line 102
-    const v5, 0x7f0904d3
+    const v5, 0x7f0904dd
 
     invoke-virtual {p0, v5}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->findViewById(I)Landroid/view/View;
 
@@ -448,7 +448,7 @@
     iput-object v5, p0, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->et:Landroid/widget/EditText;
 
     .line 103
-    const v5, 0x7f0904da
+    const v5, 0x7f0904e4
 
     invoke-virtual {p0, v5}, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->findViewById(I)Landroid/view/View;
 
@@ -486,7 +486,7 @@
     .line 108
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->thmb:Landroid/widget/ImageView;
 
-    const v6, 0x7f0803b0
+    const v6, 0x7f0803bd
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -720,7 +720,7 @@
 
     const-string v7, ""
 
-    invoke-static {v5, v6, v7}, Lcom/jiliguala/niuwa/logic/l/e;->a(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v6, v7}, Lcom/jiliguala/niuwa/logic/m/e;->a(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -734,7 +734,7 @@
 
     iget v8, p0, Lcom/jiliguala/niuwa/module/share/SinaWeiboShareActivity;->mPlatform:I
 
-    invoke-static {v5, v6, v3, v7, v8}, Lcom/jiliguala/niuwa/logic/l/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
+    invoke-static {v5, v6, v3, v7, v8}, Lcom/jiliguala/niuwa/logic/m/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -743,7 +743,7 @@
 
     .line 125
     :pswitch_data_0
-    .packed-switch 0x7f0904dd
+    .packed-switch 0x7f0904e7
         :pswitch_2
         :pswitch_4
         :pswitch_3

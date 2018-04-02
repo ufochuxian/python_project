@@ -397,6 +397,7 @@
 
     iput v2, p0, Lcom/google/android/exoplayer/chunk/ContainerMediaChunk;->bytesLoaded:I
 
+    .line 190
     throw v1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -411,6 +412,7 @@
 
     invoke-interface {v2}, Lcom/google/android/exoplayer/upstream/DataSource;->close()V
 
+    .line 193
     throw v1
 .end method
 

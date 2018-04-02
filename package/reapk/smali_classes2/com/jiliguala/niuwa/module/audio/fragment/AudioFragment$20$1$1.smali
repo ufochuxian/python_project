@@ -27,7 +27,7 @@
     .param p1, "this$2"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     .prologue
-    .line 2315
+    .line 2328
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 5
 
     .prologue
-    .line 2318
+    .line 2331
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2319
+    .line 2332
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
@@ -65,7 +65,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$3502(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Z)Z
 
-    .line 2320
+    .line 2333
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20$1;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$20;
@@ -78,7 +78,7 @@
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->onBackPressed()V
 
-    .line 2321
+    .line 2334
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -103,7 +103,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 2325
+    .line 2338
     :cond_0
     return-void
 .end method

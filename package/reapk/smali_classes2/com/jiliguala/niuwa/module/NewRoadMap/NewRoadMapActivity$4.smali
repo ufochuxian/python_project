@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 444
+    .line 455
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,16 +52,16 @@
     .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 447
+    .line 458
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 461
+    .line 472
     :goto_0
     return-void
 
-    .line 449
+    .line 460
     :sswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
@@ -69,7 +69,7 @@
 
     goto :goto_0
 
-    .line 452
+    .line 463
     :sswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
@@ -77,7 +77,7 @@
 
     goto :goto_0
 
-    .line 456
+    .line 467
     :sswitch_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
@@ -85,7 +85,7 @@
 
     goto :goto_0
 
-    .line 459
+    .line 470
     :sswitch_3
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
@@ -93,7 +93,7 @@
 
     goto :goto_0
 
-    .line 447
+    .line 458
     :sswitch_data_0
     .sparse-switch
         0x1027 -> :sswitch_0
@@ -107,7 +107,7 @@
     .locals 0
 
     .prologue
-    .line 444
+    .line 455
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V

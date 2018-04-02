@@ -19,9 +19,9 @@
 
 .field public static final date_picker_holo:I = 0x7f0b008c
 
-.field public static final holo_date_picker_dialog:I = 0x7f0b00ce
+.field public static final holo_date_picker_dialog:I = 0x7f0b00cf
 
-.field public static final number_picker_with_selector_wheel:I = 0x7f0b015a
+.field public static final number_picker_with_selector_wheel:I = 0x7f0b015f
 
 
 # direct methods

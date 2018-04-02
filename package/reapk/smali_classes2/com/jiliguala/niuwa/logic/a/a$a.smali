@@ -301,6 +301,34 @@
 
 .field public static final cJ:Ljava/lang/String; = "Review Exit"
 
+.field public static final cK:Ljava/lang/String; = "Listen Roadmap Click"
+
+.field public static final cL:Ljava/lang/String; = "Song Complete"
+
+.field public static final cM:Ljava/lang/String; = "Download Fail"
+
+.field public static final cN:Ljava/lang/String; = "Player Exit"
+
+.field public static final cO:Ljava/lang/String; = "Sublesson Click"
+
+.field public static final cP:Ljava/lang/String; = "audio click"
+
+.field public static final cQ:Ljava/lang/String; = "Watch Complete"
+
+.field public static final cR:Ljava/lang/String; = "Watch Exit"
+
+.field public static final cS:Ljava/lang/String; = "Guavatar Entry"
+
+.field public static final cT:Ljava/lang/String; = "Guavatar Reward Page"
+
+.field public static final cU:Ljava/lang/String; = "Guavatar Exit"
+
+.field public static final cV:Ljava/lang/String; = "Guavatar Guide View"
+
+.field public static final cW:Ljava/lang/String; = "Guavatar Guide Exit"
+
+.field public static final cX:Ljava/lang/String; = "Guavatar Guide Complete"
+
 .field public static final ca:Ljava/lang/String; = "Interactive Trailer Start"
 
 .field public static final cb:Ljava/lang/String; = "Interactive Trailer End"

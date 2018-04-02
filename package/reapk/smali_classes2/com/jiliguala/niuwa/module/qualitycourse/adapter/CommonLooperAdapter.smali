@@ -229,7 +229,7 @@
     .line 47
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/CommonLooperAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00dc
+    const v3, 0x7f0b00dd
 
     const/4 v4, 0x0
 
@@ -239,7 +239,7 @@
 
     .line 49
     .local v1, "view":Landroid/view/View;
-    const v2, 0x7f090242
+    const v2, 0x7f090243
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

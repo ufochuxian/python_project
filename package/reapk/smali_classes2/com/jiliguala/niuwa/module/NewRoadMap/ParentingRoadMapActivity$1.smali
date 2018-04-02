@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
 
     .prologue
-    .line 269
+    .line 282
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity$1;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/ParentingRoadMapActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 272
+    .line 285
     const/4 v0, 0x1
 
     return v0

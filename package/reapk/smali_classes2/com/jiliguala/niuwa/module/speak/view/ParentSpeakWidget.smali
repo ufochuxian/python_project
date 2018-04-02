@@ -347,28 +347,28 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 647
+    .line 648
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRecord:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 648
+    .line 649
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRecord:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 650
+    .line 651
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlaceHolder:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
-    .line 651
+    .line 652
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlaceHolder:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 653
+    .line 654
     :cond_1
     return-void
 .end method
@@ -741,14 +741,14 @@
     .param p2, "dstProgress"    # I
 
     .prologue
-    .line 586
+    .line 587
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->topBox:Landroid/view/View;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 588
+    .line 589
     const-string v1, "progress"
 
     const/4 v2, 0x2
@@ -771,30 +771,30 @@
 
     move-result-object v0
 
-    .line 589
+    .line 590
     .local v0, "animator":Lcom/nineoldandroids/a/l;
     const-wide/16 v2, 0x7d0
 
     invoke-virtual {v0, v2, v3}, Lcom/nineoldandroids/a/l;->a_(J)Lcom/nineoldandroids/a/l;
 
-    .line 590
+    .line 591
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {v0, v1}, Lcom/nineoldandroids/a/l;->a(Landroid/view/animation/Interpolator;)V
 
-    .line 591
+    .line 592
     new-instance v1, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;
 
     invoke-direct {v1, p0, p1, v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;-><init>(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;Landroid/view/View;Lcom/nineoldandroids/a/l;)V
 
     invoke-virtual {v0, v1}, Lcom/nineoldandroids/a/l;->a(Lcom/nineoldandroids/a/a$a;)V
 
-    .line 626
+    .line 627
     invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->a()V
 
-    .line 627
+    .line 628
     return-void
 .end method
 
@@ -899,7 +899,7 @@
     .locals 7
 
     .prologue
-    .line 567
+    .line 568
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->verticalProgressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
     invoke-virtual {v3}, Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;->getProgress()I
@@ -920,7 +920,7 @@
 
     double-to-int v1, v4
 
-    .line 569
+    .line 570
     .local v1, "result":I
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->score:Landroid/widget/TextView;
 
@@ -944,7 +944,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 570
+    .line 571
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->topBox:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -953,7 +953,7 @@
 
     check-cast v2, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 571
+    .line 572
     .local v2, "rl":Landroid/widget/RelativeLayout$LayoutParams;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->verticalProgressBar:Lcom/jiliguala/progressbar/vertical/VerticalProgressBar;
 
@@ -981,7 +981,7 @@
 
     float-to-int v0, v3
 
-    .line 572
+    .line 573
     .local v0, "bottom":I
     iget v3, v2, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -999,12 +999,12 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 573
+    .line 574
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->topBox:Landroid/view/View;
 
     invoke-virtual {v3, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 577
+    .line 578
     return-void
 .end method
 
@@ -1012,17 +1012,17 @@
     .locals 2
 
     .prologue
-    .line 559
+    .line 560
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->topBox:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 560
+    .line 561
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->updateTextAndShowProgress()V
 
-    .line 561
+    .line 562
     return-void
 .end method
 
@@ -1124,7 +1124,7 @@
     .line 487
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f090486
+    const v5, 0x7f09048f
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setId(I)V
 
@@ -1149,7 +1149,7 @@
     .line 490
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f090485
+    const v5, 0x7f09048e
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1162,7 +1162,7 @@
     .line 491
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f090482
+    const v5, 0x7f09048b
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1180,7 +1180,7 @@
     .line 493
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f090426
+    const v5, 0x7f09042d
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1237,7 +1237,7 @@
     .line 502
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f09047b
+    const v5, 0x7f090484
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1257,7 +1257,7 @@
     .line 506
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mScoreView:Landroid/view/View;
 
-    const v5, 0x7f0903ec
+    const v5, 0x7f0903f3
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1337,7 +1337,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0162
+    const v1, 0x7f0b0167
 
     const/4 v2, 0x0
 
@@ -1356,28 +1356,28 @@
     .prologue
     const/16 v1, 0x8
 
-    .line 637
+    .line 638
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRecord:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 638
+    .line 639
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRecord:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 641
+    .line 642
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlaceHolder:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
-    .line 642
+    .line 643
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlaceHolder:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 644
+    .line 645
     :cond_1
     return-void
 .end method
@@ -1386,23 +1386,23 @@
     .locals 2
 
     .prologue
-    .line 630
+    .line 631
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->showNextButton()V
 
-    .line 631
+    .line 632
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->enableRecordButton()V
 
-    .line 632
+    .line 633
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->openPartOfRecordUIIfTranslateDown()V
 
-    .line 633
+    .line 634
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->babyAvaIv:Lcom/jiliguala/niuwa/common/widget/CircleImageView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/CircleImageView;->setEnabled(Z)V
 
-    .line 634
+    .line 635
     return-void
 .end method
 
@@ -1451,7 +1451,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0161
+    const v3, 0x7f0b0166
 
     invoke-static {v2, v3, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1459,7 +1459,7 @@
 
     .line 114
     .local v1, "view":Landroid/view/View;
-    const v2, 0x7f0903e8
+    const v2, 0x7f0903ef
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1490,7 +1490,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mChineseText:Landroid/widget/TextView;
 
     .line 118
-    const v2, 0x7f090384
+    const v2, 0x7f09038b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1511,7 +1511,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 121
-    const v2, 0x7f090456
+    const v2, 0x7f09045d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1530,7 +1530,7 @@
     invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 124
-    const v2, 0x7f0902e4
+    const v2, 0x7f0902eb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1548,7 +1548,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 127
-    const v2, 0x7f090291
+    const v2, 0x7f090297
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1559,7 +1559,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRecord:Landroid/widget/ImageView;
 
     .line 128
-    const v2, 0x7f090604
+    const v2, 0x7f09060e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1570,7 +1570,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mVolume:Landroid/widget/ImageView;
 
     .line 129
-    const v2, 0x7f09028a
+    const v2, 0x7f09028f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1825,9 +1825,9 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090086 -> :sswitch_1
-        0x7f090291 -> :sswitch_0
-        0x7f090384 -> :sswitch_2
-        0x7f090456 -> :sswitch_3
+        0x7f090297 -> :sswitch_0
+        0x7f09038b -> :sswitch_2
+        0x7f09045d -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -2165,10 +2165,10 @@
     .param p1, "totalHeight"    # I
 
     .prologue
-    .line 655
+    .line 656
     iput p1, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->totalHeight:I
 
-    .line 656
+    .line 657
     return-void
 .end method
 
@@ -2191,6 +2191,9 @@
     const/4 v2, 0x0
 
     .line 546
+    invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->setVisibility(I)V
+
+    .line 547
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mFadeInFadeOutBtn:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getVisibility()I
@@ -2199,12 +2202,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 547
+    .line 548
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mFadeInFadeOutBtn:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 548
+    .line 549
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mCallBack:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;->isLastPage()Z
@@ -2213,31 +2216,31 @@
 
     if-nez v0, :cond_1
 
-    .line 549
+    .line 550
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mFadeInFadeOutBtn:Landroid/widget/TextView;
 
     const-string v1, "\u4e0b\u4e00\u6b65"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 554
+    .line 555
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mRetry:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 555
+    .line 556
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mLoadingIcon:Landroid/widget/ImageView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 556
+    .line 557
     return-void
 
-    .line 551
+    .line 552
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mFadeInFadeOutBtn:Landroid/widget/TextView;
 
@@ -2365,17 +2368,17 @@
     .param p1, "resId"    # I
 
     .prologue
-    .line 580
+    .line 581
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlayStatusIv:Lcom/jiliguala/niuwa/common/widget/CircleImageView;
 
     if-eqz v0, :cond_0
 
-    .line 581
+    .line 582
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->mPlayStatusIv:Lcom/jiliguala/niuwa/common/widget/CircleImageView;
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/common/widget/CircleImageView;->setImageResource(I)V
 
-    .line 583
+    .line 584
     :cond_0
     return-void
 .end method

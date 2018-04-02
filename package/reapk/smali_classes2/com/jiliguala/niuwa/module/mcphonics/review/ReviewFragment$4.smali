@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;
 
     .prologue
-    .line 410
+    .line 411
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment$4;->a:Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,11 +41,11 @@
     .locals 1
 
     .prologue
-    .line 413
+    .line 414
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment$4;->a:Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->access$200(Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;)V
 
-    .line 414
+    .line 415
     return-void
 .end method

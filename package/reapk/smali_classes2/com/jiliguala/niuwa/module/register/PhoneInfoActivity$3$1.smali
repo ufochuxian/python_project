@@ -88,9 +88,9 @@
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity$3;->a:Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;
 
-    const v1, 0x7f010012
+    const v1, 0x7f010013
 
-    const v2, 0x7f01001e
+    const v2, 0x7f010020
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->overridePendingTransition(II)V
 

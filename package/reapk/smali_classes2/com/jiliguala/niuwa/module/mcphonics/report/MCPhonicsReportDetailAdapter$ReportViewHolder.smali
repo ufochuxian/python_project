@@ -19,31 +19,31 @@
 
 .field iconRight:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09027a
+        a = 0x7f09027f
     .end annotation
 .end field
 
 .field lessonIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902c2
+        a = 0x7f0902c8
     .end annotation
 .end field
 
 .field lessonReportImg:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902c5
+        a = 0x7f0902cb
     .end annotation
 .end field
 
 .field lessonTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902c7
+        a = 0x7f0902cd
     .end annotation
 .end field
 
 .field reportDetailHead:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09044e
+        a = 0x7f090455
     .end annotation
 .end field
 

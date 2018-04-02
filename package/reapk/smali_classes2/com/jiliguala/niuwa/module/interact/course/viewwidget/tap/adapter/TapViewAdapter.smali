@@ -197,7 +197,7 @@
 
     .line 54
     .local v1, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x7f0b00e5
+    const v3, 0x7f0b00e6
 
     const/4 v4, 0x0
 
@@ -214,7 +214,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 56
-    const v3, 0x7f090294
+    const v3, 0x7f09029a
 
     invoke-virtual {v0, v3, v2}, Landroid/widget/ImageView;->setTag(ILjava/lang/Object;)V
 

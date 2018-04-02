@@ -371,9 +371,9 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 396
-    const v1, 0x7f01001d
+    const v1, 0x7f01001f
 
-    const v2, 0x7f010013
+    const v2, 0x7f010014
 
     invoke-virtual {p0, v1, v2}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->overridePendingTransition(II)V
 
@@ -593,7 +593,7 @@
     invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 177
-    const v3, 0x7f0b0192
+    const v3, 0x7f0b0197
 
     invoke-virtual {v0, v3}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -714,7 +714,7 @@
 
     .line 258
     .local v2, "inflater":Landroid/view/LayoutInflater;
-    const v8, 0x7f0b018c
+    const v8, 0x7f0b0191
 
     const/4 v9, 0x0
 
@@ -724,7 +724,7 @@
 
     .line 259
     .local v6, "view":Landroid/view/View;
-    const v8, 0x7f0903b2
+    const v8, 0x7f0903b9
 
     invoke-virtual {v6, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -775,7 +775,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f06008d
+    const v9, 0x7f06008f
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -811,7 +811,7 @@
     .line 314
     iget-object v8, p0, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->forumTagPop:Landroid/widget/PopupWindow;
 
-    const v9, 0x7f1001c3
+    const v9, 0x7f1001c5
 
     invoke-virtual {v8, v9}, Landroid/widget/PopupWindow;->setAnimationStyle(I)V
 
@@ -1067,9 +1067,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->finish()V
 
     .line 170
-    const v2, 0x7f010012
+    const v2, 0x7f010013
 
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
     invoke-virtual {p0, v2, v3}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->overridePendingTransition(II)V
 
@@ -1206,7 +1206,7 @@
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 236
-    const v3, 0x7f090585
+    const v3, 0x7f09058f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

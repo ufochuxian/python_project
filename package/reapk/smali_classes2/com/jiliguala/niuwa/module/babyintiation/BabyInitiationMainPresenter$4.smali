@@ -39,7 +39,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 119
+    .line 117
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$4;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -62,7 +62,7 @@
     .end annotation
 
     .prologue
-    .line 122
+    .line 120
     .local p1, "list":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$Splash;>;"
     if-eqz p1, :cond_0
 
@@ -72,14 +72,14 @@
 
     if-lez v0, :cond_0
 
-    .line 123
+    .line 121
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/jiliguala/niuwa/logic/o/a;->a(Landroid/content/Context;Ljava/util/List;)V
+    invoke-static {v0, p1}, Lcom/jiliguala/niuwa/logic/p/a;->a(Landroid/content/Context;Ljava/util/List;)V
 
-    .line 127
+    .line 125
     :goto_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$4;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
@@ -87,16 +87,16 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$302(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;Z)Z
 
-    .line 128
+    .line 126
     return-void
 
-    .line 125
+    .line 123
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/p/a;->a(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -105,7 +105,7 @@
     .locals 0
 
     .prologue
-    .line 119
+    .line 117
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$4;->a(Ljava/util/List;)V

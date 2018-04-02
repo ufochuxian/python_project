@@ -329,7 +329,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0600fc
+    const v6, 0x7f0600fe
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -381,7 +381,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080124
+    const v6, 0x7f080126
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -425,7 +425,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060052
+    const v6, 0x7f060054
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -444,7 +444,7 @@
     .line 244
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/matchgame/fragment/MatchGameItemFragment;->notifyPopup:Landroid/widget/PopupWindow;
 
-    const v6, 0x7f1001c3
+    const v6, 0x7f1001c5
 
     invoke-virtual {v5, v6}, Landroid/widget/PopupWindow;->setAnimationStyle(I)V
 
@@ -540,7 +540,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080114
+    const v6, 0x7f080116
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -560,7 +560,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f06009c
+    const v6, 0x7f06009e
 
     .line 242
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
@@ -586,7 +586,7 @@
 
     .prologue
     .line 120
-    const v13, 0x7f0b011c
+    const v13, 0x7f0b0120
 
     const/4 v14, 0x0
 
@@ -796,7 +796,7 @@
 
     .line 144
     .local v10, "smilingFace":Landroid/widget/ImageView;
-    const v13, 0x7f0801c5
+    const v13, 0x7f0801cc
 
     invoke-virtual {v10, v13}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -825,7 +825,7 @@
     .line 152
     const/4 v13, 0x3
 
-    const v14, 0x7f090280
+    const v14, 0x7f090285
 
     invoke-virtual {v6, v13, v14}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
@@ -853,7 +853,7 @@
 
     .line 168
     .local v8, "graph":Landroid/widget/ImageView;
-    const v13, 0x7f090280
+    const v13, 0x7f090285
 
     invoke-virtual {v8, v13}, Landroid/widget/ImageView;->setId(I)V
 

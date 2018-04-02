@@ -108,7 +108,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0802d4
+    const v3, 0x7f0802de
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -235,7 +235,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0802d7
+    const v3, 0x7f0802e1
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -328,7 +328,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0903ba
+    .packed-switch 0x7f0903c1
         :pswitch_0
     .end packed-switch
 .end method

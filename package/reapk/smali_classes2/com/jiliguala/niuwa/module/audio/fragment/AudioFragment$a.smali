@@ -36,17 +36,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 2651
+    .line 2669
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2652
+    .line 2670
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 2653
+    .line 2671
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 4
 
     .prologue
-    .line 2662
+    .line 2680
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -65,7 +65,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2663
+    .line 2681
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -82,7 +82,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$2002(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;I)I
 
-    .line 2664
+    .line 2682
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -114,7 +114,7 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/TextSwitcher;->setVisibility(I)V
 
-    .line 2666
+    .line 2684
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -131,7 +131,7 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 2667
+    .line 2685
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -176,7 +176,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextSwitcher;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2668
+    .line 2686
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -205,11 +205,11 @@
 
     invoke-virtual {v1, v0, v2, v3}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$b;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 2671
+    .line 2689
     :cond_0
     return-void
 
-    .line 2664
+    .line 2682
     :cond_1
     const/4 v0, 0x0
 

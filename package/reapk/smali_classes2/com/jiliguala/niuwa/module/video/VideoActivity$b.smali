@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 3296
+    .line 3344
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 3297
+    .line 3345
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 3298
+    .line 3346
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .param p1, "x1"    # Ljava/lang/ref/WeakReference;
 
     .prologue
-    .line 3293
+    .line 3341
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     return-object p1
@@ -68,7 +68,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 3307
+    .line 3355
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v3, :cond_0
@@ -81,20 +81,20 @@
 
     if-eqz v3, :cond_0
 
-    .line 3308
+    .line 3356
     iget v3, p1, Landroid/os/Message;->what:I
 
     packed-switch v3, :pswitch_data_0
 
-    .line 3366
+    .line 3414
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 3369
+    .line 3417
     :cond_0
     :goto_0
     return-void
 
-    .line 3310
+    .line 3358
     :pswitch_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -108,21 +108,21 @@
 
     goto :goto_0
 
-    .line 3313
+    .line 3361
     :pswitch_1
     iget v0, p1, Landroid/os/Message;->arg1:I
 
-    .line 3314
+    .line 3362
     .local v0, "curPosition":I
     iget v1, p1, Landroid/os/Message;->arg2:I
 
-    .line 3316
+    .line 3364
     .local v1, "duration":I
     if-nez v0, :cond_1
 
     if-eqz v1, :cond_0
 
-    .line 3317
+    .line 3365
     :cond_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -132,11 +132,11 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3, v0, v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3500(Lcom/jiliguala/niuwa/module/video/VideoActivity;II)V
+    invoke-static {v3, v0, v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3600(Lcom/jiliguala/niuwa/module/video/VideoActivity;II)V
 
     goto :goto_0
 
-    .line 3321
+    .line 3369
     .end local v0    # "curPosition":I
     .end local v1    # "duration":I
     :pswitch_2
@@ -148,9 +148,9 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3600(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
 
-    .line 3322
+    .line 3370
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -165,7 +165,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 3323
+    .line 3371
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -186,7 +186,7 @@
 
     goto :goto_0
 
-    .line 3327
+    .line 3375
     :pswitch_3
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -196,7 +196,7 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
 
     move-result-object v3
 
@@ -210,7 +210,7 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
 
     move-result-object v3
 
@@ -220,7 +220,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 3328
+    .line 3376
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -229,7 +229,7 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3700(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
 
     move-result-object v3
 
@@ -237,7 +237,7 @@
 
     goto :goto_0
 
-    .line 3333
+    .line 3381
     :pswitch_4
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -247,13 +247,13 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 3334
+    .line 3382
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -262,7 +262,7 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
 
     move-result-object v3
 
@@ -272,7 +272,7 @@
 
     goto/16 :goto_0
 
-    .line 3339
+    .line 3387
     :pswitch_5
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -282,13 +282,13 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 3340
+    .line 3388
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -297,7 +297,7 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/view/View;
 
     move-result-object v3
 
@@ -305,7 +305,7 @@
 
     goto/16 :goto_0
 
-    .line 3344
+    .line 3392
     :pswitch_6
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -315,11 +315,11 @@
 
     check-cast v3, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v3, v4}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3900(Lcom/jiliguala/niuwa/module/video/VideoActivity;Z)V
+    invoke-static {v3, v4}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$4000(Lcom/jiliguala/niuwa/module/video/VideoActivity;Z)V
 
     goto/16 :goto_0
 
-    .line 3352
+    .line 3400
     :pswitch_7
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -343,7 +343,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 3353
+    .line 3401
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -362,7 +362,7 @@
 
     goto/16 :goto_0
 
-    .line 3357
+    .line 3405
     :pswitch_8
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -386,7 +386,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 3358
+    .line 3406
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -399,11 +399,11 @@
 
     move-result v2
 
-    .line 3360
+    .line 3408
     .local v2, "isVideoChannelShowing":Z
     if-eqz v2, :cond_0
 
-    .line 3361
+    .line 3409
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -422,7 +422,7 @@
 
     goto/16 :goto_0
 
-    .line 3308
+    .line 3356
     nop
 
     :pswitch_data_0

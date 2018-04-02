@@ -132,7 +132,7 @@
     .line 174
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedStoryGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09026d
+    const v1, 0x7f090272
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
     .line 176
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedStoryGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

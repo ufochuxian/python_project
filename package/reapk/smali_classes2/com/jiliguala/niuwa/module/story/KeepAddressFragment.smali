@@ -902,7 +902,7 @@
     .line 133
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090378
+    const v1, 0x7f09037f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -915,7 +915,7 @@
     .line 135
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902a8
+    const v1, 0x7f0902ae
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -933,7 +933,7 @@
     .line 140
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0903d7
+    const v1, 0x7f0903de
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -946,7 +946,7 @@
     .line 142
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902a9
+    const v1, 0x7f0902af
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -972,7 +972,7 @@
     .line 148
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902aa
+    const v1, 0x7f0902b0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1024,7 +1024,7 @@
     .line 160
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0903f6
+    const v1, 0x7f0903fd
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1037,7 +1037,7 @@
     .line 162
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090614
+    const v1, 0x7f09061e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1050,7 +1050,7 @@
     .line 167
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09048a
+    const v1, 0x7f090494
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

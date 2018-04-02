@@ -151,70 +151,70 @@
     .locals 2
 
     .prologue
-    .line 379
+    .line 380
     new-instance v0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$c;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$c;-><init>(Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mJSBridgeReceiver:Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$c;
 
-    .line 380
+    .line 381
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
-    .line 381
+    .line 382
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.update.right.button"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 382
+    .line 383
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.update.shareobj.and.share"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 383
+    .line 384
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.update.finish.wirte"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 384
+    .line 385
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.start.storylesson"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 385
+    .line 386
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.start.purchase"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 386
+    .line 387
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "action.goBack"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 387
+    .line 388
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mJSBridgeReceiver:Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$c;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->intentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 388
+    .line 389
     return-void
 .end method
 
@@ -224,10 +224,10 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 356
+    .line 357
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->initializeJsBridgeCallback()V
 
-    .line 358
+    .line 359
     new-instance v0, Landroid/webkit/WebView;
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getBaseContext()Landroid/content/Context;
@@ -238,10 +238,10 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
-    .line 359
+    .line 360
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->setDebug()V
 
-    .line 360
+    .line 361
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -252,7 +252,7 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setCacheMode(I)V
 
-    .line 361
+    .line 362
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -261,7 +261,7 @@
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 362
+    .line 363
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -272,7 +272,7 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
 
-    .line 363
+    .line 364
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
-    .line 364
+    .line 365
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$b;
@@ -290,7 +290,7 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 367
+    .line 368
     return-void
 .end method
 
@@ -300,7 +300,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 340
+    .line 341
     new-instance v0, Lorg/xwalk/core/XWalkView;
 
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
@@ -311,7 +311,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
-    .line 343
+    .line 344
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/write/jsscope/JsScope;
@@ -324,7 +324,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/xwalk/core/XWalkView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 345
+    .line 346
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$d;
@@ -335,7 +335,7 @@
 
     invoke-virtual {v0, v1}, Lorg/xwalk/core/XWalkView;->setResourceClient(Lorg/xwalk/core/XWalkResourceClient;)V
 
-    .line 347
+    .line 348
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$e;
@@ -346,17 +346,17 @@
 
     invoke-virtual {v0, v1}, Lorg/xwalk/core/XWalkView;->setUIClient(Lorg/xwalk/core/XWalkUIClient;)V
 
-    .line 350
+    .line 351
     const-string v0, "remote-debugging"
 
     invoke-static {v0, v3}, Lorg/xwalk/core/XWalkPreferences;->setValue(Ljava/lang/String;Z)V
 
-    .line 352
+    .line 353
     const-string v0, "enable-javascript"
 
     invoke-static {v0, v3}, Lorg/xwalk/core/XWalkPreferences;->setValue(Ljava/lang/String;Z)V
 
-    .line 353
+    .line 354
     return-void
 .end method
 
@@ -365,42 +365,42 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 181
+    .line 182
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->loadFinished:Z
 
-    .line 182
+    .line 183
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->isCrossWalkAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 183
+    .line 184
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v0, :cond_0
 
-    .line 184
+    .line 185
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Lorg/xwalk/core/XWalkView;->load(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 191
+    .line 192
     :cond_0
     :goto_0
     return-void
 
-    .line 187
+    .line 188
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v0, :cond_0
 
-    .line 188
+    .line 189
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
@@ -415,7 +415,7 @@
     .param p3, "channel"    # Ljava/lang/String;
 
     .prologue
-    .line 716
+    .line 725
     invoke-static {p2}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
@@ -424,19 +424,19 @@
 
     div-double v4, v0, v2
 
-    .line 717
+    .line 726
     .local v4, "price":D
     new-instance v7, Ljava/util/HashMap;
 
     invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
 
-    .line 718
+    .line 727
     .local v7, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v0, "Channel"
 
     invoke-interface {v7, v0, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 719
+    .line 728
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPlan:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -445,14 +445,14 @@
 
     if-nez v0, :cond_0
 
-    .line 720
+    .line 729
     const-string v0, "AB Test"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPlan:Ljava/lang/String;
 
     invoke-interface {v7, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 722
+    .line 731
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getPurchaseSource()Ljava/lang/CharSequence;
 
@@ -464,7 +464,7 @@
 
     if-nez v0, :cond_1
 
-    .line 723
+    .line 732
     const-string v0, "LessonID"
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getPurchaseSource()Ljava/lang/CharSequence;
@@ -473,7 +473,7 @@
 
     invoke-interface {v7, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 725
+    .line 734
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
@@ -489,7 +489,7 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;IDLjava/lang/String;Ljava/util/Map;)V
 
-    .line 726
+    .line 735
     return-void
 .end method
 
@@ -497,12 +497,12 @@
     .locals 3
 
     .prologue
-    .line 671
+    .line 680
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 672
+    .line 681
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "Item_id"
 
@@ -519,7 +519,7 @@
     :goto_0
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 673
+    .line 682
     const-string v1, "Type"
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getType()Ljava/lang/String;
@@ -528,7 +528,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 674
+    .line 683
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -537,10 +537,10 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 675
+    .line 684
     return-void
 
-    .line 672
+    .line 681
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mItemId:Ljava/lang/String;
 
@@ -554,17 +554,17 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 159
+    .line 160
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->shouldSetCookies(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 160
+    .line 161
     const-string v1, "Authorization="
 
-    .line 161
+    .line 162
     .local v1, "cookie":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -576,7 +576,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 162
+    .line 163
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v5
@@ -585,7 +585,7 @@
 
     move-result-object v4
 
-    .line 163
+    .line 164
     .local v4, "uid":Ljava/lang/String;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -595,7 +595,7 @@
 
     move-result-object v3
 
-    .line 164
+    .line 165
     .local v3, "token":Ljava/lang/String;
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -647,7 +647,7 @@
 
     move-result-object v0
 
-    .line 165
+    .line 166
     .local v0, "basicAuth":Ljava/lang/String;
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -665,7 +665,7 @@
 
     move-result-object v1
 
-    .line 167
+    .line 168
     .end local v0    # "basicAuth":Ljava/lang/String;
     .end local v3    # "token":Ljava/lang/String;
     .end local v4    # "uid":Ljava/lang/String;
@@ -676,37 +676,37 @@
 
     if-eqz v5, :cond_2
 
-    .line 168
+    .line 169
     new-instance v2, Lorg/xwalk/core/XWalkCookieManager;
 
     invoke-direct {v2}, Lorg/xwalk/core/XWalkCookieManager;-><init>()V
 
-    .line 169
+    .line 170
     .local v2, "cookieManager":Lorg/xwalk/core/XWalkCookieManager;
     invoke-virtual {v2, v8}, Lorg/xwalk/core/XWalkCookieManager;->setAcceptCookie(Z)V
 
-    .line 170
+    .line 171
     invoke-virtual {v2, p1, v1}, Lorg/xwalk/core/XWalkCookieManager;->setCookie(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 177
+    .line 178
     .end local v1    # "cookie":Ljava/lang/String;
     .end local v2    # "cookieManager":Lorg/xwalk/core/XWalkCookieManager;
     :cond_1
     :goto_0
     return-void
 
-    .line 172
+    .line 173
     .restart local v1    # "cookie":Ljava/lang/String;
     :cond_2
     invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object v2
 
-    .line 173
+    .line 174
     .local v2, "cookieManager":Landroid/webkit/CookieManager;
     invoke-virtual {v2, v8}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
 
-    .line 174
+    .line 175
     invoke-virtual {v2, p1, v1}, Landroid/webkit/CookieManager;->setCookie(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -719,7 +719,7 @@
     .end annotation
 
     .prologue
-    .line 371
+    .line 372
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/ac;->j()Z
 
     move-result v0
@@ -730,7 +730,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 372
+    .line 373
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
@@ -743,14 +743,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 373
+    .line 374
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     const/4 v0, 0x1
 
     invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V
 
-    .line 376
+    .line 377
     :cond_0
     return-void
 .end method
@@ -765,14 +765,15 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
+    .line 153
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
@@ -783,14 +784,31 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
     const/4 v0, 0x1
 
+    .line 152
     :goto_0
     return v0
 
-    :cond_0
+    .line 153
+    :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
@@ -803,7 +821,7 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 462
+    .line 471
     return-void
 .end method
 
@@ -811,7 +829,7 @@
     .locals 0
 
     .prologue
-    .line 631
+    .line 640
     return-void
 .end method
 
@@ -823,14 +841,14 @@
 
     const/4 v3, 0x0
 
-    .line 194
+    .line 195
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->isCrossWalkAvailable()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 195
+    .line 196
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v4, :cond_1
@@ -858,7 +876,7 @@
     :goto_0
     move v3, v2
 
-    .line 205
+    .line 206
     :cond_0
     :goto_1
     return v3
@@ -866,16 +884,16 @@
     :cond_1
     move v2, v3
 
-    .line 195
+    .line 196
     goto :goto_0
 
-    .line 197
+    .line 198
     :cond_2
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v4, :cond_0
 
-    .line 201
+    .line 202
     :try_start_0
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
@@ -883,7 +901,7 @@
 
     move-result-object v1
 
-    .line 202
+    .line 203
     .local v1, "history":Landroid/webkit/WebBackForwardList;
     invoke-virtual {v1}, Landroid/webkit/WebBackForwardList;->getSize()I
 
@@ -914,7 +932,7 @@
     :cond_3
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
-    .line 203
+    .line 204
     invoke-virtual {v4}, Landroid/webkit/WebView;->canGoBack()Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -927,12 +945,12 @@
 
     goto :goto_1
 
-    .line 204
+    .line 205
     .end local v1    # "history":Landroid/webkit/WebBackForwardList;
     :catch_0
     move-exception v0
 
-    .line 205
+    .line 206
     .local v0, "e":Ljava/lang/Exception;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
@@ -947,17 +965,17 @@
     .locals 1
 
     .prologue
-    .line 790
+    .line 799
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     if-eqz v0, :cond_0
 
-    .line 791
+    .line 800
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;->dismiss()V
 
-    .line 793
+    .line 802
     :cond_0
     return-void
 .end method
@@ -966,7 +984,7 @@
     .locals 1
 
     .prologue
-    .line 729
+    .line 738
     const/4 v0, 0x0
 
     return-object v0
@@ -976,7 +994,7 @@
     .locals 1
 
     .prologue
-    .line 733
+    .line 742
     const-string v0, ""
 
     return-object v0
@@ -986,7 +1004,7 @@
     .locals 1
 
     .prologue
-    .line 737
+    .line 746
     const-string v0, ""
 
     return-object v0
@@ -996,19 +1014,19 @@
     .locals 3
 
     .prologue
-    .line 211
+    .line 212
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->isCrossWalkAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 212
+    .line 213
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v0, :cond_0
 
-    .line 213
+    .line 214
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     invoke-virtual {v0}, Lorg/xwalk/core/XWalkView;->getNavigationHistory()Lorg/xwalk/core/XWalkNavigationHistory;
@@ -1021,18 +1039,18 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/xwalk/core/XWalkNavigationHistory;->navigate(Lorg/xwalk/core/XWalkNavigationHistory$Direction;I)V
 
-    .line 220
+    .line 221
     :cond_0
     :goto_0
     return-void
 
-    .line 216
+    .line 217
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v0, :cond_0
 
-    .line 217
+    .line 218
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
@@ -1044,17 +1062,17 @@
     .locals 1
 
     .prologue
-    .line 654
+    .line 663
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     if-eqz v0, :cond_0
 
-    .line 655
+    .line 664
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->dismiss()V
 
-    .line 657
+    .line 666
     :cond_0
     return-void
 .end method
@@ -1246,20 +1264,20 @@
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 742
+    .line 751
     invoke-super {p0, p1, p2, p3}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 743
+    .line 752
     sget v3, Lcom/pingplusplus/android/Pingpp;->REQUEST_CODE_PAYMENT:I
 
     if-ne p1, v3, :cond_3
 
-    .line 744
+    .line 753
     const/4 v3, -0x1
 
     if-ne p2, v3, :cond_3
 
-    .line 745
+    .line 754
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v3
@@ -1270,7 +1288,7 @@
 
     move-result-object v2
 
-    .line 752
+    .line 761
     .local v2, "result":Ljava/lang/String;
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -1282,7 +1300,7 @@
 
     move-result-object v0
 
-    .line 753
+    .line 762
     .local v0, "errorMsg":Ljava/lang/String;
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -1294,18 +1312,18 @@
 
     move-result-object v1
 
-    .line 755
+    .line 764
     .local v1, "extraMsg":Ljava/lang/String;
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     if-eqz v3, :cond_0
 
-    .line 756
+    .line 765
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->enablePayBtn()V
 
-    .line 759
+    .line 768
     :cond_0
     const-string v3, "cancel"
 
@@ -1315,20 +1333,20 @@
 
     if-eqz v3, :cond_1
 
-    .line 760
+    .line 769
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->hidePayPage()V
 
-    .line 761
+    .line 770
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     if-eqz v3, :cond_1
 
-    .line 762
+    .line 771
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->requestOrderResultWithNoRetry()V
 
-    .line 766
+    .line 775
     :cond_1
     const-string v3, "success"
 
@@ -1338,20 +1356,20 @@
 
     if-eqz v3, :cond_2
 
-    .line 767
+    .line 776
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->showConfirmPayResultDialog()V
 
-    .line 768
+    .line 777
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     if-eqz v3, :cond_2
 
-    .line 769
+    .line 778
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->reportOrderNoStatusToServer()V
 
-    .line 773
+    .line 782
     :cond_2
     const-string v3, "fail"
 
@@ -1361,12 +1379,12 @@
 
     if-eqz v3, :cond_3
 
-    .line 775
+    .line 784
     const-string v3, "\u652f\u4ed8\u5931\u8d25,\u8bf7\u5728\u5fae\u4fe1\u5173\u6ce8\u53fd\u91cc\u5471\u5566\u670d\u52a1\u53f7\u540e\u8fdb\u884c\u53cd\u9988"
 
     invoke-static {v3}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 779
+    .line 788
     .end local v0    # "errorMsg":Ljava/lang/String;
     .end local v1    # "extraMsg":Ljava/lang/String;
     .end local v2    # "result":Ljava/lang/String;
@@ -1378,20 +1396,20 @@
     .locals 1
 
     .prologue
-    .line 289
-    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onDestroy()V
-
     .line 290
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
-
-    if-eqz v0, :cond_0
+    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onDestroy()V
 
     .line 291
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
+    if-eqz v0, :cond_0
+
+    .line 292
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+
     invoke-virtual {v0}, Lorg/xwalk/core/XWalkView;->onDestroy()V
 
-    .line 293
+    .line 294
     :cond_0
     return-void
 .end method
@@ -1400,31 +1418,31 @@
     .locals 5
 
     .prologue
-    .line 224
-    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onPause()V
-
     .line 225
-    iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
-
-    if-eqz v3, :cond_0
+    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onPause()V
 
     .line 226
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
-    invoke-virtual {v3}, Lorg/xwalk/core/XWalkView;->pauseTimers()V
+    if-eqz v3, :cond_0
 
     .line 227
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
+    invoke-virtual {v3}, Lorg/xwalk/core/XWalkView;->pauseTimers()V
+
+    .line 228
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+
     invoke-virtual {v3}, Lorg/xwalk/core/XWalkView;->onHide()V
 
-    .line 230
+    .line 231
     :cond_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v3, :cond_1
 
-    .line 232
+    .line 233
     :try_start_0
     const-string v3, "android.webkit.WebView"
 
@@ -1432,11 +1450,11 @@
 
     move-result-object v2
 
-    .line 233
+    .line 234
     .local v2, "webview":Ljava/lang/Class;
     if-eqz v2, :cond_1
 
-    .line 234
+    .line 235
     const-string v4, "onPause"
 
     const/4 v3, 0x0
@@ -1447,11 +1465,11 @@
 
     move-result-object v1
 
-    .line 235
+    .line 236
     .local v1, "pause":Ljava/lang/reflect/Method;
     if-eqz v1, :cond_1
 
-    .line 236
+    .line 237
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     const/4 v3, 0x0
@@ -1465,7 +1483,7 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 250
+    .line 251
     .end local v1    # "pause":Ljava/lang/reflect/Method;
     .end local v2    # "webview":Ljava/lang/Class;
     :cond_1
@@ -1474,7 +1492,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 252
+    .line 253
     :try_start_1
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
@@ -1484,41 +1502,41 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 257
+    .line 258
     :cond_2
     :goto_1
     return-void
 
-    .line 253
+    .line 254
     :catch_0
     move-exception v0
 
-    .line 254
+    .line 255
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_1
 
-    .line 245
+    .line 246
     .end local v0    # "e":Ljava/lang/Exception;
     :catch_1
     move-exception v3
 
     goto :goto_0
 
-    .line 243
+    .line 244
     :catch_2
     move-exception v3
 
     goto :goto_0
 
-    .line 241
+    .line 242
     :catch_3
     move-exception v3
 
     goto :goto_0
 
-    .line 239
+    .line 240
     :catch_4
     move-exception v3
 
@@ -1534,7 +1552,7 @@
     .param p5, "orderId"    # Ljava/lang/String;
 
     .prologue
-    .line 689
+    .line 698
     if-eqz p1, :cond_0
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/PingPPPayResult$Data;->status:Ljava/lang/String;
@@ -1545,12 +1563,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 713
+    .line 722
     :cond_0
     :goto_0
     return-void
 
-    .line 693
+    .line 702
     :cond_1
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/PingPPPayResult$Data;->status:Ljava/lang/String;
 
@@ -1562,22 +1580,22 @@
 
     if-eqz v1, :cond_3
 
-    .line 694
+    .line 703
     invoke-direct {p0, p3, p2, p4}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->reportAvenueAmplitude(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 695
+    .line 704
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     if-eqz v1, :cond_2
 
-    .line 696
+    .line 705
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     const-string v2, "\u606d\u559c\u60a8\u8d2d\u4e70\u6210\u529f!"
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;->setPayResultDesc(Ljava/lang/String;)V
 
-    .line 698
+    .line 707
     :cond_2
     new-instance v0, Landroid/content/Intent;
 
@@ -1585,7 +1603,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 699
+    .line 708
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "extra_key_purchased"
 
@@ -1593,15 +1611,15 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 700
+    .line 709
     const-string v1, "extra_key_oid"
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 701
+    .line 710
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 704
+    .line 713
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_3
     new-instance v1, Landroid/os/Handler;
@@ -1623,28 +1641,28 @@
     .locals 1
 
     .prologue
-    .line 679
+    .line 688
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->enablePayBtn()V
 
-    .line 680
+    .line 689
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->dismiss()V
 
-    .line 682
+    .line 691
     const-string v0, "\u652f\u4ed8\u5931\u8d25,\u8bf7\u5728\u5fae\u4fe1\u5173\u6ce8\u53fd\u91cc\u5471\u5566\u670d\u52a1\u53f7\u540e\u8fdb\u884c\u53cd\u9988"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 683
+    .line 692
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->dismissConfirmPayResultDialog()V
 
-    .line 684
+    .line 693
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onBackPressed()V
 
-    .line 685
+    .line 694
     return-void
 .end method
 
@@ -1652,31 +1670,31 @@
     .locals 4
 
     .prologue
-    .line 261
-    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onResume()V
-
     .line 262
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
-
-    if-eqz v2, :cond_0
+    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onResume()V
 
     .line 263
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
-    invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->resumeTimers()V
+    if-eqz v2, :cond_0
 
     .line 264
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
+    invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->resumeTimers()V
+
+    .line 265
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
+
     invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->onShow()V
 
-    .line 266
+    .line 267
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v2, :cond_1
 
-    .line 268
+    .line 269
     :try_start_0
     const-string v2, "android.webkit.WebView"
 
@@ -1684,11 +1702,11 @@
 
     move-result-object v1
 
-    .line 269
+    .line 270
     .local v1, "webview":Ljava/lang/Class;
     if-eqz v1, :cond_1
 
-    .line 270
+    .line 271
     const-string v3, "onResume"
 
     const/4 v2, 0x0
@@ -1699,11 +1717,11 @@
 
     move-result-object v0
 
-    .line 271
+    .line 272
     .local v0, "resume":Ljava/lang/reflect/Method;
     if-eqz v0, :cond_1
 
-    .line 272
+    .line 273
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     const/4 v2, 0x0
@@ -1717,32 +1735,32 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 285
+    .line 286
     .end local v0    # "resume":Ljava/lang/reflect/Method;
     .end local v1    # "webview":Ljava/lang/Class;
     :cond_1
     :goto_0
     return-void
 
-    .line 281
+    .line 282
     :catch_0
     move-exception v2
 
     goto :goto_0
 
-    .line 279
+    .line 280
     :catch_1
     move-exception v2
 
     goto :goto_0
 
-    .line 277
+    .line 278
     :catch_2
     move-exception v2
 
     goto :goto_0
 
-    .line 275
+    .line 276
     :catch_3
     move-exception v2
 
@@ -1753,15 +1771,15 @@
     .locals 1
 
     .prologue
-    .line 661
+    .line 670
     const-string v0, "\u6b63\u5728\u8fdb\u5165\u5fae\u4fe1,\u8bf7\u7a0d\u540e..."
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 662
+    .line 671
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->reportClickPurchase()V
 
-    .line 663
+    .line 672
     return-void
 .end method
 
@@ -1769,10 +1787,10 @@
     .locals 0
 
     .prologue
-    .line 667
+    .line 676
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->reportClickPurchase()V
 
-    .line 668
+    .line 677
     return-void
 .end method
 
@@ -1780,42 +1798,42 @@
     .locals 4
 
     .prologue
-    .line 296
+    .line 297
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     if-eqz v2, :cond_1
 
-    .line 298
+    .line 299
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->stopLoading()V
 
-    .line 299
+    .line 300
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     const-string v3, "javascript:if(window.stopAllMedia){window.stopAllMedia()}"
 
     invoke-virtual {v2, v3}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 300
+    .line 301
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Landroid/webkit/WebView;->clearCache(Z)V
 
-    .line 301
+    .line 302
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->clearHistory()V
 
-    .line 302
+    .line 303
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->clearFormData()V
 
-    .line 303
+    .line 304
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->getParent()Landroid/view/ViewParent;
@@ -1824,29 +1842,29 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 304
+    .line 305
     .local v1, "parent":Landroid/view/ViewGroup;
     if-eqz v1, :cond_0
 
-    .line 305
+    .line 306
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 307
+    .line 308
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->removeAllViews()V
 
-    .line 308
+    .line 309
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->destroy()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 316
+    .line 317
     .end local v1    # "parent":Landroid/view/ViewGroup;
     :cond_1
     :goto_0
@@ -1857,26 +1875,26 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 320
+    .line 321
     :goto_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     if-eqz v2, :cond_2
 
-    .line 322
+    .line 323
     :try_start_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->stopLoading()V
 
-    .line 323
+    .line 324
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Lorg/xwalk/core/XWalkView;->clearCache(Z)V
 
-    .line 324
+    .line 325
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->getNavigationHistory()Lorg/xwalk/core/XWalkNavigationHistory;
@@ -1885,50 +1903,50 @@
 
     invoke-virtual {v2}, Lorg/xwalk/core/XWalkNavigationHistory;->clear()V
 
-    .line 325
+    .line 326
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mXWalkView:Lorg/xwalk/core/XWalkView;
 
     invoke-virtual {v2}, Lorg/xwalk/core/XWalkView;->onDestroy()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 331
+    .line 332
     :cond_2
     :goto_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->finish()V
 
-    .line 332
-    const v2, 0x7f010012
+    .line 333
+    const v2, 0x7f010013
 
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
     invoke-virtual {p0, v2, v3}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->overridePendingTransition(II)V
 
-    .line 333
+    .line 334
     return-void
 
-    .line 311
+    .line 312
     :catch_0
     move-exception v0
 
-    .line 312
+    .line 313
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 326
+    .line 327
     .end local v0    # "e":Ljava/lang/Exception;
     :catch_1
     move-exception v0
 
-    .line 327
+    .line 328
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
     goto :goto_2
 
-    .line 317
+    .line 318
     .end local v0    # "e":Ljava/lang/Exception;
     :catch_2
     move-exception v2
@@ -1941,10 +1959,10 @@
     .param p1, "bridgeName"    # Ljava/lang/String;
 
     .prologue
-    .line 801
+    .line 810
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mBridgeName:Ljava/lang/String;
 
-    .line 802
+    .line 811
     return-void
 .end method
 
@@ -1953,10 +1971,10 @@
     .param p1, "usingCrossWalk"    # Z
 
     .prologue
-    .line 797
+    .line 806
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mUsingCrossWalk:Z
 
-    .line 798
+    .line 807
     return-void
 .end method
 
@@ -1964,25 +1982,25 @@
     .locals 1
 
     .prologue
-    .line 783
+    .line 792
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     if-nez v0, :cond_0
 
-    .line 784
+    .line 793
     new-instance v0, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
-    .line 786
+    .line 795
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mConfirmPayResultDialog:Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/detail/view/ConfirmPayResultDialog;->show()V
 
-    .line 787
+    .line 796
     return-void
 .end method
 
@@ -1993,19 +2011,19 @@
     .param p3, "price"    # Ljava/lang/String;
 
     .prologue
-    .line 635
+    .line 644
     :try_start_0
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mSkuBridge:Lcom/jiliguala/niuwa/logic/network/json/SkuBridge;
 
-    .line 636
+    .line 645
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mItemId:Ljava/lang/String;
 
-    .line 637
+    .line 646
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     if-nez v0, :cond_0
 
-    .line 638
+    .line 647
     new-instance v0, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     const-string v1, "REQUEST_CHARGE_USE_GET"
@@ -2014,33 +2032,33 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
-    .line 639
+    .line 648
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->setOnPayClickListener(Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog$onPayClickListenr;)V
 
-    .line 640
+    .line 649
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->setCallBack(Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog$CallBack;)V
 
-    .line 645
+    .line 654
     :goto_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->show()V
 
-    .line 650
+    .line 659
     :goto_1
     return-void
 
-    .line 642
+    .line 651
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0, p2}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->setItemId(Ljava/lang/String;)V
 
-    .line 643
+    .line 652
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->mPayDialog:Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;
 
     invoke-virtual {v0, p3}, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->setMoneyAccount(Ljava/lang/String;)V
@@ -2049,7 +2067,7 @@
 
     goto :goto_0
 
-    .line 647
+    .line 656
     :catch_0
     move-exception v0
 

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/logic/network/f;
 
     .prologue
-    .line 181
+    .line 192
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-direct {p0}, Lcom/qiniu/rs/CallBack;-><init>()V
@@ -39,14 +39,14 @@
     .param p1, "ret"    # Lcom/qiniu/rs/CallRet;
 
     .prologue
-    .line 214
+    .line 226
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/jiliguala/niuwa/logic/network/f;->b:Z
+    iput-boolean v1, v0, Lcom/jiliguala/niuwa/logic/network/f;->c:Z
 
-    .line 216
+    .line 228
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -55,7 +55,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 217
+    .line 229
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -64,14 +64,14 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/logic/network/f$b;->onFailed()V
 
-    .line 218
+    .line 230
     iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;Lcom/jiliguala/niuwa/logic/network/f$b;)Lcom/jiliguala/niuwa/logic/network/f$b;
 
-    .line 221
+    .line 233
     :cond_0
     return-void
 .end method
@@ -82,7 +82,7 @@
     .param p3, "total"    # J
 
     .prologue
-    .line 184
+    .line 195
     const-wide/16 v2, 0x64
 
     mul-long/2addr v2, p1
@@ -91,7 +91,7 @@
 
     long-to-int v0, v2
 
-    .line 187
+    .line 198
     .local v0, "percent":I
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
@@ -101,7 +101,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 188
+    .line 199
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -110,7 +110,7 @@
 
     invoke-interface {v1, v0}, Lcom/jiliguala/niuwa/logic/network/f$b;->onProgress(I)V
 
-    .line 190
+    .line 201
     :cond_0
     return-void
 .end method
@@ -120,19 +120,19 @@
     .param p1, "ret"    # Lcom/qiniu/rs/UploadCallRet;
 
     .prologue
-    .line 194
+    .line 205
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Lcom/jiliguala/niuwa/logic/network/f;->b:Z
+    iput-boolean v3, v2, Lcom/jiliguala/niuwa/logic/network/f;->c:Z
 
-    .line 195
+    .line 206
     invoke-virtual {p1}, Lcom/qiniu/rs/UploadCallRet;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 198
+    .line 209
     .local v0, "key":Ljava/lang/String;
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -152,7 +152,7 @@
 
     move-result-object v1
 
-    .line 201
+    .line 213
     .local v1, "redirect":Ljava/lang/String;
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
@@ -162,7 +162,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 202
+    .line 214
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/f;->c(Lcom/jiliguala/niuwa/logic/network/f;)Ljava/lang/String;
@@ -175,7 +175,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 203
+    .line 215
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/f;->b(Lcom/jiliguala/niuwa/logic/network/f;)Lcom/jiliguala/niuwa/logic/network/f$b;
@@ -184,7 +184,7 @@
 
     invoke-interface {v2, v1}, Lcom/jiliguala/niuwa/logic/network/f$b;->onSucceed(Ljava/lang/String;)V
 
-    .line 207
+    .line 219
     :goto_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 
@@ -192,11 +192,11 @@
 
     invoke-static {v2, v3}, Lcom/jiliguala/niuwa/logic/network/f;->a(Lcom/jiliguala/niuwa/logic/network/f;Lcom/jiliguala/niuwa/logic/network/f$b;)Lcom/jiliguala/niuwa/logic/network/f$b;
 
-    .line 210
+    .line 222
     :cond_0
     return-void
 
-    .line 205
+    .line 217
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f$2;->a:Lcom/jiliguala/niuwa/logic/network/f;
 

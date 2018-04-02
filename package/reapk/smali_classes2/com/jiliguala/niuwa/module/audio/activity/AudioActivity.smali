@@ -121,9 +121,9 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .prologue
-    const v3, 0x7f010025
+    const v3, 0x7f010027
 
-    const v2, 0x7f010022
+    const v2, 0x7f010024
 
     .line 246
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -360,9 +360,9 @@
     .param p1, "audioChanndelListFragment"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioChannelListFragment;
 
     .prologue
-    const v10, 0x7f01001e
+    const v10, 0x7f010020
 
-    const v9, 0x7f01001d
+    const v9, 0x7f01001f
 
     const/4 v6, 0x1
 
@@ -493,9 +493,9 @@
     .param p1, "fm"    # Landroid/support/v4/app/ag;
 
     .prologue
-    const v6, 0x7f010025
+    const v6, 0x7f010027
 
-    const v5, 0x7f010022
+    const v5, 0x7f010024
 
     const/4 v3, 0x0
 
@@ -1167,9 +1167,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;->finish()V
 
     .line 205
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/audio/activity/AudioActivity;->overridePendingTransition(II)V
 

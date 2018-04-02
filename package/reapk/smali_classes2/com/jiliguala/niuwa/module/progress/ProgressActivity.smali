@@ -683,7 +683,7 @@
     .line 159
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->flipper:Landroid/widget/ViewFlipper;
 
-    const v1, 0x7f010017
+    const v1, 0x7f010019
 
     invoke-static {p0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -694,7 +694,7 @@
     .line 160
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->flipper:Landroid/widget/ViewFlipper;
 
-    const v1, 0x7f010018
+    const v1, 0x7f01001a
 
     invoke-static {p0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -793,7 +793,7 @@
     .line 136
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->flipper:Landroid/widget/ViewFlipper;
 
-    const v1, 0x7f010019
+    const v1, 0x7f01001b
 
     invoke-static {p0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -804,7 +804,7 @@
     .line 137
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->flipper:Landroid/widget/ViewFlipper;
 
-    const v1, 0x7f01001a
+    const v1, 0x7f01001c
 
     invoke-static {p0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -1032,9 +1032,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->finish()V
 
     .line 397
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->overridePendingTransition(II)V
 
@@ -1160,7 +1160,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->currentMonth:Landroid/widget/TextView;
 
     .line 310
-    const v0, 0x7f0903fa
+    const v0, 0x7f090401
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->findViewById(I)Landroid/view/View;
 
@@ -1178,7 +1178,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 312
-    const v0, 0x7f090381
+    const v0, 0x7f090388
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->findViewById(I)Landroid/view/View;
 
@@ -1279,7 +1279,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 326
-    const v0, 0x7f090588
+    const v0, 0x7f090592
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/progress/ProgressActivity;->findViewById(I)Landroid/view/View;
 

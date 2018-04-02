@@ -106,31 +106,43 @@
 
 .field public mLeftBabyIv:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902b7
+        a = 0x7f0902bd
     .end annotation
 .end field
 
 .field public mLeftFindCurrent:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902bb
+        a = 0x7f0902c1
     .end annotation
 .end field
 
 .field public mLessonTypeTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902c8
+        a = 0x7f0902ce
+    .end annotation
+.end field
+
+.field public mLevel:Landroid/widget/TextView;
+    .annotation build Lbutterknife/BindView;
+        a = 0x7f0902cf
+    .end annotation
+.end field
+
+.field public mListenTv:Landroid/view/View;
+    .annotation build Lbutterknife/BindView;
+        a = 0x7f0902e0
     .end annotation
 .end field
 
 .field public mLoadingProgressContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902e7
+        a = 0x7f0902ee
     .end annotation
 .end field
 
 .field public mNewRoadMapRoot:Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09037f
+        a = 0x7f090386
     .end annotation
 .end field
 
@@ -138,43 +150,47 @@
 
 .field public mPhonicsContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903dc
+        a = 0x7f0903e3
     .end annotation
 .end field
 
 .field public mPhonicsIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903de
+        a = 0x7f0903e5
     .end annotation
 .end field
 
 .field public mPhonicsTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e5
+        a = 0x7f0903ec
     .end annotation
 .end field
 
 .field public mProgressBar:Lcom/liulishuo/magicprogresswidget/MagicProgressBar;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090400
+        a = 0x7f090407
     .end annotation
 .end field
 
+.field private mRealScreenHeight:I
+
+.field private mRealScreenWidth:I
+
 .field public mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090437
+        a = 0x7f09043e
     .end annotation
 .end field
 
 .field public mRightBabyIv:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09045f
+        a = 0x7f090468
     .end annotation
 .end field
 
 .field public mRightFindCurrent:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090464
+        a = 0x7f09046d
     .end annotation
 .end field
 
@@ -182,7 +198,7 @@
 
 .field public mRoadMapBgBelow:Lcom/jiliguala/niuwa/common/widget/TranslateImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090472
+        a = 0x7f09047b
     .end annotation
 .end field
 
@@ -190,7 +206,7 @@
 
 .field public mRoadmapBgRv:Landroid/support/v7/widget/RecyclerView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090473
+        a = 0x7f09047c
     .end annotation
 .end field
 
@@ -200,49 +216,49 @@
 
 .field public mSpeakContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09050c
+        a = 0x7f090516
     .end annotation
 .end field
 
 .field public mSpeakIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09050d
+        a = 0x7f090517
     .end annotation
 .end field
 
 .field public mSpeakText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09050e
+        a = 0x7f090518
     .end annotation
 .end field
 
 .field public mStatusContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090521
+        a = 0x7f09052b
     .end annotation
 .end field
 
 .field public mTip:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090576
+        a = 0x7f090580
     .end annotation
 .end field
 
 .field public mTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09057a
+        a = 0x7f090584
     .end annotation
 .end field
 
 .field public mTopContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090596
+        a = 0x7f0905a0
     .end annotation
 .end field
 
 .field public mTotalCourse:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0905a7
+        a = 0x7f0905b1
     .end annotation
 .end field
 
@@ -250,19 +266,19 @@
 
 .field public mWordContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090618
+        a = 0x7f090622
     .end annotation
 .end field
 
 .field public mWordIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061a
+        a = 0x7f090624
     .end annotation
 .end field
 
 .field public mWordText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090620
+        a = 0x7f09062a
     .end annotation
 .end field
 
@@ -270,7 +286,7 @@
 
 .field public reviewTv:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09045a
+        a = 0x7f090461
     .end annotation
 .end field
 
@@ -293,7 +309,7 @@
     .locals 1
 
     .prologue
-    .line 180
+    .line 185
     const-class v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -309,27 +325,27 @@
     .locals 1
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;-><init>()V
 
-    .line 184
+    .line 189
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mEnableAutoShowPage:Z
 
-    .line 185
+    .line 190
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
-    .line 198
+    .line 203
     const/4 v0, -0x2
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mOneVOnePos:I
 
-    .line 200
+    .line 205
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -345,7 +361,7 @@
     .param p1, "x1"    # F
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollFrontScene(F)V
 
     return-void
@@ -356,7 +372,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->showFindCurrent()V
 
     return-void
@@ -368,7 +384,7 @@
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->goSwitchLvPage(Ljava/lang/String;)V
 
     return-void
@@ -379,7 +395,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->enableShowOneVOneCoursePayPage()V
 
     return-void
@@ -390,7 +406,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->dismissGuideView()V
 
     return-void
@@ -402,7 +418,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollToCurrent(Z)V
 
     return-void
@@ -414,7 +430,7 @@
     .param p1, "x1"    # Landroid/view/View;
 
     .prologue
-    .line 76
+    .line 75
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->showAnim(Landroid/view/View;)V
 
     return-void
@@ -424,7 +440,7 @@
     .locals 3
 
     .prologue
-    .line 442
+    .line 453
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -435,7 +451,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    .line 443
+    .line 454
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -444,15 +460,15 @@
 
     invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$4;-><init>(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;)V
 
-    .line 444
+    .line 455
     invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 442
+    .line 453
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 463
+    .line 474
     return-void
 .end method
 
@@ -462,13 +478,13 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 389
+    .line 400
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     if-eqz v2, :cond_1
 
-    .line 390
-    const v2, 0x7f0b01a1
+    .line 401
+    const v2, 0x7f0b01a6
 
     const/4 v3, 0x0
 
@@ -476,9 +492,9 @@
 
     move-result-object v1
 
-    .line 391
+    .line 402
     .local v1, "footView":Landroid/view/View;
-    const v2, 0x7f0902ca
+    const v2, 0x7f0902d0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -486,7 +502,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 392
+    .line 403
     .local v0, "changeLevel":Landroid/widget/ImageView;
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -500,7 +516,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 393
+    .line 404
     sget-object v2, Lcom/alibaba/sdk/android/feedback/impl/FeedbackAPI;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/bumptech/glide/l;->c(Landroid/content/Context;)Lcom/bumptech/glide/o;
@@ -523,7 +539,7 @@
 
     invoke-virtual {v2, v0}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 395
+    .line 406
     :cond_0
     new-instance v2, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$3;
 
@@ -531,12 +547,12 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 401
+    .line 412
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v2, v1, v4, v4}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->setFooterView(Landroid/view/View;II)I
 
-    .line 403
+    .line 414
     .end local v0    # "changeLevel":Landroid/widget/ImageView;
     .end local v1    # "footView":Landroid/view/View;
     :cond_1
@@ -549,12 +565,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 379
+    .line 390
     new-instance v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
     invoke-direct {v2}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;-><init>()V
 
-    .line 380
+    .line 391
     .local v2, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     new-instance v0, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
@@ -562,31 +578,31 @@
 
     invoke-direct {v0, v3, v2}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;-><init>(ILjava/lang/Object;)V
 
-    .line 381
+    .line 392
     .local v0, "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v3, :cond_0
 
-    .line 382
+    .line 393
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getRoadMapData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 383
+    .line 394
     .local v1, "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-interface {v1, v4, v2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 385
+    .line 396
     .end local v1    # "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :cond_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     invoke-interface {v3, v4, v0}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 386
+    .line 397
     return-void
 .end method
 
@@ -595,12 +611,12 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 1000
+    .line 1027
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1001
+    .line 1028
     .local v0, "showWord":Ljava/lang/Object;
     if-eqz v0, :cond_0
 
@@ -613,7 +629,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1002
+    .line 1029
     new-instance v1, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;
 
     invoke-direct {v1, p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$7;-><init>(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;Landroid/view/View;)V
@@ -622,7 +638,7 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1008
+    .line 1035
     const/4 v1, 0x0
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -631,7 +647,7 @@
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 1010
+    .line 1037
     :cond_0
     return-void
 .end method
@@ -640,17 +656,17 @@
     .locals 1
 
     .prologue
-    .line 467
+    .line 478
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 468
+    .line 479
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->dismissGuideView()V
 
-    .line 470
+    .line 481
     :cond_0
     return-void
 .end method
@@ -659,12 +675,12 @@
     .locals 1
 
     .prologue
-    .line 473
+    .line 484
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mEnableShowOneVOnePurchasePage:Z
 
-    .line 474
+    .line 485
     return-void
 .end method
 
@@ -674,21 +690,21 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 655
+    .line 672
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     if-nez v2, :cond_0
 
-    .line 656
+    .line 673
     iput v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     move v0, v3
 
-    .line 671
+    .line 688
     :goto_0
     return v0
 
-    .line 658
+    .line 675
     :cond_0
     const/4 v0, 0x0
 
@@ -702,7 +718,7 @@
 
     if-ge v0, v2, :cond_4
 
-    .line 659
+    .line 676
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -711,7 +727,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
-    .line 661
+    .line 678
     .local v1, "item":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getContent()Ljava/lang/Object;
 
@@ -725,12 +741,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 662
+    .line 679
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     goto :goto_0
 
-    .line 664
+    .line 681
     :cond_1
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getContent()Ljava/lang/Object;
 
@@ -744,12 +760,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 665
+    .line 682
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     goto :goto_0
 
-    .line 667
+    .line 684
     :cond_2
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
@@ -761,18 +777,18 @@
 
     if-ne v0, v2, :cond_3
 
-    .line 668
+    .line 685
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     goto :goto_0
 
-    .line 658
+    .line 675
     :cond_3
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 671
+    .line 688
     .end local v1    # "item":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :cond_4
     iput v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
@@ -788,7 +804,7 @@
     .param p2, "left"    # I
 
     .prologue
-    .line 438
+    .line 449
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -810,10 +826,10 @@
     .locals 7
 
     .prologue
-    .line 1128
+    .line 1155
     const/4 v2, -0x1
 
-    .line 1130
+    .line 1157
     .local v2, "statusBarHeight":I
     :try_start_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getResources()Landroid/content/res/Resources;
@@ -830,11 +846,11 @@
 
     move-result v1
 
-    .line 1131
+    .line 1158
     .local v1, "resourceId":I
     if-lez v1, :cond_0
 
-    .line 1133
+    .line 1160
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -845,17 +861,17 @@
 
     move-result v2
 
-    .line 1138
+    .line 1165
     .end local v1    # "resourceId":I
     :cond_0
     :goto_0
     return v2
 
-    .line 1135
+    .line 1162
     :catch_0
     move-exception v0
 
-    .line 1136
+    .line 1163
     .local v0, "e":Landroid/content/res/Resources$NotFoundException;
     invoke-virtual {v0}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
 
@@ -866,7 +882,7 @@
     .locals 1
 
     .prologue
-    .line 867
+    .line 894
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isLv1()Z
 
     move-result v0
@@ -879,10 +895,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 868
+    .line 895
     const-string v0, "L1PH1v1"
 
-    .line 870
+    .line 897
     :goto_0
     return-object v0
 
@@ -897,18 +913,18 @@
     .param p1, "source"    # Ljava/lang/String;
 
     .prologue
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    .line 579
+    .line 596
     sget-object v4, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-static {p0, v4}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment;->instantiate(Landroid/content/Context;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
     move-result-object v2
 
-    .line 580
+    .line 597
     .local v2, "fragment":Landroid/support/v4/app/Fragment;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -918,16 +934,16 @@
 
     move-result-object v3
 
-    .line 581
+    .line 598
     .local v3, "fragmentTransaction":Landroid/support/v4/app/an;
     invoke-virtual {v3, v5, v6, v5, v6}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
-    .line 583
+    .line 600
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 584
+    .line 601
     .local v1, "bundle":Landroid/os/Bundle;
     const-string v4, "type"
 
@@ -935,41 +951,41 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 585
+    .line 602
     const-string v4, "server_lv"
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
     invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 586
+    .line 603
     const-string v4, "SOURCE"
 
     invoke-virtual {v1, v4, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 587
+    .line 604
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 588
+    .line 605
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 589
+    .line 606
     .local v0, "arguments":Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 590
+    .line 607
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    .line 591
+    .line 608
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 597
+    .line 614
     .end local v0    # "arguments":Landroid/os/Bundle;
     :cond_0
     :goto_0
@@ -979,32 +995,32 @@
 
     if-nez v4, :cond_2
 
-    .line 598
-    const v4, 0x7f09037f
+    .line 615
+    const v4, 0x7f090386
 
     sget-object v5, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v2, v5}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 599
+    .line 616
     sget-object v4, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelChoiceFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 603
+    .line 620
     :goto_1
     invoke-virtual {v3}, Landroid/support/v4/app/an;->i()I
 
-    .line 604
+    .line 621
     return-void
 
-    .line 594
+    .line 611
     :cond_1
     invoke-virtual {v2, v1}, Landroid/support/v4/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     goto :goto_0
 
-    .line 601
+    .line 618
     :cond_2
     invoke-virtual {v3, v2}, Landroid/support/v4/app/an;->c(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/an;
 
@@ -1019,20 +1035,20 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1052
+    .line 1079
     sget-object v5, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-static {p0, v5}, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->instantiate(Landroid/content/Context;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
     move-result-object v3
 
-    .line 1053
+    .line 1080
     .local v3, "fragment":Landroid/support/v4/app/Fragment;
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 1054
+    .line 1081
     .local v1, "bundle":Landroid/os/Bundle;
     const-string v5, "mcteplete"
 
@@ -1040,26 +1056,26 @@
 
     invoke-virtual {v1, v5, v6}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 1055
+    .line 1082
     const-string v5, "id"
 
     iget-object v6, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->_id:Ljava/lang/String;
 
     invoke-virtual {v1, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1056
+    .line 1083
     const-string v5, "modle_bean"
 
     invoke-virtual {v1, v5, p1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 1057
+    .line 1084
     const-string v5, "type"
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
     invoke-virtual {v1, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1059
+    .line 1086
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isLv1()Z
 
     move-result v5
@@ -1072,39 +1088,39 @@
 
     if-eqz v5, :cond_2
 
-    .line 1060
+    .line 1087
     if-le p2, v2, :cond_1
 
-    .line 1064
+    .line 1091
     .local v2, "enablePostOneVOnePurchaseEvent":Z
     :goto_0
     const-string v5, "flag"
 
     invoke-virtual {v1, v5, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 1065
+    .line 1092
     invoke-virtual {v3}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v5
 
     if-eqz v5, :cond_3
 
-    .line 1066
+    .line 1093
     invoke-virtual {v3}, Landroid/support/v4/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1067
+    .line 1094
     .local v0, "arguments":Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 1068
+    .line 1095
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    .line 1069
+    .line 1096
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 1074
+    .line 1101
     .end local v0    # "arguments":Landroid/os/Bundle;
     :cond_0
     :goto_1
@@ -1116,7 +1132,7 @@
 
     move-result-object v4
 
-    .line 1076
+    .line 1103
     .local v4, "fragmentTransaction":Landroid/support/v4/app/an;
     invoke-virtual {v3}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
@@ -1124,26 +1140,26 @@
 
     if-nez v5, :cond_4
 
-    .line 1077
-    const v5, 0x7f09037f
+    .line 1104
+    const v5, 0x7f090386
 
     sget-object v6, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v4, v5, v3, v6}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1078
+    .line 1105
     sget-object v5, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1082
+    .line 1109
     :goto_2
     invoke-virtual {v4}, Landroid/support/v4/app/an;->i()I
 
-    .line 1083
+    .line 1110
     return-void
 
-    .line 1060
+    .line 1087
     .end local v2    # "enablePostOneVOnePurchaseEvent":Z
     .end local v4    # "fragmentTransaction":Landroid/support/v4/app/an;
     :cond_1
@@ -1151,20 +1167,20 @@
 
     goto :goto_0
 
-    .line 1062
+    .line 1089
     :cond_2
     const/4 v2, 0x0
 
     .restart local v2    # "enablePostOneVOnePurchaseEvent":Z
     goto :goto_0
 
-    .line 1072
+    .line 1099
     :cond_3
     invoke-virtual {v3, v1}, Landroid/support/v4/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     goto :goto_1
 
-    .line 1080
+    .line 1107
     .restart local v4    # "fragmentTransaction":Landroid/support/v4/app/an;
     :cond_4
     invoke-virtual {v4, v3}, Landroid/support/v4/app/an;->c(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/an;
@@ -1176,16 +1192,16 @@
     .locals 2
 
     .prologue
-    .line 492
+    .line 503
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 493
+    .line 504
     .local v0, "intent":Landroid/content/Intent;
     if-eqz v0, :cond_0
 
-    .line 494
+    .line 505
     const-string v1, "type"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1194,7 +1210,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
-    .line 496
+    .line 507
     const-string v1, "server_lv"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
@@ -1203,7 +1219,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
-    .line 498
+    .line 509
     :cond_0
     return-void
 .end method
@@ -1212,26 +1228,26 @@
     .locals 2
 
     .prologue
-    .line 555
+    .line 569
     const-string v0, "SHOW_ROADMAP_LEVEL_TIPS"
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
 
-    .line 556
+    .line 570
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTip:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    .line 557
+    .line 571
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTip:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 559
+    .line 573
     :cond_0
     return-void
 .end method
@@ -1240,7 +1256,7 @@
     .locals 2
 
     .prologue
-    .line 309
+    .line 320
     new-instance v0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadmapBgItemAdapter;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
@@ -1249,14 +1265,14 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadmapBgItemAdapter;
 
-    .line 310
+    .line 321
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgRv:Landroid/support/v7/widget/RecyclerView;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadmapBgItemAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$a;)V
 
-    .line 311
+    .line 322
     return-void
 .end method
 
@@ -1265,19 +1281,19 @@
     .param p1, "mcTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     .prologue
-    .line 505
+    .line 516
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
-    .line 506
+    .line 517
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getRoadMapData()Ljava/util/List;
 
     move-result-object v2
 
-    .line 507
+    .line 518
     .local v2, "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
 
@@ -1285,11 +1301,11 @@
 
     if-eqz v4, :cond_1
 
-    .line 518
+    .line 529
     :cond_0
     return-void
 
-    .line 508
+    .line 519
     :cond_1
     const/4 v0, 0x0
 
@@ -1301,18 +1317,18 @@
 
     if-ge v0, v4, :cond_0
 
-    .line 509
+    .line 520
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 510
+    .line 521
     .local v3, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     const/4 v1, 0x0
 
-    .line 511
+    .line 522
     .local v1, "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCurrent()Z
 
@@ -1320,7 +1336,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 512
+    .line 523
     new-instance v1, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
     .end local v1    # "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
@@ -1328,19 +1344,19 @@
 
     invoke-direct {v1, v4, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;-><init>(ILjava/lang/Object;)V
 
-    .line 516
+    .line 527
     .restart local v1    # "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :goto_1
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 508
+    .line 519
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 514
+    .line 525
     :cond_2
     new-instance v1, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
@@ -1357,58 +1373,14 @@
     .locals 3
 
     .prologue
-    .line 314
+    .line 325
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
-    .line 315
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080325
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 316
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08032c
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 317
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08032d
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 318
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08032e
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 319
+    .line 326
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1419,242 +1391,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 320
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080330
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 321
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080331
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 322
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080332
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 323
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080333
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 324
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080326
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 325
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080327
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 326
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080328
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 327
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080329
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 328
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08032a
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 329
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08032b
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 330
-    return-void
-.end method
-
-.method private initPHRoadmapBgData()V
-    .locals 3
-
-    .prologue
-    .line 333
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    .line 334
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080334
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 335
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08033b
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 336
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08033c
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 337
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08033d
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 338
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08033e
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 339
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f08033f
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 340
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080340
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 341
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080341
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 342
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080342
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 343
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
-
-    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
-
-    const v2, 0x7f080335
-
-    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 344
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1665,7 +1402,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 345
+    .line 328
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1676,7 +1413,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 346
+    .line 329
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1687,7 +1424,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 347
+    .line 330
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1698,7 +1435,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 348
+    .line 331
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
@@ -1709,7 +1446,286 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 332
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08033b
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 333
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08033c
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 334
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08033d
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 335
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080330
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 336
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080331
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 337
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080332
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 338
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080333
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 339
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080334
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 340
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080335
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 341
+    return-void
+.end method
+
+.method private initPHRoadmapBgData()V
+    .locals 3
+
+    .prologue
+    .line 344
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    .line 345
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08033e
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 346
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080345
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 347
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080346
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 348
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080347
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 349
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080348
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 350
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080349
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 351
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08034a
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 352
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08034b
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 353
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08034c
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 354
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f08033f
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 355
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080340
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 356
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080341
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 357
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080342
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 358
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080343
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 359
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBgs:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;
+
+    const v2, 0x7f080344
+
+    invoke-direct {v1, v2}, Lcom/jiliguala/niuwa/logic/network/json/RodamapBgItem;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 360
     return-void
 .end method
 
@@ -1723,35 +1739,35 @@
 
     const/4 v7, 0x1
 
-    .line 796
+    .line 823
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     if-nez v5, :cond_0
 
-    .line 849
+    .line 876
     :goto_0
     return-void
 
-    .line 799
+    .line 826
     :cond_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    .line 800
+    .line 827
     const/4 v4, 0x0
 
-    .line 801
+    .line 828
     .local v4, "width":I
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()I
 
     move-result v2
 
-    .line 802
+    .line 829
     .local v2, "mRealScreenWidth":I
     const/4 v3, 0x0
 
-    .line 826
+    .line 853
     .local v3, "totalWidth":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
@@ -1763,7 +1779,7 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 827
+    .line 854
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1776,7 +1792,7 @@
 
     if-ge v0, v5, :cond_5
 
-    .line 828
+    .line 855
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
 
     invoke-interface {v5, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1785,7 +1801,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
-    .line 829
+    .line 856
     .local v1, "item":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getItemType()I
 
@@ -1795,29 +1811,29 @@
 
     if-ne v5, v6, :cond_2
 
-    .line 830
+    .line 857
     int-to-float v5, v2
 
     mul-float/2addr v5, v8
 
     float-to-int v4, v5
 
-    .line 831
+    .line 858
     if-ne v0, v7, :cond_1
 
-    .line 832
+    .line 859
     invoke-static {v9}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
 
     move-result v5
 
     sub-int/2addr v4, v5
 
-    .line 844
+    .line 871
     :cond_1
     :goto_2
     add-int/2addr v3, v4
 
-    .line 845
+    .line 872
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1826,12 +1842,12 @@
 
     invoke-interface {v5, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 827
+    .line 854
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 834
+    .line 861
     :cond_2
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getItemType()I
 
@@ -1839,7 +1855,7 @@
 
     if-ne v5, v7, :cond_3
 
-    .line 835
+    .line 862
     int-to-float v5, v2
 
     const v6, 0x3e75c28f    # 0.24f
@@ -1848,10 +1864,10 @@
 
     float-to-int v4, v5
 
-    .line 836
+    .line 863
     if-ne v0, v7, :cond_1
 
-    .line 837
+    .line 864
     invoke-static {v9}, Lcom/jiliguala/niuwa/common/util/z;->a(F)I
 
     move-result v5
@@ -1860,7 +1876,7 @@
 
     goto :goto_2
 
-    .line 839
+    .line 866
     :cond_3
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getItemType()I
 
@@ -1870,7 +1886,7 @@
 
     if-ne v5, v6, :cond_4
 
-    .line 840
+    .line 867
     int-to-float v5, v2
 
     const v6, 0x3e4ccccd    # 0.2f
@@ -1881,7 +1897,7 @@
 
     goto :goto_2
 
-    .line 841
+    .line 868
     :cond_4
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getItemType()I
 
@@ -1891,7 +1907,7 @@
 
     if-ne v5, v6, :cond_1
 
-    .line 842
+    .line 869
     int-to-float v5, v2
 
     mul-float/2addr v5, v8
@@ -1900,7 +1916,7 @@
 
     goto :goto_2
 
-    .line 847
+    .line 874
     .end local v1    # "item":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :cond_5
     const/high16 v5, 0x43aa0000    # 340.0f
@@ -1911,7 +1927,7 @@
 
     add-int/2addr v3, v5
 
-    .line 848
+    .line 875
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1927,7 +1943,7 @@
     .locals 3
 
     .prologue
-    .line 1087
+    .line 1114
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
@@ -1938,7 +1954,7 @@
 
     move-result-object v0
 
-    .line 1088
+    .line 1115
     .local v0, "fragment":Landroid/support/v4/app/Fragment;
     if-eqz v0, :cond_0
 
@@ -1948,10 +1964,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1089
+    .line 1116
     const/4 v1, 0x1
 
-    .line 1091
+    .line 1118
     :goto_0
     return v1
 
@@ -1965,7 +1981,7 @@
     .locals 2
 
     .prologue
-    .line 900
+    .line 927
     const-string v0, "MC"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -1981,7 +1997,7 @@
     .locals 2
 
     .prologue
-    .line 905
+    .line 932
     const-string v0, "PH"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -1998,14 +2014,14 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 985
+    .line 1012
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isFragmentShow()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 986
+    .line 1013
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2014,15 +2030,15 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 991
+    .line 1018
     :goto_0
     return-void
 
-    .line 988
+    .line 1015
     :cond_0
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->showAnim(Landroid/view/View;)V
 
-    .line 989
+    .line 1016
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2038,30 +2054,30 @@
     .locals 2
 
     .prologue
-    .line 1163
+    .line 1190
     new-instance v1, Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;-><init>(Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver$b;)V
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCompletedPurchasedReceiver:Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;
 
-    .line 1164
+    .line 1191
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 1165
+    .line 1192
     .local v0, "filter":Landroid/content/IntentFilter;
     sget-object v1, Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 1166
+    .line 1193
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCompletedPurchasedReceiver:Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;
 
     invoke-virtual {p0, v1, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 1167
+    .line 1194
     return-void
 .end method
 
@@ -2069,12 +2085,12 @@
     .locals 4
 
     .prologue
-    .line 477
+    .line 488
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 478
+    .line 489
     .local v1, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "Type"
 
@@ -2082,7 +2098,7 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 479
+    .line 490
     const-string v2, "MC"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -2095,7 +2111,7 @@
 
     const-string v0, "MC View"
 
-    .line 480
+    .line 491
     .local v0, "event":Ljava/lang/String;
     :goto_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
@@ -2104,10 +2120,10 @@
 
     invoke-virtual {v2, v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 481
+    .line 492
     return-void
 
-    .line 479
+    .line 490
     .end local v0    # "event":Ljava/lang/String;
     :cond_0
     const-string v0, "Phonics View"
@@ -2119,12 +2135,12 @@
     .locals 3
 
     .prologue
-    .line 647
+    .line 664
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 648
+    .line 665
     .local v0, "maps":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;"
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -2148,7 +2164,7 @@
 
     if-nez v1, :cond_0
 
-    .line 649
+    .line 666
     const-string v1, "ID"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
@@ -2159,7 +2175,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 651
+    .line 668
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
@@ -2169,7 +2185,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 652
+    .line 669
     return-void
 .end method
 
@@ -2177,7 +2193,7 @@
     .locals 3
 
     .prologue
-    .line 853
+    .line 880
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -2201,21 +2217,51 @@
     :goto_0
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 854
+    .line 881
     return-void
 
-    .line 853
+    .line 880
     :cond_0
     const-string v0, "B"
 
     goto :goto_0
 .end method
 
+.method private reportListen()V
+    .locals 3
+
+    .prologue
+    .line 1316
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 1317
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Type"
+
+    const-string v2, "B1MC"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1318
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Listen Roadmap Click"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 1319
+    return-void
+.end method
+
 .method private requestData()V
     .locals 4
 
     .prologue
-    .line 501
+    .line 512
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -2236,7 +2282,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivityPresenter;->requestData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 502
+    .line 513
     return-void
 .end method
 
@@ -2245,14 +2291,14 @@
     .param p1, "dx"    # F
 
     .prologue
-    .line 861
+    .line 888
     iget v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapTotalWidth:I
 
     int-to-float v2, v2
 
     div-float v1, p1, v2
 
-    .line 862
+    .line 889
     .local v1, "per":F
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadmapBgItemAdapter;
 
@@ -2264,7 +2310,7 @@
 
     float-to-int v0, v2
 
-    .line 863
+    .line 890
     .local v0, "dis":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgRv:Landroid/support/v7/widget/RecyclerView;
 
@@ -2272,7 +2318,7 @@
 
     invoke-virtual {v2, v0, v3}, Landroid/support/v7/widget/RecyclerView;->scrollBy(II)V
 
-    .line 864
+    .line 891
     return-void
 .end method
 
@@ -2283,14 +2329,14 @@
     .prologue
     const/4 v11, 0x0
 
-    .line 616
+    .line 633
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v10}, Landroid/support/v7/widget/LinearLayoutManager;->t()I
 
     move-result v8
 
-    .line 617
+    .line 634
     .local v8, "position":I
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
@@ -2298,25 +2344,25 @@
 
     move-result-object v6
 
-    .line 618
+    .line 635
     .local v6, "firstVisibleChildView":Landroid/view/View;
     if-nez v6, :cond_0
 
-    .line 634
+    .line 651
     :goto_0
     return-void
 
-    .line 621
+    .line 638
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getCurrentPos()I
 
     move-result v4
 
-    .line 622
+    .line 639
     .local v4, "currentPos":I
     add-int/lit8 v3, v4, 0x1
 
-    .line 623
+    .line 640
     .local v3, "currentNextPos":I
     invoke-virtual {v6}, Landroid/view/View;->getLeft()I
 
@@ -2326,13 +2372,13 @@
 
     move-result v2
 
-    .line 624
+    .line 641
     .local v2, "curScroll":I
     invoke-direct {p0, v4, v11}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getScrollX(II)I
 
     move-result v1
 
-    .line 625
+    .line 642
     .local v1, "curPosScroll":I
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
@@ -2360,11 +2406,9 @@
 
     sub-int v0, v12, v10
 
-    .line 626
+    .line 643
     .local v0, "curItemWidth":I
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
-
-    move-result v10
+    iget v10, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRealScreenWidth:I
 
     div-int/lit8 v10, v10, 0x2
 
@@ -2372,7 +2416,7 @@
 
     sub-int v7, v10, v12
 
-    .line 627
+    .line 644
     .local v7, "halfScreen":I
     sub-int v10, v1, v7
 
@@ -2380,23 +2424,23 @@
 
     move v9, v11
 
-    .line 628
+    .line 645
     .local v9, "scroll":I
     :goto_1
     sub-int v5, v9, v2
 
-    .line 629
+    .line 646
     .local v5, "dx":I
     if-eqz p1, :cond_2
 
-    .line 630
+    .line 647
     iget-object v10, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v10, v5, v11}, Landroid/support/v7/widget/RecyclerView;->a(II)V
 
     goto :goto_0
 
-    .line 627
+    .line 644
     .end local v5    # "dx":I
     .end local v9    # "scroll":I
     :cond_1
@@ -2404,7 +2448,7 @@
 
     goto :goto_1
 
-    .line 632
+    .line 649
     .restart local v5    # "dx":I
     .restart local v9    # "scroll":I
     :cond_2
@@ -2419,7 +2463,7 @@
     .locals 5
 
     .prologue
-    .line 352
+    .line 363
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2428,12 +2472,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 375
+    .line 386
     :cond_0
     :goto_0
     return-void
 
-    .line 353
+    .line 364
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
@@ -2441,7 +2485,7 @@
 
     move-result-object v0
 
-    .line 354
+    .line 365
     .local v0, "levelInfo":Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem$LevelInfo;
     if-eqz v0, :cond_0
 
@@ -2461,7 +2505,7 @@
 
     if-nez v1, :cond_0
 
-    .line 355
+    .line 366
     iget-object v1, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem$LevelInfo;->type:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isMc(Ljava/lang/String;)Z
@@ -2470,7 +2514,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 356
+    .line 367
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isAgeOverTwoMC(Ljava/lang/String;)Z
@@ -2479,12 +2523,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 357
+    .line 368
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 358
+    .line 369
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2511,7 +2555,7 @@
 
     goto :goto_0
 
-    .line 360
+    .line 371
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
@@ -2521,12 +2565,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 361
+    .line 372
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 362
+    .line 373
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     const-string v2, "\u79cd\u5b50\u8def\u7ebf0-1\u5c81"
@@ -2535,7 +2579,7 @@
 
     goto :goto_0
 
-    .line 364
+    .line 375
     :cond_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mServerLV:Ljava/lang/String;
 
@@ -2545,12 +2589,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 365
+    .line 376
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 366
+    .line 377
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     const-string v2, "\u840c\u82bd\u8def\u7ebf1-2\u5c81"
@@ -2559,7 +2603,7 @@
 
     goto :goto_0
 
-    .line 369
+    .line 380
     :cond_4
     iget-object v1, v0, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem$LevelInfo;->type:Ljava/lang/String;
 
@@ -2569,12 +2613,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 370
+    .line 381
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 371
+    .line 382
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTitle:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2623,12 +2667,12 @@
 
     const/high16 v6, 0x3f000000    # 0.5f
 
-    .line 1013
+    .line 1040
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
     if-nez v0, :cond_0
 
-    .line 1014
+    .line 1041
     new-instance v0, Landroid/view/animation/ScaleAnimation;
 
     move v3, v1
@@ -2643,21 +2687,21 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
-    .line 1015
+    .line 1042
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
     const-wide/16 v2, 0x1f4
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 1016
+    .line 1043
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/animation/ScaleAnimation;->setRepeatCount(I)V
 
-    .line 1017
+    .line 1044
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
     new-instance v1, Landroid/view/animation/AccelerateDecelerateInterpolator;
@@ -2666,13 +2710,13 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 1019
+    .line 1046
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scaleAnimation:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1020
+    .line 1047
     return-void
 .end method
 
@@ -2684,14 +2728,14 @@
 
     const/16 v3, 0x8
 
-    .line 407
+    .line 418
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/LinearLayoutManager;->t()I
 
     move-result v0
 
-    .line 408
+    .line 419
     .local v0, "fvPos":I
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
@@ -2699,51 +2743,51 @@
 
     move-result v1
 
-    .line 409
+    .line 420
     .local v1, "lvPos":I
     iget v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     if-ge v2, v0, :cond_0
 
-    .line 410
+    .line 421
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLeftFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 411
+    .line 422
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRightFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 420
+    .line 431
     :goto_0
     return-void
 
-    .line 412
+    .line 423
     :cond_0
     iget v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentPos:I
 
     if-le v2, v1, :cond_1
 
-    .line 413
+    .line 424
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLeftFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 414
+    .line 425
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRightFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 416
+    .line 427
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLeftFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 417
+    .line 428
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRightFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
@@ -2758,46 +2802,46 @@
     .prologue
     const/16 v1, 0x8
 
-    .line 958
+    .line 985
     if-eqz p1, :cond_3
 
     const/4 v0, 0x0
 
-    .line 959
+    .line 986
     .local v0, "visibility":I
     :goto_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mProgressBar:Lcom/liulishuo/magicprogresswidget/MagicProgressBar;
 
     if-eqz v2, :cond_0
 
-    .line 961
+    .line 988
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mProgressBar:Lcom/liulishuo/magicprogresswidget/MagicProgressBar;
 
     invoke-virtual {v2, v1}, Lcom/liulishuo/magicprogresswidget/MagicProgressBar;->setVisibility(I)V
 
-    .line 963
+    .line 990
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mStatusContainer:Landroid/widget/LinearLayout;
 
     if-eqz v2, :cond_1
 
-    .line 965
+    .line 992
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mStatusContainer:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 967
+    .line 994
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLoadingProgressContainer:Landroid/widget/RelativeLayout;
 
     if-eqz v1, :cond_2
 
-    .line 968
+    .line 995
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLoadingProgressContainer:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 970
+    .line 997
     :cond_2
     return-void
 
@@ -2805,8 +2849,16 @@
     :cond_3
     move v0, v1
 
-    .line 958
+    .line 985
     goto :goto_0
+.end method
+
+.method private testReward()V
+    .locals 0
+
+    .prologue
+    .line 1276
+    return-void
 .end method
 
 
@@ -2815,7 +2867,7 @@
     .locals 7
 
     .prologue
-    .line 546
+    .line 560
     const-string v1, ""
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -2842,7 +2894,7 @@
 
     invoke-static/range {v0 .. v6}, Lcom/jiliguala/niuwa/module/NewRoadMap/BuyUtil;->goPurchaseRoadMap(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    .line 547
+    .line 561
     return-void
 .end method
 
@@ -2850,22 +2902,22 @@
     .locals 1
 
     .prologue
-    .line 994
+    .line 1021
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mWordContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->checkShowAnim(Landroid/view/View;)V
 
-    .line 995
+    .line 1022
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mSpeakContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->checkShowAnim(Landroid/view/View;)V
 
-    .line 996
+    .line 1023
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mPhonicsContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->checkShowAnim(Landroid/view/View;)V
 
-    .line 997
+    .line 1024
     return-void
 .end method
 
@@ -2874,7 +2926,7 @@
     .param p1, "templete"    # Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     .prologue
-    .line 858
+    .line 885
     return-void
 .end method
 
@@ -2882,7 +2934,7 @@
     .locals 1
 
     .prologue
-    .line 76
+    .line 75
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->createPresenter()Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivityPresenter;
 
     move-result-object v0
@@ -2894,7 +2946,7 @@
     .locals 1
 
     .prologue
-    .line 206
+    .line 213
     new-instance v0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivityPresenter;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivityPresenter;-><init>()V
@@ -2907,7 +2959,7 @@
     .param p1, "position"    # I
 
     .prologue
-    .line 1024
+    .line 1051
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v0, :cond_0
@@ -2926,12 +2978,12 @@
 
     if-nez v0, :cond_1
 
-    .line 1042
+    .line 1069
     :cond_0
     :goto_0
     return-void
 
-    .line 1025
+    .line 1052
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -2945,7 +2997,7 @@
 
     check-cast v7, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 1026
+    .line 1053
     .local v7, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCompleted()Z
 
@@ -2953,14 +3005,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 1027
+    .line 1054
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->enablePay()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1028
+    .line 1055
     iget-object v1, v7, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->_id:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -2989,13 +3041,13 @@
 
     goto :goto_0
 
-    .line 1030
+    .line 1057
     :cond_2
     invoke-direct {p0, v7, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->goToMcPhonicsPage(Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;I)V
 
     goto :goto_0
 
-    .line 1032
+    .line 1059
     :cond_3
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCurrent()Z
 
@@ -3003,14 +3055,14 @@
 
     if-eqz v0, :cond_5
 
-    .line 1033
+    .line 1060
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->enablePay()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 1035
+    .line 1062
     iget-object v1, v7, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->_id:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -3039,13 +3091,13 @@
 
     goto :goto_0
 
-    .line 1037
+    .line 1064
     :cond_4
     invoke-direct {p0, v7, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->goToMcPhonicsPage(Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;I)V
 
     goto :goto_0
 
-    .line 1039
+    .line 1066
     :cond_5
     invoke-virtual {v7}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isLocked()Z
 
@@ -3053,7 +3105,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1040
+    .line 1067
     const v0, 0x7f0f0116
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getString(I)Ljava/lang/String;
@@ -3072,12 +3124,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 888
+    .line 915
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getRoadMapData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 889
+    .line 916
     .local v1, "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
 
@@ -3087,12 +3139,12 @@
 
     move v0, v3
 
-    .line 896
+    .line 923
     :cond_0
     :goto_0
     return v0
 
-    .line 890
+    .line 917
     :cond_1
     const/4 v0, 0x0
 
@@ -3104,14 +3156,14 @@
 
     if-ge v0, v4, :cond_2
 
-    .line 891
+    .line 918
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 892
+    .line 919
     .local v2, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCurrent()Z
 
@@ -3119,7 +3171,7 @@
 
     if-nez v4, :cond_0
 
-    .line 890
+    .line 917
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
@@ -3128,7 +3180,7 @@
     :cond_2
     move v0, v3
 
-    .line 896
+    .line 923
     goto :goto_0
 .end method
 
@@ -3136,26 +3188,26 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0902bb
+            0x7f0902c1
         }
     .end annotation
 
     .prologue
-    .line 609
+    .line 626
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     if-eqz v0, :cond_0
 
-    .line 610
+    .line 627
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollToCurrent(Z)V
 
-    .line 612
+    .line 629
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reportFindCurrentAmp()V
 
-    .line 613
+    .line 630
     return-void
 .end method
 
@@ -3163,26 +3215,26 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f090464
+            0x7f09046d
         }
     .end annotation
 
     .prologue
-    .line 639
+    .line 656
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     if-eqz v0, :cond_0
 
-    .line 640
+    .line 657
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollToCurrent(Z)V
 
-    .line 642
+    .line 659
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reportFindCurrentAmp()V
 
-    .line 643
+    .line 660
     return-void
 .end method
 
@@ -3190,7 +3242,7 @@
     .locals 1
 
     .prologue
-    .line 925
+    .line 952
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v0, :cond_0
@@ -3204,7 +3256,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 926
+    .line 953
     :goto_0
     return-object v0
 
@@ -3222,7 +3274,7 @@
     .locals 1
 
     .prologue
-    .line 76
+    .line 75
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getUi()Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapUI;
 
     move-result-object v0
@@ -3234,7 +3286,7 @@
     .locals 0
 
     .prologue
-    .line 211
+    .line 218
     return-object p0
 .end method
 
@@ -3248,12 +3300,12 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 1095
+    .line 1122
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 1096
+    .line 1123
     .local v2, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v5, "Item_id"
 
@@ -3268,14 +3320,14 @@
     :goto_0
     invoke-interface {v2, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1097
+    .line 1124
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isLv1()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 1098
+    .line 1125
     const-string v5, "Type"
 
     const-string v4, "MC"
@@ -3291,13 +3343,13 @@
     :goto_1
     invoke-interface {v2, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1102
+    .line 1129
     :goto_2
     const-string v4, "AB Test"
 
     invoke-interface {v2, v4, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1103
+    .line 1130
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v4
@@ -3306,7 +3358,7 @@
 
     invoke-virtual {v4, v5, v2}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 1106
+    .line 1133
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v4
@@ -3315,7 +3367,7 @@
 
     move-result-object v0
 
-    .line 1107
+    .line 1134
     .local v0, "curBabyId":Ljava/lang/String;
     new-instance v1, Landroid/content/Intent;
 
@@ -3323,13 +3375,13 @@
 
     invoke-direct {v1, p0, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 1109
+    .line 1136
     .local v1, "intent":Landroid/content/Intent;
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v5, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3367,30 +3419,30 @@
 
     move-result-object v3
 
-    .line 1110
+    .line 1137
     .local v3, "url":Ljava/lang/String;
     const-string v4, "key_url"
 
     invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1111
+    .line 1138
     const-string v4, "KEY_SHOW_SUSPENSION_"
 
     invoke-virtual {v1, v4, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1112
+    .line 1139
     const-string v4, "HIDE SUSPENSION SHARE"
 
     invoke-virtual {v1, v4, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1113
+    .line 1140
     const-string v4, "SUSPENSION_BACK_RECOURSE_ID"
 
-    const v5, 0x7f08019a
+    const v5, 0x7f08019e
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1114
+    .line 1141
     const-string v4, "KEY_SHOW_SUSPENSION_TOP_MARGIN"
 
     const/4 v5, 0x0
@@ -3401,35 +3453,35 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1116
+    .line 1143
     const-string v4, "KEY PLAN"
 
     invoke-virtual {v1, v4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1117
+    .line 1144
     const-string v4, "KEY_LANDSCAPE"
 
     invoke-virtual {v1, v4, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1118
+    .line 1145
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isLv1()Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 1120
+    .line 1147
     const-string v4, "LESSON TYPE"
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1124
+    .line 1151
     :goto_3
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 1125
+    .line 1152
     return-void
 
     .end local v0    # "curBabyId":Ljava/lang/String;
@@ -3438,16 +3490,16 @@
     :cond_0
     move-object v4, p1
 
-    .line 1096
+    .line 1123
     goto/16 :goto_0
 
-    .line 1098
+    .line 1125
     :cond_1
     const-string v4, "Phonics"
 
     goto/16 :goto_1
 
-    .line 1100
+    .line 1127
     :cond_2
     const-string v4, "Type"
 
@@ -3455,7 +3507,7 @@
 
     goto/16 :goto_2
 
-    .line 1122
+    .line 1149
     .restart local v0    # "curBabyId":Ljava/lang/String;
     .restart local v1    # "intent":Landroid/content/Intent;
     .restart local v3    # "url":Ljava/lang/String;
@@ -3471,21 +3523,35 @@
     .locals 7
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f09045a
+            0x7f090461
         }
     .end annotation
 
     .prologue
-    .line 1204
+    .line 1231
+    iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+
+    invoke-virtual {v5}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    .line 1262
+    :goto_0
+    return-void
+
+    .line 1234
+    :cond_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     iget-object v5, v5, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -3497,22 +3563,22 @@
 
     move-result v5
 
-    if-nez v5, :cond_1
+    if-nez v5, :cond_2
 
-    .line 1205
+    .line 1235
     sget-object v5, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-static {p0, v5}, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->instantiate(Landroid/content/Context;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
     move-result-object v2
 
-    .line 1206
+    .line 1236
     .local v2, "fragment":Landroid/support/v4/app/Fragment;
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 1207
+    .line 1237
     .local v1, "bundle":Landroid/os/Bundle;
     const-string v5, "lv"
 
@@ -3524,39 +3590,39 @@
 
     invoke-virtual {v1, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1208
+    .line 1238
     const-string v5, "typ"
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
     invoke-virtual {v1, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1209
+    .line 1239
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_3
 
-    .line 1210
+    .line 1240
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1211
+    .line 1241
     .local v0, "arguments":Landroid/os/Bundle;
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 1212
+    .line 1242
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    .line 1213
+    .line 1243
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 1218
+    .line 1248
     .end local v0    # "arguments":Landroid/os/Bundle;
-    :cond_0
-    :goto_0
+    :cond_1
+    :goto_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v5
@@ -3565,36 +3631,36 @@
 
     move-result-object v3
 
-    .line 1219
+    .line 1249
     .local v3, "fragmentTransaction":Landroid/support/v4/app/an;
     invoke-virtual {v2}, Landroid/support/v4/app/Fragment;->isAdded()Z
 
     move-result v5
 
-    if-nez v5, :cond_3
+    if-nez v5, :cond_4
 
-    .line 1220
-    const v5, 0x7f09037f
+    .line 1250
+    const v5, 0x7f090386
 
     sget-object v6, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v5, v2, v6}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1221
+    .line 1251
     sget-object v5, Lcom/jiliguala/niuwa/module/mcphonics/review/ReviewFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v3, v5}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1225
-    :goto_1
+    .line 1255
+    :goto_2
     invoke-virtual {v3}, Landroid/support/v4/app/an;->i()I
 
-    .line 1227
+    .line 1257
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
-    .line 1228
+    .line 1258
     .local v4, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v5, "ID"
 
@@ -3606,7 +3672,7 @@
 
     invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1229
+    .line 1259
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v5
@@ -3615,40 +3681,110 @@
 
     invoke-virtual {v5, v6, v4}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 1231
+    .line 1261
     .end local v1    # "bundle":Landroid/os/Bundle;
     .end local v2    # "fragment":Landroid/support/v4/app/Fragment;
     .end local v3    # "fragmentTransaction":Landroid/support/v4/app/an;
     .end local v4    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
-    :cond_1
-    return-void
-
-    .line 1216
-    .restart local v1    # "bundle":Landroid/os/Bundle;
-    .restart local v2    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_2
-    invoke-virtual {v2, v1}, Landroid/support/v4/app/Fragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->testReward()V
 
     goto :goto_0
 
-    .line 1223
-    .restart local v3    # "fragmentTransaction":Landroid/support/v4/app/an;
+    .line 1246
+    .restart local v1    # "bundle":Landroid/os/Bundle;
+    .restart local v2    # "fragment":Landroid/support/v4/app/Fragment;
     :cond_3
-    invoke-virtual {v3, v2}, Landroid/support/v4/app/an;->c(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/an;
+    invoke-virtual {v2, v1}, Landroid/support/v4/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     goto :goto_1
+
+    .line 1253
+    .restart local v3    # "fragmentTransaction":Landroid/support/v4/app/an;
+    :cond_4
+    invoke-virtual {v3, v2}, Landroid/support/v4/app/an;->c(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/an;
+
+    goto :goto_2
+.end method
+
+.method public gotoAudioPlay()V
+    .locals 3
+    .annotation build Lbutterknife/OnClick;
+        a = {
+            0x7f0902e0
+        }
+    .end annotation
+
+    .prologue
+    .line 1305
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 1313
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 1308
+    :cond_1
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mListenTv:Landroid/view/View;
+
+    invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    .line 1309
+    .local v0, "tag":Ljava/lang/String;
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 1310
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "&from=roadmap"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0, v1}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 1311
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reportListen()V
+
+    goto :goto_0
 .end method
 
 .method protected initAdapter()V
     .locals 3
 
     .prologue
-    .line 521
+    .line 532
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     if-nez v0, :cond_0
 
-    .line 522
+    .line 533
     new-instance v0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
@@ -3659,28 +3795,28 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
-    .line 523
+    .line 534
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->setCallBack(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapCallBack;)V
 
-    .line 524
+    .line 535
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->setOnItemChildClickListener(Lcom/c/a/a/a/c$b;)V
 
-    .line 525
+    .line 536
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$a;)V
 
-    .line 531
+    .line 542
     :goto_0
     return-void
 
-    .line 528
+    .line 539
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
@@ -3690,7 +3826,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->updateData(Ljava/util/List;Lcom/jiliguala/niuwa/logic/network/json/McTemplete;)V
 
-    .line 529
+    .line 540
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mData:Ljava/util/List;
@@ -3707,7 +3843,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 875
+    .line 902
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasRoadMapData()Z
@@ -3716,18 +3852,18 @@
 
     if-nez v4, :cond_1
 
-    .line 884
+    .line 911
     :cond_0
     :goto_0
     return v3
 
-    .line 876
+    .line 903
     :cond_1
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getRoadMapData()Ljava/util/List;
 
     move-result-object v1
 
-    .line 877
+    .line 904
     .local v1, "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-static {v1}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
 
@@ -3735,7 +3871,7 @@
 
     if-nez v4, :cond_0
 
-    .line 878
+    .line 905
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -3746,14 +3882,14 @@
 
     if-ge v0, v4, :cond_3
 
-    .line 879
+    .line 906
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 880
+    .line 907
     .local v2, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCompleted()Z
 
@@ -3767,13 +3903,13 @@
 
     if-eqz v4, :cond_0
 
-    .line 878
+    .line 905
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 884
+    .line 911
     .end local v2    # "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     :cond_3
     const/4 v3, 0x1
@@ -3785,7 +3921,7 @@
     .locals 1
 
     .prologue
-    .line 915
+    .line 942
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isAllComplete(Lcom/jiliguala/niuwa/logic/network/json/McTemplete;)Z
@@ -3801,7 +3937,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 974
+    .line 1001
     :try_start_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -3817,7 +3953,7 @@
 
     move-result v3
 
-    .line 975
+    .line 1002
     .local v3, "words":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -3833,7 +3969,7 @@
 
     move-result v2
 
-    .line 976
+    .line 1003
     .local v2, "sentences":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -3851,7 +3987,7 @@
 
     move-result v1
 
-    .line 977
+    .line 1004
     .local v1, "phonics":I
     if-nez v3, :cond_0
 
@@ -3861,7 +3997,7 @@
 
     const/4 v4, 0x1
 
-    .line 979
+    .line 1006
     .end local v1    # "phonics":I
     .end local v2    # "sentences":I
     .end local v3    # "words":I
@@ -3869,11 +4005,11 @@
     :goto_0
     return v4
 
-    .line 978
+    .line 1005
     :catch_0
     move-exception v0
 
-    .line 979
+    .line 1006
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -3886,17 +4022,17 @@
 
     const/4 v4, 0x0
 
-    .line 943
+    .line 970
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-nez v5, :cond_1
 
-    .line 953
+    .line 980
     :cond_0
     :goto_0
     return v4
 
-    .line 946
+    .line 973
     :cond_1
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -3904,7 +4040,7 @@
 
     move-result-object v1
 
-    .line 947
+    .line 974
     .local v1, "roadMapData":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     const/4 v0, 0x0
 
@@ -3916,14 +4052,14 @@
 
     if-ge v0, v5, :cond_0
 
-    .line 948
+    .line 975
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 949
+    .line 976
     .local v2, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->isCurrent()Z
 
@@ -3931,7 +4067,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 950
+    .line 977
     if-ne v0, v3, :cond_2
 
     :goto_2
@@ -3944,7 +4080,7 @@
 
     goto :goto_2
 
-    .line 947
+    .line 974
     :cond_3
     add-int/lit8 v0, v0, 0x1
 
@@ -3955,7 +4091,7 @@
     .locals 1
 
     .prologue
-    .line 920
+    .line 947
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isBegin()Z
 
     move-result v0
@@ -3967,7 +4103,7 @@
     .locals 1
 
     .prologue
-    .line 910
+    .line 937
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isLv1()Z
 
     move-result v0
@@ -3979,7 +4115,7 @@
     .locals 2
 
     .prologue
-    .line 939
+    .line 966
     const-string v0, "Lv1"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLV:Ljava/lang/String;
@@ -3995,7 +4131,7 @@
     .locals 1
 
     .prologue
-    .line 1047
+    .line 1074
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isPH()Z
 
     move-result v0
@@ -4012,10 +4148,10 @@
     .end annotation
 
     .prologue
-    .line 535
+    .line 546
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->finish()V
 
-    .line 536
+    .line 547
     return-void
 .end method
 
@@ -4023,7 +4159,7 @@
     .locals 4
 
     .prologue
-    .line 1156
+    .line 1183
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -4038,7 +4174,7 @@
 
     if-lez v0, :cond_0
 
-    .line 1157
+    .line 1184
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -4051,10 +4187,10 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 1158
+    .line 1185
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onBackPressed()V
 
-    .line 1160
+    .line 1187
     :cond_0
     return-void
 .end method
@@ -4068,7 +4204,22 @@
     .end annotation
 
     .prologue
-    .line 540
+    .line 551
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 557
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 554
+    :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -4087,12 +4238,10 @@
 
     if-nez v0, :cond_0
 
-    .line 541
+    .line 555
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->buyAllCourse()V
 
-    .line 543
-    :cond_0
-    return-void
+    goto :goto_0
 .end method
 
 .method onBuyOneVOne()V
@@ -4104,39 +4253,52 @@
     .end annotation
 
     .prologue
-    .line 563
+    .line 577
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
+
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 585
+    :goto_0
+    return-void
+
+    .line 580
+    :cond_0
     const-string v0, "Roadmap"
 
-    .line 564
+    .line 581
     .local v0, "source":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
-    .line 565
+    .line 582
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     iget-object v0, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
 
-    .line 567
-    :cond_0
+    .line 584
+    :cond_1
     const-string v1, "1v1Roadmap View"
 
     invoke-static {p0, v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/BuyUtil;->goByOneVOneCourse(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 568
-    return-void
+    goto :goto_0
 .end method
 
 .method public onClassIconClick()V
     .locals 2
 
     .prologue
-    .line 931
+    .line 958
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v1, :cond_0
@@ -4149,12 +4311,12 @@
 
     if-nez v1, :cond_1
 
-    .line 936
+    .line 963
     :cond_0
     :goto_0
     return-void
 
-    .line 932
+    .line 959
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -4162,7 +4324,7 @@
 
     iget-object v0, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->branch:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$Branch;
 
-    .line 933
+    .line 960
     .local v0, "branch":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$Branch;
     if-eqz v0, :cond_0
 
@@ -4174,7 +4336,7 @@
 
     if-nez v1, :cond_0
 
-    .line 934
+    .line 961
     iget-object v1, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean$Branch;->tgt:Ljava/lang/String;
 
     invoke-static {p0, v1}, Lcom/jiliguala/niuwa/logic/h/a;->a(Landroid/content/Context;Ljava/lang/String;)V
@@ -4187,10 +4349,10 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1235
+    .line 1280
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
-    .line 1239
+    .line 1284
     return-void
 .end method
 
@@ -4198,12 +4360,12 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0902c9
+            0x7f0902cf
         }
     .end annotation
 
     .prologue
-    .line 572
+    .line 589
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -4212,15 +4374,15 @@
 
     if-nez v0, :cond_0
 
-    .line 573
+    .line 590
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->hideTip()V
 
-    .line 574
+    .line 591
     const-string v0, "Change"
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->goSwitchLvPage(Ljava/lang/String;)V
 
-    .line 576
+    .line 593
     :cond_0
     return-void
 .end method
@@ -4229,15 +4391,15 @@
     .locals 0
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f090576
+            0x7f090580
         }
     .end annotation
 
     .prologue
-    .line 551
+    .line 565
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->hideTip()V
 
-    .line 552
+    .line 566
     return-void
 .end method
 
@@ -4246,7 +4408,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v9, 0x7f08013e
+    const v9, 0x7f080140
 
     const/4 v8, 0x1
 
@@ -4254,34 +4416,48 @@
 
     const/16 v5, 0x8
 
-    .line 216
+    .line 223
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 217
+    .line 224
     const v3, 0x7f0b003b
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->setContentView(I)V
 
-    .line 218
+    .line 225
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()I
+
+    move-result v3
+
+    iput v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRealScreenWidth:I
+
+    .line 226
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->N()I
+
+    move-result v3
+
+    iput v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRealScreenHeight:I
+
+    .line 227
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
 
     iput-wide v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCreateTime:J
 
-    .line 219
+    .line 228
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->handleIntent()V
 
-    .line 220
+    .line 229
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->addEventObserver()V
 
-    .line 221
+    .line 230
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->registerPurchasedReceiver()V
 
-    .line 223
+    .line 232
     invoke-static {p0}, Lbutterknife/ButterKnife;->a(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 224
+    .line 233
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -4290,7 +4466,7 @@
 
     if-nez v3, :cond_0
 
-    .line 225
+    .line 234
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLessonTypeTxt:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -4308,7 +4484,7 @@
     :goto_0
     invoke-virtual {v6, v3}, Landroid/widget/TextView;->setText(I)V
 
-    .line 230
+    .line 239
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/FragmentActivity;)Lcom/bumptech/glide/o;
 
     move-result-object v6
@@ -4317,92 +4493,89 @@
 
     const-string v7, "MC"
 
-    .line 231
+    .line 240
     invoke-virtual {v3, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f080359
+    const v3, 0x7f080365
 
     :goto_1
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    .line 230
+    .line 239
     invoke-virtual {v6, v3}, Lcom/bumptech/glide/o;->a(Ljava/lang/Integer;)Lcom/bumptech/glide/g;
 
     move-result-object v3
 
-    .line 232
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
-
-    move-result v6
+    iget v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRealScreenWidth:I
 
     div-int/lit8 v6, v6, 0x2
 
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
-
-    move-result v7
+    iget v7, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRealScreenHeight:I
 
     div-int/lit8 v7, v7, 0x2
 
+    .line 241
     invoke-virtual {v3, v6, v7}, Lcom/bumptech/glide/g;->e(II)Lcom/bumptech/glide/f;
 
     move-result-object v3
 
-    .line 233
+    .line 242
     invoke-virtual {v3}, Lcom/bumptech/glide/f;->g()Lcom/bumptech/glide/f;
 
     move-result-object v3
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapBgBelow:Lcom/jiliguala/niuwa/common/widget/TranslateImageView;
 
+    .line 243
     invoke-virtual {v3, v6}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 235
+    .line 246
     :cond_0
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCiteBearIv:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 236
+    .line 247
     new-instance v3, Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-direct {v3, p0}, Landroid/support/v7/widget/LinearLayoutManager;-><init>(Landroid/content/Context;)V
 
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
-    .line 237
+    .line 248
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v3, v8}, Landroid/support/v7/widget/LinearLayoutManager;->e(Z)V
 
-    .line 238
+    .line 249
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v3, v4}, Landroid/support/v7/widget/LinearLayoutManager;->b(I)V
 
-    .line 239
+    .line 250
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v3, v6}, Landroid/support/v7/widget/RecyclerView;->setLayoutManager(Landroid/support/v7/widget/RecyclerView$LayoutManager;)V
 
-    .line 240
+    .line 251
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v3, v4}, Landroid/support/v7/widget/RecyclerView;->setClipChildren(Z)V
 
-    .line 241
+    .line 252
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v3, v4}, Landroid/support/v7/widget/RecyclerView;->setClipToPadding(Z)V
 
-    .line 242
+    .line 253
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     new-instance v6, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$1;
@@ -4411,24 +4584,24 @@
 
     invoke-virtual {v3, v6}, Landroid/support/v7/widget/RecyclerView;->setOnScrollListener(Landroid/support/v7/widget/RecyclerView$l;)V
 
-    .line 259
+    .line 270
     new-instance v1, Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-direct {v1, p0}, Landroid/support/v7/widget/LinearLayoutManager;-><init>(Landroid/content/Context;)V
 
-    .line 260
+    .line 271
     .local v1, "manager":Landroid/support/v7/widget/LinearLayoutManager;
     invoke-virtual {v1, v8}, Landroid/support/v7/widget/LinearLayoutManager;->e(Z)V
 
-    .line 261
+    .line 272
     invoke-virtual {v1, v4}, Landroid/support/v7/widget/LinearLayoutManager;->b(I)V
 
-    .line 262
+    .line 273
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgRv:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v3, v1}, Landroid/support/v7/widget/RecyclerView;->setLayoutManager(Landroid/support/v7/widget/RecyclerView$LayoutManager;)V
 
-    .line 263
+    .line 274
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapBgRv:Landroid/support/v7/widget/RecyclerView;
 
     new-instance v6, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$2;
@@ -4437,7 +4610,7 @@
 
     invoke-virtual {v3, v6}, Landroid/support/v7/widget/RecyclerView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 270
+    .line 281
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
 
     const-string v6, "MC"
@@ -4448,53 +4621,53 @@
 
     if-eqz v3, :cond_3
 
-    .line 271
+    .line 282
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initMCRoadmapBgData()V
 
-    .line 276
+    .line 287
     :goto_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initBgAdapter()V
 
-    .line 277
+    .line 288
     const v3, 0x7f090213
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 278
+    .line 289
     .local v2, "stickFloatingView":Landroid/view/View;
     invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
-    .line 279
+    .line 290
     invoke-virtual {v2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 280
+    .line 291
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBuyAll:Landroid/widget/TextView;
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 281
+    .line 292
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBuyOneVOne:Landroid/widget/TextView;
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 282
+    .line 293
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLeftFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v3, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 283
+    .line 294
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRightFindCurrent:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v3, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 285
+    .line 296
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/FragmentActivity;)Lcom/bumptech/glide/o;
 
     move-result-object v3
 
-    .line 286
+    .line 297
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v6
@@ -4507,27 +4680,27 @@
 
     move-result-object v3
 
-    .line 287
+    .line 298
     invoke-virtual {v3, v9}, Lcom/bumptech/glide/g;->d(I)Lcom/bumptech/glide/f;
 
     move-result-object v3
 
-    .line 288
+    .line 299
     invoke-virtual {v3}, Lcom/bumptech/glide/f;->g()Lcom/bumptech/glide/f;
 
     move-result-object v3
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLeftBabyIv:Landroid/widget/ImageView;
 
-    .line 289
+    .line 300
     invoke-virtual {v3, v6}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 291
+    .line 302
     invoke-static {p0}, Lcom/bumptech/glide/l;->a(Landroid/support/v4/app/FragmentActivity;)Lcom/bumptech/glide/o;
 
     move-result-object v3
 
-    .line 292
+    .line 303
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v6
@@ -4540,29 +4713,29 @@
 
     move-result-object v3
 
-    .line 293
+    .line 304
     invoke-virtual {v3, v9}, Lcom/bumptech/glide/g;->d(I)Lcom/bumptech/glide/f;
 
     move-result-object v3
 
-    .line 294
+    .line 305
     invoke-virtual {v3}, Lcom/bumptech/glide/f;->g()Lcom/bumptech/glide/f;
 
     move-result-object v3
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRightBabyIv:Landroid/widget/ImageView;
 
-    .line 295
+    .line 306
     invoke-virtual {v3, v6}, Lcom/bumptech/glide/f;->a(Landroid/widget/ImageView;)Lcom/bumptech/glide/g/b/m;
 
-    .line 297
+    .line 308
     const-string v3, "SHOW_ROADMAP_LEVEL_TIPS"
 
     invoke-static {v3, v4}, Lcom/jiliguala/niuwa/common/util/t;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 299
+    .line 310
     .local v0, "hasClickTip":Z
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTip:Landroid/widget/TextView;
 
@@ -4573,21 +4746,21 @@
     :goto_3
     invoke-virtual {v6, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 301
+    .line 312
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTip:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->bringToFront()V
 
-    .line 303
+    .line 314
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->setMainTitle()V
 
-    .line 305
+    .line 316
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reportAmplitude()V
 
-    .line 306
+    .line 317
     return-void
 
-    .line 225
+    .line 234
     .end local v0    # "hasClickTip":Z
     .end local v1    # "manager":Landroid/support/v7/widget/LinearLayoutManager;
     .end local v2    # "stickFloatingView":Landroid/view/View;
@@ -4596,13 +4769,13 @@
 
     goto/16 :goto_0
 
-    .line 231
+    .line 240
     :cond_2
-    const v3, 0x7f08035f
+    const v3, 0x7f08036b
 
     goto/16 :goto_1
 
-    .line 273
+    .line 284
     .restart local v1    # "manager":Landroid/support/v7/widget/LinearLayoutManager;
     :cond_3
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initPHRoadmapBgData()V
@@ -4614,7 +4787,7 @@
     :cond_4
     move v3, v5
 
-    .line 299
+    .line 310
     goto :goto_3
 .end method
 
@@ -4622,31 +4795,31 @@
     .locals 1
 
     .prologue
-    .line 1143
+    .line 1170
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onDestroy()V
 
-    .line 1144
+    .line 1171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 1145
+    .line 1172
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->cancelAnim()V
 
-    .line 1147
+    .line 1174
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCompletedPurchasedReceiver:Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;
 
     if-eqz v0, :cond_1
 
-    .line 1148
+    .line 1175
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCompletedPurchasedReceiver:Lcom/jiliguala/niuwa/receivers/CompletePurchasedReceiver;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 1150
+    .line 1177
     :cond_1
     return-void
 .end method
@@ -4658,13 +4831,13 @@
     .param p3, "position"    # I
 
     .prologue
-    .line 1245
+    .line 1290
     :try_start_0
     invoke-virtual {p1}, Lcom/c/a/a/a/c;->getData()Ljava/util/List;
 
     move-result-object v0
 
-    .line 1246
+    .line 1291
     .local v0, "data":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;>;"
     invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4672,7 +4845,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;
 
-    .line 1247
+    .line 1292
     .local v1, "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;->getItemType()I
 
@@ -4690,7 +4863,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 1248
+    .line 1293
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
@@ -4700,19 +4873,19 @@
 
     if-nez v2, :cond_1
 
-    .line 1249
+    .line 1294
     invoke-virtual {p0, p3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->doOnItemClick(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1255
+    .line 1300
     .end local v0    # "data":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;>;"
     .end local v1    # "multipleItem":Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem;, "Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;>;"
     :cond_1
     :goto_0
     return-void
 
-    .line 1252
+    .line 1297
     :catch_0
     move-exception v2
 
@@ -4725,7 +4898,7 @@
     .param p2, "orderId"    # Ljava/lang/String;
 
     .prologue
-    .line 1173
+    .line 1200
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -4733,24 +4906,24 @@
 
     if-nez v2, :cond_1
 
-    .line 1200
+    .line 1227
     :cond_0
     :goto_0
     return-void
 
-    .line 1176
+    .line 1203
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v10
 
-    .line 1177
+    .line 1204
     .local v10, "accountCenter":Lcom/jiliguala/niuwa/logic/login/a;
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v5, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v5, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4786,7 +4959,7 @@
 
     move-result-object v1
 
-    .line 1178
+    .line 1205
     .local v1, "shareUrl":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
@@ -4796,15 +4969,15 @@
 
     move-result-object v0
 
-    .line 1179
+    .line 1206
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;
     const-string v4, "\u5b9d\u8d1d\u82f1\u8bed\u542f\u8499\u8bfe\u7a0b\uff0c\u624b\u6162\u65e0"
 
-    .line 1180
+    .line 1207
     .local v4, "content":Ljava/lang/String;
-    const-string v3, "\u300c\u53fd\u91cc\u5471\u5566\u300d\u63d0\u9192\uff1a\u60a8\u6709\u4e00\u4e2a\u00a518.88\u7684\u7ea2\u5305\u5f85\u9886\u53d6"
+    const-string v3, "\u300c\u53fd\u91cc\u5471\u5566\u300d\u63d0\u9192\uff1a\u60a8\u6709\u4e00\u4e2a\u00a518.88\u7684\u798f\u888b\u5f85\u9886\u53d6"
 
-    .line 1181
+    .line 1208
     .local v3, "title":Ljava/lang/String;
     const-string v2, ""
 
@@ -4820,7 +4993,7 @@
 
     invoke-virtual/range {v0 .. v9}, Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;->setData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;
 
-    .line 1183
+    .line 1210
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v2
@@ -4829,7 +5002,7 @@
 
     move-result-object v11
 
-    .line 1184
+    .line 1211
     .local v11, "fragmentTransaction":Landroid/support/v4/app/an;
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;->isAdded()Z
 
@@ -4837,28 +5010,28 @@
 
     if-nez v2, :cond_2
 
-    .line 1185
-    const v2, 0x7f09037f
+    .line 1212
+    const v2, 0x7f090386
 
     sget-object v5, Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v11, v2, v0, v5}, Landroid/support/v4/app/an;->a(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1186
+    .line 1213
     sget-object v2, Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
     invoke-virtual {v11, v2}, Landroid/support/v4/app/an;->a(Ljava/lang/String;)Landroid/support/v4/app/an;
 
-    .line 1190
+    .line 1217
     :goto_1
     invoke-virtual {v11}, Landroid/support/v4/app/an;->i()I
 
-    .line 1193
+    .line 1220
     new-instance v13, Ljava/util/HashMap;
 
     invoke-direct {v13}, Ljava/util/HashMap;-><init>()V
 
-    .line 1194
+    .line 1221
     .local v13, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "Type"
 
@@ -4866,7 +5039,7 @@
 
     invoke-interface {v13, v2, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1195
+    .line 1222
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
@@ -4879,7 +5052,7 @@
 
     goto :goto_0
 
-    .line 1197
+    .line 1224
     .end local v0    # "fragment":Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;
     .end local v1    # "shareUrl":Ljava/lang/String;
     .end local v3    # "title":Ljava/lang/String;
@@ -4890,13 +5063,13 @@
     :catch_0
     move-exception v12
 
-    .line 1198
+    .line 1225
     .local v12, "ise":Ljava/lang/IllegalStateException;
     invoke-static {v12}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 1188
+    .line 1215
     .end local v12    # "ise":Ljava/lang/IllegalStateException;
     .restart local v0    # "fragment":Lcom/jiliguala/niuwa/module/NewRoadMap/PurchaseShareFragment;
     .restart local v1    # "shareUrl":Ljava/lang/String;
@@ -4917,7 +5090,7 @@
     .locals 0
 
     .prologue
-    .line 677
+    .line 694
     return-void
 .end method
 
@@ -4930,28 +5103,28 @@
 
     const/4 v4, 0x0
 
-    .line 681
+    .line 698
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
-    .line 683
+    .line 700
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reportIdentifyAmplitude()V
 
-    .line 685
+    .line 702
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->converData(Lcom/jiliguala/niuwa/logic/network/json/McTemplete;)V
 
-    .line 687
+    .line 704
     if-eqz p1, :cond_0
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
     if-nez v3, :cond_1
 
-    .line 793
+    .line 820
     :cond_0
     :goto_0
     return-void
 
-    .line 688
+    .line 705
     :cond_1
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasWord()Z
 
@@ -4959,7 +5132,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 689
+    .line 706
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mWordText:Landroid/widget/TextView;
 
     iget-object v6, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -4972,14 +5145,14 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 690
+    .line 707
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mWordIcon:Landroid/widget/ImageView;
 
-    const v6, 0x7f0803c2
+    const v6, 0x7f0803cf
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 691
+    .line 708
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastMcTemplate:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v3, :cond_2
@@ -5016,12 +5189,12 @@
 
     if-nez v3, :cond_2
 
-    .line 692
+    .line 709
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mWordContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->readyShowAnim(Landroid/view/View;)V
 
-    .line 696
+    .line 713
     :cond_2
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasSpeak()Z
 
@@ -5029,7 +5202,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 697
+    .line 714
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mSpeakText:Landroid/widget/TextView;
 
     iget-object v6, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -5042,14 +5215,14 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 698
+    .line 715
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mSpeakIcon:Landroid/widget/ImageView;
 
-    const v6, 0x7f0803be
+    const v6, 0x7f0803cb
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 699
+    .line 716
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastMcTemplate:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v3, :cond_3
@@ -5086,12 +5259,12 @@
 
     if-nez v3, :cond_3
 
-    .line 700
+    .line 717
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mSpeakContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->readyShowAnim(Landroid/view/View;)V
 
-    .line 704
+    .line 721
     :cond_3
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasPhonics()Z
 
@@ -5099,7 +5272,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 705
+    .line 722
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mPhonicsTxt:Landroid/widget/TextView;
 
     iget-object v6, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -5112,14 +5285,14 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 706
+    .line 723
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mPhonicsIcon:Landroid/widget/ImageView;
 
-    const v6, 0x7f0803ba
+    const v6, 0x7f0803c7
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 707
+    .line 724
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastMcTemplate:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     if-eqz v3, :cond_4
@@ -5156,12 +5329,12 @@
 
     if-nez v3, :cond_4
 
-    .line 708
+    .line 725
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mPhonicsContainer:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->readyShowAnim(Landroid/view/View;)V
 
-    .line 712
+    .line 729
     :cond_4
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasCurCourseNum()Z
 
@@ -5169,7 +5342,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 713
+    .line 730
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCurrentCourse:Landroid/widget/TextView;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -5200,7 +5373,7 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 716
+    .line 733
     :cond_5
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasTotalCourseNum()Z
 
@@ -5208,7 +5381,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 717
+    .line 734
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mTotalCourse:Landroid/widget/TextView;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -5245,7 +5418,7 @@
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 720
+    .line 737
     :cond_6
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasCurCourseNum()Z
 
@@ -5259,7 +5432,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 721
+    .line 738
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getCurCourseNum()F
 
     move-result v3
@@ -5270,7 +5443,7 @@
 
     div-float v2, v3, v6
 
-    .line 722
+    .line 739
     .local v2, "percent":F
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mProgressBar:Lcom/liulishuo/magicprogresswidget/MagicProgressBar;
 
@@ -5278,7 +5451,7 @@
 
     invoke-virtual {v3, v2, v6, v7}, Lcom/liulishuo/magicprogresswidget/MagicProgressBar;->a(FJ)V
 
-    .line 725
+    .line 742
     .end local v2    # "percent":F
     :cond_7
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBuyAll:Landroid/widget/TextView;
@@ -5289,14 +5462,14 @@
 
     move-result v3
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_d
 
     move v3, v4
 
     :goto_1
     invoke-virtual {v6, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 727
+    .line 744
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mBuyOneVOne:Landroid/widget/TextView;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -5305,23 +5478,23 @@
 
     move-result v3
 
-    if-eqz v3, :cond_d
+    if-eqz v3, :cond_e
 
     move v3, v4
 
     :goto_2
     invoke-virtual {v6, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 729
+    .line 746
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initData(Lcom/jiliguala/niuwa/logic/network/json/McTemplete;)V
 
-    .line 731
+    .line 748
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->addHeaderData()V
 
-    .line 733
+    .line 750
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initAdapter()V
 
-    .line 736
+    .line 753
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->hasRoadsign()Z
@@ -5330,14 +5503,14 @@
 
     if-eqz v3, :cond_8
 
-    .line 737
+    .line 754
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->addFootView()V
 
-    .line 740
+    .line 757
     :cond_8
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->initScrollWidth()V
 
-    .line 742
+    .line 759
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollXList:Ljava/util/List;
 
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
@@ -5358,7 +5531,7 @@
 
     iput v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadmapTotalWidth:I
 
-    .line 744
+    .line 761
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapAdapter:Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->getItemCount()I
@@ -5369,7 +5542,7 @@
 
     move-result v0
 
-    .line 746
+    .line 763
     .local v0, "calculateX":I
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapBgBelow:Lcom/jiliguala/niuwa/common/widget/TranslateImageView;
 
@@ -5377,16 +5550,16 @@
 
     invoke-virtual {v3, v6}, Lcom/jiliguala/niuwa/common/widget/TranslateImageView;->setCalculateX(F)V
 
-    .line 748
+    .line 765
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
-    if-eqz v3, :cond_e
+    if-eqz v3, :cond_f
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastMcTemplate:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
-    if-nez v3, :cond_e
+    if-nez v3, :cond_f
 
-    .line 749
+    .line 766
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     new-instance v6, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$5;
@@ -5395,7 +5568,7 @@
 
     invoke-virtual {v3, v6}, Landroid/support/v7/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
 
-    .line 764
+    .line 781
     :cond_9
     :goto_3
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->isAllComplete(Lcom/jiliguala/niuwa/logic/network/json/McTemplete;)Z
@@ -5404,7 +5577,7 @@
 
     if-eqz v3, :cond_a
 
-    .line 765
+    .line 782
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     new-instance v6, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$6;
@@ -5413,7 +5586,7 @@
 
     invoke-virtual {v3, v6}, Landroid/support/v7/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
 
-    .line 773
+    .line 790
     :cond_a
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
 
@@ -5425,14 +5598,14 @@
 
     if-eqz v3, :cond_b
 
-    .line 774
+    .line 791
     iput-boolean v4, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mEnableAutoShowPage:Z
 
-    .line 777
+    .line 794
     :cond_b
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastMcTemplate:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
-    .line 779
+    .line 796
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
@@ -5441,9 +5614,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_10
+    if-eqz v3, :cond_11
 
-    .line 780
+    .line 797
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->getRoadMapData()Ljava/util/List;
@@ -5462,7 +5635,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
-    .line 781
+    .line 798
     .local v1, "currentRoadmapItem":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCiteBearIv:Landroid/widget/ImageView;
 
@@ -5470,14 +5643,14 @@
 
     move-result v3
 
-    if-eqz v3, :cond_f
+    if-eqz v3, :cond_10
 
     move v3, v4
 
     :goto_4
     invoke-virtual {v6, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 787
+    .line 804
     .end local v1    # "currentRoadmapItem":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
     :goto_5
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mType:Ljava/lang/String;
@@ -5488,7 +5661,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_12
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -5500,7 +5673,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_11
+    if-nez v3, :cond_12
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
@@ -5508,31 +5681,82 @@
 
     iget-boolean v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->practice:Z
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_12
 
-    .line 788
+    .line 805
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reviewTv:Landroid/widget/TextView;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
+    .line 811
+    :goto_6
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/mcphonics/report/LvTypeUtil;->isB1MC(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_c
+
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v3}, Lcom/jiliguala/niuwa/module/mcphonics/report/LvTypeUtil;->isB2MC(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_13
+
+    .line 812
+    :cond_c
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mListenTv:Landroid/view/View;
+
+    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 816
+    :goto_7
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mListenTv:Landroid/view/View;
+
+    iget-object v4, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v4, v4, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v4, v4, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->audiochannel:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 818
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLevel:Landroid/widget/TextView;
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+
     goto/16 :goto_0
 
     .end local v0    # "calculateX":I
-    :cond_c
-    move v3, v5
-
-    .line 725
-    goto/16 :goto_1
-
     :cond_d
     move v3, v5
 
-    .line 727
+    .line 742
+    goto/16 :goto_1
+
+    :cond_e
+    move v3, v5
+
+    .line 744
     goto/16 :goto_2
 
-    .line 757
+    .line 774
     .restart local v0    # "calculateX":I
-    :cond_e
+    :cond_f
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLastServerLv:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -5553,55 +5777,63 @@
 
     if-nez v3, :cond_9
 
-    .line 758
+    .line 775
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRecyclerVeiw:Landroid/support/v7/widget/RecyclerView;
 
     if-eqz v3, :cond_9
 
-    .line 759
+    .line 776
     invoke-direct {p0, v4}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->scrollToCurrent(Z)V
 
     goto/16 :goto_3
 
     .restart local v1    # "currentRoadmapItem":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
-    :cond_f
+    :cond_10
     move v3, v5
 
-    .line 781
+    .line 798
     goto :goto_4
 
-    .line 783
+    .line 800
     .end local v1    # "currentRoadmapItem":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
-    :cond_10
+    :cond_11
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mCiteBearIv:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_5
 
-    .line 790
-    :cond_11
+    .line 807
+    :cond_12
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->reviewTv:Landroid/widget/TextView;
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
-    goto/16 :goto_0
+    goto :goto_6
+
+    .line 814
+    :cond_13
+    iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mListenTv:Landroid/view/View;
+
+    invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_7
 .end method
 
 .method protected onResume()V
     .locals 0
 
     .prologue
-    .line 485
+    .line 496
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseMvpActivity;->onResume()V
 
-    .line 486
+    .line 497
     invoke-static {p0}, Lcom/jiliguala/niuwa/common/util/g;->d(Landroid/app/Activity;)V
 
-    .line 487
+    .line 498
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->requestData()V
 
-    .line 488
+    .line 499
     return-void
 .end method
 
@@ -5609,14 +5841,14 @@
     .locals 5
 
     .prologue
-    .line 423
+    .line 434
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/LinearLayoutManager;->t()I
 
     move-result v1
 
-    .line 424
+    .line 435
     .local v1, "position":I
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mLayoutManager:Landroid/support/v7/widget/LinearLayoutManager;
 
@@ -5624,7 +5856,7 @@
 
     move-result-object v0
 
-    .line 426
+    .line 437
     .local v0, "firstVisibleChildView":Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
@@ -5634,7 +5866,7 @@
 
     move-result v2
 
-    .line 428
+    .line 439
     .local v2, "scrollX":I
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->mRoadMapBgBelow:Lcom/jiliguala/niuwa/common/widget/TranslateImageView;
 
@@ -5642,6 +5874,6 @@
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/common/widget/TranslateImageView;->setTranslate(F)V
 
-    .line 431
+    .line 442
     return-void
 .end method

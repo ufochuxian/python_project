@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     .prologue
-    .line 151
+    .line 156
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$2;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .param p4, "totalItemCount"    # I
 
     .prologue
-    .line 178
+    .line 183
     return-void
 .end method
 
@@ -55,28 +55,28 @@
     .param p2, "scrollState"    # I
 
     .prologue
-    .line 155
+    .line 160
     const/4 v0, 0x2
 
     if-ne p2, v0, :cond_1
 
-    .line 157
+    .line 162
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/d;->j()V
 
-    .line 162
+    .line 167
     :goto_0
     packed-switch p2, :pswitch_data_0
 
-    .line 173
+    .line 178
     :cond_0
     :goto_1
     return-void
 
-    .line 159
+    .line 164
     :cond_1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/d;->b()Lcom/nostra13/universalimageloader/core/d;
 
@@ -86,7 +86,7 @@
 
     goto :goto_0
 
-    .line 166
+    .line 171
     :pswitch_0
     invoke-virtual {p1}, Landroid/widget/AbsListView;->getLastVisiblePosition()I
 
@@ -100,10 +100,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 167
+    .line 172
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$2;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     move-result-object v0
 
@@ -121,7 +121,7 @@
 
     if-nez v0, :cond_0
 
-    .line 168
+    .line 173
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$2;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -140,7 +140,7 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$2;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
-    invoke-static {v2}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -148,7 +148,7 @@
 
     goto :goto_1
 
-    .line 162
+    .line 167
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

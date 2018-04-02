@@ -3547,22 +3547,22 @@
     invoke-static {v1}, Lcom/youzan/androidsdk/e;->a(Landroid/content/Context;)V
 
     .line 757
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v1
 
-    sget-object v2, Lcom/jiliguala/niuwa/logic/q/b;->d:[I
+    sget-object v2, Lcom/jiliguala/niuwa/logic/r/b;->d:[I
 
     aget v2, v2, v4
 
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->b(I)V
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/r/b;->b(I)V
 
     .line 758
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
+    invoke-virtual {v1, v4}, Lcom/jiliguala/niuwa/logic/r/b;->a(Z)V
 
     .line 759
     return-void

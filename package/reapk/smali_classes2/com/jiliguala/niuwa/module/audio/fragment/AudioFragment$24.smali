@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 587
+    .line 591
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$24;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$24;->a:Landroid/app/Dialog;
@@ -46,11 +46,11 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 590
+    .line 594
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$24;->a:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 591
+    .line 595
     return-void
 .end method

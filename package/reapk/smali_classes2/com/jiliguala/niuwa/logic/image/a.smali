@@ -1711,6 +1711,7 @@
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/logic/image/e;->a(Ljava/io/Closeable;)V
 
+    .line 280
     throw v8
 
     .line 261
@@ -2100,6 +2101,7 @@
     :try_start_2
     invoke-virtual {v1}, Ljava/io/Writer;->close()V
 
+    .line 375
     throw v2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1

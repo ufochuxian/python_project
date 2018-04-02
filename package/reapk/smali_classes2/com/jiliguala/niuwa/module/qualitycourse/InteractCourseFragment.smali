@@ -123,18 +123,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-    .locals 1
-    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
-
-    .prologue
-    .line 49
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
+.method static synthetic access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
@@ -145,7 +134,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$102(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$002(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
     .param p1, "x1"    # Ljava/lang/String;
@@ -155,6 +144,17 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mChannel:Ljava/lang/String;
 
     return-object p1
+.end method
+
+.method static synthetic access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
+    .locals 1
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
+
+    .prologue
+    .line 49
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
+
+    return-object v0
 .end method
 
 .method static synthetic access$200(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)I
@@ -283,7 +283,7 @@
     .end annotation
 
     .prologue
-    .line 294
+    .line 299
     .local p1, "ages":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/Age;>;"
     const/4 v1, 0x0
 
@@ -295,26 +295,26 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 295
+    .line 300
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/Age;
 
-    .line 296
+    .line 301
     .local v0, "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     iget-boolean v2, v0, Lcom/jiliguala/niuwa/logic/network/json/Age;->sel:Z
 
     if-eqz v2, :cond_0
 
-    .line 300
+    .line 305
     .end local v0    # "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     .end local v1    # "i":I
     :goto_1
     return v1
 
-    .line 294
+    .line 299
     .restart local v0    # "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     .restart local v1    # "i":I
     :cond_0
@@ -322,7 +322,7 @@
 
     goto :goto_0
 
-    .line 300
+    .line 305
     .end local v0    # "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     :cond_1
     const/4 v1, 0x0
@@ -347,13 +347,13 @@
     .end annotation
 
     .prologue
-    .line 304
+    .line 309
     .local p1, "ages":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/logic/network/json/Age;>;"
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 305
+    .line 310
     .local v1, "strs":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -372,7 +372,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/Age;
 
-    .line 306
+    .line 311
     .local v0, "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     iget-object v3, v0, Lcom/jiliguala/niuwa/logic/network/json/Age;->ttl:Ljava/lang/String;
 
@@ -380,7 +380,7 @@
 
     goto :goto_0
 
-    .line 308
+    .line 313
     .end local v0    # "age":Lcom/jiliguala/niuwa/logic/network/json/Age;
     :cond_0
     return-object v1
@@ -391,7 +391,7 @@
     .param p1, "position"    # I
 
     .prologue
-    .line 355
+    .line 360
     :try_start_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mCourses:Ljava/util/ArrayList;
 
@@ -401,17 +401,17 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Course;
 
-    .line 356
+    .line 361
     .local v1, "course":Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Course;
     iget-object v3, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Course;->_id:Ljava/lang/String;
 
-    .line 357
+    .line 362
     .local v3, "id":Ljava/lang/String;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 358
+    .line 363
     .local v0, "bundle":Landroid/os/Bundle;
     new-instance v4, Landroid/content/Intent;
 
@@ -423,21 +423,21 @@
 
     invoke-direct {v4, v5, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 359
+    .line 364
     .local v4, "intent":Landroid/content/Intent;
     const-string v5, "KEY_COURSE_ID"
 
     invoke-virtual {v4, v5, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 361
+    .line 366
     invoke-virtual {v4, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 362
+    .line 367
     const/high16 v5, 0x10000000
 
     invoke-virtual {v4, v5}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 363
+    .line 368
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v5
@@ -446,7 +446,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 368
+    .line 373
     .end local v0    # "bundle":Landroid/os/Bundle;
     .end local v1    # "course":Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Course;
     .end local v3    # "id":Ljava/lang/String;
@@ -454,11 +454,11 @@
     :goto_0
     return-void
 
-    .line 365
+    .line 370
     :catch_0
     move-exception v2
 
-    .line 366
+    .line 371
     .local v2, "e":Ljava/lang/Exception;
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -498,10 +498,10 @@
     .locals 2
 
     .prologue
-    .line 226
+    .line 231
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09026d
+    const v1, 0x7f090272
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -511,17 +511,17 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
-    .line 227
+    .line 232
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     sget-object v1, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$Mode;->DISABLED:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$Mode;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setMode(Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$Mode;)V
 
-    .line 228
+    .line 233
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -531,10 +531,10 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mSuperView:Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
 
-    .line 229
+    .line 234
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -544,7 +544,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mTitleText:Landroid/widget/TextView;
 
-    .line 230
+    .line 235
     return-void
 .end method
 
@@ -631,12 +631,12 @@
     .locals 2
 
     .prologue
-    .line 150
+    .line 155
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setOnRefreshListener(Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase$c;)V
 
-    .line 151
+    .line 156
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$2;
@@ -645,7 +645,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
-    .line 181
+    .line 186
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mNiceSpinner:Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;
@@ -654,7 +654,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;->setListener(Lcom/jiliguala/niuwa/common/widget/spinner/d;)V
 
-    .line 211
+    .line 216
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mSuperView:Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$4;
@@ -663,7 +663,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->setOnErrorClickListener(Lcom/jiliguala/niuwa/common/widget/customview/b;)V
 
-    .line 223
+    .line 228
     return-void
 .end method
 
@@ -671,7 +671,7 @@
     .locals 2
 
     .prologue
-    .line 330
+    .line 335
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mInteractCourseAdapter:Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;->getCount()I
@@ -680,19 +680,19 @@
 
     if-nez v0, :cond_0
 
-    .line 331
+    .line 336
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 332
+    .line 337
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mSuperView:Lcom/jiliguala/niuwa/common/widget/customview/SuperView;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->c()V
 
-    .line 334
+    .line 339
     :cond_0
     return-void
 .end method
@@ -703,32 +703,7 @@
     .locals 4
 
     .prologue
-    .line 134
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    if-nez v0, :cond_0
-
-    .line 147
-    :goto_0
-    return-void
-
-    .line 137
-    :cond_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->d()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 138
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->f()V
-
-    .line 140
-    :cond_1
+    .line 145
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -737,11 +712,12 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$1;-><init>(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)V
 
-    const-wide/16 v2, 0x1f4
+    const-wide/16 v2, 0xc8
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    goto :goto_0
+    .line 152
+    return-void
 .end method
 
 .method protected bridge synthetic createPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -760,7 +736,7 @@
     .locals 1
 
     .prologue
-    .line 234
+    .line 239
     new-instance v0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;-><init>()V
@@ -772,7 +748,7 @@
     .locals 1
 
     .prologue
-    .line 343
+    .line 348
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mCourseCat:Lcom/jiliguala/niuwa/logic/network/json/CourseEntranceTemplete$CourseCat;
 
     return-object v0
@@ -794,7 +770,7 @@
     .locals 0
 
     .prologue
-    .line 239
+    .line 244
     return-object p0
 .end method
 
@@ -867,10 +843,10 @@
     .locals 1
 
     .prologue
-    .line 249
+    .line 254
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onDestroy()V
 
-    .line 250
+    .line 255
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -879,7 +855,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;->onDestory()V
 
-    .line 251
+    .line 256
     return-void
 .end method
 
@@ -890,7 +866,7 @@
     .param p3, "itemId"    # J
 
     .prologue
-    .line 348
+    .line 353
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;->a()Z
@@ -899,10 +875,10 @@
 
     if-nez v0, :cond_0
 
-    .line 349
+    .line 354
     invoke-direct {p0, p2}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->goToCoursePeekerActivity(I)V
 
-    .line 351
+    .line 356
     :cond_0
     return-void
 .end method
@@ -911,7 +887,7 @@
     .locals 2
 
     .prologue
-    .line 338
+    .line 343
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -924,7 +900,7 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 339
+    .line 344
     return-void
 .end method
 
@@ -933,7 +909,7 @@
     .param p1, "courseDetailTemplete"    # Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;
 
     .prologue
-    .line 321
+    .line 326
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->hasData()Z
@@ -942,7 +918,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 322
+    .line 327
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mCourses:Ljava/util/ArrayList;
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;
@@ -951,7 +927,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 323
+    .line 328
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mInteractCourseAdapter:Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;
@@ -962,19 +938,19 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;->updateDataSet(Ljava/util/ArrayList;Z)V
 
-    .line 324
+    .line 329
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mInteractCourseAdapter:Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;->notifyDataSetChanged()V
 
-    .line 325
+    .line 330
     iget v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->page:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->page:I
 
-    .line 327
+    .line 332
     :cond_0
     return-void
 .end method
@@ -984,7 +960,7 @@
     .param p1, "refreshView"    # Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshBase;
 
     .prologue
-    .line 244
+    .line 249
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
     move-result-object v0
@@ -995,29 +971,18 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;->refreshNew(Ljava/lang/String;)V
 
-    .line 245
+    .line 250
     return-void
 .end method
 
 .method public onRefreshNewFailed()V
-    .locals 1
+    .locals 0
 
     .prologue
-    .line 313
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    if-eqz v0, :cond_0
-
-    .line 314
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->f()V
-
-    .line 316
-    :cond_0
+    .line 321
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->showErrorView()V
 
-    .line 317
+    .line 322
     return-void
 .end method
 
@@ -1028,43 +993,32 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 255
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    if-eqz v2, :cond_0
-
-    .line 256
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->f()V
-
-    .line 258
-    :cond_0
-    if-eqz p1, :cond_1
+    .line 263
+    if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->hasData()Z
 
     move-result v2
 
-    if-nez v2, :cond_2
+    if-nez v2, :cond_1
 
-    .line 291
-    :cond_1
+    .line 296
+    :cond_0
     :goto_0
     return-void
 
-    .line 262
-    :cond_2
+    .line 267
+    :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mListView:Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setVisibility(I)V
 
-    .line 264
+    .line 269
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;
 
     iget-object v0, v2, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;->cat:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;
 
-    .line 266
+    .line 271
     .local v0, "cat":Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;->ttl:Ljava/lang/String;
 
@@ -1072,34 +1026,34 @@
 
     move-result v2
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_2
 
-    .line 267
+    .line 272
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
     instance-of v2, v2, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
-    .line 268
+    .line 273
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
     check-cast v1, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;
 
-    .line 269
+    .line 274
     .local v1, "interactActivity":Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;->ttl:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;->RefreshTopBarTitle(Ljava/lang/String;)V
 
-    .line 273
+    .line 278
     .end local v1    # "interactActivity":Lcom/jiliguala/niuwa/module/qualitycourse/InteractActivity;
-    :cond_3
-    if-eqz v0, :cond_4
+    :cond_2
+    if-eqz v0, :cond_3
 
     iget-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;->desc:Ljava/lang/String;
 
@@ -1107,29 +1061,29 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_3
 
-    .line 274
+    .line 279
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mDescTv:Landroid/widget/TextView;
 
     iget-object v3, v0, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;->desc:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 278
-    :cond_4
+    .line 283
+    :cond_3
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->hasAgeData()Z
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_4
 
-    .line 279
+    .line 284
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mNiceSpinner:Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;->setVisibility(I)V
 
-    .line 280
+    .line 285
     iget-object v2, p1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;
 
     iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;->cat:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Cat;
@@ -1138,7 +1092,7 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mAges:Ljava/util/List;
 
-    .line 281
+    .line 286
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mNiceSpinner:Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mAges:Ljava/util/List;
@@ -1155,7 +1109,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;->a(Ljava/util/List;I)V
 
-    .line 282
+    .line 287
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mNiceSpinner:Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mAges:Ljava/util/List;
@@ -1176,8 +1130,8 @@
 
     invoke-virtual {v3, v2}, Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;->setText(Ljava/lang/CharSequence;)V
 
-    .line 285
-    :cond_5
+    .line 290
+    :cond_4
     new-instance v2, Ljava/util/ArrayList;
 
     iget-object v3, p1, Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/CourseDetailTemplete$Data;
@@ -1188,7 +1142,7 @@
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mCourses:Ljava/util/ArrayList;
 
-    .line 287
+    .line 292
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mInteractCourseAdapter:Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mCourses:Ljava/util/ArrayList;
@@ -1197,18 +1151,32 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;->updateDataSet(Ljava/util/ArrayList;Z)V
 
-    .line 288
+    .line 293
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->mInteractCourseAdapter:Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;
 
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/module/qualitycourse/adapter/InteracCourseAdapter;->notifyDataSetChanged()V
 
-    .line 289
+    .line 294
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->showErrorView()V
 
-    .line 290
+    .line 295
     iput v5, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->page:I
 
     goto/16 :goto_0
+.end method
+
+.method public onResume()V
+    .locals 0
+
+    .prologue
+    .line 133
+    invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/c;->onResume()V
+
+    .line 134
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->autoRefresh()V
+
+    .line 135
+    return-void
 .end method
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
@@ -1224,8 +1192,5 @@
     invoke-super {p0, p1, p2}, Lcom/jiliguala/niuwa/common/base/c;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 129
-    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->autoRefresh()V
-
-    .line 130
     return-void
 .end method

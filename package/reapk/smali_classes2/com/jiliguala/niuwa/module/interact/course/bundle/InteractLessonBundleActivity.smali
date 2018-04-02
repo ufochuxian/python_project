@@ -218,7 +218,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity;->mContainer:Landroid/widget/RelativeLayout;
 
     .line 144
-    const v0, 0x7f090595
+    const v0, 0x7f09059f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 147
-    const v0, 0x7f0902d5
+    const v0, 0x7f0902db
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity;->findViewById(I)Landroid/view/View;
 
@@ -330,7 +330,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity;->mCustomHandler:Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity$a;
 
     .line 158
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/interact/course/bundle/InteractLessonBundleActivity;->findViewById(I)Landroid/view/View;
 
@@ -755,13 +755,13 @@
 
     .line 489
     .local v3, "ft":Landroid/support/v4/app/an;
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f01001e
+    const v6, 0x7f010020
 
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
-    const v8, 0x7f01001e
+    const v8, 0x7f010020
 
     invoke-virtual {v3, v5, v6, v7, v8}, Landroid/support/v4/app/an;->a(IIII)Landroid/support/v4/app/an;
 
@@ -773,7 +773,7 @@
     if-nez v5, :cond_0
 
     .line 491
-    const v5, 0x7f09053c
+    const v5, 0x7f090546
 
     sget-object v6, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->FRAGMENT_TAG:Ljava/lang/String;
 

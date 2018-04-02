@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final fletBackground:I = 0x7f0400b9
+.field public static final fletBackground:I = 0x7f0400ba
 
-.field public static final fletPadding:I = 0x7f0400ba
+.field public static final fletPadding:I = 0x7f0400bb
 
-.field public static final fletPaddingBottom:I = 0x7f0400bb
+.field public static final fletPaddingBottom:I = 0x7f0400bc
 
-.field public static final fletPaddingLeft:I = 0x7f0400bc
+.field public static final fletPaddingLeft:I = 0x7f0400bd
 
-.field public static final fletPaddingRight:I = 0x7f0400bd
+.field public static final fletPaddingRight:I = 0x7f0400be
 
-.field public static final fletPaddingTop:I = 0x7f0400be
+.field public static final fletPaddingTop:I = 0x7f0400bf
 
-.field public static final fletTextAppearance:I = 0x7f0400bf
+.field public static final fletTextAppearance:I = 0x7f0400c0
 
 
 # direct methods

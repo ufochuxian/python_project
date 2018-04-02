@@ -151,9 +151,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedFragment;
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 119
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedActivity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -508,7 +508,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090096 -> :sswitch_0
-        0x7f09057e -> :sswitch_1
+        0x7f090588 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -543,7 +543,7 @@
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedActivity;->setContentView(I)V
 
     .line 68
-    const v2, 0x7f090595
+    const v2, 0x7f09059f
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedActivity;->findViewById(I)Landroid/view/View;
 
@@ -574,7 +574,7 @@
     .line 71
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedActivity;->mBackIcon:Landroid/widget/ImageView;
 
-    const v3, 0x7f0802d6
+    const v3, 0x7f0802e0
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -584,7 +584,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 73
-    const v2, 0x7f09057e
+    const v2, 0x7f090588
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedActivity;->findViewById(I)Landroid/view/View;
 

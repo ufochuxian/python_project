@@ -492,10 +492,10 @@
     :sswitch_data_0
     .sparse-switch
         -0x1 -> :sswitch_0
-        0x7f090373 -> :sswitch_3
-        0x7f090375 -> :sswitch_0
-        0x7f090376 -> :sswitch_1
-        0x7f090377 -> :sswitch_2
+        0x7f09037a -> :sswitch_3
+        0x7f09037c -> :sswitch_0
+        0x7f09037d -> :sswitch_1
+        0x7f09037e -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -665,7 +665,7 @@
     .prologue
     const v4, 0x7f0f01a7
 
-    const v3, 0x7f08007c
+    const v3, 0x7f08007e
 
     const/4 v2, 0x1
 
@@ -885,10 +885,10 @@
     :sswitch_data_0
     .sparse-switch
         -0x1 -> :sswitch_0
-        0x7f090373 -> :sswitch_3
-        0x7f090375 -> :sswitch_0
-        0x7f090376 -> :sswitch_1
-        0x7f090377 -> :sswitch_2
+        0x7f09037a -> :sswitch_3
+        0x7f09037c -> :sswitch_0
+        0x7f09037d -> :sswitch_1
+        0x7f09037e -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -902,9 +902,9 @@
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onBackPressed()V
 
     .line 396
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->overridePendingTransition(II)V
 
@@ -917,9 +917,9 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v8, 0x7f090375
+    const v8, 0x7f09037c
 
-    const v7, 0x7f090373
+    const v7, 0x7f09037a
 
     const/4 v6, 0x0
 
@@ -1037,7 +1037,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 281
-    const v2, 0x7f090376
+    const v2, 0x7f09037d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1055,7 +1055,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 283
-    const v2, 0x7f090377
+    const v2, 0x7f09037e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1106,7 +1106,7 @@
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->setContentView(I)V
 
     .line 289
-    const v2, 0x7f090374
+    const v2, 0x7f09037b
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -1143,7 +1143,7 @@
     .line 296
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->mEmptyView:Landroid/view/View;
 
-    const v3, 0x7f090578
+    const v3, 0x7f090582
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1156,7 +1156,7 @@
     .line 297
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->mEmptyView:Landroid/view/View;
 
-    const v3, 0x7f090579
+    const v3, 0x7f090583
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1196,7 +1196,7 @@
     .line 302
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->mEmptyIcon:Landroid/widget/ImageView;
 
-    const v3, 0x7f0801bc
+    const v3, 0x7f0801c2
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1258,7 +1258,7 @@
 
     .line 339
     :pswitch_1
-    const v2, 0x7f090376
+    const v2, 0x7f09037d
 
     iput v2, p0, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->mCurId:I
 
@@ -1271,7 +1271,7 @@
 
     .line 343
     :pswitch_2
-    const v2, 0x7f090377
+    const v2, 0x7f09037e
 
     iput v2, p0, Lcom/jiliguala/niuwa/module/forum/personalforum/PersonalForumInfoActivity;->mCurId:I
 

@@ -33,17 +33,17 @@
     .param p1, "controller"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 1928
+    .line 1936
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1929
+    .line 1937
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1930
+    .line 1938
     return-void
 .end method
 
@@ -60,7 +60,7 @@
 
     const/4 v10, 0x0
 
-    .line 1939
+    .line 1947
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -69,17 +69,17 @@
 
     if-eqz v5, :cond_0
 
-    .line 1940
+    .line 1948
     iget v5, p1, Landroid/os/Message;->what:I
 
     packed-switch v5, :pswitch_data_0
 
-    .line 2012
+    .line 2020
     :cond_0
     :goto_0
     return-void
 
-    .line 1942
+    .line 1950
     :pswitch_0
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -95,7 +95,7 @@
 
     if-eqz v5, :cond_a
 
-    .line 1944
+    .line 1952
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -142,7 +142,7 @@
 
     if-nez v5, :cond_1
 
-    .line 1945
+    .line 1953
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -157,7 +157,7 @@
 
     invoke-virtual {v5, v10}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 1948
+    .line 1956
     :cond_1
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -177,7 +177,7 @@
 
     if-eqz v5, :cond_6
 
-    .line 1950
+    .line 1958
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -188,7 +188,7 @@
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->savePosWhilePause()V
 
-    .line 1951
+    .line 1959
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -203,7 +203,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 1952
+    .line 1960
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -220,7 +220,7 @@
 
     invoke-interface {v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayPause()V
 
-    .line 1954
+    .line 1962
     :cond_2
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/b;->a()Lcom/jiliguala/niuwa/logic/i/b;
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v5}, Lcom/jiliguala/niuwa/logic/i/b;->c()V
 
-    .line 1955
+    .line 1963
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -239,7 +239,7 @@
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$600(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1990
+    .line 1998
     :cond_3
     :goto_1
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
@@ -256,7 +256,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 1991
+    .line 1999
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -273,7 +273,7 @@
 
     invoke-interface {v5, v10}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showSurfaceCover(Z)V
 
-    .line 1993
+    .line 2001
     :cond_4
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -289,7 +289,7 @@
 
     if-eqz v5, :cond_5
 
-    .line 1994
+    .line 2002
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -308,7 +308,7 @@
 
     invoke-interface {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 1996
+    .line 2004
     :cond_5
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -324,7 +324,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 1997
+    .line 2005
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -345,7 +345,7 @@
 
     goto/16 :goto_0
 
-    .line 1964
+    .line 1972
     :cond_6
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -369,7 +369,7 @@
 
     invoke-virtual {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playRightNow(Landroid/media/MediaPlayer;)V
 
-    .line 1965
+    .line 1973
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -380,7 +380,7 @@
 
     invoke-static {v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$700(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1967
+    .line 1975
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -395,7 +395,7 @@
 
     if-eqz v5, :cond_8
 
-    .line 1968
+    .line 1976
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -416,7 +416,7 @@
 
     move-result v1
 
-    .line 1969
+    .line 1977
     .local v1, "progress":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -428,7 +428,7 @@
 
     invoke-virtual {v5, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->seekTo(I)V
 
-    .line 1970
+    .line 1978
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -443,7 +443,7 @@
 
     if-eqz v5, :cond_7
 
-    .line 1971
+    .line 1979
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -492,7 +492,7 @@
 
     invoke-interface {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showToast(Ljava/lang/String;)V
 
-    .line 1973
+    .line 1981
     :cond_7
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -506,7 +506,7 @@
 
     invoke-static {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$802(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Lcom/jiliguala/niuwa/logic/db/daometa/e;)Lcom/jiliguala/niuwa/logic/db/daometa/e;
 
-    .line 1976
+    .line 1984
     .end local v1    # "progress":I
     :cond_8
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
@@ -525,7 +525,7 @@
 
     if-eqz v5, :cond_9
 
-    .line 1977
+    .line 1985
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -550,7 +550,7 @@
 
     invoke-virtual {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->seekTo(I)V
 
-    .line 1979
+    .line 1987
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -561,7 +561,7 @@
 
     invoke-static {v5, v12, v13}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$902(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;J)J
 
-    .line 1982
+    .line 1990
     :cond_9
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -579,14 +579,14 @@
 
     invoke-virtual {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 1983
+    .line 1991
     iget v3, p1, Landroid/os/Message;->arg1:I
 
-    .line 1984
+    .line 1992
     .local v3, "videoWidth":I
     iget v2, p1, Landroid/os/Message;->arg2:I
 
-    .line 1985
+    .line 1993
     .local v2, "videoHeight":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -602,7 +602,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 1986
+    .line 1994
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -619,7 +619,7 @@
 
     invoke-interface {v5, v3, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPrepareAdjustVideoSize(II)V
 
-    .line 1987
+    .line 1995
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -638,7 +638,7 @@
 
     goto/16 :goto_1
 
-    .line 2001
+    .line 2009
     .end local v2    # "videoHeight":I
     .end local v3    # "videoWidth":I
     :cond_a
@@ -656,14 +656,14 @@
 
     invoke-virtual {v5, v6}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->removeMessages(I)V
 
-    .line 2002
+    .line 2010
     iget v4, p1, Landroid/os/Message;->arg1:I
 
-    .line 2003
+    .line 2011
     .local v4, "width":I
     iget v0, p1, Landroid/os/Message;->arg2:I
 
-    .line 2004
+    .line 2012
     .local v0, "height":I
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -681,13 +681,13 @@
 
     move-result-object p1
 
-    .line 2005
+    .line 2013
     iput v4, p1, Landroid/os/Message;->arg1:I
 
-    .line 2006
+    .line 2014
     iput v0, p1, Landroid/os/Message;->arg2:I
 
-    .line 2007
+    .line 2015
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v5}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -706,7 +706,7 @@
 
     goto/16 :goto_0
 
-    .line 1940
+    .line 1948
     :pswitch_data_0
     .packed-switch 0x1001
         :pswitch_0

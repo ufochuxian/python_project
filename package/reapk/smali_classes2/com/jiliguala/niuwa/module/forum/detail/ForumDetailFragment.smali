@@ -1026,7 +1026,7 @@
     invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 933
-    const v3, 0x7f0b0192
+    const v3, 0x7f0b0197
 
     invoke-virtual {v0, v3}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -1454,7 +1454,7 @@
     const/16 v2, 0x8
 
     .line 1327
-    const v0, 0x7f090438
+    const v0, 0x7f09043f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1488,7 +1488,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 1331
-    const v0, 0x7f090447
+    const v0, 0x7f09044e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1497,7 +1497,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailFragment;->rplyContainer:Landroid/view/View;
 
     .line 1333
-    const v0, 0x7f090431
+    const v0, 0x7f090438
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1529,7 +1529,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 1339
-    const v0, 0x7f090457
+    const v0, 0x7f09045e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1565,7 +1565,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1344
-    const v0, 0x7f090434
+    const v0, 0x7f09043b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1583,7 +1583,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1347
-    const v0, 0x7f090432
+    const v0, 0x7f090439
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1608,7 +1608,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1351
-    const v0, 0x7f090433
+    const v0, 0x7f09043a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1626,7 +1626,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1354
-    const v0, 0x7f090555
+    const v0, 0x7f09055f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1644,7 +1644,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1356
-    const v0, 0x7f090448
+    const v0, 0x7f09044f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1687,7 +1687,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 1391
-    const v0, 0x7f090449
+    const v0, 0x7f090450
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2386,7 +2386,7 @@
     invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 1767
-    const v3, 0x7f0b0192
+    const v3, 0x7f0b0197
 
     invoke-virtual {v0, v3}, Landroid/app/Dialog;->setContentView(I)V
 
@@ -2607,7 +2607,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f060051
+    const v5, 0x7f060053
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2626,7 +2626,7 @@
 
     .line 1098
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v4, 0x7f0b0115
+    const v4, 0x7f0b0117
 
     const/4 v5, 0x0
 
@@ -2821,7 +2821,7 @@
 
     .prologue
     .line 809
-    const v1, 0x7f0803c9
+    const v1, 0x7f0803d6
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2882,7 +2882,7 @@
 
     .prologue
     .line 819
-    const v1, 0x7f0803c8
+    const v1, 0x7f0803d5
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2961,7 +2961,7 @@
 
     .prologue
     .line 799
-    const v1, 0x7f0803c9
+    const v1, 0x7f0803d6
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2990,7 +2990,7 @@
 
     .line 805
     :cond_0
-    const v1, 0x7f080347
+    const v1, 0x7f080351
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3017,7 +3017,7 @@
 
     .prologue
     .line 829
-    const v1, 0x7f0803c8
+    const v1, 0x7f0803d5
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3041,7 +3041,7 @@
 
     .line 834
     :cond_0
-    const v1, 0x7f080347
+    const v1, 0x7f080351
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3185,7 +3185,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0802cf
+    const v4, 0x7f0802d9
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3219,7 +3219,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0802d3
+    const v4, 0x7f0802dd
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4102,7 +4102,7 @@
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setDescendantFocusability(I)V
 
     .line 1271
-    const v2, 0x7f09044a
+    const v2, 0x7f090451
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4280,7 +4280,7 @@
     .line 1652
     iget v1, p0, Lcom/jiliguala/niuwa/module/forum/detail/ForumDetailFragment;->mCurrentId:I
 
-    const v2, 0x7f09044a
+    const v2, 0x7f090451
 
     if-ne v1, v2, :cond_1
 

@@ -354,6 +354,7 @@
 
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
+    .line 233
     throw v5
 
     .line 230
@@ -577,6 +578,7 @@
 
     invoke-interface {v3}, Lde/greenrobot/dao/identityscope/IdentityScope;->unlock()V
 
+    .line 254
     :cond_2
     throw v2
 .end method
@@ -1249,6 +1251,7 @@
 
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
+    .line 264
     throw v0
 .end method
 

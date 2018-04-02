@@ -35,7 +35,7 @@
 
 .field private mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
-.field private mContext:Landroid/content/Context;
+.field protected mContext:Landroid/content/Context;
 
 .field mData:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -105,7 +105,7 @@
     iput-object p3, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
 
     .line 78
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()I
 
     move-result v0
 
@@ -127,39 +127,50 @@
     .line 80
     const/4 v0, 0x1
 
-    const v1, 0x7f0b00ed
+    const v1, 0x7f0b00ee
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->addItemType(II)V
 
     .line 81
     const/4 v0, 0x2
 
-    const v1, 0x7f0b00ee
+    const v1, 0x7f0b00ef
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->addItemType(II)V
 
     .line 82
     const/4 v0, 0x5
 
-    const v1, 0x7f0b01a6
+    const v1, 0x7f0b01ab
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->addItemType(II)V
 
     .line 84
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->l()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->M()I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mScreenWidth:I
 
     .line 85
-    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->k()I
+    invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->N()I
 
     move-result v0
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mScreenHeight:I
 
     .line 86
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;
+
+    .prologue
+    .line 45
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->reportBeginnerGuideView()V
+
     return-void
 .end method
 
@@ -208,6 +219,72 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mAnimationSet:Lcom/nineoldandroids/a/d;
 
     goto :goto_0
+.end method
+
+.method private reportBeginnerGuideView()V
+    .locals 3
+
+    .prologue
+    .line 365
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 366
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 367
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "LessonView"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 368
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 369
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Beginner\u2018s Guide View"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 371
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_0
+    return-void
 .end method
 
 
@@ -273,7 +350,7 @@
 
     .line 103
     .local v9, "roadmapBean":Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
-    const v14, 0x7f09029f
+    const v14, 0x7f0902a5
 
     move-object/from16 v0, p1
 
@@ -300,7 +377,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f080405
+    const v15, 0x7f080412
 
     .line 106
     invoke-virtual {v14, v15}, Lcom/bumptech/glide/g;->d(I)Lcom/bumptech/glide/f;
@@ -330,7 +407,7 @@
     invoke-direct {v0, v1, v9}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->doBgAnim(Lcom/c/a/a/a/e;Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;)V
 
     .line 114
-    const v14, 0x7f0905bd
+    const v14, 0x7f0905c7
 
     move-object/from16 v0, p1
 
@@ -357,7 +434,7 @@
 
     .line 119
     :cond_1
-    const v14, 0x7f09029f
+    const v14, 0x7f0902a5
 
     move-object/from16 v0, p1
 
@@ -371,7 +448,7 @@
     if-eqz v14, :cond_2
 
     .line 122
-    const v14, 0x7f0902bc
+    const v14, 0x7f0902c2
 
     move-object/from16 v0, p1
 
@@ -387,7 +464,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -396,7 +473,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 123
-    const v14, 0x7f0902be
+    const v14, 0x7f0902c4
 
     move-object/from16 v0, p1
 
@@ -412,7 +489,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -421,7 +498,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 124
-    const v14, 0x7f0902bf
+    const v14, 0x7f0902c5
 
     move-object/from16 v0, p1
 
@@ -437,7 +514,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -446,7 +523,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 126
-    const v14, 0x7f090465
+    const v14, 0x7f09046e
 
     move-object/from16 v0, p1
 
@@ -462,7 +539,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -471,7 +548,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 127
-    const v14, 0x7f090469
+    const v14, 0x7f090472
 
     move-object/from16 v0, p1
 
@@ -487,7 +564,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -496,7 +573,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 128
-    const v14, 0x7f09046c
+    const v14, 0x7f090475
 
     move-object/from16 v0, p1
 
@@ -512,7 +589,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -529,7 +606,7 @@
     if-eqz v14, :cond_3
 
     .line 133
-    const v14, 0x7f0902bc
+    const v14, 0x7f0902c2
 
     move-object/from16 v0, p1
 
@@ -545,7 +622,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -554,7 +631,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 134
-    const v14, 0x7f0902be
+    const v14, 0x7f0902c4
 
     move-object/from16 v0, p1
 
@@ -570,7 +647,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -579,7 +656,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 135
-    const v14, 0x7f0902bf
+    const v14, 0x7f0902c5
 
     move-object/from16 v0, p1
 
@@ -595,7 +672,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -604,7 +681,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 137
-    const v14, 0x7f090465
+    const v14, 0x7f09046e
 
     move-object/from16 v0, p1
 
@@ -620,7 +697,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -629,7 +706,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 138
-    const v14, 0x7f090469
+    const v14, 0x7f090472
 
     move-object/from16 v0, p1
 
@@ -645,7 +722,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -654,7 +731,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 139
-    const v14, 0x7f09046c
+    const v14, 0x7f090475
 
     move-object/from16 v0, p1
 
@@ -670,7 +747,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f08039d
+    const v16, 0x7f0803aa
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -687,7 +764,7 @@
     if-eqz v14, :cond_4
 
     .line 144
-    const v14, 0x7f0902bc
+    const v14, 0x7f0902c2
 
     move-object/from16 v0, p1
 
@@ -703,7 +780,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -712,7 +789,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 145
-    const v14, 0x7f0902be
+    const v14, 0x7f0902c4
 
     move-object/from16 v0, p1
 
@@ -728,7 +805,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -737,7 +814,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 146
-    const v14, 0x7f0902bf
+    const v14, 0x7f0902c5
 
     move-object/from16 v0, p1
 
@@ -753,7 +830,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -762,7 +839,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 148
-    const v14, 0x7f090465
+    const v14, 0x7f09046e
 
     move-object/from16 v0, p1
 
@@ -778,7 +855,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -787,7 +864,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 149
-    const v14, 0x7f090469
+    const v14, 0x7f090472
 
     move-object/from16 v0, p1
 
@@ -803,7 +880,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -812,7 +889,7 @@
     invoke-virtual {v14, v15}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 150
-    const v14, 0x7f09046c
+    const v14, 0x7f090475
 
     move-object/from16 v0, p1
 
@@ -828,7 +905,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0803a0
+    const v16, 0x7f0803ad
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -847,7 +924,7 @@
     if-ne v14, v15, :cond_9
 
     .line 156
-    const v14, 0x7f0902b9
+    const v14, 0x7f0902bf
 
     move-object/from16 v0, p1
 
@@ -878,7 +955,7 @@
     if-ne v14, v15, :cond_a
 
     .line 162
-    const v14, 0x7f090462
+    const v14, 0x7f09046b
 
     move-object/from16 v0, p1
 
@@ -995,7 +1072,7 @@
 
     .line 199
     :cond_7
-    const v14, 0x7f0905c2
+    const v14, 0x7f0905cc
 
     move-object/from16 v0, p1
 
@@ -1023,7 +1100,7 @@
 
     .line 208
     :cond_8
-    const v14, 0x7f09029f
+    const v14, 0x7f0902a5
 
     move-object/from16 v0, p1
 
@@ -1061,7 +1138,7 @@
     .end local v12    # "unitContainerParams":Landroid/view/ViewGroup$LayoutParams;
     .end local v13    # "unitContainerWidth":I
     :cond_9
-    const v14, 0x7f0902b9
+    const v14, 0x7f0902bf
 
     move-object/from16 v0, p1
 
@@ -1077,7 +1154,7 @@
 
     .line 164
     :cond_a
-    const v14, 0x7f090462
+    const v14, 0x7f09046b
 
     move-object/from16 v0, p1
 
@@ -1162,17 +1239,17 @@
     .locals 1
 
     .prologue
-    .line 365
+    .line 396
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mGuide:Lcom/blog/www/guideview/f;
 
     if-eqz v0, :cond_0
 
-    .line 366
+    .line 397
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mGuide:Lcom/blog/www/guideview/f;
 
     invoke-virtual {v0}, Lcom/blog/www/guideview/f;->a()V
 
-    .line 368
+    .line 399
     :cond_0
     return-void
 .end method
@@ -1181,8 +1258,8 @@
     .locals 1
 
     .prologue
-    .line 348
-    const v0, 0x7f0803ea
+    .line 383
+    const v0, 0x7f0803f7
 
     return v0
 .end method
@@ -1225,68 +1302,20 @@
 .end method
 
 .method protected onDismissGuideView()V
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 352
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+    .line 387
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->reportBeginnerGuideComplete()V
 
-    if-eqz v1, :cond_0
+    .line 388
+    const-string v0, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
 
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+    const/4 v1, 0x1
 
-    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
 
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
-
-    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
-
-    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
-
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 353
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 354
-    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v1, "Type"
-
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
-
-    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
-
-    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
-
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 355
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
-
-    move-result-object v1
-
-    const-string v2, "Beginner\u2019s Guide Complete"
-
-    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 357
-    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
-    :cond_0
-    const-string v1, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
-
-    const/4 v2, 0x1
-
-    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
-
-    .line 358
+    .line 389
     return-void
 .end method
 
@@ -1294,12 +1323,12 @@
     .locals 1
 
     .prologue
-    .line 361
+    .line 392
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mHasShowGuideView:Z
 
-    .line 362
+    .line 393
     return-void
 .end method
 
@@ -1368,7 +1397,7 @@
     if-nez v1, :cond_0
 
     .line 232
-    const v1, 0x7f09029f
+    const v1, 0x7f0902a5
 
     invoke-virtual {p1, v1}, Lcom/c/a/a/a/e;->e(I)Landroid/view/View;
 
@@ -1391,6 +1420,138 @@
     return-void
 .end method
 
+.method public reportBeginnerGuideComplete()V
+    .locals 3
+
+    .prologue
+    .line 374
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 375
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 376
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "LessonView"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 377
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 378
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Beginner\u2019s Guide Complete"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 380
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_0
+    return-void
+.end method
+
+.method protected reportBeginnerGuideExit()V
+    .locals 3
+
+    .prologue
+    .line 355
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 356
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 357
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "LessonView"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 358
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 359
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Beginner\u2018s Guide Exit"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 361
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_0
+    return-void
+.end method
+
 .method public setCallBack(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapCallBack;)V
     .locals 0
     .param p1, "callBack"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapCallBack;
@@ -1403,16 +1564,69 @@
     return-void
 .end method
 
+.method protected setShowGuideFlag()V
+    .locals 2
+
+    .prologue
+    .line 348
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/login/a;->V()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/adapter/RoadMapItemAdapter;->mcTemplete:Lcom/jiliguala/niuwa/logic/network/json/McTemplete;
+
+    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete;->data:Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;
+
+    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$DataBean;->lv:Ljava/lang/String;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isAgeOverTwoMC(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 349
+    const-string v0, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
+
+    .line 351
+    :cond_0
+    return-void
+.end method
+
 .method protected setStatusIcon(Lcom/c/a/a/a/e;Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;)V
-    .locals 4
+    .locals 5
     .param p1, "helper"    # Lcom/c/a/a/a/e;
     .param p2, "roadmapBean"    # Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;
 
     .prologue
+    const/4 v4, 0x4
+
     const/4 v3, 0x0
 
     .line 255
-    const v2, 0x7f0903c7
+    const v2, 0x7f0903ce
 
     invoke-virtual {p1, v2}, Lcom/c/a/a/a/e;->e(I)Landroid/view/View;
 
@@ -1441,16 +1655,16 @@
     if-eqz v2, :cond_1
 
     .line 257
-    const v2, 0x7f080138
+    const v2, 0x7f08013a
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 258
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 263
     :goto_0
-    const v2, 0x7f090524
+    const v2, 0x7f09052e
 
     invoke-virtual {p1, v2}, Lcom/c/a/a/a/e;->e(I)Landroid/view/View;
 
@@ -1477,7 +1691,7 @@
     if-eqz v2, :cond_2
 
     .line 267
-    const v2, 0x7f0803b3
+    const v2, 0x7f0803c0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1489,9 +1703,7 @@
     .line 260
     .end local v1    # "statusIcon":Landroid/widget/ImageView;
     :cond_1
-    const/4 v2, 0x4
-
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1505,7 +1717,7 @@
     if-eqz v2, :cond_0
 
     .line 269
-    const v2, 0x7f0803b5
+    const v2, 0x7f0803c2
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1523,7 +1735,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 273
-    const v2, 0x7f0803b2
+    const v2, 0x7f0803bf
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1565,7 +1777,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09029f
+    const v2, 0x7f0902a5
 
     .line 306
     invoke-virtual {v1, v2}, Lcom/blog/www/guideview/g;->c(I)Lcom/blog/www/guideview/g;

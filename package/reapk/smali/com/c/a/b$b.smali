@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final sample_footer_loading:I = 0x7f08038f
+.field public static final sample_footer_loading:I = 0x7f08039c
 
-.field public static final sample_footer_loading_progress:I = 0x7f080390
+.field public static final sample_footer_loading_progress:I = 0x7f08039d
 
 
 # direct methods

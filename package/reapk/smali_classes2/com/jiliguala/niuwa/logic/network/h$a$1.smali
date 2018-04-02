@@ -38,7 +38,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/logic/network/h$a;
 
     .prologue
-    .line 70
+    .line 71
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a:Lcom/jiliguala/niuwa/logic/network/h$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 119
+    .line 120
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/h;->b()J
 
     move-result-wide v4
@@ -64,18 +64,18 @@
 
     if-nez v3, :cond_1
 
-    .line 126
+    .line 127
     :cond_0
     :goto_0
     return v2
 
-    .line 122
+    .line 123
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 123
+    .line 124
     .local v0, "currentTime":J
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/h;->c()Ljava/lang/String;
 
@@ -99,7 +99,7 @@
 
     if-gtz v3, :cond_0
 
-    .line 124
+    .line 125
     const/4 v2, 0x0
 
     goto :goto_0
@@ -112,14 +112,14 @@
     .param p1, "throwable"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 73
+    .line 74
     iget-object v5, p0, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a:Lcom/jiliguala/niuwa/logic/network/h$a;
 
     invoke-static {v5, p1}, Lcom/jiliguala/niuwa/logic/network/h$a;->a(Lcom/jiliguala/niuwa/logic/network/h$a;Ljava/lang/Throwable;)Lcom/jiliguala/niuwa/logic/network/RetrofitException;
 
     move-result-object v4
 
-    .line 75
+    .line 76
     .local v4, "retrofitException":Lcom/jiliguala/niuwa/logic/network/RetrofitException;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/g;->a()Lcom/jiliguala/niuwa/logic/network/g;
 
@@ -129,20 +129,20 @@
 
     move-result-object v0
 
-    .line 76
+    .line 77
     .local v0, "entity":Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;
     const-string v1, "\u7f51\u7edc\u4e0d\u7ed9\u529b\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5"
 
-    .line 77
+    .line 78
     .local v1, "errorMessage":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 79
+    .line 80
     iget v5, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->code:I
 
     sparse-switch v5, :sswitch_data_0
 
-    .line 105
+    .line 106
     :goto_0
     iget-object v5, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->msg:Ljava/lang/String;
 
@@ -152,10 +152,10 @@
 
     if-nez v5, :cond_0
 
-    .line 106
+    .line 107
     iget-object v1, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->msg:Ljava/lang/String;
 
-    .line 110
+    .line 111
     :cond_0
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a(Ljava/lang/String;)Z
 
@@ -163,12 +163,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 111
+    .line 112
     iget-object v5, p0, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a:Lcom/jiliguala/niuwa/logic/network/h$a;
 
     invoke-static {v5, v1}, Lcom/jiliguala/niuwa/logic/network/h$a;->a(Lcom/jiliguala/niuwa/logic/network/h$a;Ljava/lang/String;)V
 
-    .line 113
+    .line 114
     :cond_1
     iget-object v5, p0, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a:Lcom/jiliguala/niuwa/logic/network/h$a;
 
@@ -176,20 +176,20 @@
 
     move-result-object v4
 
-    .line 115
+    .line 116
     invoke-static {v4}, Lrx/e;->a(Ljava/lang/Throwable;)Lrx/e;
 
     move-result-object v5
 
     return-object v5
 
-    .line 81
+    .line 82
     :sswitch_0
     const-string v5, ""
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->msg:Ljava/lang/String;
 
-    .line 82
+    .line 83
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v5
@@ -204,7 +204,7 @@
 
     goto :goto_0
 
-    .line 85
+    .line 86
     :sswitch_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
@@ -220,23 +220,23 @@
 
     goto :goto_0
 
-    .line 89
+    .line 90
     :sswitch_2
     const-string v5, ""
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->msg:Ljava/lang/String;
 
-    .line 90
+    .line 91
     const-string v1, ""
 
-    .line 91
+    .line 92
     new-instance v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     const/16 v5, 0x1024
 
     invoke-direct {v2, v5}, Lcom/jiliguala/niuwa/logic/b/a/a;-><init>(I)V
 
-    .line 92
+    .line 93
     .local v2, "event":Lcom/jiliguala/niuwa/logic/b/a/a;
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/network/RetrofitException;->getUrl()Ljava/lang/String;
 
@@ -244,7 +244,7 @@
 
     invoke-virtual {v2, v5}, Lcom/jiliguala/niuwa/logic/b/a/a;->a(Ljava/lang/String;)V
 
-    .line 93
+    .line 94
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v5
@@ -253,24 +253,24 @@
 
     goto :goto_0
 
-    .line 96
+    .line 97
     .end local v2    # "event":Lcom/jiliguala/niuwa/logic/b/a/a;
     :sswitch_3
     const-string v5, ""
 
     iput-object v5, v0, Lcom/jiliguala/niuwa/logic/network/http/entity/ServerErrorEntity;->msg:Ljava/lang/String;
 
-    .line 97
+    .line 98
     const-string v1, ""
 
-    .line 98
+    .line 99
     new-instance v3, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     const/16 v5, 0x1035
 
     invoke-direct {v3, v5}, Lcom/jiliguala/niuwa/logic/b/a/a;-><init>(I)V
 
-    .line 99
+    .line 100
     .local v3, "event1":Lcom/jiliguala/niuwa/logic/b/a/a;
     invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/network/RetrofitException;->getUrl()Ljava/lang/String;
 
@@ -278,7 +278,7 @@
 
     invoke-virtual {v3, v5}, Lcom/jiliguala/niuwa/logic/b/a/a;->a(Ljava/lang/String;)V
 
-    .line 100
+    .line 101
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v5
@@ -287,7 +287,7 @@
 
     goto :goto_0
 
-    .line 79
+    .line 80
     nop
 
     :sswitch_data_0
@@ -303,7 +303,7 @@
     .locals 1
 
     .prologue
-    .line 70
+    .line 71
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/logic/network/h$a$1;->a(Ljava/lang/Throwable;)Lrx/e;

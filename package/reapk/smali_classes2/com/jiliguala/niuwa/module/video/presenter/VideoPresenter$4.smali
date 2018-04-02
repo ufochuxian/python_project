@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 333
+    .line 334
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->a:Ljava/lang/String;
@@ -52,14 +52,14 @@
     .param p1, "videoDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/VideoMetaDataTemplate;
 
     .prologue
-    .line 347
+    .line 348
     if-eqz p1, :cond_0
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/VideoMetaDataTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
 
-    .line 349
+    .line 350
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/g/e;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;)V
 
-    .line 351
+    .line 352
     :cond_0
     return-void
 .end method
@@ -77,7 +77,7 @@
     .locals 0
 
     .prologue
-    .line 337
+    .line 338
     return-void
 .end method
 
@@ -86,19 +86,19 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 341
+    .line 342
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->showLimitDialogIfRequestRestVideoFailed(Ljava/lang/String;)V
 
-    .line 342
+    .line 343
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onFail()V
 
-    .line 343
+    .line 344
     return-void
 .end method
 
@@ -106,7 +106,7 @@
     .locals 0
 
     .prologue
-    .line 333
+    .line 334
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/VideoMetaDataTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;->a(Lcom/jiliguala/niuwa/logic/network/json/VideoMetaDataTemplate;)V

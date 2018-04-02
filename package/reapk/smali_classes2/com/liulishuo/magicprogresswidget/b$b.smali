@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final mpc_default_color:I = 0x7f0600bd
+.field public static final mpc_default_color:I = 0x7f0600bf
 
-.field public static final mpc_end_color:I = 0x7f0600be
+.field public static final mpc_end_color:I = 0x7f0600c0
 
-.field public static final mpc_start_color:I = 0x7f0600bf
+.field public static final mpc_start_color:I = 0x7f0600c1
 
 
 # direct methods

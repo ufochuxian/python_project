@@ -55,7 +55,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 515
-    const v0, 0x7f09027d
+    const v0, 0x7f090282
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -114,7 +114,7 @@
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/common/widget/spinner/NiceSpinner;->setVisibility(I)V
 
     .line 529
-    const v3, 0x7f09027d
+    const v3, 0x7f090282
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

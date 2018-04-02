@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="#ff21282c" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/btn_back" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/btn_back" n1:layout_centerVertical="true" />
+    <TextView n1:textSize="20.0sp" n1:textColor="@android:color/white" n1:id="@id/rc_preview_string" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="图片" n1:layout_toRightOf="@id/btn_back" n1:layout_centerVertical="true" />
+    <Button n1:textSize="14.0sp" n1:textColor="@color/default_text_color" n1:id="@id/commit" n1:background="@drawable/action_btn" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="16.0dip" n1:minWidth="1.0dip" n1:minHeight="1.0dip" n1:text="完成" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

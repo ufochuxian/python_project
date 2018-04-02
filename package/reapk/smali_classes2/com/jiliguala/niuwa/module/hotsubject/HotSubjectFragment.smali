@@ -232,7 +232,7 @@
     .line 203
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/hotsubject/HotSubjectFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09026d
+    const v1, 0x7f090272
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
     .line 204
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/hotsubject/HotSubjectFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -258,7 +258,7 @@
     .line 205
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/hotsubject/HotSubjectFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -492,7 +492,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b00d1
+    const v6, 0x7f0b00d2
 
     const/4 v7, 0x0
 
@@ -533,7 +533,7 @@
     if-nez v5, :cond_0
 
     .line 132
-    const v5, 0x7f09026b
+    const v5, 0x7f090270
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -567,7 +567,7 @@
     if-nez v5, :cond_1
 
     .line 140
-    const v5, 0x7f09026c
+    const v5, 0x7f090271
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -605,7 +605,7 @@
     if-nez v5, :cond_2
 
     .line 144
-    const v5, 0x7f090538
+    const v5, 0x7f090542
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -252,7 +252,7 @@
     .line 67
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/FolderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0b013b
+    const v3, 0x7f0b0140
 
     invoke-virtual {v2, v3, p3, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -343,7 +343,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080143
+    const v3, 0x7f080145
 
     invoke-virtual {v2, v3}, Lcom/squareup/picasso/w;->b(I)Lcom/squareup/picasso/w;
 

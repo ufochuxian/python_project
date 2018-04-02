@@ -37,7 +37,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 209
-    const v0, 0x7f090280
+    const v0, 0x7f090285
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -59,7 +59,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/ImageGridAdapter$a;->b:Landroid/widget/ImageView;
 
     .line 211
-    const v0, 0x7f09030f
+    const v0, 0x7f090316
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -124,7 +124,7 @@
     .line 223
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/ImageGridAdapter$a;->b:Landroid/widget/ImageView;
 
-    const v2, 0x7f0800b7
+    const v2, 0x7f0800b9
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -166,7 +166,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080143
+    const v2, 0x7f080145
 
     invoke-virtual {v1, v2}, Lcom/squareup/picasso/w;->a(I)Lcom/squareup/picasso/w;
 
@@ -204,7 +204,7 @@
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/ImageGridAdapter$a;->b:Landroid/widget/ImageView;
 
-    const v2, 0x7f0800b8
+    const v2, 0x7f0800ba
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

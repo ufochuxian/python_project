@@ -359,7 +359,7 @@
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
 
-    .line 99
+    .line 101
     :cond_8
     :goto_7
     throw v8
@@ -585,6 +585,7 @@
     .line 59
     invoke-static {v3}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/io/Closeable;)V
 
+    .line 60
     throw v8
 
     .line 58

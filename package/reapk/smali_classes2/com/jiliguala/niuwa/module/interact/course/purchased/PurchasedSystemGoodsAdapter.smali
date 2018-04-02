@@ -110,7 +110,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b00fd
+    const v3, 0x7f0b00fe
 
     const/4 v4, 0x0
 
@@ -125,7 +125,7 @@
 
     .line 74
     .local v1, "vh":Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsAdapter$a;
-    const v2, 0x7f0905b5
+    const v2, 0x7f0905bf
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -136,7 +136,7 @@
     iput-object v2, v1, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsAdapter$a;->a:Landroid/widget/TextView;
 
     .line 75
-    const v2, 0x7f09025d
+    const v2, 0x7f090262
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

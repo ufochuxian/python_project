@@ -138,7 +138,7 @@
     .param p4, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v4, 0x7f090591
+    const v4, 0x7f09059b
 
     const/4 v0, 0x1
 
@@ -367,7 +367,7 @@
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/story/data/ReadingExperienceManager;->connectToReadingModeOverlay(Landroid/view/View;)V
 
     .line 186
-    const v1, 0x7f0902e5
+    const v1, 0x7f0902ec
 
     invoke-virtual {p3, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +706,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/story/data/ReadingExperienceManager;->mLoadingOverlay:Landroid/widget/RelativeLayout;
 
     .line 357
-    const v0, 0x7f0902e8
+    const v0, 0x7f0902ef
 
     invoke-virtual {p1, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -738,7 +738,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/story/data/ReadingExperienceManager;->mTopBarOverLay:Landroid/view/View;
 
     .line 351
-    const v0, 0x7f0903ba
+    const v0, 0x7f0903c1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

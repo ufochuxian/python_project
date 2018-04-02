@@ -101,11 +101,11 @@
     .line 249
     .end local v0    # "item":Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
     :cond_0
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/b/a;->a()Lcom/jiliguala/niuwa/logic/t/b/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/b/a;->a()Lcom/jiliguala/niuwa/logic/u/b/a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/t/b/a;->d()V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/u/b/a;->d()V
 
     .line 250
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment$5;->b:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFavListFragment;

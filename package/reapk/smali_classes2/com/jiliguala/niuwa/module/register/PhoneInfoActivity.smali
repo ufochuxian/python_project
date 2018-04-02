@@ -528,9 +528,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->finish()V
 
     .line 518
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->overridePendingTransition(II)V
 
@@ -543,9 +543,9 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
-    const v2, 0x7f010012
+    const v2, 0x7f010013
 
     const/4 v1, 0x0
 
@@ -636,7 +636,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v10, 0x7f080198
+    const v10, 0x7f08019c
 
     const/16 v9, 0x6b
 
@@ -674,9 +674,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->finish()V
 
     .line 327
-    const v3, 0x7f010012
+    const v3, 0x7f010013
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
     invoke-virtual {p0, v3, v4}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->overridePendingTransition(II)V
 
@@ -753,7 +753,7 @@
     invoke-virtual {v3, v2}, Landroid/app/ActionBar;->setCustomView(Landroid/view/View;)V
 
     .line 346
-    const v3, 0x7f0903d9
+    const v3, 0x7f0903e0
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -764,7 +764,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->mPhoneInput:Landroid/widget/EditText;
 
     .line 347
-    const v3, 0x7f09053b
+    const v3, 0x7f090545
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -784,7 +784,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->mConfirmBtn:Landroid/view/View;
 
     .line 349
-    const v3, 0x7f09055e
+    const v3, 0x7f090568
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -793,7 +793,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->mTermBtn:Landroid/view/View;
 
     .line 350
-    const v3, 0x7f09055f
+    const v3, 0x7f090569
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -824,7 +824,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->mTopRightBtn:Landroid/widget/TextView;
 
     .line 353
-    const v3, 0x7f090588
+    const v3, 0x7f090592
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -863,9 +863,9 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->finish()V
 
     .line 483
-    const v3, 0x7f010012
+    const v3, 0x7f010013
 
-    const v4, 0x7f01001e
+    const v4, 0x7f010020
 
     invoke-virtual {p0, v3, v4}, Lcom/jiliguala/niuwa/module/register/PhoneInfoActivity;->overridePendingTransition(II)V
 
@@ -959,7 +959,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f060052
+    const v5, 0x7f060054
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 

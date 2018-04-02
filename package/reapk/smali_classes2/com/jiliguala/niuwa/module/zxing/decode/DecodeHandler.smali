@@ -306,6 +306,7 @@
 
     invoke-virtual {v11}, Lcom/google/zxing/MultiFormatReader;->reset()V
 
+    .line 114
     throw v10
 
     .line 128
@@ -440,6 +441,6 @@
     :sswitch_data_0
     .sparse-switch
         0x7f0901a5 -> :sswitch_0
-        0x7f090422 -> :sswitch_1
+        0x7f090429 -> :sswitch_1
     .end sparse-switch
 .end method

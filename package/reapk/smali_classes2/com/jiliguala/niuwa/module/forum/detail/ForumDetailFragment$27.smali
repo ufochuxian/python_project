@@ -602,14 +602,14 @@
     .sparse-switch
         0x7f090147 -> :sswitch_5
         0x7f0901f7 -> :sswitch_7
-        0x7f090431 -> :sswitch_1
-        0x7f090432 -> :sswitch_5
-        0x7f090433 -> :sswitch_5
-        0x7f090434 -> :sswitch_5
-        0x7f090448 -> :sswitch_0
-        0x7f090449 -> :sswitch_3
-        0x7f09044a -> :sswitch_6
-        0x7f090457 -> :sswitch_4
-        0x7f090555 -> :sswitch_2
+        0x7f090438 -> :sswitch_1
+        0x7f090439 -> :sswitch_5
+        0x7f09043a -> :sswitch_5
+        0x7f09043b -> :sswitch_5
+        0x7f09044f -> :sswitch_0
+        0x7f090450 -> :sswitch_3
+        0x7f090451 -> :sswitch_6
+        0x7f09045e -> :sswitch_4
+        0x7f09055f -> :sswitch_2
     .end sparse-switch
 .end method

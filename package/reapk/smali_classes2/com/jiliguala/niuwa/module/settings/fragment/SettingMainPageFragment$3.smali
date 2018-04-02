@@ -67,11 +67,11 @@
 
     .line 724
     .local v3, "ver":I
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/s/a;->a()Lcom/jiliguala/niuwa/logic/s/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/s/a;->c()I
+    invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/t/a;->c()I
 
     move-result v2
 

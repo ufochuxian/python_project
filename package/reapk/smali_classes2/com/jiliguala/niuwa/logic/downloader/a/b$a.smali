@@ -299,6 +299,7 @@
     .line 142
     invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
+    .line 144
     :cond_7
     throw v1
 .end method

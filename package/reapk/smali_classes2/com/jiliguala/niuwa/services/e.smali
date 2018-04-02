@@ -374,7 +374,7 @@
     .line 122
     iget-object v5, p0, Lcom/jiliguala/niuwa/services/e;->b:Landroid/content/Context;
 
-    const v8, 0x7f0b0166
+    const v8, 0x7f0b016b
 
     const/4 v9, 0x0
 
@@ -386,7 +386,7 @@
 
     .line 125
     .local v7, "view":Lcom/jiliguala/niuwa/common/widget/viewcontainer/ViewContainer;
-    const v5, 0x7f0903f3
+    const v5, 0x7f0903fa
 
     invoke-virtual {v7, v5}, Lcom/jiliguala/niuwa/common/widget/viewcontainer/ViewContainer;->findViewById(I)Landroid/view/View;
 
@@ -407,7 +407,7 @@
     iput-object v7, p0, Lcom/jiliguala/niuwa/services/e;->c:Lcom/jiliguala/niuwa/common/widget/viewcontainer/ViewContainer;
 
     .line 129
-    const v5, 0x7f0903f2
+    const v5, 0x7f0903f9
 
     invoke-virtual {v7, v5}, Lcom/jiliguala/niuwa/common/widget/viewcontainer/ViewContainer;->findViewById(I)Landroid/view/View;
 

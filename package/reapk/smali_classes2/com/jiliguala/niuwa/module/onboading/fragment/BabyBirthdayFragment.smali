@@ -167,7 +167,7 @@
     .line 104
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/BabyBirthdayFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09025c
+    const v1, 0x7f090261
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -725,7 +725,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f0900c9 -> :sswitch_0
-        0x7f09025c -> :sswitch_1
+        0x7f090261 -> :sswitch_1
     .end sparse-switch
 .end method
 

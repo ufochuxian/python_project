@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 213
+    .line 216
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .end annotation
 
     .prologue
-    .line 218
+    .line 221
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
@@ -59,7 +59,7 @@
 
     iput-object v1, v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->dialog:Lcom/jiliguala/niuwa/common/a/g;
 
-    .line 219
+    .line 222
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -76,19 +76,19 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->requestLessonContent(Ljava/lang/String;)V
 
-    .line 220
+    .line 223
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$100(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
-    .line 222
+    .line 225
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 223
+    .line 226
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mSurfaceView:Landroid/view/SurfaceView;
@@ -99,11 +99,11 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 227
+    .line 230
     :goto_0
     return-void
 
-    .line 225
+    .line 228
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$1;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 

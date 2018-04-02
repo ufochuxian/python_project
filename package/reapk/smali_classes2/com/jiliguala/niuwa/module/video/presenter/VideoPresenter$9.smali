@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 1346
+    .line 1354
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$9;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 1360
+    .line 1368
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .locals 0
 
     .prologue
-    .line 1350
+    .line 1358
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1355
+    .line 1363
     return-void
 .end method
 
@@ -73,7 +73,7 @@
     .locals 0
 
     .prologue
-    .line 1346
+    .line 1354
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$9;->a(Ljava/lang/Void;)V

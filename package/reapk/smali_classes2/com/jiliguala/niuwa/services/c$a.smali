@@ -40,19 +40,19 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 533
+    .line 561
     iput-object p1, p0, Lcom/jiliguala/niuwa/services/c$a;->a:Lcom/jiliguala/niuwa/services/c;
 
-    .line 535
+    .line 563
     invoke-direct {p0, p2, p3}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 530
+    .line 558
     iput v0, p0, Lcom/jiliguala/niuwa/services/c$a;->c:I
 
-    .line 531
+    .line 559
     iput v0, p0, Lcom/jiliguala/niuwa/services/c$a;->d:I
 
-    .line 536
+    .line 564
     return-void
 .end method
 
@@ -70,17 +70,17 @@
     .end annotation
 
     .prologue
-    .line 541
+    .line 569
     invoke-super {p0, p1, p2, p3}, Ljava/io/RandomAccessFile;->write([BII)V
 
-    .line 542
+    .line 570
     iget v0, p0, Lcom/jiliguala/niuwa/services/c$a;->c:I
 
     add-int/2addr v0, p3
 
     iput v0, p0, Lcom/jiliguala/niuwa/services/c$a;->c:I
 
-    .line 543
+    .line 571
     iget v0, p0, Lcom/jiliguala/niuwa/services/c$a;->c:I
 
     iget v1, p0, Lcom/jiliguala/niuwa/services/c$a;->d:I
@@ -91,12 +91,12 @@
 
     if-le v0, v1, :cond_0
 
-    .line 544
+    .line 572
     iget v0, p0, Lcom/jiliguala/niuwa/services/c$a;->c:I
 
     iput v0, p0, Lcom/jiliguala/niuwa/services/c$a;->d:I
 
-    .line 546
+    .line 574
     iget-object v0, p0, Lcom/jiliguala/niuwa/services/c$a;->a:Lcom/jiliguala/niuwa/services/c;
 
     const/4 v1, 0x1
@@ -115,7 +115,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/services/c;->a(Lcom/jiliguala/niuwa/services/c;[Ljava/lang/Object;)V
 
-    .line 548
+    .line 576
     :cond_0
     return-void
 .end method

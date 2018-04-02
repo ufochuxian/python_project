@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 567
+    .line 571
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 570
+    .line 574
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
@@ -63,7 +63,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/view/View;)V
 
-    .line 571
+    .line 575
     return-void
 .end method
 
@@ -71,7 +71,7 @@
     .locals 0
 
     .prologue
-    .line 567
+    .line 571
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$20;->a(Ljava/lang/Void;)V

@@ -102,9 +102,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/story/QualityStoryFragment;
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 92
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/story/QualityStoryPayPageActiivty;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -575,7 +575,7 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/story/QualityStoryPayPageActiivty;->setContentView(I)V
 
     .line 65
-    const v0, 0x7f090595
+    const v0, 0x7f09059f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/story/QualityStoryPayPageActiivty;->findViewById(I)Landroid/view/View;
 
@@ -761,7 +761,7 @@
     .line 171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryPayPageActiivty;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/h;
 
-    const v1, 0x7f080413
+    const v1, 0x7f080420
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/h;->c(I)V
 

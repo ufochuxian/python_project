@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 2242
+    .line 2281
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$3;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$3;->a:Landroid/app/Dialog;
@@ -42,29 +42,38 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 2
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 2245
+    .line 2284
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$3;->a:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 2246
+    .line 2285
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$3;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->finish()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
-    .line 2247
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2286
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$3;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    const v1, 0x7f010012
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
-    const v2, 0x7f01001e
+    move-result-object v0
 
-    invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->overridePendingTransition(II)V
+    check-cast v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
-    .line 2248
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext(Z)V
+
+    .line 2288
+    :cond_0
     return-void
 .end method

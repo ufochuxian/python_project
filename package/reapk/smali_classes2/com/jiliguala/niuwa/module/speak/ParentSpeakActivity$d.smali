@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 1765
+    .line 1793
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 1766
+    .line 1794
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$d;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1767
+    .line 1795
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1771
+    .line 1799
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -72,12 +72,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 1772
+    .line 1800
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1773
+    .line 1801
     .local v0, "action":Ljava/lang/String;
     const-string v1, "android.intent.action.SCREEN_OFF"
 
@@ -87,7 +87,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1775
+    .line 1803
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$d;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -98,13 +98,13 @@
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;->access$2600(Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;)V
 
-    .line 1780
+    .line 1808
     .end local v0    # "action":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 1776
+    .line 1804
     .restart local v0    # "action":Ljava/lang/String;
     :cond_1
     const-string v1, "android.intent.action.SCREEN_ON"

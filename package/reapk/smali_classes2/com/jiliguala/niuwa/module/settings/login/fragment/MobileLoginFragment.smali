@@ -164,9 +164,9 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 191
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->getContext()Landroid/content/Context;
@@ -208,7 +208,7 @@
     if-nez v2, :cond_0
 
     .line 196
-    const v2, 0x7f090477
+    const v2, 0x7f090480
 
     sget-object v3, Lcom/jiliguala/niuwa/module/onboading/fragment/MobilePhoneFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -313,7 +313,7 @@
         0x7f09002f -> :sswitch_3
         0x7f090096 -> :sswitch_1
         0x7f09021b -> :sswitch_2
-        0x7f0905e6 -> :sswitch_0
+        0x7f0905f0 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -346,7 +346,7 @@
     .line 75
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0905e6
+    const v2, 0x7f0905f0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -382,7 +382,7 @@
     .line 81
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f090344
+    const v2, 0x7f09034b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -395,7 +395,7 @@
     .line 82
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/login/fragment/MobileLoginFragment;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f09041f
+    const v2, 0x7f090426
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     .prologue
-    .line 88
+    .line 89
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 91
+    .line 92
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -50,7 +50,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 93
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -59,7 +59,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->onEncodeStart()V
 
-    .line 94
+    .line 95
     :cond_0
     return-void
 .end method
@@ -68,7 +68,7 @@
     .locals 1
 
     .prologue
-    .line 98
+    .line 99
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -77,7 +77,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 99
+    .line 100
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -86,7 +86,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->onEncodeEnd()V
 
-    .line 101
+    .line 102
     :cond_0
     return-void
 .end method
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 105
+    .line 106
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -104,7 +104,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 106
+    .line 107
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -113,7 +113,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->onEncodePermissionError()V
 
-    .line 107
+    .line 108
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter$4;->a:Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;->access$000(Lcom/jiliguala/niuwa/module/speak/presenter/ParentSpeakPresenter;)Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;
@@ -122,7 +122,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/presenter/SpeakView;->cancelCurrentAudioRecord()V
 
-    .line 109
+    .line 110
     :cond_0
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/jiliguala/niuwa/logic/t/a/a;
+.implements Lcom/jiliguala/niuwa/logic/u/a/a;
 
 
 # annotations

@@ -388,6 +388,7 @@
     :catchall_0
     move-exception v0
 
+    .line 193
     throw v0
 .end method
 
@@ -426,6 +427,7 @@
     :catchall_0
     move-exception v0
 
+    .line 204
     throw v0
 
     .line 201

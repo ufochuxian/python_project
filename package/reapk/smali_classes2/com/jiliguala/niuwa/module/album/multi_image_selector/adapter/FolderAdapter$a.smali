@@ -50,7 +50,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/FolderAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 123
-    const v0, 0x7f090378
+    const v0, 0x7f09037f
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/FolderAdapter$a;->b:Landroid/widget/TextView;
 
     .line 124
-    const v0, 0x7f0904f7
+    const v0, 0x7f090501
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -72,7 +72,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/adapter/FolderAdapter$a;->c:Landroid/widget/TextView;
 
     .line 125
-    const v0, 0x7f09028a
+    const v0, 0x7f09028f
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080143
+    const v1, 0x7f080145
 
     invoke-virtual {v0, v1}, Lcom/squareup/picasso/w;->a(I)Lcom/squareup/picasso/w;
 

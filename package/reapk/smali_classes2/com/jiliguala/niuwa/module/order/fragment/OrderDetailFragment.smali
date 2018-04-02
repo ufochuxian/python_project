@@ -202,7 +202,7 @@
 
     .prologue
     .line 108
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -218,7 +218,7 @@
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/customview/SuperView;->setOnErrorClickListener(Lcom/jiliguala/niuwa/common/widget/customview/b;)V
 
     .line 110
-    const v0, 0x7f090378
+    const v0, 0x7f09037f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -229,7 +229,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mName:Landroid/widget/TextView;
 
     .line 111
-    const v0, 0x7f0903da
+    const v0, 0x7f0903e1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -251,7 +251,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mAddress:Landroid/widget/TextView;
 
     .line 113
-    const v0, 0x7f0903ab
+    const v0, 0x7f0903b2
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -262,7 +262,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mOrderNumberTv:Landroid/widget/TextView;
 
     .line 114
-    const v0, 0x7f0903a9
+    const v0, 0x7f0903b0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -273,7 +273,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mDateTv:Landroid/widget/TextView;
 
     .line 115
-    const v0, 0x7f0903a8
+    const v0, 0x7f0903af
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -289,7 +289,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 117
-    const v0, 0x7f090273
+    const v0, 0x7f090278
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -300,7 +300,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mIcon:Landroid/widget/ImageView;
 
     .line 118
-    const v0, 0x7f0905b5
+    const v0, 0x7f0905bf
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -311,7 +311,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mTitle:Landroid/widget/TextView;
 
     .line 119
-    const v0, 0x7f0903fc
+    const v0, 0x7f090403
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -333,7 +333,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mCount:Landroid/widget/TextView;
 
     .line 121
-    const v0, 0x7f09052d
+    const v0, 0x7f090537
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mMoneyTxt:Landroid/widget/TextView;
 
     .line 122
-    const v0, 0x7f09022d
+    const v0, 0x7f09022c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -355,7 +355,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mFreightMoney:Landroid/widget/TextView;
 
     .line 123
-    const v0, 0x7f0905ab
+    const v0, 0x7f0905b5
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -377,7 +377,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/order/fragment/OrderDetailFragment;->mAddAddressTv:Landroid/widget/TextView;
 
     .line 125
-    const v0, 0x7f090443
+    const v0, 0x7f09044a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -557,7 +557,7 @@
     .sparse-switch
         0x7f0900c7 -> :sswitch_2
         0x7f0901ad -> :sswitch_1
-        0x7f0903a8 -> :sswitch_0
+        0x7f0903af -> :sswitch_0
     .end sparse-switch
 .end method
 

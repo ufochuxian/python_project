@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     .prologue
-    .line 630
+    .line 666
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/game/GameActivity$4;->a:Lcom/jiliguala/niuwa/module/game/GameActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
     .param p1, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 634
+    .line 670
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 0
 
     .prologue
-    .line 630
+    .line 666
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/game/GameActivity$4;->a(Ljava/lang/String;)V

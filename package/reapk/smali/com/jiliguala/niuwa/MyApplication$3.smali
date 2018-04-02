@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/MyApplication;
 
     .prologue
-    .line 234
+    .line 243
     iput-object p1, p0, Lcom/jiliguala/niuwa/MyApplication$3;->a:Lcom/jiliguala/niuwa/MyApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
     .end annotation
 
     .prologue
-    .line 238
+    .line 247
     const/4 v0, 0x0
 
     return-object v0

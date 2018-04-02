@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/roadmap_speak_bg" n1:visibility="visible" n1:layout_width="200.0dip" n1:layout_height="200.0dip" n1:layout_marginBottom="-125.0dip" n1:src="@drawable/speaking_bg_status1" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <ImageView n1:id="@id/roadmap_speak_record" n1:clickable="false" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginBottom="-20.0dip" n1:src="@drawable/icon_speaking" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <ImageView n1:id="@id/roadmap_speak_volume" n1:layout_width="100.0dip" n1:layout_height="50.0dip" n1:src="@drawable/sound_wave0" n1:layout_above="@id/roadmap_speak_record" n1:layout_centerHorizontal="true" />
+    <View n1:id="@id/place_holder" n1:layout_width="1.0dip" n1:layout_height="10.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <ImageView n1:id="@id/indicator" n1:background="@drawable/hand" n1:visibility="gone" n1:clickable="false" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="55.0dip" n1:layout_marginBottom="5.0dip" n1:layout_toRightOf="@id/place_holder" n1:layout_alignParentBottom="true" />
+    <com.jiliguala.niuwa.module.speak.view.FadeInFadeOutNextButton n1:id="@id/fade_in_fade_out_btn" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:layout_marginBottom="15.0dip" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" n1:layout_alignParentEnd="true" />
+    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:id="@id/next_step_tv" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="0.0dip" n1:text="下一步" n1:layout_below="@id/fade_in_fade_out_btn" n1:layout_alignLeft="@id/fade_in_fade_out_btn" n1:layout_alignRight="@id/fade_in_fade_out_btn" n1:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -144,7 +144,7 @@
     .line 67
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/order/adapter/OrderListAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0b00ef
+    const v4, 0x7f0b00f0
 
     const/4 v5, 0x0
 
@@ -159,7 +159,7 @@
 
     .line 69
     .local v2, "viewHolder":Lcom/jiliguala/niuwa/module/order/adapter/OrderListAdapter$a;
-    const v3, 0x7f090273
+    const v3, 0x7f090278
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     iput-object v3, v2, Lcom/jiliguala/niuwa/module/order/adapter/OrderListAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 70
-    const v3, 0x7f0905b5
+    const v3, 0x7f0905bf
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -181,7 +181,7 @@
     iput-object v3, v2, Lcom/jiliguala/niuwa/module/order/adapter/OrderListAdapter$a;->b:Landroid/widget/TextView;
 
     .line 71
-    const v3, 0x7f0903fc
+    const v3, 0x7f090403
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

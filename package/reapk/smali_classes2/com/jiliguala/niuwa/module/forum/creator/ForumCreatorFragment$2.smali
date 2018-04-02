@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034a
+    const v1, 0x7f080354
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034a
+    const v1, 0x7f080354
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034b
+    const v1, 0x7f080355
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -295,7 +295,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034a
+    const v1, 0x7f080354
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -363,7 +363,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034a
+    const v1, 0x7f080354
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -432,7 +432,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0801fb
+    const v2, 0x7f080205
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -613,7 +613,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080194
+    const v1, 0x7f080198
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

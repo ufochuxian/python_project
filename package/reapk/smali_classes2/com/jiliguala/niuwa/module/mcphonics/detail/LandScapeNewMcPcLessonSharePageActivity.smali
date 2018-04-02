@@ -21,7 +21,7 @@
 
     .prologue
     .line 14
-    const v0, 0x7f0b0101
+    const v0, 0x7f0b0102
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mcphonics/detail/LandScapeNewMcPcLessonSharePageActivity;->setContentView(I)V
 

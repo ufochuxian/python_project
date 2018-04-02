@@ -283,7 +283,7 @@
     .line 163
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09048b
+    const v1, 0x7f090495
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -296,7 +296,7 @@
     .line 165
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090596
+    const v1, 0x7f0905a0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -309,7 +309,7 @@
     .line 167
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090260
+    const v1, 0x7f090265
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -322,7 +322,7 @@
     .line 169
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0905f4
+    const v1, 0x7f0905fe
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -335,7 +335,7 @@
     .line 171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0905f5
+    const v1, 0x7f0905ff
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -358,7 +358,7 @@
     .line 177
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0902e6
+    const v1, 0x7f0902ed
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -376,7 +376,7 @@
     .line 181
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f090273
+    const v1, 0x7f090278
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -389,7 +389,7 @@
     .line 183
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09057a
+    const v1, 0x7f090584
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -415,7 +415,7 @@
     .line 187
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0903fc
+    const v1, 0x7f090403
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -428,7 +428,7 @@
     .line 189
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0903ae
+    const v1, 0x7f0903b5
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -485,7 +485,7 @@
     .line 202
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0905f7
+    const v1, 0x7f090601
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -766,7 +766,7 @@
     .line 301
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mVideoPlayPause:Landroid/widget/ImageView;
 
-    const v1, 0x7f080098
+    const v1, 0x7f08009a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2614,7 +2614,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f060058
+    const v3, 0x7f06005a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2901,8 +2901,8 @@
     :sswitch_data_0
     .sparse-switch
         0x7f0900e4 -> :sswitch_0
-        0x7f0905f5 -> :sswitch_1
-        0x7f0905f7 -> :sswitch_2
+        0x7f0905ff -> :sswitch_1
+        0x7f090601 -> :sswitch_2
     .end sparse-switch
 .end method
 
@@ -3150,7 +3150,7 @@
     .line 762
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mVideoPlayPause:Landroid/widget/ImageView;
 
-    const v1, 0x7f08009a
+    const v1, 0x7f08009c
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3216,7 +3216,7 @@
     .line 615
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mVideoPlayPause:Landroid/widget/ImageView;
 
-    const v1, 0x7f08009d
+    const v1, 0x7f08009f
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3316,7 +3316,7 @@
     .line 316
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mVideoPlayPause:Landroid/widget/ImageView;
 
-    const v1, 0x7f08009a
+    const v1, 0x7f08009c
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3492,7 +3492,7 @@
     .line 286
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/detail/InteractLessonDetailFragment;->mVideoPlayPause:Landroid/widget/ImageView;
 
-    const v1, 0x7f080098
+    const v1, 0x7f08009a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

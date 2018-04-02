@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 1387
+    .line 1395
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->a:Ljava/lang/String;
@@ -52,7 +52,7 @@
     .param p1, "unitDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    .line 1402
+    .line 1410
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -63,7 +63,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1403
+    .line 1411
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -74,7 +74,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 1405
+    .line 1413
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -87,7 +87,7 @@
 
     invoke-interface {v0, p1, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSubCourseReportSucceed(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;Ljava/lang/String;)V
 
-    .line 1407
+    .line 1415
     :cond_0
     return-void
 .end method
@@ -96,7 +96,7 @@
     .locals 0
 
     .prologue
-    .line 1391
+    .line 1399
     return-void
 .end method
 
@@ -105,7 +105,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 1395
+    .line 1403
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -114,7 +114,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1396
+    .line 1404
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->b:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -125,7 +125,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSubCourseReportFailed()V
 
-    .line 1398
+    .line 1406
     :cond_0
     return-void
 .end method
@@ -134,7 +134,7 @@
     .locals 0
 
     .prologue
-    .line 1387
+    .line 1395
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;->a(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V

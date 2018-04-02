@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:columnCount="3" n1:useDefaultMargins="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Max heap size" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_max_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <Space />
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Current heap size" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_current_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <TextView n1:id="@id/memory_current_heap_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Unused heap size" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_free_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <TextView n1:id="@id/memory_free_heap_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Actual memory in use" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_actual_used" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <TextView n1:id="@id/memory_actual_used_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="In-memory image cache" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_image_cache" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <TextView n1:id="@id/memory_image_cache_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Other allocations" />
+    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_other_allocations" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+    <TextView n1:id="@id/memory_other_allocations_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+</GridLayout>

@@ -258,7 +258,7 @@
 
     move-result-object v6
 
-    invoke-direct {v1, v5, p3, v6}, Lcom/github/sahasbhop/a/a;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/net/Uri;)V
+    invoke-direct {v1, v5, p3, v6, p1}, Lcom/github/sahasbhop/a/a;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/net/Uri;Ljava/lang/String;)V
 
     .local v1, "drawable":Lcom/github/sahasbhop/a/a;
     move-object v5, p2

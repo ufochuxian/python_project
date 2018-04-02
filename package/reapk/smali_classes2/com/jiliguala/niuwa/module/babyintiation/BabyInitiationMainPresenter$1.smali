@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     .prologue
-    .line 69
+    .line 67
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,14 +48,14 @@
     .param p1, "homeTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;
 
     .prologue
-    .line 82
+    .line 80
     if-eqz p1, :cond_0
 
     iget-object v0, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 81
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -68,7 +68,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainUi;->showData(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;)V
 
-    .line 84
+    .line 82
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -77,7 +77,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$000(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;Ljava/util/List;)V
 
-    .line 85
+    .line 83
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -86,7 +86,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter;Ljava/util/List;)V
 
-    .line 87
+    .line 85
     :cond_0
     return-void
 .end method
@@ -95,7 +95,7 @@
     .locals 0
 
     .prologue
-    .line 73
+    .line 71
     return-void
 .end method
 
@@ -104,7 +104,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 78
+    .line 76
     return-void
 .end method
 
@@ -112,7 +112,7 @@
     .locals 0
 
     .prologue
-    .line 69
+    .line 67
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainPresenter$1;->a(Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate;)V

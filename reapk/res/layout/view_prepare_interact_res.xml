@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/download_default_ui_container" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_centerHorizontal="true">
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar n1:id="@id/circular_progressbar" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_centerInParent="true" n2:cpb_background_progressbar_color="#4dffffff" n2:cpb_background_progressbar_width="4.0dip" n2:cpb_progressbar_color="#ffffffff" n2:cpb_progressbar_width="2.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/content_container" n1:layout_width="90.0dip" n1:layout_height="90.0dip" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/play_btn" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:src="@drawable/card_icon_interaction" n1:layout_centerInParent="true" />
+            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/transparent_black" n1:id="@id/text_desc" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/type_desc_interact" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/game_download_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/icon_apng" n1:background="@drawable/circle_white_75" n1:layout_width="150.0dip" n1:layout_height="150.0dip" n1:layout_centerInParent="true" />
+        <com.liulishuo.magicprogresswidget.MagicProgressBar n1:id="@id/magicProgress" n1:layout_width="300.0dip" n1:layout_height="6.0dip" n1:layout_marginTop="20.0dip" n1:layout_below="@id/icon_apng" n1:layout_centerInParent="true" n3:mpb_background_color="@color/transparent" n3:mpb_fill_color="@color/white" n3:mpb_flat="false" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -69,8 +69,10 @@
 
 .field public static final o:I = 0x6
 
-.field public static final p:I = 0x12c
+.field public static final p:I = 0x7
 
-.field public static final q:I = 0x1000
+.field public static final q:I = 0x12c
 
-.field public static final r:I = 0xbb8
+.field public static final r:I = 0x1000
+
+.field public static final s:I = 0xbb8

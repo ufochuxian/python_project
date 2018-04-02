@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final yzappsdk_url:I = 0x7f040249
+.field public static final yzappsdk_url:I = 0x7f04024a
 
 
 # direct methods

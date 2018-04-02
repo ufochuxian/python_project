@@ -109,7 +109,7 @@
     .line 54
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/order/adapter/TracesAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00fe
+    const v3, 0x7f0b00ff
 
     const/4 v4, 0x0
 
@@ -124,7 +124,7 @@
 
     .line 56
     .local v1, "viewHolder":Lcom/jiliguala/niuwa/module/order/adapter/TracesAdapter$ViewHolder;
-    const v2, 0x7f0905b0
+    const v2, 0x7f0905ba
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -135,7 +135,7 @@
     iput-object v2, v1, Lcom/jiliguala/niuwa/module/order/adapter/TracesAdapter$ViewHolder;->mDescText:Landroid/widget/TextView;
 
     .line 57
-    const v2, 0x7f0905b1
+    const v2, 0x7f0905bb
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -163,7 +163,7 @@
 
     if-nez p1, :cond_1
 
-    const v2, 0x7f080307
+    const v2, 0x7f080311
 
     :goto_1
     invoke-virtual {v3, v2}, Landroid/view/View;->setBackgroundResource(I)V
@@ -214,7 +214,7 @@
 
     .line 63
     :cond_1
-    const v2, 0x7f080306
+    const v2, 0x7f080310
 
     goto :goto_1
 .end method

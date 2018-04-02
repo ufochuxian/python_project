@@ -1082,7 +1082,7 @@
 
     .line 228
     .local v56, "other_allocations_percent":D
-    const v2, 0x7f09032e
+    const v2, 0x7f090335
 
     invoke-static/range {v52 .. v53}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1091,7 +1091,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 229
-    const v2, 0x7f090328
+    const v2, 0x7f09032f
 
     invoke-static/range {v38 .. v39}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1100,7 +1100,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 230
-    const v2, 0x7f09032a
+    const v2, 0x7f090331
 
     invoke-static/range {v42 .. v43}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1109,7 +1109,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 231
-    const v2, 0x7f090326
+    const v2, 0x7f09032d
 
     invoke-static/range {v30 .. v31}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1118,7 +1118,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 232
-    const v2, 0x7f09032c
+    const v2, 0x7f090333
 
     invoke-static/range {v46 .. v47}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1127,7 +1127,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 233
-    const v2, 0x7f09032f
+    const v2, 0x7f090336
 
     invoke-static/range {v54 .. v55}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatBytesAsMegabytes(J)Ljava/lang/String;
 
@@ -1136,7 +1136,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 235
-    const v2, 0x7f090329
+    const v2, 0x7f090330
 
     invoke-static/range {v40 .. v41}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatPercentageInBrackets(D)Ljava/lang/String;
 
@@ -1145,7 +1145,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 236
-    const v2, 0x7f09032b
+    const v2, 0x7f090332
 
     invoke-static/range {v44 .. v45}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatPercentageInBrackets(D)Ljava/lang/String;
 
@@ -1154,7 +1154,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 237
-    const v2, 0x7f090327
+    const v2, 0x7f09032e
 
     invoke-static/range {v32 .. v33}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatPercentageInBrackets(D)Ljava/lang/String;
 
@@ -1163,7 +1163,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 238
-    const v2, 0x7f09032d
+    const v2, 0x7f090334
 
     invoke-static/range {v48 .. v49}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatPercentageInBrackets(D)Ljava/lang/String;
 
@@ -1172,7 +1172,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 239
-    const v2, 0x7f090330
+    const v2, 0x7f090337
 
     invoke-static/range {v56 .. v57}, Lcom/jiliguala/niuwa/module/story/helpers/FormattingHelper;->formatPercentageInBrackets(D)Ljava/lang/String;
 
@@ -1181,7 +1181,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 243
-    const v2, 0x7f0904be
+    const v2, 0x7f0904c8
 
     const-string v4, "%d (%d today)"
 
@@ -1218,7 +1218,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 246
-    const v2, 0x7f0904bb
+    const v2, 0x7f0904c5
 
     const-string v4, "%d (%d today)"
 
@@ -1255,7 +1255,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 248
-    const v2, 0x7f0904bc
+    const v2, 0x7f0904c6
 
     const-string v4, "%d (%d today)"
 
@@ -1292,7 +1292,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 250
-    const v2, 0x7f0904bd
+    const v2, 0x7f0904c7
 
     invoke-virtual/range {v34 .. v34}, Lcom/jiliguala/niuwa/MyApplication;->getOnceManager()Lcom/jiliguala/niuwa/module/story/helpers/OnceManager;
 
@@ -1309,7 +1309,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 252
-    const v2, 0x7f0904ba
+    const v2, 0x7f0904c4
 
     invoke-virtual/range {v34 .. v34}, Lcom/jiliguala/niuwa/MyApplication;->getInstallDate()Lorg/joda/time/DateTime;
 
@@ -1322,7 +1322,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 257
-    const v2, 0x7f09053d
+    const v2, 0x7f090547
 
     invoke-virtual/range {v51 .. v51}, Lcom/jiliguala/niuwa/module/story/helpers/SupportHelper;->getSupportString()Ljava/lang/String;
 
@@ -1390,7 +1390,7 @@
     invoke-virtual {v3, v4, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 277
-    const v4, 0x7f09040c
+    const v4, 0x7f090413
 
     sget-boolean v2, Lcom/jiliguala/niuwa/module/story/helpers/PublishingHelper;->sShowPublished:Z
 
@@ -1402,7 +1402,7 @@
     invoke-virtual {v3, v4, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 278
-    const v4, 0x7f09040d
+    const v4, 0x7f090414
 
     sget-boolean v2, Lcom/jiliguala/niuwa/module/story/helpers/PublishingHelper;->sShowUnpublished:Z
 
@@ -1424,7 +1424,7 @@
 
     .line 283
     .local v50, "liveStats":Lcom/jiliguala/niuwa/module/story/data/LiveDataManager$Statistics;
-    const v2, 0x7f0902df
+    const v2, 0x7f0902e6
 
     move-object/from16 v0, v50
 
@@ -1437,7 +1437,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 284
-    const v2, 0x7f0902db
+    const v2, 0x7f0902e2
 
     move-object/from16 v0, v50
 
@@ -1450,7 +1450,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 285
-    const v2, 0x7f0902dc
+    const v2, 0x7f0902e3
 
     move-object/from16 v0, v50
 
@@ -1463,7 +1463,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 286
-    const v2, 0x7f0902dd
+    const v2, 0x7f0902e4
 
     move-object/from16 v0, v50
 
@@ -1476,7 +1476,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 287
-    const v2, 0x7f0902de
+    const v2, 0x7f0902e5
 
     move-object/from16 v0, v50
 
@@ -2134,7 +2134,7 @@
         0x7f0900e1 -> :sswitch_2
         0x7f0900e2 -> :sswitch_0
         0x7f0900e3 -> :sswitch_1
-        0x7f090543 -> :sswitch_7
+        0x7f09054d -> :sswitch_7
     .end sparse-switch
 .end method
 

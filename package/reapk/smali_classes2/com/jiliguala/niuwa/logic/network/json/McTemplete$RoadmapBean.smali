@@ -62,7 +62,7 @@
     .locals 0
 
     .prologue
-    .line 112
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -74,7 +74,7 @@
     .locals 1
 
     .prologue
-    .line 175
+    .line 179
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->pay:Z
 
     return v0
@@ -84,7 +84,7 @@
     .locals 2
 
     .prologue
-    .line 167
+    .line 171
     const-string v0, "completed"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->status:Ljava/lang/String;
@@ -100,7 +100,7 @@
     .locals 2
 
     .prologue
-    .line 154
+    .line 158
     const-string v0, "current"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->status:Ljava/lang/String;
@@ -116,7 +116,7 @@
     .locals 2
 
     .prologue
-    .line 146
+    .line 150
     const-string v0, "footer"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->tag:Ljava/lang/String;
@@ -132,7 +132,7 @@
     .locals 2
 
     .prologue
-    .line 142
+    .line 146
     const-string v0, "header"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->tag:Ljava/lang/String;
@@ -148,7 +148,7 @@
     .locals 2
 
     .prologue
-    .line 158
+    .line 162
     const-string v0, "locked"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->status:Ljava/lang/String;
@@ -164,7 +164,7 @@
     .locals 2
 
     .prologue
-    .line 183
+    .line 187
     const-string v0, "normal"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->progress:Ljava/lang/String;
@@ -180,7 +180,7 @@
     .locals 2
 
     .prologue
-    .line 163
+    .line 167
     const-string v0, "oneVone"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->status:Ljava/lang/String;
@@ -196,7 +196,7 @@
     .locals 2
 
     .prologue
-    .line 179
+    .line 183
     const-string v0, "perfect"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->progress:Ljava/lang/String;
@@ -212,7 +212,7 @@
     .locals 2
 
     .prologue
-    .line 171
+    .line 175
     const-string v0, "stop"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->status:Ljava/lang/String;
@@ -229,9 +229,9 @@
     .param p1, "tag"    # Ljava/lang/String;
 
     .prologue
-    .line 150
+    .line 154
     iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/json/McTemplete$RoadmapBean;->tag:Ljava/lang/String;
 
-    .line 151
+    .line 155
     return-void
 .end method

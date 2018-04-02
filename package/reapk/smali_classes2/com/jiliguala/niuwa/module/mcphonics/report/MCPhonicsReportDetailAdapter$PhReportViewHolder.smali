@@ -61,31 +61,31 @@
 
 .field moreExpandWord:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09035a
+        a = 0x7f090361
     .end annotation
 .end field
 
 .field moreExpandWordContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09035b
+        a = 0x7f090362
     .end annotation
 .end field
 
 .field moreExpandWordTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09035c
+        a = 0x7f090363
     .end annotation
 .end field
 
 .field pronunciation:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090409
+        a = 0x7f090410
     .end annotation
 .end field
 
 .field pronunciationTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09040a
+        a = 0x7f090411
     .end annotation
 .end field
 

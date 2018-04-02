@@ -1173,5 +1173,6 @@
     .line 474
     invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
+    .line 476
     throw v0
 .end method

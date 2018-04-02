@@ -23,7 +23,7 @@
     .locals 2
 
     .prologue
-    .line 196
+    .line 198
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/g;
 
     const/4 v1, 0x0
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 195
+    .line 197
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

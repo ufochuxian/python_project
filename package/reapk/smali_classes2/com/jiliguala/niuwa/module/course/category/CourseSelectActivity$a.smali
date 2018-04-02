@@ -104,7 +104,7 @@
     .line 478
     iget-object v1, p1, Lcom/jiliguala/niuwa/module/course/category/CourseSelectActivity$b;->a:Landroid/widget/TextView;
 
-    const v2, 0x7f080172
+    const v2, 0x7f080174
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundResource(I)V
 

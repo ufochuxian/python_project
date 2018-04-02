@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="10.0dip" n1:paddingTop="0.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/channel_list_min_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/place_holder" n1:background="@drawable/cd_list_placeholder" n1:layout_width="@dimen/channel_list_image_width" n1:layout_height="@dimen/channel_list_image_width" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="10.0dip" n1:layout_centerVertical="true" />
+    <com.jiliguala.niuwa.common.widget.SmallRoundRecyclingImageView n1:id="@id/iv_channel_cover" n1:layout_width="@dimen/channel_list_image_width" n1:layout_height="@dimen/channel_list_image_width" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="10.0dip" n1:scaleType="centerCrop" n1:layout_centerVertical="true" />
+    <FrameLayout n1:id="@id/download_state_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+        <ImageView n1:layout_gravity="center" n1:id="@id/download_state_iv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ProgressBar n1:layout_gravity="center" n1:id="@id/progress_circle" n1:padding="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+    </FrameLayout>
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@android:color/white" n1:id="@id/channel_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="系列名称" n1:maxLines="2" n1:layout_toLeftOf="@id/download_state_container" n1:layout_toRightOf="@id/iv_channel_cover" n1:layout_centerVertical="true" />
+    <ImageView n1:background="@color/divider_dark_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

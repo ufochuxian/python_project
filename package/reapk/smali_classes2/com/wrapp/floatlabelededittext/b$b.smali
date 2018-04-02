@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final color_default_dark_gray:I = 0x7f060050
+.field public static final color_default_dark_gray:I = 0x7f060052
 
-.field public static final color_default_gray:I = 0x7f060051
+.field public static final color_default_gray:I = 0x7f060053
 
-.field public static final color_default_green:I = 0x7f060052
+.field public static final color_default_green:I = 0x7f060054
 
-.field public static final color_disable_gray:I = 0x7f060057
+.field public static final color_disable_gray:I = 0x7f060059
 
-.field public static final image_placeholder_gray:I = 0x7f06009d
+.field public static final image_placeholder_gray:I = 0x7f06009f
 
 
 # direct methods

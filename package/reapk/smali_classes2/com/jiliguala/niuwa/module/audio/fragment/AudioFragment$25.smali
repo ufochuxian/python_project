@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 593
+    .line 597
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$25;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$25;->a:Landroid/app/Dialog;
@@ -50,12 +50,12 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 596
+    .line 600
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$25;->a:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 597
+    .line 601
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$25;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$100(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
@@ -66,17 +66,17 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->confirmUnFavThisSong(Ljava/lang/String;)V
 
-    .line 598
+    .line 602
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$25;->c:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    const v1, 0x7f080123
+    const v1, 0x7f080125
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 599
+    .line 603
     return-void
 .end method

@@ -65,27 +65,27 @@
 
 .field public static final abc_select_dialog_material:I = 0x7f0b001a
 
-.field public static final notification_media_action:I = 0x7f0b014d
+.field public static final notification_media_action:I = 0x7f0b0152
 
-.field public static final notification_media_cancel_action:I = 0x7f0b014e
+.field public static final notification_media_cancel_action:I = 0x7f0b0153
 
-.field public static final notification_template_big_media:I = 0x7f0b014f
+.field public static final notification_template_big_media:I = 0x7f0b0154
 
-.field public static final notification_template_big_media_narrow:I = 0x7f0b0151
+.field public static final notification_template_big_media_narrow:I = 0x7f0b0156
 
-.field public static final notification_template_media:I = 0x7f0b0156
+.field public static final notification_template_media:I = 0x7f0b015b
 
-.field public static final notification_template_part_chronometer:I = 0x7f0b0158
+.field public static final notification_template_part_chronometer:I = 0x7f0b015d
 
-.field public static final notification_template_part_time:I = 0x7f0b0159
+.field public static final notification_template_part_time:I = 0x7f0b015e
 
-.field public static final select_dialog_item_material:I = 0x7f0b0178
+.field public static final select_dialog_item_material:I = 0x7f0b017d
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0b0179
+.field public static final select_dialog_multichoice_material:I = 0x7f0b017e
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0b017a
+.field public static final select_dialog_singlechoice_material:I = 0x7f0b017f
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0b018b
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0b0190
 
 
 # direct methods

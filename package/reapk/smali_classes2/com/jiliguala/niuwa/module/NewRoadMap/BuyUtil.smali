@@ -46,7 +46,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v3, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -155,7 +155,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v4, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v4, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -235,9 +235,9 @@
     check-cast p0, Landroid/app/Activity;
 
     .end local p0    # "ctx":Landroid/content/Context;
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f010013
+    const v4, 0x7f010014
 
     invoke-virtual {p0, v3, v4}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -308,7 +308,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v4, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v4, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -355,9 +355,9 @@
     check-cast p0, Landroid/app/Activity;
 
     .end local p0    # "ctx":Landroid/content/Context;
-    const v3, 0x7f01001d
+    const v3, 0x7f01001f
 
-    const v4, 0x7f010013
+    const v4, 0x7f010014
 
     invoke-virtual {p0, v3, v4}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -443,7 +443,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v6, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v6, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -498,7 +498,7 @@
     .line 54
     const-string v5, "SUSPENSION_BACK_RECOURSE_ID"
 
-    const v6, 0x7f08019a
+    const v6, 0x7f08019e
 
     invoke-virtual {v2, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

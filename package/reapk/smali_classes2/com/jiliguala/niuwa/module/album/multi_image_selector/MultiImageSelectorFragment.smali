@@ -891,7 +891,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/album/multi_image_selector/MultiImageSelectorFragment;->mPopupAnchorView:Landroid/view/View;
 
     .line 237
-    const v2, 0x7f090574
+    const v2, 0x7f09057e
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -936,7 +936,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 263
-    const v2, 0x7f0903fb
+    const v2, 0x7f090402
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -983,7 +983,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 276
-    const v2, 0x7f090241
+    const v2, 0x7f090242
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

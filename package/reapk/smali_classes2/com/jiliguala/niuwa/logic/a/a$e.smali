@@ -77,6 +77,10 @@
 
 .field public static final ad:Ljava/lang/String; = "Parents Score"
 
+.field public static final ae:Ljava/lang/String; = "BUTTON"
+
+.field public static final af:Ljava/lang/String; = "Sublesson"
+
 .field public static final b:Ljava/lang/String; = "Type"
 
 .field public static final c:Ljava/lang/String; = "Age"

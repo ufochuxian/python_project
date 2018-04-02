@@ -77,7 +77,7 @@
     .end annotation
 .end field
 
-.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private mTargetCapacity:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -467,7 +467,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e000e
+    const v2, 0x7f0e000f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->openRawResourceFd(I)Landroid/content/res/AssetFileDescriptor;
 
@@ -502,7 +502,7 @@
 
     .prologue
     .line 66
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mDragView:Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/IDragView;
 
@@ -510,9 +510,9 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 67
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->sourPoolMap:Ljava/util/Map;
@@ -523,11 +523,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v3, 0x7f0e0001
+    const v3, 0x7f0e0002
 
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v2
 
@@ -546,11 +546,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v3, 0x7f0e0002
+    const v3, 0x7f0e0003
 
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v2
 
@@ -1406,14 +1406,14 @@
     .prologue
     .line 123
     :try_start_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v1, :cond_0
 
     .line 124
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 126
     :cond_0
@@ -1461,7 +1461,7 @@
     .prologue
     .line 140
     :try_start_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v1, :cond_0
 
@@ -1469,7 +1469,7 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->stopMediaplayer()V
 
     .line 142
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->sourPoolMap:Ljava/util/Map;
 
@@ -1489,7 +1489,7 @@
 
     move-result v1
 
-    invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1588,7 +1588,7 @@
     .prologue
     .line 101
     :try_start_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v1, :cond_0
 
@@ -1596,7 +1596,7 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->stopMediaplayer()V
 
     .line 103
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->mSoundPoolWrapper:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/drag/DragViewCtrlr;->sourPoolMap:Ljava/util/Map;
 
@@ -1616,7 +1616,7 @@
 
     move-result v1
 
-    invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v2, v1}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

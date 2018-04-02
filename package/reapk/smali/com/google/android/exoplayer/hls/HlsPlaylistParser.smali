@@ -1268,8 +1268,10 @@
 
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
 
+    .line 261
     throw v3
 
+    .line 260
     .restart local v1    # "line":Ljava/lang/String;
     :cond_4
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V

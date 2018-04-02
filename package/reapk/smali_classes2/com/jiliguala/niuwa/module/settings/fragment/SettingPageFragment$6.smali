@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->initUIComponent(Landroid/view/View;)V
+    value = Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->updateBindWeChat()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 707
+    .line 716
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,11 +43,21 @@
     .param p2, "isChecked"    # Z
 
     .prologue
-    .line 710
+    .line 719
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v0, p2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$1800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Z)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$1800(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Z
 
-    .line 711
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 720
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$6;->a:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0, p2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$1900(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Z)V
+
+    .line 722
+    :cond_0
     return-void
 .end method

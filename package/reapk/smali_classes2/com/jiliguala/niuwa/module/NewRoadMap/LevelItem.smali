@@ -632,7 +632,7 @@
     .locals 4
 
     .prologue
-    const v0, 0x7f080155
+    const v0, 0x7f080157
 
     .line 67
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->type:Ljava/lang/String;
@@ -787,55 +787,55 @@
 
     .line 69
     :pswitch_1
-    const v0, 0x7f080161
+    const v0, 0x7f080163
 
     goto :goto_1
 
     .line 71
     :pswitch_2
-    const v0, 0x7f080162
+    const v0, 0x7f080164
 
     goto :goto_1
 
     .line 75
     :pswitch_3
-    const v0, 0x7f080156
+    const v0, 0x7f080158
 
     goto :goto_1
 
     .line 77
     :pswitch_4
-    const v0, 0x7f080157
+    const v0, 0x7f080159
 
     goto :goto_1
 
     .line 79
     :pswitch_5
-    const v0, 0x7f080159
+    const v0, 0x7f08015b
 
     goto :goto_1
 
     .line 81
     :pswitch_6
-    const v0, 0x7f08015c
+    const v0, 0x7f08015e
 
     goto :goto_1
 
     .line 83
     :pswitch_7
-    const v0, 0x7f08015d
+    const v0, 0x7f08015f
 
     goto/16 :goto_1
 
     .line 85
     :pswitch_8
-    const v0, 0x7f08015e
+    const v0, 0x7f080160
 
     goto/16 :goto_1
 
     .line 87
     :pswitch_9
-    const v0, 0x7f08015f
+    const v0, 0x7f080161
 
     goto/16 :goto_1
 

@@ -59,7 +59,7 @@
     .param p1, "course"    # Lcom/jiliguala/niuwa/logic/network/json/RecommendCourseTemplete$Course;
 
     .prologue
-    const v0, 0x7f080139
+    const v0, 0x7f08013b
 
     .line 80
     invoke-virtual {p1}, Lcom/jiliguala/niuwa/logic/network/json/RecommendCourseTemplete$Course;->isPlay()Z
@@ -69,7 +69,7 @@
     if-eqz v1, :cond_1
 
     .line 81
-    const v0, 0x7f08013a
+    const v0, 0x7f08013c
 
     .line 87
     :cond_0
@@ -92,7 +92,7 @@
     if-nez v1, :cond_0
 
     .line 87
-    const v0, 0x7f08013b
+    const v0, 0x7f08013d
 
     goto :goto_0
 .end method
@@ -164,7 +164,7 @@
     .line 47
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedGoodsAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00de
+    const v3, 0x7f0b00df
 
     const/4 v4, 0x0
 
@@ -179,7 +179,7 @@
 
     .line 49
     .local v1, "viewHolder":Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedGoodsAdapter$a;
-    const v2, 0x7f090273
+    const v2, 0x7f090278
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

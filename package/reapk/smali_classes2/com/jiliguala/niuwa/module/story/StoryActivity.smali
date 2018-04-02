@@ -263,7 +263,7 @@
     .line 578
     const/4 v0, 0x0
 
-    const v1, 0x7f010024
+    const v1, 0x7f010026
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->overridePendingTransition(II)V
 
@@ -939,7 +939,7 @@
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->setIntent(Landroid/content/Intent;)V
 
     .line 262
-    const v4, 0x7f0902e5
+    const v4, 0x7f0902ec
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->findViewById(I)Landroid/view/View;
 
@@ -952,7 +952,7 @@
     invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
     .line 264
-    const v4, 0x7f0902e8
+    const v4, 0x7f0902ef
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->findViewById(I)Landroid/view/View;
 
@@ -1588,7 +1588,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f0903bf
+    const v6, 0x7f0903c6
 
     .line 451
     invoke-virtual {v4, v6, v2}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
@@ -1628,7 +1628,7 @@
     invoke-virtual {v4, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 469
-    const v4, 0x7f0903ba
+    const v4, 0x7f0903c1
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->findViewById(I)Landroid/view/View;
 
@@ -1672,7 +1672,7 @@
 
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/story/StoryActivity;->mStory:Lcom/jiliguala/niuwa/module/story/data/json/StoryResponse;
 
-    const v6, 0x7f090477
+    const v6, 0x7f090480
 
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/story/StoryActivity;->findViewById(I)Landroid/view/View;
 

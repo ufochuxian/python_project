@@ -257,11 +257,11 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090044 -> :sswitch_3
-        0x7f09038e -> :sswitch_3
-        0x7f09047e -> :sswitch_4
-        0x7f090560 -> :sswitch_0
-        0x7f090591 -> :sswitch_2
-        0x7f0905d2 -> :sswitch_1
+        0x7f090395 -> :sswitch_3
+        0x7f090487 -> :sswitch_4
+        0x7f09056a -> :sswitch_0
+        0x7f09059b -> :sswitch_2
+        0x7f0905dc -> :sswitch_1
     .end sparse-switch
 
     .line 188

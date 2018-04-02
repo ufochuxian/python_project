@@ -283,7 +283,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e000e
+    const v1, 0x7f0e000f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->openRawResourceFd(I)Landroid/content/res/AssetFileDescriptor;
     :try_end_1
@@ -394,7 +394,7 @@
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
 
-    .line 527
+    .line 528
     :cond_3
     :goto_3
     throw v0
@@ -956,7 +956,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v5, 0x7f0903bc
+    const v5, 0x7f0903c3
 
     const/4 v3, 0x0
 
@@ -1089,7 +1089,7 @@
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/story/fragments/PagingFragment;->mLayout:Lcom/jiliguala/niuwa/module/story/views/HorizontalPanView;
 
-    const v4, 0x7f0903bb
+    const v4, 0x7f0903c2
 
     invoke-virtual {v2, v4}, Lcom/jiliguala/niuwa/module/story/views/HorizontalPanView;->findViewById(I)Landroid/view/View;
 
@@ -1213,6 +1213,7 @@
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/story/fragments/PagingFragment;->mMediaPlayer:Landroid/media/MediaPlayer;
 
+    .line 554
     throw v0
 .end method
 

@@ -13,31 +13,33 @@
 
 
 # static fields
-.field public static a:Lcom/qiniu/auth/Authorizer; = null
+.field public static final a:Ljava/lang/String; = "http://qiniu.jiliguala.com/"
 
-.field private static final c:Ljava/lang/String;
+.field public static b:Lcom/qiniu/auth/Authorizer; = null
 
-.field private static final d:Ljava/lang/String; = "dev"
+.field private static final d:Ljava/lang/String;
 
-.field private static final e:Ljava/lang/String; = "prod"
+.field private static final e:Ljava/lang/String; = "dev"
 
-.field private static final f:Ljava/lang/String;
+.field private static final f:Ljava/lang/String; = "prod"
 
-.field private static final g:Ljava/lang/String; = "jlgl"
+.field private static final g:Ljava/lang/String;
+
+.field private static final h:Ljava/lang/String; = "jlgl"
 
 
 # instance fields
-.field volatile b:Z
-
-.field private h:Ljava/lang/String;
+.field volatile c:Z
 
 .field private i:Ljava/lang/String;
 
-.field private j:Lcom/jiliguala/niuwa/logic/network/f$b;
+.field private j:Ljava/lang/String;
 
-.field private k:Ljava/lang/String;
+.field private k:Lcom/jiliguala/niuwa/logic/network/f$b;
 
-.field private l:Lrx/i/b;
+.field private l:Ljava/lang/String;
+
+.field private m:Lrx/i/b;
 
 
 # direct methods
@@ -45,16 +47,16 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 36
     const-class v0, Lcom/jiliguala/niuwa/logic/network/f;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->c:Ljava/lang/String;
+    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->d:Ljava/lang/String;
 
-    .line 38
+    .line 39
     sget-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     if-eqz v0, :cond_0
@@ -62,18 +64,18 @@
     const-string v0, "dev"
 
     :goto_0
-    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->f:Ljava/lang/String;
+    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->g:Ljava/lang/String;
 
-    .line 40
+    .line 42
     new-instance v0, Lcom/qiniu/auth/Authorizer;
 
     invoke-direct {v0}, Lcom/qiniu/auth/Authorizer;-><init>()V
 
-    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->a:Lcom/qiniu/auth/Authorizer;
+    sput-object v0, Lcom/jiliguala/niuwa/logic/network/f;->b:Lcom/qiniu/auth/Authorizer;
 
     return-void
 
-    .line 38
+    .line 39
     :cond_0
     const-string v0, "prod"
 
@@ -84,22 +86,22 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 41
+    .line 43
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->b:Z
+    iput-boolean v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->c:Z
 
-    .line 46
+    .line 48
     new-instance v0, Lrx/i/b;
 
     invoke-direct {v0}, Lrx/i/b;-><init>()V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Lrx/i/b;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->m:Lrx/i/b;
 
-    .line 49
+    .line 51
     return-void
 .end method
 
@@ -109,8 +111,8 @@
     .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/network/f$b;
 
     .prologue
-    .line 34
-    iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Lcom/jiliguala/niuwa/logic/network/f$b;
+    .line 35
+    iput-object p1, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Lcom/jiliguala/niuwa/logic/network/f$b;
 
     return-object p1
 .end method
@@ -120,12 +122,12 @@
     .param p1, "fileName"    # Ljava/lang/String;
 
     .prologue
-    .line 152
+    .line 163
     invoke-static {p1}, Lcom/jiliguala/niuwa/common/util/o;->a(Ljava/lang/String;)[B
 
     move-result-object v0
 
-    .line 153
+    .line 164
     .local v0, "bmpBytes":[B
     new-instance v2, Lcom/jiliguala/niuwa/common/util/r;
 
@@ -135,7 +137,7 @@
 
     move-result-object v1
 
-    .line 154
+    .line 165
     .local v1, "md5_str":Ljava/lang/String;
     if-nez v1, :cond_0
 
@@ -154,12 +156,12 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 148
+    .line 159
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->f:Ljava/lang/String;
+    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -181,7 +183,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/logic/network/f;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -240,17 +242,17 @@
     .locals 1
 
     .prologue
-    .line 52
-    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Lrx/i/b;
+    .line 54
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->m:Lrx/i/b;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/w;->a(Lrx/i/b;)Lrx/i/b;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Lrx/i/b;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->m:Lrx/i/b;
 
-    .line 53
-    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Lrx/i/b;
+    .line 55
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->m:Lrx/i/b;
 
     return-object v0
 .end method
@@ -260,8 +262,8 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/logic/network/f;
 
     .prologue
-    .line 34
-    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Lrx/i/b;
+    .line 35
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->m:Lrx/i/b;
 
     return-object v0
 .end method
@@ -272,7 +274,7 @@
     .param p2, "fileName"    # Ljava/lang/String;
 
     .prologue
-    .line 57
+    .line 59
     invoke-direct {p0}, Lcom/jiliguala/niuwa/logic/network/f;->a()Lrx/i/b;
 
     move-result-object v0
@@ -281,12 +283,12 @@
 
     move-result-object v1
 
-    .line 58
+    .line 60
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 59
+    .line 61
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/logic/network/f;->b(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -295,7 +297,7 @@
 
     move-result-object v1
 
-    .line 60
+    .line 62
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -304,7 +306,7 @@
 
     move-result-object v1
 
-    .line 61
+    .line 63
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -313,7 +315,7 @@
 
     move-result-object v1
 
-    .line 62
+    .line 64
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -326,15 +328,15 @@
 
     invoke-direct {v2, p0, p2}, Lcom/jiliguala/niuwa/logic/network/f$1;-><init>(Lcom/jiliguala/niuwa/logic/network/f;Ljava/lang/String;)V
 
-    .line 63
+    .line 65
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 57
+    .line 59
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 88
+    .line 90
     return-void
 .end method
 
@@ -343,31 +345,31 @@
     .param p1, "uri"    # Landroid/net/Uri;
 
     .prologue
-    .line 172
-    iget-boolean v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->b:Z
+    .line 183
+    iget-boolean v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->c:Z
 
     if-eqz v1, :cond_0
 
-    .line 223
+    .line 235
     :goto_0
     return-void
 
-    .line 175
+    .line 186
     :cond_0
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->b:Z
+    iput-boolean v1, p0, Lcom/jiliguala/niuwa/logic/network/f;->c:Z
 
-    .line 176
-    iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
+    .line 187
+    iget-object v2, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Ljava/lang/String;
 
-    .line 177
+    .line 188
     .local v2, "key":Ljava/lang/String;
     new-instance v4, Lcom/qiniu/rs/PutExtra;
 
     invoke-direct {v4}, Lcom/qiniu/rs/PutExtra;-><init>()V
 
-    .line 178
+    .line 189
     .local v4, "extra":Lcom/qiniu/rs/PutExtra;
     new-instance v1, Ljava/util/HashMap;
 
@@ -375,14 +377,14 @@
 
     iput-object v1, v4, Lcom/qiniu/rs/PutExtra;->params:Ljava/util/HashMap;
 
-    .line 180
+    .line 191
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 181
+    .line 192
     .local v0, "context":Landroid/content/Context;
-    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->a:Lcom/qiniu/auth/Authorizer;
+    sget-object v1, Lcom/jiliguala/niuwa/logic/network/f;->b:Lcom/qiniu/auth/Authorizer;
 
     new-instance v5, Lcom/jiliguala/niuwa/logic/network/f$2;
 
@@ -401,7 +403,7 @@
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 34
+    .line 35
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/logic/network/f;->b(Ljava/lang/String;)V
 
     return-void
@@ -412,16 +414,16 @@
     .param p1, "file"    # Ljava/io/File;
 
     .prologue
-    .line 162
+    .line 173
     invoke-static {p1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 163
+    .line 174
     .local v0, "uri":Landroid/net/Uri;
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Landroid/net/Uri;)V
 
-    .line 164
+    .line 175
     return-void
 .end method
 
@@ -430,40 +432,157 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/logic/network/f;
 
     .prologue
-    .line 34
-    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Lcom/jiliguala/niuwa/logic/network/f$b;
+    .line 35
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Lcom/jiliguala/niuwa/logic/network/f$b;
 
     return-object v0
 .end method
 
 .method private b(ILjava/lang/String;)Ljava/lang/String;
-    .locals 5
+    .locals 7
     .param p1, "type"    # I
     .param p2, "fileName"    # Ljava/lang/String;
 
     .prologue
-    .line 117
+    const/4 v5, 0x0
+
+    const/4 v6, 0x1
+
+    .line 119
     const/4 v1, 0x0
 
-    .line 118
+    .line 120
     .local v1, "typeStr":Ljava/lang/String;
     packed-switch p1, :pswitch_data_0
 
-    .line 139
+    .line 142
     :goto_0
     invoke-static {p2}, Lcom/jiliguala/niuwa/common/util/i;->c(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 140
+    .line 143
     .local v0, "fileNames":[Ljava/lang/String;
-    invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    const/4 v3, 0x7
+
+    if-ne p1, v3, :cond_2
+
+    .line 144
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v4, Lcom/jiliguala/niuwa/logic/network/f;->g:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
+    const-string v4, "/"
 
-    .line 142
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, "/"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    .line 145
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/jiliguala/niuwa/logic/login/a;->r()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, "/"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    if-eqz v0, :cond_0
+
+    array-length v3, v0
+
+    if-lez v3, :cond_0
+
+    aget-object v3, v0, v5
+
+    .line 147
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    aget-object v3, v0, v5
+
+    :goto_1
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    if-eqz v0, :cond_1
+
+    array-length v3, v0
+
+    if-le v3, v6, :cond_1
+
+    aget-object v3, v0, v6
+
+    .line 148
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "."
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    aget-object v5, v0, v6
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    :goto_2
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    iput-object v3, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Ljava/lang/String;
+
+    .line 153
+    :goto_3
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -480,7 +599,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
+    iget-object v4, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -490,50 +609,77 @@
 
     move-result-object v2
 
-    .line 144
+    .line 155
     .local v2, "url":Ljava/lang/String;
     return-object v2
 
-    .line 121
+    .line 123
     .end local v0    # "fileNames":[Ljava/lang/String;
     .end local v2    # "url":Ljava/lang/String;
     :pswitch_0
     const-string v1, "avatar"
 
-    .line 122
-    goto :goto_0
-
     .line 124
+    goto/16 :goto_0
+
+    .line 126
     :pswitch_1
     const-string v1, "post"
 
-    .line 125
-    goto :goto_0
-
     .line 127
+    goto/16 :goto_0
+
+    .line 129
     :pswitch_2
     const-string v1, "user_bg"
 
-    .line 128
-    goto :goto_0
-
     .line 130
+    goto/16 :goto_0
+
+    .line 132
     :pswitch_3
     const-string v1, "audio_msg"
 
-    .line 131
-    goto :goto_0
-
     .line 133
+    goto/16 :goto_0
+
+    .line 135
     :pswitch_4
     const-string v1, "group/avatar"
 
-    .line 134
-    goto :goto_0
+    .line 136
+    goto/16 :goto_0
 
-    .line 118
-    nop
+    .line 138
+    :pswitch_5
+    const-string v1, "globallog"
 
+    goto/16 :goto_0
+
+    .line 147
+    .restart local v0    # "fileNames":[Ljava/lang/String;
+    :cond_0
+    const-string v3, ""
+
+    goto :goto_1
+
+    .line 148
+    :cond_1
+    const-string v3, ""
+
+    goto :goto_2
+
+    .line 150
+    :cond_2
+    invoke-direct {p0, v1, v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    iput-object v3, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Ljava/lang/String;
+
+    goto :goto_3
+
+    .line 120
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -542,6 +688,7 @@
         :pswitch_2
         :pswitch_3
         :pswitch_4
+        :pswitch_5
     .end packed-switch
 .end method
 
@@ -550,14 +697,14 @@
     .param p1, "fileName"    # Ljava/lang/String;
 
     .prologue
-    .line 158
+    .line 169
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/logic/network/f;->a(Ljava/io/File;)V
 
-    .line 159
+    .line 170
     return-void
 .end method
 
@@ -566,8 +713,8 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/logic/network/f;
 
     .prologue
-    .line 34
-    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Ljava/lang/String;
+    .line 35
+    iget-object v0, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -581,16 +728,16 @@
     .param p3, "listener"    # Lcom/jiliguala/niuwa/logic/network/f$b;
 
     .prologue
-    .line 98
-    iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/f;->h:Ljava/lang/String;
-
-    .line 99
-    iput-object p3, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Lcom/jiliguala/niuwa/logic/network/f$b;
-
     .line 100
-    invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;)V
+    iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
 
     .line 101
+    iput-object p3, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Lcom/jiliguala/niuwa/logic/network/f$b;
+
+    .line 102
+    invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;)V
+
+    .line 103
     return-void
 .end method
 
@@ -602,18 +749,18 @@
     .param p4, "listener"    # Lcom/jiliguala/niuwa/logic/network/f$b;
 
     .prologue
-    .line 110
-    iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/f;->h:Ljava/lang/String;
-
-    .line 111
-    iput-object p4, p0, Lcom/jiliguala/niuwa/logic/network/f;->j:Lcom/jiliguala/niuwa/logic/network/f$b;
-
     .line 112
-    iput-object p3, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Ljava/lang/String;
+    iput-object p2, p0, Lcom/jiliguala/niuwa/logic/network/f;->i:Ljava/lang/String;
 
     .line 113
-    invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;)V
+    iput-object p4, p0, Lcom/jiliguala/niuwa/logic/network/f;->k:Lcom/jiliguala/niuwa/logic/network/f$b;
 
     .line 114
+    iput-object p3, p0, Lcom/jiliguala/niuwa/logic/network/f;->l:Ljava/lang/String;
+
+    .line 115
+    invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/logic/network/f;->a(ILjava/lang/String;)V
+
+    .line 116
     return-void
 .end method

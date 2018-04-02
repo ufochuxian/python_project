@@ -143,7 +143,7 @@
     .param p1, "volume"    # D
 
     .prologue
-    const v0, 0x7f0801ca
+    const v0, 0x7f0801d1
 
     const-wide/high16 v10, 0x4040000000000000L    # 32.0
 
@@ -165,7 +165,7 @@
     if-gez v1, :cond_1
 
     .line 157
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801ce
 
     .line 167
     :cond_0
@@ -183,7 +183,7 @@
     if-gez v1, :cond_2
 
     .line 159
-    const v0, 0x7f0801c8
+    const v0, 0x7f0801cf
 
     goto :goto_0
 
@@ -198,7 +198,7 @@
     if-gez v1, :cond_3
 
     .line 161
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d0
 
     goto :goto_0
 
@@ -226,7 +226,7 @@
 
     .line 167
     :cond_5
-    const v0, 0x7f0803ca
+    const v0, 0x7f0803d7
 
     goto :goto_0
 .end method
@@ -786,7 +786,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b00d5
+    const v2, 0x7f0b00d6
 
     invoke-static {v1, v2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -794,7 +794,7 @@
 
     .line 76
     .local v0, "view":Landroid/view/View;
-    const v1, 0x7f090291
+    const v1, 0x7f090297
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -805,7 +805,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->mRecord:Landroid/widget/ImageView;
 
     .line 77
-    const v1, 0x7f090604
+    const v1, 0x7f09060e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -816,7 +816,7 @@
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/viewwidget/speak/InterSpeakView;->mVolume:Landroid/widget/ImageView;
 
     .line 79
-    const v1, 0x7f09028a
+    const v1, 0x7f09028f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -880,7 +880,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f090291
+    .packed-switch 0x7f090297
         :pswitch_0
     .end packed-switch
 .end method

@@ -149,6 +149,7 @@
 
     invoke-virtual {v6}, Landroid/content/res/AssetFileDescriptor;->close()V
 
+    .line 102
     throw v1
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0

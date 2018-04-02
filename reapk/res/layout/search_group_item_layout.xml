@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/text_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/group_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="1.0dip" n1:singleLine="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/desc_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/text_container">
+        <ImageView n1:id="@id/owner_ava" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginTop="10.0dip" n1:scaleType="centerCrop" />
+        <LinearLayout n1:id="@id/info_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/owner_ava" n1:layout_alignTop="@id/owner_ava">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="2.0">
+                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/owner_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="班长：" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
+                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/group_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="班号：" n1:layout_alignParentRight="true" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="3.0">
+                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/class_age" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="年龄：" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" />
+                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/members_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="人数：" n1:layout_alignParentRight="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/class_desc" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="班级描述" n1:maxLines="1" n1:layout_below="@id/info_container" n1:layout_alignLeft="@id/info_container" />
+    </RelativeLayout>
+    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginTop="5.0dip" n1:layout_below="@id/desc_container" />
+</RelativeLayout>

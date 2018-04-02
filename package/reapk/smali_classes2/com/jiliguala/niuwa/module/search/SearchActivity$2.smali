@@ -80,9 +80,9 @@
     .line 117
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/search/SearchActivity$2;->a:Lcom/jiliguala/niuwa/module/search/SearchActivity;
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->overridePendingTransition(II)V
 
@@ -93,7 +93,7 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f090481 -> :sswitch_1
-        0x7f09058f -> :sswitch_0
+        0x7f09048a -> :sswitch_1
+        0x7f090599 -> :sswitch_0
     .end sparse-switch
 .end method

@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 906
+    .line 911
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$29;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,16 +52,16 @@
     .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 910
+    .line 915
     iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 918
+    .line 923
     :goto_0
     return-void
 
-    .line 912
+    .line 917
     :sswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$29;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -69,7 +69,7 @@
 
     goto :goto_0
 
-    .line 915
+    .line 920
     :sswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$29;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -77,7 +77,7 @@
 
     goto :goto_0
 
-    .line 910
+    .line 915
     :sswitch_data_0
     .sparse-switch
         0x1001 -> :sswitch_0
@@ -89,7 +89,7 @@
     .locals 0
 
     .prologue
-    .line 906
+    .line 911
     check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$29;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V

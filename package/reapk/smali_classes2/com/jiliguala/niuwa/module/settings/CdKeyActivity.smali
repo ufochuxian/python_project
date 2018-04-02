@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 49
+    .line 50
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;-><init>()V
 
     return-void
@@ -47,7 +47,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;
 
     .prologue
-    .line 49
+    .line 50
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->goToMobilePage()V
 
     return-void
@@ -59,7 +59,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 49
+    .line 50
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->reportAmplitude(Z)V
 
     return-void
@@ -69,7 +69,7 @@
     .locals 4
 
     .prologue
-    .line 78
+    .line 80
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->getSubscriptions()Lrx/i/b;
 
     move-result-object v0
@@ -80,7 +80,7 @@
 
     const-class v2, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    .line 79
+    .line 81
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Class;)Lrx/e;
 
     move-result-object v1
@@ -93,15 +93,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity$2;-><init>(Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;)V
 
-    .line 80
+    .line 82
     invoke-virtual {v1, v2, v3}, Lrx/e;->b(Lrx/c/c;Lrx/c/c;)Lrx/m;
 
     move-result-object v1
 
-    .line 78
+    .line 80
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 111
+    .line 113
     return-void
 .end method
 
@@ -110,18 +110,18 @@
     .param p1, "data"    # Lcom/jiliguala/niuwa/logic/network/json/RedeemEntity;
 
     .prologue
-    .line 172
+    .line 174
     invoke-static {p1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 173
+    .line 175
     .local v1, "json":Ljava/lang/String;
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v0
 
-    .line 174
+    .line 176
     .local v0, "body":Lokhttp3/ab;
     return-object v0
 .end method
@@ -130,12 +130,12 @@
     .locals 3
 
     .prologue
-    .line 114
+    .line 116
     const-string v1, "\u8bf7\u8865\u5145\u624b\u673a\u53f7\u624d\u80fd\u4fdd\u5b58\u73cd\u8d35\u7684\u5b66\u4e60\u8bb0\u5f55\u54e6"
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 115
+    .line 117
     const v1, 0x7f0f0191
 
     const-string v2, "CDKEY EXCHANGE"
@@ -144,11 +144,11 @@
 
     move-result-object v0
 
-    .line 118
+    .line 120
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 119
+    .line 121
     return-void
 .end method
 
@@ -156,7 +156,7 @@
     .locals 4
 
     .prologue
-    .line 142
+    .line 144
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->editExchange:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -167,18 +167,18 @@
 
     move-result-object v0
 
-    .line 143
+    .line 145
     .local v0, "code":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->getSubscriptions()Lrx/i/b;
 
     move-result-object v1
 
-    .line 144
+    .line 146
     invoke-static {}, Lcom/jiliguala/niuwa/logic/network/g;->a()Lcom/jiliguala/niuwa/logic/network/g;
 
     move-result-object v2
 
-    .line 145
+    .line 147
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
@@ -187,7 +187,7 @@
 
     invoke-direct {v3, v0}, Lcom/jiliguala/niuwa/logic/network/json/RedeemEntity;-><init>(Ljava/lang/String;)V
 
-    .line 146
+    .line 148
     invoke-direct {p0, v3}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->generateRequestBody(Lcom/jiliguala/niuwa/logic/network/json/RedeemEntity;)Lokhttp3/ab;
 
     move-result-object v3
@@ -196,7 +196,7 @@
 
     move-result-object v2
 
-    .line 147
+    .line 149
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -205,7 +205,7 @@
 
     move-result-object v2
 
-    .line 148
+    .line 150
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -214,7 +214,7 @@
 
     move-result-object v2
 
-    .line 149
+    .line 151
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -227,15 +227,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity$3;-><init>(Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;)V
 
-    .line 150
+    .line 152
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 143
+    .line 145
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 169
+    .line 171
     return-void
 .end method
 
@@ -244,12 +244,12 @@
     .param p1, "success"    # Z
 
     .prologue
-    .line 72
+    .line 74
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 73
+    .line 75
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "success"
 
@@ -264,7 +264,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 74
+    .line 76
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -273,10 +273,10 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 75
+    .line 77
     return-void
 
-    .line 73
+    .line 75
     :cond_0
     const/4 v1, 0x0
 
@@ -293,10 +293,10 @@
     .end param
 
     .prologue
-    .line 63
+    .line 64
     invoke-super {p0, p1}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 64
+    .line 65
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -305,25 +305,30 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
-    .line 65
+    .line 66
     const v0, 0x7f0b0023
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->setContentView(I)V
 
-    .line 66
+    .line 67
     invoke-static {p0}, Lbutterknife/ButterKnife;->a(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 67
+    .line 68
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->addEventObserver()V
 
-    .line 68
+    .line 69
     new-instance v0, Lcom/jiliguala/niuwa/common/util/xutils/c;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/common/util/xutils/c;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
-    .line 69
+    .line 70
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->editExchange:Landroid/widget/EditText;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/xutils/d;->a(Landroid/widget/EditText;)V
+
+    .line 71
     return-void
 .end method
 
@@ -340,7 +345,7 @@
     .end annotation
 
     .prologue
-    .line 138
+    .line 140
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->btnExchange:Landroid/widget/Button;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -354,10 +359,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 139
+    .line 141
     return-void
 
-    .line 138
+    .line 140
     :cond_0
     const/4 v0, 0x0
 
@@ -375,25 +380,25 @@
     .end annotation
 
     .prologue
-    .line 124
+    .line 126
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 134
+    .line 136
     :cond_0
     :goto_0
     return-void
 
-    .line 126
+    .line 128
     :sswitch_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->finish()V
 
     goto :goto_0
 
-    .line 129
+    .line 131
     :sswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->mClickManager:Lcom/jiliguala/niuwa/common/util/xutils/c;
 
@@ -403,12 +408,12 @@
 
     if-nez v0, :cond_0
 
-    .line 130
+    .line 132
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/settings/CdKeyActivity;->onExchange()V
 
     goto :goto_0
 
-    .line 124
+    .line 126
     :sswitch_data_0
     .sparse-switch
         0x7f090014 -> :sswitch_0

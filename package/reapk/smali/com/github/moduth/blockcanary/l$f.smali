@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final block_canary_BlockCanary_Base:I = 0x7f1001bc
+.field public static final block_canary_BlockCanary_Base:I = 0x7f1001be
 
 
 # direct methods

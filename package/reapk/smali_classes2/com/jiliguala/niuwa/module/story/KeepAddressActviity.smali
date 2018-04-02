@@ -82,9 +82,9 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/story/KeepAddressFragment;
 
     .prologue
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f01001d
+    const v4, 0x7f01001f
 
     .line 83
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/story/KeepAddressActviity;->getSupportFragmentManager()Landroid/support/v4/app/ag;
@@ -319,7 +319,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f060054
+    const v5, 0x7f060056
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -331,7 +331,7 @@
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/story/KeepAddressActviity;->handleIntent()V
 
     .line 51
-    const v3, 0x7f090591
+    const v3, 0x7f09059b
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/story/KeepAddressActviity;->findViewById(I)Landroid/view/View;
 
@@ -342,7 +342,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/story/KeepAddressActviity;->mTopBarRly:Landroid/widget/RelativeLayout;
 
     .line 52
-    const v3, 0x7f090595
+    const v3, 0x7f09059f
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/story/KeepAddressActviity;->findViewById(I)Landroid/view/View;
 

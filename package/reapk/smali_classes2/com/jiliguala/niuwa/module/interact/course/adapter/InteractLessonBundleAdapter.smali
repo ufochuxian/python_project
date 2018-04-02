@@ -149,7 +149,7 @@
     .line 53
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/adapter/InteractLessonBundleAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b00df
+    const v3, 0x7f0b00e0
 
     const/4 v4, 0x0
 
@@ -164,7 +164,7 @@
 
     .line 55
     .local v1, "viewHolder":Lcom/jiliguala/niuwa/module/interact/course/adapter/InteractLessonBundleAdapter$a;
-    const v2, 0x7f090273
+    const v2, 0x7f090278
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -197,7 +197,7 @@
     iput-object v2, v1, Lcom/jiliguala/niuwa/module/interact/course/adapter/InteractLessonBundleAdapter$a;->c:Landroid/widget/TextView;
 
     .line 58
-    const v2, 0x7f0903fc
+    const v2, 0x7f090403
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

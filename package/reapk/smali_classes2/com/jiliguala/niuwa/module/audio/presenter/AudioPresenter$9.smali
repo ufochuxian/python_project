@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 989
+    .line 1018
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 0
 
     .prologue
-    .line 1012
+    .line 1041
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .param p1, "shareObj"    # Ljava/lang/Object;
 
     .prologue
-    .line 992
+    .line 1021
     if-eqz p1, :cond_0
 
     instance-of v1, p1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
@@ -59,7 +59,7 @@
 
     move-object v1, p1
 
-    .line 993
+    .line 1022
     check-cast v1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
 
     iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;->data:Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate$DataPart;
@@ -70,7 +70,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 994
+    .line 1023
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/ShareInfoTemplate;
 
     .end local p1    # "shareObj":Ljava/lang/Object;
@@ -80,7 +80,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
-    .line 996
+    .line 1025
     .local v0, "item":Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
     new-instance v1, Landroid/os/Handler;
 
@@ -94,20 +94,20 @@
 
     invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1005
+    .line 1034
     .end local v0    # "item":Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
     :cond_0
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/b/a;->a()Lcom/jiliguala/niuwa/logic/t/b/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/b/a;->a()Lcom/jiliguala/niuwa/logic/u/b/a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/t/b/a;->d()V
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/u/b/a;->d()V
 
-    .line 1006
+    .line 1035
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$9;->a:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$100(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)V
 
-    .line 1007
+    .line 1036
     return-void
 .end method

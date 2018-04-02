@@ -628,7 +628,7 @@
     .line 495
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f080101
+    const v1, 0x7f080103
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -639,7 +639,7 @@
     .line 496
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800ee
+    const v1, 0x7f0800f0
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -650,7 +650,7 @@
     .line 497
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f0
+    const v1, 0x7f0800f2
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -661,7 +661,7 @@
     .line 498
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f1
+    const v1, 0x7f0800f3
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -672,7 +672,7 @@
     .line 499
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f2
+    const v1, 0x7f0800f4
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -683,7 +683,7 @@
     .line 500
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f3
+    const v1, 0x7f0800f5
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -694,7 +694,7 @@
     .line 501
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f4
+    const v1, 0x7f0800f6
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -705,7 +705,7 @@
     .line 502
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f5
+    const v1, 0x7f0800f7
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -716,7 +716,7 @@
     .line 503
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f6
+    const v1, 0x7f0800f8
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -727,7 +727,7 @@
     .line 504
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f7
+    const v1, 0x7f0800f9
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -738,7 +738,7 @@
     .line 505
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f080103
+    const v1, 0x7f080105
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -764,7 +764,7 @@
     .line 92
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f080102
+    const v1, 0x7f080104
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -775,7 +775,7 @@
     .line 93
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f8
+    const v1, 0x7f0800fa
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -786,7 +786,7 @@
     .line 94
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800f9
+    const v1, 0x7f0800fb
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -797,7 +797,7 @@
     .line 95
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800fa
+    const v1, 0x7f0800fc
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -808,7 +808,7 @@
     .line 96
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800fb
+    const v1, 0x7f0800fd
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -819,7 +819,7 @@
     .line 97
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800fc
+    const v1, 0x7f0800fe
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -830,7 +830,7 @@
     .line 98
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800fd
+    const v1, 0x7f0800ff
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -841,7 +841,7 @@
     .line 99
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800fe
+    const v1, 0x7f080100
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -852,7 +852,7 @@
     .line 100
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f0800ff
+    const v1, 0x7f080101
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -863,7 +863,7 @@
     .line 101
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f080100
+    const v1, 0x7f080102
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -874,7 +874,7 @@
     .line 102
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mBgs:Ljava/util/List;
 
-    const v1, 0x7f080104
+    const v1, 0x7f080106
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1069,7 +1069,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600f4
+    const v2, 0x7f0600f6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1492,7 +1492,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fc
+    const v2, 0x7f0600fe
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1571,7 +1571,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06007c
+    const v2, 0x7f06007e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1582,7 +1582,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 532
-    const v0, 0x7f0803ee
+    const v0, 0x7f0803fb
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1718,7 +1718,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600e4
+    const v2, 0x7f0600e6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1729,7 +1729,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 536
-    const v0, 0x7f0803f6
+    const v0, 0x7f080403
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1747,7 +1747,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600f8
+    const v2, 0x7f0600fa
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1758,7 +1758,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 540
-    const v0, 0x7f0803fc
+    const v0, 0x7f080409
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1776,7 +1776,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06009e
+    const v2, 0x7f0600a0
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1787,7 +1787,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 544
-    const v0, 0x7f0803f2
+    const v0, 0x7f0803ff
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1805,7 +1805,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06007d
+    const v2, 0x7f06007f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1816,7 +1816,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 549
-    const v0, 0x7f0803f0
+    const v0, 0x7f0803fd
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1834,7 +1834,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600ef
+    const v2, 0x7f0600f1
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1845,7 +1845,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 554
-    const v0, 0x7f0803fa
+    const v0, 0x7f080407
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1863,7 +1863,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600e5
+    const v2, 0x7f0600e7
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1874,7 +1874,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 559
-    const v0, 0x7f0803f8
+    const v0, 0x7f080405
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1892,7 +1892,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fd
+    const v2, 0x7f0600ff
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1903,7 +1903,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 564
-    const v0, 0x7f0803fe
+    const v0, 0x7f08040b
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1921,7 +1921,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06009a
+    const v2, 0x7f06009c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1932,7 +1932,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 569
-    const v0, 0x7f0803f4
+    const v0, 0x7f080401
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2133,7 +2133,7 @@
 
     .line 577
     :pswitch_0
-    const v0, 0x7f0803ef
+    const v0, 0x7f0803fc
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2160,7 +2160,7 @@
 
     .line 582
     :pswitch_1
-    const v0, 0x7f0803f7
+    const v0, 0x7f080404
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2187,7 +2187,7 @@
 
     .line 587
     :pswitch_2
-    const v0, 0x7f0803fd
+    const v0, 0x7f08040a
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2214,7 +2214,7 @@
 
     .line 592
     :pswitch_3
-    const v0, 0x7f0803f3
+    const v0, 0x7f080400
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2241,7 +2241,7 @@
 
     .line 598
     :pswitch_4
-    const v0, 0x7f0803f1
+    const v0, 0x7f0803fe
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2268,7 +2268,7 @@
 
     .line 604
     :pswitch_5
-    const v0, 0x7f0803fb
+    const v0, 0x7f080408
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2295,7 +2295,7 @@
 
     .line 610
     :pswitch_6
-    const v0, 0x7f0803f9
+    const v0, 0x7f080406
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2322,7 +2322,7 @@
 
     .line 616
     :pswitch_7
-    const v0, 0x7f0803ff
+    const v0, 0x7f08040c
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2349,7 +2349,7 @@
 
     .line 622
     :pswitch_8
-    const v0, 0x7f0803f5
+    const v0, 0x7f080402
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2516,7 +2516,7 @@
     .prologue
     const/4 v1, 0x0
 
-    const v5, 0x7f0600fc
+    const v5, 0x7f0600fe
 
     .line 191
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter;->mDataList:Ljava/util/List;
@@ -2891,7 +2891,7 @@
 
     if-eqz v0, :cond_5
 
-    const v0, 0x7f080101
+    const v0, 0x7f080103
 
     :goto_1
     invoke-virtual {v5, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -2903,7 +2903,7 @@
     goto/16 :goto_0
 
     :cond_5
-    const v0, 0x7f080102
+    const v0, 0x7f080104
 
     goto :goto_1
 
@@ -2937,7 +2937,7 @@
 
     if-eqz v0, :cond_7
 
-    const v0, 0x7f080103
+    const v0, 0x7f080105
 
     :goto_2
     invoke-virtual {v5, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -2949,7 +2949,7 @@
     goto/16 :goto_0
 
     :cond_7
-    const v0, 0x7f080104
+    const v0, 0x7f080106
 
     goto :goto_2
 .end method
@@ -2960,7 +2960,7 @@
     .param p2, "viewType"    # I
 
     .prologue
-    const v4, 0x7f0b00e6
+    const v4, 0x7f0b00e7
 
     const/4 v5, 0x0
 
@@ -2974,7 +2974,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00e7
+    const v4, 0x7f0b00e8
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -3008,7 +3008,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00e8
+    const v4, 0x7f0b00e9
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -3065,7 +3065,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00e9
+    const v4, 0x7f0b00ea
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -3093,7 +3093,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00eb
+    const v4, 0x7f0b00ec
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -3121,7 +3121,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00ea
+    const v4, 0x7f0b00eb
 
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

@@ -1477,7 +1477,7 @@
 
     invoke-virtual {v1}, Lcom/google/android/exoplayer/upstream/Loader;->cancelLoading()V
 
-    .line 211
+    .line 213
     :goto_3
     throw v0
 

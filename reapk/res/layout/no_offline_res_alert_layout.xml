@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_horizontal" n1:background="@drawable/icon_alert" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" />
+    <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/alert_text" n1:paddingTop="10.0dip" n1:paddingBottom="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/no_available_offline_resource_tips2" n1:lineSpacingMultiplier="1.1" />
+    <Button n1:textSize="@dimen/content_large_size" n1:textColor="@android:color/white" n1:id="@id/confirm" n1:background="@drawable/landing_page_btn_bg" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_button_height" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="15.0dip" n1:text="@string/confirm" />
+</LinearLayout>

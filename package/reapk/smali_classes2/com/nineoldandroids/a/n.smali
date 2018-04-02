@@ -1103,6 +1103,7 @@
 
     invoke-virtual {v4}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
 
+    .line 494
     throw v3
 .end method
 

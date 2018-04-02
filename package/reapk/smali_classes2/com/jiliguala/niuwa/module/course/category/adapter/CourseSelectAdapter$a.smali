@@ -177,9 +177,9 @@
 
     check-cast v6, Landroid/app/Activity;
 
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
-    const v8, 0x7f010013
+    const v8, 0x7f010014
 
     invoke-virtual {v6, v7, v8}, Landroid/app/Activity;->overridePendingTransition(II)V
     :try_end_0

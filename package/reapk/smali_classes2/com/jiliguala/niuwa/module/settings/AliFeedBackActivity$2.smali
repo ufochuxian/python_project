@@ -79,7 +79,7 @@
     if-eqz v1, :cond_0
 
     .line 70
-    const v2, 0x7f09057d
+    const v2, 0x7f090587
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
     invoke-virtual {v0, v4, v4, v4, v4}, Landroid/widget/ImageView;->setPadding(IIII)V
 
     .line 72
-    const v2, 0x7f0802c7
+    const v2, 0x7f0802d1
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

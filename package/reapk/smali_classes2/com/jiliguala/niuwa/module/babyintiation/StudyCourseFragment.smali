@@ -912,7 +912,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0125
+    const v4, 0x7f0b0129
 
     const/4 v5, 0x0
 
@@ -925,7 +925,7 @@
     .line 534
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;->mRoadMapNext:Landroid/view/View;
 
-    const v4, 0x7f090382
+    const v4, 0x7f090389
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1134,7 +1134,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b018d
+    const v4, 0x7f0b0192
 
     const/4 v5, 0x0
 
@@ -2197,7 +2197,7 @@
 
     .prologue
     .line 367
-    const v0, 0x7f090592
+    const v0, 0x7f09059c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2210,7 +2210,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 373
-    const v0, 0x7f0902da
+    const v0, 0x7f0902e1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2243,7 +2243,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;->mBackIcon:Landroid/widget/ImageView;
 
     .line 376
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2281,7 +2281,7 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/c;)V
 
     .line 381
-    const v0, 0x7f090290
+    const v0, 0x7f090296
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2818,7 +2818,7 @@
     .param p1, "id"    # Ljava/lang/String;
 
     .prologue
-    const v0, 0x7f080353
+    const v0, 0x7f08035f
 
     .line 625
     const/4 v1, -0x1
@@ -2919,31 +2919,31 @@
 
     .line 629
     :pswitch_7
-    const v0, 0x7f080354
+    const v0, 0x7f080360
 
     goto :goto_1
 
     .line 631
     :pswitch_8
-    const v0, 0x7f080355
+    const v0, 0x7f080361
 
     goto :goto_1
 
     .line 633
     :pswitch_9
-    const v0, 0x7f080356
+    const v0, 0x7f080362
 
     goto :goto_1
 
     .line 635
     :pswitch_a
-    const v0, 0x7f080357
+    const v0, 0x7f080363
 
     goto :goto_1
 
     .line 637
     :pswitch_b
-    const v0, 0x7f080358
+    const v0, 0x7f080364
 
     goto :goto_1
 

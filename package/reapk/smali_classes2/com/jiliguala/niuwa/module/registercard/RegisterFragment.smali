@@ -36,7 +36,7 @@
 
 .field mRecyclerView:Landroid/support/v7/widget/RecyclerView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090437
+        a = 0x7f09043e
     .end annotation
 .end field
 
@@ -44,13 +44,13 @@
 
 .field mShareBtn:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904ce
+        a = 0x7f0904d8
     .end annotation
 .end field
 
 .field mSlogan:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904fd
+        a = 0x7f090507
     .end annotation
 .end field
 
@@ -150,7 +150,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v3, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -235,7 +235,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b01a8
+    const v2, 0x7f0b01ae
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;->mRecyclerView:Landroid/support/v7/widget/RecyclerView;
 
@@ -281,7 +281,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b01a9
+    const v2, 0x7f0b01af
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;->mRecyclerView:Landroid/support/v7/widget/RecyclerView;
 
@@ -550,7 +550,7 @@
     if-eqz v3, :cond_0
 
     .line 103
-    const v14, 0x7f090595
+    const v14, 0x7f09059f
 
     invoke-virtual {v3, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -573,7 +573,7 @@
     invoke-virtual {v13, v14}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 106
-    const v14, 0x7f09057a
+    const v14, 0x7f090584
 
     invoke-virtual {v3, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -588,7 +588,7 @@
     invoke-virtual {v11, v14}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 110
-    const v14, 0x7f090531
+    const v14, 0x7f09053b
 
     invoke-virtual {v3, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -710,7 +710,7 @@
     invoke-virtual {v14, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 131
-    const v14, 0x7f090400
+    const v14, 0x7f090407
 
     invoke-virtual {v3, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -926,7 +926,7 @@
     .locals 11
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0904ce
+            0x7f0904d8
         }
     .end annotation
 
@@ -942,7 +942,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v4, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v4, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

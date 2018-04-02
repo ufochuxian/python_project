@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 243
+    .line 250
     sget-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     if-eqz v0, :cond_0
@@ -51,7 +51,7 @@
     :goto_0
     sput-object v0, Lcom/jiliguala/niuwa/common/a$ab;->a:Ljava/lang/String;
 
-    .line 245
+    .line 252
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -79,7 +79,7 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/common/a$ab;->c:Ljava/lang/String;
 
-    .line 246
+    .line 253
     sget-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     if-eqz v0, :cond_2
@@ -89,7 +89,7 @@
     :goto_2
     sput-object v0, Lcom/jiliguala/niuwa/common/a$ab;->d:Ljava/lang/String;
 
-    .line 248
+    .line 255
     sget-boolean v0, Lcom/jiliguala/niuwa/common/util/b/a;->c:Z
 
     if-eqz v0, :cond_3
@@ -101,25 +101,25 @@
 
     return-void
 
-    .line 243
+    .line 250
     :cond_0
     const-string v0, "3a4ff28c4ad30f27701452581093234"
 
     goto :goto_0
 
-    .line 245
+    .line 252
     :cond_1
     const-string v0, "17zatu2k1"
 
     goto :goto_1
 
-    .line 246
+    .line 253
     :cond_2
     const-string v0, "https://wap.koudaitong.com/v2/showcase/usercenter?kdt_id=14756616&reft=1455781249927_1455783265055&spm=h13913754_sc15326246"
 
     goto :goto_2
 
-    .line 248
+    .line 255
     :cond_3
     const-string v0, "https://wap.koudaitong.com/v2/goods/2ontuz2zarg7s?reft=1455939669953&spm=h13913754"
 

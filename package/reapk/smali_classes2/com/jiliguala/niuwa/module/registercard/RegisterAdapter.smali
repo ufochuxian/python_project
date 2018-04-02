@@ -51,7 +51,7 @@
     .prologue
     .line 29
     .local p1, "data":Ljava/util/List;, "Ljava/util/List<Lcom/jiliguala/niuwa/module/NewRoadMap/MultipleItem<Lcom/jiliguala/niuwa/logic/network/json/ClockingRecordTemplete$Record;>;>;"
-    const v0, 0x7f0b00f5
+    const v0, 0x7f0b00f6
 
     invoke-direct {p0, v0, p1}, Lcom/c/a/a/a/c;-><init>(ILjava/util/List;)V
 
@@ -125,7 +125,7 @@
 
     .line 43
     .local v1, "day":Landroid/widget/TextView;
-    const v5, 0x7f090518
+    const v5, 0x7f090522
 
     invoke-virtual {p1, v5}, Lcom/c/a/a/a/e;->e(I)Landroid/view/View;
 
@@ -148,7 +148,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0600fc
+    const v6, 0x7f0600fe
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -163,7 +163,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0803a5
+    const v6, 0x7f0803b2
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -187,7 +187,7 @@
 
     .line 60
     .local v3, "gitIcon":Landroid/widget/ImageView;
-    const v5, 0x7f090430
+    const v5, 0x7f090437
 
     invoke-virtual {v3, v5, v4}, Landroid/widget/ImageView;->setTag(ILjava/lang/Object;)V
 
@@ -212,7 +212,7 @@
     if-eqz v5, :cond_3
 
     .line 66
-    const v5, 0x7f0801a9
+    const v5, 0x7f0801ae
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -238,7 +238,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060057
+    const v6, 0x7f060059
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -253,7 +253,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0803a7
+    const v6, 0x7f0803b4
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -281,7 +281,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060050
+    const v6, 0x7f060052
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -296,7 +296,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0803a8
+    const v6, 0x7f0803b5
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -312,7 +312,7 @@
     .line 68
     .restart local v3    # "gitIcon":Landroid/widget/ImageView;
     :cond_3
-    const v5, 0x7f0801a8
+    const v5, 0x7f0801ad
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -420,14 +420,14 @@
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterAdapter;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/g;
 
-    const v1, 0x7f0801e6
+    const v1, 0x7f0801ef
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/g;->a(I)V
 
     .line 101
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterAdapter;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/g;
 
-    const v1, 0x7f080368
+    const v1, 0x7f080375
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/g;->b(I)V
 
@@ -436,9 +436,9 @@
     :goto_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterAdapter;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/g;
 
-    const v1, 0x7f060058
+    const v1, 0x7f06005a
 
-    const v2, 0x7f0800b2
+    const v2, 0x7f0800b1
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/a/b/g;->a(II)V
 
@@ -489,14 +489,14 @@
     .line 103
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterAdapter;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/g;
 
-    const v1, 0x7f0801e7
+    const v1, 0x7f0801f0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/g;->a(I)V
 
     .line 104
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/registercard/RegisterAdapter;->mStandPopDialog:Lcom/jiliguala/niuwa/a/b/g;
 
-    const v1, 0x7f080364
+    const v1, 0x7f080370
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/a/b/g;->b(I)V
 
@@ -528,7 +528,7 @@
 
     .prologue
     .line 85
-    const v2, 0x7f090430
+    const v2, 0x7f090437
 
     invoke-virtual {p1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

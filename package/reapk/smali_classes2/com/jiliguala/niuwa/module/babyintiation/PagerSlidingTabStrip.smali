@@ -827,7 +827,7 @@
 
     .line 238
     .local v1, "linearLayout":Landroid/widget/LinearLayout;
-    const v8, 0x7f09059e
+    const v8, 0x7f0905a8
 
     invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setId(I)V
 
@@ -895,12 +895,12 @@
 
     .line 253
     .local v3, "redDot":Landroid/widget/ImageView;
-    const v8, 0x7f09059d
+    const v8, 0x7f0905a7
 
     invoke-virtual {v3, v8}, Landroid/widget/ImageView;->setId(I)V
 
     .line 254
-    const v8, 0x7f0802c5
+    const v8, 0x7f0802cf
 
     invoke-virtual {v3, v8}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -917,7 +917,7 @@
     .local v6, "rlRedDot":Landroid/widget/RelativeLayout$LayoutParams;
     const/4 v8, 0x1
 
-    const v9, 0x7f09059e
+    const v9, 0x7f0905a8
 
     invoke-virtual {v6, v8, v9}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
@@ -1260,7 +1260,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f060052
+    const v7, 0x7f060054
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1287,7 +1287,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060050
+    const v6, 0x7f060052
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2313,7 +2313,7 @@
     if-eqz v0, :cond_0
 
     .line 272
-    const v2, 0x7f09059d
+    const v2, 0x7f0905a7
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

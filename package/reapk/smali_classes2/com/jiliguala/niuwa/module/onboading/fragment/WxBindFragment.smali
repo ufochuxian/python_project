@@ -231,7 +231,7 @@
     .line 92
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/onboading/fragment/WxBindFragment;->mWxBoundDialog:Landroid/app/Dialog;
 
-    const v7, 0x7f0b012d
+    const v7, 0x7f0b0132
 
     invoke-virtual {v6, v7}, Landroid/app/Dialog;->setContentView(I)V
 

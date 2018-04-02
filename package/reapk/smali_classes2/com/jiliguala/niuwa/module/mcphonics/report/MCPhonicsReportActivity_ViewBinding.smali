@@ -13,15 +13,15 @@
 
 .field private view2131296406:Landroid/view/View;
 
-.field private view2131296947:Landroid/view/View;
+.field private view2131296953:Landroid/view/View;
 
-.field private view2131297053:Landroid/view/View;
+.field private view2131297060:Landroid/view/View;
 
-.field private view2131297235:Landroid/view/View;
+.field private view2131297242:Landroid/view/View;
 
-.field private view2131297250:Landroid/view/View;
+.field private view2131297257:Landroid/view/View;
 
-.field private view2131297583:Landroid/view/View;
+.field private view2131297593:Landroid/view/View;
 
 
 # direct methods
@@ -55,15 +55,15 @@
     .end annotation
 
     .prologue
-    const v8, 0x7f09052f
+    const v8, 0x7f090539
 
-    const v7, 0x7f0903e2
+    const v7, 0x7f0903e9
 
-    const v6, 0x7f0903d3
+    const v6, 0x7f0903da
 
-    const v5, 0x7f09031d
+    const v5, 0x7f090324
 
-    const v4, 0x7f0902b3
+    const v4, 0x7f0902b9
 
     .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -117,7 +117,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->babyContainer:Landroid/widget/LinearLayout;
 
     .line 50
-    const v1, 0x7f090619
+    const v1, 0x7f090623
 
     const-string v2, "field \'wordCount\'"
 
@@ -132,7 +132,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordCount:Landroid/widget/TextView;
 
     .line 51
-    const v1, 0x7f090620
+    const v1, 0x7f09062a
 
     const-string v2, "field \'wordTxt\'"
 
@@ -147,7 +147,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordTxt:Landroid/widget/TextView;
 
     .line 52
-    const v1, 0x7f0904b3
+    const v1, 0x7f0904bd
 
     const-string v2, "field \'sentenceCount\'"
 
@@ -162,7 +162,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceCount:Landroid/widget/TextView;
 
     .line 53
-    const v1, 0x7f0904b9
+    const v1, 0x7f0904c3
 
     const-string v2, "field \'sentenceTxt\'"
 
@@ -177,7 +177,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceTxt:Landroid/widget/TextView;
 
     .line 54
-    const v1, 0x7f0903dd
+    const v1, 0x7f0903e4
 
     const-string v2, "field \'phonicsCount\'"
 
@@ -192,7 +192,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phonicsCount:Landroid/widget/TextView;
 
     .line 55
-    const v1, 0x7f0903e5
+    const v1, 0x7f0903ec
 
     const-string v2, "field \'phonicsTxt\'"
 
@@ -228,7 +228,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->largeLv:Landroid/widget/TextView;
 
     .line 58
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296947:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296953:Landroid/view/View;
 
     .line 59
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding$1;
@@ -238,7 +238,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 65
-    const v1, 0x7f0904b4
+    const v1, 0x7f0904be
 
     const-string v2, "field \'sentenceProgress\'"
 
@@ -249,7 +249,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceProgress:Landroid/view/View;
 
     .line 66
-    const v1, 0x7f0904b5
+    const v1, 0x7f0904bf
 
     const-string v2, "field \'sentenceProgressContainer\'"
 
@@ -264,7 +264,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceProgressContainer:Landroid/view/ViewGroup;
 
     .line 67
-    const v1, 0x7f0904b6
+    const v1, 0x7f0904c0
 
     const-string v2, "field \'sentenceProgressText\'"
 
@@ -279,7 +279,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceProgressText:Landroid/widget/TextView;
 
     .line 68
-    const v1, 0x7f09061b
+    const v1, 0x7f090625
 
     const-string v2, "field \'wordProgress\'"
 
@@ -290,7 +290,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordProgress:Landroid/view/View;
 
     .line 69
-    const v1, 0x7f09061c
+    const v1, 0x7f090626
 
     const-string v2, "field \'wordProgressContainer\'"
 
@@ -305,7 +305,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordProgressContainer:Landroid/view/ViewGroup;
 
     .line 70
-    const v1, 0x7f09061d
+    const v1, 0x7f090627
 
     const-string v2, "field \'wordProgressText\'"
 
@@ -340,7 +340,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->mcReportContainer:Landroid/widget/RelativeLayout;
 
     .line 73
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297053:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297060:Landroid/view/View;
 
     .line 74
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding$2;
@@ -350,7 +350,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 80
-    const v1, 0x7f0903e3
+    const v1, 0x7f0903ea
 
     const-string v2, "field \'phonicsReportTitle\'"
 
@@ -365,7 +365,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phonicsReportTitle:Landroid/widget/TextView;
 
     .line 81
-    const v1, 0x7f0903df
+    const v1, 0x7f0903e6
 
     const-string v2, "field \'phonicsProgress\'"
 
@@ -376,7 +376,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phonicsProgress:Landroid/view/View;
 
     .line 82
-    const v1, 0x7f0903e0
+    const v1, 0x7f0903e7
 
     const-string v2, "field \'phonicsProgressContainer\'"
 
@@ -391,7 +391,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phonicsProgressContainer:Landroid/view/ViewGroup;
 
     .line 83
-    const v1, 0x7f0903e1
+    const v1, 0x7f0903e8
 
     const-string v2, "field \'phonicsProgressText\'"
 
@@ -426,7 +426,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phonicsReportContainer:Landroid/widget/RelativeLayout;
 
     .line 86
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297250:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297257:Landroid/view/View;
 
     .line 87
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding$3;
@@ -436,7 +436,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 93
-    const v1, 0x7f0902d9
+    const v1, 0x7f0902df
 
     const-string v2, "field \'listenTime\'"
 
@@ -451,7 +451,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->listenTime:Landroid/widget/TextView;
 
     .line 94
-    const v1, 0x7f090608
+    const v1, 0x7f090612
 
     const-string v2, "field \'watchTime\'"
 
@@ -466,7 +466,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->watchTime:Landroid/widget/TextView;
 
     .line 95
-    const v1, 0x7f0903ee
+    const v1, 0x7f0903f5
 
     const-string v2, "field \'playTime\'"
 
@@ -481,7 +481,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->playTime:Landroid/widget/TextView;
 
     .line 96
-    const v1, 0x7f09042b
+    const v1, 0x7f090432
 
     const-string v2, "field \'readTime\'"
 
@@ -516,7 +516,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->studyRecord:Landroid/widget/TextView;
 
     .line 99
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297583:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297593:Landroid/view/View;
 
     .line 100
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding$4;
@@ -546,7 +546,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phLv:Landroid/widget/TextView;
 
     .line 108
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297235:Landroid/view/View;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297242:Landroid/view/View;
 
     .line 109
     new-instance v1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding$5;
@@ -571,7 +571,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->continuousDays:Landroid/widget/TextView;
 
     .line 116
-    const v1, 0x7f0905a8
+    const v1, 0x7f0905b2
 
     const-string v2, "field \'totalDays\'"
 
@@ -631,7 +631,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->giftIcon:Landroid/widget/ImageView;
 
     .line 120
-    const v1, 0x7f09061e
+    const v1, 0x7f090628
 
     const-string v2, "field \'wordProgressTitle\'"
 
@@ -646,7 +646,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordProgressTitle:Landroid/widget/TextView;
 
     .line 121
-    const v1, 0x7f0904b7
+    const v1, 0x7f0904c1
 
     const-string v2, "field \'sentenceProgressTitle\'"
 
@@ -661,7 +661,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceProgressTitle:Landroid/widget/TextView;
 
     .line 122
-    const v1, 0x7f0903d4
+    const v1, 0x7f0903db
 
     const-string v2, "field \'phProgressTitle\'"
 
@@ -676,7 +676,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->phProgressTitle:Landroid/widget/TextView;
 
     .line 123
-    const v1, 0x7f09061f
+    const v1, 0x7f090629
 
     const-string v2, "field \'wordStar\'"
 
@@ -691,7 +691,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->wordStar:Landroid/widget/ImageView;
 
     .line 124
-    const v1, 0x7f0904b8
+    const v1, 0x7f0904c2
 
     const-string v2, "field \'sentenceStar\'"
 
@@ -706,7 +706,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->sentenceStar:Landroid/widget/ImageView;
 
     .line 125
-    const v1, 0x7f0903e4
+    const v1, 0x7f0903eb
 
     const-string v2, "field \'phonicsStar\'"
 
@@ -743,7 +743,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 135
-    const v1, 0x7f090595
+    const v1, 0x7f09059f
 
     const-string v2, "field \'topBarTitle\'"
 
@@ -758,7 +758,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->topBarTitle:Landroid/widget/TextView;
 
     .line 136
-    const v1, 0x7f0902b4
+    const v1, 0x7f0902ba
 
     const-string v2, "field \'largeTitle\'"
 
@@ -773,7 +773,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->largeTitle:Landroid/widget/TextView;
 
     .line 137
-    const v1, 0x7f09058a
+    const v1, 0x7f090594
 
     const-string v2, "field \'toolsTitleTxt\'"
 
@@ -788,7 +788,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->toolsTitleTxt:Landroid/widget/TextView;
 
     .line 138
-    const v1, 0x7f09044c
+    const v1, 0x7f090453
 
     const-string v2, "field \'reportCount\'"
 
@@ -803,7 +803,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->reportCount:Landroid/widget/LinearLayout;
 
     .line 139
-    const v1, 0x7f090502
+    const v1, 0x7f09050c
 
     const-string v2, "field \'songCountTitle\'"
 
@@ -818,7 +818,7 @@
     iput-object v1, p1, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->songCountTitle:Landroid/widget/TextView;
 
     .line 140
-    const v1, 0x7f090501
+    const v1, 0x7f09050b
 
     const-string v2, "field \'songCount\'"
 
@@ -1023,44 +1023,44 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->songCount:Landroid/widget/TextView;
 
     .line 205
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296947:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296953:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 206
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296947:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296953:Landroid/view/View;
 
     .line 207
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297053:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297060:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 208
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297053:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297060:Landroid/view/View;
 
     .line 209
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297250:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297257:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 210
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297250:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297257:Landroid/view/View;
 
     .line 211
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297583:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297593:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 212
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297583:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297593:Landroid/view/View;
 
     .line 213
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297235:Landroid/view/View;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297242:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 214
-    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297235:Landroid/view/View;
+    iput-object v2, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131297242:Landroid/view/View;
 
     .line 215
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity_ViewBinding;->view2131296286:Landroid/view/View;

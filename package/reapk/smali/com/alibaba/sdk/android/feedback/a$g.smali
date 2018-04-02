@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final ali_feedback_common_title_left_btn_shadow:I = 0x7f1001b7
+.field public static final ali_feedback_common_title_left_btn_shadow:I = 0x7f1001b9
 
-.field public static final ali_feedback_common_title_style:I = 0x7f1001b8
+.field public static final ali_feedback_common_title_style:I = 0x7f1001ba
 
-.field public static final ali_feedback_common_title_text_shadow:I = 0x7f1001b9
+.field public static final ali_feedback_common_title_text_shadow:I = 0x7f1001bb
 
-.field public static final ali_feedback_commont_title_right_btn_shadow:I = 0x7f1001ba
+.field public static final ali_feedback_commont_title_right_btn_shadow:I = 0x7f1001bc
 
-.field public static final ali_feedback_contentoverlay:I = 0x7f1001bb
+.field public static final ali_feedback_contentoverlay:I = 0x7f1001bd
 
 
 # direct methods

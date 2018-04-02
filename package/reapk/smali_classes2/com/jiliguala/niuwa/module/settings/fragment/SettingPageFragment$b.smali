@@ -36,17 +36,17 @@
     .param p1, "fragment"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 1667
+    .line 1677
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1668
+    .line 1678
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1669
+    .line 1679
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     .prologue
-    .line 1664
+    .line 1674
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     return-object v0
@@ -72,7 +72,7 @@
     .param p5, "gender"    # Ljava/lang/String;
 
     .prologue
-    .line 1702
+    .line 1712
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -87,7 +87,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1704
+    .line 1714
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -104,7 +104,7 @@
 
     move-result-object v7
 
-    .line 1705
+    .line 1715
     .local v7, "safeModeFragment":Lcom/jiliguala/niuwa/common/widget/c;
     new-instance v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b$1;
 
@@ -124,7 +124,7 @@
 
     invoke-virtual {v7, v0}, Lcom/jiliguala/niuwa/common/widget/c;->a(Lcom/jiliguala/niuwa/common/widget/c$a;)V
 
-    .line 1719
+    .line 1729
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -139,7 +139,7 @@
 
     invoke-virtual {v7, v0}, Lcom/jiliguala/niuwa/common/widget/c;->b(Landroid/support/v4/app/ag;)V
 
-    .line 1721
+    .line 1731
     .end local v7    # "safeModeFragment":Lcom/jiliguala/niuwa/common/widget/c;
     :cond_0
     return-void
@@ -154,7 +154,7 @@
 
     const/4 v2, 0x0
 
-    .line 1673
+    .line 1683
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -177,7 +177,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1674
+    .line 1684
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -186,9 +186,9 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)V
 
-    .line 1676
+    .line 1686
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -204,7 +204,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/login/a;->a(I)V
 
-    .line 1677
+    .line 1687
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -213,127 +213,11 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
-
-    .line 1678
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Lcom/makeramen/roundedimageview/RoundedImageView;->setSelected(Z)V
-
-    .line 1680
-    :cond_1
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 1681
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4200(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/makeramen/roundedimageview/RoundedImageView;->setSelected(Z)V
-
-    .line 1682
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2000(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4202(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
-
-    .line 1684
-    :cond_2
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    .line 1685
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setSelected(Z)V
-
-    .line 1687
-    :cond_3
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
 
     .line 1688
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
@@ -344,13 +228,44 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setSelected(Z)V
+    invoke-virtual {v0, v3}, Lcom/makeramen/roundedimageview/RoundedImageView;->setSelected(Z)V
 
-    .line 1689
+    .line 1690
+    :cond_1
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 1691
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/makeramen/roundedimageview/RoundedImageView;->setSelected(Z)V
+
+    .line 1692
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -367,14 +282,14 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2100(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/makeramen/roundedimageview/RoundedImageView;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 1691
-    :cond_4
+    .line 1694
+    :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -387,9 +302,9 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_3
 
-    .line 1692
+    .line 1695
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -404,8 +319,8 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setSelected(Z)V
 
-    .line 1694
-    :cond_5
+    .line 1697
+    :cond_3
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -418,9 +333,9 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_4
 
-    .line 1695
+    .line 1698
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -435,7 +350,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setSelected(Z)V
 
-    .line 1696
+    .line 1699
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -458,7 +373,92 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4402(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 1698
+    .line 1701
+    :cond_4
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    .line 1702
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setSelected(Z)V
+
+    .line 1704
+    :cond_5
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_6
+
+    .line 1705
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setSelected(Z)V
+
+    .line 1706
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$4502(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+
+    .line 1708
     :cond_6
     return-void
 .end method

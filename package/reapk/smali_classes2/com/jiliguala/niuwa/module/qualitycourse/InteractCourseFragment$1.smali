@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     .prologue
-    .line 140
+    .line 145
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$1;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,18 +41,7 @@
     .locals 2
 
     .prologue
-    .line 143
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$1;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
-
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setRefreshing(Z)V
-
-    .line 144
+    .line 149
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$1;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -63,12 +52,12 @@
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$1;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;->refreshNew(Ljava/lang/String;)V
 
-    .line 145
+    .line 150
     return-void
 .end method

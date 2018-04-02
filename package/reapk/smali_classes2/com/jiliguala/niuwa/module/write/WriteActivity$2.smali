@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     .prologue
-    .line 326
+    .line 330
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->a:Ljava/lang/String;
@@ -52,14 +52,14 @@
     .param p1, "unitDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    .line 345
+    .line 349
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->access$502(Lcom/jiliguala/niuwa/module/write/WriteActivity;Z)Z
 
-    .line 347
+    .line 351
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->access$600(Lcom/jiliguala/niuwa/module/write/WriteActivity;)Lcom/jiliguala/niuwa/module/write/WriteActivity$a;
@@ -74,7 +74,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/write/WriteActivity$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 370
+    .line 374
     return-void
 .end method
 
@@ -82,7 +82,7 @@
     .locals 0
 
     .prologue
-    .line 330
+    .line 334
     return-void
 .end method
 
@@ -91,7 +91,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 335
+    .line 339
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->isFinishing()Z
@@ -100,24 +100,24 @@
 
     if-nez v0, :cond_0
 
-    .line 336
+    .line 340
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->access$400(Lcom/jiliguala/niuwa/module/write/WriteActivity;)V
 
-    .line 337
+    .line 341
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->access$502(Lcom/jiliguala/niuwa/module/write/WriteActivity;Z)Z
 
-    .line 339
+    .line 343
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->finish()V
 
-    .line 341
+    .line 345
     :cond_0
     return-void
 .end method
@@ -126,7 +126,7 @@
     .locals 0
 
     .prologue
-    .line 326
+    .line 330
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/write/WriteActivity$2;->a(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V

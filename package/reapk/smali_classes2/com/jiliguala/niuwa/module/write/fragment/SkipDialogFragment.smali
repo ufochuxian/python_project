@@ -221,7 +221,7 @@
 
     .line 146
     :pswitch_data_0
-    .packed-switch 0x7f0904f9
+    .packed-switch 0x7f090503
         :pswitch_0
         :pswitch_1
     .end packed-switch
@@ -285,7 +285,7 @@
 
     .prologue
     .line 122
-    const v1, 0x7f0b0186
+    const v1, 0x7f0b018b
 
     invoke-virtual {p1, v1, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     .line 123
     .local v0, "view":Landroid/view/View;
-    const v1, 0x7f0904fc
+    const v1, 0x7f090506
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -330,7 +330,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 126
-    const v1, 0x7f0904f9
+    const v1, 0x7f090503
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -339,7 +339,7 @@
     invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 127
-    const v1, 0x7f0904fa
+    const v1, 0x7f090504
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

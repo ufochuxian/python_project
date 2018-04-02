@@ -1055,6 +1055,16 @@
     .end annotation
 .end field
 
+.field public static final dW:I = 0x7f060100
+    .annotation build Landroid/support/annotation/l;
+    .end annotation
+.end field
+
+.field public static final dX:I = 0x7f060101
+    .annotation build Landroid/support/annotation/l;
+    .end annotation
+.end field
+
 .field public static final da:I = 0x7f0600d0
     .annotation build Landroid/support/annotation/l;
     .end annotation
@@ -1301,7 +1311,7 @@
     .locals 0
 
     .prologue
-    .line 1818
+    .line 1821
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

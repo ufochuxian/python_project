@@ -36,17 +36,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 3276
+    .line 3324
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3277
+    .line 3325
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$c;->a:Ljava/lang/ref/WeakReference;
 
-    .line 3278
+    .line 3326
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .param p1, "x1"    # Ljava/lang/ref/WeakReference;
 
     .prologue
-    .line 3272
+    .line 3320
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$c;->a:Ljava/lang/ref/WeakReference;
 
     return-object p1
@@ -68,7 +68,7 @@
     .locals 2
 
     .prologue
-    .line 3286
+    .line 3334
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$c;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -77,7 +77,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3287
+    .line 3335
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$c;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -86,9 +86,9 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3400(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3500(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
 
-    .line 3288
+    .line 3336
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$c;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -97,7 +97,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3200(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextSwitcher;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3300(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextSwitcher;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextSwitcher;->setVisibility(I)V
 
-    .line 3290
+    .line 3338
     :cond_0
     return-void
 .end method

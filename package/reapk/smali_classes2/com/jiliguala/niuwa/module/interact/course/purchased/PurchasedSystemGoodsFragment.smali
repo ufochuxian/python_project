@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b016b
+    const v3, 0x7f0b0170
 
     const/4 v4, 0x0
 
@@ -146,7 +146,7 @@
     .line 65
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsFragment;->mHeadView:Landroid/widget/RelativeLayout;
 
-    const v3, 0x7f09057a
+    const v3, 0x7f090584
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -159,7 +159,7 @@
     .line 66
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsFragment;->mHeadView:Landroid/widget/RelativeLayout;
 
-    const v3, 0x7f0905e1
+    const v3, 0x7f0905eb
 
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -291,7 +291,7 @@
     .line 125
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09026d
+    const v1, 0x7f090272
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -311,7 +311,7 @@
     .line 127
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/purchased/PurchasedSystemGoodsFragment;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f09053c
+    const v1, 0x7f090546
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

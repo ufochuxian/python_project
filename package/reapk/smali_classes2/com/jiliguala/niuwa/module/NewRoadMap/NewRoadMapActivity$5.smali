@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     .prologue
-    .line 749
+    .line 766
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$5;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 2
 
     .prologue
-    .line 752
+    .line 769
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity$5;->a:Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;->access$500(Lcom/jiliguala/niuwa/module/NewRoadMap/NewRoadMapActivity;Z)V
 
-    .line 753
+    .line 770
     return-void
 .end method

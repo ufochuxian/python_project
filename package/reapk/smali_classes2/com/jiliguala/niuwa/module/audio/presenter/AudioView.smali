@@ -28,6 +28,9 @@
 .method public abstract isFromPractise()Z
 .end method
 
+.method public abstract isFromRoadMap()Z
+.end method
+
 .method public abstract launchOfflineMode()V
 .end method
 

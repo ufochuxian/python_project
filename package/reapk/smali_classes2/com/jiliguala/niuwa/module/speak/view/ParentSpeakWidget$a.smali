@@ -33,17 +33,17 @@
     .param p1, "speakViewWidget"    # Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     .prologue
-    .line 665
+    .line 666
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 666
+    .line 667
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 667
+    .line 668
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 671
+    .line 672
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -67,17 +67,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 672
+    .line 673
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 685
+    .line 686
     :cond_0
     :goto_0
     return-void
 
-    .line 674
+    .line 675
     :pswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -89,7 +89,7 @@
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$1400(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)V
 
-    .line 675
+    .line 676
     const/16 v0, 0x1002
 
     const-wide/16 v2, 0x14
@@ -98,7 +98,7 @@
 
     goto :goto_0
 
-    .line 678
+    .line 679
     :pswitch_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 681
+    .line 682
     :pswitch_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -126,7 +126,7 @@
 
     goto :goto_0
 
-    .line 672
+    .line 673
     nop
 
     :pswitch_data_0

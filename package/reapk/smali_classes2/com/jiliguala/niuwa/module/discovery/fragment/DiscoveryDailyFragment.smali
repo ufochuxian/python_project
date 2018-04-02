@@ -728,7 +728,7 @@
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
     .line 151
-    const v0, 0x7f09053c
+    const v0, 0x7f090546
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -926,7 +926,7 @@
     .line 300
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f090299
+    const v1, 0x7f09029f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -939,7 +939,7 @@
     .line 301
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f09029e
+    const v1, 0x7f0902a4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -966,7 +966,7 @@
     .line 306
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f090298
+    const v1, 0x7f09029e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -979,7 +979,7 @@
     .line 307
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f09029d
+    const v1, 0x7f0902a3
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -992,7 +992,7 @@
     .line 309
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f090297
+    const v1, 0x7f09029d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1005,7 +1005,7 @@
     .line 310
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f09029c
+    const v1, 0x7f0902a2
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1018,7 +1018,7 @@
     .line 312
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f090296
+    const v1, 0x7f09029c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1031,7 +1031,7 @@
     .line 313
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v1, 0x7f09029b
+    const v1, 0x7f0902a1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1044,7 +1044,7 @@
     .line 315
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v2, 0x7f090295
+    const v2, 0x7f09029b
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1055,7 +1055,7 @@
     .line 316
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment;->mBannerViewHolder:Lcom/jiliguala/niuwa/module/discovery/fragment/DiscoveryDailyFragment$a;
 
-    const v2, 0x7f09029a
+    const v2, 0x7f0902a0
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

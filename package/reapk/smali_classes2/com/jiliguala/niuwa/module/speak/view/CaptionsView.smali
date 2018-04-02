@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0199
+    const v1, 0x7f0b019e
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -139,7 +139,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f0600fc
+    const v2, 0x7f0600fe
 
     .line 49
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->mEngTxt:Landroid/widget/TextView;
@@ -178,7 +178,7 @@
     .line 43
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/CaptionsView;->mRootView:Landroid/view/View;
 
-    const v1, 0x7f0800c5
+    const v1, 0x7f0800c7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -189,7 +189,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fc
+    const v2, 0x7f0600fe
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 

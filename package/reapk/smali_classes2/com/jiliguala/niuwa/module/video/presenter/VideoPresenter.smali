@@ -177,7 +177,7 @@
     .locals 2
 
     .prologue
-    .line 90
+    .line 91
     const-class v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -186,7 +186,7 @@
 
     sput-object v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->TAG:Ljava/lang/String;
 
-    .line 115
+    .line 116
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -204,48 +204,48 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 161
+    .line 162
     invoke-direct {p0}, Lcom/jiliguala/niuwa/common/base/d;-><init>()V
 
-    .line 122
+    .line 123
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
-    .line 123
+    .line 124
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
-    .line 125
+    .line 126
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
-    .line 130
+    .line 131
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
-    .line 131
+    .line 132
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJumpBackFromHome:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 150
+    .line 151
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
-    .line 154
+    .line 155
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->errorCounter:I
 
-    .line 162
+    .line 163
     new-instance v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
     invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mPlayHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
-    .line 163
+    .line 164
     return-void
 .end method
 
@@ -254,7 +254,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
     return-object v0
@@ -266,7 +266,7 @@
     .param p1, "x1"    # Ljava/util/ArrayList;
 
     .prologue
-    .line 89
+    .line 90
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
     return-object p1
@@ -277,7 +277,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->performFavVideo()V
 
     return-void
@@ -288,7 +288,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     return-object v0
@@ -299,7 +299,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mPlayHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
     return-object v0
@@ -310,7 +310,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getPosition()I
 
     move-result v0
@@ -323,7 +323,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getDuration()I
 
     move-result v0
@@ -337,7 +337,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->savePlayRecord(I)V
 
     return-void
@@ -348,7 +348,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     return-object v0
@@ -360,7 +360,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 89
+    .line 90
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAriplayProgressOneShotFlag:Z
 
     return p1
@@ -371,7 +371,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
     return v0
@@ -382,7 +382,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     return-object v0
@@ -393,7 +393,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJumpBackFromHome:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
@@ -404,7 +404,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
     return-void
@@ -415,7 +415,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->recordTrackerStart()V
 
     return-void
@@ -426,7 +426,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playRecord:Lcom/jiliguala/niuwa/logic/db/daometa/e;
 
     return-object v0
@@ -438,7 +438,7 @@
     .param p1, "x1"    # Lcom/jiliguala/niuwa/logic/db/daometa/e;
 
     .prologue
-    .line 89
+    .line 90
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playRecord:Lcom/jiliguala/niuwa/logic/db/daometa/e;
 
     return-object p1
@@ -449,7 +449,7 @@
     .param p0, "x0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 89
+    .line 90
     iget-wide v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
     return-wide v0
@@ -461,7 +461,7 @@
     .param p1, "x1"    # J
 
     .prologue
-    .line 89
+    .line 90
     iput-wide p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
     return-wide p1
@@ -472,7 +472,7 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 793
+    .line 801
     const-string v0, "-1"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -481,16 +481,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 794
+    .line 802
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
-    .line 802
+    .line 810
     :goto_0
     return-void
 
-    .line 795
+    .line 803
     :cond_0
     const-string v0, "1000"
 
@@ -500,14 +500,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 796
+    .line 804
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
     goto :goto_0
 
-    .line 797
+    .line 805
     :cond_1
     const-string v0, "-2"
 
@@ -517,14 +517,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 798
+    .line 806
     const/4 v0, 0x4
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
     goto :goto_0
 
-    .line 800
+    .line 808
     :cond_2
     const/4 v0, 0x1
 
@@ -537,12 +537,12 @@
     .locals 2
 
     .prologue
-    .line 2087
+    .line 2095
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isMcPhCourse:Z
 
     if-eqz v0, :cond_0
 
-    .line 2088
+    .line 2096
     invoke-static {}, Lcom/jiliguala/niuwa/logic/db/a;->a()Lcom/jiliguala/niuwa/logic/db/a;
 
     move-result-object v0
@@ -551,7 +551,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/db/a;->e(Ljava/lang/String;)V
 
-    .line 2090
+    .line 2098
     :cond_0
     return-void
 .end method
@@ -560,8 +560,8 @@
     .locals 4
 
     .prologue
-    .line 1295
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1303
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -569,10 +569,10 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$7;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/common/a/i;)V
 
-    .line 1316
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1324
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v0
 
@@ -580,17 +580,17 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$8;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/t/a/a;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/u/a;->a(Lcom/jiliguala/niuwa/logic/u/a/a;)V
 
-    .line 1327
+    .line 1335
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1328
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
+    .line 1336
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/u/a;->a()Lcom/jiliguala/niuwa/logic/u/a;
 
     move-result-object v1
 
@@ -598,7 +598,7 @@
 
     const/4 v3, 0x2
 
-    .line 1329
+    .line 1337
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -609,10 +609,10 @@
 
     move-result-object v0
 
-    .line 1328
-    invoke-virtual {v1, v2, v3, v0}, Lcom/jiliguala/niuwa/logic/t/a;->a(Ljava/lang/Object;ILandroid/support/v4/app/ag;)V
+    .line 1336
+    invoke-virtual {v1, v2, v3, v0}, Lcom/jiliguala/niuwa/logic/u/a;->a(Ljava/lang/Object;ILandroid/support/v4/app/ag;)V
 
-    .line 1332
+    .line 1340
     :cond_0
     return-void
 .end method
@@ -623,12 +623,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 860
+    .line 868
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
 
-    .line 861
+    .line 869
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->res:Ljava/util/ArrayList;
@@ -647,7 +647,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
-    .line 862
+    .line 870
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->res:Ljava/util/ArrayList;
@@ -662,7 +662,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->cookies:Ljava/lang/String;
 
-    .line 865
+    .line 873
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -671,14 +671,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 868
+    .line 876
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 869
+    .line 877
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -689,12 +689,12 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 875
+    .line 883
     :cond_0
     :goto_0
     return-void
 
-    .line 872
+    .line 880
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
@@ -711,24 +711,24 @@
     .param p2, "bid"    # Ljava/lang/String;
 
     .prologue
-    .line 1046
+    .line 1054
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;
 
     invoke-direct {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1047
+    .line 1055
     .local v1, "favDataEntity":Lcom/jiliguala/niuwa/logic/network/http/entity/FavDataEntity;
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1048
+    .line 1056
     .local v2, "json":Ljava/lang/String;
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v0
 
-    .line 1049
+    .line 1057
     .local v0, "body":Lokhttp3/ab;
     return-object v0
 .end method
@@ -753,37 +753,37 @@
     .end annotation
 
     .prologue
-    .line 1415
+    .line 1423
     .local p4, "speakUrls":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate$SpeakModel;>;"
     new-instance v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;-><init>()V
 
-    .line 1416
+    .line 1424
     .local v1, "data":Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;
     iput-object p1, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->bid:Ljava/lang/String;
 
-    .line 1417
+    .line 1425
     iput-object p2, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->courseid:Ljava/lang/String;
 
-    .line 1418
+    .line 1426
     iput-object p3, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->subtaskid:Ljava/lang/String;
 
-    .line 1419
+    .line 1427
     iput-object p4, v1, Lcom/jiliguala/niuwa/logic/network/json/CourseProgressTemplate;->speakurl:Ljava/util/ArrayList;
 
-    .line 1421
+    .line 1429
     invoke-static {v1}, Lcom/jiliguala/niuwa/logic/network/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1423
+    .line 1431
     .local v2, "json":Ljava/lang/String;
     invoke-static {v2}, Lcom/jiliguala/niuwa/logic/network/a/b;->a(Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v0
 
-    .line 1424
+    .line 1432
     .local v0, "body":Lokhttp3/ab;
     return-object v0
 .end method
@@ -794,7 +794,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 627
+    .line 635
     iget v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v3, 0x1
@@ -819,12 +819,12 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 634
+    .line 642
     :cond_0
     :goto_0
     return v1
 
-    .line 631
+    .line 639
     :cond_1
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
@@ -837,11 +837,11 @@
 
     goto :goto_0
 
-    .line 632
+    .line 640
     :catch_0
     move-exception v0
 
-    .line 634
+    .line 642
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -852,7 +852,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 640
+    .line 648
     iget v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/16 v3, 0x9
@@ -871,12 +871,12 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 647
+    .line 655
     :cond_0
     :goto_0
     return v1
 
-    .line 644
+    .line 652
     :cond_1
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
@@ -889,11 +889,11 @@
 
     goto :goto_0
 
-    .line 645
+    .line 653
     :catch_0
     move-exception v0
 
-    .line 647
+    .line 655
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -902,14 +902,14 @@
     .locals 2
 
     .prologue
-    .line 264
+    .line 265
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/logic/g/e;->a(Lcom/jiliguala/niuwa/logic/g/d;)V
 
-    .line 265
+    .line 266
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "JOB_THREAD"
@@ -918,12 +918,12 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
 
-    .line 266
+    .line 267
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 267
+    .line 268
     new-instance v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
@@ -936,7 +936,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
-    .line 268
+    .line 269
     return-void
 .end method
 
@@ -952,42 +952,42 @@
 
     const/4 v1, 0x0
 
-    .line 1819
+    .line 1827
     iget v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
     if-ne p1, v2, :cond_0
 
-    .line 1820
+    .line 1828
     iget v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
     add-int/lit8 v2, v2, 0x1
 
     iput v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
-    .line 1825
+    .line 1833
     :goto_0
     if-lt p1, p2, :cond_1
 
-    .line 1826
+    .line 1834
     iput v4, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
-    .line 1827
+    .line 1835
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
-    .line 1837
+    .line 1845
     :goto_1
     return v0
 
-    .line 1822
+    .line 1830
     :cond_0
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
-    .line 1823
+    .line 1831
     iput p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
     goto :goto_0
 
-    .line 1829
+    .line 1837
     :cond_1
     add-int/lit16 v2, p2, -0x3e8
 
@@ -999,10 +999,10 @@
 
     if-le v2, v3, :cond_2
 
-    .line 1833
+    .line 1841
     iput v4, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
-    .line 1834
+    .line 1842
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAirPlayPosRemainsIdle:I
 
     goto :goto_1
@@ -1010,7 +1010,7 @@
     :cond_2
     move v0, v1
 
-    .line 1837
+    .line 1845
     goto :goto_1
 .end method
 
@@ -1022,7 +1022,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1800
+    .line 1808
     if-nez p1, :cond_0
 
     if-nez p2, :cond_0
@@ -1039,24 +1039,24 @@
 
     if-le v1, v2, :cond_0
 
-    .line 1801
+    .line 1809
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
-    .line 1802
+    .line 1810
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderDur:I
 
-    .line 1803
+    .line 1811
     const/4 v0, 0x1
 
-    .line 1807
+    .line 1815
     :goto_0
     return v0
 
-    .line 1805
+    .line 1813
     :cond_0
     iput p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
-    .line 1806
+    .line 1814
     iput p2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderDur:I
 
     goto :goto_0
@@ -1068,7 +1068,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 614
+    .line 622
     iget v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v3, 0x4
@@ -1081,12 +1081,12 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 621
+    .line 629
     :cond_0
     :goto_0
     return v1
 
-    .line 618
+    .line 626
     :cond_1
     :try_start_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
@@ -1099,11 +1099,11 @@
 
     goto :goto_0
 
-    .line 619
+    .line 627
     :catch_0
     move-exception v0
 
-    .line 621
+    .line 629
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
@@ -1114,18 +1114,18 @@
     .param p2, "dur"    # I
 
     .prologue
-    .line 1785
+    .line 1793
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->getPlayingMode()I
 
     move-result v0
 
-    .line 1786
+    .line 1794
     .local v0, "playingMode":I
     packed-switch v0, :pswitch_data_0
 
-    .line 1793
+    .line 1801
     :pswitch_0
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isAirplayComplete(II)Z
 
@@ -1134,7 +1134,7 @@
     :goto_0
     return v1
 
-    .line 1789
+    .line 1797
     :pswitch_1
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isAirplayComplete(II)Z
 
@@ -1153,7 +1153,7 @@
 
     goto :goto_0
 
-    .line 1791
+    .line 1799
     :pswitch_2
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isIqiyiDlnaComplete(II)Z
 
@@ -1161,7 +1161,7 @@
 
     goto :goto_0
 
-    .line 1786
+    .line 1794
     nop
 
     :pswitch_data_0
@@ -1176,35 +1176,35 @@
     .locals 2
 
     .prologue
-    .line 980
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    .line 988
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/q/b;->j()Z
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/r/b;->j()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 981
+    .line 989
     const/4 v0, 0x0
 
-    .line 985
+    .line 993
     :goto_0
     return v0
 
-    .line 984
+    .line 992
     :cond_0
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/q/b;->f()Z
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/r/b;->f()Z
 
     move-result v0
 
-    .line 985
+    .line 993
     .local v0, "reached":Z
     goto :goto_0
 .end method
@@ -1213,17 +1213,17 @@
     .locals 1
 
     .prologue
-    .line 434
+    .line 435
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mLastRedirectResult:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;
 
     if-eqz v0, :cond_0
 
-    .line 435
+    .line 436
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mLastRedirectResult:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->proceedPlay(Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;)V
 
-    .line 437
+    .line 438
     :cond_0
     return-void
 .end method
@@ -1234,32 +1234,32 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 847
+    .line 855
     const-string v0, "\u8d44\u6e90\u5df2\u4e0b\u67b6\uff0c\u6682\u65f6\u65e0\u6cd5\u64ad\u653e"
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 848
+    .line 856
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->seekTo(I)V
 
-    .line 849
+    .line 857
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 850
+    .line 858
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 851
+    .line 859
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 852
+    .line 860
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1268,7 +1268,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showSurfaceCover(Z)V
 
-    .line 853
+    .line 861
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1277,7 +1277,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 854
+    .line 862
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1286,7 +1286,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 856
+    .line 864
     :cond_0
     return-void
 .end method
@@ -1297,12 +1297,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 989
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    .line 997
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/q/b;->j()Z
+    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/r/b;->j()Z
 
     move-result v1
 
@@ -1310,28 +1310,28 @@
 
     move v1, v2
 
-    .line 1002
+    .line 1010
     :goto_0
     return v1
 
-    .line 992
+    .line 1000
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isVideoLimitReached()Z
 
     move-result v0
 
-    .line 994
+    .line 1002
     .local v0, "reached":Z
     if-eqz v0, :cond_2
 
-    .line 996
+    .line 1004
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 997
+    .line 1005
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -1340,7 +1340,7 @@
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 999
+    .line 1007
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
@@ -1348,7 +1348,7 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/g/e;->g()V
 
-    .line 1000
+    .line 1008
     const/4 v1, 0x1
 
     goto :goto_0
@@ -1356,7 +1356,7 @@
     :cond_2
     move v1, v2
 
-    .line 1002
+    .line 1010
     goto :goto_0
 .end method
 
@@ -1374,20 +1374,20 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 1479
+    .line 1487
     invoke-static {p1}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
-    .line 1488
+    .line 1496
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
     if-eqz v0, :cond_0
 
-    .line 1489
+    .line 1497
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
     invoke-virtual {v0, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;->cancel(Z)Z
 
-    .line 1491
+    .line 1499
     :cond_0
     new-instance v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
@@ -1399,7 +1399,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
-    .line 1492
+    .line 1500
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
     const/4 v1, 0x2
@@ -1414,7 +1414,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1493
+    .line 1501
     return-void
 .end method
 
@@ -1424,7 +1424,7 @@
     .prologue
     const/4 v2, 0x6
 
-    .line 661
+    .line 669
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v1, 0x5
@@ -1441,16 +1441,16 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 662
+    .line 670
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->pause()V
 
-    .line 663
+    .line 671
     invoke-direct {p0, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 665
+    .line 673
     :cond_1
     return-void
 .end method
@@ -1459,7 +1459,7 @@
     .locals 4
 
     .prologue
-    .line 1335
+    .line 1343
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
 
     move-result-object v1
@@ -1468,17 +1468,17 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/k/e;->a(Lcom/jiliguala/niuwa/logic/network/json/AbstractResData;)V
 
-    .line 1336
+    .line 1344
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->updateFavIcon()V
 
-    .line 1337
+    .line 1345
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1338
+    .line 1346
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -1487,7 +1487,7 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onClickFavThisVideo()V
 
-    .line 1339
+    .line 1347
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -1496,7 +1496,7 @@
 
     move-result-object v0
 
-    .line 1340
+    .line 1348
     .local v0, "bid":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -1512,7 +1512,7 @@
 
     move-result-object v2
 
-    .line 1341
+    .line 1349
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
@@ -1521,7 +1521,7 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->_id:Ljava/lang/String;
 
-    .line 1342
+    .line 1350
     invoke-direct {p0, v3, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->generateBody(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v3
@@ -1530,7 +1530,7 @@
 
     move-result-object v2
 
-    .line 1343
+    .line 1351
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -1539,7 +1539,7 @@
 
     move-result-object v2
 
-    .line 1344
+    .line 1352
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -1548,7 +1548,7 @@
 
     move-result-object v2
 
-    .line 1345
+    .line 1353
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -1561,15 +1561,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$9;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1346
+    .line 1354
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 1340
+    .line 1348
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1364
+    .line 1372
     .end local v0    # "bid":Ljava/lang/String;
     :cond_0
     return-void
@@ -1579,7 +1579,7 @@
     .locals 1
 
     .prologue
-    .line 811
+    .line 819
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -1590,7 +1590,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 812
+    .line 820
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -1601,15 +1601,15 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
-    .line 813
+    .line 821
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->start()V
 
-    .line 825
+    .line 833
     :cond_0
     :goto_0
     return-void
 
-    .line 817
+    .line 825
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onVideoLimitReachCheck()Z
 
@@ -1617,7 +1617,7 @@
 
     if-nez v0, :cond_0
 
-    .line 818
+    .line 826
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -1628,17 +1628,17 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
-    .line 819
+    .line 827
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-nez v0, :cond_2
 
-    .line 820
+    .line 828
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext()V
 
     goto :goto_0
 
-    .line 822
+    .line 830
     :cond_2
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->start()V
 
@@ -1650,7 +1650,7 @@
     .param p1, "manual"    # Z
 
     .prologue
-    .line 1019
+    .line 1027
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -1661,19 +1661,19 @@
 
     if-nez v0, :cond_1
 
-    .line 1021
+    .line 1029
     const v0, 0x7f0f0142
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 1022
+    .line 1030
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1023
+    .line 1031
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1682,12 +1682,12 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 1043
+    .line 1051
     :cond_0
     :goto_0
     return-void
 
-    .line 1025
+    .line 1033
     :cond_1
     if-nez p1, :cond_2
 
@@ -1695,21 +1695,21 @@
 
     if-eqz v0, :cond_2
 
-    .line 1026
+    .line 1034
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->play()V
 
     goto :goto_0
 
-    .line 1028
+    .line 1036
     :cond_2
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->realUri:Ljava/lang/String;
 
-    .line 1029
+    .line 1037
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 1030
+    .line 1038
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -1720,14 +1720,14 @@
 
     if-nez v0, :cond_3
 
-    .line 1031
+    .line 1039
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1032
+    .line 1040
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1738,20 +1738,20 @@
 
     goto :goto_0
 
-    .line 1035
+    .line 1043
     :cond_3
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 1036
+    .line 1044
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    .line 1037
+    .line 1045
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -1760,7 +1760,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showLoadingProgress()V
 
-    .line 1040
+    .line 1048
     :cond_4
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
@@ -1776,7 +1776,7 @@
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
     .prologue
-    .line 606
+    .line 614
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v1, 0x2
@@ -1789,11 +1789,11 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 608
+    .line 616
     :cond_0
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->prepareAsync()V
 
-    .line 611
+    .line 619
     :cond_1
     return-void
 .end method
@@ -1803,32 +1803,32 @@
     .param p1, "result"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;
 
     .prologue
-    .line 1598
+    .line 1606
     :try_start_0
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mLastRedirectResult:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;
 
-    .line 1599
+    .line 1607
     invoke-static {p1}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
-    .line 1600
+    .line 1608
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-static {v1}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
-    .line 1601
+    .line 1609
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 1602
+    .line 1610
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 1603
+    .line 1611
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
-    .line 1605
+    .line 1613
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v1, :cond_1
@@ -1841,19 +1841,19 @@
 
     if-eqz v1, :cond_1
 
-    .line 1606
+    .line 1614
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     iget-object v2, p1, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;->uri:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->startPlay(Ljava/lang/String;)V
 
-    .line 1619
+    .line 1627
     :cond_0
     :goto_0
     return-void
 
-    .line 1608
+    .line 1616
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
@@ -1861,7 +1861,7 @@
 
     invoke-direct {p0, v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setDataSource(Landroid/media/MediaPlayer;Ljava/lang/String;)V
 
-    .line 1609
+    .line 1617
     if-eqz p1, :cond_2
 
     iget-object v1, p1, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;->uri:Ljava/lang/String;
@@ -1869,7 +1869,7 @@
     :goto_1
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->realUri:Ljava/lang/String;
 
-    .line 1611
+    .line 1619
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepareAsync(Landroid/media/MediaPlayer;)V
@@ -1878,11 +1878,11 @@
 
     goto :goto_0
 
-    .line 1613
+    .line 1621
     :catch_0
     move-exception v0
 
-    .line 1614
+    .line 1622
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -1890,7 +1890,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1615
+    .line 1623
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -1903,7 +1903,7 @@
 
     goto :goto_0
 
-    .line 1609
+    .line 1617
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_2
     :try_start_1
@@ -1920,35 +1920,35 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 691
+    .line 699
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 693
+    .line 701
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
 
-    .line 694
+    .line 702
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
-    .line 695
+    .line 703
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJobThread:Landroid/os/HandlerThread;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 700
+    .line 708
     :cond_0
     :goto_0
     return-void
 
-    .line 697
+    .line 705
     :catch_0
     move-exception v0
 
@@ -1960,7 +1960,7 @@
     .param p1, "dataPart"    # Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;
 
     .prologue
-    .line 1861
+    .line 1869
     iget-object v6, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
     invoke-static {v6}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
@@ -1975,12 +1975,12 @@
 
     if-nez p1, :cond_1
 
-    .line 1875
+    .line 1883
     :cond_0
     :goto_0
     return-void
 
-    .line 1864
+    .line 1872
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -1988,7 +1988,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 1865
+    .line 1873
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v6
@@ -1997,11 +1997,11 @@
 
     move-result-object v0
 
-    .line 1866
+    .line 1874
     .local v0, "bid":Ljava/lang/String;
     iget-object v1, p1, Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;->channel:Ljava/lang/String;
 
-    .line 1867
+    .line 1875
     .local v1, "channel":Ljava/lang/String;
     new-instance v6, Lorg/joda/time/DateTime;
 
@@ -2011,7 +2011,7 @@
 
     move-result-object v4
 
-    .line 1868
+    .line 1876
     .local v4, "dt":Lorg/joda/time/DateTime;
     invoke-virtual {v4}, Lorg/joda/time/DateTime;->getMillis()J
 
@@ -2025,7 +2025,7 @@
 
     move-result-object v5
 
-    .line 1870
+    .line 1878
     .local v5, "ts":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -2041,7 +2041,7 @@
 
     move-result-object v3
 
-    .line 1871
+    .line 1879
     .local v3, "databaseHelper":Lcom/jiliguala/niuwa/module/videofav/VideoFavDataBaseHelper;
     invoke-virtual {v3, v0, v1, v5}, Lcom/jiliguala/niuwa/module/videofav/VideoFavDataBaseHelper;->selectCountByBidAndChannelIDAndTS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2051,7 +2051,7 @@
 
     move-result-object v2
 
-    .line 1873
+    .line 1881
     .local v2, "count":Ljava/lang/String;
     invoke-virtual {v3, v0, v1, v2, v5}, Lcom/jiliguala/niuwa/module/videofav/VideoFavDataBaseHelper;->updateData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2062,12 +2062,12 @@
     .locals 4
 
     .prologue
-    .line 1235
+    .line 1243
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
 
-    .line 1236
+    .line 1244
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2076,7 +2076,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1237
+    .line 1245
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/b;->a()Lcom/jiliguala/niuwa/logic/i/b;
 
     move-result-object v0
@@ -2093,15 +2093,15 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->_id:Ljava/lang/String;
 
-    .line 1238
+    .line 1246
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/logic/i/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1243
+    .line 1251
     :cond_0
     :goto_0
     return-void
 
-    .line 1240
+    .line 1248
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/b;->a()Lcom/jiliguala/niuwa/logic/i/b;
 
@@ -2129,15 +2129,15 @@
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
     .prologue
-    .line 588
+    .line 596
     const/16 v0, 0x10
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 589
+    .line 597
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->release()V
 
-    .line 590
+    .line 598
     return-void
 .end method
 
@@ -2148,26 +2148,26 @@
     .param p3, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 322
+    .line 323
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 323
+    .line 324
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 354
+    .line 355
     :cond_0
     :goto_0
     return-void
 
-    .line 327
+    .line 328
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -2183,22 +2183,13 @@
 
     move-result-object v1
 
-    .line 328
+    .line 329
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 329
-    invoke-interface {v1, p1, p2, p3}, Lcom/jiliguala/niuwa/logic/network/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrx/e;
-
-    move-result-object v1
-
     .line 330
-    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
+    invoke-interface {v1, p1, p2, p3}, Lcom/jiliguala/niuwa/logic/network/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
@@ -2207,11 +2198,20 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
+    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
 
     move-result-object v1
 
     .line 332
+    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
+
+    move-result-object v1
+
+    .line 333
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2224,12 +2224,12 @@
 
     invoke-direct {v2, p0, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$4;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Ljava/lang/String;)V
 
-    .line 333
+    .line 334
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 327
+    .line 328
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -2241,14 +2241,14 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 366
+    .line 367
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 367
+    .line 368
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -2263,22 +2263,13 @@
 
     move-result-object v1
 
-    .line 368
+    .line 369
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
 
-    .line 369
-    invoke-interface {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/d;->e(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
-
-    move-result-object v1
-
     .line 370
-    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
+    invoke-interface {v1, p1, p2}, Lcom/jiliguala/niuwa/logic/network/d;->e(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v1
 
@@ -2287,11 +2278,20 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
+    invoke-virtual {v1, v2}, Lrx/e;->d(Lrx/h;)Lrx/e;
 
     move-result-object v1
 
     .line 372
+    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lrx/e;->g(Lrx/h;)Lrx/e;
+
+    move-result-object v1
+
+    .line 373
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -2304,15 +2304,15 @@
 
     invoke-direct {v2, p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$5;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Ljava/lang/String;)V
 
-    .line 373
+    .line 374
     invoke-virtual {v1, v2}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v1
 
-    .line 367
+    .line 368
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 394
+    .line 395
     :cond_0
     return-void
 .end method
@@ -2322,34 +2322,34 @@
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
     .prologue
-    .line 936
+    .line 944
     iget v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/16 v2, 0x10
 
     if-eq v1, v2, :cond_0
 
-    .line 937
+    .line 945
     const/4 v1, 0x1
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 939
+    .line 947
     :try_start_0
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->reset()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 944
+    .line 952
     :cond_0
     :goto_0
     return-void
 
-    .line 940
+    .line 948
     :catch_0
     move-exception v0
 
-    .line 941
+    .line 949
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -2362,7 +2362,7 @@
     .prologue
     const/16 v1, 0x1000
 
-    .line 929
+    .line 937
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->hasMessages(I)Z
@@ -2371,12 +2371,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 930
+    .line 938
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 932
+    .line 940
     :cond_0
     return-void
 .end method
@@ -2385,17 +2385,17 @@
     .locals 2
 
     .prologue
-    .line 1518
+    .line 1526
     const-string v0, ""
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
-    .line 1519
+    .line 1527
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
-    .line 1520
+    .line 1528
     return-void
 .end method
 
@@ -2405,22 +2405,22 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 947
+    .line 955
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setRid(Ljava/lang/String;)V
 
-    .line 948
+    .line 956
     const-string v0, "0"
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setChannelId(Ljava/lang/String;)V
 
-    .line 949
+    .line 957
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1, v1, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->doChannelSelectAction(Ljava/lang/String;IZZ)V
 
-    .line 950
+    .line 958
     return-void
 .end method
 
@@ -2429,15 +2429,15 @@
     .param p1, "pos"    # I
 
     .prologue
-    .line 2073
+    .line 2081
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isMcPhCourse:Z
 
     if-eqz v0, :cond_0
 
-    .line 2074
+    .line 2082
     if-lez p1, :cond_0
 
-    .line 2075
+    .line 2083
     invoke-static {}, Lcom/jiliguala/niuwa/logic/db/a;->a()Lcom/jiliguala/niuwa/logic/db/a;
 
     move-result-object v0
@@ -2454,7 +2454,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/db/a;->a(Lcom/jiliguala/niuwa/logic/db/daometa/e;)V
 
-    .line 2078
+    .line 2086
     :cond_0
     return-void
 .end method
@@ -2464,10 +2464,10 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 584
+    .line 592
     iput p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
-    .line 585
+    .line 593
     return-void
 .end method
 
@@ -2482,19 +2482,19 @@
     .end annotation
 
     .prologue
-    .line 593
+    .line 601
     iget v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_1
 
-    .line 595
+    .line 603
     invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 596
+    .line 604
     .local v0, "uri":Landroid/net/Uri;
     if-eqz v0, :cond_2
 
@@ -2522,7 +2522,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 597
+    .line 605
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
@@ -2534,18 +2534,18 @@
 
     invoke-virtual {p1, v1, v0, v2}, Landroid/media/MediaPlayer;->setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/Map;)V
 
-    .line 601
+    .line 609
     :goto_0
     const/4 v1, 0x2
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 603
+    .line 611
     .end local v0    # "uri":Landroid/net/Uri;
     :cond_1
     return-void
 
-    .line 599
+    .line 607
     .restart local v0    # "uri":Landroid/net/Uri;
     :cond_2
     invoke-virtual {p1, p2}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
@@ -2559,7 +2559,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 898
+    .line 906
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
 
     move-result-object v3
@@ -2568,7 +2568,7 @@
 
     move-result v1
 
-    .line 903
+    .line 911
     .local v1, "networkType":I
     const-string v3, "NONE_WIFI_NOTIFY_ENABLE"
 
@@ -2576,7 +2576,7 @@
 
     move-result v0
 
-    .line 904
+    .line 912
     .local v0, "enabled":Z
     sget-boolean v3, Lcom/jiliguala/niuwa/MyApplication;->VideoPlayNoneWifiEnable:Z
 
@@ -2588,14 +2588,14 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 906
+    .line 914
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 907
+    .line 915
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v2
@@ -2604,10 +2604,10 @@
 
     invoke-interface {v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->show3GNetStateDialog()V
 
-    .line 908
+    .line 916
     const/4 v2, 0x0
 
-    .line 911
+    .line 919
     :cond_0
     return v2
 .end method
@@ -2617,7 +2617,7 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 1853
+    .line 1861
     const-string v0, "1000"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2628,7 +2628,7 @@
 
     const-string v0, "-1"
 
-    .line 1854
+    .line 1862
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -2637,7 +2637,7 @@
 
     const-string v0, "-2"
 
-    .line 1855
+    .line 1863
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -2646,7 +2646,7 @@
 
     const-string v0, "0"
 
-    .line 1856
+    .line 1864
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -2655,11 +2655,11 @@
 
     const/4 v0, 0x1
 
-    .line 1853
+    .line 1861
     :goto_0
     return v0
 
-    .line 1856
+    .line 1864
     :cond_0
     const/4 v0, 0x0
 
@@ -2672,14 +2672,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 828
+    .line 836
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 829
+    .line 837
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -2700,14 +2700,14 @@
 
     invoke-interface {v0, v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->updateTitleAndArtist(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 832
+    .line 840
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->updateFavIcon()V
 
-    .line 834
+    .line 842
     iput v3, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
-    .line 835
+    .line 843
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->res:Ljava/util/ArrayList;
@@ -2724,20 +2724,20 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoLinkLen:I
 
-    .line 836
+    .line 844
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoLinkLen:I
 
     if-nez v0, :cond_2
 
-    .line 837
+    .line 845
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onLinksEmpty()V
 
-    .line 843
+    .line 851
     :cond_1
     :goto_0
     return-void
 
-    .line 840
+    .line 848
     :cond_2
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
@@ -2745,7 +2745,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 841
+    .line 849
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->fetchVideoResAndPlay()V
 
     goto :goto_0
@@ -2757,27 +2757,27 @@
     .param p2, "cookies"    # Ljava/lang/String;
 
     .prologue
-    .line 878
+    .line 886
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 880
+    .line 888
     .local v2, "t":J
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parseRedirectUrl(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 886
+    .line 894
     :goto_0
     return-void
 
-    .line 882
+    .line 890
     :catch_0
     move-exception v0
 
-    .line 883
+    .line 891
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -2788,12 +2788,12 @@
     .locals 2
 
     .prologue
-    .line 423
+    .line 424
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
 
-    .line 424
+    .line 425
     const-string v0, "b67e0d0aadb2400cbe1bba910f06b730"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
@@ -2806,14 +2806,14 @@
 
     if-nez v0, :cond_0
 
-    .line 425
+    .line 426
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 426
+    .line 427
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -2822,7 +2822,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onStartTimer()V
 
-    .line 430
+    .line 431
     :cond_0
     return-void
 .end method
@@ -2833,7 +2833,7 @@
     .prologue
     const/4 v2, 0x7
 
-    .line 653
+    .line 661
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v1, 0x3
@@ -2862,16 +2862,16 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 654
+    .line 662
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
 
-    .line 655
+    .line 663
     invoke-direct {p0, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 658
+    .line 666
     :cond_1
     return-void
 .end method
@@ -2881,13 +2881,13 @@
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
     .prologue
-    .line 568
+    .line 576
     :try_start_0
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->stop()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 573
+    .line 581
     :goto_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -2895,7 +2895,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 574
+    .line 582
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -2904,7 +2904,7 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 575
+    .line 583
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -2915,7 +2915,7 @@
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 577
+    .line 585
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -2923,7 +2923,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 578
+    .line 586
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -2932,7 +2932,7 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayPause()V
 
-    .line 579
+    .line 587
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -2941,15 +2941,15 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onNetworkUnavailable()V
 
-    .line 581
+    .line 589
     :cond_1
     return-void
 
-    .line 569
+    .line 577
     :catch_0
     move-exception v0
 
-    .line 570
+    .line 578
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
@@ -2961,7 +2961,7 @@
     .param p1, "pos"    # I
 
     .prologue
-    .line 681
+    .line 689
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v1, 0x3
@@ -2986,7 +2986,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 683
+    .line 691
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
@@ -2995,12 +2995,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 688
+    .line 696
     :cond_1
     :goto_0
     return-void
 
-    .line 684
+    .line 692
     :catch_0
     move-exception v0
 
@@ -3013,12 +3013,12 @@
     .locals 1
 
     .prologue
-    .line 1914
+    .line 1922
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->seekTo(I)V
 
-    .line 1915
+    .line 1923
     return-void
 .end method
 
@@ -3028,7 +3028,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1174
+    .line 1182
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     if-nez v0, :cond_1
@@ -3038,14 +3038,14 @@
     :goto_0
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
-    .line 1184
+    .line 1192
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1185
+    .line 1193
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -3063,7 +3063,7 @@
     :goto_1
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->updateLoopBtn(Z)V
 
-    .line 1187
+    .line 1195
     :cond_0
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
@@ -3074,22 +3074,22 @@
     :goto_2
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    .line 1188
+    .line 1196
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 1174
+    .line 1182
     goto :goto_0
 
-    .line 1185
+    .line 1193
     :cond_2
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     goto :goto_1
 
-    .line 1187
+    .line 1195
     :cond_3
     const-string v0, "\u5df2\u5207\u6362\u5230\u5217\u8868\u5faa\u73af\u6a21\u5f0f"
 
@@ -3100,12 +3100,12 @@
     .locals 3
 
     .prologue
-    .line 1263
+    .line 1271
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v1, :cond_2
 
-    .line 1273
+    .line 1281
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
 
     move-result-object v1
@@ -3118,11 +3118,11 @@
 
     move-result v0
 
-    .line 1275
+    .line 1283
     .local v0, "isFav":Z
     if-nez v0, :cond_3
 
-    .line 1276
+    .line 1284
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/p;->a()Lcom/jiliguala/niuwa/common/util/p;
 
     move-result-object v1
@@ -3137,14 +3137,14 @@
 
     move-result-object v1
 
-    .line 1277
+    .line 1285
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/util/p;->e()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 1279
+    .line 1287
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -3152,7 +3152,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1280
+    .line 1288
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -3163,17 +3163,17 @@
 
     invoke-interface {v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showPop(Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;)V
 
-    .line 1283
+    .line 1291
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->performFavVideo()V
 
-    .line 1292
+    .line 1300
     .end local v0    # "isFav":Z
     :cond_2
     :goto_0
     return-void
 
-    .line 1285
+    .line 1293
     .restart local v0    # "isFav":Z
     :cond_3
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -3182,7 +3182,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1287
+    .line 1295
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -3203,7 +3203,7 @@
     .param p1, "id"    # Ljava/lang/String;
 
     .prologue
-    .line 1054
+    .line 1062
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
 
     move-result-object v1
@@ -3214,7 +3214,7 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/k/e;->c(Ljava/lang/String;)V
 
-    .line 1055
+    .line 1063
     const-string v1, "1000"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mChannelId:Ljava/lang/String;
@@ -3225,7 +3225,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1056
+    .line 1064
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v1
@@ -3236,11 +3236,11 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/g/e;->b(Ljava/lang/String;)V
 
-    .line 1058
+    .line 1066
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->updateFavIcon()V
 
-    .line 1060
+    .line 1068
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -3249,7 +3249,7 @@
 
     move-result-object v0
 
-    .line 1061
+    .line 1069
     .local v0, "bid":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -3257,7 +3257,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1062
+    .line 1070
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -3272,7 +3272,7 @@
 
     move-result-object v2
 
-    .line 1063
+    .line 1071
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
@@ -3281,7 +3281,7 @@
 
     iget-object v3, v3, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->_id:Ljava/lang/String;
 
-    .line 1064
+    .line 1072
     invoke-direct {p0, v3, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->generateBody(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/ab;
 
     move-result-object v3
@@ -3290,7 +3290,7 @@
 
     move-result-object v2
 
-    .line 1065
+    .line 1073
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -3299,7 +3299,7 @@
 
     move-result-object v2
 
-    .line 1066
+    .line 1074
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -3308,7 +3308,7 @@
 
     move-result-object v2
 
-    .line 1067
+    .line 1075
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -3321,15 +3321,15 @@
 
     invoke-direct {v3, p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$6;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;)V
 
-    .line 1068
+    .line 1076
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 1062
+    .line 1070
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1085
+    .line 1093
     :cond_1
     return-void
 .end method
@@ -3340,58 +3340,58 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1213
+    .line 1221
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
     if-eqz v0, :cond_0
 
-    .line 1214
+    .line 1222
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->parser:Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser;->cancel(Z)Z
 
-    .line 1216
+    .line 1224
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->quitJobThread()V
 
-    .line 1217
+    .line 1225
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_1
 
-    .line 1218
+    .line 1226
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setOnInfoListener(Landroid/media/MediaPlayer$OnInfoListener;)V
 
-    .line 1219
+    .line 1227
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
-    .line 1220
+    .line 1228
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    .line 1221
+    .line 1229
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
 
-    .line 1222
+    .line 1230
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setOnVideoSizeChangedListener(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V
 
-    .line 1223
+    .line 1231
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->release(Landroid/media/MediaPlayer;)V
 
-    .line 1226
+    .line 1234
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
@@ -3399,25 +3399,25 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/e;->m()V
 
-    .line 1227
+    .line 1235
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v0, :cond_2
 
-    .line 1228
+    .line 1236
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->stopPlay()V
 
-    .line 1229
+    .line 1237
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->performExit()V
 
-    .line 1230
+    .line 1238
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
-    .line 1232
+    .line 1240
     :cond_2
     return-void
 .end method
@@ -3426,14 +3426,14 @@
     .locals 1
 
     .prologue
-    .line 1191
+    .line 1199
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1192
+    .line 1200
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -3442,7 +3442,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->gotoChannelSelect()V
 
-    .line 1194
+    .line 1202
     :cond_0
     return-void
 .end method
@@ -3455,7 +3455,7 @@
     .param p4, "singlRes"    # Z
 
     .prologue
-    .line 1428
+    .line 1436
     const/4 v5, 0x0
 
     move-object v0, p0
@@ -3470,7 +3470,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->doChannelSelectAction(Ljava/lang/String;IZZZ)V
 
-    .line 1429
+    .line 1437
     return-void
 .end method
 
@@ -3485,15 +3485,15 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 1441
+    .line 1449
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetRecord()V
 
-    .line 1442
+    .line 1450
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1471
+    .line 1479
     :cond_0
     :goto_0
     :pswitch_0
@@ -3513,14 +3513,14 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/jiliguala/niuwa/logic/g/e;->a(Ljava/lang/String;Ljava/lang/String;ZIZ)V
 
-    .line 1473
+    .line 1481
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 1474
+    .line 1482
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -3538,27 +3538,27 @@
     :goto_1
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->updateLoopBtn(Z)V
 
-    .line 1476
+    .line 1484
     :cond_1
     return-void
 
-    .line 1444
+    .line 1452
     :pswitch_1
     if-nez p5, :cond_2
 
-    .line 1445
+    .line 1453
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    .line 1446
+    .line 1454
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
-    .line 1453
+    .line 1461
     :cond_2
     :goto_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
@@ -3567,14 +3567,14 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 1454
+    .line 1462
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    .line 1455
+    .line 1463
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -3583,26 +3583,26 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showLoadingProgress()V
 
-    .line 1457
+    .line 1465
     :cond_3
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stop()V
 
     goto :goto_0
 
-    .line 1449
+    .line 1457
     :cond_4
     iput-boolean v6, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     goto :goto_2
 
-    .line 1460
+    .line 1468
     :pswitch_2
     if-nez p5, :cond_5
 
-    .line 1461
+    .line 1469
     iput-boolean v6, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
-    .line 1463
+    .line 1471
     :cond_5
     sget-object v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->CHANNEL_SELECTION_STATE:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -3610,22 +3610,22 @@
 
     goto :goto_0
 
-    .line 1466
+    .line 1474
     :pswitch_3
     if-nez p5, :cond_0
 
-    .line 1467
+    .line 1475
     iput-boolean v6, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     goto :goto_0
 
-    .line 1474
+    .line 1482
     :cond_6
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     goto :goto_1
 
-    .line 1442
+    .line 1450
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -3639,14 +3639,14 @@
     .locals 1
 
     .prologue
-    .line 1197
+    .line 1205
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1198
+    .line 1206
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -3655,7 +3655,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSearchAction()V
 
-    .line 1200
+    .line 1208
     :cond_0
     return-void
 .end method
@@ -3664,24 +3664,24 @@
     .locals 6
 
     .prologue
-    .line 1088
+    .line 1096
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v2, :cond_0
 
-    .line 1089
+    .line 1097
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 1090
+    .line 1098
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 1091
+    .line 1099
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v2, "ID"
 
@@ -3691,7 +3691,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1092
+    .line 1100
     const-string v2, "Title"
 
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
@@ -3702,17 +3702,17 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1093
+    .line 1101
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v2
 
     const-string v3, "Watch Share Dialog"
 
-    .line 1094
+    .line 1102
     invoke-virtual {v2, v3, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 1095
+    .line 1103
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3727,7 +3727,7 @@
 
     move-result-object v3
 
-    .line 1096
+    .line 1104
     invoke-virtual {v3}, Lcom/jiliguala/niuwa/logic/login/a;->N()Ljava/lang/String;
 
     move-result-object v3
@@ -3762,7 +3762,7 @@
 
     move-result-object v1
 
-    .line 1097
+    .line 1105
     .local v1, "shareTitle":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -3788,7 +3788,7 @@
 
     invoke-interface {v2, v3, v1, v4, v5}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->doShareAction(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1101
+    .line 1109
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     .end local v1    # "shareTitle":Ljava/lang/String;
     :cond_0
@@ -3801,10 +3801,10 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 304
+    .line 305
     invoke-virtual {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->requestVideoResource(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 305
+    .line 306
     return-void
 .end method
 
@@ -3814,7 +3814,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1878
+    .line 1886
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/common/util/xutils/e;->a(Ljava/util/List;)Z
@@ -3830,11 +3830,11 @@
     :cond_0
     move-object v0, v1
 
-    .line 1886
+    .line 1894
     :goto_0
     return-object v0
 
-    .line 1881
+    .line 1889
     :cond_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoChannelData:Ljava/util/ArrayList;
 
@@ -3855,7 +3855,7 @@
 
     check-cast v0, Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;
 
-    .line 1882
+    .line 1890
     .local v0, "dataPart":Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;
     iget-object v3, v0, Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;->channel:Ljava/lang/String;
 
@@ -3875,7 +3875,7 @@
     :cond_3
     move-object v0, v1
 
-    .line 1886
+    .line 1894
     goto :goto_0
 .end method
 
@@ -3893,19 +3893,19 @@
     .end annotation
 
     .prologue
-    .line 184
+    .line 185
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v0, :cond_0
 
-    .line 185
+    .line 186
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->getRenders()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 187
+    .line 188
     :goto_0
     return-object v0
 
@@ -3921,7 +3921,7 @@
     .locals 3
 
     .prologue
-    .line 1545
+    .line 1553
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -3930,7 +3930,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1546
+    .line 1554
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     const/4 v1, -0x1
@@ -3939,7 +3939,7 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onError(Landroid/media/MediaPlayer;II)Z
 
-    .line 1548
+    .line 1556
     :cond_0
     return-void
 .end method
@@ -3948,24 +3948,24 @@
     .locals 1
 
     .prologue
-    .line 1656
+    .line 1664
     new-instance v0, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
-    .line 1657
+    .line 1665
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->setIRenderPlayBackListener(Lcom/jiliguala/niuwa/module/video/render/listener/IRenderPlayBackListener;)V
 
-    .line 1658
+    .line 1666
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->init()V
 
-    .line 1659
+    .line 1667
     return-void
 .end method
 
@@ -3973,12 +3973,12 @@
     .locals 2
 
     .prologue
-    .line 1577
+    .line 1585
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
 
-    .line 1578
+    .line 1586
     invoke-static {}, Lcom/jiliguala/niuwa/logic/k/e;->a()Lcom/jiliguala/niuwa/logic/k/e;
 
     move-result-object v0
@@ -3991,7 +3991,7 @@
 
     move-result v0
 
-    .line 1580
+    .line 1588
     :goto_0
     return v0
 
@@ -4005,7 +4005,7 @@
     .locals 1
 
     .prologue
-    .line 1523
+    .line 1531
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
@@ -4031,7 +4031,7 @@
     .locals 1
 
     .prologue
-    .line 170
+    .line 171
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
     return v0
@@ -4041,7 +4041,7 @@
     .locals 2
 
     .prologue
-    .line 1551
+    .line 1559
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/16 v1, 0x10
@@ -4063,7 +4063,7 @@
     .locals 1
 
     .prologue
-    .line 731
+    .line 739
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-nez v0, :cond_0
@@ -4091,7 +4091,7 @@
 
     const/16 v1, 0x1002
 
-    .line 704
+    .line 712
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v0, :cond_2
@@ -4104,12 +4104,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 706
+    .line 714
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->stopPlay()V
 
-    .line 707
+    .line 715
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->hasMessages(I)Z
@@ -4118,12 +4118,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 708
+    .line 716
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 710
+    .line 718
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
@@ -4133,17 +4133,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 711
+    .line 719
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 728
+    .line 736
     :cond_1
     :goto_0
     return-void
 
-    .line 721
+    .line 729
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4151,7 +4151,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 722
+    .line 730
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4167,15 +4167,15 @@
     .locals 2
 
     .prologue
-    .line 1843
+    .line 1851
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->deletePlayRecord()V
 
-    .line 1845
+    .line 1853
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getCurrentChannel()Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;
 
     move-result-object v0
 
-    .line 1847
+    .line 1855
     .local v0, "dataPart":Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;
     if-eqz v0, :cond_0
 
@@ -4191,10 +4191,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1848
+    .line 1856
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reCordUserWatchCount(Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate$DataPart;)V
 
-    .line 1850
+    .line 1858
     :cond_0
     return-void
 .end method
@@ -4204,22 +4204,22 @@
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
     .prologue
-    .line 514
+    .line 515
     const/16 v1, 0x8
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 515
+    .line 516
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
     if-nez v1, :cond_1
 
-    .line 546
+    .line 554
     :cond_0
     :goto_0
     return-void
 
-    .line 519
+    .line 520
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
@@ -4229,21 +4229,21 @@
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/a/b;->c(Ljava/lang/String;)V
 
-    .line 520
+    .line 521
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 521
+    .line 522
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopPlayWhileNoNetworkConnection(Landroid/media/MediaPlayer;)V
 
     goto :goto_0
 
-    .line 523
+    .line 524
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
@@ -4267,12 +4267,12 @@
 
     if-nez v1, :cond_3
 
-    .line 524
+    .line 525
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 525
+    .line 526
     .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const-string v1, "ID"
 
@@ -4310,7 +4310,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 526
+    .line 527
     const-string v1, "Title"
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
@@ -4321,7 +4321,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 527
+    .line 528
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
     move-result-object v1
@@ -4330,20 +4330,14 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 529
+    .line 531
     .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_3
-    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isVideoLimitReached()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4355,16 +4349,78 @@
 
     move-result v1
 
-    if-nez v1, :cond_4
+    if-eqz v1, :cond_4
 
-    .line 530
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;
+
+    invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->isNotLesson()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 532
+    :cond_4
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 533
+    .restart local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "ID"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 534
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Watch Complete"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 537
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_5
+    invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isVideoLimitReached()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_6
+
+    invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;
+
+    invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->isFromPratise()Z
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
+    .line 538
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 531
+    .line 539
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -4375,18 +4431,18 @@
 
     goto/16 :goto_0
 
-    .line 534
-    :cond_4
+    .line 542
+    :cond_6
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->sendProgressTrackerReport()V
 
-    .line 535
+    .line 543
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 539
+    .line 547
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -4405,12 +4461,12 @@
 
     if-nez v1, :cond_0
 
-    .line 540
+    .line 548
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 541
+    .line 549
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext(Z)V
@@ -4422,14 +4478,14 @@
     .locals 1
 
     .prologue
-    .line 1203
+    .line 1211
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/e;->n()V
 
-    .line 1204
+    .line 1212
     return-void
 .end method
 
@@ -4448,19 +4504,19 @@
 
     const/4 v2, 0x1
 
-    .line 443
+    .line 444
     const/16 v0, 0x9
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 444
+    .line 445
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 445
+    .line 446
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4469,24 +4525,24 @@
 
     invoke-interface {v0, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->setControllerEnable(Z)V
 
-    .line 447
+    .line 448
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 448
+    .line 449
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 449
+    .line 450
     if-eq p2, v1, :cond_3
 
     if-eq p3, v1, :cond_3
 
-    .line 450
+    .line 451
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->retryCount:I
 
     if-ge v0, v4, :cond_1
 
-    .line 454
+    .line 455
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -4495,32 +4551,32 @@
 
     if-nez v0, :cond_2
 
-    .line 455
+    .line 456
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->cookies:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->start(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 456
+    .line 457
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->retryCount:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->retryCount:I
 
-    .line 489
+    .line 490
     :cond_1
     :goto_0
     return v2
 
-    .line 459
+    .line 460
     :cond_2
     iput v3, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->retryCount:I
 
     goto :goto_0
 
-    .line 464
+    .line 465
     :cond_3
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
@@ -4528,19 +4584,19 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
-    .line 465
+    .line 466
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mVideoLinkLen:I
 
     if-ge v0, v1, :cond_4
 
-    .line 466
+    .line 467
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->fetchVideoResAndPlay()V
 
     goto :goto_0
 
-    .line 468
+    .line 469
     :cond_4
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4548,7 +4604,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 469
+    .line 470
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4557,7 +4613,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayError()Z
 
-    .line 471
+    .line 472
     :cond_5
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4565,7 +4621,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 472
+    .line 473
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4574,7 +4630,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showErrorAlertDialog()V
 
-    .line 475
+    .line 476
     :cond_6
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
@@ -4582,35 +4638,35 @@
 
     if-eqz v0, :cond_8
 
-    .line 476
+    .line 477
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->errorCounter:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->errorCounter:I
 
-    .line 477
+    .line 478
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->errorCounter:I
 
     if-lt v0, v4, :cond_7
 
-    .line 478
+    .line 479
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopPlayWhileNoNetworkConnection(Landroid/media/MediaPlayer;)V
 
-    .line 479
+    .line 480
     const v0, 0x7f0f0189
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
     goto :goto_0
 
-    .line 481
+    .line 482
     :cond_7
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext(Z)V
 
     goto :goto_0
 
-    .line 484
+    .line 485
     :cond_8
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopPlayWhileNoNetworkConnection(Landroid/media/MediaPlayer;)V
 
@@ -4621,19 +4677,19 @@
     .locals 1
 
     .prologue
-    .line 292
+    .line 293
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 293
+    .line 294
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopPlayWhileNoNetworkConnection(Landroid/media/MediaPlayer;)V
 
-    .line 295
+    .line 296
     :cond_0
     return-void
 .end method
@@ -4645,26 +4701,26 @@
     .param p3, "extra"    # I
 
     .prologue
-    .line 495
+    .line 496
     packed-switch p2, :pswitch_data_0
 
-    .line 502
+    .line 503
     :cond_0
     :goto_0
     const/16 v0, 0x23
 
     if-ne p3, v0, :cond_1
 
-    .line 503
+    .line 504
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->handleMalFormedVideo()V
 
-    .line 505
+    .line 506
     :cond_1
     const/4 v0, 0x1
 
     return v0
 
-    .line 497
+    .line 498
     :pswitch_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4672,7 +4728,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 498
+    .line 499
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4683,7 +4739,7 @@
 
     goto :goto_0
 
-    .line 495
+    .line 496
     :pswitch_data_0
     .packed-switch 0x3
         :pswitch_0
@@ -4694,34 +4750,34 @@
     .locals 1
 
     .prologue
-    .line 1112
+    .line 1120
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isRenderPlaying()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 1113
+    .line 1121
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isPlaying()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1121
+    .line 1129
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setPlayPause()V
 
-    .line 1135
+    .line 1143
     :goto_0
     return-void
 
-    .line 1130
+    .line 1138
     :cond_0
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setPlayResume()V
 
     goto :goto_0
 
-    .line 1133
+    .line 1141
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
@@ -4734,7 +4790,7 @@
     .locals 0
 
     .prologue
-    .line 1109
+    .line 1117
     return-void
 .end method
 
@@ -4742,10 +4798,10 @@
     .locals 0
 
     .prologue
-    .line 299
+    .line 300
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetToInitialState()V
 
-    .line 300
+    .line 301
     return-void
 .end method
 
@@ -4756,33 +4812,33 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 404
+    .line 405
     const/4 v0, 0x3
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
 
-    .line 408
+    .line 409
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->retryCount:I
 
-    .line 409
+    .line 410
     iput v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->errorCounter:I
 
-    .line 410
+    .line 411
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
-    .line 411
+    .line 412
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->startTimerRunnable()V
 
-    .line 413
+    .line 414
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 414
+    .line 415
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -4791,7 +4847,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->pausePlayOnChannelShow()V
 
-    .line 420
+    .line 421
     :cond_0
     return-void
 .end method
@@ -4801,31 +4857,31 @@
     .param p1, "chnName"    # Ljava/lang/String;
 
     .prologue
-    .line 272
+    .line 273
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->shouldPlayNextWithCheckState()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 273
+    .line 274
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/s;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 274
+    .line 275
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopPlayWhileNoNetworkConnection(Landroid/media/MediaPlayer;)V
 
-    .line 288
+    .line 289
     :cond_0
     :goto_0
     return-void
 
-    .line 277
+    .line 278
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4847,27 +4903,27 @@
 
     if-eqz v1, :cond_3
 
-    .line 279
+    .line 280
     const-string v1, "\n"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 280
+    .line 281
     .local v0, "index":I
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_2
 
-    .line 281
+    .line 282
     add-int/lit8 v1, v0, 0x1
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 283
+    .line 284
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -4877,7 +4933,7 @@
 
     invoke-interface {v1, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->updateChannelName(Ljava/lang/String;)V
 
-    .line 285
+    .line 286
     .end local v0    # "index":I
     :cond_3
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->play()V
@@ -4894,12 +4950,12 @@
 
     const/4 v1, 0x0
 
-    .line 1624
+    .line 1632
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
     if-nez v0, :cond_0
 
-    .line 1626
+    .line 1634
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v2
@@ -4912,11 +4968,11 @@
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->_id:Ljava/lang/String;
 
-    .line 1627
+    .line 1635
     :goto_0
     invoke-virtual {v2, v0}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->increaseFirstFailCounter(Ljava/lang/String;)V
 
-    .line 1628
+    .line 1636
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v0
@@ -4927,7 +4983,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->reportPreferedLinkRedirectFail(Ljava/lang/String;I)V
 
-    .line 1630
+    .line 1638
     :cond_0
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
@@ -4937,7 +4993,7 @@
 
     if-lt v0, v2, :cond_2
 
-    .line 1632
+    .line 1640
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v2
@@ -4950,11 +5006,11 @@
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;->_id:Ljava/lang/String;
 
-    .line 1633
+    .line 1641
     :goto_1
     invoke-virtual {v2, v0}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->increaseAllFailCounter(Ljava/lang/String;)V
 
-    .line 1634
+    .line 1642
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v0
@@ -4970,28 +5026,28 @@
     :cond_1
     iget v2, p1, Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;->rspCode:I
 
-    .line 1635
+    .line 1643
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->reportFallBackLinkRedirectFail(Ljava/lang/String;I)V
 
-    .line 1638
+    .line 1646
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {p0, v0, v4, v4}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->onError(Landroid/media/MediaPlayer;II)Z
 
-    .line 1639
+    .line 1647
     return-void
 
     :cond_3
     move-object v0, v1
 
-    .line 1626
+    .line 1634
     goto :goto_0
 
     :cond_4
     move-object v0, v1
 
-    .line 1632
+    .line 1640
     goto :goto_1
 .end method
 
@@ -5000,19 +5056,19 @@
     .param p1, "result"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;
 
     .prologue
-    .line 1587
+    .line 1595
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
     if-nez v0, :cond_0
 
-    .line 1588
+    .line 1596
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->resetFirstFailCounter()V
 
-    .line 1590
+    .line 1598
     :cond_0
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurVideoLinkIndex:I
 
@@ -5022,18 +5078,18 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 1591
+    .line 1599
     invoke-static {}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->getInstance()Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/helper/VideoFailReportHelper;->resetAllFailCounter()V
 
-    .line 1593
+    .line 1601
     :cond_1
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->proceedPlay(Lcom/jiliguala/niuwa/module/video/presenter/VideoRedirectParser$RedirectResult;)V
 
-    .line 1594
+    .line 1602
     return-void
 .end method
 
@@ -5042,17 +5098,17 @@
     .param p1, "renderInfo"    # Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;
 
     .prologue
-    .line 191
+    .line 192
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v0, :cond_0
 
-    .line 192
+    .line 193
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->onSwitchRender(Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;)V
 
-    .line 193
+    .line 194
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -5061,14 +5117,14 @@
 
     if-nez v0, :cond_0
 
-    .line 194
+    .line 195
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->startPlay(Ljava/lang/String;)V
 
-    .line 197
+    .line 198
     :cond_0
     return-void
 .end method
@@ -5078,17 +5134,17 @@
     .param p1, "isPause"    # Z
 
     .prologue
-    .line 1772
+    .line 1780
     if-eqz p1, :cond_1
 
-    .line 1773
+    .line 1781
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1774
+    .line 1782
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5097,12 +5153,12 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayPauseOnUi()V
 
-    .line 1781
+    .line 1789
     :cond_0
     :goto_0
     return-void
 
-    .line 1777
+    .line 1785
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -5110,7 +5166,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1778
+    .line 1786
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5126,14 +5182,14 @@
     .locals 1
 
     .prologue
-    .line 1691
+    .line 1699
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1692
+    .line 1700
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5142,7 +5198,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onRenderPlayConntected()V
 
-    .line 1694
+    .line 1702
     :cond_0
     return-void
 .end method
@@ -5151,26 +5207,26 @@
     .locals 2
 
     .prologue
-    .line 1698
+    .line 1706
     iget v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderPos:I
 
     int-to-long v0, v0
 
     iput-wide v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
-    .line 1699
+    .line 1707
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
-    .line 1700
+    .line 1708
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1701
+    .line 1709
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5179,7 +5235,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onRenderPlayDisConntected()V
 
-    .line 1703
+    .line 1711
     :cond_0
     return-void
 .end method
@@ -5188,7 +5244,7 @@
     .locals 0
 
     .prologue
-    .line 1680
+    .line 1688
     return-void
 .end method
 
@@ -5198,7 +5254,7 @@
     .prologue
     const/16 v1, 0x1000
 
-    .line 1714
+    .line 1722
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->hasMessages(I)Z
@@ -5207,25 +5263,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 1715
+    .line 1723
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 1717
+    .line 1725
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     if-eqz v0, :cond_1
 
-    .line 1718
+    .line 1726
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     const/16 v1, 0x1002
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 1720
+    .line 1728
     :cond_1
     return-void
 .end method
@@ -5234,14 +5290,14 @@
     .locals 1
 
     .prologue
-    .line 1684
+    .line 1692
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1685
+    .line 1693
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5250,7 +5306,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onRenderPlayStart()V
 
-    .line 1687
+    .line 1695
     :cond_0
     return-void
 .end method
@@ -5259,14 +5315,14 @@
     .locals 1
 
     .prologue
-    .line 1707
+    .line 1715
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1708
+    .line 1716
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5275,7 +5331,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onRenderPlayStop()V
 
-    .line 1710
+    .line 1718
     :cond_0
     return-void
 .end method
@@ -5284,7 +5340,7 @@
     .locals 4
 
     .prologue
-    .line 1664
+    .line 1672
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5293,7 +5349,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayResumeOnUi()V
 
-    .line 1666
+    .line 1674
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     new-instance v1, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$2;
@@ -5304,14 +5360,14 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1674
+    .line 1682
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     const/16 v1, 0x1002
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 1675
+    .line 1683
     return-void
 .end method
 
@@ -5322,7 +5378,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1536
+    .line 1544
     const-string v0, "KEY_LAS_POS"
 
     const-wide/16 v2, 0x0
@@ -5333,7 +5389,7 @@
 
     iput-wide v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
-    .line 1537
+    .line 1545
     const-string v0, "KEY_PLAY_MODE"
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
@@ -5342,7 +5398,7 @@
 
     iput v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
-    .line 1538
+    .line 1546
     const-string v0, "KEY_LAST_SOURCE"
 
     const-string v1, ""
@@ -5353,7 +5409,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
-    .line 1539
+    .line 1547
     const-string v0, "KEY_LAST_PAUSED"
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
@@ -5362,14 +5418,14 @@
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
-    .line 1540
+    .line 1548
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/g/e;->b(Landroid/os/Bundle;)V
 
-    .line 1541
+    .line 1549
     return-void
 .end method
 
@@ -5378,42 +5434,42 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 1528
+    .line 1536
     const-string v0, "KEY_LAS_POS"
 
     iget-wide v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
     invoke-virtual {p1, v0, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    .line 1529
+    .line 1537
     const-string v0, "KEY_PLAY_MODE"
 
     iget v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurPlayMode:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 1530
+    .line 1538
     const-string v0, "KEY_LAST_SOURCE"
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1531
+    .line 1539
     const-string v0, "KEY_LAST_PAUSED"
 
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 1532
+    .line 1540
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/jiliguala/niuwa/logic/g/e;->a(Landroid/os/Bundle;)V
 
-    .line 1533
+    .line 1541
     return-void
 .end method
 
@@ -5421,14 +5477,14 @@
     .locals 1
 
     .prologue
-    .line 1908
+    .line 1916
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1909
+    .line 1917
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5437,32 +5493,33 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSendProgressFail()V
 
-    .line 1911
+    .line 1919
     :cond_0
     return-void
 .end method
 
-.method public onSendProgressSuccess()V
+.method public onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
     .locals 1
+    .param p1, "template"    # Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;
 
     .prologue
-    .line 1901
+    .line 1909
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1902
+    .line 1910
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     check-cast v0, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;
 
-    invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSendProgressSuccess()V
+    invoke-interface {v0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onSendProgressSuccess(Lcom/jiliguala/niuwa/logic/network/json/LessonProgressTemplate;)V
 
-    .line 1904
+    .line 1912
     :cond_0
     return-void
 .end method
@@ -5475,19 +5532,19 @@
 
     const/4 v4, 0x0
 
-    .line 1724
+    .line 1732
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1725
+    .line 1733
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getMirrorRenderInfo()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 1726
+    .line 1734
     .local v0, "renders":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;>;"
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -5513,7 +5570,7 @@
     :goto_1
     invoke-interface {v1, v2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onUpdateRenderIcon(ZZ)V
 
-    .line 1728
+    .line 1736
     .end local v0    # "renders":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;>;"
     :cond_0
     return-void
@@ -5522,7 +5579,7 @@
     :cond_1
     move v2, v4
 
-    .line 1726
+    .line 1734
     goto :goto_0
 
     :cond_2
@@ -5543,7 +5600,7 @@
 
     const/4 v4, 0x1
 
-    .line 1733
+    .line 1741
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v2, :cond_3
@@ -5556,7 +5613,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1735
+    .line 1743
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->hasMessages(I)Z
@@ -5565,12 +5622,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 1736
+    .line 1744
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 1739
+    .line 1747
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
@@ -5580,17 +5637,17 @@
 
     move-result-object v1
 
-    .line 1740
+    .line 1748
     .local v1, "msg":Landroid/os/Message;
     iput p1, v1, Landroid/os/Message;->arg1:I
 
-    .line 1741
+    .line 1749
     iput p2, v1, Landroid/os/Message;->arg2:I
 
-    .line 1742
+    .line 1750
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1746
+    .line 1754
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isRenderPlaying()Z
 
     move-result v2
@@ -5603,15 +5660,15 @@
 
     if-eqz v2, :cond_3
 
-    .line 1747
+    .line 1755
     iget-boolean v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAriplayProgressOneShotFlag:Z
 
     if-nez v2, :cond_3
 
-    .line 1749
+    .line 1757
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->stopGettingRenderPlayingProgress()V
 
-    .line 1750
+    .line 1758
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v2
@@ -5630,7 +5687,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 1751
+    .line 1759
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v2
@@ -5641,11 +5698,11 @@
 
     move-result-object v0
 
-    .line 1752
+    .line 1760
     .local v0, "courseids":[Ljava/lang/String;
     if-eqz v0, :cond_2
 
-    .line 1753
+    .line 1761
     aget-object v2, v0, v5
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -5662,7 +5719,7 @@
 
     if-nez v2, :cond_2
 
-    .line 1754
+    .line 1762
     :cond_1
     aget-object v2, v0, v5
 
@@ -5670,25 +5727,25 @@
 
     invoke-virtual {p0, v2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->sendPractiseProgressReport(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1762
+    .line 1770
     .end local v0    # "courseids":[Ljava/lang/String;
     :cond_2
     :goto_0
     iput-boolean v4, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mAriplayProgressOneShotFlag:Z
 
-    .line 1768
+    .line 1776
     .end local v1    # "msg":Landroid/os/Message;
     :cond_3
     return-void
 
-    .line 1759
+    .line 1767
     .restart local v1    # "msg":Landroid/os/Message;
     :cond_4
     const v2, 0x7f0f0199
 
     invoke-static {v2}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 1760
+    .line 1768
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext()V
 
     goto :goto_0
@@ -5701,16 +5758,16 @@
     .param p3, "height"    # I
 
     .prologue
-    .line 555
+    .line 563
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
     if-eqz v1, :cond_0
 
-    .line 563
+    .line 571
     :goto_0
     return-void
 
-    .line 558
+    .line 566
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mPlayHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
@@ -5720,14 +5777,14 @@
 
     move-result-object v0
 
-    .line 559
+    .line 567
     .local v0, "msg":Landroid/os/Message;
     iput p2, v0, Landroid/os/Message;->arg1:I
 
-    .line 560
+    .line 568
     iput p3, v0, Landroid/os/Message;->arg2:I
 
-    .line 561
+    .line 569
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
@@ -5737,10 +5794,10 @@
     .locals 0
 
     .prologue
-    .line 1573
+    .line 1581
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 1574
+    .line 1582
     return-void
 .end method
 
@@ -5750,17 +5807,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 178
+    .line 179
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 180
+    .line 181
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1, v1, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->doChannelSelectAction(Ljava/lang/String;IZZ)V
 
-    .line 181
+    .line 182
     return-void
 .end method
 
@@ -5768,22 +5825,22 @@
     .locals 2
 
     .prologue
-    .line 923
+    .line 931
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->sendProgressTrackerReport()V
 
-    .line 924
+    .line 932
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playNext(Z)V
 
-    .line 925
+    .line 933
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mPlayHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 926
+    .line 934
     return-void
 .end method
 
@@ -5792,7 +5849,7 @@
     .param p1, "manual"    # Z
 
     .prologue
-    .line 953
+    .line 961
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -5803,19 +5860,19 @@
 
     if-nez v0, :cond_1
 
-    .line 955
+    .line 963
     const v0, 0x7f0f0142
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(I)V
 
-    .line 956
+    .line 964
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 957
+    .line 965
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5824,33 +5881,33 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 977
+    .line 985
     :cond_0
     :goto_0
     return-void
 
-    .line 960
+    .line 968
     :cond_1
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->realUri:Ljava/lang/String;
 
-    .line 962
+    .line 970
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 963
+    .line 971
     if-nez p1, :cond_2
 
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->singleLoop:Z
 
     if-eqz v0, :cond_2
 
-    .line 964
+    .line 972
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->play()V
 
     goto :goto_0
 
-    .line 969
+    .line 977
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
@@ -5870,7 +5927,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 970
+    .line 978
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -5879,13 +5936,13 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showLoadingProgress()V
 
-    .line 972
+    .line 980
     :cond_3
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->reset(Landroid/media/MediaPlayer;)V
 
-    .line 974
+    .line 982
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
@@ -5901,22 +5958,22 @@
     .locals 2
 
     .prologue
-    .line 1013
+    .line 1021
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->sendProgressTrackerReport()V
 
-    .line 1014
+    .line 1022
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playPrev(Z)V
 
-    .line 1015
+    .line 1023
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mPlayHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$b;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 1016
+    .line 1024
     return-void
 .end method
 
@@ -5924,14 +5981,14 @@
     .locals 1
 
     .prologue
-    .line 1652
+    .line 1660
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/g/e;->g()V
 
-    .line 1653
+    .line 1661
     return-void
 .end method
 
@@ -5942,7 +5999,7 @@
     .prologue
     const/4 v3, 0x5
 
-    .line 669
+    .line 677
     iget v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurState:I
 
     const/4 v2, 0x3
@@ -5965,28 +6022,28 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 671
+    .line 679
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->start()V
 
-    .line 672
+    .line 680
     const/4 v1, 0x5
 
     invoke-direct {p0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setCurState(I)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 678
+    .line 686
     :cond_1
     :goto_0
     return-void
 
-    .line 673
+    .line 681
     :catch_0
     move-exception v0
 
-    .line 674
+    .line 682
     .local v0, "e":Ljava/lang/IllegalStateException;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->handleMalFormedVideo()V
 
@@ -5997,21 +6054,21 @@
     .locals 3
 
     .prologue
-    .line 744
+    .line 752
     new-instance v0, Landroid/media/MediaPlayer;
 
     invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
-    .line 745
+    .line 753
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
-    .line 746
+    .line 754
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-static {}, Lcom/jiliguala/niuwa/c;->a()Landroid/content/Context;
@@ -6022,35 +6079,35 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/media/MediaPlayer;->setWakeMode(Landroid/content/Context;I)V
 
-    .line 747
+    .line 755
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnInfoListener(Landroid/media/MediaPlayer$OnInfoListener;)V
 
-    .line 748
+    .line 756
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
-    .line 749
+    .line 757
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    .line 750
+    .line 758
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
 
-    .line 751
+    .line 759
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnVideoSizeChangedListener(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V
 
-    .line 752
+    .line 760
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->initJobThreadAndAddListener()V
 
-    .line 753
+    .line 761
     return-void
 .end method
 
@@ -6058,7 +6115,7 @@
     .locals 4
 
     .prologue
-    .line 200
+    .line 201
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -6067,7 +6124,7 @@
 
     move-result-object v0
 
-    .line 201
+    .line 202
     .local v0, "bid":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6075,12 +6132,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 230
+    .line 231
     :cond_0
     :goto_0
     return-void
 
-    .line 204
+    .line 205
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -6088,7 +6145,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 205
+    .line 206
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -6103,24 +6160,15 @@
 
     move-result-object v2
 
-    .line 206
+    .line 207
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
     const-string v3, "1000"
 
-    .line 207
-    invoke-interface {v2, v0, v3}, Lcom/jiliguala/niuwa/logic/network/d;->d(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
-
-    move-result-object v2
-
     .line 208
-    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lrx/e;->d(Lrx/h;)Lrx/e;
+    invoke-interface {v2, v0, v3}, Lcom/jiliguala/niuwa/logic/network/d;->d(Ljava/lang/String;Ljava/lang/String;)Lrx/e;
 
     move-result-object v2
 
@@ -6129,11 +6177,20 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lrx/e;->g(Lrx/h;)Lrx/e;
+    invoke-virtual {v2, v3}, Lrx/e;->d(Lrx/h;)Lrx/e;
 
     move-result-object v2
 
     .line 210
+    invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lrx/e;->g(Lrx/h;)Lrx/e;
+
+    move-result-object v2
+
+    .line 211
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -6146,12 +6203,12 @@
 
     invoke-direct {v3, p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$1;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Ljava/lang/String;)V
 
-    .line 211
+    .line 212
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 205
+    .line 206
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
     goto :goto_0
@@ -6161,14 +6218,14 @@
     .locals 3
 
     .prologue
-    .line 234
+    .line 235
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 235
+    .line 236
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -6183,7 +6240,7 @@
 
     move-result-object v1
 
-    .line 236
+    .line 237
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v1
@@ -6192,7 +6249,7 @@
 
     move-result-object v1
 
-    .line 237
+    .line 238
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -6201,7 +6258,7 @@
 
     move-result-object v1
 
-    .line 238
+    .line 239
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v2
@@ -6210,7 +6267,7 @@
 
     move-result-object v1
 
-    .line 239
+    .line 240
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v2
@@ -6227,10 +6284,10 @@
 
     move-result-object v1
 
-    .line 235
+    .line 236
     invoke-virtual {v0, v1}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 261
+    .line 262
     :cond_0
     return-void
 .end method
@@ -6241,7 +6298,7 @@
     .param p2, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 309
+    .line 310
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -6252,7 +6309,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 310
+    .line 311
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -6261,7 +6318,7 @@
 
     move-result-object v0
 
-    .line 312
+    .line 313
     .local v0, "bid":Ljava/lang/String;
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6269,19 +6326,19 @@
 
     if-eqz v1, :cond_0
 
-    .line 313
+    .line 314
     const/4 p1, 0x0
 
-    .line 315
+    .line 316
     :cond_0
     invoke-direct {p0, v0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->requestVideo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 319
+    .line 320
     .end local v0    # "bid":Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 317
+    .line 318
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->requestVideoAnonymous(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -6292,17 +6349,17 @@
     .locals 1
 
     .prologue
-    .line 1207
+    .line 1215
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
-    .line 1208
+    .line 1216
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->reset()V
 
-    .line 1210
+    .line 1218
     :cond_0
     return-void
 .end method
@@ -6311,7 +6368,7 @@
     .locals 3
 
     .prologue
-    .line 1555
+    .line 1563
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     if-eqz v1, :cond_1
@@ -6328,7 +6385,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1556
+    .line 1564
     :cond_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
@@ -6338,11 +6395,11 @@
 
     move-result-object v0
 
-    .line 1557
+    .line 1565
     .local v0, "msg":Landroid/os/Message;
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1559
+    .line 1567
     .end local v0    # "msg":Landroid/os/Message;
     :cond_1
     return-void
@@ -6352,18 +6409,18 @@
     .locals 4
 
     .prologue
-    .line 1496
+    .line 1504
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     if-eqz v2, :cond_0
 
-    .line 1497
+    .line 1505
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 1498
+    .line 1506
     const-wide/16 v0, -0x1
 
-    .line 1500
+    .line 1508
     .local v0, "cur_pos":J
     :try_start_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getPosition()I
@@ -6374,22 +6431,22 @@
 
     int-to-long v0, v2
 
-    .line 1504
+    .line 1512
     :goto_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
-    .line 1505
+    .line 1513
     iput-wide v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_pos:J
 
-    .line 1507
+    .line 1515
     :try_start_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setPlayPause()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 1512
+    .line 1520
     :goto_1
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mJumpBackFromHome:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -6397,24 +6454,24 @@
 
     invoke-virtual {v2, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 1513
+    .line 1521
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->prepared:Z
 
-    .line 1515
+    .line 1523
     .end local v0    # "cur_pos":J
     :cond_0
     return-void
 
-    .line 1501
+    .line 1509
     .restart local v0    # "cur_pos":J
     :catch_0
     move-exception v2
 
     goto :goto_0
 
-    .line 1508
+    .line 1516
     :catch_1
     move-exception v2
 
@@ -6428,7 +6485,7 @@
     .prologue
     const/16 v1, 0x1002
 
-    .line 1160
+    .line 1168
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     if-eqz v0, :cond_1
@@ -6441,14 +6498,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 1161
+    .line 1169
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRenderManager:Lcom/jiliguala/niuwa/module/video/VideoRenderManager;
 
     int-to-long v2, p1
 
     invoke-virtual {v0, v2, v3}, Lcom/jiliguala/niuwa/module/video/VideoRenderManager;->seekToPos(J)V
 
-    .line 1162
+    .line 1170
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->hasMessages(I)Z
@@ -6457,17 +6514,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 1163
+    .line 1171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 1171
+    .line 1179
     :cond_0
     :goto_0
     return-void
 
-    .line 1166
+    .line 1174
     :cond_1
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isPlaying()Z
 
@@ -6475,10 +6532,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 1167
+    .line 1175
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->recordTrackerStart()V
 
-    .line 1169
+    .line 1177
     :cond_2
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->strictSeekTo(I)V
 
@@ -6491,12 +6548,12 @@
     .param p2, "subId"    # Ljava/lang/String;
 
     .prologue
-    .line 1890
+    .line 1898
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
 
     invoke-direct {v0}, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;-><init>()V
 
-    .line 1891
+    .line 1899
     .local v0, "data":Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
@@ -6508,29 +6565,29 @@
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->bid:Ljava/lang/String;
 
-    .line 1892
+    .line 1900
     iget-object v2, p1, Lcom/jiliguala/niuwa/module/mcphonics/detail/Model/McPcSubTaskTicket;->lesson:Lcom/jiliguala/niuwa/logic/network/json/Lessons;
 
     iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/Lessons;->_id:Ljava/lang/String;
 
     iput-object v2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->lid:Ljava/lang/String;
 
-    .line 1893
+    .line 1901
     iput-object p2, v0, Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;->subtaskid:Ljava/lang/String;
 
-    .line 1894
+    .line 1902
     new-instance v1, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
 
     invoke-direct {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;-><init>()V
 
-    .line 1895
+    .line 1903
     .local v1, "progressManager":Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;
     invoke-virtual {v1, p0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->setCallBack(Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager$CallBack;)V
 
-    .line 1896
+    .line 1904
     invoke-virtual {v1, v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/SendLessonProgressManager;->sendProgress(Lcom/jiliguala/niuwa/logic/network/json/ProgressTemplete;)V
 
-    .line 1897
+    .line 1905
     return-void
 .end method
 
@@ -6540,7 +6597,7 @@
     .param p2, "subtaskid"    # Ljava/lang/String;
 
     .prologue
-    .line 1377
+    .line 1385
     invoke-static {}, Lcom/jiliguala/niuwa/logic/login/a;->a()Lcom/jiliguala/niuwa/logic/login/a;
 
     move-result-object v1
@@ -6549,7 +6606,7 @@
 
     move-result-object v0
 
-    .line 1378
+    .line 1386
     .local v0, "bid":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
@@ -6557,7 +6614,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1379
+    .line 1387
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -6566,7 +6623,7 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->hideLoadingProgress()V
 
-    .line 1380
+    .line 1388
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -6575,7 +6632,7 @@
 
     invoke-interface {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->showLoadingProgress()V
 
-    .line 1381
+    .line 1389
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v1
@@ -6590,14 +6647,14 @@
 
     move-result-object v2
 
-    .line 1382
+    .line 1390
     invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/network/g;->b()Lcom/jiliguala/niuwa/logic/network/d;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 1383
+    .line 1391
     invoke-direct {p0, v0, p1, p2, v3}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->generateRequestBody(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)Lokhttp3/ab;
 
     move-result-object v3
@@ -6606,7 +6663,7 @@
 
     move-result-object v2
 
-    .line 1384
+    .line 1392
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -6615,7 +6672,7 @@
 
     move-result-object v2
 
-    .line 1385
+    .line 1393
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/h;
 
     move-result-object v3
@@ -6624,7 +6681,7 @@
 
     move-result-object v2
 
-    .line 1386
+    .line 1394
     invoke-static {}, Lrx/a/b/a;->a()Lrx/h;
 
     move-result-object v3
@@ -6637,15 +6694,15 @@
 
     invoke-direct {v3, p0, p2}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$10;-><init>(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Ljava/lang/String;)V
 
-    .line 1387
+    .line 1395
     invoke-virtual {v2, v3}, Lrx/e;->b(Lrx/l;)Lrx/m;
 
     move-result-object v2
 
-    .line 1381
+    .line 1389
     invoke-virtual {v1, v2}, Lrx/i/b;->a(Lrx/m;)V
 
-    .line 1411
+    .line 1419
     :cond_0
     return-void
 .end method
@@ -6654,17 +6711,17 @@
     .locals 2
 
     .prologue
-    .line 1367
+    .line 1375
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-nez v0, :cond_1
 
-    .line 1374
+    .line 1382
     :cond_0
     :goto_0
     return-void
 
-    .line 1370
+    .line 1378
     :cond_1
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/b;->a()Lcom/jiliguala/niuwa/logic/i/b;
 
@@ -6676,12 +6733,12 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/i/b;->a(Ljava/lang/String;)V
 
-    .line 1371
+    .line 1379
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mIsWatch:Z
 
     if-eqz v0, :cond_0
 
-    .line 1372
+    .line 1380
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/logic/db/b;->a(Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;)V
@@ -6694,13 +6751,13 @@
     .param p1, "channelId"    # Ljava/lang/String;
 
     .prologue
-    .line 739
+    .line 747
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mChannelId:Ljava/lang/String;
 
-    .line 740
+    .line 748
     invoke-direct {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->changePlayMode(Ljava/lang/String;)V
 
-    .line 741
+    .line 749
     return-void
 .end method
 
@@ -6709,10 +6766,10 @@
     .param p1, "isWatch"    # Z
 
     .prologue
-    .line 1648
+    .line 1656
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mIsWatch:Z
 
-    .line 1649
+    .line 1657
     return-void
 .end method
 
@@ -6721,10 +6778,10 @@
     .param p1, "isLastPaused"    # Z
 
     .prologue
-    .line 174
+    .line 175
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
-    .line 175
+    .line 176
     return-void
 .end method
 
@@ -6733,10 +6790,10 @@
     .param p1, "mcPhCourse"    # Z
 
     .prologue
-    .line 166
+    .line 167
     iput-boolean p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isMcPhCourse:Z
 
-    .line 167
+    .line 168
     return-void
 .end method
 
@@ -6748,19 +6805,19 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 757
+    .line 765
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v1, p1}, Landroid/media/MediaPlayer;->setDisplay(Landroid/view/SurfaceHolder;)V
 
-    .line 761
+    .line 769
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->shouldPlayNextWithCheckState()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 763
+    .line 771
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -6769,46 +6826,46 @@
 
     if-nez v1, :cond_2
 
-    .line 764
+    .line 772
     if-eqz p2, :cond_0
 
-    .line 765
+    .line 773
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->source:Ljava/lang/String;
 
-    .line 767
+    .line 775
     const-string v1, ""
 
     iput-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->last_source:Ljava/lang/String;
 
-    .line 768
+    .line 776
     invoke-static {}, Lcom/jiliguala/niuwa/common/util/g;->w()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 769
+    .line 777
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->pause()V
 
-    .line 790
+    .line 798
     :cond_0
     :goto_0
     return-void
 
-    .line 771
+    .line 779
     :cond_1
     iget-boolean v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
     if-nez v1, :cond_0
 
-    .line 772
+    .line 780
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->play()V
 
     goto :goto_0
 
-    .line 781
+    .line 789
     :cond_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
 
@@ -6818,7 +6875,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 782
+    .line 790
     invoke-static {}, Lcom/jiliguala/niuwa/logic/g/e;->a()Lcom/jiliguala/niuwa/logic/g/e;
 
     move-result-object v1
@@ -6827,7 +6884,7 @@
 
     move-result-object v0
 
-    .line 783
+    .line 791
     .local v0, "lstChnId":Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6835,10 +6892,10 @@
 
     if-nez v1, :cond_3
 
-    .line 784
+    .line 792
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->setChannelId(Ljava/lang/String;)V
 
-    .line 787
+    .line 795
     .end local v0    # "lstChnId":Ljava/lang/String;
     :cond_3
     iget-object v3, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
@@ -6868,24 +6925,24 @@
     .locals 1
 
     .prologue
-    .line 1138
+    .line 1146
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isPlaying()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 1139
+    .line 1147
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->pause()V
 
-    .line 1140
+    .line 1148
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1141
+    .line 1149
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -6894,7 +6951,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayPause()V
 
-    .line 1143
+    .line 1151
     :cond_0
     invoke-static {}, Lcom/jiliguala/niuwa/logic/i/b;->a()Lcom/jiliguala/niuwa/logic/i/b;
 
@@ -6902,10 +6959,10 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/i/b;->c()V
 
-    .line 1144
+    .line 1152
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->resetProgress()V
 
-    .line 1146
+    .line 1154
     :cond_1
     return-void
 .end method
@@ -6914,12 +6971,12 @@
     .locals 2
 
     .prologue
-    .line 2081
+    .line 2089
     iget-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isMcPhCourse:Z
 
     if-eqz v0, :cond_0
 
-    .line 2082
+    .line 2090
     invoke-static {}, Lcom/jiliguala/niuwa/logic/db/a;->a()Lcom/jiliguala/niuwa/logic/db/a;
 
     move-result-object v0
@@ -6932,7 +6989,7 @@
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playRecord:Lcom/jiliguala/niuwa/logic/db/daometa/e;
 
-    .line 2084
+    .line 2092
     :cond_0
     return-void
 .end method
@@ -6941,24 +6998,24 @@
     .locals 2
 
     .prologue
-    .line 1149
+    .line 1157
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isLastPaused:Z
 
-    .line 1150
+    .line 1158
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->playRightNow(Landroid/media/MediaPlayer;)V
 
-    .line 1151
+    .line 1159
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1152
+    .line 1160
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -6967,7 +7024,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onPlayResume()V
 
-    .line 1153
+    .line 1161
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -6976,18 +7033,18 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onStartTimer()V
 
-    .line 1155
+    .line 1163
     :cond_0
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->recordTrackerStart()V
 
-    .line 1156
+    .line 1164
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     const/16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->sendEmptyMessage(I)Z
 
-    .line 1157
+    .line 1165
     return-void
 .end method
 
@@ -6996,10 +7053,10 @@
     .param p1, "rid"    # Ljava/lang/String;
 
     .prologue
-    .line 735
+    .line 743
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mRid:Ljava/lang/String;
 
-    .line 736
+    .line 744
     return-void
 .end method
 
@@ -7008,7 +7065,7 @@
     .param p1, "rid"    # Ljava/lang/String;
 
     .prologue
-    .line 357
+    .line 358
     const-string v0, "b67e0d0aadb2400cbe1bba910f06b730"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -7017,14 +7074,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 358
+    .line 359
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 359
+    .line 360
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 
     move-result-object v0
@@ -7033,7 +7090,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->onShowVideoLimitDialog()V
 
-    .line 362
+    .line 363
     :cond_0
     return-void
 .end method
@@ -7042,19 +7099,19 @@
     .locals 2
 
     .prologue
-    .line 1642
+    .line 1650
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     if-eqz v0, :cond_0
 
-    .line 1643
+    .line 1651
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mHandler:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;
 
     const/16 v1, 0x1002
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$a;->removeMessages(I)V
 
-    .line 1645
+    .line 1653
     :cond_0
     return-void
 .end method
@@ -7063,7 +7120,7 @@
     .locals 2
 
     .prologue
-    .line 889
+    .line 897
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->mCurrentPlayItem:Lcom/jiliguala/niuwa/logic/network/json/SingleVideoData;
 
     if-eqz v0, :cond_0
@@ -7074,12 +7131,12 @@
 
     if-nez v0, :cond_1
 
-    .line 894
+    .line 902
     :cond_0
     :goto_0
     return-void
 
-    .line 892
+    .line 900
     :cond_1
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
 

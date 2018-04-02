@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lrx/c/c",
         "<",
-        "Ljava/lang/Throwable;",
+        "Lcom/jiliguala/niuwa/logic/b/a/a;",
         ">;"
     }
 .end annotation
@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 1294
+    .line 1328
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,23 +47,56 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Throwable;)V
-    .locals 0
-    .param p1, "throwable"    # Ljava/lang/Throwable;
+.method public a(Lcom/jiliguala/niuwa/logic/b/a/a;)V
+    .locals 1
+    .param p1, "loginEvent"    # Lcom/jiliguala/niuwa/logic/b/a/a;
 
     .prologue
-    .line 1298
+    .line 1332
+    iget v0, p1, Lcom/jiliguala/niuwa/logic/b/a/a;->a:I
+
+    sparse-switch v0, :sswitch_data_0
+
+    .line 1340
+    :goto_0
     return-void
+
+    .line 1334
+    :sswitch_0
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->onLoginSucceed()V
+
+    goto :goto_0
+
+    .line 1337
+    :sswitch_1
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$000(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;->doReAuth()V
+
+    goto :goto_0
+
+    .line 1332
+    :sswitch_data_0
+    .sparse-switch
+        0x999 -> :sswitch_1
+        0x1001 -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method public synthetic call(Ljava/lang/Object;)V
     .locals 0
 
     .prologue
-    .line 1294
-    check-cast p1, Ljava/lang/Throwable;
+    .line 1328
+    check-cast p1, Lcom/jiliguala/niuwa/logic/b/a/a;
 
-    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$6;->a(Lcom/jiliguala/niuwa/logic/b/a/a;)V
 
     return-void
 .end method

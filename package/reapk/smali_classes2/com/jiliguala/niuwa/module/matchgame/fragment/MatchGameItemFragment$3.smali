@@ -95,7 +95,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600f3
+    const v4, 0x7f0600f5
 
     .line 178
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
@@ -120,7 +120,7 @@
     :cond_0
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/matchgame/fragment/MatchGameItemFragment$3;->a:Landroid/widget/ImageView;
 
-    const v3, 0x7f0802c0
+    const v3, 0x7f0802ca
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

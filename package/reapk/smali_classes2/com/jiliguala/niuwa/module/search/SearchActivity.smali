@@ -1159,13 +1159,13 @@
     .locals 7
 
     .prologue
-    const v6, 0x7f010025
+    const v6, 0x7f010027
 
-    const v5, 0x7f01001e
+    const v5, 0x7f010020
 
-    const v4, 0x7f010014
+    const v4, 0x7f010015
 
-    const v3, 0x7f010012
+    const v3, 0x7f010013
 
     .line 685
     invoke-direct {p0}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->hideSoftInput()V
@@ -1716,7 +1716,7 @@
 
     const/4 v11, 0x2
 
-    const v10, 0x7f0600fc
+    const v10, 0x7f0600fe
 
     const/4 v9, 0x3
 
@@ -1801,7 +1801,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0801fe
+    const v7, 0x7f080208
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1814,7 +1814,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0801fc
+    const v7, 0x7f080206
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1862,12 +1862,12 @@
     invoke-direct {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->umengReport(I)V
 
     .line 514
-    const v4, 0x7f0b0127
+    const v4, 0x7f0b012c
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->setContentView(I)V
 
     .line 516
-    const v4, 0x7f09048e
+    const v4, 0x7f090498
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->findViewById(I)Landroid/view/View;
 
@@ -1878,7 +1878,7 @@
     iput-object v4, p0, Lcom/jiliguala/niuwa/module/search/SearchActivity;->background:Landroid/widget/FrameLayout;
 
     .line 517
-    const v4, 0x7f09058f
+    const v4, 0x7f090599
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->findViewById(I)Landroid/view/View;
 
@@ -1925,7 +1925,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 538
-    const v4, 0x7f090493
+    const v4, 0x7f09049d
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->findViewById(I)Landroid/view/View;
 
@@ -2010,7 +2010,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 551
-    const v4, 0x7f090497
+    const v4, 0x7f0904a1
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->findViewById(I)Landroid/view/View;
 
@@ -2044,7 +2044,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
     .line 581
-    const v4, 0x7f090481
+    const v4, 0x7f09048a
 
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/search/SearchActivity;->findViewById(I)Landroid/view/View;
 
@@ -2121,7 +2121,7 @@
     .line 613
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/search/SearchActivity;->mEmptyView:Landroid/view/View;
 
-    const v5, 0x7f090578
+    const v5, 0x7f090582
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2148,7 +2148,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f060050
+    const v6, 0x7f060052
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2173,7 +2173,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0600ae
+    const v8, 0x7f0600b0
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2191,7 +2191,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0600fb
+    const v8, 0x7f0600fd
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2414,7 +2414,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f090493
+    .packed-switch 0x7f09049d
         :pswitch_0
     .end packed-switch
 .end method

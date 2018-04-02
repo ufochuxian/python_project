@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toastReplay()V
+    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showReplayDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 782
+    .line 753
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,15 +37,22 @@
 
 
 # virtual methods
-.method public run()V
+.method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 785
-    const-string v0, "\u4e0a\u6b21\u5b66\u4e60\u5230\u6b64\u73af\u8282\uff0c\u4e3a\u60a8\u7eed\u64ad"
+    .line 756
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$5;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
 
-    .line 786
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
+
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->actionPlayFromStart()V
+
+    .line 757
     return-void
 .end method

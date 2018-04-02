@@ -128,6 +128,42 @@
     return-void
 .end method
 
+.method public goToLesson(Ljava/lang/String;)V
+    .locals 1
+    .param p1, "target"    # Ljava/lang/String;
+    .annotation runtime Lorg/xwalk/core/JavascriptInterface;
+    .end annotation
+
+    .prologue
+    .line 128
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/jsscope/JsScope;->mOuterRef:Ljava/lang/ref/WeakReference;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/jsscope/JsScope;->mOuterRef:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 129
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/jsscope/JsScope;->mOuterRef:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jiliguala/niuwa/module/webview/base/callback/BridgeCallback;
+
+    invoke-interface {v0, p1}, Lcom/jiliguala/niuwa/module/webview/base/callback/BridgeCallback;->goToLesson(Ljava/lang/String;)V
+
+    .line 131
+    :cond_0
+    return-void
+.end method
+
 .method public onGameCompleted(Ljava/lang/String;)V
     .locals 1
     .param p1, "gameID"    # Ljava/lang/String;

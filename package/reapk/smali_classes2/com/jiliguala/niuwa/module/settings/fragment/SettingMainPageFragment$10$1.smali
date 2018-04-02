@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/jiliguala/niuwa/logic/q/b;
+.field final synthetic a:Lcom/jiliguala/niuwa/logic/r/b;
 
 .field final synthetic b:Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;Lcom/jiliguala/niuwa/logic/q/b;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;Lcom/jiliguala/niuwa/logic/r/b;)V
     .locals 0
     .param p1, "this$1"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;
 
@@ -32,7 +32,7 @@
     .line 297
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->b:Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10;
 
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/q/b;
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/r/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,23 +55,23 @@
 
     .prologue
     .line 300
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/q/b;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/r/b;
 
-    sget-object v2, Lcom/jiliguala/niuwa/logic/q/b;->d:[I
+    sget-object v2, Lcom/jiliguala/niuwa/logic/r/b;->d:[I
 
     aget v2, v2, p1
 
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->b(I)V
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/r/b;->b(I)V
 
     .line 301
     if-eqz p1, :cond_0
 
     .line 302
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/q/b;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/r/b;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/r/b;->a(Z)V
 
     .line 306
     :goto_0
@@ -83,11 +83,11 @@
 
     move-result-object v1
 
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/r/b;->a()Lcom/jiliguala/niuwa/logic/r/b;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/q/b;->i()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/r/b;->i()Ljava/lang/String;
 
     move-result-object v2
 
@@ -125,18 +125,18 @@
     .line 304
     .end local v0    # "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/q/b;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingMainPageFragment$10$1;->a:Lcom/jiliguala/niuwa/logic/r/b;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/r/b;->a(Z)V
 
     goto :goto_0
 
     .line 308
     .restart local v0    # "mapAmp":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_1
-    sget-object v1, Lcom/jiliguala/niuwa/logic/q/b;->d:[I
+    sget-object v1, Lcom/jiliguala/niuwa/logic/r/b;->d:[I
 
     aget v1, v1, p1
 

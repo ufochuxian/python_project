@@ -33,17 +33,17 @@
     .param p1, "writeActivity"    # Lcom/jiliguala/niuwa/module/write/WriteActivity;
 
     .prologue
-    .line 453
+    .line 462
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 454
+    .line 463
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 455
+    .line 464
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 459
+    .line 468
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,13 +63,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 460
+    .line 469
     iget v0, p1, Landroid/os/Message;->what:I
 
-    .line 462
+    .line 471
     invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    .line 465
+    .line 474
     :cond_0
     return-void
 .end method

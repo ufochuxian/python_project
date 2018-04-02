@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     .prologue
-    .line 181
+    .line 186
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 0
 
     .prologue
-    .line 185
+    .line 190
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 194
+    .line 199
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$300(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/util/List;
@@ -65,7 +65,7 @@
 
     if-nez v0, :cond_0
 
-    .line 195
+    .line 200
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
@@ -82,9 +82,9 @@
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/Age;->channel:Ljava/lang/String;
 
-    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$102(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$002(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 196
+    .line 201
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
@@ -95,13 +95,13 @@
 
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment$3;->a:Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$100(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;->access$000(Lcom/jiliguala/niuwa/module/qualitycourse/InteractCourseFragment;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v2, v2, v1}, Lcom/jiliguala/niuwa/module/qualitycourse/InteractCoursePresenter;->requestInteractCourse(IZLjava/lang/String;)V
 
-    .line 198
+    .line 203
     :cond_0
     return-void
 .end method
@@ -110,7 +110,7 @@
     .locals 0
 
     .prologue
-    .line 190
+    .line 195
     return-void
 .end method
 
@@ -118,7 +118,7 @@
     .locals 0
 
     .prologue
-    .line 203
+    .line 208
     return-void
 .end method
 
@@ -126,6 +126,6 @@
     .locals 0
 
     .prologue
-    .line 208
+    .line 213
     return-void
 .end method

@@ -98,6 +98,7 @@
 
     invoke-virtual {p0}, Ljava/io/Reader;->close()V
 
+    .line 31
     throw v3
 
     .line 28

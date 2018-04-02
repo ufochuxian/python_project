@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     .prologue
-    .line 145
+    .line 146
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,7 +48,7 @@
     .param p1, "forumSets"    # Lcom/jiliguala/niuwa/logic/network/json/ForumSets;
 
     .prologue
-    .line 161
+    .line 162
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$100(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Z
@@ -57,10 +57,10 @@
 
     if-nez v0, :cond_0
 
-    .line 163
+    .line 164
     if-eqz p1, :cond_0
 
-    .line 165
+    .line 166
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$000(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;->updateDateSet(Ljava/util/ArrayList;Z)V
 
-    .line 166
+    .line 167
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$000(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/forum/page/adapter/ForumSecondaryPageListAdapter;->notifyDataSetChanged()V
 
-    .line 169
+    .line 170
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->f()V
 
-    .line 170
+    .line 171
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$200(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Landroid/view/View;
@@ -116,10 +116,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 171
+    .line 172
     return-void
 
-    .line 170
+    .line 171
     :cond_1
     const/16 v0, 0x8
 
@@ -130,7 +130,7 @@
     .locals 0
 
     .prologue
-    .line 149
+    .line 150
     return-void
 .end method
 
@@ -139,7 +139,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 155
+    .line 156
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$300(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;
@@ -148,7 +148,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/common/widget/pulltorefresh/PullToRefreshListView;->f()V
 
-    .line 156
+    .line 157
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a:Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;->access$200(Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment;)Landroid/view/View;
@@ -172,10 +172,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 157
+    .line 158
     return-void
 
-    .line 156
+    .line 157
     :cond_0
     const/16 v0, 0x8
 
@@ -186,7 +186,7 @@
     .locals 0
 
     .prologue
-    .line 145
+    .line 146
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/ForumSets;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/forum/page/ForumSecondaryPageFragment$3;->a(Lcom/jiliguala/niuwa/logic/network/json/ForumSets;)V

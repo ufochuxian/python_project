@@ -45,7 +45,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->a:Landroid/view/View;
 
     .line 687
-    const v0, 0x7f090273
+    const v0, 0x7f090278
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -67,7 +67,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->d:Landroid/widget/TextView;
 
     .line 689
-    const v0, 0x7f0903b0
+    const v0, 0x7f0903b7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->b:Landroid/widget/ImageView;
 
     .line 690
-    const v0, 0x7f090425
+    const v0, 0x7f09042c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->e:Landroid/widget/RatingBar;
 
     .line 691
-    const v0, 0x7f0902f1
+    const v0, 0x7f0902f8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -100,7 +100,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->f:Landroid/widget/ImageView;
 
     .line 692
-    const v0, 0x7f090477
+    const v0, 0x7f090480
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$c;->g:Landroid/view/View;
 
     .line 693
-    const v0, 0x7f0905ea
+    const v0, 0x7f0905f4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

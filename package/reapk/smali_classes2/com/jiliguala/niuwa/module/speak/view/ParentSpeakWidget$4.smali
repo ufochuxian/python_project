@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     .prologue
-    .line 591
+    .line 592
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->a:Landroid/view/View;
@@ -50,7 +50,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 619
+    .line 620
     return-void
 .end method
 
@@ -61,7 +61,7 @@
     .prologue
     const/16 v1, 0x1002
 
-    .line 605
+    .line 606
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$300(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;
@@ -74,7 +74,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 606
+    .line 607
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$300(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;
@@ -83,7 +83,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->removeMessages(I)V
 
-    .line 608
+    .line 609
     :cond_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
@@ -117,17 +117,17 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 609
+    .line 610
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->a:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
 
-    .line 610
+    .line 611
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->b:Lcom/nineoldandroids/a/l;
 
     invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->i()V
 
-    .line 611
+    .line 612
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$200(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;
@@ -136,7 +136,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 612
+    .line 613
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$200(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;
@@ -151,7 +151,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;->onEndOfProgressAnim(I)V
 
-    .line 614
+    .line 615
     :cond_1
     return-void
 .end method
@@ -161,7 +161,7 @@
     .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 624
+    .line 625
     return-void
 .end method
 
@@ -172,7 +172,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 594
+    .line 595
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$300(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;
@@ -183,7 +183,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$a;->sendEmptyMessage(I)Z
 
-    .line 596
+    .line 597
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$500(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/common/widget/CircleImageView;
@@ -192,7 +192,7 @@
 
     invoke-virtual {v0, v2}, Lcom/jiliguala/niuwa/common/widget/CircleImageView;->setEnabled(Z)V
 
-    .line 597
+    .line 598
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$1100(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Landroid/widget/ImageView;
@@ -201,7 +201,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 598
+    .line 599
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$200(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;
@@ -210,7 +210,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 599
+    .line 600
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$4;->c:Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;->access$200(Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget;)Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;
@@ -219,7 +219,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/speak/view/ParentSpeakWidget$CallBack;->onStartProgressAnim()V
 
-    .line 601
+    .line 602
     :cond_0
     return-void
 .end method

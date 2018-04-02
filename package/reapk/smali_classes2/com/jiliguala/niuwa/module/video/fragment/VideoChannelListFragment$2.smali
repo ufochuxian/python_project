@@ -151,9 +151,9 @@
 
     move-result-object v5
 
-    const v6, 0x7f010022
+    const v6, 0x7f010024
 
-    const v7, 0x7f010014
+    const v7, 0x7f010015
 
     invoke-virtual {v5, v6, v7}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 

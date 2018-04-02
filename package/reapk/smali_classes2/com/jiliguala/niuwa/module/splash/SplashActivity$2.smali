@@ -114,6 +114,7 @@
 
     invoke-virtual {v3, v4}, Lcom/jiliguala/niuwa/module/splash/SplashActivity;->tryToStartMain(Ljava/lang/String;)V
 
+    .line 148
     throw v2
 .end method
 

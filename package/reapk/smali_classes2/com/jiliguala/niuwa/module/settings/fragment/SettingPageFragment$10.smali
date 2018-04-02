@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     .prologue
-    .line 998
+    .line 1007
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->a:Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
@@ -58,7 +58,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1001
+    .line 1010
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->isAdded()Z
@@ -67,48 +67,48 @@
 
     if-eqz v1, :cond_0
 
-    .line 1003
+    .line 1012
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->a:Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
 
-    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$1902(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;)Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2002(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;)Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
 
-    .line 1004
+    .line 1013
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->b:Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2002(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2102(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Lcom/makeramen/roundedimageview/RoundedImageView;)Lcom/makeramen/roundedimageview/RoundedImageView;
 
-    .line 1005
+    .line 1014
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->c:Landroid/widget/TextView;
 
-    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2102(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2202(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 1006
+    .line 1015
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->d:Landroid/widget/TextView;
 
-    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2202(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2302(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 1007
+    .line 1016
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    .line 1008
+    .line 1017
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getChildFragmentManager()Landroid/support/v4/app/ag;
 
     move-result-object v1
 
-    .line 1007
+    .line 1016
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;->findOrCreateFragment(Landroid/support/v4/app/ag;)Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;
 
     move-result-object v0
 
-    .line 1009
+    .line 1018
     .local v0, "fragment":Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->a:Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;
 
@@ -130,7 +130,7 @@
 
     iget-object v5, v5, Lcom/jiliguala/niuwa/logic/network/json/UserInfoTemplate$BabyInfoData;->gender:Ljava/lang/String;
 
-    .line 1010
+    .line 1019
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v6
@@ -147,19 +147,19 @@
 
     move-result v6
 
-    .line 1009
+    .line 1018
     invoke-virtual/range {v0 .. v6}, Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;->setData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 1011
+    .line 1020
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2300(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$b;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;->setClickSwitchBabyListener(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$SwitchBabyClickedListener;)V
 
-    .line 1012
+    .line 1021
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->getChildFragmentManager()Landroid/support/v4/app/ag;
@@ -168,26 +168,26 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;->show(Landroid/support/v4/app/ag;)V
 
-    .line 1013
+    .line 1022
     const-string v1, "NAME_BABY_FLOAT_HIDE"
 
     const/4 v2, 0x1
 
     invoke-static {v1, v2}, Lcom/jiliguala/niuwa/common/util/t;->a(Ljava/lang/String;Z)V
 
-    .line 1014
+    .line 1023
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1015
+    .line 1024
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment$10;->e:Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2400(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;->access$2500(Lcom/jiliguala/niuwa/module/settings/fragment/SettingPageFragment;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -195,7 +195,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1018
+    .line 1027
     .end local v0    # "fragment":Lcom/jiliguala/niuwa/module/settings/fragment/BabySwitchDialog;
     :cond_0
     return-void

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->hideTransition()V
+    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->toastReplay()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 870
+    .line 785
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,25 +38,14 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 873
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+    .line 788
+    const-string v0, "\u4e0a\u6b21\u5b66\u4e60\u5230\u6b64\u73af\u8282\uff0c\u4e3a\u60a8\u7eed\u64ad"
 
-    iget-object v0, v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/services/SystemMsgService;->a(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 874
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$7;->a:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
-
-    iget-object v0, v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->mProgress:Landroid/view/View;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 875
+    .line 789
     return-void
 .end method

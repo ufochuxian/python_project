@@ -30,7 +30,7 @@
 
 .field public mRecyclerView:Landroid/support/v7/widget/RecyclerView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090437
+        a = 0x7f09043e
     .end annotation
 .end field
 

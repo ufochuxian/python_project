@@ -135,9 +135,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -250,7 +250,7 @@
 
     .prologue
     .line 143
-    const v1, 0x7f0b0146
+    const v1, 0x7f0b014b
 
     invoke-virtual {p1, v1, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -258,7 +258,7 @@
 
     .line 144
     .local v0, "view":Landroid/view/View;
-    const v1, 0x7f09034e
+    const v1, 0x7f090355
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -269,7 +269,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 145
-    const v1, 0x7f09034b
+    const v1, 0x7f090352
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -190,9 +190,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -314,7 +314,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f09002f -> :sswitch_0
-        0x7f0902a6 -> :sswitch_1
+        0x7f0902ac -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -399,7 +399,7 @@
     .line 72
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedFragment;->mRootView:Landroid/view/View;
 
-    const v5, 0x7f0902a4
+    const v5, 0x7f0902aa
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -414,7 +414,7 @@
     .line 74
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedFragment;->mRootView:Landroid/view/View;
 
-    const v5, 0x7f0902a5
+    const v5, 0x7f0902ab
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -429,7 +429,7 @@
     .line 76
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedFragment;->mRootView:Landroid/view/View;
 
-    const v5, 0x7f0902a6
+    const v5, 0x7f0902ac
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
     .line 78
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/story/QualityStoryUnLockedFragment;->mRootView:Landroid/view/View;
 
-    const v5, 0x7f0902a7
+    const v5, 0x7f0902ad
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

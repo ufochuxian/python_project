@@ -106,7 +106,7 @@
     .param p1, "status"    # Ljava/lang/String;
 
     .prologue
-    const v2, 0x7f08035c
+    const v2, 0x7f080368
 
     .line 943
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$a;->a:Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08035b
+    const v1, 0x7f080367
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -229,7 +229,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08035d
+    const v1, 0x7f080369
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -435,9 +435,9 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    const v8, 0x7f01001e
+    const v8, 0x7f010020
 
-    const v7, 0x7f01001d
+    const v7, 0x7f01001f
 
     .line 1023
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$a;->a:Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment;
@@ -535,7 +535,7 @@
     if-nez v5, :cond_1
 
     .line 1038
-    const v5, 0x7f090478
+    const v5, 0x7f090481
 
     sget-object v6, Lcom/jiliguala/niuwa/module/unit/fragment/UnitFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -1284,7 +1284,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b00fc
+    const v10, 0x7f0b00fd
 
     const/4 v11, 0x0
 
@@ -1299,7 +1299,7 @@
 
     .line 793
     .local v2, "holder":Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$b;
-    const v9, 0x7f090273
+    const v9, 0x7f090278
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1332,7 +1332,7 @@
     iput-object v9, v2, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$b;->e:Landroid/widget/ImageView;
 
     .line 797
-    const v9, 0x7f0905ca
+    const v9, 0x7f0905d4
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1343,7 +1343,7 @@
     iput-object v9, v2, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$b;->g:Landroid/widget/TextView;
 
     .line 798
-    const v9, 0x7f0905c4
+    const v9, 0x7f0905ce
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1365,7 +1365,7 @@
     iput-object v9, v2, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$b;->c:Landroid/widget/RelativeLayout;
 
     .line 802
-    const v9, 0x7f090526
+    const v9, 0x7f090530
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1376,7 +1376,7 @@
     iput-object v9, v2, Lcom/jiliguala/niuwa/module/babyintiation/StudyCourseFragment$b;->d:Landroid/widget/RelativeLayout;
 
     .line 803
-    const v9, 0x7f090529
+    const v9, 0x7f090533
 
     invoke-virtual {p2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

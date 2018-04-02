@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     .prologue
-    .line 206
+    .line 212
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,26 +38,91 @@
 
 # virtual methods
 .method public a()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 209
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    .line 215
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
 
-    .line 210
+    .line 216
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isB1MC(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 217
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 218
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "MCVIEW"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 219
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 220
     invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, "Beginner\u2018s Guide View"
+    const-string v2, "Beginner\u2018s Guide View"
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/a/b;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 211
+    .line 222
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_0
     return-void
 .end method
 
@@ -67,14 +132,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 215
+    .line 226
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
 
-    .line 216
+    .line 227
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
@@ -109,17 +174,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 217
+    .line 228
     const-string v0, "PREFS_BABY_HOME_GUIDE_MASK"
 
     invoke-static {v0, v2}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
 
-    .line 221
+    .line 232
     :cond_0
     :goto_0
     return-void
 
-    .line 218
+    .line 229
     :cond_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
@@ -155,7 +220,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 219
+    .line 230
     const-string v0, "PREFS_PARENT_HOME_GUIDE_MASK"
 
     invoke-static {v0, v2}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
@@ -164,60 +229,220 @@
 .end method
 
 .method public c()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 225
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    .line 236
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
-    move-result-object v0
+    move-result-object v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
 
-    iget-object v0, v0, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isAgeOverTwoMC(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isAgeOverTwoMC(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 226
-    const-string v0, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
+    .line 237
+    const-string v1, "PREFS_HAS_COMPLETE_SHOW_GUIDE"
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    invoke-static {v0, v1}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/common/util/t;->b(Ljava/lang/String;Z)V
 
-    .line 228
+    .line 240
     :cond_0
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isB1MC(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 241
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 242
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "MCVIEW"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 243
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 244
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Beginner\u2018s Guide Exit"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 246
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_1
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$002(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;Z)Z
+
+    .line 248
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$200(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)V
+
+    .line 250
     return-void
 .end method
 
 .method public d()V
-    .locals 0
+    .locals 3
 
     .prologue
-    .line 233
+    .line 254
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v1, v1, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/NewRoadMap/LevelItem;->isB1MC(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 255
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 256
+    .local v0, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v1, "Step"
+
+    const-string v2, "MCVIEW"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 257
+    const-string v1, "Type"
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment$1;->a:Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;->access$100(Lcom/jiliguala/niuwa/module/babyintiation/BabyInitiationMainFragment;)Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean;->mc:Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;
+
+    iget-object v2, v2, Lcom/jiliguala/niuwa/logic/network/json/HomeTemplate$DataBean$McBean;->lv:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 258
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/a/b;->a()Lcom/jiliguala/niuwa/logic/a/b;
+
+    move-result-object v1
+
+    const-string v2, "Beginner\u2019s Guide Complete"
+
+    invoke-virtual {v1, v2, v0}, Lcom/jiliguala/niuwa/logic/a/b;->a(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 261
+    .end local v0    # "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    :cond_0
     return-void
 .end method

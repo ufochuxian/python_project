@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final block_canary_icon:I = 0x7f080080
+.field public static final block_canary_icon:I = 0x7f080082
 
-.field public static final block_canary_notification:I = 0x7f080081
+.field public static final block_canary_notification:I = 0x7f080083
 
 
 # direct methods

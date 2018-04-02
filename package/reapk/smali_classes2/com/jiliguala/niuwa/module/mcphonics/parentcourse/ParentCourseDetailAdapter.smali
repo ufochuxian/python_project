@@ -300,9 +300,9 @@
 
     check-cast v4, Landroid/app/Activity;
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     invoke-virtual {v4, v5, v6}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -317,9 +317,9 @@
     .param p2, "position"    # I
 
     .prologue
-    const v10, 0x7f01001d
+    const v10, 0x7f01001f
 
-    const v9, 0x7f010013
+    const v9, 0x7f010014
 
     const/4 v8, 0x0
 
@@ -816,7 +816,7 @@
     .line 202
     iget-object v5, p0, Lcom/jiliguala/niuwa/module/mcphonics/parentcourse/ParentCourseDetailAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v6, 0x7f0b00f1
+    const v6, 0x7f0b00f2
 
     invoke-virtual {v5, v6, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -843,7 +843,7 @@
 
     .line 210
     .local v3, "subsBean":Lcom/jiliguala/niuwa/logic/network/json/Lessons$SubsBean;
-    const v2, 0x7f08035e
+    const v2, 0x7f08036a
 
     .line 211
     .local v2, "resourceId":I
@@ -862,7 +862,7 @@
     if-eqz v5, :cond_2
 
     .line 213
-    const v2, 0x7f0802e2
+    const v2, 0x7f0802ec
 
     .line 214
     const-string v4, "\u513f\u6b4c\u629a\u89e6"
@@ -893,7 +893,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0802db
+    const v6, 0x7f0802e5
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -955,7 +955,7 @@
     if-eqz v5, :cond_3
 
     .line 216
-    const v2, 0x7f0802e1
+    const v2, 0x7f0802eb
 
     .line 217
     const-string v4, "\u5b66\u5531\u513f\u6b4c"
@@ -975,10 +975,10 @@
     if-eqz v5, :cond_4
 
     .line 219
-    const v2, 0x7f0802e3
+    const v2, 0x7f0802ed
 
     .line 220
-    const-string v4, "\u641e\u5b9a\u5355\u8bcd"
+    const-string v4, "\u4eb2\u5b50\u53e3\u8bed"
 
     goto :goto_1
 
@@ -995,7 +995,7 @@
     if-eqz v5, :cond_5
 
     .line 222
-    const v2, 0x7f0802e0
+    const v2, 0x7f0802ea
 
     .line 223
     const-string v4, "\u6f02\u4eae\u53d1\u97f3"
@@ -1015,7 +1015,7 @@
     if-eqz v5, :cond_6
 
     .line 225
-    const v2, 0x7f0802df
+    const v2, 0x7f0802e9
 
     .line 226
     const-string v4, "\u4eb2\u5b50\u6e38\u620f"
@@ -1035,7 +1035,7 @@
     if-eqz v5, :cond_0
 
     .line 228
-    const v2, 0x7f0802de
+    const v2, 0x7f0802e8
 
     .line 229
     const-string v4, "\u62d3\u5c55\u6d3b\u52a8"

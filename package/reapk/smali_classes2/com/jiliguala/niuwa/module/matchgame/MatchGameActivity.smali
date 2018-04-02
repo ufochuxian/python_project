@@ -44,7 +44,7 @@
 
 .field private mPageText:Landroid/widget/TextView;
 
-.field private mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+.field private mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
 .field private mTaskTicket:Lcom/jiliguala/niuwa/module/course/model/SubCourseTicket;
 
@@ -380,18 +380,18 @@
 
     .prologue
     .line 433
-    new-instance v0, Lcom/jiliguala/niuwa/logic/n/a;
+    new-instance v0, Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/n/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/jiliguala/niuwa/logic/o/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iput-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     .line 434
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    const v1, 0x7f0e0004
+    const v1, 0x7f0e0005
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/n/a;->a(I)I
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/o/a;->a(I)I
 
     move-result v0
 
@@ -415,12 +415,12 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mHandler:Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity$a;
 
     .line 172
-    const v0, 0x7f0b011b
+    const v0, 0x7f0b011f
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->setContentView(I)V
 
     .line 173
-    const v0, 0x7f090402
+    const v0, 0x7f090409
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -434,7 +434,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 175
-    const v0, 0x7f090590
+    const v0, 0x7f09059a
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 176
-    const v0, 0x7f090311
+    const v0, 0x7f090318
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 178
-    const v0, 0x7f090312
+    const v0, 0x7f090319
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -468,7 +468,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 180
-    const v0, 0x7f090313
+    const v0, 0x7f09031a
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -484,7 +484,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 182
-    const v0, 0x7f090314
+    const v0, 0x7f09031b
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -530,7 +530,7 @@
     invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/common/widget/CustomViewPager;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$f;)V
 
     .line 188
-    const v0, 0x7f0903be
+    const v0, 0x7f0903c5
 
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->findViewById(I)Landroid/view/View;
 
@@ -578,23 +578,23 @@
 
     .line 267
     :cond_1
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v0, :cond_2
 
     .line 268
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/n/a;->a()V
+    invoke-virtual {v0}, Lcom/jiliguala/niuwa/logic/o/a;->a()V
 
     .line 270
     :cond_2
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->finish()V
 
     .line 271
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->overridePendingTransition(II)V
 
@@ -888,16 +888,16 @@
 
     .prologue
     .line 277
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     if-eqz v2, :cond_0
 
     .line 278
-    iget-object v2, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/n/a;
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->mSoundPool:Lcom/jiliguala/niuwa/logic/o/a;
 
     iget v3, p0, Lcom/jiliguala/niuwa/module/matchgame/MatchGameActivity;->soundID:I
 
-    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/n/a;->b(I)V
+    invoke-virtual {v2, v3}, Lcom/jiliguala/niuwa/logic/o/a;->b(I)V
 
     .line 281
     :cond_0
@@ -1183,10 +1183,10 @@
     .line 200
     :sswitch_data_0
     .sparse-switch
-        0x7f090311 -> :sswitch_1
-        0x7f090312 -> :sswitch_1
-        0x7f090313 -> :sswitch_1
-        0x7f090590 -> :sswitch_0
+        0x7f090318 -> :sswitch_1
+        0x7f090319 -> :sswitch_1
+        0x7f09031a -> :sswitch_1
+        0x7f09059a -> :sswitch_0
     .end sparse-switch
 .end method
 

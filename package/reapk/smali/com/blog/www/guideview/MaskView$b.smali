@@ -33,15 +33,17 @@
 
 .field public static final i:I = 0x31
 
+.field public static final j:I = 0x32
+
 
 # instance fields
-.field public j:I
-
 .field public k:I
 
 .field public l:I
 
 .field public m:I
+
+.field public n:I
 
 
 # direct methods
@@ -53,26 +55,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 383
+    .line 388
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    .line 373
+    .line 378
     const/4 v0, 0x4
-
-    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->j:I
-
-    .line 374
-    const/16 v0, 0x20
 
     iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->k:I
 
-    .line 375
-    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
+    .line 379
+    const/16 v0, 0x20
 
-    .line 376
+    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
+
+    .line 380
     iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->m:I
 
-    .line 384
+    .line 381
+    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->n:I
+
+    .line 389
     return-void
 .end method
 
@@ -84,26 +86,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 379
+    .line 384
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 373
+    .line 378
     const/4 v0, 0x4
-
-    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->j:I
-
-    .line 374
-    const/16 v0, 0x20
 
     iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->k:I
 
-    .line 375
-    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
+    .line 379
+    const/16 v0, 0x20
 
-    .line 376
-    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->m:I
+    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
 
     .line 380
+    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->m:I
+
+    .line 381
+    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->n:I
+
+    .line 385
     return-void
 .end method
 
@@ -114,25 +116,25 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 387
+    .line 392
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 373
+    .line 378
     const/4 v0, 0x4
-
-    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->j:I
-
-    .line 374
-    const/16 v0, 0x20
 
     iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->k:I
 
-    .line 375
-    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
+    .line 379
+    const/16 v0, 0x20
 
-    .line 376
+    iput v0, p0, Lcom/blog/www/guideview/MaskView$b;->l:I
+
+    .line 380
     iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->m:I
 
-    .line 388
+    .line 381
+    iput v1, p0, Lcom/blog/www/guideview/MaskView$b;->n:I
+
+    .line 393
     return-void
 .end method

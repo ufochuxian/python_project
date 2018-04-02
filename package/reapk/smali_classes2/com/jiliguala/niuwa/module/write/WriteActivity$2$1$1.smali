@@ -27,7 +27,7 @@
     .param p1, "this$2"    # Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;
 
     .prologue
-    .line 352
+    .line 356
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 355
+    .line 359
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;->b:Lcom/jiliguala/niuwa/module/write/WriteActivity$2;
@@ -60,6 +60,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/jiliguala/niuwa/module/write/WriteActivity$a;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 366
+    .line 370
     return-void
 .end method

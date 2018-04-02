@@ -363,7 +363,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 135
-    const v0, 0x7f0902d3
+    const v0, 0x7f0902d9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -638,7 +638,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0600fb
+    const v2, 0x7f0600fd
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 

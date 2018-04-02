@@ -213,7 +213,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f080112
+    const v7, 0x7f080114
 
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -228,7 +228,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09054c
+    const v7, 0x7f090556
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -241,7 +241,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09054b
+    const v7, 0x7f090555
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/db/a/a;->c()Lcom/jiliguala/niuwa/logic/network/json/SingleAudioData;
 
@@ -254,7 +254,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f09054a
+    const v7, 0x7f090554
 
     invoke-interface {p3}, Landroid/database/Cursor;->getPosition()I
 
@@ -362,7 +362,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f080127
+    const v7, 0x7f080129
 
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -419,7 +419,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f080113
+    const v7, 0x7f080115
 
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -508,7 +508,7 @@
 
     .line 84
     .local v0, "childrenHolder":Lcom/jiliguala/niuwa/module/audio/adapter/AudioFavListAdapter$ChildrenHolder;
-    const v2, 0x7f0902a3
+    const v2, 0x7f0902a9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -539,7 +539,7 @@
     invoke-static {v0, v2}, Lcom/jiliguala/niuwa/module/audio/adapter/AudioFavListAdapter$ChildrenHolder;->access$002(Lcom/jiliguala/niuwa/module/audio/adapter/AudioFavListAdapter$ChildrenHolder;Landroid/view/View;)Landroid/view/View;
 
     .line 87
-    const v2, 0x7f090403
+    const v2, 0x7f09040a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

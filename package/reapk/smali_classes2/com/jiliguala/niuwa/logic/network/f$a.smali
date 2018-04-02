@@ -24,3 +24,5 @@
 .field public static final d:Ljava/lang/String; = "audio_msg"
 
 .field public static final e:Ljava/lang/String; = "group"
+
+.field public static final f:Ljava/lang/String; = "globallog"

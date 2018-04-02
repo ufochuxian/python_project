@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/nineoldandroids/a/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->showReplayDialog()V
+    value = Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->startProgressAnim(Landroid/view/View;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,21 +18,25 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Dialog;
+.field final synthetic a:Landroid/view/View;
 
-.field final synthetic b:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+.field final synthetic b:Lcom/nineoldandroids/a/l;
+
+.field final synthetic c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/app/Dialog;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;Landroid/view/View;Lcom/nineoldandroids/a/l;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 760
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->b:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+    .line 691
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    iput-object p2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->a:Landroid/app/Dialog;
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->a:Landroid/view/View;
+
+    iput-object p3, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->b:Lcom/nineoldandroids/a/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,64 +45,117 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 1
-    .param p1, "v"    # Landroid/view/View;
+.method public onAnimationCancel(Lcom/nineoldandroids/a/a;)V
+    .locals 0
+    .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
     .prologue
-    .line 763
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
+    .line 710
+    return-void
+.end method
+
+.method public onAnimationEnd(Lcom/nineoldandroids/a/a;)V
+    .locals 3
+    .param p1, "animation"    # Lcom/nineoldandroids/a/a;
+
+    .prologue
+    const/16 v1, 0x1002
+
+    .line 699
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$200(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->hasMessages(I)Z
 
     move-result v0
 
-    sparse-switch v0, :sswitch_data_0
+    if-eqz v0, :cond_0
 
-    .line 773
-    :goto_0
+    .line 700
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$200(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->removeMessages(I)V
+
+    .line 702
+    :cond_0
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$400(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+
+    invoke-static {v2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ""
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 703
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->a:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
+
+    .line 704
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->b:Lcom/nineoldandroids/a/l;
+
+    invoke-virtual {v0}, Lcom/nineoldandroids/a/l;->i()V
+
+    .line 705
     return-void
+.end method
 
-    .line 765
-    :sswitch_0
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->a:Landroid/app/Dialog;
+.method public onAnimationRepeat(Lcom/nineoldandroids/a/a;)V
+    .locals 0
+    .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    .prologue
+    .line 715
+    return-void
+.end method
 
-    .line 766
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->b:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
+.method public onAnimationStart(Lcom/nineoldandroids/a/a;)V
+    .locals 2
+    .param p1, "animation"    # Lcom/nineoldandroids/a/a;
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    .prologue
+    .line 694
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->c:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    move-result-object v0
-
-    check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->actionPlayFromRecord()V
-
-    goto :goto_0
-
-    .line 769
-    :sswitch_1
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->a:Landroid/app/Dialog;
-
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
-
-    .line 770
-    iget-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$4;->b:Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
-
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$200(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;
 
     move-result-object v0
 
-    check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;
+    const/16 v1, 0x1002
 
-    invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/interact/course/presenter/InteractLessonPresenter;->actionPlayFromStart()V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->sendEmptyMessage(I)Z
 
-    goto :goto_0
-
-    .line 763
-    :sswitch_data_0
-    .sparse-switch
-        0x7f0900fa -> :sswitch_1
-        0x7f090156 -> :sswitch_0
-    .end sparse-switch
+    .line 695
+    return-void
 .end method

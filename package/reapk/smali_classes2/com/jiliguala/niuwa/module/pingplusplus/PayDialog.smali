@@ -213,7 +213,7 @@
     invoke-virtual {v2, v1}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
     .line 99
-    const v2, 0x7f0903c4
+    const v2, 0x7f0903cb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/pingplusplus/PayDialog;->mPayContainer:Landroid/widget/LinearLayout;
 
     .line 101
-    const v2, 0x7f090612
+    const v2, 0x7f09061c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -240,7 +240,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 105
-    const v2, 0x7f090629
+    const v2, 0x7f090633
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 109
-    const v2, 0x7f0903c5
+    const v2, 0x7f0903cc
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -440,8 +440,8 @@
     .line 138
     :sswitch_data_0
     .sparse-switch
-        0x7f090612 -> :sswitch_0
-        0x7f090629 -> :sswitch_1
+        0x7f09061c -> :sswitch_0
+        0x7f090633 -> :sswitch_1
     .end sparse-switch
 .end method
 

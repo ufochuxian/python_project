@@ -262,7 +262,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090096 -> :sswitch_0
-        0x7f09057e -> :sswitch_1
+        0x7f090588 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -286,7 +286,7 @@
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/order/OrderDetailActivity;->setContentView(I)V
 
     .line 37
-    const v3, 0x7f090595
+    const v3, 0x7f09059f
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/order/OrderDetailActivity;->findViewById(I)Landroid/view/View;
 
@@ -317,7 +317,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 43
-    const v3, 0x7f09057e
+    const v3, 0x7f090588
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/order/OrderDetailActivity;->findViewById(I)Landroid/view/View;
 

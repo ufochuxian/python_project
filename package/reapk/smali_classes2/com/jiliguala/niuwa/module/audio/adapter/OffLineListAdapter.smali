@@ -241,7 +241,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080127
+    const v6, 0x7f080129
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -298,7 +298,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080113
+    const v6, 0x7f080115
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -433,7 +433,7 @@
 
     .line 80
     .local v0, "childrenHolder":Lcom/jiliguala/niuwa/module/audio/adapter/OffLineListAdapter$ChildrenHolder;
-    const v2, 0x7f0902a3
+    const v2, 0x7f0902a9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -464,7 +464,7 @@
     invoke-static {v0, v2}, Lcom/jiliguala/niuwa/module/audio/adapter/OffLineListAdapter$ChildrenHolder;->access$002(Lcom/jiliguala/niuwa/module/audio/adapter/OffLineListAdapter$ChildrenHolder;Landroid/view/View;)Landroid/view/View;
 
     .line 83
-    const v2, 0x7f090403
+    const v2, 0x7f09040a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

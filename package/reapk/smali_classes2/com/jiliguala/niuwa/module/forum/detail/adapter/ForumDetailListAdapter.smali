@@ -300,10 +300,10 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    const v3, 0x7f09054e
+    const v3, 0x7f090558
 
     .line 560
-    const v1, 0x7f09054f
+    const v1, 0x7f090559
 
     invoke-virtual {p1, v1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -511,7 +511,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->o:Landroid/widget/LinearLayout;
 
     .line 251
-    const v2, 0x7f090581
+    const v2, 0x7f09058b
 
     move-object/from16 v0, p2
 
@@ -589,7 +589,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->g:Landroid/widget/TextView;
 
     .line 258
-    const v2, 0x7f09042a
+    const v2, 0x7f090431
 
     move-object/from16 v0, p2
 
@@ -602,7 +602,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->h:Landroid/widget/TextView;
 
     .line 260
-    const v2, 0x7f090446
+    const v2, 0x7f09044d
 
     move-object/from16 v0, p2
 
@@ -628,7 +628,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->k:Landroid/widget/ImageView;
 
     .line 262
-    const v2, 0x7f0903b5
+    const v2, 0x7f0903bc
 
     move-object/from16 v0, p2
 
@@ -641,7 +641,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->l:Landroid/widget/TextView;
 
     .line 263
-    const v2, 0x7f0902ed
+    const v2, 0x7f0902f4
 
     move-object/from16 v0, p2
 
@@ -654,7 +654,7 @@
     iput-object v2, v12, Lcom/jiliguala/niuwa/module/forum/detail/adapter/ForumDetailListAdapter$a;->m:Landroid/widget/TextView;
 
     .line 264
-    const v2, 0x7f090548
+    const v2, 0x7f090552
 
     move-object/from16 v0, p2
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0800c1
+    const v3, 0x7f0800c3
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1269,7 +1269,7 @@
     invoke-virtual {v14, v13}, Landroid/widget/ImageView;->setId(I)V
 
     .line 439
-    const v2, 0x7f0803e1
+    const v2, 0x7f0803ee
 
     invoke-virtual {v14, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1552,7 +1552,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0800c3
+    const v3, 0x7f0800c5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1864,7 +1864,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054f
+    const v3, 0x7f090559
 
     invoke-virtual {v2, v3, v12}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
@@ -1873,7 +1873,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054e
+    const v3, 0x7f090558
 
     const v5, 0x7f0f00e1
 
@@ -1888,7 +1888,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054d
+    const v3, 0x7f090557
 
     iget-object v5, v11, Lcom/jiliguala/niuwa/logic/network/json/ForumDetailSets$SingleForum;->_id:Ljava/lang/String;
 
@@ -1899,7 +1899,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090550
+    const v3, 0x7f09055a
 
     const/4 v5, 0x0
 
@@ -1959,7 +1959,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054f
+    const v3, 0x7f090559
 
     invoke-virtual {v2, v3, v12}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
@@ -1968,7 +1968,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054e
+    const v3, 0x7f090558
 
     const v5, 0x7f0f00df
 
@@ -1983,7 +1983,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09054d
+    const v3, 0x7f090557
 
     iget-object v5, v11, Lcom/jiliguala/niuwa/logic/network/json/ForumDetailSets$SingleForum;->_id:Ljava/lang/String;
 
@@ -1994,7 +1994,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090550
+    const v3, 0x7f09055a
 
     const/4 v5, 0x1
 

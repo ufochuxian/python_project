@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final quick_view_load_more:I = 0x7f0b016c
+.field public static final quick_view_load_more:I = 0x7f0b0171
 
 
 # direct methods

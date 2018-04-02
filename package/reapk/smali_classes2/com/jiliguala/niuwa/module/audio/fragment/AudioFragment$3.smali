@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 1029
+    .line 1038
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
 
     const/high16 v6, 0x3f000000    # 0.5f
 
-    .line 1037
+    .line 1046
     iget-object v9, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     new-instance v0, Landroid/view/animation/ScaleAnimation;
@@ -67,7 +67,7 @@
 
     invoke-static {v9, v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1902(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;Landroid/view/animation/Animation;)Landroid/view/animation/Animation;
 
-    .line 1038
+    .line 1047
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1900(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/view/animation/Animation;
@@ -78,7 +78,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 1039
+    .line 1048
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1900(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/view/animation/Animation;
@@ -89,7 +89,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setRepeatCount(I)V
 
-    .line 1040
+    .line 1049
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1900(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/view/animation/Animation;
@@ -102,7 +102,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 1041
+    .line 1050
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1300(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/widget/TextView;
@@ -117,7 +117,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1042
+    .line 1051
     return-void
 .end method
 
@@ -126,7 +126,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1047
+    .line 1056
     return-void
 .end method
 
@@ -135,17 +135,17 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1032
+    .line 1041
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$3;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1600(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    const v1, 0x7f080110
+    const v1, 0x7f080112
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1033
+    .line 1042
     return-void
 .end method

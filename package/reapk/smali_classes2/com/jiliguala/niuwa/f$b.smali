@@ -2870,6 +2870,11 @@
     .end annotation
 .end field
 
+.field public static final ko:I = 0x7f04024a
+    .annotation build Landroid/support/annotation/f;
+    .end annotation
+.end field
+
 .field public static final l:I = 0x7f04000b
     .annotation build Landroid/support/annotation/f;
     .end annotation

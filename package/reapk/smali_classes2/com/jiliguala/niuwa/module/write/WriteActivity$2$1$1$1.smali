@@ -27,7 +27,7 @@
     .param p1, "this$3"    # Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;
 
     .prologue
-    .line 355
+    .line 359
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 5
 
     .prologue
-    .line 358
+    .line 362
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;
@@ -56,7 +56,7 @@
 
     if-nez v0, :cond_0
 
-    .line 359
+    .line 363
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;
 
     iget-object v0, v0, Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1$1;->a:Lcom/jiliguala/niuwa/module/write/WriteActivity$2$1;
@@ -67,7 +67,7 @@
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/write/WriteActivity;->finish()V
 
-    .line 360
+    .line 364
     invoke-static {}, Lcom/jiliguala/niuwa/logic/b/a;->a()Lcom/jiliguala/niuwa/logic/b/a;
 
     move-result-object v0
@@ -94,7 +94,7 @@
 
     invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/b/a;->a(Ljava/lang/Object;)V
 
-    .line 364
+    .line 368
     :cond_0
     return-void
 .end method

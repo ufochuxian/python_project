@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     .prologue
-    .line 1518
+    .line 1546
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity$10;->a:Lcom/jiliguala/niuwa/module/speak/ParentSpeakActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,6 +41,6 @@
     .locals 0
 
     .prologue
-    .line 1521
+    .line 1549
     return-void
 .end method

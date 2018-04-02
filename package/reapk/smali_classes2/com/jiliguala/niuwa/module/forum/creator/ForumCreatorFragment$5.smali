@@ -46,7 +46,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    const v3, 0x7f0801fd
+    const v3, 0x7f080207
 
     .line 508
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorFragment$5;->b:Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorFragment;

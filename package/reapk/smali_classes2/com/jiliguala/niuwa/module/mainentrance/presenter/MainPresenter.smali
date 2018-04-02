@@ -326,11 +326,11 @@
 
     .prologue
     .line 414
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/p/a;->a()Lcom/jiliguala/niuwa/logic/p/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/a;->a()Lcom/jiliguala/niuwa/logic/q/a;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/p/a;->d()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/jiliguala/niuwa/logic/q/a;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -748,11 +748,11 @@
     .line 384
     .local v4, "ver":I
     :goto_0
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/s/a;->a()Lcom/jiliguala/niuwa/logic/s/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lcom/jiliguala/niuwa/logic/s/a;->c()I
+    invoke-virtual {v6}, Lcom/jiliguala/niuwa/logic/t/a;->c()I
 
     move-result v3
 
@@ -978,9 +978,9 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     .line 514
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v0, v2, v3}, Landroid/app/Activity;->overridePendingTransition(II)V
 
@@ -1057,7 +1057,7 @@
 
     .prologue
     .line 134
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/s/a;->a()Lcom/jiliguala/niuwa/logic/s/a;
+    invoke-static {}, Lcom/jiliguala/niuwa/logic/t/a;->a()Lcom/jiliguala/niuwa/logic/t/a;
 
     move-result-object v0
 
@@ -1065,7 +1065,7 @@
 
     invoke-direct {v1, p0}, Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter$2;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/presenter/MainPresenter;)V
 
-    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/s/a;->a(Lcom/jiliguala/niuwa/logic/s/a$a;)V
+    invoke-virtual {v0, v1}, Lcom/jiliguala/niuwa/logic/t/a;->a(Lcom/jiliguala/niuwa/logic/t/a$a;)V
 
     .line 172
     return-void

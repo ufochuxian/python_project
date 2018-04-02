@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     .prologue
-    .line 748
+    .line 777
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     iput-object p2, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->a:Ljava/lang/String;
@@ -52,7 +52,7 @@
     .param p1, "unitDataTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     .prologue
-    .line 763
+    .line 792
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -63,7 +63,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 764
+    .line 793
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -72,7 +72,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->dismissLoadingProgress()V
 
-    .line 765
+    .line 794
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -83,7 +83,7 @@
 
     invoke-interface {v0, p1, v1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onSubCourseReportSucceed(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;Ljava/lang/String;)V
 
-    .line 767
+    .line 796
     :cond_0
     return-void
 .end method
@@ -92,7 +92,7 @@
     .locals 0
 
     .prologue
-    .line 752
+    .line 781
     return-void
 .end method
 
@@ -101,7 +101,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 756
+    .line 785
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -110,7 +110,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 757
+    .line 786
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->b:Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;->access$000(Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter;)Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;
@@ -119,7 +119,7 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioView;->onSubCourseReportFailed()V
 
-    .line 759
+    .line 788
     :cond_0
     return-void
 .end method
@@ -128,7 +128,7 @@
     .locals 0
 
     .prologue
-    .line 748
+    .line 777
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/audio/presenter/AudioPresenter$7;->a(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V

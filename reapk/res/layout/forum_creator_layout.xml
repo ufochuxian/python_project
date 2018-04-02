@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <EditText n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:textColorHint="@color/color_default_gray" n1:id="@id/forum_title_et" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/forum_creator_title_hint" n1:singleLine="true" n1:layout_alignParentLeft="true" n1:textCursorDrawable="@null" />
+    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/forum_title_et" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/reply_container" n1:background="@drawable/bottom_bar" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/take_photo" n1:background="@drawable/icon_camera" n1:layout_width="@dimen/default_icon_height" n1:layout_height="@dimen/default_icon_height" n1:layout_alignParentLeft="true" />
+            <FrameLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/take_photo" n1:layout_centerVertical="true">
+                <ImageView n1:id="@id/red_dot_iv" n1:layout_width="@dimen/default_icon_height" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/message_dot" />
+                <ImageView n1:id="@id/record_iv" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:src="@drawable/icon_record" />
+            </FrameLayout>
+        </RelativeLayout>
+        <include n1:layout_width="fill_parent" n1:layout_height="40.0dip" layout="@layout/record_audio_layout" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_gray" n1:gravity="center" n1:id="@id/tip_text" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:text="@string/create_web_tips" n1:layout_above="@id/reply_container" n1:layout_centerHorizontal="true" />
+    <EditText n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:textColorHint="@color/color_default_gray" n1:gravity="center|left|top" n1:id="@id/forum_content_et" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="@string/forum_creator_content_hint" n1:minLines="5" n1:layout_above="@id/tip_text" n1:layout_below="@id/forum_title_et" n1:textCursorDrawable="@null" />
+</RelativeLayout>

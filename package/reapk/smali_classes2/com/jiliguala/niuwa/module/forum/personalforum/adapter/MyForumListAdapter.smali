@@ -677,7 +677,7 @@
 
     .line 61
     .local v0, "normalViewHolder":Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;
-    const v2, 0x7f090598
+    const v2, 0x7f0905a2
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -688,7 +688,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 62
-    const v2, 0x7f090519
+    const v2, 0x7f090523
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -699,7 +699,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->b:Landroid/widget/ImageView;
 
     .line 63
-    const v2, 0x7f090380
+    const v2, 0x7f090387
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -710,7 +710,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->c:Landroid/widget/ImageView;
 
     .line 64
-    const v2, 0x7f0905a5
+    const v2, 0x7f0905af
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -721,7 +721,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->d:Landroid/widget/TextView;
 
     .line 65
-    const v2, 0x7f09026b
+    const v2, 0x7f090270
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -732,7 +732,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->e:Landroid/widget/ImageView;
 
     .line 66
-    const v2, 0x7f090378
+    const v2, 0x7f09037f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -743,7 +743,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->f:Landroid/widget/TextView;
 
     .line 67
-    const v2, 0x7f090573
+    const v2, 0x7f09057d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -754,7 +754,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->g:Landroid/widget/TextView;
 
     .line 68
-    const v2, 0x7f09042a
+    const v2, 0x7f090431
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -765,7 +765,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->h:Landroid/widget/TextView;
 
     .line 69
-    const v2, 0x7f090445
+    const v2, 0x7f09044c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -776,7 +776,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/forum/personalforum/adapter/MyForumListAdapter$a;->i:Landroid/widget/TextView;
 
     .line 70
-    const v2, 0x7f0905d3
+    const v2, 0x7f0905dd
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

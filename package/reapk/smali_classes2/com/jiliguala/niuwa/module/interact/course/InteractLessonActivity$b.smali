@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
     .prologue
-    .line 1087
+    .line 1137
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1088
+    .line 1138
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1089
+    .line 1139
     return-void
 .end method
 
@@ -56,7 +56,7 @@
     .prologue
     const/16 v4, 0x1004
 
-    .line 1093
+    .line 1143
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_0
@@ -69,21 +69,21 @@
 
     if-eqz v1, :cond_0
 
-    .line 1094
+    .line 1144
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 1128
+    .line 1178
     :goto_0
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 1132
+    .line 1182
     :cond_0
     :goto_1
     return-void
 
-    .line 1096
+    .line 1146
     :pswitch_0
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -101,7 +101,7 @@
 
     if-lez v1, :cond_1
 
-    .line 1097
+    .line 1147
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -114,13 +114,13 @@
 
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->removeAllViews()V
 
-    .line 1099
+    .line 1149
     :cond_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;
 
-    .line 1100
+    .line 1150
     .local v0, "obj":Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -140,7 +140,7 @@
 
     goto :goto_1
 
-    .line 1103
+    .line 1153
     .end local v0    # "obj":Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$a;
     :pswitch_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
@@ -159,7 +159,7 @@
 
     if-lez v1, :cond_0
 
-    .line 1104
+    .line 1154
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -174,7 +174,7 @@
 
     goto :goto_1
 
-    .line 1108
+    .line 1158
     :pswitch_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -184,9 +184,9 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$900(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1200(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)V
 
-    .line 1109
+    .line 1159
     const/16 v1, 0x1002
 
     const-wide/16 v2, 0x14
@@ -195,7 +195,7 @@
 
     goto :goto_1
 
-    .line 1112
+    .line 1162
     :pswitch_3
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -205,13 +205,13 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1113
+    .line 1163
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -220,7 +220,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v1
 
@@ -228,17 +228,17 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1114
+    .line 1164
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->hasMessages(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 1115
+    .line 1165
     invoke-virtual {p0, v4}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->removeMessages(I)V
 
-    .line 1117
+    .line 1167
     :cond_2
     const-wide/16 v2, 0xbb8
 
@@ -246,7 +246,7 @@
 
     goto/16 :goto_1
 
-    .line 1121
+    .line 1171
     :pswitch_4
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -256,13 +256,13 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1122
+    .line 1172
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -271,7 +271,7 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1000(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->access$1300(Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v1
 
@@ -281,7 +281,7 @@
 
     goto/16 :goto_1
 
-    .line 1126
+    .line 1176
     :pswitch_5
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity$b;->a:Ljava/lang/ref/WeakReference;
 
@@ -291,11 +291,15 @@
 
     check-cast v1, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->onExitInteractLesson()V
+    iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v2, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;
+
+    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/module/interact/course/InteractLessonActivity;->onExitInteractLesson(Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate;)V
 
     goto/16 :goto_0
 
-    .line 1094
+    .line 1144
     nop
 
     :pswitch_data_0

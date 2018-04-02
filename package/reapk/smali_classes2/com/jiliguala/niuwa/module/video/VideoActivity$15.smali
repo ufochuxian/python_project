@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->showMoreToolsDlg()V
+    value = Lcom/jiliguala/niuwa/module/video/VideoActivity;->updateChannelName(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,21 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+.field final synthetic a:Ljava/lang/String;
+
+.field final synthetic b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
+.method constructor <init>(Lcom/jiliguala/niuwa/module/video/VideoActivity;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 2771
-    iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    .line 2670
+    iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+
+    iput-object p2, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,154 +41,52 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 6
-    .param p1, "buttonView"    # Landroid/widget/CompoundButton;
-    .param p2, "isChecked"    # Z
+.method public run()V
+    .locals 2
 
     .prologue
-    const/4 v2, 0x0
+    .line 2673
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    const/4 v3, 0x1
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextView;
 
-    .line 2774
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    move-result-object v0
 
-    move-result-object v1
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/logic/q/b;->g()I
+    .line 2674
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    move-result v0
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2800(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextView;
 
-    .line 2775
-    .local v0, "lastTimeLimitSet":I
-    if-eqz p2, :cond_4
+    move-result-object v0
 
-    .line 2776
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Ljava/lang/String;
 
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->getPresenter()Lcom/jiliguala/niuwa/common/base/d;
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    move-result-object v1
-
-    check-cast v1, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
-
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->isInPlaybackState()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 2777
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$100(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Lcom/jiliguala/niuwa/module/video/VideoActivity$TimeRunnable;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity$TimeRunnable;->start()V
-
-    .line 2782
+    .line 2676
     :cond_0
-    if-lez v0, :cond_2
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    .line 2786
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextView;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v3}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
+    if-eqz v0, :cond_1
 
-    .line 2805
-    :goto_0
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    .line 2677
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->b:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$000(Lcom/jiliguala/niuwa/module/video/VideoActivity;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/widget/TextView;
 
-    .line 2806
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
+    move-result-object v0
 
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$3000(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Ljava/lang/String;
 
-    move-result-object v1
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    if-eqz v1, :cond_1
-
-    .line 2807
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$300(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Lcom/jiliguala/niuwa/module/video/VideoActivity$b;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/jiliguala/niuwa/module/video/VideoActivity$15$1;
-
-    invoke-direct {v2, p0}, Lcom/jiliguala/niuwa/module/video/VideoActivity$15$1;-><init>(Lcom/jiliguala/niuwa/module/video/VideoActivity$15;)V
-
-    const-wide/16 v4, 0x1f4
-
-    invoke-virtual {v1, v2, v4, v5}, Lcom/jiliguala/niuwa/module/video/VideoActivity$b;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 2814
+    .line 2679
     :cond_1
     return-void
-
-    .line 2787
-    :cond_2
-    if-nez v0, :cond_3
-
-    .line 2791
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/jiliguala/niuwa/logic/q/b;->b:[I
-
-    aget v2, v2, v3
-
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->b(I)V
-
-    .line 2792
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v3}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
-
-    goto :goto_0
-
-    .line 2794
-    :cond_3
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$2900(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Lcom/kyleduo/switchbutton/SwitchButton;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lcom/kyleduo/switchbutton/SwitchButton;->setChecked(Z)V
-
-    goto :goto_0
-
-    .line 2800
-    :cond_4
-    if-lez v0, :cond_5
-
-    .line 2801
-    invoke-static {}, Lcom/jiliguala/niuwa/logic/q/b;->a()Lcom/jiliguala/niuwa/logic/q/b;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lcom/jiliguala/niuwa/logic/q/b;->a(Z)V
-
-    .line 2803
-    :cond_5
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$15;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
-
-    invoke-static {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$100(Lcom/jiliguala/niuwa/module/video/VideoActivity;)Lcom/jiliguala/niuwa/module/video/VideoActivity$TimeRunnable;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity$TimeRunnable;->stop()V
-
-    goto :goto_0
 .end method

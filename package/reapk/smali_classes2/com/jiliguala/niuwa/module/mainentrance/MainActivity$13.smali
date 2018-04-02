@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/TabHost$OnTabChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->initHomeUI()V
+    value = Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->showFragmentMessageDot(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     .prologue
-    .line 728
+    .line 542
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,50 +37,24 @@
 
 
 # virtual methods
-.method public onTabChanged(Ljava/lang/String;)V
-    .locals 6
-    .param p1, "s"    # Ljava/lang/String;
+.method public run()V
+    .locals 1
 
     .prologue
-    .line 732
-    :try_start_0
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+    .line 545
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    move-result-object v1
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$300(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;
 
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    move-result-object v0
 
-    move-result v0
+    invoke-virtual {v0, p0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$a;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 733
-    .local v0, "pos":I
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
+    .line 547
+    iget-object v0, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
 
-    invoke-static {v1, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$902(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;I)I
+    invoke-static {v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->access$500(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;)V
 
-    .line 734
-    iget-object v1, p0, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;->a:Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;
-
-    iget-object v1, v1, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity;->mTabHost:Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;
-
-    new-instance v2, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;
-
-    invoke-direct {v2, p0, v0}, Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13$1;-><init>(Lcom/jiliguala/niuwa/module/mainentrance/MainActivity$13;I)V
-
-    const-wide/16 v4, 0x1f4
-
-    invoke-virtual {v1, v2, v4, v5}, Lcom/jiliguala/niuwa/common/widget/tabhost/FragmentTabHost;->postDelayed(Ljava/lang/Runnable;J)Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 745
-    .end local v0    # "pos":I
-    :goto_0
+    .line 548
     return-void
-
-    .line 742
-    :catch_0
-    move-exception v1
-
-    goto :goto_0
 .end method

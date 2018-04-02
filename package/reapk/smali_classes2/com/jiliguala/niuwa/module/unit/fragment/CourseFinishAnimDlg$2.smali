@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     .prologue
-    .line 153
+    .line 149
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 156
+    .line 152
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->access$000(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;)Landroid/os/Handler;
@@ -50,12 +50,12 @@
 
     invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 157
+    .line 153
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->dismissAllowingStateLoss()V
 
-    .line 158
+    .line 154
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->access$100(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;)Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
@@ -64,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 159
+    .line 155
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     invoke-static {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->access$100(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;)Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
@@ -73,14 +73,14 @@
 
     invoke-interface {v0}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;->onDismiss()V
 
-    .line 160
+    .line 156
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$2;->a:Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;->access$102(Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg;Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;)Lcom/jiliguala/niuwa/module/unit/fragment/CourseFinishAnimDlg$IDismissListener;
 
-    .line 162
+    .line 158
     :cond_0
     return-void
 .end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:background="@drawable/popup_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="0.0dip" />
+    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:layout_gravity="center" n1:id="@id/login_info_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:text="@string/add_user_need_login_tips" style="@style/LoginTextStyle" />
+    <include layout="@layout/social_group" />
+    <ImageView n1:background="@drawable/line_lightgrey" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="15.0dip" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="15.0dip">
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:id="@id/email_register" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="邮箱注册" />
+        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:id="@id/email_login" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="手机/邮箱 登录" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

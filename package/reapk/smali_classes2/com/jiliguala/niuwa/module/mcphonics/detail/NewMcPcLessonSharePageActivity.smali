@@ -26,7 +26,7 @@
 
 .field public mGradeIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09023d
+        a = 0x7f09023e
     .end annotation
 .end field
 
@@ -44,7 +44,7 @@
 
 .field public mShareTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090567
+        a = 0x7f090571
     .end annotation
 .end field
 
@@ -307,7 +307,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v3, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -494,7 +494,7 @@
     if-ltz v0, :cond_0
 
     .line 125
-    const v0, 0x7f080179
+    const v0, 0x7f08017b
 
     .line 136
     :goto_0
@@ -511,7 +511,7 @@
     if-gez v0, :cond_1
 
     .line 127
-    const v0, 0x7f080178
+    const v0, 0x7f08017a
 
     goto :goto_0
 
@@ -526,7 +526,7 @@
     if-gez v0, :cond_2
 
     .line 129
-    const v0, 0x7f08017b
+    const v0, 0x7f08017d
 
     goto :goto_0
 
@@ -541,7 +541,7 @@
     if-gez v0, :cond_3
 
     .line 131
-    const v0, 0x7f08017a
+    const v0, 0x7f08017c
 
     goto :goto_0
 
@@ -558,7 +558,7 @@
     if-gez v0, :cond_4
 
     .line 133
-    const v0, 0x7f08017c
+    const v0, 0x7f08017e
 
     goto :goto_0
 
@@ -574,17 +574,17 @@
     .param p1, "view"    # Landroid/view/View;
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f090613,
-            0x7f0904e2,
-            0x7f09022e,
-            0x7f0904db
+            0x7f09061d,
+            0x7f0904ec,
+            0x7f09022d,
+            0x7f0904e5
         }
     .end annotation
 
     .prologue
-    const v6, 0x7f0904e2
+    const v6, 0x7f0904ec
 
-    const v0, 0x7f0904dd
+    const v0, 0x7f0904e7
 
     const/4 v5, 0x4
 
@@ -702,13 +702,13 @@
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 213
     :goto_1
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/NewMcPcLessonSharePageActivity;->listener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     goto :goto_0
 
@@ -728,7 +728,7 @@
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -836,13 +836,13 @@
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 231
     :goto_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/NewMcPcLessonSharePageActivity;->listener:Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     goto/16 :goto_0
 
@@ -864,17 +864,17 @@
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/l/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v11}, Lcom/jiliguala/niuwa/logic/m/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
     .line 197
     :sswitch_data_0
     .sparse-switch
-        0x7f09022e -> :sswitch_0
-        0x7f0904db -> :sswitch_0
-        0x7f0904e2 -> :sswitch_1
-        0x7f090613 -> :sswitch_1
+        0x7f09022d -> :sswitch_0
+        0x7f0904e5 -> :sswitch_0
+        0x7f0904ec -> :sswitch_1
+        0x7f09061d -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -988,7 +988,7 @@
     .line 240
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/l/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
+    invoke-static {v0}, Lcom/jiliguala/niuwa/logic/m/b;->a(Lcom/jiliguala/niuwa/module/course/main/lisetners/ShareSuccessListener;)V
 
     .line 241
     return-void

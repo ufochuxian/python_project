@@ -262,9 +262,9 @@
     .param p1, "data"    # Lcom/jiliguala/niuwa/logic/network/json/HotSubjectTemplete$Data;
 
     .prologue
-    const v7, 0x7f01001e
+    const v7, 0x7f010020
 
-    const v6, 0x7f01001d
+    const v6, 0x7f01001f
 
     .line 206
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/discovery/adapter/DailyListAdapter;->mParentFm:Landroid/support/v4/app/ag;
@@ -352,7 +352,7 @@
     if-nez v4, :cond_2
 
     .line 224
-    const v4, 0x7f090478
+    const v4, 0x7f090481
 
     sget-object v5, Lcom/jiliguala/niuwa/module/hotsubject/HotSubjectFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -508,7 +508,7 @@
     .line 84
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/discovery/adapter/DailyListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0b00d2
+    const v3, 0x7f0b00d3
 
     const/4 v4, 0x0
 
@@ -526,7 +526,7 @@
 
     .line 86
     .local v0, "hotSubjectViewHolder":Lcom/jiliguala/niuwa/module/discovery/adapter/DailyListAdapter$a;
-    const v2, 0x7f09026b
+    const v2, 0x7f090270
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -537,7 +537,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/discovery/adapter/DailyListAdapter$a;->a:Landroid/widget/ImageView;
 
     .line 87
-    const v2, 0x7f09026c
+    const v2, 0x7f090271
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -548,7 +548,7 @@
     iput-object v2, v0, Lcom/jiliguala/niuwa/module/discovery/adapter/DailyListAdapter$a;->b:Landroid/widget/ImageView;
 
     .line 88
-    const v2, 0x7f090538
+    const v2, 0x7f090542
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

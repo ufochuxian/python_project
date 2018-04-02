@@ -723,6 +723,7 @@
 
     invoke-virtual {p0}, Lcom/yanzhenjie/andserver/CoreThread;->shutdown()V
 
+    .line 250
     throw v8
 .end method
 

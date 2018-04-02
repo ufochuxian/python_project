@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;
 
     .prologue
-    .line 704
+    .line 713
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$1;->a:Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,16 +41,16 @@
     .locals 1
 
     .prologue
-    .line 707
+    .line 716
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$1;->a:Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->dismissConfirmPayResultDialog()V
 
-    .line 708
+    .line 717
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity$1;->a:Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/webview/base/CrossBaseActivity;->onBackPressed()V
 
-    .line 709
+    .line 718
     return-void
 .end method

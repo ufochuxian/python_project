@@ -100,7 +100,7 @@
 
     .line 103
     .local v3, "ri":Lcom/jiliguala/niuwa/module/video/render/model/RenderInfo;
-    const v6, 0x7f090273
+    const v6, 0x7f090278
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setColorFilter(I)V
 
     .line 111
-    const v6, 0x7f090378
+    const v6, 0x7f09037f
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

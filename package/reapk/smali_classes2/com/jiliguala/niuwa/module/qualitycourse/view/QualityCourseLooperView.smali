@@ -301,7 +301,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b00ec
+    const v4, 0x7f0b00ed
 
     invoke-static {v3, v4, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -309,7 +309,7 @@
 
     .line 53
     .local v1, "mRootView":Landroid/view/View;
-    const v3, 0x7f090371
+    const v3, 0x7f090378
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

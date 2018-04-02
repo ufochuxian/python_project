@@ -13,6 +13,9 @@
 .method public abstract doShare(Ljava/lang/String;)V
 .end method
 
+.method public abstract goToLesson(Ljava/lang/String;)V
+.end method
+
 .method public abstract onGameCompleted(Ljava/lang/String;)V
 .end method
 

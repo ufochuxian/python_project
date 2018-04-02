@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/jiliguala/niuwa/module/webview/InternalWebActivity;
 
     .prologue
-    .line 695
+    .line 705
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 696
+    .line 706
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 697
+    .line 707
     return-void
 .end method
 
@@ -60,7 +60,7 @@
 
     const/4 v2, 0x0
 
-    .line 706
+    .line 716
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -73,20 +73,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 707
+    .line 717
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 720
+    .line 730
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 724
+    .line 734
     :cond_0
     :goto_0
     return-void
 
-    .line 709
+    .line 719
     :pswitch_0
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -102,7 +102,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 710
+    .line 720
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -117,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 711
+    .line 721
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -146,7 +146,7 @@
 
     goto :goto_1
 
-    .line 714
+    .line 724
     :cond_2
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
@@ -162,7 +162,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 715
+    .line 725
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/webview/InternalWebActivity$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -189,7 +189,7 @@
 
     goto :goto_2
 
-    .line 707
+    .line 717
     :pswitch_data_0
     .packed-switch 0x1000
         :pswitch_0

@@ -215,9 +215,9 @@
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onBackPressed()V
 
     .line 286
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->overridePendingTransition(II)V
 
@@ -257,7 +257,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0600fc
+    const v4, 0x7f0600fe
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -271,7 +271,7 @@
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->setContentView(I)V
 
     .line 186
-    const v2, 0x7f090477
+    const v2, 0x7f090480
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->findViewById(I)Landroid/view/View;
 
@@ -340,7 +340,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->mBackBtn:Landroid/widget/ImageView;
 
     .line 201
-    const v2, 0x7f090588
+    const v2, 0x7f090592
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -380,7 +380,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->mCompleteBtn:Landroid/widget/TextView;
 
     .line 205
-    const v2, 0x7f0905e0
+    const v2, 0x7f0905ea
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->findViewById(I)Landroid/view/View;
 
@@ -402,7 +402,7 @@
     iput-object v2, p0, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->mAvatarIv:Landroid/widget/ImageView;
 
     .line 207
-    const v2, 0x7f090262
+    const v2, 0x7f090267
 
     invoke-virtual {p0, v2}, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->findViewById(I)Landroid/view/View;
 
@@ -429,7 +429,7 @@
     .line 215
     iget-object v2, p0, Lcom/jiliguala/niuwa/module/register/ProfileCompletionActivity;->mBackBtn:Landroid/widget/ImageView;
 
-    const v3, 0x7f080198
+    const v3, 0x7f08019c
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

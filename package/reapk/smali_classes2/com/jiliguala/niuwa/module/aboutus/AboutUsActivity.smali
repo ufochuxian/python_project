@@ -62,9 +62,9 @@
 
     .line 82
     :cond_1
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/aboutus/AboutUsActivity;->overridePendingTransition(II)V
 
@@ -146,7 +146,7 @@
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/aboutus/AboutUsActivity;->setContentView(I)V
 
     .line 41
-    const v1, 0x7f09060a
+    const v1, 0x7f090614
 
     invoke-virtual {p0, v1}, Lcom/jiliguala/niuwa/module/aboutus/AboutUsActivity;->findViewById(I)Landroid/view/View;
 
@@ -163,7 +163,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/jiliguala/niuwa/logic/l/f;->p:Ljava/lang/String;
+    sget-object v3, Lcom/jiliguala/niuwa/logic/m/f;->p:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

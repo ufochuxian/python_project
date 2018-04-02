@@ -57,7 +57,7 @@
 
     .line 52
     :cond_0
-    const v6, 0x7f09052b
+    const v6, 0x7f090535
 
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/story/views/book/CoverView;->findViewById(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
 
     .line 57
     :cond_1
-    const v6, 0x7f090527
+    const v6, 0x7f090531
 
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/story/views/book/CoverView;->findViewById(I)Landroid/view/View;
 
@@ -99,7 +99,7 @@
 
     .line 62
     :cond_2
-    const v6, 0x7f09052c
+    const v6, 0x7f090536
 
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/story/views/book/CoverView;->findViewById(I)Landroid/view/View;
 
@@ -120,7 +120,7 @@
 
     .line 67
     :cond_3
-    const v6, 0x7f09052a
+    const v6, 0x7f090534
 
     invoke-virtual {p0, v6}, Lcom/jiliguala/niuwa/module/story/views/book/CoverView;->findViewById(I)Landroid/view/View;
 
@@ -205,7 +205,7 @@
 
     .prologue
     .line 82
-    const v0, 0x7f0b015c
+    const v0, 0x7f0b0161
 
     return v0
 .end method
@@ -215,7 +215,7 @@
 
     .prologue
     .line 92
-    const v0, 0x7f0b015b
+    const v0, 0x7f0b0160
 
     return v0
 .end method
@@ -225,7 +225,7 @@
 
     .prologue
     .line 87
-    const v0, 0x7f0b015b
+    const v0, 0x7f0b0160
 
     return v0
 .end method

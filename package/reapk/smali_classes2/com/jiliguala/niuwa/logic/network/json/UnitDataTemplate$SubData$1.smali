@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 311
+    .line 314
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
-    .line 314
+    .line 317
     new-instance v0, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData;
 
     invoke-direct {v0, p1}, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData;-><init>(Landroid/os/Parcel;)V
@@ -58,7 +58,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 319
+    .line 322
     new-array v0, p1, [Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData;
 
     return-object v0
@@ -68,7 +68,7 @@
     .locals 1
 
     .prologue
-    .line 311
+    .line 314
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData$1;->a(Landroid/os/Parcel;)Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData;
 
     move-result-object v0
@@ -80,7 +80,7 @@
     .locals 1
 
     .prologue
-    .line 311
+    .line 314
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData$1;->a(I)[Lcom/jiliguala/niuwa/logic/network/json/UnitDataTemplate$SubData;
 
     move-result-object v0

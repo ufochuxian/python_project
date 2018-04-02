@@ -239,9 +239,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f01001d
+    const v2, 0x7f01001f
 
-    const v3, 0x7f010013
+    const v3, 0x7f010014
 
     invoke-virtual {v1, v2, v3}, Landroid/support/v4/app/FragmentActivity;->overridePendingTransition(II)V
 
@@ -283,13 +283,13 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090014 -> :sswitch_7
-        0x7f09034c -> :sswitch_3
-        0x7f090350 -> :sswitch_6
-        0x7f090351 -> :sswitch_5
-        0x7f090352 -> :sswitch_0
-        0x7f090353 -> :sswitch_2
-        0x7f090354 -> :sswitch_4
-        0x7f0905d5 -> :sswitch_1
-        0x7f0905d6 -> :sswitch_1
+        0x7f090353 -> :sswitch_3
+        0x7f090357 -> :sswitch_6
+        0x7f090358 -> :sswitch_5
+        0x7f090359 -> :sswitch_0
+        0x7f09035a -> :sswitch_2
+        0x7f09035b -> :sswitch_4
+        0x7f0905df -> :sswitch_1
+        0x7f0905e0 -> :sswitch_1
     .end sparse-switch
 .end method

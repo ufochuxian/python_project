@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     .prologue
-    .line 652
+    .line 654
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$12;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 2
 
     .prologue
-    .line 655
+    .line 657
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/VideoActivity$12;->a:Lcom/jiliguala/niuwa/module/video/VideoActivity;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/video/VideoActivity;->access$200(Lcom/jiliguala/niuwa/module/video/VideoActivity;Z)V
 
-    .line 656
+    .line 658
     return-void
 .end method

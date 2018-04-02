@@ -43,7 +43,7 @@
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$a;->a:Landroid/view/View;
 
     .line 654
-    const v0, 0x7f090273
+    const v0, 0x7f090278
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -65,7 +65,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$a;->d:Landroid/widget/TextView;
 
     .line 656
-    const v0, 0x7f0903b0
+    const v0, 0x7f0903b7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -85,7 +85,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$a;->e:Landroid/view/View;
 
     .line 658
-    const v0, 0x7f090477
+    const v0, 0x7f090480
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -94,7 +94,7 @@
     iput-object v0, p0, Lcom/jiliguala/niuwa/module/mcphonics/detail/MCPhonicsDetailAdapter$a;->f:Landroid/view/View;
 
     .line 659
-    const v0, 0x7f0905ea
+    const v0, 0x7f0905f4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

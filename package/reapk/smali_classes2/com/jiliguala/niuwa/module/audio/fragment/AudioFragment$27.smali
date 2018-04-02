@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     .prologue
-    .line 842
+    .line 847
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 846
+    .line 851
     :try_start_0
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -50,18 +50,18 @@
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 871
+    .line 876
     :cond_0
     :goto_0
     return-void
 
-    .line 848
+    .line 853
     :sswitch_0
     const/4 v1, 0x0
 
     sput-boolean v1, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayNoneWifiEnable:Z
 
-    .line 849
+    .line 854
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -82,7 +82,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 850
+    .line 855
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/common/a/a;->dismissAllowingStateLoss()V
 
-    .line 852
+    .line 857
     :cond_1
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
@@ -101,7 +101,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 853
+    .line 858
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-virtual {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -114,17 +114,17 @@
 
     goto :goto_0
 
-    .line 868
+    .line 873
     :catch_0
     move-exception v0
 
-    .line 869
+    .line 874
     .local v0, "e":Ljava/lang/Exception;
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 857
+    .line 862
     .end local v0    # "e":Ljava/lang/Exception;
     :sswitch_1
     const/4 v1, 0x1
@@ -132,7 +132,7 @@
     :try_start_1
     sput-boolean v1, Lcom/jiliguala/niuwa/MyApplication;->AudioPlayNoneWifiEnable:Z
 
-    .line 858
+    .line 863
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -153,7 +153,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 859
+    .line 864
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
 
     invoke-static {v1}, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;->access$1700(Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;)Lcom/jiliguala/niuwa/common/a/a;
@@ -164,7 +164,7 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 862
+    .line 867
     :cond_2
     :try_start_2
     iget-object v1, p0, Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment$27;->a:Lcom/jiliguala/niuwa/module/audio/fragment/AudioFragment;
@@ -179,11 +179,11 @@
 
     goto :goto_0
 
-    .line 863
+    .line 868
     :catch_1
     move-exception v0
 
-    .line 864
+    .line 869
     .restart local v0    # "e":Ljava/lang/Exception;
     :try_start_3
     invoke-static {v0}, Lcom/jiliguala/niuwa/common/util/e;->a(Ljava/lang/Throwable;)V
@@ -192,7 +192,7 @@
 
     goto :goto_0
 
-    .line 846
+    .line 851
     :sswitch_data_0
     .sparse-switch
         0x7f0900fa -> :sswitch_0

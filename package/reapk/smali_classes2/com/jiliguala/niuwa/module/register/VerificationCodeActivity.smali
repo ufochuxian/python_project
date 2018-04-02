@@ -591,9 +591,9 @@
     invoke-super {p0}, Lcom/jiliguala/niuwa/common/base/BaseActivity;->onBackPressed()V
 
     .line 519
-    const v0, 0x7f010012
+    const v0, 0x7f010013
 
-    const v1, 0x7f01001e
+    const v1, 0x7f010020
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->overridePendingTransition(II)V
 
@@ -606,7 +606,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v11, 0x7f010012
+    const v11, 0x7f010013
 
     const/16 v10, 0x6d
 
@@ -644,7 +644,7 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->finish()V
 
     .line 337
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
     invoke-virtual {p0, v11, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->overridePendingTransition(II)V
 
@@ -741,7 +741,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mTopRightBtn:Landroid/widget/TextView;
 
     .line 357
-    const v3, 0x7f090588
+    const v3, 0x7f090592
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -752,7 +752,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mTitle:Landroid/widget/TextView;
 
     .line 358
-    const v3, 0x7f09053b
+    const v3, 0x7f090545
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -772,7 +772,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mConfirmBtn:Landroid/view/View;
 
     .line 360
-    const v3, 0x7f0905e5
+    const v3, 0x7f0905ef
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -783,7 +783,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mCodeInput:Landroid/widget/EditText;
 
     .line 361
-    const v3, 0x7f09041c
+    const v3, 0x7f090423
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -794,7 +794,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mPasswordInput:Landroid/widget/EditText;
 
     .line 362
-    const v3, 0x7f09041d
+    const v3, 0x7f090424
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -805,7 +805,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mPasswordConfirmInput:Landroid/widget/EditText;
 
     .line 363
-    const v3, 0x7f0905e2
+    const v3, 0x7f0905ec
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -814,7 +814,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mNotReceivedBtn:Landroid/view/View;
 
     .line 364
-    const v3, 0x7f09055e
+    const v3, 0x7f090568
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -823,7 +823,7 @@
     iput-object v3, p0, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->mTermBtn:Landroid/view/View;
 
     .line 365
-    const v3, 0x7f09055f
+    const v3, 0x7f090569
 
     invoke-virtual {p0, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->findViewById(I)Landroid/view/View;
 
@@ -893,7 +893,7 @@
     invoke-virtual {p0}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->finish()V
 
     .line 415
-    const v3, 0x7f01001e
+    const v3, 0x7f010020
 
     invoke-virtual {p0, v11, v3}, Lcom/jiliguala/niuwa/module/register/VerificationCodeActivity;->overridePendingTransition(II)V
 

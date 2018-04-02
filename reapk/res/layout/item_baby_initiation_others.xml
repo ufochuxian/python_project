@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:id="@id/main_other_container_large" n1:paddingLeft="@dimen/side_gap" n1:paddingRight="@dimen/side_gap" n1:layout_width="wrap_content" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/ph_container" n1:layout_width="320.0dip" n1:layout_height="fill_parent">
+        <com.makeramen.roundedimageview.RoundedImageView n1:id="@id/phonics_bg_iv" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/phonics_bg_placeholder" n1:scaleType="centerCrop" n1:layout_centerInParent="true" n2:riv_corner_radius_bottom_left="@dimen/default_card_radius_large" n2:riv_corner_radius_bottom_right="@dimen/default_card_radius_large" n2:riv_corner_radius_top_left="@dimen/default_card_radius_large" n2:riv_corner_radius_top_right="@dimen/default_card_radius_large" n2:riv_oval="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/title_xx_large" n1:textColor="@color/white" n1:id="@id/ph_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="20.0dip" n1:text="@string/phonics" />
+        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:id="@id/ph_level" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_below="@id/ph_title" />
+        <RelativeLayout n1:id="@id/unit_outer_container_1" n1:layout_width="fill_parent" n1:layout_height="@dimen/home_unit_outer_size" n1:layout_marginTop="2.0dip" n1:layout_below="@id/ph_title" n1:layout_centerHorizontal="true">
+            <ImageView n1:id="@id/shadow_iv_1" n1:layout_width="@dimen/home_unit_shadow_width" n1:layout_height="@dimen/home_unit_shadow_height" n1:src="@drawable/unit_shadow" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+            <RelativeLayout n1:id="@id/ph_icon_container" n1:background="@drawable/bg_circle_white" n1:layout_width="@dimen/home_unit_size" n1:layout_height="@dimen/home_unit_size" n1:layout_centerInParent="true">
+                <com.makeramen.roundedimageview.RoundedImageView n1:id="@id/ph_icon" n1:layout_width="@dimen/home_unit_item_size" n1:layout_height="@dimen/home_unit_item_size" n1:src="@drawable/unit_icon_placeholder" n1:scaleType="centerCrop" n1:layout_centerInParent="true" n1:layout_centerVertical="true" n3:riv_oval="true" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/ph_course_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/unit_outer_container_1" n1:layout_centerHorizontal="true">
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:id="@id/ph_current" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:id="@id/ph_course_ttl" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_toRightOf="@id/ph_current" n1:layout_below="@id/ph_title" />
+        </LinearLayout>
+        <View n1:background="@drawable/main_card_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/mc_container" n1:background="@color/transparent" n1:visibility="visible" n1:layout_width="320.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/ph_container">
+        <com.makeramen.roundedimageview.RoundedImageView n1:id="@id/mc_bg_iv" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/oldmap_bg_placeholder" n1:scaleType="centerCrop" n1:layout_centerInParent="true" n4:riv_corner_radius_bottom_left="@dimen/default_card_radius_large" n4:riv_corner_radius_bottom_right="@dimen/default_card_radius_large" n4:riv_corner_radius_top_left="@dimen/default_card_radius_large" n4:riv_corner_radius_top_right="@dimen/default_card_radius_large" n4:riv_oval="false" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/title_xx_large" n1:textColor="@color/white" n1:id="@id/mc_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="20.0dip" n1:text="@string/mc_course" n1:layout_alignParentLeft="true" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:id="@id/mc_level" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_below="@id/mc_title" />
+        <RelativeLayout n1:id="@id/unit_outer_container_2" n1:layout_width="fill_parent" n1:layout_height="@dimen/home_unit_outer_size" n1:layout_marginTop="2.0dip" n1:layout_below="@id/mc_title" n1:layout_centerHorizontal="true">
+            <ImageView n1:id="@id/shadow_iv_2" n1:layout_width="@dimen/home_unit_shadow_width" n1:layout_height="@dimen/home_unit_shadow_height" n1:src="@drawable/unit_shadow" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+            <RelativeLayout n1:id="@id/mc_icon_container" n1:background="@drawable/bg_circle_white" n1:layout_width="@dimen/home_unit_size" n1:layout_height="@dimen/home_unit_size" n1:layout_centerInParent="true">
+                <ImageView n1:id="@id/mc_icon" n1:layout_width="@dimen/home_unit_size" n1:layout_height="@dimen/home_unit_size" n1:layout_marginRight="10.0dip" n1:layout_centerInParent="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_below="@id/unit_outer_container_2" n1:layout_centerInParent="true">
+            <TextView n1:textAppearance="?android:textAppearanceMedium" n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:id="@id/mc_current" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:id="@id/mc_course_ttl" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_toRightOf="@id/mc_current" n1:layout_below="@id/mc_title" />
+        </LinearLayout>
+        <View n1:background="@drawable/main_card_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

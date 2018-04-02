@@ -76,19 +76,19 @@
 
 .field largeLv:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902b3
+        a = 0x7f0902b9
     .end annotation
 .end field
 
 .field largeTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902b4
+        a = 0x7f0902ba
     .end annotation
 .end field
 
 .field listenTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0902d9
+        a = 0x7f0902df
     .end annotation
 .end field
 
@@ -100,79 +100,79 @@
 
 .field mcReportContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09031d
+        a = 0x7f090324
     .end annotation
 .end field
 
 .field phLv:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903d3
+        a = 0x7f0903da
     .end annotation
 .end field
 
 .field phProgressTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903d4
+        a = 0x7f0903db
     .end annotation
 .end field
 
 .field phonicsCount:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903dd
+        a = 0x7f0903e4
     .end annotation
 .end field
 
 .field phonicsProgress:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903df
+        a = 0x7f0903e6
     .end annotation
 .end field
 
 .field phonicsProgressContainer:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e0
+        a = 0x7f0903e7
     .end annotation
 .end field
 
 .field phonicsProgressText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e1
+        a = 0x7f0903e8
     .end annotation
 .end field
 
 .field phonicsReportContainer:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e2
+        a = 0x7f0903e9
     .end annotation
 .end field
 
 .field phonicsReportTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e3
+        a = 0x7f0903ea
     .end annotation
 .end field
 
 .field phonicsStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e4
+        a = 0x7f0903eb
     .end annotation
 .end field
 
 .field phonicsTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903e5
+        a = 0x7f0903ec
     .end annotation
 .end field
 
 .field playTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0903ee
+        a = 0x7f0903f5
     .end annotation
 .end field
 
 .field readTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09042b
+        a = 0x7f090432
     .end annotation
 .end field
 
@@ -184,133 +184,133 @@
 
 .field reportCount:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09044c
+        a = 0x7f090453
     .end annotation
 .end field
 
 .field sentenceCount:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b3
+        a = 0x7f0904bd
     .end annotation
 .end field
 
 .field sentenceProgress:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b4
+        a = 0x7f0904be
     .end annotation
 .end field
 
 .field sentenceProgressContainer:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b5
+        a = 0x7f0904bf
     .end annotation
 .end field
 
 .field sentenceProgressText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b6
+        a = 0x7f0904c0
     .end annotation
 .end field
 
 .field sentenceProgressTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b7
+        a = 0x7f0904c1
     .end annotation
 .end field
 
 .field sentenceStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b8
+        a = 0x7f0904c2
     .end annotation
 .end field
 
 .field sentenceTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0904b9
+        a = 0x7f0904c3
     .end annotation
 .end field
 
 .field songCount:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090501
+        a = 0x7f09050b
     .end annotation
 .end field
 
 .field songCountTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090502
+        a = 0x7f09050c
     .end annotation
 .end field
 
 .field studyRecord:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09052f
+        a = 0x7f090539
     .end annotation
 .end field
 
 .field toolsTitleTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09058a
+        a = 0x7f090594
     .end annotation
 .end field
 
 .field topBarTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090595
+        a = 0x7f09059f
     .end annotation
 .end field
 
 .field totalDays:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f0905a8
+        a = 0x7f0905b2
     .end annotation
 .end field
 
 .field watchTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090608
+        a = 0x7f090612
     .end annotation
 .end field
 
 .field wordCount:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090619
+        a = 0x7f090623
     .end annotation
 .end field
 
 .field wordProgress:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061b
+        a = 0x7f090625
     .end annotation
 .end field
 
 .field wordProgressContainer:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061c
+        a = 0x7f090626
     .end annotation
 .end field
 
 .field wordProgressText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061d
+        a = 0x7f090627
     .end annotation
 .end field
 
 .field wordProgressTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061e
+        a = 0x7f090628
     .end annotation
 .end field
 
 .field wordStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f09061f
+        a = 0x7f090629
     .end annotation
 .end field
 
 .field wordTxt:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        a = 0x7f090620
+        a = 0x7f09062a
     .end annotation
 .end field
 
@@ -1093,7 +1093,7 @@
     if-nez v4, :cond_2
 
     .line 473
-    const v4, 0x7f090479
+    const v4, 0x7f090482
 
     sget-object v5, Lcom/jiliguala/niuwa/module/registercard/RegisterFragment;->FRAGMENT_TAG:Ljava/lang/String;
 
@@ -1176,7 +1176,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f09031d
+            0x7f090324
         }
     .end annotation
 
@@ -1210,7 +1210,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0903e2
+            0x7f0903e9
         }
     .end annotation
 
@@ -1245,7 +1245,7 @@
     .param p1, "view"    # Landroid/view/View;
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f09052f
+            0x7f090539
         }
     .end annotation
 
@@ -1260,9 +1260,9 @@
     invoke-virtual {p0, v0}, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 403
-    const v0, 0x7f01001d
+    const v0, 0x7f01001f
 
-    const v1, 0x7f010013
+    const v1, 0x7f010014
 
     invoke-virtual {p0, v0, v1}, Lcom/jiliguala/niuwa/module/mcphonics/report/MCPhonicsReportActivity;->overridePendingTransition(II)V
 
@@ -1312,13 +1312,13 @@
     .param p1, "view"    # Landroid/view/View;
     .annotation build Lbutterknife/OnClick;
         a = {
-            0x7f0902b3,
-            0x7f0903d3
+            0x7f0902b9,
+            0x7f0903da
         }
     .end annotation
 
     .prologue
-    const v6, 0x7f0902b3
+    const v6, 0x7f0902b9
 
     .line 413
     invoke-virtual {p1}, Landroid/view/View;->getId()I
@@ -1562,7 +1562,7 @@
 
     if-eqz v8, :cond_6
 
-    const v8, 0x7f0800a4
+    const v8, 0x7f0800a6
 
     :goto_1
     invoke-virtual {v9, v8}, Landroid/view/View;->setBackgroundResource(I)V
@@ -1576,7 +1576,7 @@
 
     if-eqz v8, :cond_7
 
-    const v8, 0x7f0801a9
+    const v8, 0x7f0801ae
 
     :goto_2
     invoke-virtual {v9, v8}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -2054,13 +2054,13 @@
 
     .line 284
     :cond_6
-    const v8, 0x7f08009f
+    const v8, 0x7f0800a1
 
     goto/16 :goto_1
 
     .line 285
     :cond_7
-    const v8, 0x7f0801a8
+    const v8, 0x7f0801ad
 
     goto/16 :goto_2
 

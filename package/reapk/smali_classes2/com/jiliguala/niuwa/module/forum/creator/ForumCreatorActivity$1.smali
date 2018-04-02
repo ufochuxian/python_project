@@ -180,9 +180,9 @@
     .line 93
     iget-object v4, p0, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity$1;->a:Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;
 
-    const v5, 0x7f01001d
+    const v5, 0x7f01001f
 
-    const v6, 0x7f010013
+    const v6, 0x7f010014
 
     invoke-virtual {v4, v5, v6}, Lcom/jiliguala/niuwa/module/forum/creator/ForumCreatorActivity;->overridePendingTransition(II)V
 

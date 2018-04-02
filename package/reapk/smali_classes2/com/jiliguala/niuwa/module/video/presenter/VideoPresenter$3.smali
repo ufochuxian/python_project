@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     .prologue
-    .line 239
+    .line 240
     iput-object p1, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$3;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-direct {p0}, Lrx/l;-><init>()V
@@ -48,10 +48,10 @@
     .param p1, "videoChannelTemplate"    # Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate;
 
     .prologue
-    .line 252
+    .line 253
     if-eqz p1, :cond_0
 
-    .line 253
+    .line 254
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$3;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -62,7 +62,7 @@
 
     invoke-static {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->access$002(Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 254
+    .line 255
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$3;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -71,7 +71,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 255
+    .line 256
     iget-object v0, p0, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$3;->a:Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;
 
     invoke-virtual {v0}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter;->getUi()Lcom/jiliguala/niuwa/common/base/e;
@@ -88,7 +88,7 @@
 
     invoke-interface {v0, v1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoView;->updateVideoChannelData(Ljava/util/ArrayList;)V
 
-    .line 258
+    .line 259
     :cond_0
     return-void
 .end method
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 243
+    .line 244
     return-void
 .end method
 
@@ -106,7 +106,7 @@
     .param p1, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 248
+    .line 249
     return-void
 .end method
 
@@ -114,7 +114,7 @@
     .locals 0
 
     .prologue
-    .line 239
+    .line 240
     check-cast p1, Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate;
 
     invoke-virtual {p0, p1}, Lcom/jiliguala/niuwa/module/video/presenter/VideoPresenter$3;->a(Lcom/jiliguala/niuwa/logic/network/json/VideoChannelTemplate;)V
