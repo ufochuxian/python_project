@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/img_mask_guagua" />
-    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/go_game" n1:background="@drawable/btn_round_green_25" n1:layout_width="192.0dip" n1:layout_height="48.0dip" n1:layout_marginTop="24.0dip" n1:layout_below="@id/image" n1:layout_centerHorizontal="true">
-        <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_cake" />
-        <TextView n1:textSize="21.0sp" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="去喂食" n1:layout_toRightOf="@id/icon" n1:layout_centerVertical="true" />
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_mask_guagua" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/go_game" android:background="@drawable/btn_round_green_25" android:layout_width="192.0dip" android:layout_height="48.0dip" android:layout_marginTop="24.0dip" android:layout_below="@id/image" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cake" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="去喂食" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
     </LinearLayout>
 </RelativeLayout>

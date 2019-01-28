@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="@drawable/bubble" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:id="@id/top_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:weightSum="1.0" n1:layout_alignStart="@id/icon_view" n1:layout_alignEnd="@id/text_wrapper">
-        <View n1:visibility="invisible" n1:layout_width="0.0dip" n1:layout_height="0.0dip" n1:layout_weight="0.25" />
-        <ImageView n1:id="@id/arrow_image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="7.0dip" n1:src="@drawable/bubble_arrow_up" n1:contentDescription="@null" />
+<RelativeLayout android:background="@drawable/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignStart="@id/icon_view" android:layout_alignEnd="@id/text_wrapper">
+        <View android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.25" />
+        <ImageView android:id="@id/arrow_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:src="@drawable/bubble_arrow_up" android:contentDescription="@null" />
     </LinearLayout>
-    <ImageView n1:id="@id/icon_view" n1:layout_width="19.0dip" n1:layout_height="19.0dip" n1:src="@drawable/ic_warning" n1:layout_below="@id/top_view" n1:contentDescription="@null" n1:layout_marginEnd="8.0dip" n1:layout_alignParentStart="true" />
-    <LinearLayout n1:orientation="vertical" n1:id="@id/text_wrapper" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/top_view" n1:layout_toEndOf="@id/icon_view">
-        <TextView n1:textSize="16.0sp" n1:textColor="@android:color/black" n1:id="@id/main_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="300.0dip" />
-        <TextView n1:textSize="13.0sp" n1:textColor="#ff444444" n1:id="@id/sub_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="300.0dip" />
+    <ImageView android:id="@id/icon_view" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/ic_warning" android:layout_below="@id/top_view" android:contentDescription="@null" android:layout_marginEnd="8.0dip" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/text_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top_view" android:layout_toEndOf="@id/icon_view">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff444444" android:id="@id/sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300.0dip" />
     </LinearLayout>
 </RelativeLayout>

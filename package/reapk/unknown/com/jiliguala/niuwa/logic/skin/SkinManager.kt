@@ -254,43 +254,37 @@ class SkinManager : DownloadReceiver.DownloadInterface, UnzipFileInterface {
     }
 
     private fun onSuccess(taskId: String?) {
-        if (mDownload == null || mDownload!!.isEmpty()) {
+        if ((mDownload?.size ?: 0) == 0) {
             return
         }
         var successCount = 0
-        for (i in mDownload!!.indices) {
-            val skin = mDownload!![i]
-            if (skin._id == taskId) {
-                skin.path = SKIN_RES_SAVE_PATH + File.separator + taskId + File.separator + mSuffix
-                val file = File(skin.path)
+        mDownload?.forEach {
+            if (it._id == taskId) {
+                it.path = SKIN_RES_SAVE_PATH + File.separator + taskId + File.separator + mSuffix
+                val file = File(it.path)
                 val list = file.list()
                 if (list != null) {
                     for (name in list) {
-                        if (name.contains("mc_bg_placeholder")) {
-                            skin.mcBg = name
-                        } else if (name.contains("phonics_bg_placeholder")) {
-                            skin.phBg = name
-                        } else if (name.contains("oldmap_bg_placeholder")) {
-                            skin.oldmapBg = name
-                        } else if (name.contains("entrance_listen")) {
-                            skin.listenIcon = name
-                        } else if (name.contains("entrance_watch")) {
-                            skin.watchIcon = name
-                        } else if (name.contains("entrance_reading")) {
-                            skin.readingIcon = name
-                        } else if (name.contains("entrance_flashcard")) {
-                            skin.flashIcon = name
-                        } else if (name.contains("img_sdoufu")) {
-                            skin.squareBg = name
+                        when {
+                            name.contains("mc_bg_placeholder") -> it.mcBg = name
+                            name.contains("phonics_bg_placeholder") -> it.phBg = name
+                            name.contains("oldmap_bg_placeholder") -> it.oldmapBg = name
+                            name.contains("xx_bg_placeholder") -> it.xxBg = name
+                            name.contains("entrance_listen") -> it.listenIcon = name
+                            name.contains("entrance_watch") -> it.watchIcon = name
+                            name.contains("entrance_reading") -> it.readingIcon = name
+                            name.contains("entrance_flashcard") -> it.flashIcon = name
+                            name.contains("entrance_daily") -> it.everyDayIcon = name
+                            name.contains("img_sdoufu") -> it.squareBg = name
                         }
                     }
                 }
             }
-            if (!TextUtils.isEmpty(skin.path)) {
+            if (!TextUtils.isEmpty(it.path)) {
                 successCount++
             }
         }
-        if (successCount == mDownload!!.size) {
+        if (successCount == mDownload?.size) {
             saveFile(GlobalCtxHolder.getContext(), SKIN_DATA_FILE_NAME, mGson.toJson(mDownload))
         }
     }

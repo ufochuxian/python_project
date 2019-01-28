@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/sobot_color_bottom_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sobot_custom_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:id="@id/sobot_btn_picture" android:text="@string/sobot_upload" android:drawableTop="@drawable/sobot_tack_picture_button_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:id="@id/sobot_btn_take_picture" android:text="@string/sobot_attach_take_pic" android:drawableTop="@drawable/sobot_camera_picture_button_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:id="@id/sobot_btn_satisfaction" android:text="@string/sobot_str_bottom_satisfaction" android:drawableTop="@drawable/sobot_picture_satisfaction_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:visibility="invisible" android:text="@string/sobot_str_bottom_satisfaction" android:drawableTop="@drawable/sobot_picture_satisfaction_selector" style="@style/sobot_chatting_panel_upload" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/sobot_robot_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:id="@id/sobot_robot_btn_satisfaction" android:text="@string/sobot_str_bottom_satisfaction" android:drawableTop="@drawable/sobot_picture_satisfaction_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:id="@id/sobot_robot_btn_leavemsg" android:text="@string/sobot_str_bottom_message" android:drawableTop="@drawable/sobot_leavemsg_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:visibility="invisible" android:text="@string/sobot_str_bottom_satisfaction" android:drawableTop="@drawable/sobot_picture_satisfaction_selector" style="@style/sobot_chatting_panel_upload" />
+        <TextView android:visibility="invisible" android:text="@string/sobot_str_bottom_satisfaction" android:drawableTop="@drawable/sobot_picture_satisfaction_selector" style="@style/sobot_chatting_panel_upload" />
+    </LinearLayout>
+</RelativeLayout>

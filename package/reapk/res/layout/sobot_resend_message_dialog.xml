@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/sobot_bg_title_custom_dialog2" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:gravity="center" android:id="@id/sobot_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sobot_resendmsg" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:background="@drawable/sobot_bg_title_custom_dialog1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/sobot_color_evaluate_text_btn" android:background="@drawable/sobot_dialog_button_yes_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/sobot_bg_bottom_custom_dialog1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/sobot_color" android:id="@id/sobot_positiveButton" android:background="@drawable/sobot_other_dialog_bottom_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sobot_cancel" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/sobot_color" android:id="@id/sobot_negativeButton" android:background="@drawable/sobot_other_dialog_bottom_button_selector1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sobot_button_send" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="15.0dip">
-        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_gray" n1:gravity="center" n1:id="@id/share_cancel" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="切换等级" />
-        <android.support.v7.widget.ListViewCompat n1:id="@id/listView" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:listSelector="@color/transparent" n1:divider="@color/divider_grey_line" n1:dividerHeight="@dimen/divider_line_height" n1:footerDividersEnabled="false" />
-    </LinearLayout>
-</LinearLayout>

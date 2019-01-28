@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_back_ground_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/close" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_close_grey" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认付款" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="#ffefefef" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/top_bar" />
+    <RelativeLayout android:id="@id/voucher_container" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_below="@id/top_bar" android:layout_centerVertical="true" android:showDividers="end">
+        <TextView android:textSize="16.0sp" android:id="@id/voucher_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/voucher_count" android:background="@drawable/btn_round_orange_4" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#fffc8e21" android:gravity="center_vertical" android:id="@id/voucher_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/top_container" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_below="@id/voucher_container">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/content_x_large_size" android:textColor="@color/color_default_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计：" />
+            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="@dimen/title_xx_large" android:textColor="@color/progress_video_color" android:id="@id/pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#fffc8e21" android:id="@id/voucher_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pay_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_container">
+        <FrameLayout android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="bottom" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="支付方式" android:layout_below="@id/top_container" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/weixin_container" android:background="@drawable/list_item_selector_white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:id="@id/weixin_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/payment_icon_weixin" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/wechat_pay_name" android:layout_toRightOf="@id/weixin_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/divider_grey_line" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/zhifubao_container" android:background="@drawable/list_item_selector_white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:id="@id/zhifubao_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/payment_icon_zhifubao" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/ali_pay_name" android:layout_toRightOf="@id/zhifubao_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm" android:background="@drawable/btn_round_orange_22" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="44.0dip" android:layout_margin="8.0dip" android:text="确认支付" android:layout_below="@id/top_container" android:layout_centerHorizontal="true" />
+    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar android:id="@id/loading_progress" android:padding="5.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" app:mlpb_arrow_height="0.0dip" app:mlpb_arrow_width="0.0dip" app:mlpb_enable_circle_background="false" app:mlpb_progress_colors="@array/gplus_colors" app:mlpb_progress_stoke_width="4.0dip" app:mlpb_progress_text_visibility="invisible" app:mlpb_show_arrow="false" />
+</RelativeLayout>

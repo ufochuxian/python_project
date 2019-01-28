@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <FrameLayout n1:id="@id/wv_parent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
-        <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/white" n1:id="@id/skip_course" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/skip_nav" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/wv_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" android:layout_alignParentTop="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/action_back" android:background="@drawable/nav_icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/content_large_size" android:textColor="@color/white" android:id="@id/skip_course" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_nav" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
     </RelativeLayout>
     <include layout="@layout/progress_layout" />
 </RelativeLayout>

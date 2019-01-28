@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="#fffbbb00" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/top_bar" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
-        <ImageView n1:id="@id/back_icon" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/icon_back_white" />
+<RelativeLayout android:background="#fffbbb00" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/back_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_back_white" />
     </RelativeLayout>
-    <RelativeLayout n1:background="@drawable/bg_celebration" n1:layout_width="450.0dip" n1:layout_height="300.0dip" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true">
-        <RelativeLayout n1:id="@id/lesson_icon_container" n1:layout_width="150.0dip" n1:layout_height="150.0dip" n1:layout_centerInParent="true">
-            <ImageView n1:id="@id/lesson_icon_holder" n1:background="@drawable/circle_white_150" n1:layout_width="150.0dip" n1:layout_height="150.0dip" />
-            <ImageView n1:id="@id/lesson_icon" n1:layout_width="140.0dip" n1:layout_height="140.0dip" n1:src="@drawable/unit_placeholder" n1:scaleType="centerCrop" n1:layout_centerInParent="true" />
+    <RelativeLayout android:background="@drawable/bg_celebration" android:layout_width="450.0dip" android:layout_height="300.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/lesson_icon_container" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/lesson_icon_holder" android:background="@drawable/circle_white_150" android:layout_width="150.0dip" android:layout_height="150.0dip" />
+            <ImageView android:id="@id/lesson_icon" android:layout_width="140.0dip" android:layout_height="140.0dip" android:src="@drawable/unit_placeholder" android:scaleType="centerCrop" android:layout_centerInParent="true" />
         </RelativeLayout>
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="#99000000" n1:id="@id/share_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_below="@id/lesson_icon_container" n1:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="#99000000" android:id="@id/share_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/lesson_icon_container" android:layout_centerHorizontal="true" />
     </RelativeLayout>
-    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="50.0dip" n1:layout_marginBottom="20.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true">
-        <RelativeLayout n1:id="@id/weixin_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
-            <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/share_to_wechat" n1:background="@drawable/btn_round_white_25" n1:paddingRight="15.0dip" n1:layout_width="@dimen/share_btn_width" n1:layout_height="50.0dip" n1:text="@string/wechat" n1:drawableLeft="@drawable/social_weixin_friends" n1:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/weixin_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/content_large_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:id="@id/share_to_wechat" android:background="@drawable/btn_round_white_25" android:paddingRight="15.0dip" android:layout_width="@dimen/share_btn_width" android:layout_height="50.0dip" android:text="@string/wechat" android:drawableLeft="@drawable/social_weixin_friends" android:layout_centerInParent="true" />
         </RelativeLayout>
-        <RelativeLayout n1:id="@id/pengyouquan_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0dip">
-            <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/share_to_pengyouquan" n1:background="@drawable/btn_round_white_25" n1:paddingRight="15.0dip" n1:layout_width="@dimen/share_btn_width" n1:layout_height="50.0dip" n1:text="@string/full_wechatmoments" n1:drawableLeft="@drawable/social_weixin_highlight" n1:drawablePadding="5.0dip" n1:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/pengyouquan_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip">
+            <TextView android:textSize="@dimen/content_large_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:id="@id/share_to_pengyouquan" android:background="@drawable/btn_round_white_25" android:paddingRight="15.0dip" android:layout_width="@dimen/share_btn_width" android:layout_height="50.0dip" android:text="@string/full_wechatmoments" android:drawableLeft="@drawable/social_weixin_highlight" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

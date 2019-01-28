@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:id="@id/viewpager_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.module.qualitycourse.view.BannerViewPager n1:id="@id/multi_looper_vp" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:layout_centerVertical="true" n2:matchChildWidth="@id/vg_cover" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-</RelativeLayout>

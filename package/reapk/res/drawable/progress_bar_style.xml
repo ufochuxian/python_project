@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list>
-    <item n1:id="@android:id/background" n1:drawable="@drawable/recording_btn_normal"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <item n2:id="@android:id/progress" n2:height="39.0dip" n2:left="-18.0dip" n2:top="-18.0dip" n2:right="-18.0dip"
-      xmlns:n2="http://schemas.android.com/apk/res/android">
-        <clip n2:drawable="@drawable/recording_btn_highlight" />
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/recording_btn_normal" />
+    <item android:id="@android:id/progress" android:height="39.0dip" android:left="-18.0dip" android:top="-18.0dip" android:right="-18.0dip">
+        <clip android:drawable="@drawable/recording_btn_highlight" />
     </item>
 </layer-list>

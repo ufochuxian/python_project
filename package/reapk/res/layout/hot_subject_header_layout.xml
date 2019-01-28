@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="60.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/hot_subject_bg" n1:background="#ffededed" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" />
-    <ImageView n1:id="@id/hot_subject_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/subjectDesc" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:lines="2" n1:layout_toRightOf="@id/hot_subject_icon" n1:layout_centerVertical="true" />
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hot_subject_bg" android:background="#ffededed" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/hot_subject_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/subjectDesc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:lines="2" android:layout_toRightOf="@id/hot_subject_icon" android:layout_centerVertical="true" />
 </RelativeLayout>

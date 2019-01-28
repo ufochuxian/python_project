@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/share_to_pengyouquan" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="朋友圈" n1:singleLine="true" n1:drawableTop="@drawable/logo_weixin_friends" n1:drawablePadding="5.0dip" n1:layout_weight="1.0" />
+<RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:id="@id/share_to_pengyouquan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="朋友圈" android:singleLine="true" android:drawableTop="@drawable/logo_weixin_friends" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
 </RelativeLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/relativeLayout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_centerHorizontal="true">
-        <ImageView n1:id="@id/title_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginRight="10.0dip" n1:scaleType="centerCrop" n1:layout_centerVertical="true" />
-        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/course_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/title_icon" n1:layout_centerVertical="true" />
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/title_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="@dimen/content_x_large_size" android:textColor="@color/color_default_dark_gray" android:id="@id/course_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/title_icon" android:layout_centerVertical="true" />
     </RelativeLayout>
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/course_desc" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_below="@id/relativeLayout" />
+    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:id="@id/course_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/relativeLayout" />
 </RelativeLayout>

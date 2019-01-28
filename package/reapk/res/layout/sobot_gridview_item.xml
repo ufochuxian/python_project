@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/sobot_color_evaluate_text_normal" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/sobot_every_case" android:background="@drawable/sobot_login_edit_nomal" android:paddingTop="@dimen/sobot_DIMEN_12PX" android:paddingBottom="@dimen/sobot_DIMEN_12PX" android:layout_width="125.0dip" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pop_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff777777" android:gravity="center" android:id="@id/tv_photo_hint" android:layout_width="fill_parent" android:layout_height="65.0dip" android:text="标题" />
+        <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="#ffe64340" android:id="@id/btn_pick_photo" android:background="@drawable/sobot_item_setting_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sobot_delete" />
+        <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:id="@id/btn_cancel" android:background="@drawable/sobot_item_setting_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sobot_btn_cancle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ffefefef" />
+            <stroke android:width="1.0dip" android:color="#ffbababa" />
+            <corners android:bottomRightRadius="@dimen/sobot_bbuton_rounded_corner_radius" />
+        </shape>
+    </item>
+</selector>

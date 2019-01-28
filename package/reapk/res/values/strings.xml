@@ -1,5836 +1,2611 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_bar_home_description">Navigate home</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_bar_up_description">Navigate up</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_menu_overflow_description">More options</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_action_mode_done">Done</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_activity_chooser_view_see_all">See all</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_activitychooserview_choose_application">Choose an app</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_capital_off">OFF</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_capital_on">ON</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_body_1_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_body_2_material">sans-serif-medium</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_button_material">sans-serif-medium</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_caption_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_display_1_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_display_2_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_display_3_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_display_4_material">sans-serif-light</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_headline_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_menu_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_subhead_material">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_font_family_title_material">sans-serif-medium</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_search_hint">Search…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_searchview_description_clear">Clear query</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_searchview_description_query">Search query</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_searchview_description_search">Search</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_searchview_description_submit">Submit query</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_searchview_description_voice">Voice search</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_shareactionprovider_share_with">Share with</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="abc_toolbar_collapse_description">Collapse</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_date_picker_month">Month</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_date_picker_week">Week</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_date_picker_year">Year</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_datetime_picker_date">Date</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_datetime_picker_time">Time</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_time_picker_ampm">AM/PM</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_time_picker_hour">Hour</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_time_picker_milli">Millisecond</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_time_picker_minute">Minute</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="accessibility_time_picker_second">Second</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_create_forum">创建帖子</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_forum_detail">帖子详情</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_message_center">消息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_my_forum">我的帖子</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_my_forum_fav">收藏</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_my_forum_post">发布</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_my_forum_reply">回复</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_bar_title_my_forum_sel">精华</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_earn_more_gua_coin">赚呱币</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_post">发布</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_settings">Settings</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_share">分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="action_share_now">发送</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="actionbar_share">Share</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="actionbar_textselection_title">Text selection</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="actionbar_web_search">Web search</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="add">添加</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="add_baby">添加宝贝</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="add_baby_need_login_tips">登录才能添加宝贝哦!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="add_user_need_login_tips">登录才能添加个人信息哦!</string>
   
-  
-  
+    
+  <string name="adhoc_camera_no_permission_tip">未打开相机功能,此功能无法使用.</string>
   
     
+  <string name="adhoc_camera_permission_tip_message">《扫描加入试验》功能需要《相机》权限进行二维码扫描.</string>
   
+    
+  <string name="adhoc_client_id_empty_tips">Adhoc sdk clientId为空.</string>
   
+    
+  <string name="adhoc_commmon_failed">更新数据失败,请重新扫描加入试验</string>
   
+    
+  <string name="adhoc_common_success">更新数据成功</string>
+  
+    
+  <string name="adhoc_dialog_loading">加载中…</string>
+  
+    
+  <string name="adhoc_enter_experiment_tip">当前设备强制加入了试验:%s</string>
+  
+    
+  <string name="adhoc_exit_experiment_failed">退出试验出错了.原因:%s</string>
+  
+    
+  <string name="adhoc_exit_experiment_success">退出试验成功!</string>
+  
+    
+  <string name="adhoc_failed_unknown">未知原因</string>
+  
+    
+  <string name="adhoc_get_flag_tip_message">更新试验数据中…</string>
+  
+    
+  <string name="adhoc_join_experiment_failed">加入试验出错了?%s</string>
+  
+    
+  <string name="adhoc_joined_experiment">已经加入试验</string>
+  
+    
+  <string name="adhoc_no_experiments">当前设备没有强制加入任何试验</string>
+  
+    
+  <string name="adhoc_scan_result_empty">接收到的数据为空。</string>
+  
+    
+  <string name="adhoc_tester_editor_in">进入可视化编辑</string>
+  
+    
+  <string name="adhoc_tester_editor_out">退出可视化编辑</string>
+  
+    
+  <string name="adhoc_tester_exit_experiment">退出试验（只能退出扫码进入的试验）</string>
+  
+    
+  <string name="adhoc_tester_scanner">扫码加入试验</string>
+  
+    
+  <string name="adhoc_tester_scanner_default">扫描加入默认版本</string>
+  
+    
+  <string name="adhoc_tester_tips_1">&quot;如果需要预览试验版本，请点击扫描加入试验按钮。
+扫描版本二维码,二维码位于试验中集成调试页面，请选择对应版本即可。
+扫码后，本设备将保持停留在该试验版本。
+如果要退出该试验版本，请点击退出试验按钮。&quot;</string>
+  
+    
+  <string name="adhoc_tester_tips_2">&quot;不能加入试验？
+检查APPKEY是否正确
+检查logcat看是否有错误提示&quot;</string>
+  
+    
+  <string name="adhoc_warning">警告</string>
+  
+    
+  <string name="ali_pay_name">支付宝支付</string>
+  
+    
+  <string name="all_courses">全部主修课</string>
+  
+    
   <string name="all_loop_tips">模式切换</string>
   
-  
-  
+    
+  <string name="all_major_courses">全部主修课</string>
   
     
-  
-  
-  
   <string name="already_have_account">已有账号?</string>
   
-  
-  
+    
+  <string name="app_name">叽里呱啦-儿童英语</string>
   
     
-  
-  
-  
-  <string name="app_name">叽里呱啦-专注儿童英语启蒙</string>
-  
-  
-  
-  
-    
-  
-  
-  
   <string name="attention_wx">关注微信领取</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_channel_empty">暂无内容</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_channel_text">电台</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_fav_channel_name">红心电台</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_limit_time_control">睡眠定时 (剩余%1$s分钟)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_limit_time_control_disabled">睡眠定时</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_limit_time_control_title">睡眠定时设置</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_offline_channel_name">已下载</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_pop_sharetext">快告诉大家，让更多宝贝听到这首歌！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_record_play">点击播放</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_record_playing">播放中</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_recording">录音中</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_rnt_channel_name">最近记录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_search_hint">歌名、歌手、专辑、条形码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="audio_video_network_state_change_notify_tips">&quot;当前网络无Wi-Fi，继续使用可能会
 产生相关流量费用&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="autofill_keyboard_accessory_content_description">Suggestions available</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="autofill_popup_content_description">Showing autofill popup</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="baby_birthday_illegal">设置日期非法, 请重新设置</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="baby_info">宝贝信息</string>
   
-  
-  
+    
+  <string name="begin_refresh">即将刷新</string>
   
     
+  <string name="bg_image">background image</string>
   
-  
-  
+    
   <string name="bind_ok">完成绑定</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="bind_wechat_hint">请绑定微信才能保存珍贵的学习记录哦～</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_block_list_title">Blocks in %s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_class_has_blocked">blocked %s ms</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_delete">Delete</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_delete_all">Delete all</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_delete_all_dialog_content">Are you sure to delete all records?</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_display_activity_label">Blocks</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_no">No</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_notification_message">Click for more details</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_share_leak">Share info</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_share_stack_dump">Share stack dump</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_share_with">Share with…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="block_canary_yes">Yes</string>
   
-  
-  
+    
+  <string name="btn_close_flashlight_text">关闭手电筒</string>
   
     
+  <string name="btn_open_flashlight_text">打开手电筒</string>
   
+    
+  <string name="btn_scan_local_pic">从相册选取二维码</string>
   
-  
+    
   <string name="button_retry">重试</string>
   
-  
-  
+    
+  <string name="buy_now">立即抢购</string>
   
     
-  
-  
-  
   <string name="camera_open_failed">打开相机失败，请前往设置-&gt;应用程序-&gt;权限设置，打开相机权限</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="can_not_reply_lock_post">不能回复锁定的帖子</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="cancel">取消</string>
   
-  
-  
+    
+  <string name="cancel_refresh">取消刷新</string>
   
     
-  
-  
-  
   <string name="capture_qr_bar_code">扫描条形码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="capture_qr_bar_code_tips">将绘本条形码放入框内</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="capture_qr_code">扫描二维码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="capture_qr_code_tips">如何下载叽里呱啦TV版</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="change_environment">切换环境到_%s_</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="change_picture">更换照片</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="change_pwd">密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="check_record_try">请检测设备录音相关设置后重试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="children_lock_tips">童锁</string>
   
-  
-  
+    
+  <string name="choose_more">选择更多金额</string>
   
     
+  <string name="choose_recharge_bundle">请选择充值金额：</string>
   
-  
-  
+    
   <string name="class_age_prefix">年龄：</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="class_member_prefix">人数：</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="class_owner_prefix">班长：</string>
   
-  
-  
+    
+  <string name="click_course">点击课程体验一下吧</string>
   
     
+  <string name="click_to_listener">点击试听自己的绘本作品</string>
   
-  
-  
+    
   <string name="click_to_record">点击录音</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="clocking_record_mobile_hint">绑定手机号，领取珍贵的礼物</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="collect_article_txt">快去告诉大家，让更多父母与你一起成长！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="collect_success">收藏成功</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="collect_video_notify_txt">快告诉大家，让更多宝贝看到这部短片！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_black">Black</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_blue">Blue</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_cancel">Cancel</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_cyan">Cyan</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_green">Green</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_magenta">Magenta</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_more">More</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_red">Red</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_set">Set</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_white">White</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_button_yellow">Yellow</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_dialog_title">Select color</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_hue">Hue</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_saturation">Saturation</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="color_picker_value">Value</string>
   
-  
-  
+    
+  <string name="com.crashlytics.android.build_id">ab5b0c82-11aa-4166-b7b6-cdfd169b083d</string>
   
     
-  
-  
-  
-  <string name="com.crashlytics.android.build_id">10a3c578-a2a2-410e-bfde-f61e4dccddca</string>
-  
-  
-  
-  
-    
-  
-  
-  
   <string name="complete">完成</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="complete_course_txt">恭喜你完成了，赶紧分享给朋友吧</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="confirm">确认</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="confirm_modify">确认修改</string>
   
-  
-  
+    
+  <string name="confirm_pay">确认支付</string>
   
     
-  
-  
-  
   <string name="confirm_tips">确定发布</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="connect_to_tv">请选择连接到电视的方式</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="copied_to_clipboard">已复制到粘贴板</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="copy_to_clipboard_failure_message">Failed to copy to the clipboard</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="correct_answer">恭喜宝贝!</string>
   
-  
-  
+    
+  <string name="count_day">天</string>
   
     
+  <string name="count_down">距离活动结束还剩</string>
   
+    
+  <string name="count_has_courses">共 %1$s 节课，已拥有 %2$s 节</string>
   
+    
+  <string name="count_hour">时</string>
   
+    
+  <string name="count_minute">分</string>
+  
+    
+  <string name="count_second">秒</string>
+  
+    
   <string name="course_count">／%d课</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_count_low">／%d课</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_current">第%d课</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_discuss_tips">讨论</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_download_failed">课程资源下载失败</string>
   
-  
-  
+    
+  <string name="course_enter">进入课程</string>
   
     
-  
-  
-  
   <string name="course_exit_content">还没有完成哦！确定要离开吗？</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_exit_title">提示</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="course_login_info">登录才能和宝贝使用课程哦！</string>
   
-  
-  
+    
+  <string name="course_report">课程报告</string>
   
     
-  
-  
-  
   <string name="course_report_login_info">登录添加宝贝才能查看课程报告哦！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="create_account">完成注册</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="create_forum_content_empty">帖子内容不能为空</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="create_forum_title_empty">帖子标题不能为空</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="create_web_tips">手机发帖太麻烦？马上在电脑上访问jiliguala.com/fa</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="crosswalk_install_title">Crosswalk Project Install</string>
   
-  
-  
+    
+  <string name="cur_level">当前</string>
   
     
-  
-  
-  
   <string name="date_picker_decrement_day_button">Decrement day</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_decrement_month_button">Decrement month</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_decrement_year_button">Decrement year</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_dialog_clear">Clear</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_dialog_other_button_label">Other</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_dialog_set">Set</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_dialog_title">Set date</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_increment_day_button">Increment day</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_increment_month_button">Increment month</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_picker_increment_year_button">Increment year</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_time_done">Done</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="date_time_picker_dialog_title">Set date and time</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="day_of_week_label_typeface">sans-serif</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="day_picker_description">Month grid of days</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="decompression_progress_message">Decompressing the Crosswalk Project Service...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="default_user_nick">呱友</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="define_roundedimageview"/>
   
-  
-  
-  
     
-  
-  
-  
   <string name="delete_audio_record_confirm">是否删除当前录音?</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="delete_picture">删除照片</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_daily">发现</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_daily_forum_best_title">社区热帖</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_daily_store_title">呱店精选</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_estore">呱店</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_forum">社区</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="discovery_forum_search_hint">帖子标题</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="do_good">棒棒哒</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="done_label">确认</string>
   
-  
-  
+    
+  <string name="done_users">%1$d人已完成</string>
   
     
-  
-  
-  
   <string name="download_already_exists_toast">Downloading file already exists, abort.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_course_notify">课件加载中，请稍等...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_failed_message">Download failed.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_failed_toast">Failed to download file.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_finished_toast">Finished to download file.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_network_state_change_notify_tips">&quot;当前网络无Wi-Fi，继续下载可能会
 被运营商收取流量费用&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_no_permission_toast">No permission to write, abort.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_progress_message">Downloading the Crosswalk Project Service from remote host...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_start_toast">Downloading file:</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_success_tips">下载成功</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="download_tips">下载</string>
   
-  
-  
+    
+  <string name="dsv_ex_msg_adapter_wrong_recycler">InfiniteScrollAdapter is supposed to work only with DiscreteScrollView</string>
   
     
+  <string name="dsv_ex_msg_dont_set_lm">&quot;You should not set LayoutManager on DiscreteScrollView.class instance. Library uses a special one. Just don't call the method.&quot;</string>
   
-  
-  
+    
   <string name="edit">修改</string>
   
-  
-  
+    
+  <string name="empty_recharge_record">暂无充值记录</string>
   
     
-  
-  
-  
   <string name="empty_tips">&quot; &quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="empty_tips_future">静等花开</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="empty_tips_now">子不教，呱之过</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="empty_tips_past">休息，休息一会</string>
   
-  
-  
+    
+  <string name="enlighten_english_course">发现适合宝贝的英语启蒙早教课</string>
   
     
-  
-  
-  
   <string name="error_loading_story_message">绘本加载失败</string>
   
-  
-  
+    
+  <string name="faq">叽里呱啦|常见问题</string>
   
     
-  
-  
-  
-  <string name="faq">帮助与反馈</string>
-  
-  
-  
-  
-    
-  
-  
-  
   <string name="fav_forum_need_login">登录才能收藏帖子哦!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="fav_login_info">需要登录添加宝贝才能红心收藏哦！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="fav_one_right_now"/>
   
-  
-  
-  
     
-  
-  
-  
   <string name="flash_card_all_title">全部单词</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="flash_card_category">分类</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="flashcard_channel_text">列表</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="folder_all">所有照片</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="follow_order_txt">请按照下方提示操作</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="footer_hint_normal">查看更多</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="footer_hint_ready">松开载入更多</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forget_password">忘记密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forgot_password">忘记密码?</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="form_baby_birthday_illegal">宝贝生日不正确</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="form_baby_name_illegal">宝贝昵称(最长20)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="form_email_illegal">邮箱(格式不合法)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="form_nick_name_illegal">昵称(最长20)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="form_password_illegal">6-20位</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_copy_text">复制</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_creator_content_hint">内容</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_creator_title_hint">标题</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_delete">删除</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_post_delete_tips">你是否确定删除此帖</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_reply_delete_failed">删除失败</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_reply_delete_tips">你是否确定删除此回复</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_search_hint">帖子标题</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_sort_all_text">全部</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_sort_new_text">最新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="forum_sort_sel_text">精华</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="full_wechatmoments">微信朋友圈</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="fullfill_phone_skip">略过</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="git_txt">打卡礼物</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="google_play_store">Google Play Store</string>
   
-  
-  
+    
+  <string name="gravity_center">center</string>
   
     
+  <string name="gravity_left">left</string>
   
+    
+  <string name="gravity_right">right</string>
   
-  
+    
   <string name="gua_coin">呱币</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="gua_coin_hint">%1$s 呱币</string>
   
-  
-  
+    
+  <string name="gua_course">呱呱美语课</string>
   
     
-  
-  
-  
-  <string name="gua_coin_need_login">登录才能查看呱币哦!</string>
-  
-  
-  
+  <string name="gua_dou">呱豆</string>
   
     
+  <string name="gua_dou_balance">%1$.2f</string>
   
+    
+  <string name="gua_dou_need_login">登录才能查看呱豆哦!</string>
   
+    
+  <string name="gua_dou_price">%1$.2f元</string>
   
+    
   <string name="guaid">呱号:%1$s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="guest_logout_hint">&quot;您还没有注册哦,此时登出会
 丢失学习记录和账号信息,您
 确定这样做吗?&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="h5_share_btn_text">立即分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="h5_share_content_demo">恭喜您和您亲爱的宝贝XXXXXX开始了英语启蒙之路！快来和代价一起分享这历史性的一刻！恭喜您和您亲爱的宝贝XXXXXX开始了英语启蒙之路！快来和代价一起分享这历史性的一刻！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="have_no_fav_post_yet">还没收藏帖子哦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="have_no_post_yet">还没发布帖子哦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="have_no_reply_yet">还没回复帖子哦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="have_no_sel_yet">还没有精华帖哦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="header_hint_normal">下拉刷新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="hello_world">Hello world!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="home_page_guide_tips">和呱呱一起启蒙英语吧</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="http_auth_log_in">Log In</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="http_auth_password">Password</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="http_auth_title">Authentication Required</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="http_auth_user_name">Username</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="i_know">我知道啦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="incorrect_answer">宝贝选错啦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="init_failed">初始化失败</string>
   
-  
-  
+    
+  <string name="interact_lesson">互动课程</string>
   
     
+  <string name="invalid_sku">商品已过期，不可购买</string>
   
-  
-  
+    
   <string name="invite_friends_earn_coin">邀请好友有礼</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="item_is_selected">%1$s selected</string>
   
-  
-  
+    
+  <string name="join_group">点此加入班群 获取更多英语启蒙秘诀！</string>
   
     
-  
-  
-  
   <string name="js_alert_title">Javascript Alert</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="js_confirm_title">Javascript Confirm</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="js_prompt_title">Javascript Prompt</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="kids_parents_report_1">种子路线0-1岁报告</string>
   
-  
-  
+    
+  <string name="kids_parents_report_2">萌芽路线1-3岁报告</string>
   
     
-  
-  
-  
-  <string name="kids_parents_report_2">萌芽路线1-2岁报告</string>
-  
-  
-  
+  <string name="lesson_introduce">课程简介</string>
   
     
+  <string name="lesson_list">课程列表</string>
   
-  
-  
+    
   <string name="library_roundedimageview_author">Vince Mi</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_authorWebsite">https://github.com/vinc3m1</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_isOpenSource">true</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_libraryDescription">A fast ImageView (and Drawable) that supports rounded corners (and ovals or circles) based on the original example from Romain Guy.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_libraryName">RoundedImageView</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_libraryVersion">1.3.0</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_libraryWebsite">https://github.com/vinc3m1/RoundedImageView</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_licenseId">apache_2_0</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="library_roundedimageview_repositoryLink">https://github.com/vinc3m1/RoundedImageView.git</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="listen_time">听了%d分钟</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="load_end">没有更多数据</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="load_fail">加载失败</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="load_failed">加载失败，请点我重试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="load_succeed">加载成功</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="loading">正在加载...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="loading_story">绘本加载中...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="lock_click_toast">学完前面的课程才可以学习哦～</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="locking_tips">长按解锁</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="login_id">手机号/邮箱</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="login_tips">请选择以下登录方式</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="logout">退出登录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="logout2">登出</string>
   
-  
-  
+    
+  <string name="loose_to_refresh">松开刷新</string>
   
     
-  
-  
-  
   <string name="low_memory_error">Unable to complete previous operation due to low memory</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="lv_b1mc">0-1岁</string>
   
-  
-  
+    
+  <string name="lv_b2mc">1-3岁</string>
   
     
-  
-  
-  
-  <string name="lv_b2mc">1-2岁</string>
-  
-  
-  
+  <string name="major_courses">主修课</string>
   
     
-  
-  
-  
   <string name="mc_b1_title">种子路线</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mc_b2_title">萌芽路线</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mc_course">主线课程</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mc_lv">Level %s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mc_report_title">主线课程 Lv%s报告</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="media_player_error_button">OK</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="media_player_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="media_player_error_text_unknown">Sorry, this video cannot be played.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="media_player_error_title">Cannot play video</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="media_player_loading_video">Loading video</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_empty">成为会员,课程畅快学</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_expired">已过期</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_expired_vip">会员已过期</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_open">立即开通</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_renewal">立即续费</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="membership_valid">有效期：</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mobile_fast_login">手机快捷登录</string>
   
-  
-  
+    
+  <string name="mobile_fast_register">手机号快速登录</string>
   
     
-  
-  
-  
   <string name="mobile_phone">请输入手机号</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="mobile_register">手机号注册</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="modify_baby_info">修改信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="modify_location">修改城市</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="modify_mobile_hint">填写新的手机号，保存珍贵的学习记录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="modify_pwd">修改密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="modify_self_desc">修改个人签名</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="month_picker_dialog_title">Set month</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="more">查看全部</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="msg_amount_limit">已经达到最高选择数量</string>
   
-  
-  
+    
+  <string name="msg_default_status">请扫描测试版本二维码加入试验</string>
   
     
-  
-  
-  
   <string name="msg_no_camera">没有系统相机</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="my_form_need_login">登录才能看你的帖子哦!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="name_your_baby">取英文名</string>
   
-  
-  
+    
+  <string name="need_to_upgrade_version">Oops! 需要升级App才能使用此功能</string>
   
     
-  
-  
-  
   <string name="network_change_to_offline">检测到您的设备无网络，是否要切换到离线电台继续播放？</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="network_error_tips">网络不给力，请稍后再试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="new_year_gift">新年福袋</string>
   
-  
-  
+    
+  <string name="no_available_course">还没有学到这个级别哦</string>
   
     
-  
-  
-  
   <string name="no_available_offline_resource">&quot;没有离线歌曲
 请点击红心缓存歌曲&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="no_available_offline_resource_tips2">&quot;离线资源失效
 请检查离线列表&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="no_available_resource">播放列表为空，无法播放</string>
   
-  
-  
+    
+  <string name="no_order_go">暂无订单信息</string>
   
     
-  
-  
-  
-  <string name="no_order_go">您还没有购买绘本课程，快去看看吧！</string>
-  
-  
-  
-  
-    
-  
-  
-  
   <string name="no_wifi_connection">网络未连接，请稍后再试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="opening_file_error">Failed to open selected file</string>
   
-  
-  
+    
+  <string name="order_number">订单号: %1$s</string>
   
     
+  <string name="paid">充值成功</string>
   
-  
-  
+    
   <string name="parent_check">家长身份验证</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="password">账号密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="password_generation_popup_content_description">Showing password generation popup</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="password_reset_ok">您已成功更换密码！:)</string>
   
-  
-  
+    
+  <string name="pay_by_alipay">支付方式: 支付宝支付</string>
   
     
+  <string name="pay_by_appstore">支付方式: App Store</string>
   
+    
+  <string name="pay_by_wechat">支付方式: 微信支付</string>
   
+    
+  <string name="pay_fail_notice">支付失败,请到【我的】-&gt;【联系我们】反馈问题</string>
   
+    
+  <string name="paying">付款验证中</string>
+  
+    
   <string name="ph_lv">Level %s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_bind">手机注册</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_bind_ok">您已成功绑定手机！:)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_change">手机号</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_change_ok">您已成功更换手机号！:)</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_complete">完成补充</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_completion">补充手机信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_completion_hint">请输入新手机号码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_completion_subtitle">补充手机号后才能使用呱币哦!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_password_forgot_hint">手机号/邮箱</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_subtitle">让宝贝的学习记录不会丢失~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_subtitle_register_for_profile_edit">绑定手机号，保存个人信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_subtitle_register_for_reply_post">需要先注册手机才能回帖哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_subtitle_register_for_submit_post">绑定手机号，保存帖子信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_info_subtitle_register_for_upvote">需要先注册手机才能点赞哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_number_change">更换手机号码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_number_error_hint">请输入正确的手机号码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phone_number_or_email_error_hint">请输入正确的手机号码或者邮箱</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phonics">自然拼读</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="phonics_report_title">自然拼读 Lv%s报告</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pic_choose_faile_tips">无效的图片，请重新选择</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_cancel">取消</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_day">日</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_hours">时</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_minutes">分</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_month">月</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_seconds">秒</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_submit">确定</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pickerview_year">年</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="play_times">玩了%d次</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="post_pop_sharetext">收藏成功!快去告诉大家，让更多父母与你一起成长！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="post_right_now"/>
   
-  
-  
-  
     
-  
-  
-  
   <string name="preview">预览</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_for_create_post">补充个人信息才可以发帖哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_for_gua_coin">补充个人信息才可以赚取呱币哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_for_reply_post">补充个人信息才可以回帖哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_for_upvote">补充个人信息才可以点赞哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_nickname">用户昵称</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profile_completion_title">补充个人信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profiler_error_toast">Failed to start profiler</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profiler_no_storage_toast">&quot;Can't start profiler because external storage is not ready&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profiler_started_toast">Profiler started</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="profiler_stopped_toast">Profiler finished. Results are in %1$s.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="progress_text">%1$d/%2$d</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="psd_creation_hint">请设置密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh">下拉刷新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_from_bottom_pull_label">@string/footer_hint_normal</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_from_bottom_release_label">@string/footer_hint_ready</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_refreshing_label">Loading…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pull_to_refresh_release_label">Release to refresh…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="pullup_to_load">上拉加载更多</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="purchase_member_empty">成为会员，课程畅快学</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="purchase_member_expired">续费会员，课程畅快学</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="purchase_member_valid">课程畅快学</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="purchase_one_v_one_course_phone_sub_title">绑定手机号，方便助教与您联系</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="purchase_register_phone_sub_title">购买需要补充手机，才能保存珍贵的学习记录哦~</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rate_dialog_message_for_newly_installed">&quot;工程狮爸比日以继夜的辛苦
 只跪求10秒给5星好评!&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rate_dialog_message_for_update_installed">版本更新啦！工程师爸比日以继夜地改版本，只跪求10秒给个好评!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rate_dialog_no">残忍拒绝</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rate_dialog_ok">鼓励一下！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rate_dialog_tucao">我要吐槽</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="rc_network_exception">网络异常请稍后再试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="re_auth_failure">Oops!出错了,请重新登录吧</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="read_chinese_translate_btn_tips">中</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="read_times">读了%d本</string>
   
-  
-  
+    
+  <string name="recharge_gua_dou">充值呱豆</string>
   
     
+  <string name="recharge_remark_1">1、叽里呱啦呱豆可用于购买App内课程，购课时1呱豆可抵用1元钱（不支持购买呱呱美语课与呱店实体商品）；</string>
   
+    
+  <string name="recharge_remark_2">2、充值成功后呱豆永久可用，但无法退款、提现或转赠他人；</string>
   
+    
+  <string name="recharge_remark_3">3、若遇到充值问题，点击查看充值常见问题；若无法解决，可点击联系客服。</string>
   
+    
   <string name="recomment">去评价</string>
   
-  
-  
+    
+  <string name="record_amount">%1$d呱豆</string>
   
     
-  
-  
-  
   <string name="record_failed">没有打开录音权限，请按照以下路径来开启录音权限：设置—&gt;应用管理—&gt;叽里呱啦—&gt;权限管理—&gt;录音—&gt;允许</string>
   
-  
-  
+    
+  <string name="record_price">(%1$.2f元)</string>
   
     
+  <string name="record_recharge">充值记录</string>
   
+    
+  <string name="record_short_price">(%1$d元)</string>
   
-  
+    
   <string name="record_too_short">录音时间太短</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="record_while_no_network">检测网络连接异常，无法返回评分结果</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="redeem_register_phone_sub_title">兑换需要补充手机，才能保存珍贵的学习记录哦~</string>
   
-  
-  
+    
+  <string name="refresh_complete">刷新完成</string>
   
     
-  
-  
-  
   <string name="refresh_fail">刷新失败</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="refresh_succeed">刷新成功</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="refreshing">正在刷新...</string>
   
-  
-  
+    
+  <string name="refunded">已退款</string>
   
     
+  <string name="refunding">正在退款</string>
   
-  
-  
+    
   <string name="register">注册</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="register_complete">完成注册</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="release_to_load">释放立即加载</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="release_to_refresh">释放立即刷新</string>
   
-  
-  
+    
+  <string name="remark_gua_dou">购课时1呱豆可抵扣1元</string>
   
     
-  
-  
-  
   <string name="render_switch_to_next">正在为您切换下一首，请稍候...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="reply_content">回复内容</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="reply_need_login">登录才能回复哦!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="reply_root">回复楼主</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="reply_txt">回复</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="reset_password">密码重置</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="review_done_txt">恭喜你完成了快分享给朋友吧</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="road_map">启蒙路线</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="safe_mode_button_tips">长按按钮3秒解锁</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="safe_mode_tips">&quot;为了验证您的家长身份，
 请按照下方提示操作&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="sans_serif">sans-serif</string>
   
-  
-  
+    
+  <string name="scan_fail">扫描失败!</string>
   
     
-  
-  
-  
   <string name="scan_isbn_tips">扫描ISBN码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="search_menu_title">Search</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="secondary_title_place_holder">V%s新特性</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="see_reply_right_now"/>
   
-  
-  
-  
     
-  
-  
-  
   <string name="select_day">Select month and day</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="select_from_album">从相册选择</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="select_store_message">Please select STORE_NAME to download the Crosswalk Project Service.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="select_tag_tips">请选择合适的标签（可不选，多选）</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="select_year">Select year</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="send_validate_code">获取验证码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="sentence_pattern">句型</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="server_start_succeed">服务器启动成功，你可以访问一下地址：</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="server_started">服务器已经在运行</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="set_as_current_baby">设为当前宝宝</string>
   
-  
-  
+    
+  <string name="setting_bind_phone_hint">学习记录与已购课程存入手机账户，安全放心</string>
   
     
-  
-  
-  
   <string name="share_course">分享课程</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_course_report">分享课程报告</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_dialog_title">学完咯！马上分享给好友！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_error_for_qq_not_installed">分享失败，请先安装QQ客户端</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_error_for_wechat_not_install">分享失败，请先安装微信客户端</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_error_for_weibo_not_install">分享失败，请先安装新浪客户端</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_now">立即分享</string>
   
-  
-  
+    
+  <string name="share_to_gain_food">分享可以获得食物奖励哦</string>
   
     
-  
-  
-  
   <string name="share_unit_unlock_hint">分享即可解锁单元全部课程</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="share_unit_unlock_tips">分享成功即可解锁单元全部课程哦～</string>
   
-  
-  
+    
+  <string name="show_off">炫耀一下</string>
   
     
-  
-  
-  
   <string name="sign_in">登录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="signup_mobile_hint">绑定手机号，保存珍贵的学习记录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="sinaweibo">新浪微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="single_loop_tips">模式切换</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip">略过</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip_course_cancel">我要尝试</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip_nav">跳过</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip_sub_course">跳过课程</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip_sub_course_info">您的设备进行该部分内容可能体验不顺畅</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="skip_time">跳过 %ds</string>
   
-  
-  
+    
+  <string name="sobot__is_null">不能为空</string>
   
     
+  <string name="sobot_after_consultation_to_evaluate_custome_service">咨询后才能评价服务质量</string>
   
+    
+  <string name="sobot_already_save_to_picture">已保存到系统相册</string>
   
+    
+  <string name="sobot_already_transfer_to_customer_service">您已经转人工</string>
   
+    
+  <string name="sobot_app_name">智齿sdk</string>
+  
+    
+  <string name="sobot_appkey">13f7545fa0834debbe3f488daf5c5b0a</string>
+  
+    
+  <string name="sobot_appkey_is_null">您的AppKey为空</string>
+  
+    
+  <string name="sobot_attach_take_pic">拍照</string>
+  
+    
+  <string name="sobot_back">返回</string>
+  
+    
+  <string name="sobot_btn_cancle">取消</string>
+  
+    
+  <string name="sobot_btn_submit">确定</string>
+  
+    
+  <string name="sobot_btn_submit_text">提交评价</string>
+  
+    
+  <string name="sobot_button_end_now">立即结束</string>
+  
+    
+  <string name="sobot_button_send">发送</string>
+  
+    
+  <string name="sobot_cancel">取消</string>
+  
+    
+  <string name="sobot_choice_form_picture">从手机相册选择</string>
+  
+    
+  <string name="sobot_choice_test">选择咨询内容</string>
+  
+    
+  <string name="sobot_clear_history_message">清空聊天记录</string>
+  
+    
+  <string name="sobot_close_session">结束本次对话？</string>
+  
+    
+  <string name="sobot_color_custom_name">\#888888</string>
+  
+    
+  <string name="sobot_colse">关闭</string>
+  
+    
+  <string name="sobot_completed_the_evaluation">您已完成评价</string>
+  
+    
+  <string name="sobot_conntype_connect_success">连接成功</string>
+  
+    
+  <string name="sobot_conntype_in_connection">连接中...</string>
+  
+    
+  <string name="sobot_conntype_unconnected">未连接</string>
+  
+    
+  <string name="sobot_consulting_describe">[摘要]</string>
+  
+    
+  <string name="sobot_consulting_fromurl">[链接]</string>
+  
+    
+  <string name="sobot_consulting_lable">[标签]</string>
+  
+    
+  <string name="sobot_consulting_title">[标题]</string>
+  
+    
+  <string name="sobot_count_down">倒计时：</string>
+  
+    
+  <string name="sobot_ctrl_copy">复制</string>
+  
+    
+  <string name="sobot_ctrl_v_success">复制成功！</string>
+  
+    
+  <string name="sobot_current_network">当前网络不可用,请检查网络设置</string>
+  
+    
+  <string name="sobot_data_wrong_hint">数据错误</string>
+  
+    
+  <string name="sobot_dcrc">评价客服</string>
+  
+    
+  <string name="sobot_delete">删除</string>
+  
+    
+  <string name="sobot_did_not_get_picture_path">未获取图片的地址</string>
+  
+    
+  <string name="sobot_edittext_hint">欢迎给我们的服务提建议~</string>
+  
+    
+  <string name="sobot_email">邮箱</string>
+  
+    
+  <string name="sobot_email_dialog_hint">您的邮箱格式错误</string>
+  
+    
+  <string name="sobot_evaluate_no">未解决</string>
+  
+    
+  <string name="sobot_evaluate_yes">已解决</string>
+  
+    
+  <string name="sobot_evaluation_completed_exit">提交评价后会话将结束</string>
+  
+    
+  <string name="sobot_evaluation_decription">您的评价会让我们做得更好</string>
+  
+    
+  <string name="sobot_evaluation_finished">您的评价已成功提交</string>
+  
+    
+  <string name="sobot_in_line">排队中，请稍候</string>
+  
+    
+  <string name="sobot_in_line_position">排队中,您在队伍中的第%1$s个</string>
+  
+    
+  <string name="sobot_in_line_title">排队中...</string>
+  
+    
+  <string name="sobot_init_data_is_null">初始化参数不能为空</string>
+  
+    
+  <string name="sobot_leavemsg">留言</string>
+  
+    
+  <string name="sobot_leavemsg_success_hint">&quot;留言成功!
+我们将尽快联系您&quot;</string>
+  
+    
+  <string name="sobot_loading">请稍候</string>
+  
+    
+  <string name="sobot_move_up_to_cancel">手指上滑，取消发送</string>
+  
+    
+  <string name="sobot_network_unavailable">当前网络不可用，请检查您的网络设置</string>
+  
+    
+  <string name="sobot_new_msg">条新消息</string>
+  
+    
+  <string name="sobot_no">否</string>
+  
+    
+  <string name="sobot_no_access">暂无客服在线</string>
+  
+    
+  <string name="sobot_no_camera_permission">没有相机权限</string>
+  
+    
+  <string name="sobot_no_more_data">到顶了，没有更多</string>
+  
+    
+  <string name="sobot_no_read">以下为未读消息</string>
+  
+    
+  <string name="sobot_no_record_audio_permission">没有麦克风权限</string>
+  
+    
+  <string name="sobot_no_write_external_storage_permission">没有存储权限</string>
+  
+    
+  <string name="sobot_optional">（选填）</string>
+  
+    
+  <string name="sobot_outline_leverByManager">您好,本次会话已结束</string>
+  
+    
+  <string name="sobot_outline_openNewWindows">打开新窗口</string>
+  
+    
+  <string name="sobot_phone">手机</string>
+  
+    
+  <string name="sobot_phone_dialog_hint">您的手机号码格式错误</string>
+  
+    
+  <string name="sobot_pic_select_again">请重新选择或拍摄</string>
+  
+    
+  <string name="sobot_pic_size_should_be_less_than_three">图片大小需小于3M</string>
+  
+    
+  <string name="sobot_please">SOBOT SDK 2.3.2</string>
+  
+    
+  <string name="sobot_please_evaluate">请您对 [%1$s] 进行评价</string>
+  
+    
+  <string name="sobot_please_evaluate_this_service">请您对本次服务进行评价</string>
+  
+    
+  <string name="sobot_please_load">请上传附件</string>
+  
+    
+  <string name="sobot_post_msg_hint_enclosure">上传问题图片能大大提高解决问题效率</string>
+  
+    
+  <string name="sobot_press_say">按住 说话</string>
+  
+    
+  <string name="sobot_problem">存在哪些问题</string>
+  
+    
+  <string name="sobot_problem_description">问题描述</string>
+  
+    
+  <string name="sobot_problem_types">问题类型</string>
+  
+    
+  <string name="sobot_prompt">提示</string>
+  
+    
+  <string name="sobot_question">请问 [%1$s] 是否解决了您的问题？</string>
+  
+    
+  <string name="sobot_read_all">阅读全文&gt;&gt;</string>
+  
+    
+  <string name="sobot_release_to_cancel">松开手指，取消发送</string>
+  
+    
+  <string name="sobot_required">（必填）</string>
+  
+    
+  <string name="sobot_resendmsg">重新发送</string>
+  
+    
+  <string name="sobot_restart_talk">新会话</string>
+  
+    
+  <string name="sobot_reunicon">点击重新连接</string>
+  
+    
+  <string name="sobot_robot_customer_service_evaluation">机器人客服评价</string>
+  
+    
+  <string name="sobot_robot_dislike">很抱歉没能帮到您</string>
+  
+    
+  <string name="sobot_robot_like">感谢您的反馈</string>
+  
+    
+  <string name="sobot_robot_voice_hint">机器人咨询模式下，语音将自动转化为文字发送</string>
+  
+    
+  <string name="sobot_robot_voice_max_hint">语音转文字服务暂时中止，建议您用文字或转人工交流</string>
+  
+    
+  <string name="sobot_save_pic">保存图片</string>
+  
+    
+  <string name="sobot_sdcard_does_not_exist">没有sd卡</string>
+  
+    
+  <string name="sobot_server_request_wrong">服务器请求错误！</string>
+  
+    
+  <string name="sobot_service_accept">您好,客服 %1$s 接受了您的请求</string>
+  
+    
+  <string name="sobot_str_bottom_message">留言</string>
+  
+    
+  <string name="sobot_str_bottom_offline">离线</string>
+  
+    
+  <string name="sobot_str_bottom_satisfaction">评价</string>
+  
+    
+  <string name="sobot_submit">提交</string>
+  
+    
+  <string name="sobot_suggestions_are_required">建议为必填</string>
+  
+    
+  <string name="sobot_sysnum_is_null">您的Sysnum为空</string>
+  
+    
+  <string name="sobot_temporarily_not_evaluation">暂不评价</string>
+  
+    
+  <string name="sobot_thank_dialog_hint">谢谢您的反馈＾―＾!</string>
+  
+    
+  <string name="sobot_the_label_is_required">标签为必选</string>
+  
+    
+  <string name="sobot_try_again">网络错误，请检查网络后重试</string>
+  
+    
+  <string name="sobot_unable_to_evaluate">暂时无法评价</string>
+  
+    
+  <string name="sobot_unable_transfer_to_customer_service">暂时无法转接人工客服</string>
+  
+    
+  <string name="sobot_up_send">松开 发送</string>
+  
+    
+  <string name="sobot_up_send_calcel">松开手指 取消发送</string>
+  
+    
+  <string name="sobot_upload">图片</string>
+  
+    
+  <string name="sobot_voiceTooLong">录音时间过长</string>
+  
+    
+  <string name="sobot_voice_can_not_be_less_than_one_second">说话时间过短</string>
+  
+    
+  <string name="sobot_wait_full">排队已满</string>
+  
+    
+  <string name="sobot_welcome">loading...</string>
+  
+    
+  <string name="sobot_what_are_the_problems">存在以下哪些问题</string>
+  
+    
+  <string name="sobot_yes">是</string>
+  
+    
+  <string name="sobot_you_can">您可以</string>
+  
+    
   <string name="song">儿歌</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_alipay">支付宝好友</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_alipay_client_inavailable">目前您的支付宝版本过低或未安装，需要安装支付宝才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_alipaymoments">支付宝生活圈</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_bluetooth">蓝牙</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_dingding">钉钉</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_dont_keep_activitys_client">由于您已开启 不保留活动 ,导致授权功能无法正常使用.我们建议您点击左下方 设置 按钮,在 开发者选项 中关闭 不保留活动 功能.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_douban">豆瓣</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_dropbox">Dropbox</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_email">邮件</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_evernote">印象笔记</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_facebook">Facebook</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_facebookmessenger">Facebook Messenger</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_facebookmessenger_client_inavailable">目前您的FacebookMessenger版本过低或未安装，需要安装才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_flickr">Flickr</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_foursquare">FourSquare</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_gender_female">女</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_gender_male">男</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_googleplus">Google+</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instagram">Instagram</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapager_email_or_password_incorrect">Email或密码不正确</string>
   
-  
-  
-  
     
-  
-  
-  
   <string formatted="false" name="ssdk_instapager_login_html">&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta content=\&quot;text/html; charset=utf-8\&quot; http-equiv=\&quot;Content-Type\&quot;&gt; &lt;meta content=\&quot;width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\&quot; id=\&quot;viewport\&quot; name=\&quot;viewport\&quot;&gt; &lt;meta content=\&quot;yes\&quot; name=\&quot;apple-mobile-web-app-capable\&quot;&gt; &lt;title&gt;%s&lt;/title&gt; &lt;style type=\&quot;text/css\&quot;&gt; body{margin:0;padding:0} .inputstyle { -webkit-tap-highlight-color:rgba(255,255,255,0); width:100%%; height:44px; color:#000; background:0; border:0; font-size:16px; outline: none; -webkit-appearance:none } .btn { width:90%%; height:44px; line-height:44px; background:#A0C035; border:0; border-radius:4px; color:#fff; font-size:16px; text-align:center; margin-top:15px; display:block } .btn:disabled { background: #dddddd; } .error { color:red; } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;script type=\&quot;text/javascript\&quot;&gt; function login(form){ var u=form[\&quot;u\&quot;].value,p=form[\&quot;p\&quot;].value; if(!u || !p) return false; form[\&quot;s\&quot;].disabled = true; return true; } &lt;/script&gt; &lt;form style=\&quot;margin-top:45px;\&quot; action=\&quot;%s\&quot; metho=\&quot;get\&quot; onsubmit=\&quot;return login(this);\&quot;&gt; %s &lt;div style=\&quot;padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\&quot;&gt; &lt;input type=\&quot;hidden\&quot; name=\&quot;ID_SIGN\&quot; value=\&quot;OWELJSFPWECSFEW\&quot;/&gt; &lt;input class=\&quot;inputstyle\&quot; id=\&quot;u\&quot; name=\&quot;u\&quot; type=\&quot;text\&quot; value=\&quot;%s\&quot; placeholder=\&quot;%s\&quot; style=\&quot;border-bottom:1px solid #E3E3E5;\&quot;/&gt; &lt;input class=\&quot;inputstyle\&quot; id=\&quot;p\&quot; name=\&quot;p\&quot; type=\&quot;password\&quot; placeholder=\&quot;%s\&quot;/&gt; &lt;/div&gt; &lt;p&gt;&lt;input style=\&quot;margin:0 auto;\&quot; type=\&quot;submit\&quot; name=\&quot;s\&quot; value=\&quot; %s \&quot; class=\&quot;btn\&quot;/&gt;&lt;/p&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapaper">Instapaper</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapaper_email">邮箱</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapaper_login">登录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapaper_logining">登录中…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_instapaper_pwd">密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_kaixin">开心网</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_kakaostory">KakaoStory</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_kakaotalk">KakaoTalk</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_laiwang">来往</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_laiwangmoments">来往动态</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_line">Line</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_linkedin">领英</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_meipai">美拍</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_mingdao">明道</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_mingdao_share_content">网页分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_neteasemicroblog">网易微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_cancel">取消</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_confirm">确定</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_contacts">联系人</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_multi_share">图文分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_pull_to_refresh">下拉刷新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_refreshing">刷新中…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_release_to_refresh">松开刷新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_share">分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_share_canceled">分享已取消</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_share_completed">分享成功</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_share_failed">分享失败</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_oks_sharing">分享操作正在后台进行…</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_pinterest">Pinterest</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_plurk">Plurk</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_pocket">Pocket</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_qq">QQ</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_qzone">QQ空间</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_renren">人人网</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_sina_web_close">关闭</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_sina_web_net_error">网络出错啦，请点击按钮重新加载</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_sina_web_refresh">重新加载</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_sina_web_title">微博分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_facebook">分享到Facebook</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_googleplus">分享到Google+</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_mingdao">分享到明道</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_qq">分享到QQ</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_qzone">分享到QQ空间</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_qzone_default">来自%s的分享</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_share_to_youtube">分享到Youtube</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_shortmessage">信息</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sinaweibo">新浪微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_btn_next">下一步</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_btn_submit">提交</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_dialog_btn_cancel">取消</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_dialog_btn_ok">好</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_dialog_text">我们将发送验证码短信到这个手机号码：%s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sms_dialog_title">确认手机号码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sohumicroblog">搜狐微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_sohusuishenkan">搜狐随身看</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_symbol_ellipsis">...</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_tencentweibo">腾讯微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_tumblr">Tumblr</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_twitter">Twitter</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_use_login_button">请改用“登录”按钮</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_vkontakte">VK</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_website">http://www.mob.com</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_wechat">微信好友</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_wechatfavorite">微信收藏</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_wechatmoments">微信朋友圈</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_weibo_oauth_regiseter">应用授权</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_weibo_upload_content">分享图片</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_whatsapp">WhatsApp</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_yixin">易信</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_yixinmoments">易信朋友圈</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_youdao">有道云笔记</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssdk_youtube">Youtube</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssl_alert_title">Ssl Certificate Error Alert</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="ssl_error_deny_request">Request was denied for security.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="start_audio_record">开始 录音</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_architecture_mismatch_message">The Crosswalk Project Service must be updated to match the CPU architecture of the device. Please install it from the app store, then restart APP_NAME.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_architecture_mismatch_title">Mismatch of CPU Architecture</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_newer_version_message">APP_NAME is not compatible with the installed version of the Crosswalk Project Service.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_newer_version_title">Incompatible Crosswalk Project Service</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_not_found_message">APP_NAME requires the Crosswalk Project Service to work. Please install it from the app store, then restart APP_NAME.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_not_found_title">Crosswalk Project Service Not Found</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_older_version_message">The version of the Crosswalk Project Service on this system must be updated. Please install it from the app store, then restart APP_NAME.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_older_version_title">New Crosswalk Project Service Required</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_signature_check_error_message">The integrity of the Crosswalk Project Service cannot be verified. Please uninstall it and restart APP_NAME.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="startup_signature_check_error_title">The Crosswalk Project Signature Verification Failed</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="status_bar_notification_info_overflow">999+</string>
   
-  
-  
+    
+  <string name="story_book">我的作品</string>
   
     
-  
-  
-  
   <string name="story_pay_success_tips">恭喜您，购买成功!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="story_share_tips">绘本读完咯！马上分享给好友！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="story_shelf">绘本</string>
   
-  
-  
+    
+  <string name="sum_gua_dou">呱豆余额</string>
   
     
-  
-  
-  
   <string name="system_has_all">已拥有：%1$d/%2$d</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="take_photo">拍照</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="term_action">用户使用协议</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="term_desc">点击完成代表您同意叽里呱啦</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_am">AM</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_hour_minute_separator">:</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_minute_second_separator">:</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_pm">PM</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_second_subsecond_separator">.</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="time_picker_dialog_title">Set time</string>
   
-  
-  
+    
+  <string name="title_activity_recharge_gua_dou">充值呱豆</string>
   
     
+  <string name="title_activity_record_gua_dou">充值记录</string>
   
-  
-  
+    
   <string name="try_scan_isbn">&quot;扫一扫书籍条形码
 查找绘本配套音频&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_exam">玩游戏</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_flashcard">学单词</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_interact">互动课</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_listen">听儿歌</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_reading">读绘本</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_speak">练口语</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_unknown">版本太低不支持</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_watch">看短片</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="type_desc_write">写字母</string>
   
-  
-  
+    
+  <string name="unknown_status">未知状态</string>
   
     
-  
-  
-  
   <string name="unlock_course_tips">解锁本节课程需要先绑定微信哦，快去点击下面按钮进行绑定吧!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="unlocking_tips">解锁中</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="unsupported_store_message">&quot;The application stores on your device don't support Crosswalk Project Service. Please download Crosswalk Project Service manually from the official website (https://crosswalk-project.org/).&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="unzip_course_notify">课件解压中，马上就好</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="updating_chrome">Updating Chrome...</string>
   
-  
-  
+    
+  <string name="upgrade_later">等等</string>
   
     
-  
-  
-  
   <string name="upgrade_right_now">马上升级</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="upgrade_version_found">发现新版本!</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="user_info_update_ok">检测到您的用户信息有更新，已同步至最新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="user_sign_in">用户登录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_error_hint">验证码输入有误</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_hint">输入验证码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_new_pwd_confirm">再次确认密码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_not_received">收不到验证码?</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_password_confirm_error_hint">两次输入密码不一致</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_resend">重新获取验证码</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_sent">已成功发送,请注意查收短信</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_subtitle">已发送验证码到 %1$s</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verify_code_txt">您将收到一条带有验证码的短信</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="verifycode_login">验证码登录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_channel_text">频道</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_error">视频播放错误</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_fav_channel_name">红心频道</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_limit_time_control">时间控制</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_pop_sharetext">快去告诉大家，让更多宝贝看到这部短片！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_rnt_channel_name">最近记录</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_search_hint">视频名、系列名</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_time_control_subtitle">今天已看了%1$s分钟</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="video_time_control_title">每日视频时间控制</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="viral_popups_audio_fav">收藏成功！快去告诉大家，让更多宝贝听到这首歌！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="viral_popups_download">&quot;还不能下载哦！
 分享一次即可获得终身下载特权~&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="viral_popups_post_fav">收藏成功！快去告诉大家，让更多父母与你一起成长！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="viral_popups_video_fav">收藏成功！快去告诉大家，让更多宝贝看到这部短片！</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="watch_time">看了%d分钟</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="web_open_in_browser">在浏览器中打开</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="web_refresh_action">刷 新</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="wechat">微信好友</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="wechat_fast_login">微信快捷登录</string>
   
-  
-  
+    
+  <string name="wechat_fast_register">微信一键登录</string>
   
     
-  
-  
-  
-  <string name="wechat_fast_register">微信快捷注册</string>
-  
-  
-  
+  <string name="wechat_pay_name">微信支付</string>
   
     
-  
-  
-  
   <string name="wechatmoments">朋友圈</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="week_picker_dialog_title">Set week</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="weibo">微博</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="weike_content">分享成功即可免费获得本节微课内容</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="weike_title">分享解锁</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="wx_unlock_way">&quot;微信关注妈咪Cat听看学
 免费领取本课程&quot;</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="xwalk_cancel">Cancel</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="xwalk_close">Close</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="xwalk_continue">Continue</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="xwalk_get_crosswalk">Get Crosswalk</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="xwalk_retry">Retry</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="year_picker_description">Year list</string>
   
-  
-  
-  
     
-  
-  
-  
   <string name="zan_need_login">登录才能点赞哦!</string>
   
-  
-  
-  
-
-
-
 
 </resources>

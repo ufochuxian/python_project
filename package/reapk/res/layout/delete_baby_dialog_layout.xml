@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/alert_text" n1:paddingTop="25.0dip" n1:paddingBottom="25.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="即将删除该宝贝~\n是否继续?" />
-    <ImageView n1:background="@drawable/line_lightgrey" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
-    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <Button n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/cancel" n1:background="@android:color/transparent" n1:paddingTop="20.0dip" n1:paddingBottom="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="取消" n1:layout_weight="1.0" />
-        <Button n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:id="@id/confirm" n1:background="@android:color/transparent" n1:paddingTop="20.0dip" n1:paddingBottom="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="确定" n1:layout_weight="1.0" />
+<LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/alert_text" android:paddingTop="25.0dip" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="即将删除该宝贝~\n是否继续?" />
+    <ImageView android:background="@drawable/line_lightgrey" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:id="@id/cancel" android:background="@android:color/transparent" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_green" android:id="@id/confirm" android:background="@android:color/transparent" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1.0" />
     </LinearLayout>
 </LinearLayout>

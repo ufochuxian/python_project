@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/container_title" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:gravity="center" android:id="@id/title" android:background="@drawable/img_green_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_below="@id/title_label" style="@style/WhiteTitleText" />
+        <ImageView android:id="@id/title_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView android:id="@id/desc" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/container_title" style="@style/GrayDescText" />
+    <android.support.v7.widget.RecyclerView android:id="@id/level_list" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="36.0dip" android:layout_below="@id/desc" android:overScrollMode="never" />
+</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:id="@id/secondary_container" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <include n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" layout="@layout/partial_channel_search_bar" />
-    <GridView n1:id="@id/channel_grid" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/selector_transparent" n1:horizontalSpacing="5.0dip" n1:verticalSpacing="5.0dip" n1:numColumns="3" n1:layout_below="@id/top_bar" />
-</RelativeLayout>

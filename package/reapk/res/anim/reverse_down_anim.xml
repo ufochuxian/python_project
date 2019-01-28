@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rotate n1:duration="100" n1:fromDegrees="180.0" n1:toDegrees="360.0" n1:pivotX="50.0%" n1:pivotY="50.0%" n1:fillAfter="true" n1:repeatCount="0"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<rotate android:duration="100" android:fromDegrees="180.0" android:toDegrees="360.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillAfter="true" android:repeatCount="0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

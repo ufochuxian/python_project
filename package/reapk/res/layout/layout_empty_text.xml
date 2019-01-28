@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textColor="@color/color_default_green" n1:gravity="center" n1:id="@id/no_order_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/no_order_go" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_default_green" android:gravity="center" android:id="@id/no_order_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_order_go" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
 </RelativeLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:id="@id/container" n1:background="@drawable/round_corner_white_bg" n1:padding="15.0dip" n1:layout_width="280.0dip" n1:layout_height="wrap_content" n1:layout_centerInParent="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:layout_gravity="center_horizontal" n1:id="@id/skip_infos" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="25.0dip" n1:text="@string/skip_sub_course_info" />
-    <Button n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_gray" n1:id="@id/skip_cancel_btn" n1:background="@null" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:text="@string/skip_course_cancel" n1:layout_below="@id/skip_infos" />
-    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignBottom="@id/skip_infos" />
-    <Button n1:textSize="@dimen/content_large_size" n1:textColor="@color/color_default_green" n1:id="@id/skip_btn" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:text="@string/skip_sub_course" n1:layout_below="@id/skip_cancel_btn" />
-</LinearLayout>

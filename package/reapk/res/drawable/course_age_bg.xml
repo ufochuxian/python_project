@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape>
-    <solid n1:color="@color/transparent"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <stroke n2:width="1.0dip" n2:color="@color/color_green"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
-    <corners n3:topLeftRadius="15.0dip" n3:topRightRadius="15.0dip" n3:bottomLeftRadius="15.0dip" n3:bottomRightRadius="15.0dip"
-      xmlns:n3="http://schemas.android.com/apk/res/android" />
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/transparent" />
+    <stroke android:width="1.0dip" android:color="@color/color_green" />
+    <corners android:topLeftRadius="15.0dip" android:topRightRadius="15.0dip" android:bottomLeftRadius="15.0dip" android:bottomRightRadius="15.0dip" />
 </shape>

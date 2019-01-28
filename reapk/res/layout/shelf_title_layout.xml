@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:src="@color/divider_dark_line" n1:layout_alignParentBottom="true" />
-    <ImageButton n1:id="@id/top_back" n1:background="@drawable/nav_icon_back_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-    <TextView n1:textSize="@dimen/content_large_size" n1:textStyle="bold" n1:textColor="@android:color/white" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/story_shelf" n1:layout_centerInParent="true" />
-</RelativeLayout>

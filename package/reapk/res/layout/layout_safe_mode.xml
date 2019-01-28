@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:layout_width="@dimen/popup_width" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
-        <com.jiliguala.niuwa.common.widget.RatioImageView n1:id="@id/icon" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/img_pop_parentslock" n1:scaleType="centerCrop" n1:layout_centerInParent="true" n2:ratio="0.5" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-        <LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_green_bg" n1:paddingTop="@dimen/dp_10" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <TextView n1:textSize="@dimen/content_x_large_size" n1:textStyle="bold" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/parent_check" />
-            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/subTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/follow_order_txt" />
-            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/unlocl_btn_container" n1:background="@drawable/btn_white_large_selector" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="20.0dip">
-                <ImageView n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/icon_press" />
-                <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_green" n1:gravity="center" n1:id="@id/unlock" n1:layout_width="wrap_content" n1:layout_height="50.0dip" n1:text="@string/safe_mode_button_tips" n1:layout_alignParentBottom="true" />
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/popup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.jiliguala.niuwa.common.widget.RatioImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_pop_parentslock" android:scaleType="centerCrop" android:layout_centerInParent="true" app:ratio="0.5" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_green_bg" android:paddingTop="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/content_x_large_size" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/parent_check" />
+            <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/white" android:gravity="center" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/follow_order_txt" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unlocl_btn_container" android:background="@drawable/btn_white_large_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_press" />
+                <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="@dimen/content_x_large_size" android:textColor="@color/color_default_green" android:gravity="center" android:id="@id/unlock" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/safe_mode_button_tips" android:layout_alignParentBottom="true" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

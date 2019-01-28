@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape>
-    <solid n1:color="@color/white"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <stroke n2:width="1.0dip" n2:color="#ffdfdfdf"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
-    <corners n3:topLeftRadius="25.0dip" n3:topRightRadius="25.0dip" n3:bottomLeftRadius="25.0dip" n3:bottomRightRadius="25.0dip"
-      xmlns:n3="http://schemas.android.com/apk/res/android" />/></shape>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <stroke android:width="1.0dip" android:color="#ffdfdfdf" />
+    <corners android:topLeftRadius="25.0dip" android:topRightRadius="25.0dip" android:bottomLeftRadius="25.0dip" android:bottomRightRadius="25.0dip" />/></shape>

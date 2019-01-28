@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.jiliguala.niuwa.common.widget.customview.SuperView n1:orientation="vertical" n1:id="@id/superview" n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:errorView="@layout/layout_errorview" n2:loadingView="@layout/layout_loadingview"
-  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.pulltorefresh.PullToRefreshListView n1:id="@id/hot_subject_list" n1:background="@color/pull_to_refresh_bg" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:visibility="visible" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="#00000000" n1:divider="@null" n1:dividerHeight="10.0dip" n1:layout_below="@id/top_bar_container" n1:fastScrollEnabled="false" n1:headerDividersEnabled="false" n1:footerDividersEnabled="false" n1:smoothScrollbar="true" n2:ptrAnimationStyle="flip" n2:ptrHeaderTextAppearance="@style/Pull_refresh_text_style" />
-</com.jiliguala.niuwa.common.widget.customview.SuperView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/sobot_list_divider_height" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sobot_evaluate_btn_selector" android:layout_width="304.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#fa333333" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@id/sobot_center_title" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sobot_question" />
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sobot_readiogroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sobot_DIMEN_48PX">
+            <RadioButton android:layout_gravity="left" android:id="@id/sobot_btn_ok_robot" android:layout_marginRight="15.0dip" android:text="@string/sobot_evaluate_yes" android:drawableLeft="@drawable/sobot_evaluate_btn_yes_selector" style="@style/sobot_rb_style" />
+            <RadioButton android:id="@id/sobot_btn_no_robot" android:text="@string/sobot_evaluate_no" android:drawableLeft="@drawable/sobot_evaluate_btn_no_selector" style="@style/sobot_rb_style" />
+        </RadioGroup>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#fa333333" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@id/sobot_tv_star_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sobot_please_evaluate" />
+            <RatingBar android:layout_gravity="center_horizontal" android:id="@id/sobot_ratingBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:numStars="5" android:stepSize="0.5" style="@style/sobot_roomRatingBar" />
+            <TextView android:textSize="13.0sp" android:textColor="#fa8a98ac" android:id="@id/sobot_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sobot_evaluation_decription" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

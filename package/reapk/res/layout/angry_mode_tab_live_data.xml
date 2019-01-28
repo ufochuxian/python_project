@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <GridLayout n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:columnCount="2" n1:useDefaultMargins="true">
-        <TextView n1:textStyle="bold" n1:gravity="right" n1:layout_gravity="right" n1:id="@id/live_data_total" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="99" />
-        <TextView n1:textStyle="bold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="live data operations" />
-        <TextView n1:textStyle="bold" n1:gravity="right" n1:id="@id/live_data_loading" n1:layout_width="30.0dip" n1:layout_height="wrap_content" n1:text="-" />
-        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="loading" />
-        <TextView n1:textStyle="bold" n1:gravity="right" n1:id="@id/live_data_success" n1:layout_width="30.0dip" n1:layout_height="wrap_content" n1:text="-" />
-        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="ready" />
-        <TextView n1:textStyle="bold" n1:gravity="right" n1:id="@id/live_data_failed" n1:layout_width="30.0dip" n1:layout_height="wrap_content" n1:text="-" />
-        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="failed" />
-        <TextView n1:textStyle="bold" n1:gravity="right" n1:id="@id/live_data_expired" n1:layout_width="30.0dip" n1:layout_height="wrap_content" n1:text="-" />
-        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="expired" />
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" android:useDefaultMargins="true">
+        <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="right" android:id="@id/live_data_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" />
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="live data operations" />
+        <TextView android:textStyle="bold" android:gravity="right" android:id="@id/live_data_loading" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="-" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="loading" />
+        <TextView android:textStyle="bold" android:gravity="right" android:id="@id/live_data_success" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="-" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ready" />
+        <TextView android:textStyle="bold" android:gravity="right" android:id="@id/live_data_failed" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="-" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="failed" />
+        <TextView android:textStyle="bold" android:gravity="right" android:id="@id/live_data_expired" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="-" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="expired" />
     </GridLayout>
 </LinearLayout>

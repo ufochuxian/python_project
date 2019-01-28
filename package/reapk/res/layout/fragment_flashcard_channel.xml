@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:id="@id/secondary_container" n1:background="@color/flashcard_color_darker" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height">
-        <ImageView n1:id="@id/action_cancel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/nav_icon_close" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
-        <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@android:color/white" n1:gravity="center_vertical" n1:id="@id/channel_title" n1:layout_width="wrap_content" n1:layout_height="@dimen/tab_button_height" n1:text="分类" n1:layout_centerInParent="true" />
-        <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+<RelativeLayout android:id="@id/secondary_container" android:background="#ffffffff" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <ImageView android:id="@id/action_cancel" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_close_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="@dimen/content_large_size" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/channel_title" android:layout_width="wrap_content" android:layout_height="@dimen/tab_button_height" android:text="分类" android:layout_centerInParent="true" />
+        <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
     </RelativeLayout>
-    <GridView n1:id="@id/channel_grid" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/selector_transparent" n1:horizontalSpacing="5.0dip" n1:verticalSpacing="5.0dip" n1:numColumns="3" n1:layout_below="@id/top_bar" />
+    <GridView android:id="@id/channel_grid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_transparent" android:verticalSpacing="10.0dip" android:numColumns="3" android:layout_below="@id/top_bar" />
 </RelativeLayout>

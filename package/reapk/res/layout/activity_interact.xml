@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <FrameLayout n1:id="@id/video_container" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <SurfaceView n1:layout_gravity="center" n1:id="@id/surface_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-        <FrameLayout n1:id="@id/mask_container" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-        <ImageView n1:layout_gravity="center|right|top" n1:id="@id/action_debug_next" n1:background="@drawable/cd_play_next" n1:layout_width="45.0dip" n1:layout_height="45.0dip" n1:layout_marginRight="5.0dip" />
-        <FrameLayout n1:id="@id/action_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-            <RelativeLayout n1:background="@color/color_tool_page_tip_text" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
-                <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_container" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/mask_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/action_debug_next" android:background="@drawable/cd_play_next" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" />
+        <FrameLayout android:id="@id/action_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/color_tool_page_tip_text" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:id="@id/action_back" android:background="@drawable/nav_icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
             </RelativeLayout>
-            <FrameLayout n1:layout_gravity="bottom" n1:background="@color/color_tool_page_tip_text" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
-                <ImageView n1:layout_gravity="center_vertical" n1:id="@id/action_play" n1:background="@drawable/btn_pause_sm" n1:layout_width="45.0dip" n1:layout_height="45.0dip" n1:layout_marginLeft="5.0dip" />
+            <FrameLayout android:layout_gravity="bottom" android:background="@color/color_tool_page_tip_text" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/action_play" android:background="@drawable/btn_pause_sm" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" />
             </FrameLayout>
         </FrameLayout>
     </FrameLayout>
-    <include n1:layout_width="wrap_content" n1:layout_height="wrap_content" layout="@layout/progress_layout" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/progress_layout" />
 </RelativeLayout>

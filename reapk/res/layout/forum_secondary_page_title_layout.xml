@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:id="@id/top_bar" n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageButton n1:id="@id/top_back" n1:background="@drawable/nav_icon_back" n1:layout_width="@dimen/default_icon_width" n1:layout_height="@dimen/default_icon_height" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-    <TextView n1:textColor="@color/color_default_dark_gray" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
-    <TextView n1:textColor="@color/forum_filter_text_color_selector" n1:gravity="center_vertical" n1:id="@id/filter" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/default_icon_height" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/TopbarSideTitle" />
-</RelativeLayout>

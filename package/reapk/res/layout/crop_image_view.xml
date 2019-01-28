@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge>
-    <ImageView n1:id="@id/ImageView_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerInside" n1:adjustViewBounds="true"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <com.jiliguala.niuwa.common.widget.cropper.cropwindow.CropOverlayView n2:id="@id/CropOverlayView" n2:layout_width="fill_parent" n2:layout_height="fill_parent"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ImageView_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    <com.jiliguala.niuwa.common.widget.cropper.cropwindow.CropOverlayView android:id="@id/CropOverlayView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </merge>

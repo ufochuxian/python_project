@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-0.5dip" android:right="-0.5dip">
+        <shape>
+            <solid android:color="@color/sobot_color_bottom_bg" />
+            <stroke android:width="0.5dip" android:color="#ffced6d6" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/sobot_chat_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/sobot_bar_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/sobot_layout_chat_bottom" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/sobot_announcement" android:background="#ffffa500" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sobot_DIMEN_96PX">
+                <ImageView android:id="@id/sobot_announcement_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/sobot_announcement_img_icon" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/sobot_announcement_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/sobot_announcement_icon" android:layout_centerInParent="true" />
+                <TextView android:id="@id/sobot_announcement_right_icon" android:background="@drawable/sobot_icon_right_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rrrrr" android:background="@color/sobot_color_chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/sobot_bar_bottom" android:layout_below="@id/sobot_announcement">
+                <com.sobot.chat.widget.DropdownListView android:id="@id/sobot_lv_message" android:background="@color/sobot_lv_message_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="normal" android:divider="@null" />
+                <LinearLayout android:orientation="vertical" android:id="@id/sobot_recording_container" android:background="@drawable/sobot_recording_hint_bg" android:visibility="gone" android:layout_width="@dimen/sobot_DIMEN_289PX" android:layout_height="@dimen/sobot_DIMEN_289PX" android:layout_centerInParent="true">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sobot_voice_top_image" android:layout_width="@dimen/sobot_DIMEN_288PX" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/sobot_mic_image" android:layout_width="80.0dip" android:layout_height="70.0dip" android:layout_marginTop="@dimen/sobot_DIMEN_36PX" android:src="@drawable/sobot_recording_mike" android:contentDescription="@null" />
+                        <ImageView android:id="@id/sobot_recording_timeshort" android:background="@drawable/sobot_recording_timeshort" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginTop="@dimen/sobot_DIMEN_36PX" android:contentDescription="@null" />
+                        <ImageView android:id="@id/sobot_mic_image_animate" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginLeft="-60.0dip" android:layout_marginTop="@dimen/sobot_DIMEN_36PX" android:contentDescription="@null" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/sobot_image_endVoice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginTop="@dimen/sobot_DIMEN_36PX" android:src="@drawable/sobot_recording_cancel" android:contentDescription="@null" />
+                    <TextView android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sobot_voiceTimeLong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sobot_DIMEN_21PX" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sobot_recording_hint" android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sobot_DIMEN_21PX" android:text="@string/sobot_move_up_to_cancel" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:background="@drawable/sobot_not_readinfo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/sobot_color" android:id="@id/notReadInfo" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/sobot_not_readinfo" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <include android:id="@id/sobot_welcome" layout="@layout/sobot_layout_chat_loading" />
+</RelativeLayout>

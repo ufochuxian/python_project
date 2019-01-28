@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="@dimen/sobot_list_divider_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/sobot_DIMEN_12PX" android:layout_marginLeft="@dimen/sobot_DIMEN_48PX"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sobot_imgHead" android:layout_marginLeft="10.0dip" style="@style/sobot_chatting_imghead" />
+        <TextView android:id="@id/sobot_name" android:layout_toRightOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/sobot_imgHead" android:layout_below="@id/sobot_name">
+            <LinearLayout android:orientation="vertical" android:id="@id/sobot_ll_content" android:background="@drawable/sobot_chatfrom_bg_normal" android:paddingLeft="10.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="80.0dip">
+                <TextView android:textSize="@dimen/sobot_robot_msg_text_size" android:textColor="@color/sobot_robot_msg_text_color" android:id="@id/sobot_msg" android:paddingTop="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/sobot_DIMEN_7PX" android:layout_marginRight="5.0dip" android:layout_marginBottom="@dimen/sobot_DIMEN_7PX" android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

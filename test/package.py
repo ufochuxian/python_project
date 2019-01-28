@@ -2,7 +2,6 @@ import datetime
 import logging
 from xml.dom import minidom
 from xml.etree.ElementTree import ElementTree
-
 import codecs
 import os
 import shutil
@@ -33,34 +32,62 @@ channels_app_name_extra = "叽里呱啦儿童英语"  # WDJ MIM 360
 channels_app_name_extra1 = "叽里呱啦"  # YYB #ANZHIM #GDT # 360 #BD
 channels_app_name_extra2 = "叽里呱啦-儿童英语"  # MXM #VIVOM
 
+focuschildrenenglish = "focuschildenglish"
+childrenenglish = "childrenenglish"
+jiliguala = "jiliguala"
+childrenenglishwithdivider = "childrenenglishwithdivider"
+
 app_name = channels_app_name
 
-channels_release = (
-    # "WDJM","360M","HUAWEIM",
-    # "OPPOM",
-    #                     "SAMSUNGM",
-    #                     "YYBA",
-    #                                     "MIM",
-    #                                     "YYBM"
-    #                                     , "HUAWEIM"
-    #                                     , "JLGLWBM"
-    #                                     , "YYBM", "MIM", "BDM", "360M", "WDJM", "UCAPPM", "MXM", "ANZHUOM", "91M"
-    #                                     , "ANZHIM", "LENOVOM", "OPPOM"
-    #                                     , "SGPM", "YYHM", "YOUYIM", "YIYONGHUI", "LIQUM"
-    #                                     , "YOUYUEM", "VIVOM"
-    #                                     , "LEM"
-    #                                     , "CHUIZIM"
-    #                                     ,"SAMSUNGM",
-    #                     "weibo1","weibo2","weibo3","weibo4","weibo5","weibo6","weibo7","weibo8","weibo9","weibo10","weibo11","weibo12"
-    #                     ,"ZHIHUZ1","UCX","YYBA",
-    #     "SM1", "SM2", "SM3", "SM4", "SM5", "SM6", "SM7", "SM8", "SM9", "SM10", "SM11", "SM12", "SM13", "SM14", "SM15",
-    #     "SM16"
+app_name_list = [channels_app_name, channels_app_name_extra, channels_app_name_extra1, channels_app_name_extra2]
 
-    "JRTT",
-    "JRTT1",
-    "JRTT2",
-    "SM1"
+channels_release = (
+    "SMPZ",
+    "SMPZ1",
+    "SMPZ2",
+    "SMPZ3",
+    "SMPZ4",
+    "SMPZ5",
+    "SMPZ6",
+    "SMPZ7",
+    "SMPZ8",
+    "SMPZ9",
+    "SMPZ10",
+    "SMPZ11",
+    "SMPZ12",
+    "SMPZ13",
+    "SMPZ14",
+    "SMPZ15",
+    "SMPZ16",
+    "360SEM",
+    "360SEM1",
+    "360SEM2",
+    "360SEM3",
+    "360SEM4",
+    "360SEM5",
+    "360SEM6",
+    "360SEM7",
+    "360SEM8",
+    "360SEM9",
+    "360SEM10",
+    "360SEM11",
+    "360SEM12",
+    "360SEM13",
+    "360SEM14",
+    "BBS",
+    "BBS1",
+    "BBS2",
+    "BBS3",
+    "BBS4",
+    "BBS5",
+    "BBS6",
+    "BBS7",
+    "BBS8",
+    "BBS9"
 )
+
+channels_for_vsdolly = "SMPZ,SMPZ1,SMPZ2,SMPZ3,SMPZ4,SMPZ5,SMPZ6,SMPZ7,SMPZ8,SMPZ9,SMPZ10,SMPZ11,SMPZ12,SMPZ13,SMPZ14,SMPZ15,SMPZ16,360SEM,360SEM1,360SEM2,360SEM3,360SEM4,360SEM5,360SEM6,360SEM7,360SEM8,360SEM9,360SEM10,360SEM11,360SEM12,360SEM13,360SEM14,BBS,BBS1,BBS2,BBS3,BBS4,BBS5,BBS6,BBS7,BBS8,BBS9"
+
 
 
 # onlyfiles = [f for f in listdir(".") if isfile(join(".",f))]
@@ -89,8 +116,10 @@ def change_node_properties(nodelist, kv_map, is_delete=False):
             else:
                 node.set(key, kv_map.get(key))
 
+
 rootPath = os.path.dirname(os.getcwd())
 packagePath = rootPath + '/package'
+full_package_path = packagePath + '/fullpackage/'
 sourcePackagePath = packagePath + '/source/'
 reApkPath = packagePath + '/reapk'
 mainfestxmlPath = reApkPath + '/AndroidManifest.xml'
@@ -136,21 +165,92 @@ print('apkNamePrefix:%s' % apkNamePrefix)
 
 unSignApkPath = reApkPath + '/dist/' + apkName
 
-unPackageApkCommond = 'apktool -f d ' + sourcePackagePath + apkName + ' -o ' + reApkPath
+# unPackageApkCommond = 'apktool -f d ' + sourcePackagePath + apkName + ' -o ' + reApkPath
 packageApkCommond = 'apktool b ' + reApkPath
 
 print(reApkPath)
 
 pygame.init()
 
+jiliguala_focuson_children_english_path = packagePath + '/jiliguala_focuson_children_english/'
 
-def resolve_env(con):
-    if con.startswith('ENV_'):
-        return os.environ.get(con)
-    return con
+jiliguala_children_english_path = packagePath + '/jiliguala_children_english/'
+
+jiliguala_path = packagePath + '/jiliguala/'
+
+jiliguala_children_english_with_divider_path = packagePath + '/jiliguala_children_english_with_divider/'
+
+jiliguala_focuson_children_english_apk_name = apkNamePrefix + "_" + focuschildrenenglish + '.apk'
+
+jiliguala_focuson_children_english_apk = jiliguala_focuson_children_english_path + jiliguala_focuson_children_english_apk_name
+
+jiliguala_children_english_apk_name = apkNamePrefix + "_" + childrenenglish + '.apk'
+
+jiliguala_children_english_apk = jiliguala_children_english_path + jiliguala_children_english_apk_name
+
+jiliguala_apk_name = apkNamePrefix + "_" + jiliguala + '.apk'
+
+jiliguala_apk = jiliguala_path + jiliguala_apk_name
+
+jiliguala_children_english_with_divider_apk_name = apkNamePrefix + "_" + childrenenglishwithdivider + '.apk'
+
+jiliguala_children_english_with_divider_apk = jiliguala_children_english_with_divider_path + jiliguala_children_english_with_divider_apk_name
 
 
-def unpackage_apk():
+def generateDifferentTypeApkWithName():
+    dest_package_path = ''
+    for name in app_name_list:
+        if (name == channels_app_name):
+            dest_file_name = apkNamePrefix + "_" + focuschildrenenglish + '.apk'
+            dest_package_path = jiliguala_focuson_children_english_path
+        elif (name == channels_app_name_extra):
+            dest_file_name = apkNamePrefix + "_" + childrenenglish + '.apk'
+            dest_package_path = jiliguala_children_english_path
+        elif (name == channels_app_name_extra1):
+            dest_file_name = apkNamePrefix + "_" + jiliguala + '.apk'
+            dest_package_path = jiliguala_path
+        elif (name == channels_app_name_extra2):
+            dest_file_name = apkNamePrefix + "_" + childrenenglishwithdivider + '.apk'
+            dest_package_path = jiliguala_children_english_with_divider_path
+            # os.mkdir(dest_package_path)
+        shutil.copyfile(sourcePackagePath + apkName, dest_package_path + dest_file_name)
+
+
+def sign_apk_with_type(name):
+    new_apk_name = ""
+    save_sign_apk_path = ""
+    if name == channels_app_name:
+        new_apk_name = jiliguala_focuson_children_english_apk_name
+        save_sign_apk_path = jiliguala_focuson_children_english_path + new_apk_name
+    elif name == channels_app_name_extra:
+        new_apk_name = jiliguala_children_english_apk_name
+        save_sign_apk_path = jiliguala_children_english_path + new_apk_name
+    elif name == channels_app_name_extra1:
+        new_apk_name = jiliguala_apk_name
+        save_sign_apk_path = jiliguala_path + new_apk_name
+    elif name == channels_app_name_extra2:
+        new_apk_name = jiliguala_children_english_with_divider_apk_name
+        save_sign_apk_path = jiliguala_children_english_with_divider_path + new_apk_name
+    unSignApkPath = reApkPath + '/dist/' + new_apk_name
+    sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
+    logging.info('sign_apk_commond = %s' % sign_apk_commond)
+    os.system(sign_apk_commond)
+
+
+def unpackageApkWithType(name):
+    unPackageApkCommond = ""
+    if name == channels_app_name:
+        # jiliguala_focuson_children_english_apk = jiliguala_focuson_children_english_path + apkNamePrefix + "_" + name + '.apk'
+        unPackageApkCommond = 'apktool -f d ' + jiliguala_focuson_children_english_apk + ' -o ' + reApkPath
+    elif name == channels_app_name_extra:
+        # jiliguala_children_english_apk = jiliguala_children_english_path + apkNamePrefix + "_" + name + '.apk'
+        unPackageApkCommond = 'apktool -f d ' + jiliguala_children_english_apk + ' -o ' + reApkPath
+    elif name == channels_app_name_extra1:
+        # jiliguala_apk = jiliguala_path + apkNamePrefix + "_" + name + '.apk'
+        unPackageApkCommond = 'apktool -f d ' + jiliguala_apk + ' -o ' + reApkPath
+    elif name == channels_app_name_extra2:
+        # jiliguala_children_english_with_divider_apk = jiliguala_children_english_with_divider_path + apkNamePrefix + "_" + name + '.apk'
+        unPackageApkCommond = 'apktool -f d ' + jiliguala_children_english_with_divider_apk + ' -o ' + reApkPath
     os.system(unPackageApkCommond)
 
 
@@ -165,6 +265,171 @@ def sign_apk(channel):
     logging.info('sign_apk_commond = %s' % sign_apk_commond)
     os.system(sign_apk_commond)
 
+
+def replace_app_name_by_type(name):
+    print('replace_app_name_by_type,name:' + name)
+    unpackageApkWithType(name)
+    doc = minidom.parse(stringXmlPath)
+    app_name_node = doc.getElementsByTagName('string')
+    for n in app_name_node:
+        if n.getAttribute('name') == 'app_name':
+            n.firstChild.replaceWholeText(name)
+            f = codecs.open(stringXmlPath, 'w', 'utf-8')
+            doc.writexml(f, addindent='  ', newl='\n', encoding='utf-8')
+            f.close()
+            print('app_name_value:%s' % name)
+    package_apk()
+    sign_apk_with_type(name)
+
+
+def updateAppName():
+    replace_app_name_by_type(channels_app_name)
+    replace_app_name_by_type(channels_app_name_extra)
+    replace_app_name_by_type(channels_app_name_extra1)
+    replace_app_name_by_type(channels_app_name_extra2)
+
+
+fullpackage_channel_jiliguala = full_package_path + "channel_jiliguala/"
+
+fullpackage_channel_childrenenglish = full_package_path + "channel_jiliguala_childrenenglish/"
+
+fullpackage_channel_childrenenglish_with_divider = full_package_path + "channel_jiliguala_childrenenglish_with_divider/"
+
+fullpackage_channel_focus_on_children_english = full_package_path + "channel_jiliguala_focus_on_children_english/"
+
+
+channel_jiliguala_path = packagePath + '/config/channel_jiliguala.txt'
+
+channel_jiliguala_childrenenglish_path = packagePath + '/config/channel_jiliguala_childrenenglish.txt'
+
+channel_jiliguala_childrenenglish_with_divider_path = packagePath + '/config/channel_jiliguala_childrenenglish_with_divider.txt'
+
+channel_jiliguala_childrenenglish_focuson_path = packagePath + '/config/channel_jiliguala_focus_on_children_english.txt'
+
+
+def deleteAllChannelNameApk():
+
+    if os.path.exists(reApkPath):
+        shutil.rmtree(reApkPath)
+    os.mkdir(reApkPath)
+
+    # if os.path.exists(channel_jiliguala_path):
+    #     shutil.rmtree(channel_jiliguala_path)
+    # if os.path.exists(channel_jiliguala_childrenenglish_path):
+    #     shutil.rmtree(channel_jiliguala_childrenenglish_path)
+    # if os.path.exists(channel_jiliguala_childrenenglish_with_divider_path):
+    #     shutil.rmtree(channel_jiliguala_childrenenglish_with_divider_path)
+    # if os.path.exists(channel_jiliguala_childrenenglish_focuson_path):
+    #     shutil.rmtree(channel_jiliguala_childrenenglish_focuson_path)
+
+    if os.path.exists(jiliguala_path):
+        shutil.rmtree(jiliguala_path)
+    os.mkdir(jiliguala_path)
+    if os.path.exists(jiliguala_children_english_path):
+        shutil.rmtree(jiliguala_children_english_path)
+    os.mkdir(jiliguala_children_english_path)
+    if os.path.exists(jiliguala_children_english_with_divider_path):
+        shutil.rmtree(jiliguala_children_english_with_divider_path)
+    os.mkdir(jiliguala_children_english_with_divider_path)
+    if os.path.exists(jiliguala_focuson_children_english_path):
+        shutil.rmtree(jiliguala_focuson_children_english_path)
+    os.mkdir(jiliguala_focuson_children_english_path)
+
+    if (os.path.exists(fullpackage_channel_jiliguala)):
+        shutil.rmtree(fullpackage_channel_jiliguala)
+    os.mkdir(fullpackage_channel_jiliguala)
+    if (os.path.exists(fullpackage_channel_childrenenglish)):
+        shutil.rmtree(fullpackage_channel_childrenenglish)
+    os.mkdir(fullpackage_channel_childrenenglish)
+    if (os.path.exists(fullpackage_channel_childrenenglish_with_divider)):
+        shutil.rmtree(fullpackage_channel_childrenenglish_with_divider)
+    os.mkdir(fullpackage_channel_childrenenglish_with_divider)
+    if (os.path.exists(fullpackage_channel_focus_on_children_english)):
+        shutil.rmtree(fullpackage_channel_focus_on_children_english)
+    os.mkdir(fullpackage_channel_focus_on_children_english)
+
+
+def generateAllPackageByChannelName():
+    #sign channel_jiliguala
+    command = 'java -jar ../lib/VasDolly.jar put -c ' + channel_jiliguala_path + ' -f ' + jiliguala_apk + ' ' + fullpackage_channel_jiliguala + ''
+    os.system(command)
+    print('channel_jiliguala command:' + command)
+
+    #sign channel_jiligula_childenglish
+    command = 'java -jar ../lib/VasDolly.jar put -c ' + channel_jiliguala_childrenenglish_path + ' -f ' + jiliguala_children_english_apk + ' ' + fullpackage_channel_childrenenglish + ''
+    os.system(command)
+    print('channel_jiligula_childenglish command:' + command)
+
+    #sign channel_jiligula_childenglish_with_divider
+    command = 'java -jar ../lib/VasDolly.jar put -c ' + channel_jiliguala_childrenenglish_with_divider_path + ' -f ' + jiliguala_children_english_with_divider_apk + ' ' + fullpackage_channel_childrenenglish_with_divider + ''
+    os.system(command)
+    print('channel_jiligula_childenglish_with_divider command:' + command)
+
+    #sign channel_jiligula_childenglish
+    command = 'java -jar ../lib/VasDolly.jar put -c ' + channel_jiliguala_childrenenglish_focuson_path + ' -f ' + jiliguala_focuson_children_english_apk + ' ' + fullpackage_channel_focus_on_children_english + ''
+    os.system(command)
+    print('channel_jiligula_childenglish command:' + command)
+
+
+
+def editChannelName():
+    renameChannelName(fullpackage_channel_jiliguala)
+    renameChannelName(fullpackage_channel_childrenenglish)
+    renameChannelName(fullpackage_channel_childrenenglish_with_divider)
+    renameChannelName(fullpackage_channel_focus_on_children_english)
+
+
+def renameChannelName(path):
+    print('renameChannelName:%s', path)
+    files = os.listdir(path)
+    date_prefix = ''
+    for f in files:
+        channel = f[0:f.index('-')]
+        if (date_prefix == ''):
+            date_prefix = f[f.index('-') + 1:f.rindex('_') + 1]
+        newname = date_prefix + channel + ".apk"
+        os.rename(path + f, path + newname)
+        print('newname:', newname)
+
+starttime = datetime.datetime.now()
+
+
+deleteAllChannelNameApk()
+
+generateDifferentTypeApkWithName()
+#
+updateAppName()
+
+generateAllPackageByChannelName()
+
+editChannelName()
+
+#
+# full_packages = [f for f in os.listdir(full_package_path)]
+#
+# print("full_packages",full_packages.__len__())
+
+# source_apk = sourcePackagePath + apkName
+#
+# command = 'java -jar ../lib/VasDolly.jar put -c ' + channel_path + ' -f ' + source_apk + ' ' + full_package_path + ''
+#
+# print('command:' + command)
+#
+# os.system(command)
+
+
+
+# editChannelName()
+
+
+def resolve_env(con):
+    if con.startswith('ENV_'):
+        return os.environ.get(con)
+    return con
+
+
+def unpackage_apk():
+    os.system(unPackageApkCommond)
 
 def replace_splash(channel):
     if channel == 'HUAWEIM':
@@ -253,27 +518,28 @@ def delete_source_file():
     if os.path.exists(src_file):
         os.remove(src_file)
 
-starttime = datetime.datetime.now()
 
-if (os.path.exists(reApkPath)):
-    shutil.rmtree(reApkPath)
 
-unpackage_apk()
+# if (os.path.exists(reApkPath)):
+#     shutil.rmtree(reApkPath)
 
-need_r_splash = resolve_env(cf.get('config', 'needRSplash'))
+
+# unpackage_apk()
 #
-for channel in channels_release:
-    if need_r_splash == 'True':
-        replace_splash(channel)
-    replace_app_name(channel)
-    replace_apk_channel(channel)
-    package_apk()
-    sign_apk(channel)
+# need_r_splash = resolve_env(cf.get('config', 'needRSplash'))
+# #
+# for channel in channels_release:
+#     if need_r_splash == 'True':
+#         replace_splash(channel)
+#     replace_app_name(channel)
+#     replace_apk_channel(channel)
+#     package_apk()
+#     sign_apk(channel)
 
 endTime = datetime.datetime.now()
 
 notify_package_success()
 
-delete_source_file()
+# delete_source_file()
 
 print('use time:%s' % (endTime - starttime))

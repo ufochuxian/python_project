@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.common.widget.pulltorefresh.widget.PullToRefreshLayout n1:id="@id/refresh_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <com.jiliguala.niuwa.common.widget.pulltorefresh.widget.PullableRecyclerView n1:id="@id/shelf_list" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jiliguala.niuwa.common.widget.pulltorefresh.widget.PullToRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jiliguala.niuwa.common.widget.pulltorefresh.widget.PullableRecyclerView android:id="@id/shelf_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </com.jiliguala.niuwa.common.widget.pulltorefresh.widget.PullToRefreshLayout>
 </LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <CheckBox n1:enabled="false" n1:id="@id/checkbox_shake" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="true" n1:text="Shake device vigorously" />
-    <CheckBox n1:enabled="false" n1:id="@id/checkbox_touch_menu" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="true" n1:text="Touch FarFaria logo in home" />
-    <CheckBox n1:id="@id/checkbox_orientation" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Hold device face down for 2s" />
-    <CheckBox n1:id="@id/checkbox_proximity" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Cover proximity sensor" />
-</LinearLayout>

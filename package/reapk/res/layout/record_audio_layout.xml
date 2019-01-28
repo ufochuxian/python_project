@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/audio_record_container" n1:layout_width="fill_parent" n1:layout_height="@dimen/bottom_bar_height">
-        <RelativeLayout n1:id="@id/recorder_container" n1:layout_width="200.0dip" n1:layout_height="40.0dip" n1:layout_centerInParent="true" n1:layout_centerVertical="true">
-            <ProgressBar n1:id="@id/record_progress_bar" n1:layout_width="fill_parent" n1:layout_height="40.0dip" style="@style/progress_round_style" />
-            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
-                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/click_to_record_audio_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/click_to_record" />
-                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:id="@id/record_time_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0" />
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/audio_record_container" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height">
+        <RelativeLayout android:id="@id/recorder_container" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/record_progress_bar" android:layout_width="fill_parent" android:layout_height="40.0dip" style="@style/progress_round_style" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:id="@id/click_to_record_audio_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_to_record" />
+                <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:id="@id/record_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
             </LinearLayout>
-            <ImageView n1:id="@id/record_status_iv" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/indicator_to_record" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
-            <ImageView n1:id="@id/equalizer_view" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="5.0dip" n1:src="@drawable/sound_effect_anim" n1:layout_centerVertical="true" />
+            <ImageView android:id="@id/record_status_iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/indicator_to_record" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/equalizer_view" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/sound_effect_anim" android:layout_centerVertical="true" />
         </RelativeLayout>
-        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_green" n1:gravity="center_vertical" n1:id="@id/retry_record_btn" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="@dimen/default_icon_height" n1:layout_marginRight="10.0dip" n1:text="删除" n1:singleLine="true" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_green" android:gravity="center_vertical" android:id="@id/retry_record_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/default_icon_height" android:layout_marginRight="10.0dip" android:text="删除" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
     </RelativeLayout>
 </merge>

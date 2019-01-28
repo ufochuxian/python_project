@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/sobot_list_divider_height" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <com.sobot.chat.widget.BorderImageView android:id="@id/sobot_goods_pic" android:visibility="visible" android:layout_width="@dimen/sobot_DIMEN_100PX" android:layout_height="@dimen/sobot_DIMEN_100PX" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/sobot_icon_consulting_default_pic" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="@dimen/sobot_text_font_normal" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/sobot_goods_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="#ff676e6f" android:ellipsize="end" android:id="@id/sobot_goods_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="2.0dip" />
+            <TextView android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_goods_info_btn_bgcolor" android:id="@id/sobot_goods_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_white" android:layout_gravity="bottom|center|right" android:id="@id/sobot_goods_sendBtn" android:background="@drawable/sobot_goods_info_btn_selector" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/sobot_button_send" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

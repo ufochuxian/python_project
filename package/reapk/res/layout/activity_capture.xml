@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <SurfaceView n1:id="@id/capture_preview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-    <RelativeLayout n1:id="@id/capture_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <RelativeLayout n1:id="@id/capture_crop_view" n1:background="@drawable/qr_code_bg" n1:layout_width="260.0dip" n1:layout_height="260.0dip" n1:layout_centerInParent="true">
-            <ImageView n1:id="@id/capture_scan_line" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:src="@drawable/scan_line" n1:layout_alignParentTop="true" />
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/capture_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/capture_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/capture_crop_view" android:background="@drawable/qr_code_bg" android:layout_width="260.0dip" android:layout_height="260.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/capture_scan_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/scan_line" android:layout_alignParentTop="true" />
         </RelativeLayout>
-        <ImageView n1:id="@id/capture_mask_top" n1:background="@color/mask_color" n1:layout_width="fill_parent" n1:layout_height="120.0dip" n1:layout_above="@id/capture_crop_view" n1:layout_alignParentTop="true" />
-        <RelativeLayout n1:id="@id/bottom_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/capture_crop_view" n1:layout_alignParentBottom="true">
-            <ImageView n1:id="@id/capture_mask_bottom" n1:background="@color/mask_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentBottom="true" />
-            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@android:color/white" n1:id="@id/capture_bottom_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/capture_qr_bar_code_tips" n1:layout_centerInParent="true" n1:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/capture_mask_top" android:background="@color/mask_color" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_above="@id/capture_crop_view" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/capture_crop_view" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/capture_mask_bottom" android:background="@color/mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/content_normal_size" android:textColor="@android:color/white" android:id="@id/capture_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/capture_qr_bar_code_tips" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
         </RelativeLayout>
-        <ImageView n1:id="@id/capture_mask_left" n1:background="@color/mask_color" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/capture_crop_view" n1:layout_above="@id/bottom_container" n1:layout_below="@id/capture_mask_top" n1:layout_alignParentLeft="true" />
-        <ImageView n1:id="@id/capture_mask_right" n1:background="@color/mask_color" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toRightOf="@id/capture_crop_view" n1:layout_above="@id/bottom_container" n1:layout_below="@id/capture_mask_top" n1:layout_alignParentRight="true" />
+        <ImageView android:id="@id/capture_mask_left" android:background="@color/mask_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/capture_crop_view" android:layout_above="@id/bottom_container" android:layout_below="@id/capture_mask_top" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/capture_mask_right" android:background="@color/mask_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/capture_crop_view" android:layout_above="@id/bottom_container" android:layout_below="@id/capture_mask_top" android:layout_alignParentRight="true" />
     </RelativeLayout>
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_back_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
-        <TextView n1:textColor="@android:color/white" n1:id="@id/scan_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/capture_qr_bar_code" n1:layout_alignBaseline="@id/action_back" n1:layout_centerInParent="true" style="@style/TopbarTitle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/action_back" android:background="@drawable/nav_icon_back_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textColor="@android:color/white" android:id="@id/scan_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/capture_qr_bar_code" android:layout_alignBaseline="@id/action_back" android:layout_centerInParent="true" style="@style/TopbarTitle" />
     </RelativeLayout>
 </RelativeLayout>

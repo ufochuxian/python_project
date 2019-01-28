@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/top_bar" n1:background="@drawable/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
-        <ImageView n1:id="@id/action_back" n1:background="@drawable/nav_icon_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-        <TextView n1:textColor="@color/color_default_dark_gray" n1:id="@id/title_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="兑换码" n1:singleLine="true" n1:layout_centerInParent="true" n1:layout_centerVertical="true" style="@style/TopbarTitle" />
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:background="@drawable/top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/action_back" android:background="@drawable/nav_icon_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/color_default_dark_gray" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换码" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/TopbarTitle" />
     </RelativeLayout>
-    <RelativeLayout n1:paddingTop="@dimen/top_bar_height" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <RelativeLayout n1:layout_width="310.0dip" n1:layout_height="210.0dip" n1:layout_centerInParent="true">
-            <ImageView n1:id="@id/cdkey_img" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/bg_redeem" n1:layout_centerInParent="true" />
-            <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="40.0dip" n1:text="请输入兑换码，兑换课程" n1:layout_centerHorizontal="true" />
-            <LinearLayout n1:background="@color/transparent" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="25.0dip" n1:layout_alignParentBottom="true">
-                <EditText n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/edit_exchange" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" n1:hint="请输入兑换码" n1:singleLine="true" n1:layout_weight="1.0" />
-                <Button n1:enabled="false" n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:id="@id/btn_exchange" n1:background="@drawable/bg_exchange_enable" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:text="兑换" />
+    <RelativeLayout android:paddingTop="@dimen/top_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="310.0dip" android:layout_height="210.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/cdkey_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_redeem" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="请输入兑换码，兑换课程" android:layout_centerHorizontal="true" />
+            <LinearLayout android:background="@color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true">
+                <EditText android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:id="@id/edit_exchange" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:hint="请输入兑换码" android:singleLine="true" android:layout_weight="1.0" />
+                <Button android:enabled="false" android:textSize="@dimen/content_normal_size" android:textColor="@color/white" android:id="@id/btn_exchange" android:background="@drawable/bg_exchange_enable" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="兑换" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>

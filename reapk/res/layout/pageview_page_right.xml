@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/page_artwork" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" />
-    <TextView n1:textSize="@dimen/pageview_page_text_overlay_textsize" n1:textColor="@android:color/black" n1:id="@id/page_text" n1:background="@drawable/reader_text_overlay_background" n1:padding="@dimen/pageview_page_text_overlay_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/pageview_page_text_overlay_margin" n1:layout_alignBottom="@id/page_artwork" />
-    <Button n1:textColor="@android:color/white" n1:id="@id/translate_btn" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginTop="-30.0dip" n1:layout_marginRight="10.0dip" n1:text="@string/read_chinese_translate_btn_tips" n1:layout_below="@id/page_text" n1:layout_alignParentRight="true" />
-</RelativeLayout>

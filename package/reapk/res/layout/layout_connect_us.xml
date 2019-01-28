@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="300.0dip" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip">
-        <ImageView n1:id="@id/weixin_icon" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:src="@drawable/icon_weixin_sm" n1:layout_centerVertical="true" />
-        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/weixin_icon">
-            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="叽里呱啦官方服务号" />
-            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="JLGLBaby" />
+<LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_white_bg" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <ImageView android:id="@id/weixin_icon" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/icon_weixin_sm" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/weixin_icon">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="叽里呱啦官方服务号" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JLGLBaby" />
         </LinearLayout>
     </RelativeLayout>
-    <ImageView n1:layout_gravity="center_horizontal" n1:background="@drawable/qrcode_jiliguala" n1:layout_width="220.0dip" n1:layout_height="220.0dip" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="30.0dip" n1:scaleType="fitXY" />
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="30.0dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/qrcode_jiliguala" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="30.0dip" />
 </LinearLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="10.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.common.widget.wheelview.RadioRelativeLayout n1:id="@id/bg" n1:background="@drawable/shape_oval_done" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:ratio="1.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
-        <ImageView n1:id="@id/star_done" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/sicon_star_gloden" />
-        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:id="@id/day" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="1天" />
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jiliguala.niuwa.common.widget.wheelview.RadioRelativeLayout android:id="@id/bg" android:background="@drawable/shape_oval_done" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ratio="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/star_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sicon_star_gloden" />
+        <TextView android:textSize="@dimen/content_normal_size_smaller" android:textColor="@color/white" android:id="@id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1天" />
     </LinearLayout>
-    <com.jiliguala.niuwa.common.widget.RatioImageView n1:id="@id/gift_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_gift" n1:layout_centerInParent="true" n3:ratio="1.0" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.jiliguala.niuwa.common.widget.RatioImageView android:id="@id/gift_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gift" android:layout_centerInParent="true" app:ratio="1.0" />
 </RelativeLayout>

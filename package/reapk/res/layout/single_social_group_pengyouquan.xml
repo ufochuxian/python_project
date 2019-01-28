@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:gravity="center" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/single_pengyouquan_container" n1:background="@drawable/btn_round_white_25" n1:visibility="gone" n1:layout_width="220.0dip" n1:layout_height="wrap_content" n1:layout_marginBottom="30.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/circle_friend_icon" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:src="@drawable/icon_friendscircle" />
-    <TextView n1:textSize="@dimen/content_x_large_size" n1:textStyle="bold" n1:textColor="@color/color_green" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="50.0dip" n1:text="@string/full_wechatmoments" n1:drawablePadding="5.0dip" />
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/single_pengyouquan_container" android:background="@drawable/btn_round_white_25" android:visibility="gone" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/circle_friend_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_friendscircle" />
+    <TextView android:textSize="@dimen/content_x_large_size" android:textStyle="bold" android:textColor="@color/color_green" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/full_wechatmoments" android:drawablePadding="5.0dip" />
 </LinearLayout>

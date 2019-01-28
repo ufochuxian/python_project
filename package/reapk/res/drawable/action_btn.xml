@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_pressed="true"
-      xmlns:n1="http://schemas.android.com/apk/res/android">
-        <shape n1:shape="rectangle">
-            <corners n1:radius="2.0dip" />
-            <solid n1:color="#ff44bf1a" />
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dip" />
+            <solid android:color="#ff44bf1a" />
         </shape>
     </item>
-    <item n2:state_enabled="true"
-      xmlns:n2="http://schemas.android.com/apk/res/android">
-        <shape n2:shape="rectangle">
-            <corners n2:radius="2.0dip" />
-            <solid n2:color="#ff44bf1a" />
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dip" />
+            <solid android:color="#ff44bf1a" />
         </shape>
     </item>
-    <item n3:state_enabled="false"
-      xmlns:n3="http://schemas.android.com/apk/res/android">
-        <shape n3:shape="rectangle">
-            <corners n3:radius="2.0dip" />
-            <solid n3:color="#ff337523" />
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dip" />
+            <solid android:color="#ff337523" />
         </shape>
     </item>
     <item>
-        <shape n4:shape="rectangle"
-          xmlns:n4="http://schemas.android.com/apk/res/android">
-            <corners n4:radius="2.0dip" />
-            <solid n4:color="#ff337523" />
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dip" />
+            <solid android:color="#ff337523" />
         </shape>
     </item>
 </selector>

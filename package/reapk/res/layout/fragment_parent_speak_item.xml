@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:id="@id/container" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <View n1:id="@id/mask" n1:background="@color/mask_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-    <RelativeLayout n1:id="@id/center_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
-            <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/flashcard_iv" n1:visibility="gone" n1:layout_width="@dimen/speaking_image_size" n1:layout_height="@dimen/speaking_image_size" n1:layout_marginBottom="-20.0dip" n1:scaleType="centerCrop" />
-            <RelativeLayout n1:orientation="vertical" n1:id="@id/word_container" n1:background="@drawable/speak_bubble_bg_20" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip">
-                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:src="@drawable/nicon_quote" />
-                <TextView n1:textSize="@dimen/content_xx_large_size" n1:gravity="center" n1:id="@id/word" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:layout_alignParentTop="true" />
-                <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:gravity="center" n1:id="@id/cword" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/word" />
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mask" android:background="@color/mask_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/center_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/flashcard_iv" android:visibility="gone" android:layout_width="@dimen/speaking_image_size" android:layout_height="@dimen/speaking_image_size" android:layout_marginBottom="-20.0dip" android:scaleType="centerCrop" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/word_container" android:background="@drawable/speak_bubble_bg_20" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/nicon_quote" />
+                <TextView android:textSize="@dimen/content_xx_large_size" android:gravity="center" android:id="@id/word" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_second_gray" android:gravity="center" android:id="@id/cword" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/word" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

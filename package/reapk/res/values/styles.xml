@@ -2,6 +2,10 @@
 <resources>
     <style name="AlertDialog.AppCompat" parent="@style/Base.AlertDialog.AppCompat" />
     <style name="AlertDialog.AppCompat.Light" parent="@style/Base.AlertDialog.AppCompat.Light" />
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/sobot_popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/sobot_popupwindow_out</item>
+    </style>
     <style name="Animation.AppCompat.Dialog" parent="@style/Base.Animation.AppCompat.Dialog" />
     <style name="Animation.AppCompat.DropDownUp" parent="@style/Base.Animation.AppCompat.DropDownUp" />
     <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
@@ -16,6 +20,7 @@
         <item name="datePickerStyle">@style/DpStyle</item>
         <item name="numberPickerStyle">@style/NpStyle</item>
     </style>
+    <style name="BanFiraCode" />
     <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listItemLayout">@layout/select_dialog_item_material</item>
@@ -926,6 +931,20 @@
         <item name="android:scaleType">center</item>
         <item name="android:minWidth">56.0dip</item>
     </style>
+    <style name="BlackBigText">
+        <item name="android:textSize">@dimen/text_content_18_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_40</item>
+    </style>
+    <style name="BlackLargeText">
+        <item name="android:textSize">@dimen/content_x_large_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_40</item>
+    </style>
+    <style name="BlackSmallText">
+        <item name="android:textSize">@dimen/content_normal_size_smaller</item>
+        <item name="android:textColor">@color/black_40</item>
+    </style>
     <style name="ButtonBar">
         <item name="android:background">@android:drawable/bottom_bar</item>
         <item name="android:paddingLeft">2.0dip</item>
@@ -960,6 +979,17 @@
     <style name="ButtonCompatOverlay">
         <item name="android:buttonStyle">@style/ButtonCompat</item>
     </style>
+    <style name="CornerCountTextViewStyle">
+        <item name="android:textSize">@dimen/content_large_size</item>
+        <item name="android:textColor">@color/brown_76</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/corner_count_down_bg</item>
+    </style>
+    <style name="CountTextViewStyle">
+        <item name="android:textSize">@dimen/content_middle_size</item>
+        <item name="android:textColor">@color/yellow_fd</item>
+        <item name="android:layout_margin">4.0dip</item>
+    </style>
     <style name="CustomActionBarLightTheme" parent="@android:style/Theme.Holo.Light">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:actionBarStyle">@style/CustomActionBarTheme.CustomActionBar</item>
@@ -985,6 +1015,11 @@
     </style>
     <style name="CustomAppTheme" parent="@style/AppTheme">
         <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Dialog.FullScreen" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/color_transparent_74</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
     </style>
     <style name="DialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1043,6 +1078,10 @@
         <item name="android:windowEnterAnimation">@anim/expand</item>
         <item name="android:windowExitAnimation">@anim/collpase</item>
     </style>
+    <style name="FullScreenLeftRightDialogStyle" parent="@style/FullScreenDialog">
+        <item name="android:windowEnterAnimation">@anim/left_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/right_slide_out</item>
+    </style>
     <style name="FullScreenLightDialog" parent="@android:style/Theme.Holo.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
@@ -1079,9 +1118,46 @@
         <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
         <item name="metaButtonBarStyle">@style/ButtonBar</item>
     </style>
+    <style name="GrayDescText">
+        <item name="android:textSize">@dimen/content_normal_size</item>
+        <item name="android:textColor">@color/btn_disable_gray</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="GrayLightText">
+        <item name="android:textSize">@dimen/content_normal_size</item>
+        <item name="android:textColor">@color/gray_light</item>
+    </style>
+    <style name="GraySmallestText">
+        <item name="android:textSize">@dimen/content_middle_small_size</item>
+        <item name="android:textColor">@color/gray_9d</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
     <style name="GrayText">
         <item name="android:textSize">@dimen/content_x_small_size</item>
         <item name="android:textColor">@color/color_default_gray</item>
+    </style>
+    <style name="GreenLargeText">
+        <item name="android:textSize">@dimen/content_large_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/green_89</item>
+    </style>
+    <style name="GreenNormalText">
+        <item name="android:textSize">@dimen/content_normal_size</item>
+        <item name="android:textColor">@color/green_89</item>
+    </style>
+    <style name="GreenSmallText">
+        <item name="android:textSize">@dimen/content_middle_small_size</item>
+        <item name="android:textColor">@color/green_89</item>
+    </style>
+    <style name="GreenTitleText">
+        <item name="android:textSize">@dimen/content_x_large_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/green_89</item>
+    </style>
+    <style name="GreenXLargeText">
+        <item name="android:textSize">@dimen/title_x_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/green_89</item>
     </style>
     <style name="GuavatarDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -1608,6 +1684,8 @@
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
     <style name="Theme.notAnimation" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@style/notAnimation</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="@style/Base.ThemeOverlay.AppCompat" />
@@ -1640,6 +1718,36 @@
         <item name="v_progress_vacant_color">#00000000</item>
         <item name="v_progress_vertical_progress_bar_height">1.5dip</item>
         <item name="v_progress_vertical_progress_color">#fffee335</item>
+    </style>
+    <style name="WhiteBigText">
+        <item name="android:textSize">@dimen/text_content_18_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteLargeText">
+        <item name="android:textSize">50.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteMiddleText">
+        <item name="android:textSize">@dimen/content_middle_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteNormalText">
+        <item name="android:textSize">@dimen/content_normal_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteSmallText">
+        <item name="android:textSize">@dimen/content_normal_size_smaller</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteSmallestText">
+        <item name="android:textSize">@dimen/content_middle_small_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteTitleText">
+        <item name="android:textSize">@dimen/content_x_large_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
     </style>
     <style name="Widget" />
     <style name="Widget.AppCompat.ActionBar" parent="@style/Base.Widget.AppCompat.ActionBar" />
@@ -1782,50 +1890,6 @@
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:background">@android:color/transparent</item>
     </style>
-    <style name="ali_feedback_common_title_left_btn_shadow">
-        <item name="android:textSize">@dimen/ali_feedback_common_text_size</item>
-        <item name="android:textColor">@drawable/ali_feedback_commont_title_btn_text</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/ali_feedback_icon_back_white</item>
-        <item name="android:layout_marginLeft">5.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:drawableLeft">@null</item>
-        <item name="android:layout_alignParentLeft">true</item>
-        <item name="android:layout_centerVertical">true</item>
-    </style>
-    <style name="ali_feedback_common_title_style">
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@color/ali_feedback_color_white</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/ali_feedback_title_bar_height</item>
-    </style>
-    <style name="ali_feedback_common_title_text_shadow">
-        <item name="android:textSize">@dimen/ali_feedback_common_text_size</item>
-        <item name="android:textColor">@color/ali_feedback_color_white</item>
-        <item name="android:ellipsize">middle</item>
-        <item name="android:gravity">center</item>
-        <item name="android:paddingLeft">@dimen/ali_feedback_title_middle_margin</item>
-        <item name="android:paddingRight">@dimen/ali_feedback_title_middle_margin</item>
-        <item name="android:singleLine">true</item>
-    </style>
-    <style name="ali_feedback_commont_title_right_btn_shadow">
-        <item name="android:textSize">@dimen/ali_feedback_small_text_size</item>
-        <item name="android:textColor">@color/ali_feedback_color_white</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/ali_feedback_icon_more</item>
-        <item name="android:layout_marginRight">@dimen/ali_feedback_column_up_unit_margin</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_centerVertical">true</item>
-    </style>
-    <style name="ali_feedback_contentoverlay" parent="@android:style/Theme">
-        <item name="android:screenOrientation">portrait</item>
-        <item name="android:windowBackground">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-    </style>
     <style name="block_canary_BlockCanary.Base" parent="@android:style/Theme.Holo" />
     <style name="dialog_animation">
         <item name="android:windowEnterAnimation">@anim/fading_in</item>
@@ -1853,6 +1917,9 @@
         <item name="android:paddingRight">10.0dip</item>
         <item name="android:paddingBottom">3.0dip</item>
     </style>
+    <style name="gameLoadingTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/game_baozi_loading</item>
+    </style>
     <style name="loading_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
@@ -1861,6 +1928,9 @@
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="mcph_gameLoadingTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/gameloadingbg</item>
     </style>
     <style name="notAnimation">
         <item name="android:activityOpenEnterAnimation">@null</item>
@@ -1903,6 +1973,154 @@
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ff59dc99</item>
         <item name="android:gravity">center</item>
+    </style>
+    <style name="sobot_AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
+    <style name="sobot_AppTheme" parent="@style/sobot_AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="sobot_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="sobot_cb_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/sobot_btn_text_color_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/sobot_evaluate_btn_selector</item>
+        <item name="android:paddingLeft">27.0dip</item>
+        <item name="android:layout_width">120.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="sobot_center_remind_note">
+        <item name="android:textSize">@dimen/sobot_listview_remind_text_size</item>
+        <item name="android:textColor">@color/sobot_listview_remind_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sobot_toast_selector</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_marginBottom">15.0dip</item>
+    </style>
+    <style name="sobot_center_remind_time" parent="@style/sobot_center_remind_note">
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="sobot_chatting_imghead">
+        <item name="android:background">@null</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="sobot_chatting_keyboard_btn">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="sobot_chatting_nickname">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxEms">13</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="sobot_chatting_panel_upload">
+        <item name="android:textSize">@dimen/sobot_text_font_small</item>
+        <item name="android:textColor">@color/sobot_color_bottom_upload_btn_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10.0dip</item>
+        <item name="android:layout_marginLeft">27.0dip</item>
+        <item name="android:drawablePadding">10.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="sobot_clearHistoryDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+    </style>
+    <style name="sobot_custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="sobot_dialog_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/sobot_round_angle_toast</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="sobot_dialog_dcrc" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="sobot_dialog_skill" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="sobot_pickerview_dialogAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/sobot_pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/sobot_pickerview_dialog_scale_out</item>
+    </style>
+    <style name="sobot_progress_circle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateDrawable">@drawable/sobot_progressbar_circle_loading</item>
+    </style>
+    <style name="sobot_rb_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/sobot_btn_text_color_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/sobot_evaluate_btn_selector</item>
+        <item name="android:paddingLeft">27.0dip</item>
+        <item name="android:layout_width">120.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="sobot_roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/sobot_rating_yellow</item>
+        <item name="android:numStars">5</item>
     </style>
     <style name="weekName">
         <item name="android:textSize">16.0sp</item>

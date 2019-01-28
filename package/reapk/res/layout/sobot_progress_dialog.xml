@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="165.0dip" android:layout_height="90.0dip">
+        <ImageView android:id="@id/loadingImageView" android:background="@drawable/sobot_loading_dialog_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:gravity="center" android:id="@id/id_tv_loadingmsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sobot_loading" android:layout_below="@id/loadingImageView" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

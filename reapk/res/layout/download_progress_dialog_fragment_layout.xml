@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="叽里呱啦更新中，请稍候..." />
-    <com.jiliguala.niuwa.common.widget.numberprogress.NumberProgressBar n1:id="@id/download_progress" n1:paddingLeft="20.0dip" n1:paddingTop="8.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:progress="0" style="@style/NumberProgressBar_Default" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-</LinearLayout>

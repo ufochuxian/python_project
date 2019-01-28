@@ -2,6 +2,12 @@
 <resources>
     <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
     <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="sobot_btn_skill_normal">#ff09aeb0</item>
+    <item type="drawable" name="sobot_btn_skill_pressed">#ff676f6f</item>
+    <item type="drawable" name="sobot_button_backward_normal">#00000000</item>
+    <item type="drawable" name="sobot_button_backward_pressed">#ffff3030</item>
+    <item type="drawable" name="sobot_color_drawable_text_black">#ff000000</item>
+    <item type="drawable" name="sobot_color_drawbale_text_white">#ffffffff</item>
     <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</item>
     <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</item>
 </resources>

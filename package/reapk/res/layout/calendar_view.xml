@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:layout_gravity="center_horizontal" n1:id="@id/cv_month_name" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@android:style/TextAppearance.Medium" />
-    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/cv_day_names" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_marginBottom="6.0dip">
-        <TextView n1:gravity="center" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
-        <TextView n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/cv_month_name" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Medium" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cv_day_names" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:gravity="center" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
     </LinearLayout>
-    <ImageView n1:gravity="fill_horizontal" n1:id="@id/cv_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:scaleType="fitXY" />
-    <ListView n1:id="@android:id/list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawSelectorOnTop="false" n1:cacheColorHint="@android:color/transparent" n1:fastScrollEnabled="false" n1:overScrollMode="never" />
+    <ImageView android:gravity="fill_horizontal" android:id="@id/cv_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:fastScrollEnabled="false" android:overScrollMode="never" />
 </LinearLayout>

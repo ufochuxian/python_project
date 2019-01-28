@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/select_date_bg" n1:visibility="gone" n1:layout_width="48.0dip" n1:layout_height="48.0dip" n1:src="@drawable/calender_selected_bg" n1:layout_centerInParent="true" />
-    <com.jiliguala.niuwa.common.widget.RoundProgressBar n1:id="@id/video_progress" n1:background="#00000000" n1:layout_width="46.0dip" n1:layout_height="46.0dip" n1:layout_centerInParent="true" n2:align_corner="0" n2:fill="false" n2:paint_color="@color/watch_color" n2:paint_width="3.0dip" n2:progress_bar_margin="3.0dip" n2:progress_bar_margin_color="#00000000" n2:progress_bg_paint_color="@color/progress_grey_color" n2:progress_steps="1000" n2:show_progress_bg="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <com.jiliguala.niuwa.common.widget.RoundProgressBar n1:id="@id/audio_progress" n1:background="#00000000" n1:layout_width="41.0dip" n1:layout_height="41.0dip" n1:layout_centerInParent="true" n3:align_corner="0" n3:fill="false" n3:paint_color="@color/listen_color" n3:paint_width="3.0dip" n3:progress_bar_margin="3.0dip" n3:progress_bar_margin_color="#00000000" n3:progress_bg_paint_color="@color/progress_grey_color" n3:progress_steps="1000" n3:show_progress_bg="true" xmlns:n3="http://schemas.android.com/apk/res-auto" />
-    <com.jiliguala.niuwa.common.widget.CircleImageView n1:id="@id/day_bg" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_centerInParent="true" />
-    <TextView n1:textSize="@dimen/content_small_size" n1:textStyle="normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tvtext" n1:layout_width="34.0dip" n1:layout_height="34.0dip" n1:text="10" n1:layout_centerInParent="true" />
-</RelativeLayout>

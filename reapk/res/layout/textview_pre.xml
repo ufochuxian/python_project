@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_dark_gray" n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/round_corner_white_btn_bg_large" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:drawableLeft="@drawable/s_icon_left_arrow_type3"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />

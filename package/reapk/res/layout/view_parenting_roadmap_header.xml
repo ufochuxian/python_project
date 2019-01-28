@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <View n1:id="@id/header" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </RelativeLayout>

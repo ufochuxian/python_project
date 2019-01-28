@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bg_level" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/suggest_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:src="@drawable/tag_tuijian" android:maxHeight="51.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="@id/bg_level" />
+    <ImageView android:id="@id/btn_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/nav_icon_close" android:maxHeight="51.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toEndOf="@id/bg_level" app:layout_constraintTop_toTopOf="@id/bg_level" />
+</android.support.constraint.ConstraintLayout>

@@ -78,6 +78,9 @@
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
     </attr>
+    <attr name="ba_end_color" format="color" />
+    <attr name="ba_radius" format="dimension" />
+    <attr name="ba_start_color" format="color" />
     <attr name="back_ground" format="reference" />
     <attr name="background" format="reference" />
     <attr name="backgroundSplit" format="reference|color" />
@@ -93,6 +96,15 @@
     <attr name="barLength" format="dimension" />
     <attr name="bar_height_percent" format="float" />
     <attr name="bar_width_percent" format="float" />
+    <attr name="barrierAllowsGoneWidgets" format="boolean" />
+    <attr name="barrierDirection">
+        <enum name="bottom" value="3" />
+        <enum name="end" value="6" />
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="start" value="5" />
+        <enum name="top" value="2" />
+    </attr>
     <attr name="bg_progress_color" format="reference|color" />
     <attr name="border_color" format="color" />
     <attr name="border_overlay" format="boolean" />
@@ -128,6 +140,7 @@
     </attr>
     <attr name="calendarViewStyle" format="reference" />
     <attr name="centered" format="boolean" />
+    <attr name="chainUseRtl" format="boolean" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
     <attr name="circularProgressBarStyle" format="reference" />
@@ -150,6 +163,9 @@
     <attr name="columnCount" format="integer" />
     <attr name="columnOrderPreserved" format="boolean" />
     <attr name="commitIcon" format="reference" />
+    <attr name="constraintSet" format="reference" />
+    <attr name="constraint_referenced_ids" format="string" />
+    <attr name="content" format="reference" />
     <attr name="contentInsetEnd" format="dimension" />
     <attr name="contentInsetEndWithActions" format="dimension" />
     <attr name="contentInsetLeft" format="dimension" />
@@ -199,6 +215,7 @@
         <enum name="game" value="1001" />
         <enum name="guavatar" value="1002" />
         <enum name="interact" value="1000" />
+        <enum name="nativegame" value="1003" />
     </attr>
     <attr name="dp_calendarViewShown" format="boolean" />
     <attr name="dp_endYear" format="integer" />
@@ -237,16 +254,30 @@
     </attr>
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
+    <attr name="dsv_orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
     <attr name="editTextBackground" format="reference" />
     <attr name="editTextColor" format="reference|color" />
     <attr name="editTextStyle" format="reference" />
     <attr name="elevation" format="dimension" />
     <attr name="emptyView" format="reference" />
+    <attr name="emptyVisibility">
+        <enum name="gone" value="0" />
+        <enum name="invisible" value="1" />
+    </attr>
     <attr name="errorView" format="reference" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
     <attr name="figures" format="integer" />
     <attr name="fill" format="boolean" />
     <attr name="fillColor" format="color" />
+    <attr name="fillShape">
+        <enum name="circle" value="0" />
+        <enum name="rect" value="1" />
+        <enum name="roundRect" value="2" />
+    </attr>
+    <attr name="fillWidth" format="dimension" />
     <attr name="fixAspectRatio" format="boolean" />
     <attr name="fletBackground" format="reference|color" />
     <attr name="fletPadding" format="reference|dimension" />
@@ -331,6 +362,8 @@
     <attr name="layout_column" format="integer" />
     <attr name="layout_columnSpan" format="integer" min="1" />
     <attr name="layout_columnWeight" format="float" />
+    <attr name="layout_constrainedHeight" format="boolean" />
+    <attr name="layout_constrainedWidth" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -342,6 +375,9 @@
     <attr name="layout_constraintBottom_toTopOf" format="reference">
         <enum name="parent" value="0" />
     </attr>
+    <attr name="layout_constraintCircle" format="reference" />
+    <attr name="layout_constraintCircleAngle" format="integer" />
+    <attr name="layout_constraintCircleRadius" format="dimension" />
     <attr name="layout_constraintDimensionRatio" format="string" />
     <attr name="layout_constraintEnd_toEndOf" format="reference">
         <enum name="parent" value="0" />
@@ -352,6 +388,18 @@
     <attr name="layout_constraintGuide_begin" format="dimension" />
     <attr name="layout_constraintGuide_end" format="dimension" />
     <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHeight_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_percent" format="float" />
     <attr name="layout_constraintHorizontal_bias" format="float" />
     <attr name="layout_constraintHorizontal_chainStyle">
         <enum name="packed" value="2" />
@@ -393,6 +441,18 @@
         <enum name="spread_inside" value="1" />
     </attr>
     <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_constraintWidth_default">
+        <enum name="percent" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_percent" format="float" />
     <attr name="layout_editor_absoluteX" format="dimension" />
     <attr name="layout_editor_absoluteY" format="dimension" />
     <attr name="layout_goneMarginBottom" format="dimension" />
@@ -418,10 +478,13 @@
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="layout_optimizationLevel">
-        <flag name="all" value="0x00000002" />
-        <flag name="basic" value="0x00000004" />
-        <flag name="chains" value="0x00000008" />
-        <flag name="none" value="0x00000001" />
+        <flag name="barrier" value="0x00000002" />
+        <flag name="chains" value="0x00000004" />
+        <flag name="dimensions" value="0x00000008" />
+        <flag name="direct" value="0x00000001" />
+        <flag name="groups" value="0x00000020" />
+        <flag name="none" value="0x00000000" />
+        <flag name="standard" value="0x00000007" />
     </attr>
     <attr name="layout_row" format="integer" />
     <attr name="layout_rowSpan" format="integer" min="1" />
@@ -449,10 +512,31 @@
     <attr name="loadingView" format="reference" />
     <attr name="logo" format="reference" />
     <attr name="logoDescription" format="string" />
+    <attr name="lottie_autoPlay" format="boolean" />
+    <attr name="lottie_cacheStrategy">
+        <enum name="none" value="0" />
+        <enum name="strong" value="2" />
+        <enum name="weak" value="1" />
+    </attr>
+    <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+    <attr name="lottie_fileName" format="string" />
+    <attr name="lottie_imageAssetsFolder" format="string" />
+    <attr name="lottie_loop" format="boolean" />
+    <attr name="lottie_progress" format="float" />
+    <attr name="lottie_rawRes" format="reference" />
+    <attr name="lottie_repeatCount" format="integer" />
+    <attr name="lottie_repeatMode">
+        <enum name="restart" value="1" />
+        <enum name="reverse" value="2" />
+    </attr>
+    <attr name="lottie_scale" format="float" />
+    <attr name="lottie_url" format="string" />
     <attr name="mask" format="reference" />
     <attr name="matchChildWidth" format="reference" />
     <attr name="max" format="integer" />
     <attr name="maxButtonHeight" format="dimension" />
+    <attr name="max_select" format="integer" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="metaButtonBarButtonStyle" format="reference" />
     <attr name="metaButtonBarStyle" format="reference" />
@@ -496,6 +580,10 @@
     <attr name="orientation">
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
+    </attr>
+    <attr name="overFlipMode">
+        <enum name="glow" value="0" />
+        <enum name="rubber_band" value="1" />
     </attr>
     <attr name="overlapAnchor" format="boolean" />
     <attr name="paddingBottomNoButtons" format="dimension" />
@@ -545,11 +633,19 @@
     <attr name="pstsDividerPadding" format="dimension" />
     <attr name="pstsIndicatorColor" format="color" />
     <attr name="pstsIndicatorHeight" format="dimension" />
+    <attr name="pstsIndicatorWidth" format="dimension" />
+    <attr name="pstsNeedBold" format="boolean" />
     <attr name="pstsScrollOffset" format="dimension" />
     <attr name="pstsShouldExpand" format="boolean" />
     <attr name="pstsTabBackground" format="reference" />
     <attr name="pstsTabPaddingLeftRight" format="dimension" />
+    <attr name="pstsTabSelBackground" format="reference" />
+    <attr name="pstsTabSelTextColor" format="color" />
+    <attr name="pstsTabTextColor" format="color" />
     <attr name="pstsTextAllCaps" format="boolean" />
+    <attr name="pstsTextPaddingLR" format="dimension" />
+    <attr name="pstsTextPaddingTB" format="dimension" />
+    <attr name="pstsTextSize" format="dimension" />
     <attr name="pstsUnderlineColor" format="color" />
     <attr name="pstsUnderlineHeight" format="dimension" />
     <attr name="ptrAdapterViewBackground" format="reference|color" />
@@ -582,6 +678,10 @@
     <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
     <attr name="ptrShowIndicator" format="reference|boolean" />
     <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="purchase_type" format="integer">
+        <enum name="normal" value="0" />
+        <enum name="sku" value="1" />
+    </attr>
     <attr name="queryBackground" format="reference" />
     <attr name="queryHint" format="string" />
     <attr name="radioButtonStyle" format="reference" />
@@ -590,6 +690,11 @@
     <attr name="ratingBarStyleIndicator" format="reference" />
     <attr name="ratingBarStyleSmall" format="reference" />
     <attr name="ratio" format="float" />
+    <attr name="ratio_type" format="integer">
+        <enum name="heightScreen" value="2" />
+        <enum name="heightWidth" value="0" />
+        <enum name="widthScreen" value="1" />
+    </attr>
     <attr name="reverseLayout" format="boolean" />
     <attr name="riv_border_color" format="color" />
     <attr name="riv_border_width" format="dimension" />
@@ -681,6 +786,11 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="switchStyle" format="reference" />
     <attr name="switchTextAppearance" format="reference" />
+    <attr name="tag_gravity">
+        <enum name="center" value="0" />
+        <enum name="left" value="-1" />
+        <enum name="right" value="1" />
+    </attr>
     <attr name="textAllCaps" format="reference|boolean" />
     <attr name="textAppearanceLargePopupMenu" format="reference" />
     <attr name="textAppearanceListItem" format="reference" />

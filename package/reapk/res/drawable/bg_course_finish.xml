@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_checked="true" n1:drawable="@drawable/ic_launcher"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <item n2:state_checked="false" n2:drawable="@drawable/s_icon_right_arrow_type2"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
-    <item n3:drawable="@drawable/s_icon_right_arrow_type2"
-      xmlns:n3="http://schemas.android.com/apk/res/android" />
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/ic_launcher" />
+    <item android:state_checked="false" android:drawable="@drawable/s_icon_right_arrow_type2" />
+    <item android:drawable="@drawable/s_icon_right_arrow_type2" />
 </selector>

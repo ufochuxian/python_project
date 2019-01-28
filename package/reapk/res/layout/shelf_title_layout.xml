@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:id="@id/top_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:src="@color/divider_dark_line" n1:layout_alignParentBottom="true" />
-    <ImageButton n1:id="@id/top_back" n1:background="@drawable/nav_icon_back_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
-    <TextView n1:textSize="@dimen/content_large_size" n1:textStyle="bold" n1:textColor="@android:color/white" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/story_shelf" n1:layout_centerInParent="true" />
+<RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:src="@color/divider_dark_line" android:layout_alignParentBottom="true" />
+    <ImageButton android:id="@id/top_back" android:background="@drawable/nav_icon_back_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/content_large_size" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_shelf" android:layout_centerInParent="true" />
 </RelativeLayout>

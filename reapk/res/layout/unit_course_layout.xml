@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:id="@id/banner_content_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/topContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true">
-        <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_gray" n1:gravity="center" n1:id="@id/hint" n1:layout_width="wrap_content" n1:layout_height="60.0dip" n1:text="课程明天" />
-        <Button n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/share_btn_unlock" n1:background="@drawable/round_green_btn_small_selector" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/button_small_height" n1:layout_marginLeft="10.0dip" n1:text="立即分享" n1:layout_toRightOf="@id/hint" />
-    </LinearLayout>
-    <com.jiliguala.niuwa.common.widget.MultiViewPager n1:id="@id/course_pager" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/topContainer" n1:layout_centerVertical="true" n2:matchChildWidth="@id/vg_cover" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-</RelativeLayout>

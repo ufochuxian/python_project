@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height">
-        <TextView n1:textSize="@dimen/content_large_size" n1:layout_gravity="center_vertical" n1:id="@id/forum_all" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/forum_sort_all_text" style="@style/forum_sorter_text_style" />
-        <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height">
+        <TextView android:textSize="@dimen/content_large_size" android:layout_gravity="center_vertical" android:id="@id/forum_all" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/forum_sort_all_text" style="@style/forum_sorter_text_style" />
+        <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
     </RelativeLayout>
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height">
-        <TextView n1:textSize="@dimen/content_large_size" n1:layout_gravity="center_vertical" n1:id="@id/forum_best" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:text="@string/forum_sort_sel_text" style="@style/forum_sorter_text_style" />
-        <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height">
+        <TextView android:textSize="@dimen/content_large_size" android:layout_gravity="center_vertical" android:id="@id/forum_best" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height" android:text="@string/forum_sort_sel_text" style="@style/forum_sorter_text_style" />
+        <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
     </RelativeLayout>
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height">
-        <TextView n1:textSize="@dimen/content_large_size" n1:layout_gravity="center_vertical" n1:id="@id/forum_new" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="@dimen/default_row_height" n1:text="@string/forum_sort_new_text" style="@style/forum_sorter_text_style" />
-        <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_alignParentBottom="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height">
+        <TextView android:textSize="@dimen/content_large_size" android:layout_gravity="center_vertical" android:id="@id/forum_new" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height" android:text="@string/forum_sort_new_text" style="@style/forum_sorter_text_style" />
+        <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
     </RelativeLayout>
 </LinearLayout>

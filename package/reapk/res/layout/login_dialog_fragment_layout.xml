@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:background="@drawable/round_corner_white_bg" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:layout_gravity="center" n1:background="@drawable/popup_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="0.0dip" />
-    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:layout_gravity="center" n1:id="@id/login_info_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:text="@string/add_user_need_login_tips" style="@style/LoginTextStyle" />
+<LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_white_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:background="@drawable/popup_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="0.0dip" />
+    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:layout_gravity="center" android:id="@id/login_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/add_user_need_login_tips" style="@style/LoginTextStyle" />
     <include layout="@layout/social_group" />
-    <ImageView n1:background="@drawable/line_lightgrey" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="15.0dip" />
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="15.0dip">
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:id="@id/email_register" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="邮箱注册" />
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_green" n1:id="@id/email_login" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="手机/邮箱 登录" n1:layout_alignParentRight="true" />
+    <ImageView android:background="@drawable/line_lightgrey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_green" android:id="@id/email_register" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱注册" />
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_green" android:id="@id/email_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机/邮箱 登录" android:layout_alignParentRight="true" />
     </RelativeLayout>
 </LinearLayout>

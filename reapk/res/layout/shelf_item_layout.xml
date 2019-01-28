@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:id="@id/item_root" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/book_thumb" n1:clickable="false" n1:layout_width="100.0dip" n1:layout_height="150.0dip" n1:scaleType="centerCrop" />
-    <ImageView n1:background="@drawable/shelf_shadow" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_below="@id/book_thumb" />
-    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@android:color/white" n1:gravity="center|right" n1:id="@id/age" n1:background="@drawable/book_corner_bg" n1:paddingLeft="15.0dip" n1:paddingRight="8.0dip" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignRight="@id/book_thumb" n1:layout_alignBottom="@id/book_thumb" />
-    <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@android:color/white" n1:gravity="center|left|top" n1:id="@id/c_title" n1:clickable="false" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:maxLines="2" n1:layout_below="@id/book_thumb" />
-</RelativeLayout>

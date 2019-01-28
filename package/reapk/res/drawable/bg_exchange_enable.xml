@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_enabled="true" n1:drawable="@drawable/btn_round_green_20"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <item n2:state_enabled="false" n2:drawable="@drawable/btn_round_grey_20"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
-    <item n3:drawable="@drawable/btn_round_green_20"
-      xmlns:n3="http://schemas.android.com/apk/res/android" />
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/btn_round_green_20" />
+    <item android:state_enabled="false" android:drawable="@drawable/btn_round_grey_20" />
+    <item android:drawable="@drawable/btn_round_green_20" />
 </selector>

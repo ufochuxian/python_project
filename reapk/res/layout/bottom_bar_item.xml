@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:gravity="center" n1:id="@id/indicator_item" n1:layout_width="fill_parent" n1:layout_height="50.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="50.0dip">
-        <ImageView n1:layout_gravity="center" n1:id="@id/icon" n1:layout_width="@dimen/bottom_bar_height" n1:layout_height="@dimen/bottom_bar_height" n1:scaleType="centerCrop" n1:layout_centerInParent="true" />
-        <ImageView n1:layout_gravity="center" n1:id="@id/red_dot_iv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip" n1:layout_marginRight="4.0dip" n1:src="@drawable/message_dot_small" n1:layout_alignTop="@id/icon" n1:layout_alignRight="@id/icon" />
-    </RelativeLayout>
-</LinearLayout>

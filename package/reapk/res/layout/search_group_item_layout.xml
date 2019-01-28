@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/text_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/group_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="1.0dip" n1:singleLine="true" />
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/text_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:ellipsize="end" android:id="@id/group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:singleLine="true" />
     </RelativeLayout>
-    <RelativeLayout n1:id="@id/desc_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/text_container">
-        <ImageView n1:id="@id/owner_ava" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginTop="10.0dip" n1:scaleType="centerCrop" />
-        <LinearLayout n1:id="@id/info_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/owner_ava" n1:layout_alignTop="@id/owner_ava">
-            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="2.0">
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/owner_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="班长：" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/group_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="班号：" n1:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/desc_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_container">
+        <ImageView android:id="@id/owner_ava" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:scaleType="centerCrop" />
+        <LinearLayout android:id="@id/info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/owner_ava" android:layout_alignTop="@id/owner_ava">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:id="@id/owner_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="班长：" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:id="@id/group_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="班号：" android:layout_alignParentRight="true" />
             </LinearLayout>
-            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="3.0">
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/class_age" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="年龄：" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" />
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:id="@id/members_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="人数：" n1:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:id="@id/class_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年龄：" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:id="@id/members_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人数：" android:layout_alignParentRight="true" />
             </LinearLayout>
         </LinearLayout>
-        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/class_desc" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="班级描述" n1:maxLines="1" n1:layout_below="@id/info_container" n1:layout_alignLeft="@id/info_container" />
+        <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_dark_gray" android:ellipsize="end" android:id="@id/class_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="班级描述" android:maxLines="1" android:layout_below="@id/info_container" android:layout_alignLeft="@id/info_container" />
     </RelativeLayout>
-    <ImageView n1:background="@color/divider_grey_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_line_height" n1:layout_marginTop="5.0dip" n1:layout_below="@id/desc_container" />
+    <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginTop="5.0dip" android:layout_below="@id/desc_container" />
 </RelativeLayout>

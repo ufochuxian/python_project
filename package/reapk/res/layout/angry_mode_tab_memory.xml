@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:columnCount="3" n1:useDefaultMargins="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Max heap size" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_max_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
+<GridLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="3" android:useDefaultMargins="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max heap size" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_max_heap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
     <Space />
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Current heap size" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_current_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
-    <TextView n1:id="@id/memory_current_heap_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Unused heap size" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_free_heap" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
-    <TextView n1:id="@id/memory_free_heap_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Actual memory in use" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_actual_used" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
-    <TextView n1:id="@id/memory_actual_used_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="In-memory image cache" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_image_cache" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
-    <TextView n1:id="@id/memory_image_cache_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
-    <TextView n1:layout_gravity="left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Other allocations" />
-    <TextView n1:textStyle="bold" n1:layout_gravity="right" n1:id="@id/memory_other_allocations" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0 MB" />
-    <TextView n1:id="@id/memory_other_allocations_percent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="(0%)" />
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current heap size" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_current_heap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
+    <TextView android:id="@id/memory_current_heap_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0%)" />
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unused heap size" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_free_heap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
+    <TextView android:id="@id/memory_free_heap_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0%)" />
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Actual memory in use" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_actual_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
+    <TextView android:id="@id/memory_actual_used_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0%)" />
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="In-memory image cache" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_image_cache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
+    <TextView android:id="@id/memory_image_cache_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0%)" />
+    <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other allocations" />
+    <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/memory_other_allocations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" />
+    <TextView android:id="@id/memory_other_allocations_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0%)" />
 </GridLayout>

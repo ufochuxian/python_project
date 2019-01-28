@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jiliguala.niuwa.common.widget.customview.SuperView n1:id="@id/landScapeVideoContainer" n1:background="@color/color_desktop_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ScrollView n1:id="@id/scroll_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="50.0dip" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
-        <RelativeLayout n1:id="@id/top_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <RelativeLayout n1:id="@id/header_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-                <FrameLayout n1:id="@id/video_parent_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-                    <SurfaceView n1:layout_gravity="center" n1:id="@id/video_surface" n1:layout_width="fill_parent" n1:layout_height="@dimen/video_height" />
-                    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar n1:layout_gravity="center" n1:id="@id/loading_progress" n1:padding="5.0dip" n1:layout_width="@dimen/loader_width" n1:layout_height="@dimen/loader_width" n2:mlpb_arrow_height="0.0dip" n2:mlpb_arrow_width="0.0dip" n2:mlpb_enable_circle_background="false" n2:mlpb_progress_colors="@array/gplus_colors" n2:mlpb_progress_stoke_width="4.0dip" n2:mlpb_show_arrow="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-                    <ImageView n1:layout_gravity="center" n1:id="@id/video_play_pause_btn" n1:background="@color/mask_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/video_height" n1:src="@drawable/btn_play_type2" n1:scaleType="center" />
+<com.jiliguala.niuwa.common.widget.customview.SuperView android:id="@id/landScapeVideoContainer" android:background="@color/color_desktop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:id="@id/top_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/video_parent_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <SurfaceView android:layout_gravity="center" android:id="@id/video_surface" android:layout_width="fill_parent" android:layout_height="@dimen/video_height" />
+                    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar android:layout_gravity="center" android:id="@id/loading_progress" android:padding="5.0dip" android:layout_width="@dimen/loader_width" android:layout_height="@dimen/loader_width" app:mlpb_arrow_height="0.0dip" app:mlpb_arrow_width="0.0dip" app:mlpb_enable_circle_background="false" app:mlpb_progress_colors="@array/gplus_colors" app:mlpb_progress_stoke_width="4.0dip" app:mlpb_show_arrow="false" />
+                    <ImageView android:layout_gravity="center" android:id="@id/video_play_pause_btn" android:background="@color/mask_color" android:layout_width="fill_parent" android:layout_height="@dimen/video_height" android:src="@drawable/btn_play_type2" android:scaleType="center" />
                 </FrameLayout>
             </RelativeLayout>
-            <RelativeLayout n1:id="@id/video_desc_container" n1:background="@color/white" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/header_container">
-                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/right_desc_container" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="10.0dip">
-                    <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/color_default_dark_gray" n1:gravity="left" n1:id="@id/title" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
-                    <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_dark_gray" n1:gravity="left" n1:id="@id/detail_desc" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" />
+            <RelativeLayout android:id="@id/video_desc_container" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header_container">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/right_desc_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="@dimen/content_x_large_size" android:textColor="@color/color_default_dark_gray" android:gravity="left" android:id="@id/title" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/content_normal_size_smaller" android:textColor="@color/color_default_dark_gray" android:gravity="left" android:id="@id/detail_desc" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
                 </LinearLayout>
-                <LinearLayout n1:id="@id/price_container" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="10.0dip" n1:layout_below="@id/right_desc_container">
-                    <TextView n1:textSize="@dimen/content_x_large_size" n1:textStyle="bold" n1:textColor="@color/color_price" n1:id="@id/price" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
-                    <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_second_gray" n1:id="@id/originPrice" n1:background="@color/transparent" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" />
+                <LinearLayout android:id="@id/price_container" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/right_desc_container">
+                    <TextView android:textSize="@dimen/content_x_large_size" android:textStyle="bold" android:textColor="@color/color_price" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_second_gray" android:id="@id/originPrice" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
                 </LinearLayout>
-                <TextView n1:textSize="@dimen/content_normal_size_smaller" n1:textColor="@color/color_default_second_gray" n1:layout_gravity="right" n1:id="@id/done" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignBottom="@id/price_container" n1:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/content_normal_size_smaller" android:textColor="@color/color_default_second_gray" android:layout_gravity="right" android:id="@id/done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignBottom="@id/price_container" android:layout_alignParentRight="true" />
             </RelativeLayout>
-            <LinearLayout n1:orientation="vertical" n1:id="@id/bottom_container" n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/video_desc_container" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/video_desc_container" />
         </RelativeLayout>
     </ScrollView>
-    <TextView n1:textSize="@dimen/content_x_large_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/buyRightNow" n1:background="@color/color_price" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:text="立即抢购" n1:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/content_x_large_size" android:textColor="@color/white" android:gravity="center" android:id="@id/buyRightNow" android:background="@color/color_price" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="立即抢购" android:layout_alignParentBottom="true" />
+    <LinearLayout android:id="@id/assist_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/assist" android:background="#ffff821b" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/assist_buy" android:background="#ffffae3d" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bundle_container" android:paddingBottom="62.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/bundle_image" android:layout_width="100.0dip" android:layout_height="120.0dip" />
+    </RelativeLayout>
 </com.jiliguala.niuwa.common.widget.customview.SuperView>

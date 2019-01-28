@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/error_page_top_bar" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/top_bar_height" n1:layout_alignParentTop="true">
-        <ImageButton n1:id="@id/error_page_top_back_btn" n1:background="@drawable/nav_icon_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/error_page_top_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/error_page_top_back_btn" android:background="@drawable/nav_icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
     </RelativeLayout>
-    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/refresh_button" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
-        <ImageView n1:clickable="false" n1:layout_width="160.0dip" n1:layout_height="160.0dip" n1:src="@drawable/bird_error" />
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="网络不给力" />
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/color_default_dark_gray" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="点击这里重新刷新" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/refresh_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/img_error" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bird_error" />
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="网络不给力" />
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击这里重新刷新" />
     </LinearLayout>
 </RelativeLayout>

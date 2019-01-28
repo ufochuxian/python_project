@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="@color/white" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.common.widget.RatioImageView n1:id="@id/hot_subject_bg" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:scaleType="centerCrop" n1:layout_alignParentTop="true" n1:layout_centerInParent="true" n2:ratio="0.85" n2:riv_corner_radius_bottom_left="@dimen/default_card_radius" n2:riv_corner_radius_bottom_right="@dimen/default_card_radius" n2:riv_corner_radius_top_left="@dimen/default_card_radius" n2:riv_corner_radius_top_right="@dimen/default_card_radius" n2:riv_oval="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_centerHorizontal="true">
-        <ImageView n1:id="@id/hot_subject_icon" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:scaleType="centerCrop" n1:layout_centerHorizontal="true" />
-        <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/white" n1:ellipsize="end" n1:gravity="center_horizontal" n1:id="@id/subjectDesc" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="2" n1:minLines="1" n1:layout_centerHorizontal="true" />
-    </LinearLayout>
-</RelativeLayout>

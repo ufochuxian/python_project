@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root_container" android:background="@drawable/round_green_20" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/share_iv" android:layout_width="fill_parent" android:layout_height="132.0dip" android:src="@drawable/img_popup_drop_out" android:scaleType="centerCrop" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="温馨提示" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="绘本跟读还未完成，再坚持一下吧" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip">
+            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/confirm" android:background="@drawable/round_corner_translate_white_22" android:layout_width="112.0dip" android:layout_height="44.0dip" android:text="退出" />
+            <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="18.0sp" android:textColor="#ff2fca89" android:gravity="center" android:id="@id/cancel" android:background="@drawable/btn_round_white_22" android:layout_width="112.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:text="继续" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

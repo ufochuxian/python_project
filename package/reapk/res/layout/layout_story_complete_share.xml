@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:paddingBottom="10.0dip" n1:layout_width="@dimen/popup_width" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.common.widget.RatioImageView n1:id="@id/course_thumb_iv1" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/popup_img_height" n1:src="@drawable/img_pop_picturebook" n1:scaleType="centerCrop" n1:layout_alignParentTop="true" n2:ratio="0.6" n2:riv_oval="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <LinearLayout n1:orientation="vertical" n1:background="@drawable/pop_story_bg_with_radius" n1:paddingTop="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <TextView n1:textSize="@dimen/content_large_size" n1:textStyle="bold" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/do_good" n1:layout_alignParentTop="true" />
-        <TextView n1:textSize="@dimen/content_normal_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/subTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="15.0dip" n1:text="@string/story_share_tips" n1:layout_alignParentTop="true" />
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="@dimen/popup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jiliguala.niuwa.common.widget.RatioImageView android:id="@id/course_thumb_iv1" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/popup_img_height" android:src="@drawable/img_pop_picturebook" android:scaleType="centerCrop" android:layout_alignParentTop="true" app:ratio="0.6" app:riv_oval="false" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/pop_story_bg_with_radius" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/content_large_size" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/do_good" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/white" android:gravity="center" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/story_share_tips" android:layout_alignParentTop="true" />
         <include layout="@layout/social_group_2" />
     </LinearLayout>
 </LinearLayout>

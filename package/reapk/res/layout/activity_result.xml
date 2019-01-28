@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/result_image" n1:background="@android:color/darker_gray" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:scaleType="fitXY" />
-    <TextView n1:textSize="14.0sp" n1:textColor="@android:color/black" n1:gravity="center|left|top" n1:id="@id/result_text" n1:background="#ffd8d8d8" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="10.0dip" />
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/result_image" android:background="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center|left|top" android:id="@id/result_text" android:background="#ffd8d8d8" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" />
 </LinearLayout>

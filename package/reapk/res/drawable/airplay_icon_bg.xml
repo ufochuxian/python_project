@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_selected="true" n1:drawable="@drawable/control_btn_route"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <item n2:state_selected="false" n2:drawable="@drawable/control_btn_route"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/control_btn_route" />
+    <item android:state_selected="false" android:drawable="@drawable/control_btn_route" />
 </selector>

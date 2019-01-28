@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:gravity="top" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:background="@drawable/course_white_bg" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/course_item_divider">
-        <ImageView n1:id="@id/icon" n1:layout_width="fill_parent" n1:layout_height="150.0dip" n1:scaleType="centerCrop" />
-        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip">
-            <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:layout_gravity="left" n1:id="@id/eng_txt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" />
-            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_dark_gray" n1:ellipsize="end" n1:id="@id/price" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_alignParentRight="true" />
-                <TextView n1:textSize="@dimen/content_small_size" n1:textColor="@color/color_default_second_gray" n1:ellipsize="end" n1:id="@id/chinese_txt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:maxLines="1" n1:layout_toLeftOf="@id/price" n1:layout_alignParentLeft="true" />
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/course_white_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/course_item_divider">
+        <com.jiliguala.niuwa.common.widget.RatioImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:ratio="0.75" app:riv_corner_radius_bottom_left="8.0dip" app:riv_corner_radius_bottom_right="8.0dip" app:riv_corner_radius_top_left="8.0dip" app:riv_corner_radius_top_right="8.0dip" />
+        <ImageView android:id="@id/corner" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/bg_corner_w" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/price" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_alignParentRight="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/icon">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/free" android:background="@drawable/btn_round_orange_30" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="30.0dip" android:text="免费" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_default_dark_gray" android:ellipsize="end" android:id="@id/eng_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/free" />
+            <TextView android:textSize="@dimen/content_small_size" android:textColor="@color/color_default_second_gray" android:ellipsize="end" android:id="@id/chinese_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_toLeftOf="@id/free" android:layout_below="@id/eng_txt" />
+        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>

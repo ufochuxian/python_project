@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:background="@color/reading_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:orientation="vertical" n1:id="@id/bottom_container" n1:layout_width="fill_parent" n1:layout_height="130.0dip" n1:layout_marginBottom="30.0dip" n1:layout_alignParentBottom="true">
-        <ImageView n1:id="@id/story_finish_icon" n1:background="@drawable/course_done_btn" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:layout_centerInParent="true" />
-        <ImageView n1:id="@id/finish_btn_bg" n1:visibility="visible" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:src="@drawable/course_done_btn_bg" n1:layout_centerInParent="true" />
+<RelativeLayout android:orientation="vertical" android:background="@color/reading_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/story_finish_icon" android:background="@drawable/course_done_btn" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/finish_btn_bg" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/course_done_btn_bg" android:layout_centerInParent="true" />
     </RelativeLayout>
-    <RelativeLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/bottom_container" n1:layout_centerHorizontal="true">
-        <RelativeLayout n1:id="@id/book_cover_box" n1:layout_width="180.0dip" n1:layout_height="270.0dip" n1:layout_centerHorizontal="true">
-            <ImageView n1:id="@id/story_thumb" n1:background="#26000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" />
-            <ImageView n1:id="@id/read_again" n1:background="@drawable/btn_read_again" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_container" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/book_cover_box" android:layout_width="180.0dip" android:layout_height="270.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/story_thumb" android:background="#26000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/read_again" android:background="@drawable/btn_read_again" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         </RelativeLayout>
-        <ImageView n1:id="@id/book_shadow" n1:background="@drawable/book_shadow" n1:layout_width="180.0dip" n1:layout_height="6.0dip" n1:layout_below="@id/book_cover_box" n1:layout_centerHorizontal="true" />
-        <ImageView n1:background="@drawable/book_ending_image" n1:layout_width="160.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="15.0dip" n1:layout_below="@id/book_shadow" n1:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/book_shadow" android:background="@drawable/book_shadow" android:layout_width="180.0dip" android:layout_height="6.0dip" android:layout_below="@id/book_cover_box" android:layout_centerHorizontal="true" />
+        <ImageView android:background="@drawable/book_ending_image" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/book_shadow" android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </RelativeLayout>

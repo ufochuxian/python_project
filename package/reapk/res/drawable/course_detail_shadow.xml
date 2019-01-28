@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape>
-    <solid n1:color="#1a000000"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <corners n2:topLeftRadius="@dimen/card_radius" n2:topRightRadius="@dimen/card_radius" n2:bottomLeftRadius="@dimen/card_radius" n2:bottomRightRadius="@dimen/card_radius"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1a000000" />
+    <corners android:topLeftRadius="@dimen/card_radius" android:topRightRadius="@dimen/card_radius" android:bottomLeftRadius="@dimen/card_radius" android:bottomRightRadius="@dimen/card_radius" />
 </shape>

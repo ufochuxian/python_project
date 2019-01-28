@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/item_root" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/super_roadmap_current_lesson_box_width" android:layout_height="@dimen/super_roadline_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/unit_container" android:paddingLeft="@dimen/super_roadmap_item_padding_left" android:paddingRight="@dimen/super_roadmap_item_padding_right" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/super_roadmap_current_lesson_box_width" android:layout_height="@dimen/super_roadmap_current_lesson_box_heigth" android:layout_centerInParent="true">
+        <com.jiliguala.niuwa.common.widget.CircleImageView android:id="@id/item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/anim_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/course_done_btn_bg" />
+        <ImageView android:id="@id/super_roadmap_lesson_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <com.jiliguala.niuwa.common.widget.CircleImageView android:id="@id/mask_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" android:alpha="0.5" />
+        <ImageView android:id="@id/lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_lock" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/status_icon" android:visibility="visible" android:layout_width="@dimen/super_roadmap_status_icon_width" android:layout_height="@dimen/super_roadmap_status_icon_height" android:layout_marginTop="-13.0dip" android:layout_below="@id/unit_container" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/content_large_size_16" android:textStyle="bold" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:gravity="center" android:id="@id/lesson_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:layout_below="@id/status_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/content_middle_size" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_below="@id/lesson_title" android:layout_centerHorizontal="true" android:alpha="0.6" />
+</RelativeLayout>

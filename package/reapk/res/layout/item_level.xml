@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:clipChildren="false" n1:layout_width="120.0dip" n1:layout_height="280.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/icon" n1:background="@drawable/level_channel_bg" n1:layout_width="120.0dip" n1:layout_height="180.0dip" n1:src="@drawable/entrance_mc_1" n1:scaleType="centerCrop" n1:layout_centerInParent="true" />
-    <com.jiliguala.niuwa.common.widget.CircleImageView n1:id="@id/baby_icon" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="-10.0dip" n1:src="@drawable/default_baby" n1:scaleType="centerCrop" n1:layout_below="@id/icon" n1:layout_centerHorizontal="true" />
+<RelativeLayout android:clipChildren="false" android:layout_width="120.0dip" android:layout_height="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/level_channel_bg" android:layout_width="120.0dip" android:layout_height="180.0dip" android:src="@drawable/entrance_mc_1" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.jiliguala.niuwa.common.widget.CircleImageView android:id="@id/baby_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="-10.0dip" android:src="@drawable/avatar_baby_placeholder" android:scaleType="centerCrop" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
 </RelativeLayout>

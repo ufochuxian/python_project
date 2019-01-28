@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jiliguala.niuwa.module.story.views.HorizontalPanView n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:baselineAligned="false"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/page_holder_left" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
-    <RelativeLayout n1:id="@id/page_holder_right" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+<com.jiliguala.niuwa.module.story.views.HorizontalPanView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/page_holder_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/page_holder_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
 </com.jiliguala.niuwa.module.story.views.HorizontalPanView>

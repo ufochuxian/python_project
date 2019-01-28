@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@drawable/round_green_stroke_9" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/gua_dou_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/count_gua_dou" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GreenXLargeText" />
+        <TextView android:id="@id/unit_gua_dou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/gua_dou" style="@style/GreenSmallText" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/content_middle_small_size" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/gua_dou_container" android:layout_centerHorizontal="true" />
+</RelativeLayout>

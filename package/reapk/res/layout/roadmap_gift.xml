@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/roadline_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/gift_container" android:clipChildren="false" android:layout_width="68.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dotline_space" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="bottom|center" android:layout_width="@dimen/roadmap_unit_shadow_normal_width" android:layout_height="@dimen/roadmap_unit_shadow_normal_height" android:layout_marginBottom="-6.0dip" android:src="@drawable/unit_shadow" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_view" android:layout_width="fill_parent" android:layout_height="94.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" app:lottie_autoPlay="false" app:lottie_loop="false" />
+    </FrameLayout>
+</RelativeLayout>

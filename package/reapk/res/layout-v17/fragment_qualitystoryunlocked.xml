@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="@dimen/content_large_size" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/action_next" n1:background="@color/color_green" n1:layout_width="fill_parent" n1:layout_height="@dimen/large_button_height" n1:text="@string/scan_isbn_tips" n1:layout_alignParentBottom="true" />
-    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="@dimen/large_button_height" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
-        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <ImageView n1:id="@id/iv_top_1" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/scan_img1" n1:scaleType="centerCrop" />
-            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-                <ImageView n1:id="@id/iv_top_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/scan_img2" n1:scaleType="centerCrop" />
-                <ImageView n1:layout_gravity="bottom|center" n1:id="@id/iv_top_3" n1:padding="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/scan_img3" />
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_large_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/action_next" android:background="@color/color_green" android:layout_width="fill_parent" android:layout_height="@dimen/large_button_height" android:text="@string/scan_isbn_tips" android:layout_alignParentBottom="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/large_button_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_top_1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/scan_img1" android:scaleType="centerCrop" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_top_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/scan_img2" android:scaleType="centerCrop" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_top_3" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_img3" />
             </FrameLayout>
-            <ImageView n1:id="@id/iv_top_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/scan_img4" n1:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_top_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/scan_img4" android:scaleType="centerCrop" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
