@@ -335,6 +335,9 @@ def deleteAllChannelNameApk():
         shutil.rmtree(jiliguala_focuson_children_english_path)
     os.mkdir(jiliguala_focuson_children_english_path)
 
+    if os.path.exists(full_package_path) == False:
+        os.mkdir(full_package_path)
+
     if (os.path.exists(fullpackage_channel_jiliguala)):
         shutil.rmtree(fullpackage_channel_jiliguala)
     os.mkdir(fullpackage_channel_jiliguala)
