@@ -232,7 +232,7 @@ def sign_apk_with_type(name):
         new_apk_name = jiliguala_children_english_with_divider_apk_name
         save_sign_apk_path = jiliguala_children_english_with_divider_path + new_apk_name
     unSignApkPath = reApkPath + '/dist/' + new_apk_name
-    sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
+    sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg SHA1withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
     logging.info('sign_apk_commond = %s' % sign_apk_commond)
     os.system(sign_apk_commond)
 
@@ -261,7 +261,7 @@ def package_apk():
 def sign_apk(channel):
     new_apk_name = apkNamePrefix + '_' + channel + '.apk'
     save_sign_apk_path = reApkPath + '/dist/' + new_apk_name
-    sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg MD5withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
+    sign_apk_commond = 'jarsigner -digestalg SHA1 -sigalg SHA1withRSA -keystore ' + keyStorePath + ' -storepass knoala168 -keypass jiliguala168 -signedjar ' + save_sign_apk_path + ' ' + unSignApkPath + ' niuwa_release_keystore'
     logging.info('sign_apk_commond = %s' % sign_apk_commond)
     os.system(sign_apk_commond)
 
