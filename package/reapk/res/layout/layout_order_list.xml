@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.jiliguala.niuwa.common.widget.customview.SuperView android:id="@id/superview" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="fill_parent" pulltorefresh:errorView="@layout/layout_errorview"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pulltorefresh="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.pulltorefresh.PullToRefreshListView android:id="@id/listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/divider_grey_line" android:dividerHeight="@dimen/divider_line_height" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" pulltorefresh:ptrAnimationStyle="flip" pulltorefresh:ptrHeaderTextAppearance="@style/Pull_refresh_text_style" />
-    <include android:id="@id/empty_text" android:visibility="gone" layout="@layout/layout_empty_text" />
-</com.jiliguala.niuwa.common.widget.customview.SuperView>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentTop="true" />
-    <TextView android:textSize="@dimen/content_large_size" android:textColor="@color/color_green" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="@dimen/default_row_height" />
-    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/airplay_icon_bg" />
-</RelativeLayout>

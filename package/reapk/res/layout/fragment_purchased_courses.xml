@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.NoPreloadViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabStrip_container" />
-    <RelativeLayout android:id="@id/tabStrip_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
-        <com.jiliguala.niuwa.module.babyintiation.PagerSlidingTabStrip android:id="@id/tabStrip" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/color_green" app:pstsIndicatorHeight="4.0dip" app:pstsIndicatorWidth="20.0dip" app:pstsNeedBold="true" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="2.0dip" app:pstsTextSize="14.0sp" app:pstsUnderlineColor="@color/transparent" />
-    </RelativeLayout>
-</RelativeLayout>

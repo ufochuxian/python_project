@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:paddingLeft="40.0dip" android:paddingTop="60.0dip" android:paddingRight="40.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true">
-        <ImageView android:id="@id/level_change" android:layout_width="fill_parent" android:layout_height="150.0dip" />
-    </RelativeLayout>
-</RelativeLayout>

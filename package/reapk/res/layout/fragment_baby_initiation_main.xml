@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/default_back_ground_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" />
-    <ImageView android:id="@id/treasure" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="80.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_treasure" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
-</RelativeLayout>

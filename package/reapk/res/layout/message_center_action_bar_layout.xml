@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/top_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/action_back" android:background="@drawable/nav_icon_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <TextView android:textColor="@color/color_default_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_bar_title_message_center" android:layout_centerInParent="true" style="@style/TopbarTitle" />
-    <TextView android:textSize="16.0sp" android:textColor="@color/color_detail_title" android:id="@id/action_post" android:padding="3.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_post" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

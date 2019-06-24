@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.jiliguala.niuwa.common.widget.customview.SuperView android:orientation="vertical" android:id="@id/superview" android:background="@color/color_desktop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorView="@layout/layout_errorview" app:loadingView="@layout/layout_loadingview"
-      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-        <com.jiliguala.niuwa.common.widget.pulltorefresh.PullToRefreshListView android:id="@id/hot_subject_list" android:background="@color/pull_to_refresh_bg" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/top_bar_container" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:ptrAnimationStyle="flip" app:ptrHeaderTextAppearance="@style/Pull_refresh_text_style" />
-    </com.jiliguala.niuwa.common.widget.customview.SuperView>
-    <com.jiliguala.niuwa.module.interact.course.bundle.InteractBundlePurchaseView android:id="@id/bundle_purchase" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
-</RelativeLayout>

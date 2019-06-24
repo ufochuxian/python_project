@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@color/color_desktop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.NoPreloadViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabStrip_container" />
-    <RelativeLayout android:id="@id/tabStrip_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
-        <ImageView android:id="@id/back_icon" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="@dimen/top_bar_height" android:src="@drawable/nav_icon_back" />
-        <com.jiliguala.niuwa.module.babyintiation.PagerSlidingTabStrip android:id="@id/tabStrip" android:layout_width="wrap_content" android:layout_height="@dimen/top_bar_height" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_centerHorizontal="true" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/transparent" app:pstsIndicatorHeight="1.0dip" app:pstsNeedBold="true" app:pstsTabBackground="@color/transparent" app:pstsTabPaddingLeftRight="2.0dip" app:pstsTabSelBackground="@drawable/btn_round_green_30" app:pstsTabSelTextColor="@color/white" app:pstsTabTextColor="@color/color_default_dark_gray" app:pstsTextPaddingLR="15.0dip" app:pstsTextPaddingTB="8.0dip" app:pstsTextSize="16.0sp" app:pstsUnderlineColor="@color/transparent" />
-    </RelativeLayout>
-</RelativeLayout>

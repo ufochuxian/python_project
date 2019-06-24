@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/channel_list_min_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/selected_iv" android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:id="@id/channel_thumb_iv" android:layout_width="@dimen/channel_list_image_width" android:layout_height="@dimen/channel_list_image_width" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <ImageView android:background="@drawable/line_lightgrey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
-    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/channel_ttl_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/channel_thumb_iv" android:layout_centerVertical="true" />
-</RelativeLayout>

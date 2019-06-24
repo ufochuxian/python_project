@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/cat_item_container" android:layout_width="@dimen/course_cat_item_width" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/cat_icon_iv" android:clickable="false" android:layout_width="@dimen/default_icon_width" android:layout_height="@dimen/default_icon_height" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/content_normal_size_smaller" android:textColor="@color/course_cat_text_color" android:gravity="center_horizontal" android:id="@id/id_num" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cat_icon_iv" />
-</RelativeLayout>

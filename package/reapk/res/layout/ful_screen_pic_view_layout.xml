@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar android:layout_gravity="center" android:id="@id/m_progress_bar" android:padding="5.0dip" android:visibility="visible" android:layout_width="@dimen/loader_width" android:layout_height="@dimen/loader_width" android:layout_toLeftOf="@id/title" android:layout_centerInParent="true" app:mlpb_arrow_height="0.0dip" app:mlpb_arrow_width="0.0dip" app:mlpb_enable_circle_background="false" app:mlpb_progress_colors="@array/gplus_colors" app:mlpb_progress_stoke_width="4.0dip" app:mlpb_progress_text_visibility="invisible" app:mlpb_show_arrow="false" />
-    <ImageView android:id="@id/image_big_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerInParent="true" />
-    <ImageView android:id="@id/pic_save_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/icon_download_empty" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
-</RelativeLayout>

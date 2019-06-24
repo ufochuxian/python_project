@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/viewpager_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.module.qualitycourse.view.BannerViewPager android:id="@id/multi_looper_vp" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_centerVertical="true" app:matchChildWidth="@id/vg_cover" />
-</RelativeLayout>

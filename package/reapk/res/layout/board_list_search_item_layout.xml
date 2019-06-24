@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/item_root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/content_normal_size" android:textColor="@color/color_default_dark_gray" android:textColorHint="@color/color_default_gray" android:gravity="center_vertical" android:id="@id/search_edit_text" android:background="@drawable/search_bg_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/discovery_forum_search_hint" android:singleLine="true" android:drawableLeft="@drawable/indicator_search_grey" android:drawablePadding="10.0dip" android:layout_toLeftOf="@id/msg_entrance" android:layout_centerVertical="true"
-      xmlns:android="http://schemas.android.com/apk/res/android" />
-    <ImageView android:background="@color/divider_grey_line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
-    <ImageView android:id="@id/msg_entrance" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_community_msg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

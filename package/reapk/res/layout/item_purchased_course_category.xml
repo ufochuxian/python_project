@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.common.widget.RatioImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:border_width="2.0dip" app:corner_radius="5.0dip" app:ratio="0.71" app:riv_corner_radius_bottom_left="10.0dip" app:riv_corner_radius_bottom_right="10.0dip" app:riv_corner_radius_top_left="10.0dip" app:riv_corner_radius_top_right="10.0dip" app:riv_oval="false" />
-    <com.jiliguala.niuwa.common.widget.boldfont.BoldTextView android:textSize="16.0sp" android:textColor="#ff404040" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" app:layout_constraintTop_toBottomOf="@id/icon" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/color_default_second_gray" android:ellipsize="end" android:id="@id/count" android:layout_width="fill_parent" android:layout_height="20.0dip" android:maxLines="1" android:layout_below="@id/eng_txt" app:layout_constraintTop_toBottomOf="@id/name" />
-</android.support.constraint.ConstraintLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <GridLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" android:useDefaultMargins="true">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App Env" />
-        <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@id/debug_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
-    </GridLayout>
-    <Button android:id="@id/switch_app_env" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Switch Env" android:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button.Borderless.Small" />
-</LinearLayout>

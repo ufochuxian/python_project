@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/weibo_container" android:background="@drawable/btn_round_white_25" android:visibility="visible" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/weibo_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_weibo" />
-    <TextView android:textSize="@dimen/content_x_large_size" android:textStyle="bold" android:textColor="@color/color_green" android:gravity="center" android:id="@id/weibo_btn" android:layout_width="wrap_content" android:layout_height="@dimen/large_button_height" android:text="@string/weibo" android:drawablePadding="5.0dip" />
-</LinearLayout>

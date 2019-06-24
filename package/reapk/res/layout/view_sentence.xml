@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/eng_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Which one do you like?" />
-    <TextView android:id="@id/chinese_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你喜欢那个!" />
-</LinearLayout>

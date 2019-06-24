@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.jiliguala.niuwa.common.widget.customview.SuperView android:orientation="vertical" android:id="@id/superview" android:background="@color/color_desktop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorView="@layout/layout_errorview" app:loadingView="@layout/layout_loadingview"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v7.widget.RecyclerView android:id="@id/board_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</com.jiliguala.niuwa.common.widget.customview.SuperView>

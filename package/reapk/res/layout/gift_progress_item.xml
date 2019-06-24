@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@drawable/icon_notcomplete" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
-    <FrameLayout android:layout_gravity="center" android:id="@id/gift_container" android:background="@drawable/icon_complete" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip">
-        <ImageView android:layout_gravity="center" android:id="@id/gift" android:layout_width="25.0dip" android:layout_height="25.0dip" />
-    </FrameLayout>
-</FrameLayout>

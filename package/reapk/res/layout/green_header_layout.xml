@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="@color/green_89" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/app_name" android:layout_centerHorizontal="true" />
-    <com.jiliguala.niuwa.common.widget.circleprogressbar.CircleProgressBar android:id="@id/progress" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/text" android:layout_centerHorizontal="true" app:mlpb_arrow_height="0.0dip" app:mlpb_arrow_width="0.0dip" app:mlpb_enable_circle_background="false" app:mlpb_progress_color="@color/green_89" app:mlpb_progress_stoke_width="2.0dip" app:mlpb_progress_text_visibility="invisible" app:mlpb_show_arrow="false" />
-</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jiliguala.niuwa.module.qualitycourse.view.BannerViewPager android:id="@id/banner_vp" android:layout_width="fill_parent" android:layout_height="@dimen/daily_banner_height" app:matchChildWidth="@id/vg_cover" />
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/banner_vp" layout="@layout/daily_store_layout" />
-</RelativeLayout>
