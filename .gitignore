@@ -1,4 +1,5 @@
 reapk/
+venv/
 .idea/
 *.keystore
 *.apk
