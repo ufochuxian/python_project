@@ -10,7 +10,7 @@ import time
 
 import configparser
 
-from aip import AipSpeech
+# from aip import AipSpeech
 
 import pygame
 
@@ -501,15 +501,15 @@ def notify_package_success():
     APP_ID = resolve_env(cf.get('baidu', 'AppID'))
     API_KEY = resolve_env(cf.get('baidu', 'API_Key'))
     SECRET_KEY = resolve_env(cf.get('baidu', 'SECRET_KEY'))
-    client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
+    # client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
-    result = client.synthesis('全渠道打包成功了', 'zh', 1, {
-        'vol': 5, 'spd': 3
-    })
+    # result = client.synthesis('全渠道打包成功了', 'zh', 1, {
+    #     'vol': 5, 'spd': 3
+    # })
     # 识别正确返回语音二进制 错误则返回dict 参照下面错误码
-    if not isinstance(result, dict):
-        with open(PACKAGESUCCESS_MP3, 'wb') as f:
-            f.write(result)
+    # if not isinstance(result, dict):
+    #     with open(PACKAGESUCCESS_MP3, 'wb') as f:
+    #         f.write(result)
     track1 = pygame.mixer.music.load(PACKAGESUCCESS_MP3)
     pygame.mixer.music.play(2, 0)
     # 这句延时一定要加，不然听不到声音
