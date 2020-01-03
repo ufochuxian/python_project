@@ -241,16 +241,16 @@ def unpackageApkWithType(name):
     unPackageApkCommond = ""
     if name == channels_app_name:
         # jiliguala_focuson_children_english_apk = jiliguala_focuson_children_english_path + apkNamePrefix + "_" + name + '.apk'
-        unPackageApkCommond = 'apktool -f d ' + jiliguala_focuson_children_english_apk + ' -o ' + reApkPath
+        unPackageApkCommond = 'apktool -f d --only-main-classes ' + jiliguala_focuson_children_english_apk + ' -o ' + reApkPath
     elif name == channels_app_name_extra:
         # jiliguala_children_english_apk = jiliguala_children_english_path + apkNamePrefix + "_" + name + '.apk'
-        unPackageApkCommond = 'apktool -f d ' + jiliguala_children_english_apk + ' -o ' + reApkPath
+        unPackageApkCommond = 'apktool -f d --only-main-classes ' + jiliguala_children_english_apk + ' -o ' + reApkPath
     elif name == channels_app_name_extra1:
         # jiliguala_apk = jiliguala_path + apkNamePrefix + "_" + name + '.apk'
-        unPackageApkCommond = 'apktool -f d ' + jiliguala_apk + ' -o ' + reApkPath
+        unPackageApkCommond = 'apktool -f d --only-main-classes ' + jiliguala_apk + ' -o ' + reApkPath
     elif name == channels_app_name_extra2:
         # jiliguala_children_english_with_divider_apk = jiliguala_children_english_with_divider_path + apkNamePrefix + "_" + name + '.apk'
-        unPackageApkCommond = 'apktool -f d ' + jiliguala_children_english_with_divider_apk + ' -o ' + reApkPath
+        unPackageApkCommond = 'apktool -f d --only-main-classes ' + jiliguala_children_english_with_divider_apk + ' -o ' + reApkPath
     os.system(unPackageApkCommond)
 
 
